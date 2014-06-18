@@ -1,0 +1,1737 @@
+<!--Processing Instructions and the XML Declaration are both forbidden in polyglot markup. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--In HTML documents, elements in the HTML namespace may have an xmlns attribute specified, if, and only if, it has the exact value "http://www.w3.org/1999/xhtml". [http://www.w3.org/TR/html5/dom.html#global-attributes]-->
+	<head>
+		<title>EDAM: Ontology of bioinformatics operations, types of data, formats, and topics</title>
+		<!--<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/> ... polyglot markup does not use the http-equiv="Content-Type" declaration on the meta element. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
+		<!--<meta charset="UTF-8"/> not valid in XHTML?-->
+		<link rel="alternate" type="application/rdf+xml; charset=utf-8" title="OWL representation of EDAM" href="http://edamontology.org/EDAM.owl"/>
+		<link rel="alternate" type="text/plain" title="OBO-format representation of EDAM" href="http://edamontology.org/EDAM.obo"/>
+	</head>
+	<body>
+<h1 style="text-align:center">EDAM Ontology</h1>
+<h2 style="text-align:center">Bioinformatics operations, types of data, formats, and topics</h2>
+
+<ol>
+<li><a href="#Introduction">Introduction</a>
+    <ul>
+    <li><a href="#Motivation">Motivation</a></li>
+    <li><a href="#Definition">What is EDAM?</a></li>
+    <li><a href="#Scope">Scope</a></li>
+    <li><a href="#Architecture">Architecture</a>
+		<ul><li><small><i><a href="#Figure1">Figure 1.</a></i></small></li></ul>
+    </li>
+    <li><a href="#Download">Download and Status</a></li>
+    <li><a href="#Viewing">Viewing</a></li>
+    <li><a href="#Licence">Licence</a></li>
+    <li><a href="#Publications">Publication</a></li>
+    <li><a href="#Contact">Contacts</a></li>
+    <li><a href="#MailingLists">Mailing lists</a></li>
+    </ul>
+</li>
+<li><a href="#Concepts">Concepts</a>
+    <ul>
+    <li><a href="#Operation">Operation</a></li>
+    <li><a href="#Data">Data</a></li>
+    <li><a href="#Topic">Topic</a></li>
+    <li><a href="#Format">Format</a>
+    </li><li><a href="#Identifier">Identifier</a></li>
+    </ul>
+</li>
+<li><a href="#Relations">Relations</a>
+    <ul>
+    <li><a href="#is_a">is a</a></li>
+    <li><a href="#has_input">has input</a></li>
+    <li><a href="#has_output">has output</a></li>
+    <li><a href="#has_topic">has topic</a></li>
+    <li><a href="#is_identifier_of">is identifier of</a></li>
+    <li><a href="#is_format_of">is format of</a></li>
+    </ul>
+</li>
+<li><a href="#Rules">Rules</a>
+    <ul>
+    <li><a href="#RulesByConcept">Rules by concept type</a></li>
+    <li><a href="#RulesByRelation">Rules by relation type</a></li>
+    </ul>
+</li>
+<li><a href="#Sources">Sources</a>
+    <!--<ul>
+    <li><a href="#s3.1">Current version</a></li>
+    <li><a href="#s3.2">Future version</a></li>
+    </ul>-->
+</li>
+<!--<li><a href="#s4">OBO-format [Term] structure</a></li>
+<li><a href="#s8">Guidelines for developers</a>
+    <ul>
+    <li><a href="#s8.1">Adding concepts</a></li>
+    <li><a href="#s8.2">Terms</a></li>
+    <li><a href="#s8.3">Definitions</a></li>
+    <li><a href="#s8.4">Principles</a></li>
+    <li><a href="#s8.5">Limitations</a></li>
+    </ul>
+</li>-->
+<li><a href="#AnnotationGuidelines">Guidelines for annotators</a>
+    <ul>
+    <li><a href="#GeneralAnnotationGuidelines">General guidelines</a></li>
+    <li><a href="#GeneralAnnotationGuidelines_subontology">Which EDAM sub-ontology to use?</a></li>
+    <li><a href="#GeneralAnnotationGuidelines_otherOntologies">Use of other ontologies</a></li>
+    <li><a href="#GeneralAnnotationGuidelines_concepts">Picking concepts</a></li>
+    <!--<li><a href="#s9.3">Example: Picking concepts for sequence data
+       </a><ul>
+    <li><a href="#s9.3.0">Raw sequences and records</a></li>
+    <li><a href="#s9.3.1">Sequence sets</a></li>
+    <li><a href="#s9.3.2">Sequence annotation</a></li>
+    </ul></li>
+
+    <li><a href="#s9.6">Annotation of data identifiers</a>
+
+
+    </li>--><li><a href="#WebServiceAnnotationGuidelines">Annotation of Web services</a>
+       <ul>
+       <li><a href="#WebServiceAnnotationGuidelines_model">Model of a Web service</a></li>
+    <li><a href="#WebServiceAnnotationGuidelines_levels">Levels of annotation</a></li>
+    </ul></li>
+    <li><a href="#SAWSDL">EDAM URIs and SAWSDL annotation</a>
+       <ul>
+       <li><a href="#SAWSDL_operations">SAWSDL guidelines for annotating operations</a></li>
+    </ul></li>
+    </ul></li>
+<!--<li><a href="#s10">EDAM concept end-points</a>
+    <ul>
+    <li><a href="#s10.1">EDAM in SRS</a></li>
+    <li><a href="#s10.2">File formats for concept end-points</a></li>
+    </ul></li>-->
+<li><a href="#Implementations">Existing implementations and annotations with EDAM</a>
+    <ul>
+    <li><a href="#Implementations_EMBOSS">EMBOSS</a></li>
+    <li><a href="#Implementations_BioXSD">BioXSD</a></li>
+    <li><a href="#Implementations_DRCAT">DRCAT biological resource catalogue</a></li>
+    <li><a href="#Implementations_Bio-jETI">Bio-jETI</a></li>
+    <li><a href="#Implementations_iHOP">iHOP Web service</a></li>
+    <li><a href="#Implementations_CBU">CBU Web services</a></li>
+    <li><a href="#Implementations_eSysbio">eSysbio</a></li>
+    <li><a href="#Implementations_SEQwiki">SEQwiki</a></li>
+    </ul>
+</li></ol>
+
+
+
+
+
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Introduction">Introduction</a></h1>
+
+
+<br/><h2><br/><a id="Motivation">Motivation</a></h2>
+<p>Bioinformaticians handle an increasingly large and diverse set of 
+tools and data.  Meanwhile, researchers demand ever more powerful and 
+convenient means to organise, find, compare, select, reuse and connect 
+the available resources. These tasks often rely on consistent, 
+machine-understandable descriptions of the underlying components, but 
+these have been generally lacking in documentation and metadata 
+developed <i>ad hoc</i>.  There is therefore an urgent need for an 
+ontology that unifies semantically the bioinformatics concepts in common
+ use and, for the annotator, provides a comprehensive controlled 
+vocabulary that is broadly applicable.</p>
+
+
+
+<br/><h2><br/><a id="Definition">What is EDAM?</a></h2>
+
+<p>EDAM (EMBRACE Data and Methods) is an ontology of common 
+bioinformatics operations, topics, types of data including identifiers, and formats. EDAM comprises common concepts (shared within the bioinformatics community) that apply to semantic annotation of resources such as:</p>
+
+<ul>
+<li>Web services (annotation in WSDL files, using SAWSDL)</li>
+<li>Applications</li>
+<li>Tool collections and packages</li>
+<li>Workbenches and workflow software</li>
+<li>Databases</li>
+<li>XML Schemas and data objects</li>
+<li>Data syntax and file formats</li>
+<li>Web portals and pages</li>
+<li>Resource catalogues</li>
+<li>Documents such as scientific publications</li>
+<li>Areas of scientific interest</li>
+</ul>
+
+
+
+
+
+<br/><h2><br/><a id="Scope">Scope</a></h2>
+<p>As a rule (with a few exceptions) EDAM only includes concepts strictly in domain of bioinformatics/computational biology. General biology, medicine, or informatics concepts are (typically) not included in the EDAM <i><b>Operation</b></i>, <i><b>Data</b></i>, or <i><b>Format</b></i> sub-ontologies. However, broader <em>inter-disciplinary</em> topics are included in the EDAM <i><b>Topic</b></i> sub-ontology.</p>
+<p>For example within drug design, the concepts related to sequence, structure, and molecular interactions analyses are part of EDAM, but ones related to pre-clinical and clinical trials are not. As another example, text mining in patient records and statistical analysis with
+respect to knowledge about diseases are in scope, but management of patient records or statistical analysis with respect to economy or administration are not.</p>
+
+<p>EDAM includes 4 main sub-ontologies of concepts organised into simple hierarchies:</p>
+<ul>
+<li><i><b>Operation</b></i> - A function or process performed by a tool; what is done, but not (typically) how or in what context.</li>
+<li><i><b>Data</b></i> - A type of data in common use in bioinformatics.</li>
+<li><i><b>Topic</b></i> - A general bioinformatics subject or category, such as a field of study, data, processing, analysis or technology.</li>
+<li><i><b>Format</b></i> - A specific layout for encoding a specific type of data in a computer file or message.</li>
+</ul>
+
+<p>Noteworthy within the <i><b>Data</b></i> sub-ontology is:</p>
+<ul>
+<li><i><b>Identifier</b></i> - A label that identifies (typically uniquely) something such as data, a resource or a biological entity.</li>
+</ul>
+
+
+<p>These provide different semantic 'axes' for annotation. For example, annotation of a Web service might include:</p>
+<ul>
+<li><i>Topic</i> - general area(s) the service belongs to</li>
+<li><i>Operation</i> - what exactly each operation does</li>
+<li><i>Data</i> - the input and output data (in semantic terms)</li>
+<li><i>Format</i> - the input and output data (in syntactic terms)</li>
+<li><i>Identifier</i> - parameters that identify other data</li>
+</ul><p></p>
+
+
+
+
+
+
+<br/><h2><br/><a id="Architecture">Architecture</a></h2>
+
+<p>EDAM has 4 components:</p>
+<ul>
+<li><a href="#Concepts">Concepts</a></li>
+<li><a href="#Concepts">Hierarchy (<b>is a</b> relation)</a></li>
+<li><a href="#Relations">Relations</a></li>
+<li><a href="#Rules">Rules</a>
+</li>
+</ul>
+
+<p><b>Concepts</b> - These are well established and familiar 
+bioinformatics concepts.  Concepts have a name (term), a definition and 
+one or more simple relations to other concepts defined in EDAM.  Each concept 
+has one or more intrinsic properties (reflected in the definition and relations).</p>
+
+<p><b>Hierarchy</b> - Every concept (excluding top-level concepts) is related to (typically) one other concept within the same sub-ontology by an <b>is a</b>
+(generalisation) relation.  These relations define the sub-ontology 
+hierarchies.  All "child" concepts must share the intrinsic property of 
+their "parent", in addition to having their own intrinsic properties.</p>
+
+<p><b>Relations</b> - Concepts are related by defined <a href="#Relations">relation types</a>, but these types of relation apply also between other entities outside of EDAM (for example artifacts semantically annotated by EDAM or another ontology)</p>
+
+<p><b>Rules</b> - There are simple <a href="#Rules">rules</a> dictating how 
+different types of concepts are related within EDAM.  They define which relations may be 
+specified for which concepts.  They reflect well established or 
+self-evident principles.</p>
+
+
+<br></br>
+<p id="Figure1" style="text-align:center"><img src="EDAMconcepts.png" alt="EDAM sub-ontologies" width="600"/></p>
+<p style="text-align:center"><b>Figure 1.</b> The EDAM architecture is intentionally simple. Boxes indicate top-level <a href="#Concepts">concepts</a> (sub-ontologies), and lines indicate <a href="#Relations">types of relations</a> that are maintained between concepts in EDAM.</p>
+
+
+
+
+<br/><h2><br/><a id="Download">Download and Status</a></h2>
+<p>Locations for download in OWL format:   </p>
+<p><a href="http://edamontology.org/EDAM.owl">http://edamontology.org/EDAM.owl</a> (Always points to the last stable version)</p>
+<p>Locations for download in OBO format:   </p>
+<p><a href="http://edamontology.org/EDAM.obo">http://edamontology.org/EDAM.obo</a> (Always points to the last stable version. OBO-format version lacks certain details.)</p>
+<p>All versions:   </p>
+<p><a href="http://sourceforge.net/projects/edamontology/files/">http://sourceforge.net/projects/edamontology/files/</a></p>
+
+
+
+<p><b>Version 1.3</b> of EDAM has been released . It uses the <a href="#Concepts">concepts</a>, <a href="#Relations">relations</a> and <a href="#Rules">rules</a> below<!-- and should adhere to the <a href="#s8">Guidelines for developers</a>-->. Contributions and suggestions are welcome.</p>
+
+<p>EDAM is being actively developed:</p>
+<ul>
+<li>Future versions should not be a fundamental departure from the 
+current sub-ontologies (top-level concepts), relations and hierarchy (<b>is a</b> relation).</li>
+<li>EDAM uses identifiers (URIs) to uniquely identify concepts.  EDAM 
+URIs will persist between versions: a given URI is guaranteed to identify 
+the same concept.  This does *not* imply names (terms), definitions and 
+other fields will remain constant, but they will remain true to concept.
+  </li>
+<li>Concepts that are made obsolete will also persist; they will not be removed and will maintain their URI.
+</li></ul>
+
+<p>For further information see the EDAM Wiki:</p>
+<p><a href="https://sourceforge.net/apps/mediawiki/edamontology/index.php?title=Main_Page">https://sourceforge.net/apps/mediawiki/edamontology/index.php?title=Main_Page</a></p>
+
+
+<p>See the EDAM presentation at the BioOntologies SIG, ISMB 2011:</p>
+<p><a href="http://bio-ontologies.knowledgeblog.org/224">http://bio-ontologies.knowledgeblog.org/224</a></p>
+
+
+<br/><h2><br/><a id="Viewing">Viewing</a></h2>
+<!--<p>EDAM is best viewed in the OBO Ontology Editor (OBOEdit) Version 2:</p>
+<p><a href="http://oboedit.org/">http://oboedit.org</a></p>
+
+<p>To load EDAM, select "File ... Load Ontologies". The most convenient 
+view is to have the "Ontology Tree Editor" (from "Editors" menu) and the
+ "Text Editor" (also from "Editors" menu) side by side. "Concepts" and 
+"Relation types" will appear in the "Ontology Tree Editor".</p>
+
+<p>The view is cleaner if you only show the <b>is a</b> relations.  To do this, select the small <kbd>f</kbd>
+ from the "Ontology Tree Editor" and then select "Show a single 
+relation..." and then "is_a".  Alternatively, you can select any 
+combination of EDAM-specific relation types to be displayed.</p>-->
+
+<p>EDAM is available in the following Web-based ontology browsers:
+</p><ul>
+<li><a href="http://bioportal.bioontology.org/ontologies/1498">NCBO Ontology Browser (BioPortal)</a></li>
+<li><a href="http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=EDAM">EBI Ontology Look-up Service (OLS)</a></li>
+<!--<li><a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+LibInfo+-lib+EDAM">EBI SRS server</a>
+</li>--></ul>
+
+
+
+
+
+<br/><h2><br id="Licence"/><a id="License">Licence</a></h2>
+<p>EDAM is made available for everyone to use, with the following constraints on its use or redistribution (including online access):</p>
+<ul>
+<li>EDAM and its authors are clearly acknowledged.</li>
+<li>EDAM files that are distributed or displayed online include the publication date and version number.</li>
+<li>Semantic annotations with EDAM that are distributed or displayed online use the global identifiers of EDAM concepts recommended by EDAM authors (for documentation, see <a href="#SAWSDL">EDAM URIs</a> and <a href="#AnnotationGuidelines">Annotation</a>).</li>
+<li>EDAM or its parts are not altered and subsequently redistributed or made publicly available under either its/their original or altered name(s), identifiers, or definitions, unless an exception is agreed with the authors of EDAM.</li>
+</ul>
+<p>The intellectual content of EDAM or of any of its parts cannot be included in other projects and artifacts unless agreed with the authors of EDAM.</p>
+
+
+
+
+
+<br/><h2><br/><a id="Publications">Publication</a></h2>
+<p>If you use EDAM or its parts, please reference:</p>
+<p>Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). <a href="http://bioinformatics.oxfordjournals.org/content/29/10/1325.full">EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats.</a> <i>Bioinformatics</i>, <b>29</b>, 1325-1332.<br/><small>doi: <a href="http://dx.doi.org/10.1093/bioinformatics/btt113">10.1093/bioinformatics/btt113</a>&#160;&#160; PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23479348">23479348</a></small></p>
+<p>This article is freely available (Open Access).</p>
+
+
+
+<br/><h2><br/><a id="Contact">Contact</a></h2>
+<p>All enquiries to Jon Ison (<a href="mailto:jison@ebi.ac.uk">jison@ebi.ac.uk</a>) CC'ing Mat&#250;&#353; Kala&#353; (<a href="mailto:matus.kalas@uib.no">matus.kalas@uib.no</a>)</p>
+<p>Thanks for valuable discussions and contributions to Peter Rice, Inge Jonassen, Dan Bolser, Rodrigo Lopez, Gert Vriend, James Malone, Steve Pettifer, Hamish McWilliam, Alan Bleasby, Mahmut Uludag, L&#225;szl&#243; Kaj&#225;n and others.</p>
+
+<br/><h2><br/><a id="MailingLists">Mailing lists</a></h2>
+<p>Feel free to subscribe to the mailing lists:</p>
+<ul>
+<li><a href="https://lists.sourceforge.net/lists/listinfo/edamontology-users">https://lists.sourceforge.net/lists/listinfo/edamontology-users</a></li>
+<li><a href="https://lists.sourceforge.net/lists/listinfo/edamontology-developers">https://lists.sourceforge.net/lists/listinfo/edamontology-developers</a></li>
+<li><a href="https://lists.sourceforge.net/lists/listinfo/edamontology-announce">https://lists.sourceforge.net/lists/listinfo/edamontology-announce</a></li>
+</ul>
+<p>Once subscribed, you can mail the user and developer lists:
+</p><ul>
+<li><a href="mailto:edamontology-users@lists.sourceforge.net">edamontology-users@lists.sourceforge.net</a></li>
+<li><a href="mailto:edamontology-developers@lists.sourceforge.net">edamontology-developers@lists.sourceforge.net</a>
+</li></ul>
+
+<p>edamontology-announce is for announcements (very minimal traffic!) <a href="mailto:edamontology-users@lists.sourceforge.net">edamontology-developers</a> is for technical discussions between EDAM developers / contributors. <a href="mailto:edamontology-developers@lists.sourceforge.net">edamontology-users</a> is for general discussions and announcements. </p>
+
+
+
+
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Concepts">Concepts</a></h1>
+
+
+
+<br/><h2><br/><a id="Operation">Operation</a></h2>
+<p><b>"A function or process performed by a tool; what is done, but not (typically) how or in what context."</b></p>
+<p> e.g. <i>"Sequence alignment"</i>, <i>"Pairwise sequence alignment"</i>, <i>"Sequence database search"</i>.</p>
+
+<p><i>"Operation"</i> concepts provide mostly fine-grained concepts for annotation of tool functions.</p>
+
+<p>The top-level concepts are:</p>
+<ul>
+<li><i>"Alignment"</i></li>
+<li><i>"Analysis and processing"</i></li>
+<li><i>"Annotation"</i></li>
+<li><i>"Classification"</i></li>
+<li><i>"Comparison"</i></li>
+<li><i>"Editing"</i></li>
+<li><i>"Mapping and assembly"</i></li>
+<li><i>"Modelling and simulation"</i></li>
+<li><i>"Optimisation and refinement"</i></li>
+<li><i>"Plotting and rendering"</i></li>
+<li><i>"Prediction, detection and recognition"</i></li>
+<li><i>"Search and retrieval"</i></li>
+<li><i>"Validation and standardisation"</i></li>
+</ul>
+
+<p>The top-level operations are necessarily coarse-grained (abstract) 
+providing a navigable top-level.  They serve as placeholders for other, 
+more specific concepts lower down in the tree.</p>
+
+
+<br/><h2><br/><a id="Data">Data</a></h2>
+<!-- CHECK definition -->
+
+<p><b>"A type of data in common use in bioinformatics."</b></p>
+<p>e.g. <i>"Sequence alignment"</i>,  <i>"Comparison matrix"</i>, <i>"Phylogenetic tree"</i> etc.</p>
+
+<p>Data concepts:</p>
+<ul>
+<li>Provide coarse and fine-grained concepts for annotating types of data</li>
+<li>Cover everything from primitive types and simple parameters, through to derived types and complex, bioinformatics datatypes</li>
+<li>Reflect but do not describe how the data is specified or represented (syntax)</li>
+<li>Can be somewhat (necessarily) overlapping</li>
+</ul>
+
+<p>The top-level concepts are:</p>
+<ul>
+<li><i>"Core data"</i></li>
+<li><i>"Identifier"</i></li>
+<li><i>"Parameter"</i></li>
+<li><i>"Report"</i></li>
+</ul>
+
+<p>Their meaning is:</p>
+<ul>
+<li><i>"Core data"</i> - Data that typically are the primary input or 
+output of a tool or which correspond to entries from the primary (e.g. 
+sequence or structural) biological databases.</li>
+<li><i>"Identifier"</i> - A short numerical or textual label that 
+identifies (typically uniquely) something such as data, a resource or a 
+biological entity.</li>
+<li><i>"Parameter"</i> - Typically a simple numerical or string value that controls the operation of a tool.</li>
+<li><i>"Report"</i> - A human-readable collection of information that is
+ distinct from primary (e.g. sequence or structural) biological data, 
+including free text, annotation about biological entities and phenomena,
+ computer-generated reports of analysis of primary data and metadata.</li>
+</ul>
+
+<p>Concepts within <i>"Core data"</i> are:</p>
+        <ul>
+        <li><i>"Alignment"</i></li>
+        <li><i>"Article"</i></li>
+        <li><i>"Biological model"</i></li>
+        <li><i>"Classification"</i></li>
+        <li><i>"Codon usage table"</i></li>
+        <li><i>"Data index"</i></li>
+        <li><i>"Data reference"</i></li>
+        <li><i>"Experimental measurement"</i></li>
+        <li><i>"Gene expression profile"</i></li>
+        <li><i>"Image"</i></li>
+        <li><i>"Map"</i></li>
+        <li><i>"Matrix"</i></li>
+        <li><i>"Microarray data"</i></li>
+        <li><i>"Molecular interaction"</i></li>
+        <li><i>"Molecular property"</i></li>
+        <li><i>"Ontology"</i></li>
+        <li><i>"Ontology concept"</i></li>
+        <li><i>"Pathway or network"</i></li>
+        <li><i>"Phylogenetic raw data"</i></li>
+        <li><i>"Phylogenetic tree"</i></li>
+        <li><i>"Reaction data"</i></li>
+        <li><i>"Schema"</i></li>
+        <li><i>"Secondary structure"</i></li>
+        <li><i>"Sequence"</i></li>
+        <li><i>"Sequence motif"</i></li>
+        <li><i>"Sequence profile"</i></li>
+        <li><i>"Structural (3D) profile"</i></li>
+        <li><i>"Structure"</i></li>
+        <li><i>"Workflow"</i></li>
+        </ul>
+
+
+
+
+
+<br/><h2><br/><a id="Topic">Topic</a></h2>
+<!-- CHECK definition -->
+
+<p><b>"A general bioinformatics subject or category, such as a field of study, data, processing, analysis or technology."</b></p>
+<p>e.g. <i>"Sequence analysis"</i>, <i>"Alignment"</i>, <i>"Sequencing"</i>, <i>"Microarrays"</i>.</p>
+<p><i>"Topic"</i> concepts provide coarse-grained categories for 
+annotation of diverse bioinformatics resources. They do not cover 
+biology or computer science exhaustively.</p>
+
+<p>The top-level concepts are:</p>
+<ul>
+<li><i>"Biological data resources"</i></li>
+<li><i>"Nucleic acid analysis"</i></li>
+<li><i>"Protein analysis"</i></li>
+<li><i>"Sequence analysis"</i></li>
+<li><i>"Structure analysis"</i></li>
+<li><i>"Phylogenetics"</i></li>
+<li><i>"Proteomics"</i></li>
+<li><i>"Data handling"</i></li>
+<li><i>"Chemoinformatics"</i></li>
+<li><i>"Transcriptomics"</i></li>
+<li><i>"Literature and reference"</i></li>
+<li><i>"Ontologies, nomenclature and classification"</i></li>
+<li><i>"Genetics"</i></li>
+<li><i>"Systems biology"</i></li>
+<li><i>"Ecoinformatics"</i></li>
+<li><i>"Genomics"</i></li>
+<li><i>"Immunoinformatics"</i></li>
+</ul>
+
+<br/><h2><br/><a id="Format">Format</a></h2>
+<p><b>"A specific layout for encoding a specific type of data in a computer file or memory."</b></p>
+<p>e.g. <i>"FASTA format"</i>,  <i>"PDB format"</i>, <i>"mmCIF"</i> etc.</p>
+
+<p><i>"Format"</i> concepts:</p>
+<ul>
+<li>Provide mostly fine-grained concepts for annotation of data formats / syntaxes.</li>
+<li>Formats are generally only listed if they are in common use, for example by public databases or multiple tools.</li>
+<li>Concept statements may include a reference (typically a URL) to the format specification proper.</li>
+</ul>
+
+<p>The top-level concepts are:</p>
+        <ul>
+        <li><i>"Binary format"</i></li>
+        <li><i>"Format (typed)"</i></li>
+        <li><i>"HTML"</i></li>
+        <li><i>"RDF"</i></li>
+        <li><i>"Textual format"</i></li>
+        <li><i>"XML"</i></li>
+        </ul>
+
+<p>All concepts are nested under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>, with exception of pure <i>"HTML"</i> or <i>"RDF"</i> (and <i>"BioPAX"</i>).  The <i>"Format (typed)"</i> branch arranges formats by type of data and provides an additional axis over (the same set of) concepts under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>. </p>
+
+
+<br/><h2><br/><a id="Identifier">Identifier</a></h2>
+<p><b>"A label that identifies (typically uniquely) something such as data, a resource or a biological entity."</b></p>
+<p>e.g. <i>"UniProt accession"</i>, <i>"EC number"</i>, <i>"Gene symbol"</i> etc.</p>
+
+<p><i>"Identifier"</i> concepts:</p>
+<ul>
+<li>Provide mostly fine-grained concepts for annotation of identifiers of data.</li>
+<li>Typically correspond to simple strings.</li>
+<li>Have concept definitions which may include a regular expression defining valid string values.</li>
+</ul>
+
+<p>The top-level concepts are:</p>
+        <ul>
+        <li><i>"Accession"</i></li>
+        <li><i>"Identifier (hybrid)"</i></li>
+        <li><i>"Identifier (typed)"</i></li>
+        <li><i>"Identifier with metadata"</i></li>
+        <li><i>"Name"</i></li>
+        </ul>
+
+<p>As for <i>"Format"</i>, the <i>"Identifier (typed)"</i> branch provides an additional axis over (the same set of) concepts under <i>"Accession"</i> and <i>"Name"</i>.</p>
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Relations">Relations</a></h1>
+
+<br/><h2><br/><a id="is_a"><b>is a</b></a></h2>
+<p>Defines a concept as a specialisation of another concept. If A <b>is a</b> B, then A is a specialisation
+of B, and B is a generalisation of A.</p>
+<p>The <b>is a</b> relation is transitive: if A <b>is a</b> B and B <b>is a</b> C then A <b>is a</b> C.</p>
+<p>All relations are transitive over <b>is a</b>: <i>e.g.</i> if A <b>has input</b> B and B <b>is a</b> C then A <b>has input</b> C, and if A <b>is a</b> B and B <b>has input</b> C then A <b>has input</b> C.</p>
+
+<p>e.g. <i>"Pairwise sequence alignment"</i> <b>is a</b> <i>"Sequence alignment"</i></p>
+
+
+
+<br/><h2><br/><a id="has_input"><b>has input</b></a></h2>
+<p>Defines an <i>"Operation"</i> concept as reading (inputting) a <i>"Data"</i> concept.</p>
+<p>e.g. <i>"Sequence alignment construction"</i> <b>has input</b> <i>"Sequence"</i></p>
+
+
+<br/><h2><br/><a id="has_output"><b>has output</b></a></h2>
+<p>Defines an <i>"Operation"</i> concept as writing (outputting) a <i>"Data"</i> concept.</p>
+<p>e.g. <i>"Sequence alignment construction"</i> <b>has output</b> <i>"Sequence alignment"</i></p>
+
+
+<br/><h2><br/><a id="has_topic"><b>has topic</b></a></h2>
+<p>Defines a <i>"Data"</i> or <i>"Operation"</i> concept as being within the scope of a <i>"Topic"</i> concept.</p>
+<p>e.g. <i>"PolyA signal identification"</i> <b>has topic</b> <i>"Nucleic acid sequence analysis"</i></p>
+
+
+<br/><h2><br/><a id="is_identifier_of"><b>is identifier of</b></a></h2>
+<p>Defines that an <i>"Identifier"</i> concept identifies a <i>"Data"</i> concept.</p>
+<p>e.g. <i>"Sequence accession number"</i> <b>is identifier of</b> <i>"Sequence"</i></p>
+
+
+
+<br/><h2><br/><a id="is_format_of"><b>is format of</b></a></h2>
+<p>Defines that a <i>"Format"</i> concept is the format of a <i>"Data"</i> concept.</p>
+<p>e.g. <i>"Sequence format"</i> <b>is format of</b> <i>"Sequence record"</i></p>
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Rules">Rules</a></h1>
+<p>Rules define how concepts are related.</p>
+
+<br/><h2><br/><a id="RulesByConcept">Rules by concept type</a></h2>
+<h3>"Topic"</h3>
+<ul>
+<li><i>"Topic"</i> <b>is a</b> <i>"Topic"</i>
+        <p>... a specialisation of a topic.</p></li>
+</ul>
+
+
+
+<h3>"Operation"</h3>
+<ul>
+<li><i>"Operation"</i> <b>is a</b> <i>"Operation"</i>
+        <p>... a specialisation of an operation.</p></li>
+<li><i>"Operation"</i> <b>has input</b> <i>"Data"</i>
+        <p>... inputs a type of data.</p></li>
+<li><i>"Operation"</i> <b>has output</b> <i>"Data"</i>
+        <p>... outputs a type of data.</p></li>
+<li><i>"Operation"</i> <b>has topic</b> <i>"Topic"</i>
+        <p>... within a topic.</p></li>
+</ul>
+
+
+
+
+<h3>"Data"</h3>
+<ul>
+<li><i>"Data"</i> <b>is a</b> <i>"Data"</i>
+        <p>... a specialisation of a type of data.</p></li>
+<li><i>"Data"</i> <b>has topic</b> <i>"Topic"</i>
+        <p>... within a topic.</p></li>
+</ul>
+
+
+
+
+<h3>"Format"</h3>
+<ul>
+<li><i>"Format"</i> <b>is a</b> <i>"Format"</i>
+        <p>... a specialisation of a data format.</p></li>
+<li><i>"Format"</i> <b>is format of</b> <i>"Data"</i>
+        <p>... a format specification of a datatype.</p></li>
+</ul>
+
+
+
+
+
+<h3>"Identifier"</h3>
+<ul>
+<li><i>"Identifier"</i> <b>is identifier of</b> <i>"Data"</i>
+        <p>... identifier of a datatype.</p></li>
+</ul>
+
+
+
+
+<br/><h2><br/><a id="RulesByRelation">Rules by relation type</a></h2>
+
+<h3>is a</h3>
+<ul>
+<li><i>"Topic"</i> <b>is a</b> <i>"Topic"</i></li>
+<li><i>"Operation"</i> <b>is a</b> <i>"Operation"</i></li>
+<li><i>"Data"</i> <b>is a</b> <i>"Data"</i>
+</li><li><i>"Format"</i> <b>is a</b> <i>"Format"</i>
+</li><!--<li><i>"Identifier"</i> <b>is a</b> <i>"Identifier"</i>
+</li>--></ul>
+
+
+
+
+
+<h3>has input</h3>
+<ul>
+<li><i>"Operation"</i> <b>has input</b> <i>"Data"</i>
+</li></ul>
+
+
+<h3>has output</h3>
+<ul>
+<li><i>"Operation"</i> <b>has output</b> <i>"Data"</i>
+</li></ul>
+
+<h3>has topic</h3>
+<ul>
+<li><i>"Operation"</i> <b>has topic</b> <i>"Topic"</i></li>
+<li><i>"Data"</i> <b>has topic</b> <i>"Topic"</i>
+</li></ul>
+
+
+
+<h3>is identifier of</h3>
+<ul>
+<li><i>"Identifier"</i> <b>is identifier of</b> <i>"Data"</i></li>
+</ul>
+
+<h3>is format of</h3>
+<ul>
+<li><i>"Format"</i> <b>is format of</b> <i>"Data"</i>
+</li></ul>
+
+
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Sources">Sources</a></h1>
+<!--<br/><h2><br/><a id="s3.1">Current version</a></h2>-->
+
+<p>Various resources were analysed while constructing EDAM and were used as sources listing common bioinformatics concepts in scope.</p>
+
+<h3>Web services and applications</h3>
+<ul>
+<li><a href="http://www.embraceregistry.net/">EMBRACE Web service registry</a> now incorporated into the <a href="http://www.biocatalogue.org/">BioCatalogue</a></li>
+<li><a href="http://www.ebi.ac.uk/Tools/webservices/">EBI Web services</a></li>
+<li>EBI databases and retrievable fields known to the <a href="http://www.ebi.ac.uk/Tools/webservices/services/eb-eye#methods_documentation">EB-eye Web service</a></li>
+<li><a href="http://emboss.sourceforge.net/">EMBOSS</a> including EMBASSY packages (&#62;200 applications)</li>
+<li>WHAT-IF <a href="http://www.cmbi.ru.nl/wiwsd/rest/PDBasXML/id/1crn">data</a> and <a href="http://www.cmbi.ru.nl/wiwsd/wsdl">services</a> (see also <a href="http://www.cmbi.ru.nl/wiwsd/help">WHAT-IF help</a>)</li>
+<li><a href="http://ws.bioinfo.cnio.es/iHOP/">iHOP Web services</a></li>
+<li><a href="http://www.cbs.dtu.dk/ws/doc/">Web services</a> provided by CBS at the Danish Technical University</li>
+<!--<li><a href="http://gbio-pbil.ibcp.fr/Tools/">Cloud Web services</a> from IBCP (Lyon)</li>
+<li><a href="http://bibiserv.techfak.uni-bielefeld.de/biodomws/webservice.html">BiBiServ services</a> from Bielefeld University (Germany).</li>-->
+<li>Lists of tools from the Web</li>
+</ul>
+
+
+<h3>Domain ontologies, taxonomies, data models</h3>
+<ul>
+<li><a href="http://www.mygrid.org.uk/tools/service-management/mygrid-ontology/">myGrid ontology</a></li>
+<li><a href="http://sswap.info/proxies/NAR/databases/ontology/">NAR Databases</a></li>
+<li><a href="http://sswap.info/proxies/NAR/webservers/">NAR Web servers</a></li>
+<li><a href="http://sswapmeet.sswap.info/sequence/">Sequence (sequence-related concepts)</a></li>
+<li><a href="http://sswapmeet.sswap.info/sequenceServices/">Sequence service (sequence service concepts)</a></li>
+<li><a href="http://moby.ucalgary.ca/RESOURCES/MOBY-S/Objects">BioMoby Object Ontology (datatypes)</a></li>
+<li><a href="http://moby.ucalgary.ca/RESOURCES/MOBY-S/Namespaces">BioMoby Namespace Ontology (namespaces)</a></li>
+<li><a href="http://moby.ucalgary.ca/RESOURCES/MOBY-S/Services">BioMoby service types (analysis types)</a></li>
+</ul>
+
+<h3>For database-related concepts</h3>
+<ol>
+<li><a href="http://www.uniprot.org/docs/dbxref">dbxref.txt</a> (databases cross-referenced in UniProtKB/Swiss-Prot)</li>
+<li>List of databases collated by the <a href="http://www.elixir-europe.org/page.php?page=home">ELIXIR project</a></li>
+<li>Lists of databases from the Web
+</li>
+</ol>
+
+
+<h3>Other resources</h3>
+<ul>
+<li>The <a href="http://bioxsd.org/">BioXSD</a> XML Schema of basic bioinformatics data types</li>
+<li><a href="http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MI">MI (molecular interactions)</a></li><li><a href="http://www.ebi.ac.uk/miriam/main/">MIRIAM Resources</a></li>
+<li><a href="http://bio2rdf.org/">bio2rdf</a></li>
+<li>The EMBOSS data resource catalogue (DRCAT)</li>
+</ul>
+
+
+
+
+
+<!--
+<br/><h2><br/><a id="s3.2">Future version</a></h2>
+<p>Other resources will be considered in future versions. See:</p>
+<ul><li><a href="https://sourceforge.net/apps/mediawiki/edamontology/index.php?title=Main_Page">https://sourceforge.net/apps/mediawiki/edamontology/index.php?title=Main_Page</a></li></ul>-->
+
+
+
+<!--<br/><hr/><br/><h1 style="text-align:center"><a id="s4">OBO-format [Term] structure</a></h1>
+<p>An OBO concept statement consists of:</p>
+<ul>
+<li>Unique identifier </li>
+<li>Name</li>
+<li>Namespace nad subsets</li>
+<li>Definition</li>
+<li>Comment (optional)</li>
+<li>Synonym(s) (optional)</li>
+<li>Cross-reference(s) (optional)</li>
+<li>Relations to other concepts
+</li>
+</ul>
+
+<p>For example:</p>
+<pre>[Term]
+id: EDAM_data:0970
+name: Bibliographic reference
+namespace: data
+subset: data
+def: "Bibliographic data that uniquely identifies a scientific article, book or other published material." [http://edamontology.org]
+comment: A bibliographic reference might include information such as authors, title, journal name, date and (possibly) a link to the abstract or full-text of the article if availabile.
+synonym: "Reference" EXACT [http://edamontology.org]
+synonym: "Citation" EXACT [http://edamontology.org]
+xref: Moby:GCP_SimpleCitation
+xref: Moby:Publication
+is_a: EDAM_data:2857 ! Article metadata
+is_a: EDAM_data:2093 ! Data reference
+
+[Term]
+id: EDAM_operation:0292
+name: Sequence alignment
+namespace: operation
+def: "Align (identify equivalent sites within) molecular sequences." [http://edamontology.org]
+synonym: "Sequence alignment generation" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2463 ! Sequence alignment processing
+is_a: EDAM_operation:2451 ! Sequence comparison
+is_a: EDAM_operation:2928 ! Alignment
+relationship: has_input EDAM_data:2044 {min:cardinality=2} ! Sequence
+relationship: has_output EDAM_data:0863 {min:cardinality=1 ! Sequence alignment}
+relationship: has_topic EDAM_data:0182 ! Sequence alignment
+</pre>
+
+<h3>Unique identifier (ID)</h3>
+<p>This 4 digit number uniquely identifies an EDAM concept.  IDs persist between EDAM versions.</p>
+
+<h3>Name</h3>
+<p>There are <a href="#Rules">rules</a> for naming concepts.</p>
+
+<h3>Namespace</h3> 
+<p>This is one of:</p>
+<ul>
+<li>topic</li>
+<li>operation</li>
+<li>data</li>
+<li>format</li>
+<li>identifier</li>
+</ul>
+
+<p>The namespace and subsets define concept's sub-ontologies.</p>
+
+
+<h3>Definition</h3> 
+<p>There are <a href="#Rules">rules</a> for defining concepts.</p>
+
+<h3>Comment</h3> 
+<p>The comment is optional and (typically) clarifies the definition.</p>
+
+<h3>Synonyms</h3> 
+<p>These include related phrases, alternative spellings and true synonyms.</p>
+
+<h3>Cross references</h3> 
+--><!--<p>The following resources are cross-referenced (example in parentheses):</p>
+
+<ul>
+<li>WHAT-IF operations (<code>xref: WHATIF: CorrectedPDBasXML</code>)</li>
+<li>Abbreviations used for database cross-references (<code>xref: http://www.geneontology.org/doc/GO.xrf_abbs: FB</code>)</li>
+<li>BioMoby datatypes (<code>xref: Moby:GI_Gene</code>)</li>
+<li>BioMoby namespaces (<code>xref: Moby_namespace:iHOPorganism</code>)</li>
+<li>Sequence Ontology concepts (<code>xref: SO:0000348</code>)
+</li></ul>--><!--
+
+<h3>Relations</h3> 
+<p>Several types of <a href="#Relations">relations</a> are defined.  They are:</p>
+<ol>
+<li>Defined between pairs of concepts</li>
+<li>Directional</li>
+<li>Transitive (propagated from child to parent concepts), e.g. if A <b>is a</b> B <b>is a</b> C we can infer A <b>is a</b> C.</li>
+</ol>
+
+<p><b>has input</b> and <b>has output</b> relations include a statement on the cardinality of the data that is read or written
+</p><ul>
+<li><kbd>{min:cardinality=0}</kbd> (at least 1)
+</li><li><kbd>{cardinality=1}</kbd>  (exactly 1)
+</li><li>etc.
+</li></ul>
+
+<h3>Obsolete concepts</h3> 
+<p>Obsolete concepts use these fields:</p>
+<ul>
+<li><b>is obsolete:</b> - specifies whether a concept is obsolete</li>
+<li><b>replaced_by:</b> - a concept which replaces an obsolete concept</li>
+<li><b>consider:</b> - specifies an alternative for an obsolete concept
+</li></ul>
+
+
+--><!-- CHECK --><!--
+<h3>EDAM-specific fields</h3> 
+<p>These include:</p>
+<ul>
+<li><b>regex:</b> - regular expressions for validating instances of <i>identifier</i> concepts</li>
+<li><b>example:</b> - examples of a valid <i>identifier</i> instances</li>
+</ul>
+
+
+
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="s8">Guidelines for developers</a></h1><a id="s8"></a>
+<p><a id="s8">Contributions are welcome and should adhere to the guidelines below. Please email Jon Ison (</a><a href="mailto:jison@ebi.ac.uk">jison@ebi.ac.uk</a>) for help.</p>
+
+<br/><h2><br/><a id="s8.1">Adding concepts</a></h2>
+<p>Concepts may be added if:</p>
+<ol>
+<li>They are within <a href="#Scope">scope</a> (with some exceptions).</li>
+<li>They are well established and in common use</li>
+<li>They are general, e.g. re-used in multiple contexts, and not overly specialised.</li>
+</ol>
+
+<p>Concepts should:
+</p><ol>
+<li>Have at least one unique intrinsic property as reflected in the concept
+ definition and relations.  Concepts must be distinct from each 
+other!  Phrases describing essentially the same thing are handled using <b>synonym:</b> (see <a href="#s4.2">OBO-format [Term] structure</a>).</li>
+<li>Correspond to common concepts, not anybody's concrete artifacts.  Concepts typically have a single <b>is a</b> (generalisation) relation <i>or</i> (in some cases) more than one.</li>
+<li>Be correctly assigned.  Concepts should not use <b>is a</b> when what is really meant is <b>is part of</b>
+ (a common mistake).  Concepts for conceptual parts should be located 
+appropriately - not necessarily with the same parent!  Note EDAM does 
+not currently use <b>has part</b> / <b>is part of</b> relations.</li>
+<li>Be correctly constituted.  EDAM should not erroneously place into 
+one generalisation-specialisation hierarchy concepts of a fundamentally different nature (e.g. physical 
+entity, tool operation and database) which in EDAM are kept separate.</li>
+<li>Have all appropriate <a href="#Relations">relations</a> specified. (From those that are explicitly maintained in EDAM)</li>
+<li>Be well named and defined (see below).</li>
+</ol>
+
+<br/><h2><br/><a id="s8.2">Terms</a></h2>
+<p>Terms (concept names and their synonyms) should:</p>
+<ol>
+<li>Be unique within a namespace (the same name may be reused in different namespaces, although this is not recommended) </li>
+<li>Reflect their definition: the meaning of a concept should be reasonably obvious from its name</li>
+<li>Follow the patterns in use, particularly for naming parent / child concepts</li>
+<li>Be short and simple</li>
+</ol>
+
+<br/><h2><br/><a id="s8.3">Definitions</a></h2>
+<p>Concept definitions should:</p>
+<ol>
+<li>Describe at least one unique intrinsic property</li>
+<li>Be clear and simple, avoiding jargon and obscure acronyms</li>
+<li>Informative</li>
+<li>Unambiguous, avoiding words (e.g. "can", "may", "should") that introduce modality or ambiguity</li>
+<li>Short (the <b>comment:</b> field is used for extended comments)</li>
+</ol>
+
+
+<br/><h2><br/><a id="s8.4">Principles</a></h2>
+<p>Principles that guide developments include:</p>
+<ul>
+<li><b>Clear scope</b> - Bioinformatics concepts structured into 4 major sub-ontologies with clearly defined content.</li>
+<li><b>General purpose</b> - Common concepts that are re-used in 
+multiple contexts; avoiding fine-grained, specialised concepts.  Broadly
+ applicable, not bound to any specific application or specialised 
+software infrastructure.</li>
+<li><b>Complementary</b> - Not duplicating established ontologies. 
+Existing ontologies are cross-referenced to define where the use of EDAM
+ ends and another ontology begins.</li>
+<li><b>Use-case driven</b> - Relevant and applicable to annotation of current Web services, tools, Web portals, databases, data schemas, etc.</li>
+<li><b>Intuitive</b> - Simple and self-evident conceptual model with a minimal number of basic types of concepts and relations.</li>
+<li><b>Navigable</b> - Simple concept hierarchy (<i>is a</i> relations) with branches that are not excessively broad (with the exception of formats listed under 'Textual format') or too deep.</li>
+<li><b>Comprehensive</b> - Enough concepts to be useful and cover known and likely use cases.</li>
+<li><b>Integrity</b> - Ontological 'sanity': Genuine generalisation/specialisation (<i>is a</i>)
+ relations. Concepts share the properties of their parent(s) whilst 
+having unique properties. Respect for common sense and for  'upper level' ontologies by not 
+erroneously grouping together concepts of a fundamentally different 
+nature. Notions of <i>is a</i> and <i>is part of</i> are not conflated.</li>
+<li><b>Comprehensible</b> - Short, meaningful concept names. Conventions 
+mandate the consistent use of certain words and phrases and (where 
+possible) parent-child relations are self-evident from the names.</li>
+<li><b>Informative</b> - Terse but informative concept definitions describe
+ at least one unique intrinsic property. Clear and simple definitions, 
+avoiding jargon and ambiguities.</li>
+<li><b>Flexible</b> - Synonyms, including related phrases, alternative spellings and true synonyms are defined.</li>
+</ul>
+
+
+<br/><h2><br/><a id="s8.5">Limitations</a></h2>
+<p>EDAM is/does not:</p>
+<ul>
+<li>Describe syntax or file formats in detail (concepts in the <i>format</i> sub-ontology may include a reference to syntax definitions)</li>
+<li>Define data structures (e.g. <b>has part</b> is not used)</li>
+<li>Include concepts for every conceptual part of things. For example, as a
+ rule (with exceptions) a data concept is only listed if it known to be 
+in common use</li>
+<li>A complete logical theory of bioinformatics. Many features of the domain 
+that could theoretically be expressed, e.g. in OWL format, are not modelled.</li>
+<li>A way (in itself) to identify or unify all services and data (but it might help).</li>
+<li>Complete (and arguably never can be).</li>
+</ul>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="AnnotationGuidelines">Guidelines for annotators</a></h1>
+<p>Annotators may email Jon Ison (<a href="mailto:jison@ebi.ac.uk">jison@ebi.ac.uk</a>) and Mat&#250;&#353; Kala&#353; (<a href="mailto:matus.kalas@bccs.uib.no">matus.kalas@bccs.uib.no</a>) for help.</p>
+
+<br/><h2><br/><a id="GeneralAnnotationGuidelines">General guidelines</a></h2>
+
+<h3><a id="GeneralAnnotationGuidelines_subontology">Which EDAM sub-ontology to use?</a></h3>
+<ol>
+<li><i>"Topic"</i> for coarse-grained annotation of diverse entities</li>
+<li><i>"Operation"</i> for fine-grained annotation of tool functions</li>
+<li><i>"Data"</i> for annotation of data in semantic terms</li>
+<li><i>"Format"</i> for annotation of the syntax or format of data</li>
+<li><i>"Identifier"</i> (as a special type of <i>"Data"</i>) for annotation of identifiers (names and accessions) of data or other entities</li>
+</ol>
+
+
+
+
+<h3><a id="GeneralAnnotationGuidelines_otherOntologies">Use of other ontologies</a></h3>
+<p>The expectation is for EDAM to be used alongside other ontologies for
+ annotation where possible and desirable.  For example, an operation 
+that predicts specific features of a molecular sequence could be 
+annotated with concepts from SO (Sequence Ontology) for the features.<!-- Look 
+at the <b>seealso:</b> fields (see <a href="#s4">OBO-format [Term] structure</a>) in the OBO file for clues as to what ontologies to use.--></p>
+
+
+
+
+
+
+<h3><a id="GeneralAnnotationGuidelines_concepts">Picking concepts</a></h3>
+<p>If you have many annotations to do, it will help to familiarise yourself with EDAM first using a browser (see <a href="#Viewing">Viewing</a>).</p>
+
+<ol>
+<li>Identify the correct sub-ontology (<i>"Operation"</i>, <i>"Data"</i> etc.) of concepts considering what is being annotated (see above)</li>
+<li>Search EDAM using keywords to find candidate concepts.  Multiple 
+searches using synonyms, alternative spellings and so are preferable.</li>
+<li>Pick the most specific concept(s) available, bearing in mind some concepts are necessarily overlapping or general. </li>
+<li>Only pick a correct concept.  If it doesn't exist, request it's added to EDAM</li>
+</ol>
+
+
+
+
+
+<!--<br/><h2><br/><a id="s9.3">Example: Picking concepts for sequence data</a></h2>
+
+<h3><a id="s9.3.0">Raw sequences and records</a></h3>
+<p>When annotating sequences, the following concept (or its children) may be used:</p>
+<pre>[Term]
+id: EDAM_data:2044
+name: Sequence
+namespace: data
+def: "One or more molecular sequences, possibly with associated annotation." [http://edamontology.org]
+comment: This concept is a placeholder of concepts for primary sequence data including raw sequences and sequence records.  It should not normally be used for derivatives such as sequence alignments, motifs or profiles.
+is_a: EDAM_data:2925 ! Sequence data
+relationship: has_topic EDAM_topic:0080 ! Sequence
+</pre>
+
+<p>Children of <i>"Sequence"</i> include:
+</p><pre>Data:Sequence data:Sequence:Nucleic acid sequence
+Data:Sequence data:Sequence:Protein sequence
+Data:Sequence data:Sequence:Raw sequence
+Data:Sequence data:Sequence:Sequence record
+</pre>
+
+<p>They are defined as follows:
+</p><pre>[Term]
+id: EDAM_data:2977
+name: Nucleic acid sequence
+namespace: data
+def: "One or more nucleic acid sequences, possibly with associated annotation." [http://edamontology.org]
+is_a: EDAM_data:2044 ! Sequence
+is_a: EDAM_data:2525 ! Nucleic acid data
+
+[Term]
+id: EDAM_data:2976
+name: Protein sequence
+namespace: data
+def: "One or more protein sequences, possibly with associated annotation." [http://edamontology.org]
+is_a: EDAM_data:2044 ! Sequence
+is_a: EDAM_data:2524 ! Protein data
+
+[Term]
+id: EDAM_data:0848
+name: Raw sequence
+namespace: data
+def: "A raw molecular sequence (string of characters) which might include ambiguity, unknown positions and non-sequence characters." [http://edamontology.org]
+comment: Non-sequence characters may be used for example for gaps and translation stop.
+is_a: EDAM_data:2044 ! Sequence
+
+[Term]
+id: EDAM_data:0849
+name: Sequence record
+namespace: data
+def: "A molecular sequence and associated metadata." [http://edamontology.org]
+is_a: EDAM_data:2044 ! Sequence
+</pre>
+
+<p>Depending on how a tool is configured, one of the above concepts (or its children) should be used.  Note that <i>"Nucleic acid sequence"</i> and <i>"Protein sequence"</i> provide additional axes over the same set of concepts under <i>"Raw sequence"</i> and <i>"Sequence record"</i>, e.g.:
+
+</p><pre>Data:Sequence data:Sequence:Nucleic acid sequence:Raw sequence (nucleic acid)
+Data:Sequence data:Sequence:Nucleic acid sequence:Sequence record (nucleic acid)
+</pre>
+
+<p>If the format (character encoding) of a raw sequence must be annotated, then use the following concept (or its children) from the <i>"Format"</i> sub-ontology:</p>
+<pre>[Term]
+id: EDAM_format:2571
+name: Raw sequence format
+namespace: format
+def: "Format of a raw molecular sequence (i.e. the alphabet used)." [http://edamontology.org]
+comment: See OBO file for URL of format specification. {url=}
+is_a: EDAM_format:2350 ! Format (typed)
+relationship: is_format_of EDAM_data:0848 ! Raw sequence
+</pre>
+
+<p>Children of <i>"Raw sequence format"</i> include:</p>
+<pre>Format:Format (typed):Raw sequence format:nucleotide
+Format:Format (typed):Raw sequence format:protein
+Format:Format (typed):Raw sequence format:pure
+etc.
+</pre>
+
+
+
+
+<h3><a id="s9.3.2">Sequence annotation</a></h3>
+<p>When annotating sequence annotation, such as sequence features, 
+reports or metadata, the following concept (or children) may be used:</p>
+
+<pre>[Term]
+id: EDAM_data:2955
+name: Sequence report
+namespace: data
+def: "An informative report derived from molecular sequence analysis, including annotation on positional features (such as a feature table) or non-positional properties, and reports of general information (metadata)." [http://edamontology.org]
+synonym: "Sequence-derived report" EXACT [http://edamontology.org]
+is_a: EDAM_data:2018 ! Metadata and annotation
+is_a: EDAM_data:2925 ! Sequence data
+</pre>
+
+<p>Children of <i>"Sequence report"</i> include:</p>
+<pre>Data:Sequence data:Sequence report:Feature record
+Data:Sequence data:Sequence report:Sequence property
+Data:Sequence data:Sequence report:Sequence image or plot
+</pre>
+
+<p>They are defined as follows:</p>
+<pre>[Term]
+id: EDAM_data:1255
+name: Features record
+namespace: data
+def: "Annotation of positional features of molecular sequence(s), i.e. that can be mapped to position(s) in the sequence." [http://edamontology.org]
+is_a: EDAM_data:2955 ! Sequence report
+
+[Term]
+id: EDAM_data:1254
+name: Sequence property
+namespace: data
+def: "An informative report about non-positional sequence features, typically a report on general molecular sequence properties derived from sequence analysis." [http://edamontology.org]
+synonym: "Sequence properties report" EXACT [http://edamontology.org]
+is_a: EDAM_data:2955 ! Sequence report
+
+[Term]
+id: EDAM_data:2969
+name: Sequence image or plot
+namespace: data
+def: "Image of a molecular sequence, possibly with sequence features or properties shown." [http://edamontology.org]
+is_a: EDAM_data:2968 ! Image or plot
+is_a: EDAM_data:2955 ! Sequence report
+</pre>
+
+<p><i>"Feature record"</i> (or children) should be used for positional features and <i>"Sequence property"</i> (or children) for non-positional properties.  <i>"Sequence image or plot"</i> provides an alternative axis over the same set of concepts nested under <i>"Feature record"</i> and <i>"Sequence property"</i>.</p>
+
+
+<p>Children of "Feature record" include:</p>
+<pre>Data:Sequence data:Sequence report:Sequence features:Feature table
+Data:Sequence data:Sequence report:Sequence features:General sequence features
+Data:Sequence data:Sequence report:Sequence features:Nucleic acid features
+Data:Sequence data:Sequence report:Sequence features:Protein features
+</pre>
+
+<p>Data corresponding to a standard feature table may be annotated with <i>"Feature table"</i>
+ (or children).  The other concepts (and children) may be used for 
+everything else (for example, sequence analysis tools that report in 
+non-standard report formats.</p>
+
+
+
+
+<h3><a id="s9.3.1">Sequence sets</a></h3>
+<p>Sets of sequences which correspond to database entry records or lists
+ of raw sequences should be annotated as above; using one (or children) 
+of:</p>
+<pre>Data:Sequence data:Sequence:Sequence record
+Data:Sequence data:Sequence:Raw sequence
+</pre>
+
+<p>Sets of sequences which do not correspond to database entry records or lists of raw sequences should use <i>"Sequence set"</i> (or children):</p>
+<pre>[Term]
+id: EDAM_data:0850
+name: Sequence set
+namespace: data
+def: "A collection of multiple molecular sequences and associated metadata that do not (typically) correspond to molecular sequence database records or entries." [http://edamontology.org]
+comment: This concept may be used for arbitrary sequence sets and associated data arising from processing.
+is_a: EDAM_data:2955 ! Sequence report
+</pre>
+
+
+<p>Children of <i>"Sequence set"</i> include:</p>
+<pre>Data:Sequence data:Sequence report:Sequence set:Sequence cluster
+Data:Sequence data:Sequence report:Sequence set:Sequence set (bootstrapped)
+Data:Sequence data:Sequence report:Sequence set:Sequence set (nucleic acid)
+Data:Sequence data:Sequence report:Sequence set:Sequence set (protein)
+</pre>
+
+
+<p>For example:</p>
+<pre>[Term]
+id: EDAM_data:1238
+name: Proteolytic digest
+namespace: data
+def: "A protein sequence cleaved into peptide fragments (by enzymatic or chemical cleavage) with fragment masses." [http://edamontology.org]
+is_a: EDAM_data:1233 ! Sequence set (protein)
+</pre>
+
+
+
+
+
+
+
+<br/><h2><br/><a id="s9.6">Annotation of data identifiers</a></h2>
+<p>EDAM models identifiers of data (such as sequence accession numbers) separately (in the <i>"identifier"</i> branch) to data proper (in the <i>"data"</i> branch).</p>
+
+<p>When annotating identifiers of data which are the inputs or outputs 
+of tools, then use the following concept (or its children) from the <i>"Data"</i> sub-ontology:</p>
+<pre>[Term]
+id: EDAM_data:2860
+name: Identifier
+def: "A short numerical or textual label that identifies a thing." [http://edamontology.org]
+is_a: EDAM_data:2926 ! Identifier data
+</pre>
+
+<p>Children of <i>"Identifier</i>" include:</p>
+
+<pre>[Term]
+id: EDAM_data:2861
+name: ID
+def: "A short string value or number that is an identifier of a thing, typically an object (entry) from a database." [http://edamontology.org]
+comment: Identifiers typically are enumerated string (a string with one of a limited set of values) or are strings that are conformant to a regular expression. An ID is not necessarily stable or persistent over time, for example between different versions of a database.  See OBO file for regular expression.
+is_a: EDAM_data:2860 ! Identifier
+
+[Term]
+id: EDAM_data:2862
+name: Accession
+def: "A persistent (stable) and unique identifier, typically identifying an object (entry) from a database." [http://edamontology.org]
+is_a: EDAM_data:2861 ! ID
+
+[Term]
+id: EDAM_data:2863
+name: Name
+def: "A name of a thing, which need not necessarily uniquely identify it." [http://edamontology.org]
+is_a: EDAM_data:2860 ! Identifier
+</pre>
+
+
+<p>For most intents and purposes one of the above annotations will 
+suffice.  If, however, the precise nature of the identifier is required 
+(as might be the case, for example, when annotating a catalogue of data 
+identifiers), then use concepts under the <i>"Identifier"</i> subontology.  In the case of sequences:</p>
+
+<pre>[Term]
+id: EDAM_data:1063
+name: Sequence identifier
+namespace: identifier
+def: "An identifier of molecular sequence(s) or entries from a molecular sequence database." [http://edamontology.org]
+is_a: EDAM_data:0976 ! Identifier (typed)
+relationship: is_identifier_of EDAM_data:2044 ! Sequence
+</pre>
+
+<p>Children of <i>"Sequence identifier"</i> include:</p>
+<pre>Identifier:Identifier (typed):Sequence identifier:Sequence accession
+Identifier:Identifier (typed):Sequence identifier:Sequence name
+</pre>
+
+<p>Drilling down to as fine detail as required, e.g.:</p>
+<pre>Identifier:Identifier (typed):Sequence identifier:Sequence accession:Sequence accession (protein)
+Identifier:Identifier (typed):Sequence identifier:Sequence accession:Sequence accession (protein):UniProt ID
+Identifier:Identifier (typed):Sequence identifier:Sequence accession:Sequence accession (protein):UniProt ID:UniProt accession
+Identifier:Identifier (typed):Sequence identifier:Sequence accession:Sequence accession (protein):UniProt ID:UniProt accession:TREMBL accession
+</pre>-->
+
+
+
+
+
+
+
+
+
+
+<br/><h2><br/><a id="WebServiceAnnotationGuidelines">Annotation of Web services</a></h2>
+
+<h3><a id="WebServiceAnnotationGuidelines_model">Model of a Web service</a></h3>
+<p>A Web service is considered as an arbitrary (but usually 
+related) set of one or more operations, reducing the problem of Web service 
+interoperation to one of compatibility between operations.</p>
+
+<p><b>Operation</b></p>
+<ul>
+<li>Discrete unit of functionality performing (typically) one or more definite functions</li>
+<li>Reads an input</li>
+<li>Writes an output </li>
+<li>Uses zero or more data resources</li>
+</ul>
+
+<p><b>Input</b></p>
+<ul>
+<li>Payload (e.g. of SOAP message) passed in operation call</li>
+<li>Name and (ideally) description is given (e.g. in WSDL file)</li>
+<li>Input has one or XML elements which must be set (input values)</li>
+</ul>
+
+<p><b>Output</b></p>
+<ul>
+<li>Payload (e.g. of SOAP message) returned from operation call</li>
+<li>Name and (ideally) description is given (e.g. in WSDL file)</li>
+<li>Output has one or XML elements which are written (output values)</li>
+</ul>
+
+<p><b>XML elements</b></p>
+<ul>
+<li>Correspond to the inputs (parameters) and outputs of a service</li>
+<li>Are simple or complex XSD types given in an XML schema (within or referenced from a WSDL file)</li>
+<li>Have values that are instances of specific semantic type.</li>
+<li>Have values in a specific syntax, either fully specified by the 
+schema, or (occasionally) text in a specific file format which is not 
+specified by the schema.</li>  
+</ul>
+
+
+<h3><a id="WebServiceAnnotationGuidelines_levels">Levels of annotation</a></h3>
+
+<p>Annotation of a WSDL file or associated XSD schema is possible at several levels.  Assuming SAWSDL annotation (<a href="http://www.w3.org/TR/sawsdl/">http://www.w3.org/TR/sawsdl/</a>), the XML elements that may be annotated by EDAM concepts are:
+</p><ol>
+
+<li><b>Web service</b> (as a whole) (<kbd>&#60;wsdl:portType&#62;</kbd>) 
+    <ul>
+    <li>One (or more) <i>"Topic"</i> concepts to describe the general area(s) the service concerns</li>
+    <li>If applicable, one (or more) <i>"Operation"</i> concepts to describe the functions of the service (if all operations peform essentially the same function)</li>
+    </ul></li>
+    
+<li><b>Operation</b> (<kbd>&#60;wsdl:operation&#62;</kbd> inside <kbd>&#60;wsdl:portType&#62;</kbd>) 
+    <ul>
+    <li>One (or more) <i>"Operation"</i> concepts for each WSDL operation (more than one in exceptional circumstances)</li>
+    </ul>
+</li>
+<li><b>Input parameters and their sub-parts</b> (<kbd>&#60;xs:element&#62;</kbd>, <kbd>&#60;xs:complexType&#62;</kbd>, <kbd>&#60;xs:simpleType&#62;</kbd>, <kbd>&#60;xs:attribute&#62;</kbd>)
+    <ul>
+    <li>One (or more) <i>"Data"</i> concepts </li>
+    <li>One (or more) <i>"Format"</i> concepts </li>
+    <!--<li>One (or more) <i>"Identifier"</i> concepts (see <a href="#s9.6">Annotation of data identifiers</a>) </li>-->
+    </ul>
+</li>
+<li><b>Output parameters and their sub-parts</b> (<kbd>&#60;xs:element&#62;</kbd>, <kbd>&#60;xs:complexType&#62;</kbd>, <kbd>&#60;xs:simpleType&#62;</kbd>, <kbd>&#60;xs:attribute&#62;</kbd>)
+    <ul>
+    <li>One (or more) <i>"Data"</i> concepts </li>
+    <li>One (or more) <i>"Format"</i> concepts </li>
+    <!--<li>One (or more) <i>"Identifier"</i> concepts (see <a href="#s9.6">Annotation of data identifiers</a>) </li>-->
+    </ul>
+</li></ol>
+
+<p>NB. The input and output parameters should be annotated inside the 
+XML Schema that defines them. In case of services that are not following
+ the highly recommended <i>document/literal wrapped</i> SOAP-binding style, the <kbd>&#60;wsdl:part&#62;</kbd> inside <kbd>&#60;wsdl:message&#62;</kbd> can be annotated (the same applies to <i>faults</i>, but meanings of faults are not modelled by EDAM)</p>
+
+<p>The following annotations might be useful but are not directly recommended by SAWSDL:</p>
+
+<ol>
+<li><b>Enumerated values of input/output parameters</b> (<kbd>&#60;xs:enumeration&#62;</kbd>) 
+    <ul>
+    <li>One (or more) <i>"Format"</i> or <i>"Data"</i><!--, or <i>"Identifier"</i>--> concepts defining the particular enumerated value</li>
+    </ul>
+</li></ol>
+
+<p>For details of incorporating the SAWSDL annotations into WSDLs and XSDs, see <a href="#SAWSDL">EDAM URIs and SAWSDL annotation</a>.</p>
+
+
+
+
+
+
+
+<!--
+<br/><h2><br/><a id="s9.4">Handling cardinality</a></h2>
+<p>EDAM concepts do not (typically) reflect cardinality (the 
+number of a certain thing).  It is assumed that this will (typically) be
+ handled elsewhere, for example, the permissible number of data elements
+ (such as input sequences) is specified explicitly in an XSD schema.
+</p>
+<p>Some applications however may require to annotate cardinality.  The following basic concepts are provided:</p>
+
+
+<p>They should be used conservatively and never in cases which might lead to conflict with any explicit statement of cardinality.</p>
+-->
+
+
+<br/><h2><br/><a id="SAWSDL">EDAM URIs and SAWSDL annotation</a></h2>
+<p>SAWSDL mandates the use of <kbd>sawsdl:modelReference</kbd> attributes for annotation. The format of EDAM URIs used inside this attribute includes the ontology name (<i>http://edamontology.org</i>), main sub-ontology, and the unique identifier (ID) of the particular concept:</p>
+<pre> 
+&#60;xs:element name="elementName" sawsdl:modelReference="http://edamontology.org/subontology_id"&#62;
+</pre>
+
+<p>Where ...</p>
+<ul>
+<li><kbd><b>xs:element</b></kbd> is the XML element being annotated (can be also <kbd>xs:attribute</kbd>, <kbd>xs:complexType</kbd>, <kbd>xs:simpleType</kbd>, <kbd>sawsdl:attrExtension</kbd>, <kbd>wsdl:portType</kbd>, in special cases <kbd>wsdl:part</kbd>, or eventually <kbd>xs:enumeration</kbd>)</li>
+<li><kbd><b>elementName</b></kbd> is the name of the XML element</li>
+</ul>
+
+<p>The value of the <kbd>sawsdl:modelReference</kbd> attribute is a URI 
+pointing to the concept definition.  The URI to use is in case of EDAM includes the concept's sub-ontology:</p>
+<ul>
+<li><kbd><b>sub-ontology</b></kbd> is the <b>top-level sub-ontology</b> of the EDAM concept; one of <kbd>topic<!--<kbd-->, <kbd>data<!--<kbd-->, <kbd>format<!--<kbd-->, or <kbd>operation</kbd></kbd></kbd></kbd></li>
+<li><kbd><b>id</b></kbd> is the unique local identifier of the concept, e.g. <kbd>"0295"</kbd></li>
+</ul>
+
+
+<p>So for these 3 concepts:</p>
+<pre><!--[Term]-->
+EDAM_topic:0182
+<!--name: Sequence alignment
+namespace: topic
+...
+
+[Term]-->
+EDAM_operation:0292
+<!--name: Sequence alignment construction
+namespace: operation
+...
+
+[Term]-->
+EDAM_data:0863
+<!--name: Sequence alignment
+namespace: data
+...-->
+</pre>
+
+<p>We'd have
+
+</p><pre>http://edamontology.org/topic_0182
+http://edamontology.org/operation_0292
+http://edamontology.org/data_0863
+</pre>
+
+<p>Which can be used in SAWSDL annotation, e.g.
+</p><pre>&#60;wsdl:portType name="myService" sawsdl:modelReference="http://edamontology.org/topic_0182"&#62;
+&#60;sawsdl:attrExtension sawsdl:modelReference="http://edamontology.org/operation_0292&#62;
+&#60;xs:element name="outfile" sawsdl:modelReference="http://edamontology.org/data_0863&#62;
+</pre>
+
+
+
+<p>If more than one annotation of an element is required, these can be given in the <kbd>sawsdl:modelReference</kbd> attribute delimited by space characters:
+</p><pre>&#60;wsdl:portType name="myService" sawsdl:modelReference="http://edamontology.org/topic_0182 http://edamontology.org/operation_0292"&#62;
+</pre>
+
+<p>NB. Such multiple annotations need not be in the same namespace, and need not at all to refer to the same ontology.</p>
+
+
+<h3><a id="SAWSDL_operations">SAWSDL guidelines for annotating operations</a></h3>
+<p>One peculiarity of the SAWSDL specification is that annotations on <code>&#60;wsdl:operation&#62;</code> element inside <code>&#60;wsdl:portType&#62;</code> should be handled using a <code>&#60;sawsdl:attrExtensions&#62;</code> element.  This is not a requirement for other elements.</p>
+
+<p>Importantly, the <code>&#60;sawsdl:attrExtension&#62;</code> element inside the wsdl:operation <b><i><u>must</u> be before</i></b> <code>&#60;wsdl:input&#62;</code>, <code>&#60;wsdl:output&#62;</code> and <code>&#60;wsdl:fault&#62;</code> elements (so typically after the <code>&#60;wsdl:documentation&#62;</code> element).</p>
+
+<p>For example:</p>
+<pre> &#60;wsdl:portType name="Clustalw2PortType" sawsdl:modelReference="http://edamontology.org/topic_0186 http://edamontology.org/operation_0496"&#62;
+         &#60;wsdl:operation name="submitClustalw2"&#62;
+                 &#60;wsdl:documentation&#62;Submit a sequence and get a jobID&#60;/wsdl:documentation&#62;
+                 &#60;sawsdl:attrExtensions sawsdl:modelReference="http://edamontology.org/operation_0496"/&#62;
+                 &#60;wsdl:input message="submitClustalw2Msg"/&#62;
+                 &#60;wsdl:output message="submitClustalw2ResponseMsg"/&#62;
+         &#60;/wsdl:operation&#62;
+</pre>
+
+<p>Some WSDL/XSD validators or SOAP libraries do not check for it, but some do require the strict order of these elements.</p>
+
+<!--
+<br/><hr/><br/><h1 style="text-align:center"><a id="s10">EDAM concept end-points</a></h1>
+<p>When pasted into a browser, the PURLs in the examples above:</p>
+<pre>http://edamontology.org/topic_0182
+http://edamontology.org/operation_0292
+http://edamontology.org/data_0863
+</pre>
+
+<p>... will resolve to:</p>
+<ul>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000182">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000182</a></li>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000292">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000292</a></li>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000863">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000863</a>
+</li></ul>
+
+<p>These are complete OBO concept statements in plain text (OBO format). It
+ will also be possible to give a format specifier.  For example these 
+PURLs:</p>
+
+<pre>http://purl.org/edam/topic/0000182?style=html
+http://purl.org/edam/operation/0000292?style=html
+http://purl.org/edam/data/0000863?style=html
+</pre>
+
+<p>... will resolve to OBO concept statements in HTML such that concepts 
+referred to in the statements (via relations) will be clickable to allow
+ navigation:</p>
+
+<ul>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000182?style=html">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000182?style=html</a></li>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000292?style=html">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000292?style=html</a></li>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000863?style=html">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000863?style=html</a>
+</li></ul>
+
+<p>The eventual final list of end-points will provide other formats/views:</p>
+
+<ul>
+<li>Plain text in OBO format (default)</li>
+<li>HTML </li>
+<li>OBO-XML</li>
+<li>JSON</li>
+<li>The concept in a Web browser, e.g. <a href="http://bioportal.bioontology.org/">NCBO Ontology Browser</a>.
+</li></ul>
+
+<pre>http://ebi.ac.uk/edam/0000182%format=txt
+http://ebi.ac.uk/edam/0000182%format=html (the default)
+http://ebi.ac.uk/edam/0000182%format=xml
+http://ebi.ac.uk/edam/0000182%format=json
+http://ebi.ac.uk/edam/0000182%format=browser
+</pre>
+
+<p><i>Note: not all of these formats are yet implemented !</i>
+
+</p><p>For now, you can see this in action for this concept:
+</p><ul>
+<li><a href="http://purl.org/edam/entity/0000002">http://purl.org/edam/entity/0000002</a></li>
+<li><a href="http://purl.org/edam/entity/0000002?style=html">http://purl.org/edam/entity/0000002?style=html</a>
+</li></ul>
+
+<br/><h2><br/><a id="s10.1">EDAM in SRS</a></h2>
+<p>EDAM is available in the EBI SRS server:</p>
+<ul>
+<li><a href="http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+LibInfo+-lib+EDAM">http://srs.ebi.ac.uk/srsbin/cgi-bin/wgetz?-page+LibInfo+-lib+EDAM</a>
+</li></ul>
+
+<p>And from the EBI <kbd>dbfetch</kbd>:
+</p><ul>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/">http://www.ebi.ac.uk/Tools/dbfetch/</a>
+</li></ul>
+
+<p>Which allows the concepts to be addressed in the ways above.
+</p><ul>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000352">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000352</a> (plain text view) <i>or</i></li>
+<li><a href="http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000352?style=html">http://www.ebi.ac.uk/Tools/dbfetch/dbfetch/edam/0000352?style=html</a> (HTML view)
+</li></ul>
+
+
+
+
+
+<br/><h2><br/><a id="s10.2">File formats for concept end-points</a></h2>
+
+<h3>Plain text in OBO format (default)</h3>
+<p>This is OBO Flat File Format Specification (currently version 1.2):</p>
+<ul>
+<li><a href="http://www.geneontology.org/GO.format.obo-1_2.shtml">http://www.geneontology.org/GO.format.obo-1_2.shtml</a></li>
+</ul>
+
+<h3>HTML</h3>
+<p>See for example:
+</p><ul>
+<li><a href="http://purl.org/edam/entity/0000002?style=html">http://purl.org/edam/entity/0000002?style=html</a>
+</li></ul>
+
+<h3>OBO-XML</h3>
+<p>This is OBO-XML Format; a direct XML serialization of the OBO Flat File Format. See:
+</p><ul>
+<li><a href="http://www.geneontology.org/GO.format.shtml">http://www.geneontology.org/GO.format.shtml</a></li>
+<li>RELAX-NG schema (<a href="http://geneontology.cvs.sourceforge.net/geneontology/go-dev/xml/dtd/obo-xml.rnc">http://geneontology.cvs.sourceforge.net/geneontology/go-dev/xml/dtd/obo-xml.rnc</a>)
+</li></ul>
+
+<h3>JSON</h3> 
+<i>This is under development.</i>
+<p>Here is a template code for an OBO concept statement:
+</p><pre>{
+   "id": "", 
+   "name": "", 
+   "namespace": "", 
+   "def":
+   {
+      "defstr": "", 
+      "dbxref": 
+      [
+         {
+            "acc": "", 
+            "dbname", "", 
+         },
+	 { 
+	    "acc": "", 
+	    "dbname", "", 
+	 }
+      ]
+   },
+   "comment": "", 
+   "is_obsolete": "1_or_0", 
+   "consider": "", 
+   "synonym":
+   {
+      "scope": "exact", 
+      "synonym_text": ""
+   },
+   "is_a": "", 
+   "relation":
+   [
+      {
+         "type": "", 
+         "to": ""
+      },
+      {
+         "type": "", 
+         "to": ""
+      }
+   ]
+}
+</pre>
+
+<p>This might be expanded (as required) to include:
+
+</p><ul>
+<li>alt_id:</li>
+<li>subset:</li>
+<li>replaced_by:</li>
+<li>is anyonymous:</li>
+<li>built_in:</li>
+<li>intersection_of:</li>
+<li>union_of:</li>
+<li>disjoint_from:
+</li></ul>
+
+<p>All of these are handled simply, i.e. using the form e.g. <tt>alt_id: "XXX"</tt>.
+</p><p>Note "replaced_by:", "intersection_of:", "union_of:" and "disjoint_from:" would give a concept id, e.g. <tt>replaced_by: "EDAM:0000582"</tt>. 
+</p><p>Note "is_anyonymous:" and "built_in:" would give a 1 or 0 value, e.g. <tt>is anyonymous: "1"</tt>.</p>
+
+-->
+
+
+
+
+
+<br/><hr/><br/><h1 style="text-align:center"><a id="Implementations">Existing implementations and annotations with EDAM</a></h1>
+
+
+
+<h3><a id="Implementations_EMBOSS">EMBOSS</a></h3>
+<p>EMBOSS applications have been annotated using EDAM and these annotations appear in corresponding Web services.
+</p>
+<p>Annotated WSDL files (and associated XSD data schema) are available from:</p>
+<ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/list">http://www.ebi.ac.uk/soaplab/typed/services/list</a></li></ul>
+
+<p>You will see a list of service end-points with WSDL URLs.  For example:
+</p><ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?wsdl">http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?wsdl</a></li></ul>
+
+<p>To see the data schema associated with a WSDL, you must replace <kbd>"?wsdl"</kbd> with <kbd>"?xsd=1"</kbd>, <kbd>"?xsd=2"</kbd> or <kbd>"?xsd=3"</kbd>.  For example:
+</p><ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?xsd=1">http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?xsd=1</a></li></ul>
+
+
+
+
+
+<h3><a id="Implementations_BioXSD">BioXSD</a></h3>
+<p>The BioXSD XML schema (XSD) defines exchange formats of everyday 
+bioinformatics data types. BioXSD aims to serve as the common, canonical
+ data model for bioinformatics Web services.  It includes commonly used 
+types including sequences, sequence annotations, alignments and 
+references to resources:</p>
+<ul><li><a href="http://bioxsd.org/">http://bioxsd.org/</a></li></ul><p>BioXSD has been annotated with EDAM concepts.</p>
+
+
+<h3><a id="Implementations_DRCAT">DRCAT biological resource catalogue</a></h3>
+<p>A catalogue of data resources (DRCAT) is being compiled as part of 
+the EMBOSS project.  Each entry in DRCAT gives metadata on a data 
+resource available on the Web.  The metadata includes "Query" lines 
+describe the type(s) of data available, the data format, data identifier
+ (used to query) and a URL from which data can be retrieved.  The 
+"Query" lines and the resources themselves are annotated with EDAM 
+concepts.</p>
+
+<p>A typical entry is shown below:</p>
+<p><small>(NB. The format of EDAM ids has not been upgraded to version 1.0 yet. Will be done asap.)</small></p>
+<pre>ID      PDB
+Acc     DB-0070
+Name    The RCSB Protein Data Bank
+Desc    A repository for 3D biological macromolecular structure data.
+URL     http://www.rcsb.org/pdb/
+Cat     3D structure databases
+EDAMres EDAM:0000693 | Tertiary structure
+EDAMdat EDAM:0000883 | Tertiary structure
+EDAMdat EDAM:0002085 | Structure annotation
+EDAMfmt EDAM:0001476 | pdb
+EDAMfmt EDAM:0001478 | pdbml
+EDAMfmt EDAM:0001477 | mmCIF
+EDAMfmt EDAM:0002331 | HTML 
+EDAMid  EDAM:0001127 | PDB ID
+Xref    SP_explicit | None
+Xref    SP_FT | None
+Xref    EMBL_explicit | None
+Query   EDAM:0002085 | EDAM:0002331 | EDAM:0001127 | http://www.pdb.org/pdb/explore/explore.do?structureId=%s
+Query   EDAM:0000693 | EDAM:0001476 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.pdb
+Query   EDAM:0000693 | EDAM:0001477 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.cif
+Query   EDAM:0000693 | EDAM:0001478 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.xml
+Example EDAM:0001127 | 1rbp
+Email   deposit@deposit.rcsb.org
+CCmisc  EMBL DR line example "1OSN", /dbxref="PDB:12GS"
+Status  Referenced
+</pre>
+
+<p>DRCAT development will proceed in harmony with bioDBCore, which 
+proposes a community-defined, uniform, generic description of the core 
+attributes of biological databases:</p>
+
+<ul><li><a href="http://biocurator.org/biodbcore.shtml">http://biocurator.org/biodbcore.shtml</a></li></ul>
+
+<p>bioDBCore is under the auspices of the International Society for Biocuration:</p>
+
+<ul><li><a href="http://biocurator.org/home.shtml">http://biocurator.org/home.shtml</a></li></ul>
+
+<p>All enquiries to Jon Ison (<a href="mailto:jison@ebi.ac.uk">jison@ebi.ac.uk</a>)</p>
+
+
+
+
+
+
+<h3><a id="Implementations_Bio-jETI">Bio-jETI</a></h3>
+<p>Bio-jETI allows 
+automatic composition of functional units into software systems 
+according to higher-level specifications using EDAM:</p>
+<ul><li><a href="http://biojeti.cs.tu-dortmund.de/about.php">http://biojeti.cs.tu-dortmund.de/about.php</a></li></ul>
+
+
+
+<h3><a id="Implementations_iHOP">iHOP Web service</a></h3>
+<p>The iHOP Web service is annotated with EDAM concepts, either directly or via its use of BioXSD:</p>
+<ul><li><a href="http://ws.bioinfo.cnio.es/iHOP/#EMBRACE">http://ws.bioinfo.cnio.es/iHOP/#EMBRACE</a></li></ul>
+
+
+
+
+
+<h3><a id="Implementations_CBU">CBU Web services</a></h3>
+<p>The Web services provided by the Computational Biology Unit (CBU) of the University of Bergen and its affiliated Uni Computing are annotated with EDAM concepts:</p>
+<ul><li><a href="http://cbu.bioinfo.no/wsdl">http://cbu.bioinfo.no/wsdl</a></li></ul>
+
+
+
+
+
+<h3><a id="Implementations_eSysbio">eSysbio</a></h3>
+<p>The eSysbio workbench for sharing and analysing bioinformatics data using public or private Web services and R scripts. eSysbio uses EDAM to annotate and denote the type and format of data items submitted to the system.</p>
+<ul><li><a href="http://esysbio.org/about">http://esysbio.org/about</a></li></ul>
+
+
+<h3><a id="Implementations_SEQwiki">SEQwiki</a></h3>
+<p>The SEQanswers wiki is an open catalogue of bioinformatics software tools, non-exclusively focussed on sequencing data analysis. SEQanswers tool wiki uses EDAM for annotation of the listed tools where applicable.</p>
+<ul><li><a href="http://seqanswers.com/wiki/Software">http://seqanswers.com/wiki/Software</a></li></ul>
+
+
+
+
+
+<br/><hr/>
+<p><small>Last update: 2014-Feb-20</small></p> 
+
+</body></html>

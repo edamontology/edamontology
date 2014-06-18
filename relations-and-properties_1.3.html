@@ -1,0 +1,129 @@
+<!--Processing Instructions and the XML Declaration are both forbidden in polyglot markup. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--In HTML documents, elements in the HTML namespace may have an xmlns attribute specified, if, and only if, it has the exact value "http://www.w3.org/1999/xhtml". [http://www.w3.org/TR/html5/dom.html#global-attributes]-->
+	<head>
+		<title>Relations and concept properties defined in EDAM</title>
+		<!--<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8"/> ... polyglot markup does not use the http-equiv="Content-Type" declaration on the meta element. [http://dev.w3.org/html5/html-xhtml-author-guide]-->
+		<!--<meta charset="UTF-8"/> not valid in XHTML?-->
+		<link rel="alternate" type="application/rdf+xml; charset=utf-8" title="OWL representation of EDAM (including relations and concept properties)" href="http://edamontology.org/EDAM.owl"/>
+		<link rel="alternate" type="text/plain" title="OBO-format representation of EDAM relations" href="http://edamontology.org/relations-and-properties.obo"/>
+	</head>
+	<body bgcolor="white">
+		<center>
+			<h1>Relations and concept properties defined in EDAM</h1>
+		</center>
+		<br/>
+		<!--<center>-->
+		<p>
+			<small>Note: URIs, definitions, domains and ranges are present in the <a href="http://edamontology.org/EDAM.owl">EDAM.owl</a> file. EDAM relations apply between concepts and/or annotated entities.</small>
+		</p>
+		<!--</center>-->
+		<br/>
+		<table>
+			<tbody align="center">
+				<tr>
+					<th>Relation</th>
+					<th>Inverse</th>
+					<th>Maintained in EDAM</th>
+					<th>Example</th>
+				</tr>
+				<tr>
+					<td><em>has input</em></td>
+					<td><em>is input of</em></td>
+					<td><b><em>Operation</em></b> has input <b><em>Data</em></b></td>
+					<td><em>Sequence annotation</em>	<code>has input</code> <em>Sequence record</em></td>
+				</tr>
+				<tr>
+					<td><em>has output</em></td>
+					<td><em>is output of</em></td>
+					<td><b><em>Operation</em></b> has output <b><em>Data</em></b></td>
+					<td><em>RNA structure prediction</em> <code>has output</code> <em>RNA structure record</em></td>
+				</tr>
+				<tr>
+					<td>
+						<em>has topic</em>
+					</td>
+					<td>
+						<em>is topic of</em>
+					</td>
+					<td>
+						<b>
+							<em>Operation</em>
+						</b> or <b>
+							<em>Data</em>
+						</b> has topic <b>
+							<em>Topic</em>
+						</b>
+					</td>
+					<td>
+						<em>Phylogenetic tree</em>
+						<code>has topic</code>
+						<em>Phylogenetics</em>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<em>has format</em>
+					</td>
+					<td>
+						<em>is format of</em>
+					</td>
+					<td>
+						<b>
+							<em>Format</em>
+						</b> is format of <b>
+							<em>Data</em>
+						</b>
+					</td>
+					<td>
+						<em>CHP</em>
+						<code>is format of</code>
+						<em>Processed microarray data</em>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<em>has identifier</em>
+					</td>
+					<td>
+						<em>is identifier of</em>
+					</td>
+					<td>
+						<b>
+							<em>Identifier</em>
+						</b> is identifier of <b>
+							<em>Data</em>
+						</b>
+					</td>
+					<td>
+						<em>InterPro accession</em>
+						<code>is identifier of</code>
+						<em>Protein signature</em>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<em>has function</em>
+					</td>
+					<td>
+						<em>is function of</em>
+					</td>
+					<td>not between EDAM concepts</td>
+					<td>a tool <code>has function</code>
+						<em>Sequence assembly</em>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<br/>
+		<br/>
+		<p>Some concepts have additional properties declared in EDAM:</p>
+		<br/>
+		<p><em>Regular expression</em> constrains allowed values of types of identifiers (mostly accessions) and is useful for validation of inputs to tools.</p>
+		<p><em>Example</em> lists one or more valid examples (among the identifiers).</p>
+		<p><em>Documentation</em> includes a URL within a <b><em>Format</em></b> concept pointing to its documentation.</p>
+		<p><em>Created in</em> states which version of EDAM a concept was added in.</p>
+		<p><em>Obsolete since</em> states the version since which an obsolete concept has been deprecated.</p>
+	</body>
+</html>
