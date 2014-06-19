@@ -48,7 +48,7 @@
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>bioinformatics &quot;Bioinformatics&quot;</oboInOwl:hasSubset>
-        <next_id>3347</next_id>
+        <next_id>3359</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -16153,6 +16153,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_2129">
         <rdfs:label>File format name</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2099"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3358"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Name of a file format such as HTML, PNG, PDF, EMBL, GenBank and so on.</oboInOwl:hasDefinition>
         <oboOther:namespace>identifier</oboOther:namespace>
@@ -26298,6 +26299,19 @@
         <created_in>1.4</created_in>
         <oboOther:namespace>data</oboOther:namespace>
         <oboInOwl:hasDefinition>A HMM emission matrix holds the probabilities of choosing the four nucleotides (A, C, G and T) in each of the states of a HMM.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3358 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3358">
+        <rdfs:label>Format identifier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
+        <created_in>1.4</created_in>
+        <oboOther:namespace>data</oboOther:namespace>
+        <oboInOwl:hasDefinition>An identifier of a data format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
     </owl:Class>
     
@@ -48106,6 +48120,40 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3357 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3357">
+        <rdfs:label>Format recognition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3358"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Recognition of which format the given data is in.</oboInOwl:hasDefinition>
+        <rdfs:comment>'Format recognition' is not a bioinformatics-specific operation, but of great relevance in bioinformatics. Should be removed from EDAM if/when captured satisfactorily in a suitable domain-generic ontology.</rdfs:comment>
+        <oboOther:namespace>operation</oboOther:namespace>
+        <created_in>1.4</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#bioinformatics"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    <owl:Axiom>
+        <rdfs:comment>The has_input "Data" (data_0006) may cause visualisation or other problems although ontologically correct. But on the other hand it may be useful to distinguish from nullary operations without inputs.</rdfs:comment>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/operation_3357"/>
+        <owl:annotatedProperty rdf:resource="noClue"/>
+        <owl:annotatedTarget rdf:resource="noClue"/>
+    </owl:Axiom>
     
 
 
