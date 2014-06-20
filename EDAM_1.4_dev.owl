@@ -34,7 +34,7 @@
         <dc:title>EDAM: An ontology of bioinformatics operations, types of data and identifiers, data formats, and topics</dc:title>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
-        <oboOther:date>20:02:2014 15:33</oboOther:date>
+        <oboOther:date>19:06:2014 15:41</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <doap:Version>1.4</doap:Version>
@@ -27513,6 +27513,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Entry format of PDB database in mmCIF format.</oboInOwl:hasDefinition>
         <oboOther:namespace>format</oboOther:namespace>
+        <oboInOwl:hasExactSynonym>Chemical MIME (http://www.ch.ic.ac.uk/chemime): chemical/x-mmcif</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#bioinformatics"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32532,9 +32533,12 @@
         <rdfs:comment>Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual).</rdfs:comment>
         <oboInOwl:hasDefinition>Textual format.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Tabular format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://filext.com/file-extension/CSV"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://filext.com/file-extension/TSV"/>
         <oboInOwl:hasNarrowSynonym rdf:resource="http://filext.com/file-extension/TXT"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://filext.com/file-extension/TSV"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://filext.com/file-extension/CSV"/>
+        <oboInOwl:hasExactSynonym rdf:resource="http://www.iana.org/assignments/media-types/media-types.xhtml#text"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://www.iana.org/assignments/media-types/text/plain"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#bioinformatics"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -48126,7 +48130,7 @@
     <!-- http://edamontology.org/operation_3357 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3357">
-        <rdfs:label>Format recognition</rdfs:label>
+        <rdfs:label>Format detection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -48142,6 +48146,9 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Recognition of which format the given data is in.</oboInOwl:hasDefinition>
         <rdfs:comment>'Format recognition' is not a bioinformatics-specific operation, but of great relevance in bioinformatics. Should be removed from EDAM if/when captured satisfactorily in a suitable domain-generic ontology.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>Format recognition</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Format identification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Format inference</oboInOwl:hasExactSynonym>
         <oboOther:namespace>operation</oboOther:namespace>
         <created_in>1.4</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#bioinformatics"/>
