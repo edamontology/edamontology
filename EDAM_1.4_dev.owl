@@ -48,7 +48,7 @@
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>bioinformatics &quot;Bioinformatics&quot;</oboInOwl:hasSubset>
-        <next_id>3359</next_id>
+        <next_id>3360</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -48162,7 +48162,19 @@
         <owl:annotatedTarget rdf:resource="noClue"/>
     </owl:Axiom>
     
+    <!-- http://edamontology.org/operation_3359 -->
 
+    <owl:Class rdf:about="http://edamontology.org/operation_3359">
+        <rdfs:label>File splitting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
+        <oboOther:namespace>operation</oboOther:namespace>
+        <oboInOwl:hasDefinition>split a file containing multiple data items into many files, each
+containing one item</oboInOwl:hasDefinition>
+        <created_in>1.4</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#bioinformatics"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
 
     <!-- http://edamontology.org/topic_0003 -->
 
