@@ -24970,7 +24970,7 @@
         <oboOther:namespace>identifier</oboOther:namespace>
         <oboInOwl:hasExactSynonym>UniProtKB accession</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Accession number of a UniProt (protein sequence) database entry.</oboInOwl:hasDefinition>
-        <regex>[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]|[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]</regex>
+        <regex>[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z]0-9{1,2}</regex>
         <oboInOwl:hasNarrowSynonym>TrEMBL entry accession</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Swiss-Prot entry accession</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>UniProt entry accession</oboInOwl:hasExactSynonym>
