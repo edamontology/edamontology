@@ -3,13 +3,18 @@ edamontology-developers@lists.sourceforge.net
 
 # Modifications in GitHub main repository (Core Developers only)
 The workflow is:
+
 1. Get the “editing token” 
    - Contact edamontology-developers@lists.sourceforge.net and claim the “editing token” after first checking that it is not currently taken :)
    - Say what you are doing, why, and about how long it will take
 2. Update your local repo with the latest files from the GitHub master:
-    edamontology [master]> git pull
+
+   edamontology [master]> git pull
+
 If you’ve not already done so, you will first need to clone the master repo:
+
     git clone https://github.com/edamontology/edamontology.git
+
 3. Make and commit your local changes.  You will be working with the latest “dev” version, e.g. EDAM_1.5_dev.owl.  You should leave the version number unchanged, i.e. should not need to add any new files to the repo.  
    - Check your changes and that the OWL file looks good in Protégé
    - Ensure the next_id attribute is updated
@@ -17,7 +22,9 @@ If you’ve not already done so, you will first need to clone the master repo:
    - Commit your local changes, including a concise but complete summary of the major changes:
         edamontology [master]> git commit -m”commit message here”
 4. Push your changes to the GitHub master:
+
     edamontology [master]> git push origin
+
 5. Release the editing token for the other developers:
    - Contact edamontology-developers@lists.sourceforge.net and release the “editing token” .
    - Summarise what you actually did and why.
@@ -47,6 +54,7 @@ If you’re not sure how to do any of this, then please contact the mailing list
 ## Adding concepts
 
 When adding new terms, you _**MUST**_ specify the following (attributes are in parenthesis):
+
 1. Correct concept URI, i.e. in the right namespace and with the latest ID
 2. Preferred term (`rdfs:label`)
 3. Definition (`oboInOwl:hasDefinition`) 
@@ -69,6 +77,7 @@ Note that :
 ## Deprecating concepts
 
 When deprecating concepts, you _**MUST**_ specify the following:
+
 1. Current dev version into `obsolete_since`.
 2. The ‘obsolete’ subset (`oboInOwl:inSubset`): pick ‘obsolete’.
 3. The ‘deprecated’ attribute (`owl:deprecated`): type the value of ‘true’.
