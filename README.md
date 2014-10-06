@@ -56,7 +56,8 @@ EDAM strives to uphold a few founding principles including (but not limited to):
 - Familiarity - including only concepts that are well established, familiar are prevalent 
 - Usability - conceptual hierarchy with sufficient richness but only necessary complexity
 - Maintainability - developments must be sustainable long-term
-- EDAM is working towards implementing these principles fully and is open to suggestions
+
+EDAM is working towards implementing these principles fully and is open to suggestions
 
 # Architecture
 EDAM has 3 components:
