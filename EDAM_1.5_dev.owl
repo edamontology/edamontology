@@ -8,17 +8,13 @@
     <!ENTITY oboOther "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY edam "http://purl.obolibrary.org/obo/edam#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
-    <!ENTITY edamontology "http://urigen_local_uri/786082c0-f80e-4e38-839f-f73ea0c535f8#http://edamontology.org/" >
 ]>
 
 
 <rdf:RDF xmlns="http://edamontology.org/"
-     xml:base="http://edamontology.org/"
-     xmlns:edamontology="http://urigen_local_uri/786082c0-f80e-4e38-839f-f73ea0c535f8#http://edamontology.org/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,34 +23,34 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:edam="&oboOther;edam#">
+     xmlns:doap="http://usefulinc.com/ns/doap#">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>3424</next_id>
-        <oboOther:remark>EDAM editors: Jon Ison and Matus Kalas. Co-authors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Funding: No funding targetted exclusively the development of EDAM; contibutions from these projects: EMBRACE (FP6, EU), EMBOSS (BBSRC, UK), eSysbio and FUGE Bioinformatics Platform (both Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
-        <oboOther:date>19:06:2014 15:41</oboOther:date>
+        <oboOther:date>07:10:2014 23:50</oboOther:date>
+        <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, and Herve Menager. Co-authors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Funding: No funding targetted exclusively the development of EDAM; contibutions from these projects: EMBRACE, ELIXIR, and BioMedBridges (EU); EMBOSS (BBSRC, UK); eSysbio, FUGE Bioinformatics Platform, and ELIXIR.NO/Norwegian Bioinformatics Platform (Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
         <dc:title>EDAM: An ontology of bioinformatics operations, types of data and identifiers, data formats, and topics</dc:title>
-        <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
-        <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
-        <dc:creator>Matúš Kalaš</dc:creator>
         <doap:Version>1.4</doap:Version>
         <dc:creator>Jon Ison</dc:creator>
-        <oboInOwl:savedBy>Jon Ison, Matus Kalas</oboInOwl:savedBy>
+        <dc:creator>Matúš Kalaš</dc:creator>
+        <dc:creator>Hervé Ménager</dc:creator>
+        <oboInOwl:savedBy>Jon Ison, Matus Kalas, Herve Menager</oboInOwl:savedBy>
         <oboOther:remark>EDAM (EMBRACE Data And Methods) is an ontology of bioinformatics operations (tool, application, or workflow functions), types of data, topics (application domains), and data formats. The applications of EDAM are within organising tools and data, finding suitable tools in catalogues, and integrating them into complex applications or workflows. Semantic annotations with EDAM are applicable to diverse entities such as for example Web services, databases, programmatic libraries, standalone tools and toolkits, interactive applications, data schemas, data sets, or publications within bioinformatics. Annotation with EDAM may also contribute to data provenance, and EDAM terms and synonyms can be used in text mining. EDAM - and in particular the EDAM Data sub-ontology - serves also as a markup vocabulary for bioinformatics data on the Semantic Web.</oboOther:remark>
-        <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
-        <dc:format>application/rdf+xml</dc:format>
-        <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>bioinformatics &quot;Bioinformatics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
-        <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
+        <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
+        <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
+        <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
+        <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
+        <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
+        <dc:format>application/rdf+xml</dc:format>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
     </owl:Ontology>
@@ -24132,6 +24128,18 @@
         <rdfs:comment>Consider for example an HMM with two states (AT-rich and GC-rich).  The emission matrix holds the probabilities of choosing each of the four nucleotides (A, C, G and T) in the AT-rich state and in the GC-rich state.</rdfs:comment>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>A HMM emission matrix holds the probabilities of choosing the four nucleotides (A, C, G and T) in each of the states of a HMM.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3356 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3356">
+        <rdfs:label xml:lang="en">Hidden Markov model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0950"/>
+        <oboInOwl:hasDefinition>A statistical Markov model of a system which is assumed to be a Markov process with unobserved (hidden) states.</oboInOwl:hasDefinition>
+        <created_in>1.4</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
     </owl:Class>
     
@@ -50233,18 +50241,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-    </owl:Class>
-    
-
-
-    <!-- http://urigen_local_uri/786082c0-f80e-4e38-839f-f73ea0c535f8#http://edamontology.org/data_3356 -->
-
-    <owl:Class rdf:about="&edamontology;data_3356">
-        <rdfs:label xml:lang="en">Hidden Markov model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0950"/>
-        <oboInOwl:hasDefinition>A statistical Markov model of a system which is assumed to be a Markov process with unobserved (hidden) states.</oboInOwl:hasDefinition>
-        <created_in>1.4</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
     </owl:Class>
     
 
