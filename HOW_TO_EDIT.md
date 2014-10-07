@@ -9,21 +9,27 @@ The workflow is:
    - Say what you are doing, why, and about how long it will take
 2. Update your local repo with the latest files from the GitHub master:
 
-   edamontology [master]> git pull
+    git pull
 
 If you’ve not already done so, you will first need to clone the master repo:
 
     git clone https://github.com/edamontology/edamontology.git
 
-3. Make and commit your local changes.  You will be working with the latest “dev” version, e.g. EDAM_1.5_dev.owl.  You should leave the version number unchanged, i.e. should not need to add any new files to the repo.  
+3. Make and commit your local changes. You will be working with the latest “dev” version, _e.g._ EDAM_1.5_dev.owl. You should leave the version number unchanged, i.e. should not need to add any new files to the repo.
    - Check your changes and that the OWL file looks good in Protégé
-   - Ensure the next_id attribute is updated
-   - Ensure that oboOther:date is updated to the current GMT before the commit
+   - Ensure the `next_id` attribute is updated
+   - Ensure that `oboOther:date` is updated to the current GMT before the commit
+   - Add the editted file to the commit
+
+      git add <filepath>
+
    - Commit your local changes, including a concise but complete summary of the major changes:
-        edamontology [master]> git commit -m”commit message here”
+
+      git commit -m ”commit message here”
+
 4. Push your changes to the GitHub master:
 
-    edamontology [master]> git push origin
+    git push origin
 
 5. Release the editing token for the other developers:
    - Contact edamontology-developers@lists.sourceforge.net and release the “editing token” .
@@ -59,20 +65,20 @@ When adding new terms, you _**MUST**_ specify the following (attributes are in p
 2. Preferred term (`rdfs:label`)
 3. Definition (`oboInOwl:hasDefinition`) 
 4. Parent concept (`rdfs:subClassOf`)
-5. Current dev version into `created_in` : type a value e.g.  “1.5”
+5. Current dev version into `created_in` : type a value e.g. “1.5”
 6. The ‘edam’ subset (`oboInOwl:inSubset`): in Protege, pick (don’t type!) the value of `'edam'`
 7. The branch subset (`oboInOwl:inSubset`): pick one of ‘topic’, ‘data’, ‘format’ or ‘operation’
 8. Any specialised subset (pick as above, only if required) 
 9. The next ID ontology attribute (`next_id`)
 
 Note that :
-- The **preferred label** should be a short name or phrase in common use
+- The **preferred label** should be a short name or phrase in common use.
 - Consider providing common **synonyms** of the term:
    - Exact synonym (`oboInOwl:hasExactSynonym`) - bog-standard synyonsm
    - Narrow synonym (`oboInOwl:hasNarrowSynonym`) - specialisms of the term
    - Broad synonym (`oboInOwl:hasBroadSynonym`) - generalisations of the term
-- The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon
-- Peripheral but important information can go in the **comment** (`rdfs:comment`)
+- The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
+- Peripheral but important information can go in the **comment** (`rdfs:comment`).
 
 ## Deprecating concepts
 
