@@ -9,28 +9,24 @@ The workflow is:
    - Say what you are doing, why, and about how long it will take
 2. Update your local repo with the latest files from the GitHub master:
 
-    git pull
+    `git pull`
+   
+   If you’ve not already done so, you will first need to clone the master repo:
 
-If you’ve not already done so, you will first need to clone the master repo:
-
-    git clone https://github.com/edamontology/edamontology.git
-
+    `git clone https://github.com/edamontology/edamontology.git`
 3. Make and commit your local changes. You will be working with the latest “dev” version, _e.g._ EDAM_1.5_dev.owl. You should leave the version number unchanged, i.e. should not need to add any new files to the repo.
    - Check your changes and that the OWL file looks good in Protégé
    - Ensure the `next_id` attribute is updated
-   - Ensure that `oboOther:date` is updated to the current GMT before the commit
+   - Ensure that `oboOther:date` is updated to the current GMT/BST before the commit
    - Add the editted file to the commit
-
-      git add <filepath>
-
+   
+      `git add <filepath>`
    - Commit your local changes, including a concise but complete summary of the major changes:
-
-      git commit -m ”commit message here”
-
+   
+      `git commit -m ”commit message here”`
 4. Push your changes to the GitHub master:
 
-    git push origin
-
+    `git push origin`
 5. Release the editing token for the other developers:
    - Contact edamontology-developers@lists.sourceforge.net and release the “editing token” .
    - Summarise what you actually did and why.
