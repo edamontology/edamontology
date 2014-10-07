@@ -192,7 +192,7 @@
 <p style="text-align:center"><b>Figure 1.</b> The EDAM sub-ontologies. Boxes indicate top-level concepts ('branches'), with a couple of specific <a href="#Concepts">concepts</a> exemplified.</p>
 
 <br/>
-<p>As a general rule, the <i><b>Data</b></i>, <i><b>Format</b></i>, and <i><b>Operation</b></i> branches include concepts strictly in domain of bioinformatics and computational biology: concepts purely concerning biology, computer science, <i>etc.</i> are not included. The <i><b>Topic</b></i> branch, however, includes broader inter-disciplinary concepts from the biological, biomedical and medical domains.</p>
+<p>As a general rule, the <i><b>Data</b></i>, <i><b>Format</b></i>, and <i><b>Operation</b></i> branches include concepts strictly in domain of bioinformatics and computational biology: concepts purely concerning biology, computer science, <i>etc.</i> are not included. The <i><b>Topic</b></i> branch, however, includes broader inter-disciplinary concepts from the biological and medical domains.</p>
 
 <p>EDAM provides different semantic 'axes' for annotation. For example, annotation of a software tool might include:</p>
 <ul>
@@ -229,7 +229,7 @@
 <p>EDAM has 3 components:</p>
 <ul>
 <li><a href="#Concepts">Concepts</a> - All concepts have a name (the term or label) and definition. Further, a concept may have simple relations (see below) to other EDAM concepts, as well other intrinsic properties, <i>e.g.</i> an identifier may have a regular expression defining its syntax.</li>
-<li><a href="#is_a">Hierarchy</a> - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an <i><b>is a</b></i> (specialisation) relation. Hence EDAM has 4 primary hierarchies (for <i>Data</i>, <i>Format</i>, <i>Operation</i>, and <i>Topic</i>).</li>
+<li><a href="#is_a">Hierarchy</a> - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an <i><b>is a</b></i> relation (specialisation). Hence EDAM has 4 primary hierarchies (for <i>Data</i>, <i>Format</i>, <i>Operation</i>, and <i>Topic</i>).</li>
 <li><a href="#Relations">Relations</a> - Concepts are related by defined relation types (see <a href="#Figure2">figure below</a>), which reflect well established or self-evident principles, and are used primarily to define internal consistency of EDAM. These have external applications too, <i>e.g.</i> annotations on the Semantic Web.</li>
 </ul>
 
@@ -243,15 +243,17 @@
 
 <br/><h2><br/><a id="Download">Download and Status</a></h2>
 <p>Locations for download in OWL format: </p>
-<p><a href="http://edamontology.org/EDAM.owl">http://edamontology.org/EDAM.owl</a> (Always points to the last stable version)</p>
+<p><a href="http://edamontology.org/EDAM.owl">http://edamontology.org/EDAM.owl</a> (Always points to the last stable version)</p><br/>
+
 <p>Locations for download in OBO format: </p>
-<p><a href="http://edamontology.org/EDAM.obo">http://edamontology.org/EDAM.obo</a> (Always points to the last stable version. OBO-format version lacks certain details.)</p>
+<p><a href="http://edamontology.org/EDAM.obo">http://edamontology.org/EDAM.obo</a> (Always points to the last stable version. OBO-format version lacks certain details.)</p><br/>
+
 <p>All versions: </p>
-<p><a href="https://github.com/edamontology/edamontology/releases">https://github.com/edamontology/edamontology/releases</a></p>
+<p><a href="https://github.com/edamontology/edamontology/releases">https://github.com/edamontology/edamontology/releases</a></p><br/>
 
 
 
-<p><b>Version 1.4</b> of EDAM has been released. <!--It uses the <a href="#Concepts">concepts</a>, <a href="#Relations">relations</a> and <a href="#Rules">rules</a> described below. -->Contributions and suggestions are welcome.</p>
+<p><b>Version 1.4</b> of EDAM has been released. <!--It uses the <a href="#Concepts">concepts</a>, <a href="#Relations">relations</a> and <a href="#Rules">rules</a> described below. -->Contributions and suggestions are welcome.</p><br/>
 
 <p>EDAM is being actively developed:</p>
 <ul>
