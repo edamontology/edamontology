@@ -1,0 +1,62 @@
+# ===============================================================================================================
+#
+#
+# This is the information about the URI of an EDAM concept
+#
+#
+#
+# The EDAM concept URI has the form http://edamontology.org/<root sub-ontology>_<local ID>
+#
+# As a regular expression, it is http://edamontology\.org/(data|format|operation|topic)_[0-9]{4}
+#
+#
+#
+# NB! This is the only form of URI that is supposed to be used when referring to an EDAM concept.
+# (for example in annotation using SAWSDL, or within RDF)
+#
+# 
+# ===============================================================================================================
+#
+#
+# For a human-readable Web page about an EDAM concept, please refer to
+#
+# http://bioportal.bioontology.org/ontologies/1498?p=terms&conceptid=<root sub-ontology>_<local ID>
+#
+# [type: text/html|application/xhtml+xml; ?format=html|htm|xhtml; charset=utf-8; language: en]
+#
+#
+# ---------------------------------------------------------------------------------------------------------------
+#
+#
+# For a machine-understandable representation of the last stable version of the EDAM concepts in RDF/XML (OWL), please refer to the EDAM OWL file
+#
+http://edamontology.org/EDAM.owl
+#
+# [type: application/rdf+xml|application/xml|text/xml; ?format=owl|rdf|xml; charset=utf-8; language: en]
+#
+#
+# ---------------------------------------------------------------------------------------------------------------
+#
+#
+# For a machine-understandable representation of the last stable version of the EDAM concept in OBO format, please refer to
+#
+# http://www.ebi.ac.uk/Tools/dbfetch/dbfetch?db=edam&id=000<local ID>&format=obo&style=raw
+#
+# [type: text/plain; ?format=obo|text|txt; charset=utf-8; language: en]
+#
+# Note that the OBO-format representation lacks certain details present only in the OWL version
+# (Note also that dbfetch returns raw text in UTF-8)
+#
+#
+# ---------------------------------------------------------------------------------------------------------------
+#
+#
+# Information about the URIs of EDAM concepts (http://edamontology.org/<root sub-ontology>_<local ID>) is in this file right here
+#
+http://edamontology.org/concept.uris
+#
+# [type: text/uri-list; ?format=uri|url|about; charset=us-ascii; language: en]
+#
+#
+# ===============================================================================================================
+# Note that the URI of this file is http://edamontology.org/concept.uris
