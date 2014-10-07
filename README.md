@@ -48,16 +48,16 @@ EDAM provides different semantic 'axes' for annotation. For example, annotation 
 
 # Principles
 
-EDAM strives to uphold a few founding principles including (but not limited to):
+EDAM strives to uphold a few founding principles including:
 
-- **Quality** - a controlled vocabulary that is moderated and assured via the gatekeeper model 
+- **Quality** - a controlled vocabulary that is moderated and assured via a gatekeeper model
 - **Openness** - development in collaboration with the community
-- **Relevance** - prioritising use-case driven development towards comprehensive coverage 
-- **Practicality** - practical utility is valued over ontological “strictness”
-- **Clear scope** - respecting the scope of other complementary, well supported ontologies 
-- **Familiarity** - including only concepts that are well established, familiar are prevalent 
+- **Relevance** - prioritising use-case-driven development towards comprehensive but practical coverage
+- **Practicality** - practical utility is valued over ontological “strictness” or any metaphysical doctrine
+- **Clear scope** - respecting the scope of other complementary, well-developed ontologies
+- **Familiarity** - including only concepts that are well established; familiar are prevalent and jargon is discouraged
 - **Usability** - conceptual hierarchy with sufficient richness but only necessary complexity
-- **Maintainability** - developments must be reproducible and sustainable long-term
+- **Maintainability** - development must be efficient and sustainably up to date in the long term
 
 EDAM is working towards implementing these principles fully and is open to suggestions.
 
