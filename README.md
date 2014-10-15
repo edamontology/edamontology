@@ -35,7 +35,7 @@ EDAM includes 4 main sub-ontologies or 'branches' of concepts:
 Noteworthy within the the Data sub-ontology is:
 - _**Identifier**_ - “A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).”
 
-![EDAM Concepts figure](https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMcomponents.png)
+![EDAM concepts figure](https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMconcepts.png)
 
 As a general rule, the _**Data**_, _**Format**_, and _**Operation**_ branches include concepts strictly in domain of bioinformatics and computational biology: concepts purely concerning biology, computer science, _etc._ are not included. The _**Topic**_ branch, however, includes broader inter-disciplinary concepts from the biological and medical domains.
 
@@ -68,7 +68,7 @@ EDAM has 3 components:
 - _**Hierarchy**_ - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an _**is a**_ (specialisation) relation. Hence EDAM has 4 primary hierarchies (for _Data_, _Format_, _Operation_, and _Topic_).
 - _**Relations**_ - Concepts are related by defined relation types (see figure below), which reflect well established or self-evident principles, and are used primarily to define internal consistency of EDAM. These have external applications too, e.g. annotations on the Semantic Web.
 
-![EDAM Concepts figure](https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMconcepts.png)
+![EDAM relations figure](https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMrelations.png)
 
 # Priorities
 
@@ -97,3 +97,9 @@ Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malon
 doi: [10.1093/bioinformatics/btt113](http://dx.doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)
 
 This article is freely available (Open Access).
+
+# Documentation and website
+
+Full user documentation of the EDAM ontology is available at http://edamontology.org.
+
+The _edamontology.org_ site provides content negotiation with respect to the desired media type (_i.e._ format, _e.g._ HTML, OWL, _etc._). This applies also to the URIs of EDAM concepts that are in this way dereferencable, concise, and stable. Alternatively to requesting the format in the HTTP header, users can retrieve the desired content from a web browser by inserting _?format=\<desiredformat\>_ query into the URL.
