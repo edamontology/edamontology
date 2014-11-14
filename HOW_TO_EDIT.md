@@ -14,7 +14,7 @@ The workflow is:
    If you’ve not already done so, you will first need to clone the master repo:
 
     `git clone https://github.com/edamontology/edamontology.git`
-3. Make and commit your local changes. You will be working with the latest “dev” version, _e.g._ EDAM_1.5_dev.owl. You should leave the version number unchanged, i.e. should not need to add any new files to the repo.
+3. Make and commit your local changes. You **must** be working with the latest “dev” version, _e.g._ EDAM_1.5_dev.owl. You should leave the version number unchanged, i.e. should not need to add any new files to the repo.
    - Check your changes and that the OWL file looks good in Protégé
    - Ensure the `next_id` attribute is updated
    - Ensure that `oboOther:date` is updated to the current GMT/BST before the commit
@@ -30,6 +30,29 @@ The workflow is:
 5. Release the editing token for the other developers:
    - Contact edamontology-developers@lists.sourceforge.net and release the “editing token” .
    - Summarise what you actually did and why.
+
+# Workflow for the creation of a new official release of EDAM (Core developers only)
+**Before to create a new release, please make sure you have the approval of the EDAM Gatekeeper, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
+1. Update your local version of the repository:
+
+    `git pull`
+2. Assuming you are releasing version n+1, n being the current version:
+   - you initially have EDAM\_n.owl and EDAM\_n+1\_dev.owl in the repository
+   - remove the file EDAM\_n.owl from the repository
+
+    `git rm EDAM\_n.owl`
+   - rename the file EDAM\_n+1\_dev.owl to EDAM\_n+2\_dev.owl
+
+    `git mv EDAM\_n+1\_dev.owl EDAM\_n+2\_dev.owl`
+   - commit and push your changes
+
+    `git commit`
+    `git push origin`
+
+3. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
+4. Submit this new release to BioPortal.
+5. Update the website, http://edamontology.org.
+6. Announce the new release on the mailing lists (edamontology-announce@lists.sourceforge.net, edamontology-users@lists.sourceforge.net, edam-developers@lists.sourceforge.net)
 
 # Modifications in a GitHub fork (non-core developers)
 GitHub makes it possible for any developer (even if you are not a “core developer”) to make modifications in a copy of EDAM and suggest these modifications are included in the original. 
