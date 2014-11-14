@@ -33,6 +33,7 @@ The workflow is:
 
 # Workflow for the creation of a new official release of EDAM (Core developers only)
 **Before to create a new release, please make sure you have the approval of the EDAM Gatekeeper, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
+
 1. Update your local version of the repository:
 
     `git pull`
