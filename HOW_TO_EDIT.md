@@ -47,6 +47,7 @@ The workflow is:
    - commit and push your changes
 
     `git commit`
+
     `git push origin`
 
 3. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
