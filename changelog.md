@@ -1,5 +1,21 @@
 # EDAM\_1.4.owl
 
+- is a major revision of the EDAM Data branch aiming for simplification and ease of use.  
+- 117 EDAM Data concept deprecations
+- simplification of Data hierarchy
+- removal of excessively fine-grained Dat concepts
+- removal of out-of-scope Data concepts
+- removal of unnecessary "organisational" classes (near top of Data hierarchy)
+- renaming of concepts (terms) to reflect the common terms in use
+- addition of Data synonyms
+	
+  **Bug fixes** 
+- fixed many references to deprecated concepts
+	
+
+	
+# EDAM\_1.4.owl
+
 - A major revision of the "Topic" sub-ontology expanding this into medical concepts (~60 new topics), following an effort led by Cath Brooksbank with major input from partners from EMTRAIN (European Medicines research TRAINing network) and partners from related ESFRI (European Strategy Forum on Research Infrastructures) projects.
 - Fixing many minor bugs (mostly overlapping or bad synonyms) within topics, and other clean-ups.
 - Removed the lowest tier of the "Topic" branch (mostly by moving terms up a level).
