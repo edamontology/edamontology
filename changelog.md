@@ -1,6 +1,6 @@
-# EDAM\_1.4.owl
+# EDAM\_1.5.owl
 
-- is a major revision of the EDAM Data branch aiming for simplification and ease of use.  
+- A major revision of the EDAM Data branch aiming for simplification and ease of use.  
 - 117 EDAM Data concept deprecations
 - simplification of Data hierarchy
 - removal of excessively fine-grained Dat concepts
