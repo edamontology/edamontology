@@ -1,3 +1,14 @@
+# EDAM\_1.6.owl
+
+- A major revision of the EDAM Operation branch to simplify it and improve usability. 
+- 64 EDAM Operation concept deprecations.
+- Top-level Operations now correspond to tool types in the ELIXIR Tools & Data Services Registry: Analysis, Query and retrieval, Visualisation, Deposition, Utility operation.
+- Removal of excessively fine-grained Operation concepts.
+- Removal of unnecessary "organisational" classes.
+- Renaming of concepts (terms) to reflect the common terms in use.
+
+
+
 # EDAM\_1.5.owl
 
 - A major revision of the EDAM Data branch aiming for simplification and ease of use.  
@@ -11,7 +22,7 @@
 	
   **Bug fixes** 
 - fixed many references to deprecated concepts
-	
+
 
 	
 # EDAM\_1.4.owl
