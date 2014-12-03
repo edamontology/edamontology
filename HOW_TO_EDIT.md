@@ -113,3 +113,19 @@ When deprecating concepts, you _**MUST**_ specify the following:
 6. Remove all other class annotations (subsets, comments, synonyms etc.) and axioms (including parent concepts).
 
 
+## Ensuring logical consistency
+
+Before commiting changes, to ensure logical consistency of EDAM, please do the following within Protege:
+
+1. Click "Reasoner->Hermit"
+2. Click "Reasoner->Start reasoner" (it may take a few seconds)
+3. In the "Entities" tab, select the "Class hierarchy (inferred) tab"
+3. Select the "nothing" branch.
+
+If nothing (no classes) are shown under the "nothing" branch, then all is well.  If one or more classes are shown, then there is a logical inconsistency which must be fixed.  You might see lots of classes, but usually the problem is in one or a few classes.  
+
+Common problems include:
+- classes assigned as a subClass of some deprecated term
+- end-point of relations are in the wrong branch, e.g. 'class has_topic some operation'.  These can easily occur if you use the "Class expression editor" in Protege to define such axioms: this is NOT EDAM namespace aware, and in cases where a concept with the same preferred label exists in both classes, can easily pick the wrong one.
+
+The problems are easily fixed within Protege: ask on the mailing list if you're not sure how.  Finally, do not be tempted to click "Reasoner->Synchronise reasoner" between changes: it tends to hang Protege.  Instead, use "Reasoner->Stop reasoner" than "Reasoner->Start reasoner".
