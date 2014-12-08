@@ -42,9 +42,13 @@ The workflow is:
    - remove the file EDAM\_n.owl from the repository
 
     `git rm EDAM\_n.owl`
+   - copy the file EDAM\_n+1\_dev.owl to EDAM\_n+1.owl
+
+    `cp EDAM\_n+1\_dev.owl EDAM\_n+1.owl`
    - rename the file EDAM\_n+1\_dev.owl to EDAM\_n+2\_dev.owl
 
     `git mv EDAM\_n+1\_dev.owl EDAM\_n+2\_dev.owl`
+
    - commit and push your changes
 
     `git commit`
