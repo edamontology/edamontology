@@ -3,6 +3,9 @@
 - Additions and changes following from the recent ELIXIR Registry Hackathon (tinyurl.com/RegistryHackathon).  
 - About 50 new concepts added 
 - 9 concept deprecations
+- Many minor changes (new synonyms, minor structural changes etc.)
+	
+  **Bug fixes** 
 - Fixed synonyms that had URIs as values (1)
 
 (1) for any synonyms that had a URI as value, that URI is now given as a seeAlso annotation instead. It was also necessary to remove all <owl:annotatedProperty> statements that defined a synyonm, from all "annotations on annotations", i.e. where comments had been added to an annotation on a class, via an owl:Axiom statement. 
