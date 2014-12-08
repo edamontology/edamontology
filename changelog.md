@@ -1,12 +1,22 @@
+# EDAM\_1.7.owl
+
+- Additions and changes following from the recent ELIXIR Registry Hackathon (tinyurl.com/RegistryHackathon).  
+- About 50 new concepts added 
+- 9 concept deprecations
+- Fixed synonyms that had URIs as values (1)
+
+(1) for any synonyms that had a URI as value, that URI is now given as a seeAlso annotation instead. It was also necessary to remove all <owl:annotatedProperty> statements that defined a synyonm, from all "annotations on annotations", i.e. where comments had been added to an annotation on a class, via an owl:Axiom statement. 
+
+
 # EDAM\_1.6.owl
 
 - A major revision of the EDAM Operation branch to simplify it and improve usability. 
 - 64 EDAM Operation concept deprecations.
 - Top-level Operations now correspond to tool types in the ELIXIR Tools & Data Services Registry: Analysis, Query and retrieval, Visualisation, Deposition, Utility operation.
 - Removal of excessively fine-grained Operation concepts.
+- Removed "bioinformatics" subset and all corresponding annotations
 - Removal of unnecessary "organisational" classes.
 - Renaming of concepts (terms) to reflect the common terms in use.
-
 
 
 # EDAM\_1.5.owl
