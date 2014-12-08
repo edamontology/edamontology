@@ -48,6 +48,8 @@ The workflow is:
    - rename the file EDAM\_n+1\_dev.owl to EDAM\_n+2\_dev.owl
 
     `git mv EDAM\_n+1\_dev.owl EDAM\_n+2\_dev.owl`
+    
+   - modify the doap:version property to **n+1** in `EDAM\_n+1.owl` and to **n+2\_dev** in `EDAM\_n+2.owl`
 
    - commit and push your changes
 
