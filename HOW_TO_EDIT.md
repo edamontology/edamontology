@@ -57,9 +57,9 @@ The workflow is:
 
     `git push origin`
 
-3. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
-4. Submit this new release to BioPortal.
-5. Update the file web/page_x.html: update the version number (multiple places)
+3. Update the file web/page_x.html: update the version number to n+1 (in file name, and multiple places in the contents).
+4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
+5. Submit this new release to BioPortal.
 6. Update the website, http://edamontology.org.
 7. Announce the new release on the mailing lists (edamontology-announce@lists.sourceforge.net, edamontology-users@lists.sourceforge.net, edam-developers@lists.sourceforge.net)
 
