@@ -1,3 +1,17 @@
+# EDAM\_1.8.owl
+
+- Revision to provide comprehensive coverage of EBI Tool Topics, Data and Operations
+- Removal of fine-grained report (human-readable data) concepts from the Data branch
+- Rooting all report concepts under "Data->Report"
+- Removal of operation-like concepts from the Topics branch
+- Biological concepts (sequence feature-related, pathways and networks, experimental techniques) that were previously modeled under as reports within Data, are now given under Topic
+- Simplification of key Data concepts concerning sequences, alignments and signatures (motifs/profiles)
+- Many other additions and minor changes
+- 107 concept deprecations
+- 53 new concepts
+
+	
+	
 # EDAM\_1.7.owl
 
 - Additions and changes following from the recent ELIXIR Registry Hackathon (tinyurl.com/RegistryHackathon).  
