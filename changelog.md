@@ -1,3 +1,10 @@
+# EDAM\_1.9.owl
+
+- 20 new concepts in preparation for the ELIXIR Tools and Data Services Registry
+- 1 concept deprecation
+- Various minor changes (synonyms etc.)
+	
+	
 # EDAM\_1.8.owl
 
 - Revision to provide comprehensive coverage of EBI Tool Topics, Data and Operations
