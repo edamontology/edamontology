@@ -95,6 +95,7 @@ EDAM follows a 'gatekeeper' model with five tiers of governance:
   * Develop EDAM as bandwidth permits
 
 The gatekeeper has the additional responsibility of ensuring the Advisory Group, and all developers and contributors, are listened to and informed.
+
 4. **Developers** may have temporary 'core developer' status as convenient, but would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
