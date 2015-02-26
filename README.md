@@ -81,12 +81,27 @@ Our core priority is to be responsive to users of EDAM. Furthermore, to establis
 
 # Governance of EDAM
 
-EDAM follows a 'gatekeeper' model with 4 tiers of governance:
+EDAM follows a 'gatekeeper' model with five tiers of governance:
 
-1. **EDAM Advisory Board** - has the purpose of advising the EDAM core developers on how best to uphold the EDAM principles and achieve its current aims. It will include people with diverse skills, experience and expertise. Advisory Board members have no formal responsibilities, but are expected to advocate EDAM and actively offer frank and constructive advice on scientific, technical and strategic issues. The EDAM Core Developers will respect the advice and give quarterly updates on progress via the edamontology-advisory mailing list. The Core Developers would aim to assemble with the Advisory Board virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and be followed up with actions and notes on key recommendations. The Advisory Board will be reconstituted each year and the core developers reserve the right to drop inactive members. Members of the Advisory Board who are committing resources to EDAM may elect to serve on the **EDAM Steering Board** which has 3 primary responsibilities: 1) Help the EDAM Core Developers to make strategic decisions. 2) Verify whether stated aims and actions are coherent and wise. 3) Monitor progress and provide feedback. 4) Help seek funding for EDAM.
-2. **EDAM Core Developers** - have GitHub commit rights. Responsible for agreeing strategy and tactics, setting priorities, overseeing and approving developments and routine maintenance. Quasi-democratic with a **'gatekeeper'** (Jon Ison by default) having the final say. The gatekeeper may be temporarily appointed from the core developers as necessary, e.g. during holidays. Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 1) Understand and uphold the EDAM principles. 2) Advocate EDAM. 3) Develop EDAM as bandwidth permits.
-3. **Developers** - may have temporary 'core developer' status as convenient, but would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
-4. **Other contributors** - do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes.
+1. **EDAM Advisory Group** has the purpose of advising the EDAM Core Developers on how best to uphold the EDAM principles and achieve its current aims. It will represent the broad life science community, especially scientist end-users, and communicate practical experience, requirements and expertise. Advisory Group members have no formal responsibilities, but are expected to advocate EDAM and actively offer constructive advice on scientific, technical and strategic issues. The EDAM Core Developers will respect this advice and give quarterly updates on progress via the edamontology-advisory mailing list. The Core Developers will aim to assemble with the Advisory Group virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and be followed up with actions and notes on key recommendations. The Advisory Group will be reconstituted each year and the Steering Group (below) reserves the right to replace inactive members.
+
+2. **EDAM Steering Group** includes those members of the Advisory Group who are committing significant resources to EDAM.  Members of the Steering Group have four primary responsibilities:
+- Agree strategy and set priorities in consultation with the Core Developers
+- Verify whether stated aims and actions are coherent and wise
+- Monitor progress and provide feedback
+- Help seek funding for EDAM
+
+3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a 'gatekeeper' (currently Jon Ison) having the final say. The gatekeeper may be temporarily appointed from the core developers as necessary, e.g. during holidays. Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
+- Understand and uphold the EDAM principles
+- Advocate EDAM
+- Develop EDAM as bandwidth permits
+The gatekeeper has the additional responsibility of ensuring the Advisory Group, and all developers and contributors, are listened to and informed.
+
+4. **Developers** may have temporary 'core developer' status as convenient, but would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
+
+5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes.
+
+
 
 # Publication
 
