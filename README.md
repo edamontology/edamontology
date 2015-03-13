@@ -50,7 +50,7 @@ EDAM provides different semantic 'axes' for annotation. For example, annotation 
 
 EDAM strives to uphold a few founding principles including:
 
-- **Quality** - a controlled vocabulary that is moderated and assured via a gatekeeper model
+- **Quality** - a controlled vocabulary that is moderated
 - **Openness** - development in collaboration with the community
 - **Relevance** - prioritising use-case-driven development towards comprehensive but practical coverage
 - **Practicality** - practical utility is valued over ontological “strictness” or any metaphysical doctrine
@@ -81,7 +81,7 @@ Our core priority is to be responsive to users of EDAM. Furthermore, to establis
 
 # Governance of EDAM
 
-EDAM follows a 'gatekeeper' model with five tiers of governance:
+EDAM follows a model with five tiers of governance:
 
 1. **EDAM Advisory Group** advises the EDAM Core Developers on how best to uphold the EDAM principles and achieve its current aims. It represents the broad life science community, especially scientist end-users. Advisory Group members have no formal responsibilities, but are expected to advocate EDAM and actively offer constructive advice based on their practical experience, requirements and expertise. The EDAM Core Developers will respect this advice and give quarterly progress reports by email. The Core Developers aim to assemble with the Advisory Group virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations. The Advisory Group will be reconstituted each year and the Steering Group (below) reserves the right to replace inactive members.
 2. **EDAM Steering Group** includes those members of the Advisory Group who are committing significant resources to EDAM.  Members of the Steering Group have four primary responsibilities:
@@ -90,12 +90,12 @@ EDAM follows a 'gatekeeper' model with five tiers of governance:
   * Verify whether stated aims and actions are coherent and wise
   * Monitor progress and provide feedback
   * Help seek funding for EDAM
-3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a 'gatekeeper' (currently Jon Ison) having the final say where necessary. The gatekeeper ensures the Advisory Group, and all developers and contributors, are listened to and informed. The gatekeeper may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
+3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all developers and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
   * Understand and uphold the EDAM principles
   * Advocate EDAM
   * Develop EDAM as bandwidth permits
 
-4. **Developers** may have temporary 'core developer' status as convenient, but would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
+4. **Developers** would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
 
