@@ -108,14 +108,15 @@ EDAM follows a model with five tiers of governance:
 * Marie Grosjean (IFB, FR)
 
 ## EDAM Steering Group
-* Søren Brunak (ELIXIR DK)
-* Alfonso Valencia (ELIXIR ES)
-* Inge Jonassen (ELIXIR NO)
+* Karel Berka (ELIXIR CZ)
+* Christophe Blanchet (ELIXIR FR)
 * Cath Brooksbank (ELIXIR EMBL-EBI)
+* Søren Brunak (ELIXIR DK)
+* Inge Jonassen (ELIXIR NO)
 * Steven Newhouse (ELIXIR EMBL-EBI)
 * Heinz Stockinger (ELIXIR CH)
-* Christophe Blanchet (ELIXIR FR)
-* Karel Berka (ELIXIR CZ)
+* Alfonso Valencia (ELIXIR ES)
+
 
 ## EDAM Advisory Group
 * Frederik Coppens (ELIXIR BE)
