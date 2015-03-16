@@ -133,6 +133,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 * Dan Bolser (EMBL-EBI, UK)
 * Nathalie Conte (EMBL-EBI, UK)
 * Victor de la Torre (ELIXIR-ES)
+* Ray Fergerson (Stanford University, USA)
 * Carole Goble (ELIXIR-UK)
 * Simon Jupp (EMBL-EBI, UK)
 * Peter Løngreen (CBS-DTU, DK)
@@ -145,10 +146,11 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 * Steve Pettifer (University of Manchester, UK)
 * Kristoffer Rapacki (CBS-DTU, DK)
 * Peter Rice (Imperial College, UK)
+* Radka Svobodova (ELIXIR-CZ)
 * Mahmut Uludag (EMBL-EBI, UK)
 * Jiří Vondrášek (ELIXIR-CZ)
 * Gert Vriend (CMBI, NL)
-
+* Trish Whetzel (University of California, USA)
 
 # Publication
 
