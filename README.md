@@ -99,6 +99,53 @@ EDAM follows a model with five tiers of governance:
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
 
+# People
+
+## EDAM Core Developers
+Jon Ison (CBS-DTU, DK) *- lead developer*
+Matúš Kalaš (University of Bergen, NO)
+Hervé Ménager (Institut Pasteur, FR)
+Marie Grosjean (IFB, FR)
+
+## EDAM Steering Group
+Søren Brunak (ELIXIR DK)
+Alfonso Valencia (ELIXIR ES)
+Inge Jonassen (ELIXIR NO)
+Cath Brooksbank (ELIXIR EMBL-EBI)
+Steven Newhouse (ELIXIR EMBL-EBI)
+Heinz Stockinger (ELIXIR CH)
+Christophe Blanchet (ELIXIR FR)
+Karel Berka (ELIXIR CZ)
+
+## EDAM Advisory Group
+Frederik Coppens (ELIXIR BE)
+Melissa Haendel (Oregon Health & Science University, USA)
+Niclas Jareborg (ELIXIR SE)
+Rafael Jimenez (ELIXIR HUB)
+Anna-Lena Lamprecht (University of Potsdam, DE)
+Jane Lomax (Sanger Institute, UK)
+Hedi Peterson (ELIXIR EE)
+
+## Contributors
+Thanks to the many people who have contributed - if you're not listed below, please let us know!
+
+* Dan Bolser (EMBL-EBI, UK)
+* Nathalie Conte (EMBL-EBI, UK)
+* Victor de la Torre (ELIXIR-ES)
+* Simon Jupp (EMBL-EBI, UK)
+* Peter Løngreen (CBS-DTU, DK)
+* Rodrigo Lopez (EMBL-EBI, UK)
+* James Malone (EMBL-EBI, UK)
+* Julie McMurry (EMBL-EBI, UK)
+* Hamish McWilliam (formely EMBL-EBI, UK)
+* Helen Parkinson (EMBL-EBI, UK)
+* Steve Pettifer (University of Manchester, UK)
+* Kristoffer Rapacki (CBS-DTU, DK)
+* Peter Rice (Imperial College, UK)
+* Mahmut Uludag (EMBL-EBI, UK)
+* Jiří Vondrášek (ELIXIR-CZ)
+* Gert Vriend (CMBI, NL)
+
 
 # Publication
 
