@@ -5,6 +5,7 @@ Straightforward requests for one or a few changes can be made straight away on t
 http://tinyurl.com/EDAMChangeRequest 
 
 Requests for many new concepts should, however, first be discussed with the EDAM core developers:
+
 edam-core@elixir-dk.org
 
 If you agree with the EDAM core developers on substantial additions or other changes and are funded for such developments, we are open to you becoming a temporary EDAM core developer. In any case, we will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.
@@ -19,6 +20,7 @@ When requesting a new concept:
 
 # Mailing lists
 This is the preferred way to make suggestions that require some discussion. Please mail:
+
 edam@elixir-dk.org
 
 You can use the same list for discussions around the use of EDAM concepts, _i.e._ for purposes of resource annotation and in software implementations.
