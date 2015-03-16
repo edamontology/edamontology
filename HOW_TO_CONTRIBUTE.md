@@ -19,10 +19,12 @@ When requesting a new concept:
 
 # Mailing lists
 This is the preferred way to make suggestions that require some discussion. Please mail:
-edamontology-developers@lists.sourceforge.net
+edam@elixir-dk.org
 
-For discussions around the use of EDAM concepts, _i.e._ for purposes of resource annotation and in software implementations, please email:
-edamontology-users@lists.sourceforge.net
+You can use the same list for discussions around the use of EDAM concepts, _i.e._ for purposes of resource annotation and in software implementations.
+
+For a low-traffic mailing list for announcements about the EDAM ontology, subscribe to edam-announce:
+http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce
 
 # GitHub issue tracker
 The GitHub issue tracker can be used to submit issues for which, for whatever reason, you want a public record: we prefer it is not used for any other purpose.
