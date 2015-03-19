@@ -121,11 +121,13 @@ EDAM follows a model with five tiers of governance:
 ## EDAM Advisory Group
 * Frederik Coppens (ELIXIR BE)
 * Melissa Haendel (Oregon Health & Science University, USA)
+* Hans-Ioan Ienasescu (University of Copenhagen, DK)
 * Niclas Jareborg (ELIXIR SE)
 * Rafael Jimenez (ELIXIR HUB)
 * Anna-Lena Lamprecht (University of Potsdam, DE)
 * Jane Lomax (Sanger Institute, UK)
 * Hedi Peterson (ELIXIR EE)
+
 
 ## Contributors
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
