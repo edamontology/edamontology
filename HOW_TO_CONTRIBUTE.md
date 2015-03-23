@@ -23,6 +23,7 @@ This is the preferred way to make suggestions that require some discussion. Plea
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
 To post to the list, mail:
+
 edam@elixir-dk.org
 
 You can use the same list for discussions around the use of EDAM concepts, _i.e._ for purposes of resource annotation and in software implementations.
