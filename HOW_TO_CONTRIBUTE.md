@@ -19,8 +19,10 @@ When requesting a new concept:
 - Peripheral but important information can go in the **comment**.
 
 # Mailing lists
-This is the preferred way to make suggestions that require some discussion. Please mail:
+This is the preferred way to make suggestions that require some discussion. Please subscribe:
+http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
+To post to the list, mail:
 edam@elixir-dk.org
 
 You can use the same list for discussions around the use of EDAM concepts, _i.e._ for purposes of resource annotation and in software implementations.
