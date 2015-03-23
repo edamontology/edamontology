@@ -87,7 +87,7 @@ EDAM follows a model with five tiers of governance:
 2. **EDAM Steering Group** includes representatives of institutes that are committing significant resources to EDAM.  Members of the Steering Group have four primary responsibilities:
 
   * Agree strategy and set priorities in consultation with the Core Developers
-  * Verify whether stated aims and actions are coherent and wise
+  * Verify whether stated aims are coherent and wise
   * Monitor progress and provide feedback
   * Help arrange funding for EDAM
 3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all developers and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
