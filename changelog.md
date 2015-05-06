@@ -1,10 +1,30 @@
+# Changelog for EDAM
+Description of changes are grouped as follows:
+* **Added:** new features
+* **Changed:** changes to existing functionality
+* **Deprecated:** a once-stable feature that has been removed
+* **Removed:** a deprecated feature that has been removed
+* **Fixed:** a bug fix
+* **Misc:** some miscellaneous other change
+
+# EDAM\_1.10_dev.owl
+## Added
+hasDBXref class annotations added to EDAM Topic concepts to provide mapping to all VT Scientific Disciplines in branches 1.1 Mathematics, 1.2 Computer sciences, 1.3 Information sciences, 1.5 Biological sciences, 1.7 Chemical sciences, 3. Medical and Health Sciences, 3.2 Clinical medicine, 3.3 Health sciences and 3.4 Medical biotechnology.
+
+## Changed
+* 'Topic:Informatics' undeprecated and used as placeholder for various information science-related terms.
+* 'Topic:Data management' and 'Topic:Computer science" siblings rearranged for conceptual clarity.
+
+## Fixed
+* Multiple duplications of snyonyms and labels in Topics branch.
+
 # EDAM\_1.9.owl
 
 - 20 new concepts in preparation for the ELIXIR Tools and Data Services Registry
 - 1 concept deprecation
 - Various minor changes (synonyms etc.)
-	
-	
+
+
 # EDAM\_1.8.owl
 
 - Revision to provide comprehensive coverage of EBI Tool Topics, Data and Operations
@@ -17,24 +37,24 @@
 - 107 concept deprecations
 - 53 new concepts
 
-	
-	
+
+
 # EDAM\_1.7.owl
 
-- Additions and changes following from the recent ELIXIR Registry Hackathon (tinyurl.com/RegistryHackathon).  
-- About 50 new concepts added 
+- Additions and changes following from the recent ELIXIR Registry Hackathon (tinyurl.com/RegistryHackathon).
+- About 50 new concepts added
 - 9 concept deprecations
 - Many minor changes (new synonyms, minor structural changes etc.)
-	
-  **Bug fixes** 
+
+  **Bug fixes**
 - Fixed synonyms that had URIs as values (1)
 
-(1) for any synonyms that had a URI as value, that URI is now given as a seeAlso annotation instead. It was also necessary to remove all <owl:annotatedProperty> statements that defined a synyonm, from all "annotations on annotations", i.e. where comments had been added to an annotation on a class, via an owl:Axiom statement. 
+(1) for any synonyms that had a URI as value, that URI is now given as a seeAlso annotation instead. It was also necessary to remove all <owl:annotatedProperty> statements that defined a synyonm, from all "annotations on annotations", i.e. where comments had been added to an annotation on a class, via an owl:Axiom statement.
 
 
 # EDAM\_1.6.owl
 
-- A major revision of the EDAM Operation branch to simplify it and improve usability. 
+- A major revision of the EDAM Operation branch to simplify it and improve usability.
 - 64 EDAM Operation concept deprecations.
 - Top-level Operations now correspond to tool types in the ELIXIR Tools & Data Services Registry: Analysis, Query and retrieval, Visualisation, Deposition, Utility operation.
 - Removal of excessively fine-grained Operation concepts.
@@ -45,7 +65,7 @@
 
 # EDAM\_1.5.owl
 
-- A major revision of the EDAM Data branch aiming for simplification and ease of use.  
+- A major revision of the EDAM Data branch aiming for simplification and ease of use.
 - 117 EDAM Data concept deprecations
 - simplification of Data hierarchy
 - removal of excessively fine-grained Dat concepts
@@ -53,12 +73,12 @@
 - removal of unnecessary "organisational" classes (near top of Data hierarchy)
 - renaming of concepts (terms) to reflect the common terms in use
 - addition of Data synonyms
-	
-  **Bug fixes** 
+
+  **Bug fixes**
 - fixed many references to deprecated concepts
 
 
-	
+
 # EDAM\_1.4.owl
 
 - A major revision of the "Topic" sub-ontology expanding this into medical concepts (~60 new topics), following an effort led by Cath Brooksbank with major input from partners from EMTRAIN (European Medicines research TRAINing network) and partners from related ESFRI (European Strategy Forum on Research Infrastructures) projects.
@@ -111,7 +131,7 @@ SeqWiki "biological domains" map to EDAM "Topic", SeqWiki "bioinformatics method
 The first release proper.
 
 General changes
-  - New style for concept IDs: 4 digit number, subontology namespace / subset("operation", "topic" etc) _e.g._ 
+  - New style for concept IDs: 4 digit number, subontology namespace / subset("operation", "topic" etc) _e.g._
    "EDAM\_operation:0004" (new style) instead of "EDAM:0000004" (old style).
 
   - New relations ("has function", "is function of") are defined for use by annotators (they are not used in EDAM itself).
@@ -119,7 +139,7 @@ General changes
   - Synonyms are defined that define related or relevant concepts in many other ontologies and systems. Synonyms are added throughout but especially on top-level concepts ("Operation", "Data", "Format" and "Topic") and relations ("has input", "is input of", "has output", "is output of", "has topic", "is topic of", "has format", "is format of", "has function", "is function of").
 
   - New concept attributes and modifiers have been added, most importantly:
-  
+
    "{note}" for comments on synonyms and other attributes, _e.g._
 `synonym: "assembly" NARROW [SO:0001248] {note="Perhaps surprisingly, the definition of 'SO:assembly' is narrower than the 'SO:sequence\_assembly'."}`.
 
@@ -157,7 +177,7 @@ General changes
    - "is\_format\_of" relations defined (for nearly all terms)
 
 "Topic" branch
-   - Improved term names and is_a hierarchy, reflecting whether topics concern a type of data, operation or are more general. 
+   - Improved term names and is_a hierarchy, reflecting whether topics concern a type of data, operation or are more general.
    - New "Biological data resources" sub-branch includes common data resource concepts.
    - Major revision! Too much to mention, so take a look :)
 
@@ -176,7 +196,7 @@ New "Identifier" sub-ontology
    - Containing concepts which were under Data<-Identifier
    - For fine-grained annotation of identifiers of data
 
-"Resource" sub-ontology obsoleted 
+"Resource" sub-ontology obsoleted
    - Most concepts merged into "Topic" sub-ontology (see below)
    - All remaining concepts in "resource" namespace obsoleted
 
@@ -210,12 +230,12 @@ EDAM-specific relations
 
 
 # EDAM\_beta10.obo
-Major revision of "Operation" branch 
+Major revision of "Operation" branch
   - immensely simplified top level
   - better hierarchy
 
-Major revision of "Data" branch 
-  - simpler top-level 
+Major revision of "Data" branch
+  - simpler top-level
   - better hierarchy
   - new branches for "Protein data", "Nucleic acid data"
   - new terms to aid navigation
