@@ -9,7 +9,7 @@ Description of changes are grouped as follows:
 
 # EDAM\_1.10_dev.owl
 ## Added
-hasDBXref class annotations added to EDAM Topic concepts to provide mapping to all VT Scientific Disciplines in branches 1.1 Mathematics, 1.2 Computer sciences, 1.3 Information sciences, 1.5 Biological sciences, 1.7 Chemical sciences, 3. Medical and Health Sciences, 3.2 Clinical medicine, 3.3 Health sciences and 3.4 Medical biotechnology.
+* hasDBXref class annotations added to EDAM Topic concepts to provide mapping to all VT Scientific Disciplines in branches 1.1 Mathematics, 1.2 Computer sciences, 1.3 Information sciences, 1.5 Biological sciences, 1.7 Chemical sciences, 3. Medical and Health Sciences, 3.2 Clinical medicine, 3.3 Health sciences and 3.4 Medical biotechnology.
 
 ## Changed
 * 'Topic:Informatics' undeprecated and used as placeholder for various information science-related terms.
