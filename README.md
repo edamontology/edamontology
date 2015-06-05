@@ -154,6 +154,19 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 * Gert Vriend (CMBI, NL)
 * Trish Whetzel (University of California, USA)
 
+
+
+# Recent workshops (2014 - )
+Thank you to all of the participants of various meetings and workshops organised, by BioMedBridges, ELIXIR and others
+
+* [ELIXIR Curation Hackathon I : Registration of Tools & Data Services](https://docs.google.com/document/d/1s3J8msba1jHv18Ywz1wTH8UAjedD01IW-YfJNt17X_k/edit#heading=h.k2c28vnbr5jw)
+
+* [ELIXIR Technical Hackathon I: EDAM Development & Governance](https://docs.google.com/document/d/1CoDvzq6o9J4g5agEj6b9CugGGjWw8QzSU89FLeTjVww/edit#heading=h.k2c28vnbr5jw)
+
+* [ELIXIR, BioMedBridges & EGI Workshop: A common vocabulary to classify resources in the life sciences](http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-life-sciences)
+
+
+
 # Publication
 
 If you use EDAM or its part, please reference:
