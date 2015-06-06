@@ -163,7 +163,7 @@ Thank you to all of the participants of various meetings and workshops organised
 
 * [ELIXIR Technical Hackathon I: EDAM Development & Governance](https://docs.google.com/document/d/1CoDvzq6o9J4g5agEj6b9CugGGjWw8QzSU89FLeTjVww/edit#heading=h.k2c28vnbr5jw)
 
-* [ELIXIR, BioMedBridges & EGI Workshop: A common vocabulary to classify resources in the life sciences](http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-life-sciences)
+* [ELIXIR, BioMedBridges & RDA Workshop: A common vocabulary to classify resources in the life sciences](http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-life-sciences)
 
 
 
