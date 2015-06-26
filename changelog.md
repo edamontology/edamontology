@@ -18,7 +18,7 @@ Description of changes are grouped as follows:
 * 'Topic:Data management' and 'Topic:Computer science" siblings rearranged for conceptual clarity.
 
 ## Fixed
-* Multiple duplications of snyonyms and labels in Topics branch.
+* Multiple duplications of synonyms and labels in Topics branch.
 
 ## Misc
 Style of Topic concept definitions changed, removing "Topic concerning ...", to make them more usable. 
