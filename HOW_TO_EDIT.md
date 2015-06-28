@@ -39,6 +39,7 @@ The workflow is:
     `git pull`
 2. Assuming you are releasing version n+1, n being the current version:
    - you initially have EDAM\_n.owl and EDAM\_n+1\_dev.owl in the repository
+   - make sure to update 'oboOther:date' in the EDAM\_n+1\_dev.owl file
    - remove the file EDAM\_n.owl from the repository
 
     `git rm EDAM\_n.owl`
@@ -50,14 +51,14 @@ The workflow is:
     `git mv EDAM\_n+1\_dev.owl EDAM\_n+2\_dev.owl`
     
    - modify the doap:version property to **n+1** in `EDAM\_n+1.owl` and to **n+2\_dev** in `EDAM\_n+2.owl`
-
+   
    - commit and push your changes
 
     `git commit`
 
     `git push origin`
 
-3. Update the file web/page_x.html: update the version number to n+1 (in file name, and multiple places in the contents).
+3. Update the file names of web/page_x.html and relations-and-properties_x.html: update the version number to n+1 (in file name, and multiple places in the contents).
 4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
 5. Submit this new release to BioPortal.
 6. Update the website, http://edamontology.org.
