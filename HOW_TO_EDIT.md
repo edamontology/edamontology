@@ -58,7 +58,7 @@ The workflow is:
 
     `git push origin`
 
-3. Update the file names of web/page_x.html and relations-and-properties_x.html: update the version number to n+1 (in file name, and multiple places in the contents).
+3. Update the file names of web/page_x.html and relations-and-properties_x.html: update the version number to n+1 (in file name, and multiple places in the contents), and also update the last update date in web/page_x.html.
 4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
 5. Submit this new release to BioPortal.
 6. Update the website, http://edamontology.org.
