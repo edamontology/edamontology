@@ -38,7 +38,7 @@
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, and Herve Menager. Contributors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Contibutions from these projects: EMBRACE, ELIXIR, and BioMedBridges (EU); EMBOSS (BBSRC, UK); eSysbio, FUGE Bioinformatics Platform, and ELIXIR.NO/Norwegian Bioinformatics Platform (Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
-        <oboOther:date>01:07:2015</oboOther:date>
+        <oboOther:date>03:07:2015</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -35742,7 +35742,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0449">
         <rdfs:label>Sequence alignment analysis (site correlation)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/correlation_3465"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3465"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0258"/>
         <oboInOwl:hasDefinition>Analyse correlations between sites in a molecular sequence alignment.</oboInOwl:hasDefinition>
         <rdfs:comment>This is typically done to identify possible covarying positions and predict contacts or structural constraints in protein structures.</rdfs:comment>
@@ -43445,7 +43445,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_3463">
         <rdfs:label>Gene expression correlation analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/correlation_3465"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3465"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0315"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasExactSynonym>Gene co-expression network analysis</oboInOwl:hasExactSynonym>
