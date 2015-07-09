@@ -7,6 +7,10 @@ Description of changes are grouped as follows:
 * **Fixed:** a bug fix
 * **Misc:** some miscellaneous other change
 
+# EDAM\_1.11.owl
+## Added
+* 44 new formats have been added, based on the needs of the Galaxy (http://usegalaxy.org), ReGaTE (https://github.com/bioinfo-center-pasteur-fr/ReGaTE), and Common Workflow Language (https://github.com/common-workflow-language) projects, as part of the BOSC Codefest 2015 (http://open-bio.org/wiki/Codefest-2015.html).
+
 # EDAM\_1.10.owl
 ## Added
 * hasDBXref class annotations added to Topic concepts to provide mapping to all VT Scientific Disciplines in branches 1.1 Mathematics, 1.2 Computer sciences, 1.3 Information sciences, 1.5 Biological sciences, 1.7 Chemical sciences, 3. Medical and Health Sciences, 3.2 Clinical medicine, 3.3 Health sciences and 3.4 Medical biotechnology.
