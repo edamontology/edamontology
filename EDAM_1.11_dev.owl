@@ -708,54 +708,6 @@
      -->
 
     
-
-
-    <!-- http://edamontology.org#format_3599 -->
-
-    <owl:Class rdf:about="http://edamontology.org#format_3599">
-        <rdfs:label>xpm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <created_in>1.11</created_in>
-        <rdfs:comment>Sequence of segments with markers. Begins with byte of 0xFF and follows by marker type.</rdfs:comment>
-        <oboInOwl:hasDefinition>X PixMap (XPM) is an image file format used by the X Window System, it is intended primarily for creating icon pixmaps, and supports transparent pixels.
-</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://www.fileformat.info/format/xpm/egff.htm"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org#format_3600 -->
-
-    <owl:Class rdf:about="http://edamontology.org#format_3600">
-        <rdfs:label>rgb</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <created_in>1.11</created_in>
-        <oboInOwl:hasDefinition>RGB file format is the native raster graphics file format for Silicon Graphics workstations.
-</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://www.fileformat.info/format/jpeg/egff.htm"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org#format_3601 -->
-
-    <owl:Class rdf:about="http://edamontology.org#format_3601">
-        <rdfs:label>pbm</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <created_in>1.11</created_in>
-        <oboInOwl:hasDefinition>The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters.
-</oboInOwl:hasDefinition>
-        <documentation rdf:resource="http://netpbm.sourceforge.net/doc/pbm.html"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-    </owl:Class>
     
 
 
@@ -31696,6 +31648,55 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="http://www.fileformat.info/format/xbm/egff.htm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3599 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3599">
+        <rdfs:label>xpm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <created_in>1.11</created_in>
+        <rdfs:comment>Sequence of segments with markers. Begins with byte of 0xFF and follows by marker type.</rdfs:comment>
+        <oboInOwl:hasDefinition>X PixMap (XPM) is an image file format used by the X Window System, it is intended primarily for creating icon pixmaps, and supports transparent pixels.
+</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.fileformat.info/format/xpm/egff.htm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3600 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3600">
+        <rdfs:label>rgb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <created_in>1.11</created_in>
+        <oboInOwl:hasDefinition>RGB file format is the native raster graphics file format for Silicon Graphics workstations.
+</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.fileformat.info/format/jpeg/egff.htm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3601 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3601">
+        <rdfs:label>pbm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <created_in>1.11</created_in>
+        <oboInOwl:hasDefinition>The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters.
+</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://netpbm.sourceforge.net/doc/pbm.html"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
 
