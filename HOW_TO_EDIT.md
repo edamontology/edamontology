@@ -1,11 +1,11 @@
-If you’re not sure how to do anything please first ask by mailing:
-edamontology-developers@lists.sourceforge.net 
+If you’re not sure how to do something please first ask by mailing:
+edam@elixir-dk.org
 
 # Modifications in GitHub main repository (Core Developers only)
 The workflow is:
 
 1. Get the “editing token” 
-   - Contact edamontology-developers@lists.sourceforge.net and claim the “editing token” after first checking that it is not currently taken :)
+   - Contact edam-core@elixir-dk.org and claim the “editing token” after first checking that it is not currently taken :)
    - Say what you are doing, why, and about how long it will take
 2. Update your local repo with the latest files from the GitHub master:
 
@@ -28,7 +28,7 @@ The workflow is:
 
     `git push origin`
 5. Release the editing token for the other developers:
-   - Contact edamontology-developers@lists.sourceforge.net and release the “editing token” .
+   - Contact edam-core@elixir-dk.org and release the “editing token” .
    - Summarise what you actually did and why.
 
 # Workflow for the creation of a new official release of EDAM (Core developers only)
@@ -62,7 +62,7 @@ The workflow is:
 4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
 5. Submit this new release to BioPortal.
 6. Update the website, http://edamontology.org.
-7. Announce the new release on the mailing lists (edamontology-announce@lists.sourceforge.net, edamontology-users@lists.sourceforge.net, edam-developers@lists.sourceforge.net)
+7. Announce the new release on the mailing lists (edam-announce@elixir-dk.org, edam@elixir-dk.org)
 
 # Modifications in a GitHub fork (non-core developers)
 GitHub makes it possible for any developer (even if you are not a “core developer”) to make modifications in a copy of EDAM and suggest these modifications are included in the original. 
@@ -74,9 +74,6 @@ The workflow is:
 Please make sure to:
 - Keep your forked repository synchronized with the core repository, to avoid inconsistencies.
 - Make sure to follow the “Best practices for edition” below.
-
-If you’re not sure how to do any of this, then please contact the mailing list for help:
- edamontology-developers@lists.sourceforge.net. 
 
 # Best practices for edition
 
