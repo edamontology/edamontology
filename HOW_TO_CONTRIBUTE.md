@@ -1,4 +1,11 @@
-EDAM is a community project, and suggestions for additions, corrections, and other improvements are always welcome. There are 3 ways to contribute suggestions:
+# Connect
+
+Follow the development of EDAM:
+ - Here at GitHub
+ - At http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)), please use [#edamontology](https://twitter.com/search?q=%23edamontology)
+ - Subscribe to [EDAM's mailing lists](#mailinglists)
+
+EDAM is a community project, and suggestions for additions, corrections, and other improvements are always welcome! There are 3 ways to contribute suggestions:
 
 # Web form
 Straightforward requests for one or a few changes can be made straight away on the _**EDAM Change Request**_ form:
@@ -18,7 +25,7 @@ When requesting a new concept:
 - The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
 - Peripheral but important information can go in the **comment**.
 
-# Mailing lists
+# <a name="mailinglists"></a>Mailing lists
 This is the preferred way to make suggestions that require some discussion. Please subscribe:
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
