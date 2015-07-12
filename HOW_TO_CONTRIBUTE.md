@@ -3,19 +3,22 @@ EDAM is a community project, and suggestions for additions, corrections, and oth
 
 # <a name="mailinglists"></a>Mailing lists
 To request changes and additions, and for general discussions, including the use of EDAM for resource annotation and in software implementations, mail:
+
 edam@elixir-dk.org
 
 Subscribe here:
+
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
 We'll make every effort to be responsive, given our limited resources, and will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.  
 
 For low-traffic announcements, subscribe to edam-announce:
+
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce
 
 
 # Suggestions form
-Simple requests for one or a few changes can be made using the _**EDAM Change Request**_ form:
+Simple requests for one or a few changes can be made using this form:
 http://tinyurl.com/EDAMChangeRequest 
 
 When completing the form:
