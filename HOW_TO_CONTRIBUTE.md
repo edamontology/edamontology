@@ -8,7 +8,7 @@ edam@elixir-dk.org
 
 We'll make every effort to be responsive, given our limited resources, and will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.  
 
-To receive mail from this list, subscribe here:
+To receive mail from the list above, subscribe here:
 
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
