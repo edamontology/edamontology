@@ -6,19 +6,20 @@ To request changes and additions, and for general discussions, including the use
 
 edam@elixir-dk.org
 
-Subscribe here:
+We'll make every effort to be responsive, given our limited resources, and will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.  
+
+To receive mail from this list, subscribe here:
 
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
-We'll make every effort to be responsive, given our limited resources, and will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.  
-
-For low-traffic announcements, subscribe to edam-announce:
+To receive low-traffic announcements, subscribe here:
 
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce
 
 
 # Suggestions form
 Simple requests for one or a few changes can be made using this form:
+
 http://tinyurl.com/EDAMChangeRequest 
 
 When completing the form:
