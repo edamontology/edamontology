@@ -1,11 +1,6 @@
-
-
-
- - At http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)), please use [#edamontology](https://twitter.com/search?q=%23edamontology)
- - Subscribe to [EDAM's mailing lists](#mailinglists)
-
 EDAM is a community project, and suggestions for additions, corrections, and other improvements are always welcome! 
 
+ - http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)), please use [#edamontology](https://twitter.com/search?q=%23edamontology)
 
 # <a name="mailinglists"></a>Mailing lists
 Contact the mailing list to request changes, additions and for general discussions, including the use of EDAM concepts for resource annotation and in software implementations:
