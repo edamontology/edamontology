@@ -1,12 +1,11 @@
 EDAM is a community project, and suggestions for additions, corrections, and other improvements are always welcome! 
 
- - http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)), please use [#edamontology](https://twitter.com/search?q=%23edamontology)
 
 # <a name="mailinglists"></a>Mailing lists
-Contact the mailing list to request changes, additions and for general discussions, including the use of EDAM concepts for resource annotation and in software implementations:
+To request changes and additions, and for general discussions, including the use of EDAM for resource annotation and in software implementations, mail:
 edam@elixir-dk.org
 
-You can subscribe here:
+Subscribe here:
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam
 
 We'll make every effort to be responsive, given our limited resources, and will work with you to find the most efficient way to proceed, depending on your requirements, expertise and bandwidth.  
