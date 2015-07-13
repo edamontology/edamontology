@@ -28,7 +28,7 @@ When completing the form:
 - The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
 - Peripheral but important information can go in the **comment**.
 
-If you require many changes and additions please contact the mailing list.
+If you require many changes and additions please contact edam@elixir-dk.org.
 
 
 # GitHub issue tracker
