@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>edamontology by edamontology</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>edamontology</h1>
+        <h2>EDAM is an ontology of bioinformatics types of data, data identifiers, data formats, operations and topics.</h2>
+        <a href="https://github.com/edamontology/edamontology" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="what-is-edam" class="anchor" href="#what-is-edam" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is EDAM?</h1>
+
+<p>EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.</p>
+
+<p>You can browse <a href="http://bioportal.bioontology.org/ontologies/EDAM/">EDAM at BioPortal</a>.</p>
+
+<p>See <a href="http://twitter.com/edamontology">http://twitter.com/edamontology</a> (<a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&amp;region=follow_link&amp;screen_name=edamontology&amp;tw_p=followbutton">follow</a>), please use <a href="https://twitter.com/search?q=%23edamontology">#edamontology</a></p>
+
+<h1>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Motivation</h1>
+
+<p>Bioinformaticians handle an increasingly large and diverse set of tools and data. Meanwhile, researchers demand ever more powerful and convenient means to organise, find, understand, compare, select, use and connect the available resources. These tasks often rely on consistent, machine-understandable descriptions of the underlying components, but these have been generally lacking in <em>ad hoc</em> resource descriptions. The urgent need - filled by EDAM - is for an ontology that unifies semantically the bioinformatics concepts in common use, provides the curator with a comprehensive controlled vocabulary that is broadly applicable, and supports new and powerful search, browse and query functions.</p>
+
+<h1>
+<a id="applications" class="anchor" href="#applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications</h1>
+
+<p>EDAM is suitable for large-scale semantic annotations and categorization of diverse bioinformatics resources, including:</p>
+
+<ul>
+<li>Web services including REST and SOAP APIs</li>
+<li>Application software</li>
+<li>Tool collections and packages</li>
+<li>Workflows / pipelines</li>
+<li>Databases</li>
+<li>XML Schemata and data objects</li>
+<li>Data syntax and file formats</li>
+<li>Web portals and pages</li>
+<li>Resource catalogues</li>
+<li>Training materials </li>
+<li>Courses, tutorials, and other events</li>
+<li>Areas of scientific interest</li>
+<li>Documents, such as scientific publications</li>
+</ul>
+
+<p>EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</p>
+
+<h1>
+<a id="scope" class="anchor" href="#scope" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scope</h1>
+
+<p>EDAM includes 4 main sub-ontologies or 'branches' of concepts:</p>
+
+<ul>
+<li>
+<em><strong>Data</strong></em> - “Information, represented in an information artefact (data record) that is 'understandable' by dedicated computational tools that can use the data as input or produce it as output.”</li>
+<li>
+<em><strong>Format</strong></em> - “A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere.”</li>
+<li>
+<em><strong>Operation</strong></em> - “A function that processes a set of inputs and results in a set of outputs, or associates arguments (inputs) with values (outputs).” </li>
+<li>
+<em><strong>Topic</strong></em> - “A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other.”</li>
+</ul>
+
+<p>Noteworthy within the the Data sub-ontology is:</p>
+
+<ul>
+<li>
+<em><strong>Identifier</strong></em> - “A text token, number or something else which identifies an entity, but which may not be persistent (stable) or unique (the same identifier may identify multiple things).”</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMconcepts.png" alt="EDAM concepts figure"></p>
+
+<p>As a general rule, the <em><strong>Data</strong></em>, <em><strong>Format</strong></em>, and <em><strong>Operation</strong></em> branches include concepts strictly in domain of bioinformatics and computational biology: concepts purely concerning biology, computer science, <em>etc.</em> are not included. The <em><strong>Topic</strong></em> branch, however, includes broader inter-disciplinary concepts from the biological and medical domains.</p>
+
+<p>EDAM provides different semantic 'axes' for annotation. For example, annotation of a software tool might include:</p>
+
+<ul>
+<li>
+<em>Topic</em> - general scientific domain the software serves, <em>e.g.</em> “Structural biology”</li>
+<li>
+<em>Operation</em> - the precise function of the tool, <em>e.g.</em> “Homology modelling”</li>
+<li>
+<em>Data</em> - the primary input and output, <em>e.g.</em> “Protein structure”</li>
+<li>
+<em>Format</em> - the supported format(s) of the input and output, <em>e.g.</em> “PDB format”</li>
+</ul>
+
+<h1>
+<a id="principles" class="anchor" href="#principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Principles</h1>
+
+<p>EDAM strives to uphold a few founding principles including:</p>
+
+<ul>
+<li>
+<strong>Quality</strong> - a controlled vocabulary that is moderated</li>
+<li>
+<strong>Openness</strong> - development in collaboration with the community</li>
+<li>
+<strong>Relevance</strong> - prioritising use-case-driven development towards comprehensive but practical coverage</li>
+<li>
+<strong>Practicality</strong> - practical utility is valued over ontological “strictness” or any metaphysical doctrine</li>
+<li>
+<strong>Clear scope</strong> - respecting the scope of other complementary, well-developed ontologies</li>
+<li>
+<strong>Familiarity</strong> - including only concepts that are well established; familiar are prevalent and jargon is discouraged</li>
+<li>
+<strong>Usability</strong> - conceptual hierarchy with sufficient richness but only necessary complexity</li>
+<li>
+<strong>Maintainability</strong> - development must be efficient and sustainably up to date in the long term</li>
+</ul>
+
+<p>EDAM is working towards implementing these principles fully and is open to suggestions.</p>
+
+<h1>
+<a id="architecture" class="anchor" href="#architecture" aria-hidden="true"><span class="octicon octicon-link"></span></a>Architecture</h1>
+
+<p>EDAM has 3 components:</p>
+
+<ul>
+<li>
+<em><strong>Concepts</strong></em> - All concepts have a name (the term or label) and definition. Further, a concept may have simple relations (see below) to other EDAM concepts, as well other intrinsic properties, <em>e.g.</em> an identifier may have a regular expression defining its syntax.</li>
+<li>
+<em><strong>Hierarchy</strong></em> - Every concept (excluding top-level concepts) is related to one or more other concepts within the same branch by an <em><strong>is a</strong></em> (specialisation) relation. Hence EDAM has 4 primary hierarchies (for <em>Data</em>, <em>Format</em>, <em>Operation</em>, and <em>Topic</em>).</li>
+<li>
+<em><strong>Relations</strong></em> - Concepts are related by defined relation types (see figure below), which reflect well established or self-evident principles, and are used primarily to define internal consistency of EDAM. These have external applications too, e.g. annotations on the Semantic Web.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMrelations.png" alt="EDAM relations figure"></p>
+
+<h1>
+<a id="priorities" class="anchor" href="#priorities" aria-hidden="true"><span class="octicon octicon-link"></span></a>Priorities</h1>
+
+<p>Our core priority is to be responsive to users of EDAM. Furthermore, to establish a more sustainable footing for essential EDAM maintenance and developments, including:</p>
+
+<ul>
+<li>Content review and refactoring to ensure structural and semantic simplicity ensuring high usability</li>
+<li>Community build-up and development including more formal, but agile, governance and maintenance models and mechanisms</li>
+<li>Agile and responsive development of content in close collaboration with end-users and serving concrete use-cases</li>
+<li>Technical refactoring to minimise the cost of routine housekeeping and content development </li>
+<li>Implementation of tooling for routine maintenance to serve the needs of end-users, <em>e.g.</em> harvesting change requests and mappings between concepts</li>
+</ul>
+
+<h1>
+<a id="governance-of-edam" class="anchor" href="#governance-of-edam" aria-hidden="true"><span class="octicon octicon-link"></span></a>Governance of EDAM</h1>
+
+<p>EDAM follows a model with five tiers of governance:</p>
+
+<ol>
+<li>
+<strong>EDAM Advisory Group</strong> advises the EDAM Core Developers on how best to uphold the EDAM principles and achieve its current aims. It represents the broad life science community, especially scientist end-users. Advisory Group members have no formal responsibilities, but are expected to advocate EDAM and actively offer constructive advice based on their practical experience, requirements and expertise. The EDAM Core Developers will respect this advice and give quarterly progress reports by email. The Core Developers aim to assemble with the Advisory Group virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations. The Advisory Group will be reconstituted each year and the Steering Group (below) reserves the right to replace inactive members.</li>
+<li>
+<p><strong>EDAM Steering Group</strong> includes representatives of institutes that are committing significant resources to EDAM.  Members of the Steering Group have four primary responsibilities:</p>
+
+<ul>
+<li>Agree strategy and set priorities in consultation with the Core Developers</li>
+<li>Verify whether stated aims are coherent and wise</li>
+<li>Monitor progress and provide feedback</li>
+<li>Help arrange funding for EDAM</li>
+</ul>
+</li>
+<li>
+<p><strong>EDAM Core Developers</strong> are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all developers and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: </p>
+
+<ul>
+<li>Understand and uphold the EDAM principles</li>
+<li>Advocate EDAM</li>
+<li>Develop EDAM as bandwidth permits</li>
+</ul>
+</li>
+<li><p><strong>Developers</strong> would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.</p></li>
+<li>
+<strong>Other contributors</strong> do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. </li>
+</ol>
+
+<h1>
+<a id="people" class="anchor" href="#people" aria-hidden="true"><span class="octicon octicon-link"></span></a>People</h1>
+
+<h2>
+<a id="edam-core-developers" class="anchor" href="#edam-core-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>EDAM Core Developers</h2>
+
+<ul>
+<li>Jon Ison (CBS-DTU, DK) <em>- lead developer</em>
+</li>
+<li>Matúš Kalaš (University of Bergen, NO)</li>
+<li>Hervé Ménager (Institut Pasteur, FR)</li>
+<li>Marie Grosjean (IFB, FR)</li>
+</ul>
+
+<h2>
+<a id="edam-steering-group" class="anchor" href="#edam-steering-group" aria-hidden="true"><span class="octicon octicon-link"></span></a>EDAM Steering Group</h2>
+
+<ul>
+<li>Karel Berka (ELIXIR CZ)</li>
+<li>Christophe Blanchet (ELIXIR FR)</li>
+<li>Cath Brooksbank (ELIXIR EMBL-EBI)</li>
+<li>Søren Brunak (ELIXIR DK)</li>
+<li>Inge Jonassen (ELIXIR NO)</li>
+<li>Steven Newhouse (ELIXIR EMBL-EBI)</li>
+<li>Heinz Stockinger (ELIXIR CH)</li>
+<li>Alfonso Valencia (ELIXIR ES)</li>
+</ul>
+
+<h2>
+<a id="edam-advisory-group" class="anchor" href="#edam-advisory-group" aria-hidden="true"><span class="octicon octicon-link"></span></a>EDAM Advisory Group</h2>
+
+<ul>
+<li>Frederik Coppens (ELIXIR BE)</li>
+<li>Melissa Haendel (Oregon Health &amp; Science University, USA)</li>
+<li>Hans-Ioan Ienasescu (University of Copenhagen, DK)</li>
+<li>Niclas Jareborg (ELIXIR SE)</li>
+<li>Rafael Jimenez (ELIXIR HUB)</li>
+<li>Anna-Lena Lamprecht (University of Potsdam, DE)</li>
+<li>Jane Lomax (Sanger Institute, UK)</li>
+<li>Hedi Peterson (ELIXIR EE)</li>
+</ul>
+
+<h2>
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h2>
+
+<p>Thanks to the many people who have contributed - if you're not listed below, please let us know!</p>
+
+<ul>
+<li>Dan Bolser (EMBL-EBI, UK)</li>
+<li>Nathalie Conte (EMBL-EBI, UK)</li>
+<li>Victor de la Torre (ELIXIR-ES)</li>
+<li>Ray Fergerson (Stanford University, USA)</li>
+<li>Carole Goble (ELIXIR-UK)</li>
+<li>Simon Jupp (EMBL-EBI, UK)</li>
+<li>Peter Løngreen (CBS-DTU, DK)</li>
+<li>Allyson Lister (Newcastle University, UK)</li>
+<li>Rodrigo Lopez (EMBL-EBI, UK)</li>
+<li>James Malone (EMBL-EBI, UK)</li>
+<li>Julie McMurry (EMBL-EBI, UK)</li>
+<li>Hamish McWilliam (formely EMBL-EBI, UK)</li>
+<li>Helen Parkinson (EMBL-EBI, UK)</li>
+<li>Steve Pettifer (University of Manchester, UK)</li>
+<li>Kristoffer Rapacki (CBS-DTU, DK)</li>
+<li>Peter Rice (Imperial College, UK)</li>
+<li>Radka Svobodova (ELIXIR-CZ)</li>
+<li>Mahmut Uludag (EMBL-EBI, UK)</li>
+<li>Jiří Vondrášek (ELIXIR-CZ)</li>
+<li>Gert Vriend (CMBI, NL)</li>
+<li>Trish Whetzel (University of California, USA)</li>
+</ul>
+
+<h1>
+<a id="recent-workshops-2014---" class="anchor" href="#recent-workshops-2014---" aria-hidden="true"><span class="octicon octicon-link"></span></a>Recent workshops (2014 - )</h1>
+
+<p>Thank you to all of the participants of various meetings and workshops organised by ELIXIR, BioMedBridges and others.</p>
+
+<ul>
+<li><p><a href="https://docs.google.com/document/d/1s3J8msba1jHv18Ywz1wTH8UAjedD01IW-YfJNt17X_k/edit#heading=h.k2c28vnbr5jw">ELIXIR Curation Hackathon I : Registration of Tools &amp; Data Services</a></p></li>
+<li><p><a href="https://docs.google.com/document/d/1CoDvzq6o9J4g5agEj6b9CugGGjWw8QzSU89FLeTjVww/edit#heading=h.k2c28vnbr5jw">ELIXIR Technical Hackathon I: EDAM Development &amp; Governance</a></p></li>
+<li><p><a href="http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-life-sciences">ELIXIR, BioMedBridges &amp; RDA Workshop: A common vocabulary to classify resources in the life sciences</a></p></li>
+</ul>
+
+<h1>
+<a id="publication" class="anchor" href="#publication" aria-hidden="true"><span class="octicon octicon-link"></span></a>Publication</h1>
+
+<p>If you use EDAM or its part, please reference:</p>
+
+<p>Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). <a href="http://bioinformatics.oxfordjournals.org/content/29/10/1325.full">EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats.</a> <em>Bioinformatics</em>, <strong>29</strong>, 1325-1332.</p>
+
+<p>doi: <a href="http://dx.doi.org/10.1093/bioinformatics/btt113">10.1093/bioinformatics/btt113</a> PMID: <a href="http://www.ncbi.nlm.nih.gov/pubmed/23479348">23479348</a></p>
+
+<p>This article is freely available (Open Access).</p>
+
+<h1>
+<a id="documentation-and-website" class="anchor" href="#documentation-and-website" aria-hidden="true"><span class="octicon octicon-link"></span></a>Documentation and website</h1>
+
+<p>Full user documentation of the EDAM ontology is available at <a href="http://edamontology.org">http://edamontology.org</a>.</p>
+
+<p>The <em>edamontology.org</em> site provides content negotiation with respect to the desired media type (<em>i.e.</em> format, <em>e.g.</em> HTML, OWL, <em>etc.</em>). This applies also to the URIs of EDAM concepts that are in this way dereferencable, concise, and stable. Alternatively to requesting the format in the HTTP header, users can retrieve the desired content from a web browser by inserting <em>?format=&lt;desiredformat&gt;</em> query into the URL.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/edamontology/edamontology/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/edamontology/edamontology/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/edamontology/edamontology"></a> is maintained by <a href="https://github.com/edamontology">edamontology</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
