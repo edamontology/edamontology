@@ -109,10 +109,10 @@ EDAM follows a model with five tiers of governance:
 * Jon Ison (CBS-DTU, DK) *- lead developer*
 * Matúš Kalaš (University of Bergen, NO)
 * Hervé Ménager (Institut Pasteur, FR)
-* Marie Grosjean (IFB, FR)
 
 ## EDAM Editors
 * Laura Emery (EMBL-EBI, UK)
+* Marie Grosjean (IFB, FR)
 
 ## EDAM Steering Group
 * Cath Brooksbank (ELIXIR EMBL-EBI)
