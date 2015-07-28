@@ -99,7 +99,7 @@ EDAM follows a model with five tiers of governance:
   * Advocate EDAM
   * Develop EDAM as bandwidth permits
 
-4. **Editors** would not normally have GitHub commit rights long-term. They include anyone who makes significant contributions to EDAM scientific content, by whatever means, but have none of the commitments or responsibilities of the core developers.
+4. **EDAM Editors** would not normally have GitHub commit rights long-term. They include anyone who makes significant contributions to EDAM scientific content, by whatever means, but have none of the commitments or responsibilities of the core developers.
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
 
