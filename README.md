@@ -94,12 +94,12 @@ EDAM follows a model with five tiers of governance:
   * Verify whether stated aims are coherent and wise
   * Monitor progress and provide feedback
   * Help arrange funding for EDAM
-3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all developers and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
+3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all editors and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
   * Understand and uphold the EDAM principles
   * Advocate EDAM
   * Develop EDAM as bandwidth permits
 
-4. **Developers** would not normally have GitHub commit rights long-term. They include anyone who makes significant technical or scientific contributions, by whatever means, but have none of the commitments or responsibilities of the core developers.
+4. **Editors** would not normally have GitHub commit rights long-term. They include anyone who makes significant contributions to EDAM scientific content, by whatever means, but have none of the commitments or responsibilities of the core developers.
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
 
@@ -111,15 +111,18 @@ EDAM follows a model with five tiers of governance:
 * Hervé Ménager (Institut Pasteur, FR)
 * Marie Grosjean (IFB, FR)
 
+## EDAM Editors
+* Laura Emery (EMBL-EBI, UK)
+
 ## EDAM Steering Group
+* Cath Brooksbank (ELIXIR EMBL-EBI)
 * Karel Berka (ELIXIR CZ)
 * Christophe Blanchet (ELIXIR FR)
-* Cath Brooksbank (ELIXIR EMBL-EBI)
-* Søren Brunak (ELIXIR DK)
 * Inge Jonassen (ELIXIR NO)
 * Steven Newhouse (ELIXIR EMBL-EBI)
 * Heinz Stockinger (ELIXIR CH)
 * Alfonso Valencia (ELIXIR ES)
+* Søren Brunak (ELIXIR DK)
 
 
 ## EDAM Advisory Group
