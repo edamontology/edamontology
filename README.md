@@ -95,7 +95,7 @@ EDAM follows a model with five tiers of governance: edam-core@elixir-dk.org
   * Monitor progress and provide feedback
   * Help arrange funding for EDAM
   
-If you would like to join the Advisory Group, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org) explaining how your interests.  
+If you would like to join the Advisory Group, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org) explaining your interests.  
 
 3. **EDAM Core Developers** are funded to develop EDAM and have GitHub commit rights. Responsible for agreeing aims and general good practice, overseeing and approving developments and routine maintenance. The model is quasi-democratic with a leader (currently Jon Ison) having the final say where necessary. The leader ensures the Advisory Group, and all editors and contributors, are listened to and informed. The leader may be temporarily appointed from the core developers as necessary, e.g. during holidays.  Core Developers must have the intent and some bandwidth to develop EDAM in the long-term. They have 3 primary responsibilities: 
   * Understand and uphold the EDAM principles
