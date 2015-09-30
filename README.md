@@ -105,7 +105,7 @@ EDAM follows a model with five tiers of governance:
 
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
-If you would like to contribute to join EDAM at one of the leves above, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org).  
+If you would like to contribute at one of the leves above, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org).  
 
 # People
 
