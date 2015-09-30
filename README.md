@@ -87,7 +87,7 @@ Our core priority is to be responsive to users of EDAM. Furthermore, to establis
 
 EDAM follows a model with five tiers of governance:
 
-1. **EDAM Advisory Group** advises the EDAM Core Developers on how best to uphold the EDAM principles and achieve its current aims. It represents the broad life science community, especially scientist end-users. Advisory Group members have no formal responsibilities, but are expected to advocate EDAM and actively offer constructive advice based on their practical experience, requirements and expertise. The EDAM Core Developers will respect this advice and give quarterly progress reports by email. The Core Developers aim to assemble with the Advisory Group virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations. The Advisory Group will be reconstituted each year and the Steering Group (below) reserves the right to replace inactive members. If you would like to join the Advisory Group, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org) explaining your interests.  
+1. **EDAM Advisory Group** advises the EDAM Core Developers on how best to uphold the EDAM principles and achieve its current aims. It represents the broad life science community, especially scientist end-users. Advisory Group members have no formal responsibilities, but are expected to advocate EDAM and actively offer constructive advice based on their practical experience, requirements and expertise. The EDAM Core Developers will respect this advice and give quarterly progress reports by email. The Core Developers aim to assemble with the Advisory Group virtually 2 or 3 times a year or as circumstances dictate, in meetings with open agenda and followed up with actions and notes on key recommendations. The Advisory Group will be reconstituted each year and the Steering Group (below) reserves the right to replace inactive members. 
 
 2. **EDAM Steering Group** includes representatives of institutes that are committing significant resources to EDAM.  Members of the Steering Group have four primary responsibilities:
 
@@ -105,6 +105,7 @@ EDAM follows a model with five tiers of governance:
 
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
+If you would like to contribute to join EDAM at one of the leves above, please mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org) explaining your interests.  
 
 # People
 
