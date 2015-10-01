@@ -110,7 +110,7 @@ If you would like to contribute to EDAM governance (at any level above), please 
 # People
 
 ## EDAM Core Developers
-* Jon Ison (CBS-DTU, DK) *- lead developer*
+* Jon Ison (DTU, DK) *- lead developer*
 * Matúš Kalaš (University of Bergen, NO)
 * Hervé Ménager (Institut Pasteur, FR)
 
