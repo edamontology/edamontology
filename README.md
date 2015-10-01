@@ -115,7 +115,8 @@ If you would like to contribute to EDAM governance (at any level above), please 
 * Hervé Ménager (Institut Pasteur, FR)
 
 ## EDAM Editors
-* Laura Emery (EMBL-EBI, UK)
+* Laura Emery (EMBL-EBI, UK) - EBI tools and training concepts
+* Veit Schwammle (SDU, DK) - mass spectrometry concepts
 * Marie Grosjean (IFB, FR)
 
 ## EDAM Steering Group
