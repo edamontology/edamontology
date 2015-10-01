@@ -31,11 +31,11 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboOther:date>09:07:2015</oboOther:date>
-        <next_id>3625</next_id>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <dc:title>An ontology of bioinformatics topics, operations, types of data including identifiers, and data formats</dc:title>
         <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
+        <next_id>3656</next_id>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -30428,8 +30428,8 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2536"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Format for mass pectra and derived data, include peptide sequences etc.</oboInOwl:hasDefinition>
         <created_in>1.2</created_in>
-        <oboInOwl:hasDefinition>Format for mass spectrometry data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -32048,6 +32048,114 @@
     
 
 
+    <!-- http://edamontology.org/format_3626 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3626">
+        <rdfs:label>MAT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1499"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>MATLAB file format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Binary format used by MATLAB files to store workspace variables.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasExactSynonym>MAT file format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>.mat file format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://uk.mathworks.com/help/matlab/import_export/mat-file-versions.html"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3650 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3650">
+        <rdfs:label>netCDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasExactSynonym>ANDI-MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Format used by netCDF software  library for writing and reading chromatography-MS data files.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.astm.org/Standards/E1947.htm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3651 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3651">
+        <rdfs:label>MGF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:comment>Files includes *m*/*z*, intensity pairs separated by headers; headers can contain a bit more information, including search engine instructions.</rdfs:comment>
+        <oboInOwl:hasDefinition>Mascot Generic Format.  Encodes multiple MS/MS spectra in a single file.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3652 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3652">
+        <rdfs:label>dta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:comment>Each file contains one header line for the known or assumed charge and the mass of the precursor peptide ion, calculated from the measured *m*/*z* and the charge. This one line was then followed by all the *m*/*z*, intensity pairs that represent the spectrum.</rdfs:comment>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Spectral data format file where each spectrum is written to a separate file.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3653 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3653">
+        <rdfs:label>pkl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>Spectral data file similar to dta.</oboInOwl:hasDefinition>
+        <rdfs:comment>Differ from .dta only in subtleties of the header line format and content and support the added feature of being able to.</rdfs:comment>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3654 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3654">
+        <rdfs:label>mzXML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <created_in>1.12</created_in>
+        <documentation>https://dx.doi.org/10.1038%2Fnbt1031</documentation>
+        <oboInOwl:hasDefinition>Common file format for proteomics mass spectrometric data developed at the Seattle Proteome Center/Institute for Systems Biology.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3655 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3655">
+        <rdfs:label>pepXML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <documentation>http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v118.xsd</documentation>
+        <oboInOwl:hasDefinition>Open data format for the storage, exchange, and processing of peptide sequence assignments of MS/MS scans, intended to provide a common data output format for many different MS/MS search engines and subsequent peptide-level analyses.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -32658,20 +32766,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2502"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3023"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3438"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0897"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0123"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>Calculate (or predict) physical or chemical properties of a protein, including any non-positional properties of the molecular sequence, from processing a protein sequence.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes methods to render and visualise the properties of a protein sequence.</rdfs:comment>
+        <oboInOwl:hasDefinition>Calculate (or predict) physical or chemical properties of a protein, including any non-positional properties of the molecular sequence, from processing a protein sequence.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Protein property rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -41429,7 +41525,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0078"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -43081,10 +43177,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_3214">
         <rdfs:label>Spectral analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Spectral analysis</oboInOwl:hasExactSynonym>
         <created_in>1.1</created_in>
+        <oboInOwl:hasDefinition>Analyse one or more spectra from mass spectrometry (or other) experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Spectrum analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Analyse a spectrum from a mass spectrometry (or other) experiment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Mass spectrum analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -44527,6 +44629,388 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
         <created_in>1.9</created_in>
         <oboInOwl:hasDefinition>Simulate gene expression data, e.g. for purposes of benchmarking.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3625 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3625">
+        <rdfs:label>Relationship inference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0971"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Identify semantic relationships within a text or between two or more texts using text mining techniques.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3627 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3627">
+        <rdfs:label>Mass spectra calibration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Re-adjust the output of mass spectrometry experiments with shifted ppm values.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3628 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3628">
+        <rdfs:label>Chromatographic alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Align multiple data sets using information from chromatography and/or peptide identification, from mass spectrometry experiments.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3629 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3629">
+        <rdfs:label>Deisotoping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>The removal of isotope peaks in a spectrum, to represent the fragment ion as one data point.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Deconvolution</oboInOwl:hasExactSynonym>
+        <created_in>1.12</created_in>
+        <rdfs:comment>Deisotoping is commonly done to reduce complexity, and done in conjunction with the charge state deconvolution.</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3630 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3630">
+        <rdfs:label>Quantification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Technique for determining the amount of proteins in a sample.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasExactSynonym>Quantitation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3631 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3631">
+        <rdfs:label>Peptide identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>Peptide-spectrum-matching</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Determination of peptide sequence from mass spectrum.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3632 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3632">
+        <rdfs:label>Isotopic distributions calculation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3438"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>Peptide-spectrum-matching</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Predict the isotope distribution of a given chemical species.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3633 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3633">
+        <rdfs:label>Retention times calculation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0250"/>
+        <oboInOwl:hasDefinition>Prediction of retention times in a mass spectrometry experiment based on compositional and structural properties of the separated species.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3634 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3634">
+        <rdfs:label>Label-free quantification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3630"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification without the use of chemical tags.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3635 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3635">
+        <rdfs:label>Labeled quantification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3630"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification based on the use of chemical tags.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3636 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3636">
+        <rdfs:label>MRM/SRM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3630"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification by Selected/multiple Reaction Monitoring workflow (XIC quantitation of precursor / fragment mass pair).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3637 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3637">
+        <rdfs:label>Spectral counting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3634"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Calculate number of identified MS2 spectra as approximation of peptide / protein quantity.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3638 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3638">
+        <rdfs:label>SILAC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3635"/>
+        <oboInOwl:hasDefinition>Quantification analysis using stable isotope labeling by amino acids in cell culture.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3639 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3639">
+        <rdfs:label>iTRAQ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3635"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification analysis using the AB SCIEX iTRAQ isobaric labelling workflow, wherein 2-8 reporter ions are measured in MS2 spectra near 114 m/z.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3640 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3640">
+        <rdfs:label>18O labeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3635"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification analysis using labeling based on 18O-enriched H2O.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3641 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3641">
+        <rdfs:label>TMT-tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3635"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification analysis using the Thermo Fisher tandem mass tag labelling workflow.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3642 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3642">
+        <rdfs:label>Dimethyl</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3635"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Quantification analysis using chemical labeling by stable isotope dimethylation</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3643 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3643">
+        <rdfs:label>Tag-based peptide identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
+        <oboInOwl:hasDefinition>Peptide sequence tags are used as piece of information about a peptide obtained by tandem mass spectrometry.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3644 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3644">
+        <rdfs:label>de Novo sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2502"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
+        <oboInOwl:hasDefinition>Analytical process that derives a peptide’s amino acid sequence from its tandem mass spectrum (MS/MS) without the assistance of a sequence database.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3645 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3645">
+        <rdfs:label>PTM identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
+        <oboInOwl:hasDefinition>Identification of post-translational modifications (PTMs) of peptides/proteins in mass spectrum.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3646 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3646">
+        <rdfs:label>Peptide database search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2421"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Determination of best matches between MS/MS spectrum and a database of protein or nucleic acid sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3647 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3647">
+        <rdfs:label>Blind peptide database search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3646"/>
+        <oboInOwl:hasExactSynonym>Modification-tolerant peptide database search</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Unrestricted peptide database search</oboInOwl:hasExactSynonym>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>Peptide database search for identification of known and unknown PTMs looking for mass difference mismatches.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3648 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3648">
+        <rdfs:label>Validation of peptide-spectrum-matches</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2428"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3646"/>
+        <oboInOwl:hasDefinition>Statistical estimation of false discovery rate from score distribution for peptide-spectrum-matches, following a peptide database search.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3649 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3649">
+        <rdfs:label>Target-Decoy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3648"/>
+        <oboInOwl:hasDefinition>Estimation of false discovery rate by comparison to search results with a database containing incorrect information.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
