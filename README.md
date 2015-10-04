@@ -105,7 +105,7 @@ EDAM follows a model with five tiers of governance:
 
 5. **Other contributors** do not have GitHub commit rights, but can still make comments, contribute suggestions for new terms and other changes. 
 
-We very much welcome new editors and contibutors.  Representatives of projects who plan to adopt EDAM are welcome to join the EDAM Advisory Group.  If you would like to contribute, please [read about how to contribute](https://github.com/edamontology/edamontology/blob/master/HOW_TO_CONTRIBUTE.md) or mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org).  
+We very much welcome new editors and contributors.  Representatives of projects who plan to adopt EDAM are welcome to join the EDAM Advisory Group.  For futher information please [read about how to contribute](https://github.com/edamontology/edamontology/blob/master/HOW_TO_CONTRIBUTE.md) or mail [edam-core@elixir-dk.org](edam-core@elixir-dk.org).  
 
 # People
 
