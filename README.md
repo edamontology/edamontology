@@ -117,7 +117,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 ## EDAM Editors
 * Laura Emery (EMBL-EBI, UK) - EBI tools and training concepts
 * Veit Schwammle (SDU, DK) - mass spectrometry concepts
-* Marie Grosjean (IFB, FR)
+* Kristian Davidsen (DTU, DK) - NGS concepts
 
 ## EDAM Steering Group
 * Cath Brooksbank (ELIXIR EMBL-EBI)
@@ -144,6 +144,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 ## Contributors
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
 
+* Marie Grosjean (IFB, FR)
 * Dan Bolser (EMBL-EBI, UK)
 * Nathalie Conte (EMBL-EBI, UK)
 * Victor de la Torre (ELIXIR-ES)
