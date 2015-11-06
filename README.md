@@ -118,6 +118,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Laura Emery (EMBL-EBI, UK) - EBI tools and training concepts
 * Veit Schwammle (SDU, DK) - mass spectrometry concepts
 * Kristian Davidsen (DTU, DK) - NGS concepts
+* Ivan Mičetić ( University of Padova, IT) - protein structure concepts
 
 ## EDAM Steering Group
 * Cath Brooksbank (ELIXIR EMBL-EBI)
