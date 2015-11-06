@@ -134,7 +134,6 @@ We very much welcome new editors and contributors.  Representatives of projects 
 ## EDAM Advisory Group
 * Frederik Coppens (ELIXIR BE)
 * Melissa Haendel (Oregon Health & Science University, USA)
-* Hans-Ioan Ienasescu (University of Copenhagen, DK)
 * Niclas Jareborg (ELIXIR SE)
 * Rafael Jimenez (ELIXIR HUB)
 * Anna-Lena Lamprecht (University of Potsdam, DE)
