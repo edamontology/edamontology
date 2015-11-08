@@ -170,15 +170,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 
 
 # Recent workshops (2014 - )
-Thank you to all of the participants of various meetings and workshops organised by ELIXIR, BioMedBridges and others.
-
-* [ELIXIR Curation Hackathon I : Registration of Tools & Data Services](https://docs.google.com/document/d/1s3J8msba1jHv18Ywz1wTH8UAjedD01IW-YfJNt17X_k/edit#heading=h.k2c28vnbr5jw)
-
-* [ELIXIR Technical Hackathon I: EDAM Development & Governance](https://docs.google.com/document/d/1CoDvzq6o9J4g5agEj6b9CugGGjWw8QzSU89FLeTjVww/edit#heading=h.k2c28vnbr5jw)
-
-* [ELIXIR, BioMedBridges & RDA Workshop: A common vocabulary to classify resources in the life sciences](http://www.biomedbridges.eu/news/workshop-common-vocabulary-classify-resources-life-sciences)
-
-
+Thank you to all of the participants of various meetings and workshops organised by ELIXIR, BioMedBridges and others.  See the complete list of past and forthcoming [workshops](https://docs.google.com/document/d/1K-6IG_7a-4amstSSOxYjjJ3uDUEg4-WGSSt9jvvO7Ik/edit).
 
 # Publication
 
