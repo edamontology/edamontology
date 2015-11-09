@@ -22,13 +22,7 @@ Simple requests for one or a few changes can be made using this form:
 
 http://tinyurl.com/EDAMChangeRequest 
 
-When completing the form:
-- The **preferred label** should be a short name or phrase in common use.
-- Please consider providing common **synonyms** of the preferred term.
-- The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
-- Peripheral but important information can go in the **comment**.
-
-If you require many changes and additions please contact edam@elixir-dk.org.
+If you require many changes and additions, there's probably a more efficient way to proceed: please contact edam@elixir-dk.org.
 
 
 # GitHub issue tracker
