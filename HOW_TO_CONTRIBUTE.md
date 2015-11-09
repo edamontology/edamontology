@@ -2,7 +2,7 @@ EDAM is a community project, and suggestions for additions, corrections, and oth
 
 
 # <a name="mailinglists"></a>Mailing lists
-To contribute to EDAM, request changes and additions, and for general discussions, including the use of EDAM for resource annotation and in software implementations, mail:
+To find the most efficient way to contribute to EDAM, request changes and additions, and for general discussions, including the use of EDAM for resource annotation and in software implementations, mail:
 
 edam@elixir-dk.org
 
