@@ -30,3 +30,6 @@ If you have a GitHub account, you can make requests by opening a GitHub issue:
 - Go to https://github.com/edamontology/edamontology/issues and click on "New issue".
 - If you are not logged in, you will be asked first to log in or create an account.
 - Provide a title, and a report that is concise but sufficiently detailed to be actionable.
+
+# Joining the team
+We very much welcome new editors and contributors.  Please first read about the [Governance of EDAM](https://github.com/edamontology/edamontology#governance-of-edam) to find the level that is right for you.  Then mail mail edam-core@elixir-dk.org to get started. 
