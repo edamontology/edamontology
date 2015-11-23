@@ -1,9 +1,9 @@
 # What is EDAM?
 EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
 
-You can browse [EDAM at BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/).
+You can browse EDAM at [BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/) and the new [OLS beta](http://www.ebi.ac.uk/ols/beta/ontologies/edam).
 
-See http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)), please use [#edamontology](https://twitter.com/search?q=%23edamontology)
+See http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
 # Motivation
 Bioinformaticians handle an increasingly large and diverse set of tools and data. Meanwhile, researchers demand ever more powerful and convenient means to organise, find, understand, compare, select, use and connect the available resources. These tasks often rely on consistent, machine-understandable descriptions of the underlying components, but these have been generally lacking in _ad hoc_ resource descriptions. The urgent need - filled by EDAM - is for an ontology that unifies semantically the bioinformatics concepts in common use, provides the curator with a comprehensive controlled vocabulary that is broadly applicable, and supports new and powerful search, browse and query functions.
