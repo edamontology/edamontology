@@ -1,9 +1,9 @@
 # What is EDAM?
 EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
 
-You can browse EDAM at [BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/) and the new [OLS beta](http://www.ebi.ac.uk/ols/beta/ontologies/edam).
+You can browse EDAM at the new [OLS beta](http://www.ebi.ac.uk/ols/beta/ontologies/edam) and the [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/).
 
-See http://twitter.com/edamontology ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
+Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
 # Motivation
 Bioinformaticians handle an increasingly large and diverse set of tools and data. Meanwhile, researchers demand ever more powerful and convenient means to organise, find, understand, compare, select, use and connect the available resources. These tasks often rely on consistent, machine-understandable descriptions of the underlying components, but these have been generally lacking in _ad hoc_ resource descriptions. The urgent need - filled by EDAM - is for an ontology that unifies semantically the bioinformatics concepts in common use, provides the curator with a comprehensive controlled vocabulary that is broadly applicable, and supports new and powerful search, browse and query functions.
@@ -179,9 +179,9 @@ Thank you to all of the participants of various meetings and workshops organised
 
 If you use EDAM or its part, please reference:
 
-Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats.](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full) _Bioinformatics_, **29**, 1325-1332.
+Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
 
-doi: [10.1093/bioinformatics/btt113](http://dx.doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)
+doi: [10.1093/bioinformatics/btt113](http://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)
 
 This article is freely available (Open Access).
 
