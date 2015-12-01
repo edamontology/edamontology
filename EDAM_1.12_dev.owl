@@ -35,7 +35,7 @@
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <dc:title>An ontology of bioinformatics topics, operations, types of data including identifiers, and data formats</dc:title>
         <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
-        <next_id>3656</next_id>
+        <next_id>3658</next_id>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -29556,7 +29556,19 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
-    
+
+    <!-- http://edamontology.org/format_3657 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3657">
+        <rdfs:label>GPML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <oboInOwl:hasDefinition>Graphical Pathway Markup Language (GPML) is an XML format used
+	  for exchanging biological pathways.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://www.pathvisio.org/gpml/"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
 
 
     <!-- http://edamontology.org/format_2607 -->
