@@ -23657,12 +23657,12 @@
     <!-- http://edamontology.org/format_1199 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1199">
-        <rdfs:label>inchikey</rdfs:label>
+        <rdfs:label>InChIKey</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2035"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <oboInOwl:hasDefinition>The InChIKey (hashed InChI) is a fixed length (25 character) condensed digital representation of an InChI chemical structure specification. It uniquely identifies a chemical compound.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>An InChI identifier is not human-readable but is more suitable for web searches than an InChI chemical structure specification.</rdfs:comment>
+        <rdfs:comment>An InChIKey identifier is not human- nor machine-readable but is more suitable for web searches than an InChI chemical structure specification.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
