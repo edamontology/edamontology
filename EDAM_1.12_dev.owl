@@ -31,7 +31,7 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboOther:date>09:07:2015</oboOther:date>
-        <next_id>3665</next_id>
+        <next_id>3666</next_id>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <dc:title>An ontology of bioinformatics topics, operations, types of data including identifiers, and data formats</dc:title>
@@ -32171,7 +32171,20 @@
         <documentation rdf:resource="http://www.pathvisio.org/gpml/"/>
     </owl:Class>
     
+    <!-- http://edamontology.org/format_3665 -->
 
+    <owl:Class rdf:about="http://edamontology.org/format_3665">
+        <rdfs:label>K-mer countgraph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3617"/>
+        <oboInOwl:hasDefinition>A list of k-mers and their occurences in a dataset. Can also be used as an implicit De Bruijn graph.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
+        <rdfs:comment>File extension for this format is .oxlicg</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://khmer.readthedocs.org/en/v2.0/dev/binary-file-formats.html#countgraph"/>
+        <oboInOwl:hasExactSynonym>http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph</oboInOwl:hasExactSynonym> 
+    </owl:Class>
 
     <!-- http://edamontology.org/operation_0004 -->
 
