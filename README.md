@@ -136,20 +136,23 @@ We very much welcome new editors and contributors.  Representatives of projects 
 
 
 ## EDAM Advisory Group
+* Anna-Lena Lamprecht (University of Potsdam, DE)
+* Dan Bolser (EMBL-EBI, UK)
 * Frederik Coppens (ELIXIR BE)
+* Hedi Peterson (ELIXIR EE)
+* Jane Lomax (Sanger Institute, UK)
 * Melissa Haendel (Oregon Health & Science University, USA)
 * Niclas Jareborg (ELIXIR SE)
+* Radka Svobodová (MU, CZ)
 * Rafael Jimenez (ELIXIR HUB)
-* Anna-Lena Lamprecht (University of Potsdam, DE)
-* Jane Lomax (Sanger Institute, UK)
-* Hedi Peterson (ELIXIR EE)
+
+
 
 
 ## Contributors
 Thanks to the many people who have contributed - if you're not listed below, please let us know!
 
 * Marie Grosjean (IFB, FR)
-* Dan Bolser (EMBL-EBI, UK)
 * Nathalie Conte (EMBL-EBI, UK)
 * Victor de la Torre (ELIXIR-ES)
 * Ray Fergerson (Stanford University, USA)
@@ -165,7 +168,6 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 * Steve Pettifer (University of Manchester, UK)
 * Kristoffer Rapacki (CBS-DTU, DK)
 * Peter Rice (Imperial College, UK)
-* Radka Svobodová (MU, CZ)
 * Mahmut Uludag (EMBL-EBI, UK)
 * Jiří Vondrášek (IOCB AS, CZ)
 * Gert Vriend (CMBI, NL)
