@@ -115,13 +115,14 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Hervé Ménager (Institut Pasteur, FR)
 
 ## EDAM Editors
-* Laura Emery (EMBL-EBI, UK) - EBI tools and training
-* Veit Schwämmle (SDU, DK) - Mass spectrometry
-* Kristian Davidsen (DTU, DK) - Sequencing
-* Ivan Mičetić (University of Padova, IT) - Protein structure
-* Stanislav Geidl (MU, CZ) - Chemoinformatics 
-* Lukáš Pravda (MU, CZ) - Structural bioinformatics
 * David Sehnal (MU, CZ) - General bioinformatics
+* Ivan Mičetić (University of Padova, IT) - Protein structure
+* Kristian Davidsen (DTU, DK) - Sequencing
+* Laura Emery (EMBL-EBI, UK) - EBI tools and training
+* Lukáš Pravda (MU, CZ) - Structural bioinformatics
+* Stanislav Geidl (MU, CZ) - Chemoinformatics 
+* Veit Schwämmle (SDU, DK) - Mass spectrometry
+* Wouter Touw (CMBI, NL) -  Protein structure
 
 ## EDAM Steering Group
 * Cath Brooksbank (ELIXIR EMBL-EBI)
