@@ -125,15 +125,14 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Wouter Touw (CMBI, NL) -  Protein structure
 
 ## EDAM Steering Group
-* Cath Brooksbank (ELIXIR EMBL-EBI)
-* Karel Berka (ELIXIR CZ)
-* Christophe Blanchet (ELIXIR FR)
-* Inge Jonassen (ELIXIR NO)
-* Steven Newhouse (ELIXIR EMBL-EBI)
-* Heinz Stockinger (ELIXIR CH)
 * Alfonso Valencia (ELIXIR ES)
+* Cath Brooksbank (ELIXIR EMBL-EBI)
+* Christophe Blanchet (ELIXIR FR)
+* Heinz Stockinger (ELIXIR CH)
+* Inge Jonassen (ELIXIR NO)
+* Karel Berka (ELIXIR CZ)
 * Søren Brunak (ELIXIR DK)
-
+* Steven Newhouse (ELIXIR EMBL-EBI)
 
 ## EDAM Advisory Group
 * Anna-Lena Lamprecht (University of Potsdam, DE)
