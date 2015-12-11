@@ -106,6 +106,20 @@ Note that :
 - The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
 - Peripheral but important information can go in the **comment** (`rdfs:comment`).
 
+In addition, for **Format** concepts, please specify:
+1. The Data concept which the format applies to : define this relation in Protege using the pattern 'Format is_format_of some Data'
+2. The URL of the format documentation, if availablle ('Documentation' attribute) : in Protege, type a URL using the Protege IRI editor.  
+
+In addition, for **Identifier** concepts, specify:
+1. The Data concept which the identifier applies to : define this relation in Protege using the pattern 'Identifier is_identifier_of some Data'  
+2. The regular expression defining valid values of that identifier ('Regular expression') : type the regex into the Protege 'Constant" editor 
+
+In addition, for **Topic** concepts, specify:
+1. The corresponding Wikipedia page that exact matches the term ('Documentation' attribute) : in Protege, type a URL using the IRI editor.  This method will change when we eventually link via Wikidata.
+
+
+
+
 ## Deprecating concepts
 
 When deprecating concepts, you _**MUST**_ specify the following:
