@@ -12,6 +12,7 @@
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY wikidata "http://www.wikidata.org/entity/" >
 ]>
 
 
@@ -26,7 +27,8 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:edam="&oboOther;edam#">
+     xmlns:edam="&oboOther;edam#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
     <owl:Ontology rdf:about="http://edamontology.org">
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
@@ -15617,6 +15619,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <skos:exactMatch rdf:resource="&wikidata;Q466769"/>
     </owl:Class>
     
 
