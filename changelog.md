@@ -9,7 +9,7 @@ Description of changes are grouped as follows:
 
 
 # EDAM\_1.12.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
 56 new concepts were added and 190 concepts changed.
 
@@ -17,7 +17,7 @@ See the [detailed change log](https://github.com/edamontology/edamontology/blob/
 * 56 new concepts added
 * new concepts for mass spec from analysis of msutils.org
 * new concepts for NGS from analysis of SEQanswers Wiki
-* misc. additions arising from the recent hackathons in [Brno, CZ](tinyurl.com/registryhackathon3) and [Amsterdam, NL](tinyurl.com/registryhackathon5)
+* misc. additions arising from the recent hackathons in [Brno, CZ](http://tinyurl.com/registryhackathon3) and [Amsterdam, NL](http://tinyurl.com/registryhackathon5)
 * multiple new synonyms
 
 ## Changed
