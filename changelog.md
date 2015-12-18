@@ -7,6 +7,31 @@ Description of changes are grouped as follows:
 * **Fixed:** a bug fix
 * **Misc:** some miscellaneous other change
 
+
+# EDAM\_1.12.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog.md) for exact details of changes.
+
+56 new concepts were added and 190 concepts changed.
+
+## Added
+* 56 new concepts added
+* new concepts for mass spec from analysis of msutils.org
+* new concepts for NGS from analysis of SEQanswers Wiki
+* misc. additions arising from the recent hackathons in [Brno, CZ](tinyurl.com/registryhackathon3) and [Amsterdam, NL](tinyurl.com/registryhackathon5)
+* multiple new synonyms
+
+## Changed
+* reorganisation of top-level Operation concepts to make this branch more usable
+* reorganisation of top-level Data concepts to make this branch more usable
+
+## Deprecated
+* 72 concepts were deprecated
+* removal of overly-specific Topic concepts that were overlapping with operations
+* removal of overly-specific Data and Operation concepts
+* removal of some obscure organisational classes (e.g. <Operation (typed)>)
+
+
+
 # EDAM\_1.11.owl
 ## Added
 * 44 new formats have been added, based on the needs of the Galaxy (http://usegalaxy.org), ReGaTE (https://github.com/bioinfo-center-pasteur-fr/ReGaTE), and Common Workflow Language (https://github.com/common-workflow-language) projects, as part of the BOSC Codefest 2015 (http://open-bio.org/wiki/Codefest-2015.html).
