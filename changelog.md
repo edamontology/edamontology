@@ -28,7 +28,7 @@ See the [detailed change log](https://github.com/edamontology/edamontology/blob/
 * 72 concepts were deprecated
 * removal of overly-specific Topic concepts that were overlapping with operations
 * removal of overly-specific Data and Operation concepts
-* removal of some obscure organisational classes (e.g. <Operation (typed)>)
+* removal of some obscure organisational classes (e.g. `<Operation (typed)>`)
 
 
 
