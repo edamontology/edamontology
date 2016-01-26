@@ -32,7 +32,13 @@ The workflow is:
    - Summarise what you actually did and why.
 
 # Workflow for the creation of a new official release of EDAM (Core developers only)
-**Before to create a new release, please make sure you have the approval of the EDAM Gatekeeper, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
+From January 2016, EDAM follows a monthly release cycle to this schedule:
+1.  First Wed of every month:  EDAM team skype to discuss plans for this month.  Announcement (to edam-announcence) including short summary of plans, invitation for suggestions.
+2   Last Mon of every month:  Announcement (to edam-announcence) saying that release is immiment, invitation for last-minute suggestions.
+3.  Last Wed of every month:  Complete the work for the release.  Make the release.  Ensure it works in BioPortal, OLS, and in bio.tools.
+4.  Last Fri of every month:  Announcee the release, incuding summary of changes.
+
+**Before to create a new release, please make sure you have the approval of leader of EDAM core-dev, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
 
 1. Update your local version of the repository:
 
@@ -62,7 +68,9 @@ The workflow is:
 4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
 5. Submit this new release to BioPortal.
 6. Update the website, http://edamontology.org.
-7. Announce the new release on the mailing lists (edam-announce@elixir-dk.org, edam@elixir-dk.org)
+7. Update the [detailed changelog](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) by running [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) to compare the release against the previous version.
+8. Update the [changelog](https://github.com/edamontology/edamontology/blob/master/changelog.md) with a summary of the major changes.
+9. Announce the new release on the mailing lists (edam-announce@elixir-dk.org, edam@elixir-dk.org) including thanks and a summary of changes.
 
 # Modifications in a GitHub fork (non-core developers)
 GitHub makes it possible for any developer (even if you are not a “core developer”) to make modifications in a copy of EDAM and suggest these modifications are included in the original. 
