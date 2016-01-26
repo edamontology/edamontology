@@ -35,11 +35,8 @@ The workflow is:
 From January 2016, EDAM follows a monthly release cycle to this schedule:
 
 1.  First Wed of every month:  EDAM team skype to discuss plans for this month.  Announcement (to edam-announcence) including short summary of plans, invitation for suggestions.
-
-2   Last Mon of every month:  Announcement (to edam-announcence) saying that release is immiment, invitation for last-minute suggestions.
-
+2.   Last Mon of every month:  Announcement (to edam-announcence) saying that release is immiment, invitation for last-minute suggestions.
 3.  Last Wed of every month:  Complete the work for the release.  Make the release.  Ensure it works in BioPortal, OLS, and in bio.tools.
-
 4.  Last Fri of every month:  Announcee the release, incuding summary of changes.
 
 **Before to create a new release, please make sure you have the approval of leader of EDAM core-dev, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
