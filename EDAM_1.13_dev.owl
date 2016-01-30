@@ -28,7 +28,7 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="&oboOther;edam#">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <oboOther:date>18:12:2015</oboOther:date>
+        <oboOther:date>30:01:2016 21:56GMT</oboOther:date>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -51,7 +51,7 @@
         <doap:Version>1.13</doap:Version>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <next_id>3681</next_id>
+        <next_id>3685</next_id>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorization of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -67,6 +67,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://edamontology.org/citation -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/citation">
+        <rdfs:label>Citation</rdfs:label>
+        <created_in>1.13</created_in>
+        <oboInOwl:hasRelatedSynonym>Publication</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>Publication reference</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>&apos;Citation&apos; concept property (&apos;citation&apos; metadata tag) contains a dereferenceable URI, preferrably including a DOI, pointing to a citeable publication of the given data format.</oboInOwl:hasDefinition>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
     
 
 
@@ -97,7 +111,32 @@
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/example">
         <rdfs:label>Example</rdfs:label>
-        <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadat tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadata tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
+        <rdfs:comment>Separated by bar (&apos;|&apos;).</rdfs:comment>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://edamontology.org/file_extension -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension">
+        <rdfs:label>File extension</rdfs:label>
+        <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
+        <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferrably not all capital characters.</rdfs:comment>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://edamontology.org/media_type -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/media_type">
+        <rdfs:label>Media type</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>MIME type</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>&apos;Media type&apos; trailing modifier (qualifier, &apos;media_type&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to a page specifying a media type of the given data format.</oboInOwl:hasDefinition>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
@@ -29098,7 +29137,11 @@
         <rdfs:comment>Data in XML format can be serialised into text, or binary format.</rdfs:comment>
         <oboInOwl:hasDefinition>eXtensible Markup Language (XML) format.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:seeAlso>http://filext.com/file-extension/XML</rdfs:seeAlso>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+        <rdfs:seeAlso rdfs:resource="http://filext.com/file-extension/XML"/>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/XML"/>
+        <file_extension>xml</file_extension>
         <oboInOwl:hasExactSynonym>Extensible Markup Language</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -30457,6 +30500,8 @@
         <created_in>1.2</created_in>
         <documentation rdf:resource="http://www.cellml.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.cellml.org"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/cellml+xml"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/cellml+xml"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -32271,10 +32316,82 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3617"/>
         <created_in>1.12</created_in>
-        <rdfs:comment>File extension for this format is .oxlicg</rdfs:comment>
+        <file_extension>oxlicg</file_extension>
         <oboInOwl:hasExactSynonym>http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A list of k-mers and their occurences in a dataset. Can also be used as an implicit De Bruijn graph.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://khmer.readthedocs.org/en/v2.0/dev/binary-file-formats.html#countgraph"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3681 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3681">
+        <rdfs:label>mzTab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>mzTab is a tab-delimited format for mass spectrometry-based proteomics and metabolomics results.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://code.google.com/archive/p/mztab"/>
+        <oboInOwl:hasDbXref rdf:resource="http://code.google.com/archive/p/mztab"/>
+        <citation rdf:resource="http://doi.org/10.1074/mcp.O113.036681"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3682 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3682">
+        <rdfs:label>imzML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>imzML is a data format for mass spectrometry imaging data. NB.: See comment.</oboInOwl:hasDefinition>
+        <rdfs:comment>Data is recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra.</rdfs:comment>
+        <file_extension>imzML|ibd</file_extension>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
+        <citation rdf:resource="http://doi.org/10.1016/j.jprot.2012.07.026"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3683 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3683">
+        <rdfs:label>qcML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>qcML is an XML format for quality-related data of mass spectrometry and other high-throughput measurements.</oboInOwl:hasDefinition>
+        <rdfs:comment>The focus of qcML is towards mass spectrometry based proteomics, but the format is suitable for metabolomics and sequencing as well.</rdfs:comment>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://code.google.com/archive/p/qcml"/>
+        <oboInOwl:hasDbXref rdf:resource="http://code.google.com/archive/p/qcml"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3684 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3684">
+        <rdfs:label>PRIDE XML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>PRIDE XML is an XML format for mass spectra, peptide and protein identifications, and metadata about a corresponding measurement, sample, experiment.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.ebi.ac.uk/pride/help/archive/submission/pridexml"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ebi.ac.uk/pride/help/archive/submission/pridexml"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
