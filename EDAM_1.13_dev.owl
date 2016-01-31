@@ -28,7 +28,7 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="&oboOther;edam#">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <oboOther:date>30:01:2016 21:56GMT</oboOther:date>
+        <oboOther:date>30:01:2016 21:56GMT TODO</oboOther:date>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -51,7 +51,7 @@
         <doap:Version>1.13</doap:Version>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <next_id>3685</next_id>
+        <next_id>3685TODO</next_id>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorization of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -32392,6 +32392,24 @@
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://www.ebi.ac.uk/pride/help/archive/submission/pridexml"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.ebi.ac.uk/pride/help/archive/submission/pridexml"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3685 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3685">
+        <rdfs:label>SED-ML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <oboInOwl:hasDefinition>Simulation Experiment Description Markup Language (SED-ML) is an XML format for encoding simulation setups, according to the MIASE (Minimum Information About a Simulation Experiment) requirements.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://sed-ml.org/"/>
+        <oboInOwl:hasDbXref rdf:resource="http://sed-ml.org/"/>
+        <citation rdf:resource="http://doi.org/10.1007/978-3-540-88562-7_15"/>
+        <citation rdf:resource="http://doi.org/10.1186/1752-0509-5-198"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
