@@ -28,7 +28,7 @@
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:edam="&oboOther;edam#">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <oboOther:date>30:01:2016 21:56GMT TODO</oboOther:date>
+        <oboOther:date>01:02:2016 19:59GMT</oboOther:date>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -51,7 +51,7 @@
         <doap:Version>1.13</doap:Version>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <next_id>3685TODO</next_id>
+        <next_id>3694</next_id>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorization of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -31283,7 +31283,6 @@
     <owl:Class rdf:about="http://edamontology.org/format_3507">
         <rdfs:label>Document format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-        <oboInOwl:hasExactSynonym>Microsoft Word format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Format of documents including word processor, spreadsheet and presentation.</oboInOwl:hasDefinition>
         <created_in>1.8</created_in>
         <oboInOwl:hasExactSynonym>doc</oboInOwl:hasExactSynonym>
@@ -32302,6 +32301,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <oboInOwl:hasDefinition>Graphical Pathway Markup Language (GPML) is an XML format used
 	  for exchanging biological pathways.</oboInOwl:hasDefinition>
+        <created_in>1.12</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="http://www.pathvisio.org/gpml/"/>
@@ -32406,10 +32406,145 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
         <oboInOwl:hasDefinition>Simulation Experiment Description Markup Language (SED-ML) is an XML format for encoding simulation setups, according to the MIASE (Minimum Information About a Simulation Experiment) requirements.</oboInOwl:hasDefinition>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://sed-ml.org/"/>
-        <oboInOwl:hasDbXref rdf:resource="http://sed-ml.org/"/>
+        <documentation rdf:resource="http://sed-ml.org"/>
+        <oboInOwl:hasDbXref rdf:resource="http://sed-ml.org"/>
         <citation rdf:resource="http://doi.org/10.1007/978-3-540-88562-7_15"/>
         <citation rdf:resource="http://doi.org/10.1186/1752-0509-5-198"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3686 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3686">
+        <rdfs:label>COMBINE OMEX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <oboInOwl:hasDefinition>Open Modeling EXchange format (OMEX) is a ZIPped format for encapsulating all information necessary for a modeling and simulation project in systems biology.</oboInOwl:hasDefinition>
+        <rdfs:comment>An OMEX file is a ZIP container that includes a manifest file, listing the content of the archive, an optional metadata file adding information about the archive and its content, and the files describing the model. OMEX is one of the standardised formats within COMBINE (Computational Modeling in Biology Network).</rdfs:comment>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://co.mbine.org/documents/archive"/>
+        <oboInOwl:hasDbXref rdf:resource="http://co.mbine.org/documents/archive"/>
+        <citation rdf:resource="http://doi.org/10.1186/s12859-014-0369-z"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3687 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3687">
+        <rdfs:label>ISA-TAB</rdfs:label>
+        <oboInOwl:hasExactSynonym>ISA-Tab</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from 
+experiments employing a combination of technologies.</oboInOwl:hasDefinition>
+        <rdfs:comment>ISA-TAB is based on MAGE-TAB. Other than tabular, the ISA model can also be represented in RDF, and in JSON (compliable with a set of defined JSON Schemata).</rdfs:comment>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.isa-tools.org/format/specification"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.isa-tools.org/format/specification"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3688 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3688">
+        <rdfs:label>SBtab</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <oboInOwl:hasDefinition>SBtab is a tabular format for biochemical network models.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://sbtab.net"/>
+        <oboInOwl:hasDbXref rdf:resource="http://sbtab.net"/>
+        <citation rdf:resource="http://arxiv.org/abs/1502.01463"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3689 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3689">
+        <rdfs:label>BCML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <oboInOwl:hasDefinition>Biological Connection Markup Language (BCML) is an XML format for biological pathways.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://compbiotoolbox.fmach.it/BCMLdocs"/>
+        <oboInOwl:hasDbXref rdf:resource="http://compbiotoolbox.fmach.it/BCMLdocs"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3690 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3690">
+        <rdfs:label>BDML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <oboInOwl:hasDefinition>Biological Dynamics Markup Language (BDML) is an XML format for quantitative data describing biological dynamics.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://ssbd.qbic.riken.jp/bdml"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ssbd.qbic.riken.jp/bdml"/>
+        <citation rdf:resource="http://doi.org/10.1093/bioinformatics/btu767"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3691 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3691">
+        <rdfs:label>BEL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>Biological Expression Language (BEL) is a textual format for representing scientific findings in life sciences in a computable form.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.openbel.org"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.openbel.org"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3692 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3692">
+        <rdfs:label>SBGN-ML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <oboInOwl:hasDefinition>SBGN-ML is an XML format for Systems Biology Graphical Notation (SBGN) diagrams of biological pathways or networks.</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.sbgn.org/LibSBGN#The_SBGN-ML_format"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.sbgn.org/LibSBGN#The_SBGN-ML_format"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3693 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3693">
+        <rdfs:label>AGP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2055"/>
+        <oboInOwl:hasDefinition>AGP is a tabular format for a sequence assembly (a contig, a scaffold/supercontig, or a chromosome).</oboInOwl:hasDefinition>
+        <created_in>1.13</created_in>
+        <documentation rdf:resource="http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
