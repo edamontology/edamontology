@@ -141,6 +141,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Hedi Peterson (ELIXIR EE)
 * Jane Lomax (Sanger Institute, UK)
 * Melissa Haendel (Oregon Health & Science University, USA)
+* Michael Crusoe (University of California)
 * Niclas Jareborg (ELIXIR SE)
 * Radka Svobodová (MU, CZ)
 * Rafael Jimenez (ELIXIR HUB)
