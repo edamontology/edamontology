@@ -66,12 +66,14 @@ From January 2016, EDAM follows a monthly release cycle to this schedule:
     `git push origin`
 
 3. Update the file names of web/page_x.html and relations-and-properties_x.html: update the version number to n+1 (in file name, and multiple places in the contents), and also update the last update date in web/page_x.html.
-4. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
-5. Submit this new release to BioPortal.
-6. Update the website, http://edamontology.org.
-7. Update the [detailed changelog](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) by running [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) to compare the release against the previous version.
-8. Update the [changelog](https://github.com/edamontology/edamontology/blob/master/changelog.md) with a summary of the major changes.
-9. Announce the new release on the mailing lists (edam-announce@elixir-dk.org, edam@elixir-dk.org) including thanks and a summary of changes.
+4. Update the [detailed changelog](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) by running [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) to compare the release against the previous version.
+5. Update the [changelog](https://github.com/edamontology/edamontology/blob/master/changelog.md) with a summary of the major changes.
+6. Create the release on github (Use the [_draft a new release_](https://github.com/edamontology/edamontology/releases/new) button of the _[releases](https://github.com/edamontology/edamontology/releases)_ tab).
+7. Update the website, http://edamontology.org.
+8. Submit this new release to BioPortal and OLS.
+9. Close GitHub issues labelled "done - staged for release". 
+10. Announce the new release on Twitter and mailing lists (edam-announce@elixir-dk.org, edam@elixir-dk.org) including thanks and a summary of changes.
+11. Help apps that implement EDAM to update to the new version. In particular [bio.tools](http://bio.tools).
 
 # Modifications in a GitHub fork (non-core developers)
 GitHub makes it possible for any developer (even if you are not a “core developer”) to make modifications in a copy of EDAM and suggest these modifications are included in the original. 
