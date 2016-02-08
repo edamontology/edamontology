@@ -7,6 +7,10 @@ Description of changes are grouped as follows:
 * **Fixed:** a bug fix
 * **Misc:** some miscellaneous other change
 
+# EDAM\_1.13.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+
+22 new concepts were added and 1075 were changed.
 
 # EDAM\_1.12.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.

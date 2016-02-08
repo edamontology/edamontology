@@ -1,7 +1,5489 @@
 # Detailed Changelog for EDAM
-Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.  
+Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
+
+# EDAM\_1.13.owl
+
+## Classes modified:
+
+Class: http://edamontology.org/data_0899
+Label: Protein structural motifs and surfaces
+-   'Protein structural motifs and surfaces' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structural motifs and surfaces' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0894
+Label: Amino acid annotation
+-   'Amino acid annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Amino acid annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0895
+Label: Peptide annotation
+-   'Peptide annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Peptide annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0891
+Label: Sequence-3D profile alignment
+-   'Sequence-3D profile alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence-3D profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0876
+Label: Protein features report (secondary structure)
+-   'Protein features report (secondary structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (secondary structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0877
+Label: Protein features report (super-secondary)
+-   'Protein features report (super-secondary)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (super-secondary)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0875
+Label: Protein topology
+-   'Protein topology' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein topology' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0879
+Label: Secondary structure alignment metadata (protein)
+-   'Secondary structure alignment metadata (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure alignment metadata (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0885
+Label: Structure database search results
+-   'Structure database search results' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure database search results' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0889
+Label: Structural profile
+-   'Structural profile' SubClassOf 'has topic' some 'Structure comparison'
++   'Structural profile' SubClassOf 'has topic' some 'Structure analysis'
+ 
+Class: http://edamontology.org/data_0882
+Label: Secondary structure alignment metadata (RNA)
+-   'Secondary structure alignment metadata (RNA)' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure alignment metadata (RNA)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0884
+Label: Tertiary structure record
+-   'Tertiary structure record' SubClassOf 'Obsolete concept (EDAM)'
++   'Tertiary structure record' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1703
+Label: ChEBI entry format
+-   'ChEBI entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'ChEBI entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1702
+Label: ChemSpider entry format
+-   'ChemSpider entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'ChemSpider entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1701
+Label: PubChem entry format
+-   'PubChem entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'PubChem entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1700
+Label: KEGG GLYCAN entry format
+-   'KEGG GLYCAN entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG GLYCAN entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1565
+Label: Protein-protein interaction report
+-   'Protein-protein interaction report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-protein interaction report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1564
+Label: Protein fold recognition report
+-   'Protein fold recognition report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein fold recognition report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1561
+Label: CATH functional category
+-   'CATH functional category' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH functional category' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1560
+Label: CATH structurally similar group
+-   'CATH structurally similar group' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH structurally similar group' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1706
+Label: KEGG DRUG entry format
+-   'KEGG DRUG entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG DRUG entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1567
+Label: Protein-nucleic acid interactions report
+-   'Protein-nucleic acid interactions report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-nucleic acid interactions report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1704
+Label: MSDchem ligand dictionary entry format
+-   'MSDchem ligand dictionary entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'MSDchem ligand dictionary entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1591
+Label: Vienna RNA parameters
+-   'Vienna RNA parameters' SubClassOf 'Obsolete concept (EDAM)'
++   'Vienna RNA parameters' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1592
+Label: Vienna RNA structure constraints
+-   'Vienna RNA structure constraints' SubClassOf 'Obsolete concept (EDAM)'
++   'Vienna RNA structure constraints' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1593
+Label: Vienna RNA concentration data
+-   'Vienna RNA concentration data' SubClassOf 'Obsolete concept (EDAM)'
++   'Vienna RNA concentration data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1594
+Label: Vienna RNA calculated energy
+-   'Vienna RNA calculated energy' SubClassOf 'Obsolete concept (EDAM)'
++   'Vienna RNA calculated energy' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1599
+Label: Codon adaptation index
+-   'Codon adaptation index' SubClassOf 'Obsolete concept (EDAM)'
++   'Codon adaptation index' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1586
+Label: Nucleic acid melting temperature
+-   'Nucleic acid melting temperature' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid melting temperature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0005
+Label: Resource type
+-   'Resource type' SubClassOf 'Obsolete concept (EDAM)'
++   'Resource type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0007
+Label: Tool
+-   'Tool' SubClassOf 'Obsolete concept (EDAM)'
++   'Tool' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2197
+Label: OWL format
+-   'OWL format' SubClassOf 'Ontology format'
+ 
+Class: http://edamontology.org/format_2188
+Label: UniProt format
+-   'UniProt format' SubClassOf 'Obsolete concept (EDAM)'
++   'UniProt format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2189
+Label: ipi
+-   'ipi' SubClassOf 'Obsolete concept (EDAM)'
++   'ipi' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1747
+Label: PDB atom record format
+-   'PDB atom record format' SubClassOf 'Obsolete concept (EDAM)'
++   'PDB atom record format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1760
+Label: CATH chain report format
+-   'CATH chain report format' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH chain report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1761
+Label: CATH PDB report format
+-   'CATH PDB report format' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH PDB report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0851
+Label: Sequence mask character
+-   'Sequence mask character' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence mask character' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0859
+Label: Sequence signature model
+-   'Sequence signature model' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence signature model' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0852
+Label: Sequence mask type
+-   'Sequence mask type' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence mask type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0855
+Label: Sequence metadata
+-   'Sequence metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0854
+Label: Sequence length specification
+-   'Sequence length specification' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence length specification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2159
+Label: Gene features (coding region) format
+-   'Gene features (coding region) format' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features (coding region) format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0861
+Label: Sequence alignment (words)
+-   'Sequence alignment (words)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment (words)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0866
+Label: Sequence alignment metadata
+-   'Sequence alignment metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0864
+Label: Sequence alignment parameter
+-   'Sequence alignment parameter' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment parameter' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1782
+Label: NCBI gene report format
+-   'NCBI gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'NCBI gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0831
+Label: MeSH vocabulary
+-   'MeSH vocabulary' SubClassOf 'Obsolete concept (EDAM)'
++   'MeSH vocabulary' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0832
+Label: HGNC vocabulary
+-   'HGNC vocabulary' SubClassOf 'Obsolete concept (EDAM)'
++   'HGNC vocabulary' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0835
+Label: UMLS vocabulary
+-   'UMLS vocabulary' SubClassOf 'Obsolete concept (EDAM)'
++   'UMLS vocabulary' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2175
+Label: Gene cluster format
+-   'Gene cluster format' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene cluster format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0843
+Label: Database entry
+-   'Database entry' SubClassOf 'Obsolete concept (EDAM)'
++   'Database entry' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2993
+Label: Molecular interaction data processing
+-   'Molecular interaction data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular interaction data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1431
+Label: Phylogenetic property values format
+-   'Phylogenetic property values format' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic property values format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0922
+Label: Primers
+-   'Primers' SubClassOf 'Gene transcription features'
++   'Primers' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2948
+Label: Molecular interaction analysis
+-   'Molecular interaction analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular interaction analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2364
+Label: 2D PAGE report
+-   '2D PAGE report' SubClassOf 'Obsolete concept (EDAM)'
++   '2D PAGE report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2363
+Label: 2D PAGE data
+-   '2D PAGE data' SubClassOf 'Obsolete concept (EDAM)'
++   '2D PAGE data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2360
+Label: Domain-domain interaction (indirect)
+-   'Domain-domain interaction (indirect)' SubClassOf 'Obsolete concept (EDAM)'
++   'Domain-domain interaction (indirect)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2952
+Label: Structure alignment processing
+-   'Structure alignment processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2951
+Label: Alignment processing
+-   'Alignment processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Alignment processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2359
+Label: Domain-domain interactions
+-   'Domain-domain interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Domain-domain interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2358
+Label: Domain-nucleic acid interaction report
+-   'Domain-nucleic acid interaction report' SubClassOf 'Obsolete concept (EDAM)'
++   'Domain-nucleic acid interaction report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2357
+Label: Protein signature type
+-   'Protein signature type' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein signature type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3563
+Label: RNA-seq read count analysis
+-   'RNA-seq read count analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'RNA-seq read count analysis' SubClassOf http://edamontology.org/operation_3680
+ 
+Class: http://edamontology.org/operation_3565
+Label: RNA-seq time series data analysis
+-   'RNA-seq time series data analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'RNA-seq time series data analysis' SubClassOf http://edamontology.org/operation_3680
+ 
+Class: http://edamontology.org/operation_2946
+Label: Alignment analysis
+-   'Alignment analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Alignment analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2300
+Label: Gene name (NCBI)
+-   'Gene name (NCBI)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (NCBI)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2307
+Label: Virus annotation
+-   'Virus annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Virus annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2308
+Label: Virus annotation (taxonomy)
+-   'Virus annotation (taxonomy)' SubClassOf 'Obsolete concept (EDAM)'
++   'Virus annotation (taxonomy)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2932
+Label: Hopp and Woods plotting
+-   'Hopp and Woods plotting' SubClassOf 'Obsolete concept (EDAM)'
++   'Hopp and Woods plotting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2931
+Label: Secondary structure comparison
+-   'Secondary structure comparison' SubClassOf 'has topic' some 'Structure comparison'
++   'Secondary structure comparison' SubClassOf 'has topic' some 'Structure analysis'
+ 
+Class: http://edamontology.org/data_0901
+Label: Protein features report (domains)
+-   'Protein features report (domains)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (domains)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0900
+Label: Protein domain classification
+-   'Protein domain classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein domain classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0903
+Label: Protein folding report
+-   'Protein folding report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein folding report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0902
+Label: Protein architecture report
+-   'Protein architecture report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein architecture report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1536
+Label: MHC peptide immunogenicity report
+-   'MHC peptide immunogenicity report' SubClassOf 'Obsolete concept (EDAM)'
++   'MHC peptide immunogenicity report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1533
+Label: Protein subcellular localization
+-   'Protein subcellular localization' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein subcellular localization' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1541
+Label: Protein flexibility or motion report
+-   'Protein flexibility or motion report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein flexibility or motion report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1543
+Label: Protein surface report
+-   'Protein surface report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein surface report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1540
+Label: Protein non-covalent interactions report
+-   'Protein non-covalent interactions report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein non-covalent interactions report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1559
+Label: CATH homologous superfamily
+-   'CATH homologous superfamily' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH homologous superfamily' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1558
+Label: CATH topology
+-   'CATH topology' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH topology' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1557
+Label: CATH architecture
+-   'CATH architecture' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH architecture' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1556
+Label: CATH class
+-   'CATH class' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH class' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1555
+Label: EMBASSY domain classification
+-   'EMBASSY domain classification' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBASSY domain classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1554
+Label: SCOP node
+-   'SCOP node' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP node' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1553
+Label: CATH node
+-   'CATH node' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH node' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1550
+Label: Protein non-canonical interactions
+-   'Protein non-canonical interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein non-canonical interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2381
+Label: Experiment report (genotyping)
+-   'Experiment report (genotyping)' SubClassOf 'Obsolete concept (EDAM)'
++   'Experiment report (genotyping)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3545
+Label: Mathematical modelling
+-   'Mathematical modelling' SubClassOf 'Obsolete concept (EDAM)'
++   'Mathematical modelling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2372
+Label: 2D PAGE spot report
+-   '2D PAGE spot report' SubClassOf 'Obsolete concept (EDAM)'
++   '2D PAGE spot report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2378
+Label: Protein-motif interaction
+-   'Protein-motif interaction' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-motif interaction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3427
+Label: RNAi report
+-   'RNAi report' SubClassOf 'Obsolete concept (EDAM)'
++   'RNAi report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3426
+Label: Proteomics experiment report
+-   'Proteomics experiment report' SubClassOf 'Obsolete concept (EDAM)'
++   'Proteomics experiment report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3428
+Label: Simulation experiment report
+-   'Simulation experiment report' SubClassOf 'Obsolete concept (EDAM)'
++   'Simulation experiment report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1517
+Label: Restriction enzyme report
+-   'Restriction enzyme report' SubClassOf 'Obsolete concept (EDAM)'
++   'Restriction enzyme report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2399
+Label: Gene transcriptional features report
+-   'Gene transcriptional features report' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene transcriptional features report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2397
+Label: Gene features report (exon)
+-   'Gene features report (exon)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features report (exon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2395
+Label: Fungi annotation
+-   'Fungi annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Fungi annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2396
+Label: Fungi annotation (anamorph)
+-   'Fungi annotation (anamorph)' SubClassOf 'Obsolete concept (EDAM)'
++   'Fungi annotation (anamorph)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1509
+Label: Enzyme report
+-   'Enzyme report' SubClassOf 'Obsolete concept (EDAM)'
++   'Enzyme report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2230
+Label: Classification
+-   'Classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2232
+Label: Lipoproteins
+-   'Lipoproteins' SubClassOf 'Obsolete concept (EDAM)'
++   'Lipoproteins' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2243
+Label: phylip property values
+-   'phylip property values' SubClassOf 'Obsolete concept (EDAM)'
++   'phylip property values' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2225
+Label: Protein databases
+-   'Protein databases' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein databases' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2226
+Label: Structure determination
+-   'Structure determination' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure determination' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1490
+Label: Multiple protein tertiary structure alignment (C-alpha atoms)
+-   'Multiple protein tertiary structure alignment (C-alpha atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple protein tertiary structure alignment (C-alpha atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1491
+Label: Structure alignment (nucleic acid pair)
+-   'Structure alignment (nucleic acid pair)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (nucleic acid pair)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1492
+Label: Multiple nucleic acid tertiary structure alignment
+-   'Multiple nucleic acid tertiary structure alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple nucleic acid tertiary structure alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1496
+Label: Molecular similarity score
+-   'Molecular similarity score' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular similarity score' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1495
+Label: DaliLite hit table
+-   'DaliLite hit table' SubClassOf 'Obsolete concept (EDAM)'
++   'DaliLite hit table' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1480
+Label: Structure alignment (multiple)
+-   'Structure alignment (multiple)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (multiple)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1489
+Label: Multiple protein tertiary structure alignment (all atoms)
+-   'Multiple protein tertiary structure alignment (all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple protein tertiary structure alignment (all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1488
+Label: Pairwise protein tertiary structure alignment (C-alpha atoms)
+-   'Pairwise protein tertiary structure alignment (C-alpha atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise protein tertiary structure alignment (C-alpha atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1487
+Label: Pairwise protein tertiary structure alignment (all atoms)
+-   'Pairwise protein tertiary structure alignment (all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise protein tertiary structure alignment (all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1486
+Label: Structure alignment (protein C-alpha atoms)
+-   'Structure alignment (protein C-alpha atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (protein C-alpha atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1485
+Label: Structure alignment (protein all atoms)
+-   'Structure alignment (protein all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (protein all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1484
+Label: Multiple protein tertiary structure alignment
+-   'Multiple protein tertiary structure alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple protein tertiary structure alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1483
+Label: Structure alignment (protein pair)
+-   'Structure alignment (protein pair)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (protein pair)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2210
+Label: Strain data format
+-   'Strain data format' SubClassOf 'Obsolete concept (EDAM)'
++   'Strain data format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2211
+Label: CIP strain data format
+-   'CIP strain data format' SubClassOf 'Obsolete concept (EDAM)'
++   'CIP strain data format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2271
+Label: Structure database search
+-   'Structure database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2278
+Label: Transmembrane protein prediction
+-   'Transmembrane protein prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Transmembrane protein prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2277
+Label: SNP
+-   'SNP' SubClassOf 'DNA polymorphism'
++   'SNP' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2276
+Label: Protein function prediction
+-   'Protein function prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein function prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1471
+Label: Protein chain (all atoms)
+-   'Protein chain (all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein chain (all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1472
+Label: Protein chain (C-alpha atoms)
+-   'Protein chain (C-alpha atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein chain (C-alpha atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1473
+Label: Protein domain (all atoms)
+-   'Protein domain (all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein domain (all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1474
+Label: Protein domain (C-alpha atoms)
+-   'Protein domain (C-alpha atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein domain (C-alpha atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2202
+Label: Sequence record full format
+-   'Sequence record full format' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence record full format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2203
+Label: Sequence record lite format
+-   'Sequence record lite format' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence record lite format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1604
+Label: DictyBase gene report format
+-   'DictyBase gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'DictyBase gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1603
+Label: Ensembl gene report format
+-   'Ensembl gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1607
+Label: EcoCyc gene report format
+-   'EcoCyc gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'EcoCyc gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1608
+Label: FlyBase gene report format
+-   'FlyBase gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'FlyBase gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1605
+Label: CGD gene report format
+-   'CGD gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'CGD gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1469
+Label: Protein structure (all atoms)
+-   'Protein structure (all atoms)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure (all atoms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1606
+Label: DragonDB gene report format
+-   'DragonDB gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'DragonDB gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1609
+Label: Gramene gene report format
+-   'Gramene gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'Gramene gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2257
+Label: Phylogeny visualisation
+-   'Phylogeny visualisation' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogeny visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1453
+Label: Amino acid comparison matrix (floats)
+-   'Amino acid comparison matrix (floats)' SubClassOf 'Obsolete concept (EDAM)'
++   'Amino acid comparison matrix (floats)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1456
+Label: Protein features report (membrane regions)
+-   'Protein features report (membrane regions)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (membrane regions)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1450
+Label: Nucleotide comparison matrix (integers)
+-   'Nucleotide comparison matrix (integers)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleotide comparison matrix (integers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1451
+Label: Nucleotide comparison matrix (floats)
+-   'Nucleotide comparison matrix (floats)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleotide comparison matrix (floats)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1452
+Label: Amino acid comparison matrix (integers)
+-   'Amino acid comparison matrix (integers)' SubClassOf 'Obsolete concept (EDAM)'
++   'Amino acid comparison matrix (integers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1446
+Label: Comparison matrix (integers)
+-   'Comparison matrix (integers)' SubClassOf 'Obsolete concept (EDAM)'
++   'Comparison matrix (integers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1447
+Label: Comparison matrix (floats)
+-   'Comparison matrix (floats)' SubClassOf 'Obsolete concept (EDAM)'
++   'Comparison matrix (floats)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1443
+Label: Phylogenetic tree report (tree stratigraphic)
+-   'Phylogenetic tree report (tree stratigraphic)' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic tree report (tree stratigraphic)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1440
+Label: Phylogenetic tree report (tree shape)
+-   'Phylogenetic tree report (tree shape)' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic tree report (tree shape)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1441
+Label: Phylogenetic tree report (tree evaluation)
+-   'Phylogenetic tree report (tree evaluation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic tree report (tree evaluation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1649
+Label: HumanCyc entry format
+-   'HumanCyc entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'HumanCyc entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1513
+Label: KEGG REACTION enzyme report format
+-   'KEGG REACTION enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG REACTION enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1514
+Label: KEGG ENZYME enzyme report format
+-   'KEGG ENZYME enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG ENZYME enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1515
+Label: REBASE proto enzyme report format
+-   'REBASE proto enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'REBASE proto enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1516
+Label: REBASE withrefm enzyme report format
+-   'REBASE withrefm enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'REBASE withrefm enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2400
+Label: Toxin annotation
+-   'Toxin annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Toxin annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1645
+Label: EMDB entry format
+-   'EMDB entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'EMDB entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2402
+Label: Protein-drug interaction report
+-   'Protein-drug interaction report' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-drug interaction report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1511
+Label: IntEnz enzyme report format
+-   'IntEnz enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'IntEnz enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1647
+Label: KEGG PATHWAY entry format
+-   'KEGG PATHWAY entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG PATHWAY entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2401
+Label: Protein report (membrane protein)
+-   'Protein report (membrane protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein report (membrane protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1512
+Label: BRENDA enzyme report format
+-   'BRENDA enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'BRENDA enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1648
+Label: MetaCyc entry format
+-   'MetaCyc entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'MetaCyc entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1640
+Label: ArrayExpress entry format
+-   'ArrayExpress entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'ArrayExpress entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1619
+Label: TIGR gene report format
+-   'TIGR gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'TIGR gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1618
+Label: ZFIN gene report format
+-   'ZFIN gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'ZFIN gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1617
+Label: WormBase gene report format
+-   'WormBase gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'WormBase gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1616
+Label: TAIR gene report format
+-   'TAIR gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'TAIR gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1500
+Label: Domainatrix 3D-1D scoring matrix format
+-   'Domainatrix 3D-1D scoring matrix format' SubClassOf 'Obsolete concept (EDAM)'
++   'Domainatrix 3D-1D scoring matrix format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1614
+Label: SGD gene report format
+-   'SGD gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'SGD gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1615
+Label: GeneDB gene report format
+-   'GeneDB gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'GeneDB gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1612
+Label: MGD gene report format
+-   'MGD gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'MGD gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1613
+Label: RGD gene report format
+-   'RGD gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'RGD gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1610
+Label: KEGG GENES gene report format
+-   'KEGG GENES gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG GENES gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1611
+Label: MaizeGDB gene report format
+-   'MaizeGDB gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'MaizeGDB gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1623
+Label: OMIM entry format
+-   'OMIM entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'OMIM entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1624
+Label: HGVbase entry format
+-   'HGVbase entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'HGVbase entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1625
+Label: HIVDB entry format
+-   'HIVDB entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'HIVDB entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1626
+Label: KEGG DISEASE entry format
+-   'KEGG DISEASE entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG DISEASE entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1620
+Label: dbSNP polymorphism report format
+-   'dbSNP polymorphism report format' SubClassOf 'Obsolete concept (EDAM)'
++   'dbSNP polymorphism report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2280
+Label: Nucleic acid structure comparison
+-   'Nucleic acid structure comparison' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid structure comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1563
+Label: SMART domain assignment report format
+-   'SMART domain assignment report format' SubClassOf 'Obsolete concept (EDAM)'
++   'SMART domain assignment report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1569
+Label: IntAct entry format
+-   'IntAct entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'IntAct entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1568
+Label: BIND entry format
+-   'BIND entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'BIND entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0079
+Label: Metabolites
+-   'Metabolites' SubClassOf 'Small molecules'
++   'Metabolites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0078
+Label: Proteins
+-   'Proteins' SubClassOf 'Biochemistry'
++   'Proteins' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/topic_0077
+Label: Nucleic acids
+-   'Nucleic acids' SubClassOf 'Biochemistry'
++   'Nucleic acids' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/format_1651
+Label: PATIKA entry format
+-   'PATIKA entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'PATIKA entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1650
+Label: INOH entry format
+-   'INOH entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'INOH entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0084
+Label: Phylogeny
++   'Phylogeny' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/topic_0083
+Label: Alignment
+-   'Alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1655
+Label: Panther Pathways entry format
+-   'Panther Pathways entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Panther Pathways entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1654
+Label: CPDB entry format
+-   'CPDB entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'CPDB entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1653
+Label: aMAZE entry format
+-   'aMAZE entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'aMAZE entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1652
+Label: Reactome entry format
+-   'Reactome entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Reactome entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0090
+Label: Information retrieval
+-   'Information retrieval' SubClassOf 'Data management'
++   'Information retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0094
+Label: Nucleic acid thermodynamics
+-   'Nucleic acid thermodynamics' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid thermodynamics' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0097
+Label: Nucleic acid structure analysis
++   'Nucleic acid structure analysis' SubClassOf 'Nucleic acids'
+ 
+Class: http://edamontology.org/format_1666
+Label: BioModel mathematical model format
+-   'BioModel mathematical model format' SubClassOf 'Obsolete concept (EDAM)'
++   'BioModel mathematical model format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3440
+Label: Genome assembly
+-   'Genome assembly' SubClassOf 'Obsolete concept (EDAM)'
++   'Genome assembly' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1579
+Label: TIGRFam entry format
+-   'TIGRFam entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'TIGRFam entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1577
+Label: SMART entry format
+-   'SMART entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'SMART entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1578
+Label: Superfamily entry format
+-   'Superfamily entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Superfamily entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1575
+Label: Panther Families and HMMs entry format
+-   'Panther Families and HMMs entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Panther Families and HMMs entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1576
+Label: Pfam entry format
+-   'Pfam entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Pfam entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1573
+Label: PIRSF entry format
+-   'PIRSF entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'PIRSF entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1574
+Label: PRINTS entry format
+-   'PRINTS entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'PRINTS entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1571
+Label: InterPro entry abstract format
+-   'InterPro entry abstract format' SubClassOf 'Obsolete concept (EDAM)'
++   'InterPro entry abstract format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1572
+Label: Gene3D entry format
+-   'Gene3D entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene3D entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1570
+Label: InterPro entry format
+-   'InterPro entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'InterPro entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0803
+Label: Human disease
+-   'Human disease' SubClassOf 'Obsolete concept (EDAM)'
++   'Human disease' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1697
+Label: KEGG LIGAND entry format
+-   'KEGG LIGAND entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG LIGAND entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1698
+Label: KEGG COMPOUND entry format
+-   'KEGG COMPOUND entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG COMPOUND entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1699
+Label: KEGG PLANT entry format
+-   'KEGG PLANT entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'KEGG PLANT entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1580
+Label: ProDom entry format
+-   'ProDom entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'ProDom entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1581
+Label: FSSP entry format
+-   'FSSP entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'FSSP entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0111
+Label: Promoters
+-   'Promoters' SubClassOf 'Obsolete concept (EDAM)'
++   'Promoters' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0110
+Label: Transcription
+-   'Transcription' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcription' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0114
+Label: Gene structure
+-   'Gene structure' SubClassOf 'Nucleic acid sites, features and motifs'
+ 
+Class: http://edamontology.org/topic_0112
+Label: Nucleic acid folding
+-   'Nucleic acid folding' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid folding' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0100
+Label: Nucleic acid restriction
+-   'Nucleic acid restriction' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid restriction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0107
+Label: Genetic codes and codon usage
+-   'Genetic codes and codon usage' SubClassOf 'Obsolete concept (EDAM)'
++   'Genetic codes and codon usage' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0109
+Label: Gene finding
+-   'Gene finding' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene finding' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0133
+Label: Two-dimensional gel electrophoresis
+-   'Two-dimensional gel electrophoresis' SubClassOf 'Obsolete concept (EDAM)'
++   'Two-dimensional gel electrophoresis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0137
+Label: Protein hydropathy
+-   'Protein hydropathy' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein hydropathy' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0134
+Label: Mass spectrometry
+-   'Mass spectrometry' SubClassOf 'Proteomics experiment'
++   'Mass spectrometry' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0135
+Label: Protein microarrays
+-   'Protein microarrays' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein microarrays' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1420
+Label: Sequence-profile alignment (fingerprint)
+-   'Sequence-profile alignment (fingerprint)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence-profile alignment (fingerprint)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1438
+Label: Phylogenetic report
+-   'Phylogenetic report' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1400
+Label: Terminal gap penalty
+-   'Terminal gap penalty' SubClassOf 'Obsolete concept (EDAM)'
++   'Terminal gap penalty' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1405
+Label: Gap opening penalty (float)
+-   'Gap opening penalty (float)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap opening penalty (float)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1404
+Label: Gap opening penalty (integer)
+-   'Gap opening penalty (integer)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap opening penalty (integer)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1407
+Label: Gap extension penalty (float)
+-   'Gap extension penalty (float)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap extension penalty (float)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1406
+Label: Gap extension penalty (integer)
+-   'Gap extension penalty (integer)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap extension penalty (integer)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1409
+Label: Gap separation penalty (float)
+-   'Gap separation penalty (float)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap separation penalty (float)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1408
+Label: Gap separation penalty (integer)
+-   'Gap separation penalty (integer)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gap separation penalty (integer)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1416
+Label: Sequence alignment report (site correlation)
+-   'Sequence alignment report (site correlation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment report (site correlation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1415
+Label: Sequence alignment report (site conservation)
+-   'Sequence alignment report (site conservation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment report (site conservation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1414
+Label: Sequence alignment metadata (quality report)
+-   'Sequence alignment metadata (quality report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment metadata (quality report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1418
+Label: Sequence-profile alignment (HMM)
+-   'Sequence-profile alignment (HMM)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence-profile alignment (HMM)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1417
+Label: Sequence-profile alignment (Domainatrix signature)
+-   'Sequence-profile alignment (Domainatrix signature)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence-profile alignment (Domainatrix signature)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1330
+Label: MHC Class II epitopes report
+-   'MHC Class II epitopes report' SubClassOf 'Obsolete concept (EDAM)'
++   'MHC Class II epitopes report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1331
+Label: Protein features (PEST sites)
+-   'Protein features (PEST sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (PEST sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2090
+Label: Database entry version information
+-   'Database entry version information' SubClassOf 'Obsolete concept (EDAM)'
++   'Database entry version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1338
+Label: Sequence database hits scores list
+-   'Sequence database hits scores list' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database hits scores list' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2092
+Label: SNP
+-   'SNP' SubClassOf 'Obsolete concept (EDAM)'
++   'SNP' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1339
+Label: Sequence database hits alignments list
+-   'Sequence database hits alignments list' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database hits alignments list' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1323
+Label: Protein features report (cleavage sites)
+-   'Protein features report (cleavage sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (cleavage sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1324
+Label: Protein features (post-translation modifications)
+-   'Protein features (post-translation modifications)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (post-translation modifications)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1321
+Label: Protein features (sites)
+-   'Protein features (sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1322
+Label: Protein features report (signal peptides)
+-   'Protein features report (signal peptides)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (signal peptides)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1329
+Label: MHC Class I epitopes report
+-   'MHC Class I epitopes report' SubClassOf 'Obsolete concept (EDAM)'
++   'MHC Class I epitopes report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1327
+Label: Protein features (epitopes)
+-   'Protein features (epitopes)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (epitopes)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1328
+Label: Protein features report (nucleic acid binding sites)
+-   'Protein features report (nucleic acid binding sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (nucleic acid binding sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1325
+Label: Protein features report (active sites)
+-   'Protein features report (active sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (active sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1326
+Label: Protein features report (binding sites)
+-   'Protein features report (binding sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (binding sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2303
+Label: STRING entry format (HTML)
+-   'STRING entry format (HTML)' SubClassOf 'Obsolete concept (EDAM)'
++   'STRING entry format (HTML)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1358
+Label: Prosite nucleotide pattern
+-   'Prosite nucleotide pattern' SubClassOf 'Obsolete concept (EDAM)'
++   'Prosite nucleotide pattern' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1359
+Label: Prosite protein pattern
+-   'Prosite protein pattern' SubClassOf 'Obsolete concept (EDAM)'
++   'Prosite protein pattern' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1959
+Label: selex sequence format
+-   'selex sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'selex sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2334
+Label: URI format
+-   'URI format' SubClassOf 'Obsolete concept (EDAM)'
++   'URI format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2399
+Label: Gene transcription features
+-   'Gene transcription features' SubClassOf 'Gene structure'
++   'Gene transcription features' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1956
+Label: phylipnon sequence format
+-   'phylipnon sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'phylipnon sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2397
+Label: Exons
+-   'Exons' SubClassOf 'Coding RNA'
++   'Exons' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1955
+Label: phylip sequence format
+-   'phylip sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'phylip sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1340
+Label: Sequence database hits evaluation data
+-   'Sequence database hits evaluation data' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database hits evaluation data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1345
+Label: MEME background frequencies file
+-   'MEME background frequencies file' SubClassOf 'Obsolete concept (EDAM)'
++   'MEME background frequencies file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1346
+Label: MEME motifs directive file
+-   'MEME motifs directive file' SubClassOf 'Obsolete concept (EDAM)'
++   'MEME motifs directive file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1344
+Label: MEME motif alphabet
+-   'MEME motif alphabet' SubClassOf 'Obsolete concept (EDAM)'
++   'MEME motif alphabet' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1348
+Label: HMM emission and transition counts
+-   'HMM emission and transition counts' SubClassOf 'Obsolete concept (EDAM)'
++   'HMM emission and transition counts' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2323
+Label: ENZYME enzyme report format
+-   'ENZYME enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'ENZYME enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2329
+Label: GeneCards gene report format
+-   'GeneCards gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'GeneCards gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1965
+Label: treecon sequence format
+-   'treecon sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'treecon sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2328
+Label: PseudoCAP gene report format
+-   'PseudoCAP gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'PseudoCAP gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2322
+Label: BioCyc enzyme report format
+-   'BioCyc enzyme report format' SubClassOf 'Obsolete concept (EDAM)'
++   'BioCyc enzyme report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1377
+Label: Protein conserved site signature
+-   'Protein conserved site signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein conserved site signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1376
+Label: Protein site signature
+-   'Protein site signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein site signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1379
+Label: Protein binding site signature
+-   'Protein binding site signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein binding site signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1378
+Label: Protein active site signature
+-   'Protein active site signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein active site signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1373
+Label: Protein domain signature
+-   'Protein domain signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein domain signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1372
+Label: Protein family signature
+-   'Protein family signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein family signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1375
+Label: Protein repeat signature
+-   'Protein repeat signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein repeat signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1374
+Label: Protein region signature
+-   'Protein region signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein region signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1371
+Label: HMMER NULL hidden Markov model
+-   'HMMER NULL hidden Markov model' SubClassOf 'Obsolete concept (EDAM)'
++   'HMMER NULL hidden Markov model' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1368
+Label: Domainatrix signature
+-   'Domainatrix signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Domainatrix signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_3476
+Label: Gene expression data format
+-   'Gene expression data format' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene expression data format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2341
+Label: NCI-Nature pathway entry format
+-   'NCI-Nature pathway entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'NCI-Nature pathway entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1918
+Label: Atomic data format
+-   'Atomic data format' SubClassOf 'Obsolete concept (EDAM)'
++   'Atomic data format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1395
+Label: Score end gaps control
+-   'Score end gaps control' SubClassOf 'Obsolete concept (EDAM)'
++   'Score end gaps control' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1396
+Label: Aligned sequence order
+-   'Aligned sequence order' SubClassOf 'Obsolete concept (EDAM)'
++   'Aligned sequence order' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1390
+Label: Multiple protein sequence alignment
+-   'Multiple protein sequence alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple protein sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1924
+Label: clustal sequence format
+-   'clustal sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'clustal sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1386
+Label: Sequence alignment (nucleic acid pair)
+-   'Sequence alignment (nucleic acid pair)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment (nucleic acid pair)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1389
+Label: Multiple nucleotide sequence alignment
+-   'Multiple nucleotide sequence alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple nucleotide sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1388
+Label: Hybrid sequence alignment (pair)
+-   'Hybrid sequence alignment (pair)' SubClassOf 'Obsolete concept (EDAM)'
++   'Hybrid sequence alignment (pair)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1387
+Label: Sequence alignment (protein pair)
+-   'Sequence alignment (protein pair)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment (protein pair)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1382
+Label: Sequence alignment (multiple)
+-   'Sequence alignment (multiple)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment (multiple)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1380
+Label: Protein post-translational modification signature
+-   'Protein post-translational modification signature' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein post-translational modification signature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0504
+Label: Multiple structure alignment construction
+-   'Multiple structure alignment construction' SubClassOf 'Obsolete concept (EDAM)'
++   'Multiple structure alignment construction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0500
+Label: Secondary structure alignment generation
+-   'Secondary structure alignment generation' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure alignment generation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0507
+Label: Pairwise structure alignment generation (local)
+-   'Pairwise structure alignment generation (local)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise structure alignment generation (local)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0508
+Label: Pairwise structure alignment generation (global)
+-   'Pairwise structure alignment generation (global)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise structure alignment generation (global)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0505
+Label: Structure alignment (protein)
+-   'Structure alignment (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0506
+Label: Structure alignment (RNA)
+-   'Structure alignment (RNA)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment (RNA)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0515
+Label: Data retrieval (tool metadata)
+-   'Data retrieval (tool metadata)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (tool metadata)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0514
+Label: Structural profile alignment generation (multiple)
+-   'Structural profile alignment generation (multiple)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural profile alignment generation (multiple)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0512
+Label: Sequence alignment generation (multiple profile)
+-   'Sequence alignment generation (multiple profile)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment generation (multiple profile)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3413
+Label: Infectious tropical disease
+-   'Infectious tropical disease' SubClassOf 'Infectious disease'
++   'Infectious tropical disease' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0188
+Label: Sequence profiles and HMMs
+-   'Sequence profiles and HMMs' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profiles and HMMs' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0184
+Label: Threading
+-   'Threading' SubClassOf 'Obsolete concept (EDAM)'
++   'Threading' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0183
+Label: Structure alignment
+-   'Structure alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0182
+Label: Sequence alignment
+-   'Sequence alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0180
+Label: Protein fold recognition
+-   'Protein fold recognition' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein fold recognition' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_3466
+Label: EPS
+-   'EPS' SubClassOf 'Textual format'
++   'EPS' SubClassOf http://edamontology.org/format_3696
+ 
+Class: http://edamontology.org/topic_0199
+Label: Genetic variation
+-   'Genetic variation' SubClassOf 'Genetics'
+-   'Genetic variation' SubClassOf 'Nucleic acid sites, features and motifs'
++   'Genetic variation' SubClassOf 'Molecular genetics'
+ 
+Class: http://edamontology.org/topic_0195
+Label: Virtual PCR
+-   'Virtual PCR' SubClassOf 'Obsolete concept (EDAM)'
++   'Virtual PCR' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0191
+Label: Phylogeny reconstruction
+-   'Phylogeny reconstruction' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogeny reconstruction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1977
+Label: swiss feature
+-   'swiss feature' SubClassOf 'Obsolete concept (EDAM)'
++   'swiss feature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1976
+Label: pir
+-   'pir' SubClassOf 'Obsolete concept (EDAM)'
++   'pir' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0166
+Label: Protein structural motifs and surfaces
+-   'Protein structural motifs and surfaces' SubClassOf 'Protein sites, features and motifs'
+ 
+Class: http://edamontology.org/format_1971
+Label: meganon sequence format
+-   'meganon sequence format' SubClassOf 'Obsolete concept (EDAM)'
++   'meganon sequence format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0163
+Label: Sequence database search
+-   'Sequence database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0164
+Label: Sequence clustering
+-   'Sequence clustering' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence clustering' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0167
+Label: Structural (3D) profiles
+-   'Structural (3D) profiles' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural (3D) profiles' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1980
+Label: EMBL feature
+-   'EMBL feature' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBL feature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1981
+Label: GenBank feature
+-   'GenBank feature' SubClassOf 'Obsolete concept (EDAM)'
++   'GenBank feature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0172
+Label: Protein structure prediction
+-   'Protein structure prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0173
+Label: Nucleic acid structure prediction
+-   'Nucleic acid structure prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0174
+Label: Ab initio structure prediction
+-   'Ab initio structure prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Ab initio structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0175
+Label: Homology modelling
+-   'Homology modelling' SubClassOf 'Obsolete concept (EDAM)'
++   'Homology modelling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0177
+Label: Molecular docking
+-   'Molecular docking' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular docking' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0179
+Label: Protein tertiary structure prediction
+-   'Protein tertiary structure prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein tertiary structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0178
+Label: Protein secondary structure prediction
+-   'Protein secondary structure prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein secondary structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0559
+Label: Immunogenicity prediction
+-   'Immunogenicity prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Immunogenicity prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0517
+Label: PCR primer design (for large scale sequencing)
+-   'PCR primer design (for large scale sequencing)' SubClassOf 'has topic' some 'Sequencing'
+-   'PCR primer design (for large scale sequencing)' SubClassOf 'PCR primer design'
++   'PCR primer design (for large scale sequencing)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0516
+Label: Data retrieval (database metadata)
+-   'Data retrieval (database metadata)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (database metadata)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0519
+Label: PCR primer design (for gene transcription profiling)
+-   'PCR primer design (for gene transcription profiling)' SubClassOf 'has topic' some 'Gene expression'
+-   'PCR primer design (for gene transcription profiling)' SubClassOf 'PCR primer design'
++   'PCR primer design (for gene transcription profiling)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0518
+Label: PCR primer design (for genotyping polymorphisms)
+-   'PCR primer design (for genotyping polymorphisms)' SubClassOf 'PCR primer design'
++   'PCR primer design (for genotyping polymorphisms)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1995
+Label: nexusnon alignment format
+-   'nexusnon alignment format' SubClassOf 'Obsolete concept (EDAM)'
++   'nexusnon alignment format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0143
+Label: Protein structure comparison
+-   'Protein structure comparison' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0144
+Label: Protein residue interactions
+-   'Protein residue interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1993
+Label: msf alignment format
+-   'msf alignment format' SubClassOf 'Obsolete concept (EDAM)'
++   'msf alignment format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0141
+Label: Protein cleavage sites and proteolysis
+-   'Protein cleavage sites and proteolysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein cleavage sites and proteolysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1994
+Label: nexus alignment format
+-   'nexus alignment format' SubClassOf 'Obsolete concept (EDAM)'
++   'nexus alignment format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0149
+Label: Protein-nucleic acid interactions
+-   'Protein-nucleic acid interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-nucleic acid interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0148
+Label: Protein-ligand interactions
+-   'Protein-ligand interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-ligand interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0147
+Label: Protein-protein interactions
+-   'Protein-protein interactions' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-protein interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0520
+Label: PCR primer design (for conserved primers)
+-   'PCR primer design (for conserved primers)' SubClassOf 'PCR primer design'
++   'PCR primer design (for conserved primers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0521
+Label: PCR primer design (based on gene structure)
+-   'PCR primer design (based on gene structure)' SubClassOf 'has topic' some 'Gene structure'
+-   'PCR primer design (based on gene structure)' SubClassOf 'PCR primer design'
++   'PCR primer design (based on gene structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0522
+Label: PCR primer design (for methylation PCRs)
+-   'PCR primer design (for methylation PCRs)' SubClassOf 'PCR primer design'
++   'PCR primer design (for methylation PCRs)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0529
+Label: MPSS data processing
+-   'MPSS data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'MPSS data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0528
+Label: SAGE data processing
+-   'SAGE data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'SAGE data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0152
+Label: Carbohydrates
+-   'Carbohydrates' SubClassOf 'Biochemistry'
++   'Carbohydrates' SubClassOf 'Structure analysis'
+ 
+Class: http://edamontology.org/topic_0153
+Label: Lipids
+-   'Lipids' SubClassOf 'Biochemistry'
++   'Lipids' SubClassOf 'Structure analysis'
+ 
+Class: http://edamontology.org/topic_0154
+Label: Small molecules
+-   'Small molecules' SubClassOf 'Biochemistry'
++   'Small molecules' SubClassOf 'Structure analysis'
+ 
+Class: http://edamontology.org/topic_0150
+Label: Protein design
+-   'Protein design' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein design' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0151
+Label: G protein-coupled receptors (GPCR)
+-   'G protein-coupled receptors (GPCR)' SubClassOf 'Obsolete concept (EDAM)'
++   'G protein-coupled receptors (GPCR)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0156
+Label: Sequence editing
+-   'Sequence editing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence editing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0159
+Label: Sequence comparison
+-   'Sequence comparison' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0158
+Label: Sequence motifs
+-   'Sequence motifs' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motifs' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0532
+Label: Gene expression profile analysis
+-   'Gene expression profile analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene expression profile analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0530
+Label: SBS data processing
+-   'SBS data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'SBS data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0536
+Label: Protein structure assignment (from X-ray crystallographic data)
+-   'Protein structure assignment (from X-ray crystallographic data)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure assignment (from X-ray crystallographic data)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0537
+Label: Protein structure assignment (from NMR data)
+-   'Protein structure assignment (from NMR data)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure assignment (from NMR data)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0574
+Label: Sequence motif rendering
+-   'Sequence motif rendering' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif rendering' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0577
+Label: DNA linear map rendering
+-   'DNA linear map rendering' SubClassOf 'Obsolete concept (EDAM)'
++   'DNA linear map rendering' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3353
+Label: Ontology comparison
+-   'Ontology comparison' SubClassOf 'Obsolete concept (EDAM)'
++   'Ontology comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0563
+Label: Codon usage table formatting
+-   'Codon usage table formatting' SubClassOf 'Obsolete concept (EDAM)'
++   'Codon usage table formatting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0562
+Label: Sequence alignment formatting
+-   'Sequence alignment formatting' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment formatting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0222
+Label: Genome annotation
+-   'Genome annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Genome annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0561
+Label: Sequence formatting
+-   'Sequence formatting' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence formatting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0221
+Label: Sequence annotation
+-   'Sequence annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0220
+Label: Document, record and content management
+-   'Document, record and content management' SubClassOf 'Data management'
++   'Document, record and content management' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0217
+Label: Literature analysis
+-   'Literature analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Literature analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0215
+Label: Worms
+-   'Worms' SubClassOf 'Obsolete concept (EDAM)'
++   'Worms' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0211
+Label: Flies
+-   'Flies' SubClassOf 'Obsolete concept (EDAM)'
++   'Flies' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2100
+Label: Type
+-   'Type' SubClassOf 'Obsolete concept (EDAM)'
++   'Type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0210
+Label: Fish
+-   'Fish' SubClassOf 'Obsolete concept (EDAM)'
++   'Fish' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2103
+Label: Gene name (KEGG GENES)
+-   'Gene name (KEGG GENES)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (KEGG GENES)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0200
+Label: Microarrays
+-   'Microarrays' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarrays' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0203
+Label: Gene expression
+-   'Gene expression' SubClassOf 'Genetics'
++   'Gene expression' SubClassOf 'Molecular genetics'
+ 
+Class: http://edamontology.org/data_2925
+Label: Sequence data
+-   'Sequence data' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2927
+Label: Codon usage
+-   'Codon usage' SubClassOf 'Obsolete concept (EDAM)'
++   'Codon usage' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1228
+Label: UniGene entry format
+-   'UniGene entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'UniGene entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3515
+Label: Protein-drug interactions
+-   'Protein-drug interactions' SubClassOf 'Protein-ligand interactions'
++   'Protein-drug interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3514
+Label: Protein-ligand interactions
+-   'Protein-ligand interactions' SubClassOf 'Protein interactions'
++   'Protein-ligand interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3511
+Label: Nucleic acid sites, features and motifs
++   'Nucleic acid sites, features and motifs' SubClassOf 'Nucleic acids'
+ 
+Class: http://edamontology.org/topic_3510
+Label: Protein sites, features and motifs
++   'Protein sites, features and motifs' SubClassOf 'Proteins'
+ 
+Class: http://edamontology.org/topic_3526
+Label: Protein-protein interactions
+-   'Protein-protein interactions' SubClassOf 'Protein interactions'
++   'Protein-protein interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3527
+Label: Cellular process pathways
+-   'Cellular process pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Cellular process pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3528
+Label: Disease pathways
+-   'Disease pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Disease pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3529
+Label: Environmental information processing pathways
+-   'Environmental information processing pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Environmental information processing pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3522
+Label: Northern blot experiment
+-   'Northern blot experiment' SubClassOf 'Proteomics experiment'
++   'Northern blot experiment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3525
+Label: Protein-nucleic acid interactions
+-   'Protein-nucleic acid interactions' SubClassOf 'Protein interactions'
++   'Protein-nucleic acid interactions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3521
+Label: 2D PAGE experiment
+-   '2D PAGE experiment' SubClassOf 'Proteomics experiment'
++   '2D PAGE experiment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1247
+Label: COG sequence cluster format
+-   'COG sequence cluster format' SubClassOf 'Obsolete concept (EDAM)'
++   'COG sequence cluster format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2116
+Label: Nucleic acid features (codon)
+-   'Nucleic acid features (codon)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (codon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2142
+Label: EMBOSS graph
+-   'EMBOSS graph' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS graph' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2143
+Label: EMBOSS report
+-   'EMBOSS report' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2145
+Label: Sequence offset
+-   'Sequence offset' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence offset' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2146
+Label: Threshold
+-   'Threshold' SubClassOf 'Obsolete concept (EDAM)'
++   'Threshold' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2147
+Label: Protein report (transcription factor)
+-   'Protein report (transcription factor)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein report (transcription factor)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2149
+Label: Database category name
+-   'Database category name' SubClassOf 'Obsolete concept (EDAM)'
++   'Database category name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2954
+Label: Article report
+-   'Article report' SubClassOf 'Obsolete concept (EDAM)'
++   'Article report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2246
+Label: Demonstration
+-   'Demonstration' SubClassOf 'Obsolete concept (EDAM)'
++   'Demonstration' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1308
+Label: Matrix/scaffold attachment sites
+-   'Matrix/scaffold attachment sites' SubClassOf 'Gene transcription features'
++   'Matrix/scaffold attachment sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1307
+Label: Splice sites
+-   'Splice sites' SubClassOf 'Gene transcript features'
+-   'Splice sites' SubClassOf 'RNA splicing'
++   'Splice sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1305
+Label: Restriction sites
+-   'Restriction sites' SubClassOf 'DNA binding sites'
++   'Restriction sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1304
+Label: CpG island and isochores
+-   'CpG island and isochores' SubClassOf 'Gene transcription features'
++   'CpG island and isochores' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1302
+Label: PolyA signal or sites
+-   'PolyA signal or sites' SubClassOf 'Gene transcript features'
++   'PolyA signal or sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2141
+Label: Window step size
+-   'Window step size' SubClassOf 'Obsolete concept (EDAM)'
++   'Window step size' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2134
+Label: Results sort order
+-   'Results sort order' SubClassOf 'Obsolete concept (EDAM)'
++   'Results sort order' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2132
+Label: Mutation type
+-   'Mutation type' SubClassOf 'Obsolete concept (EDAM)'
++   'Mutation type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2135
+Label: Toggle
+-   'Toggle' SubClassOf 'Obsolete concept (EDAM)'
++   'Toggle' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2961
+Label: Gene regulatory network report
+-   'Gene regulatory network report' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene regulatory network report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2136
+Label: Sequence width
+-   'Sequence width' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence width' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2967
+Label: Microarray image
+-   'Microarray image' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarray image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2965
+Label: 2D PAGE gel report
+-   '2D PAGE gel report' SubClassOf 'Obsolete concept (EDAM)'
++   '2D PAGE gel report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2130
+Label: Sequence profile type
+-   'Sequence profile type' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2169
+Label: Nucleic acid features (siRNA)
+-   'Nucleic acid features (siRNA)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (siRNA)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2164
+Label: Protein sequence properties plot
+-   'Protein sequence properties plot' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence properties plot' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2224
+Label: Data retrieval (ontology concept)
+-   'Data retrieval (ontology concept)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (ontology concept)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2222
+Label: Data retrieval (ontology annotation)
+-   'Data retrieval (ontology annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (ontology annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2157
+Label: Word composition
+-   'Word composition' SubClassOf 'Obsolete concept (EDAM)'
++   'Word composition' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2156
+Label: Date
+-   'Date' SubClassOf 'Obsolete concept (EDAM)'
++   'Date' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2237
+Label: Data retrieval (sequence profile)
+-   'Data retrieval (sequence profile)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (sequence profile)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2239
+Label: 3D-1D scoring matrix generation
+-   '3D-1D scoring matrix generation' SubClassOf 'has topic' some 'Structure comparison'
++   '3D-1D scoring matrix generation' SubClassOf 'has topic' some 'Structure analysis'
+ 
+Class: http://edamontology.org/data_2152
+Label: Rendering parameter
+-   'Rendering parameter' SubClassOf 'Obsolete concept (EDAM)'
++   'Rendering parameter' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2151
+Label: Color
+-   'Color' SubClassOf 'Obsolete concept (EDAM)'
++   'Color' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2150
+Label: Sequence profile name
+-   'Sequence profile name' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2234
+Label: Structure file processing
+-   'Structure file processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure file processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2180
+Label: 2 or more
+-   '2 or more' SubClassOf 'Obsolete concept (EDAM)'
++   '2 or more' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2178
+Label: 1 or more
+-   '1 or more' SubClassOf 'Obsolete concept (EDAM)'
++   '1 or more' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2177
+Label: Exactly 1
+-   'Exactly 1' SubClassOf 'Obsolete concept (EDAM)'
++   'Exactly 1' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2176
+Label: Cardinality
+-   'Cardinality' SubClassOf 'Obsolete concept (EDAM)'
++   'Cardinality' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2179
+Label: Exactly 2
+-   'Exactly 2' SubClassOf 'Obsolete concept (EDAM)'
++   'Exactly 2' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2173
+Label: Sequence set (stream)
+-   'Sequence set (stream)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence set (stream)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2972
+Label: Workflow
+-   'Workflow' SubClassOf 'Obsolete concept (EDAM)'
++   'Workflow' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2971
+Label: Workflow data
+-   'Workflow data' SubClassOf 'Obsolete concept (EDAM)'
++   'Workflow data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2973
+Label: Secondary structure data
+-   'Secondary structure data' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1308
+Label: Nucleic acid features report (matrix/scaffold attachment sites)
+-   'Nucleic acid features report (matrix/scaffold attachment sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (matrix/scaffold attachment sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1307
+Label: Nucleic acid features report (splice sites)
+-   'Nucleic acid features report (splice sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (splice sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1309
+Label: Gene features (exonic splicing enhancer)
+-   'Gene features (exonic splicing enhancer)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features (exonic splicing enhancer)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1304
+Label: Nucleic acid features report (CpG island and isochore)
+-   'Nucleic acid features report (CpG island and isochore)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (CpG island and isochore)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1303
+Label: Nucleic acid features (quadruplexes)
+-   'Nucleic acid features (quadruplexes)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (quadruplexes)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1306
+Label: Nucleosome exclusion sequences
+-   'Nucleosome exclusion sequences' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleosome exclusion sequences' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2264
+Label: Data retrieval (pathway or network)
+-   'Data retrieval (pathway or network)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (pathway or network)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1305
+Label: Nucleic acid features report (restriction sites)
+-   'Nucleic acid features report (restriction sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (restriction sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2265
+Label: Data retrieval (identifier)
+-   'Data retrieval (identifier)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (identifier)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1300
+Label: Gene and transcript structure (report)
+-   'Gene and transcript structure (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene and transcript structure (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1302
+Label: Nucleic acid features report (PolyA signal or site)
+-   'Nucleic acid features report (PolyA signal or site)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (PolyA signal or site)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1301
+Label: Mobile genetic elements
+-   'Mobile genetic elements' SubClassOf 'Obsolete concept (EDAM)'
++   'Mobile genetic elements' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2989
+Label: Protein features report (key folding sites)
+-   'Protein features report (key folding sites)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (key folding sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2987
+Label: Classification report
+-   'Classification report' SubClassOf 'Obsolete concept (EDAM)'
++   'Classification report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2986
+Label: Nucleic acid classification
+-   'Nucleic acid classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2983
+Label: Pathway or network data
+-   'Pathway or network data' SubClassOf 'Obsolete concept (EDAM)'
++   'Pathway or network data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2982
+Label: Sequence profile data
+-   'Sequence profile data' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2981
+Label: Sequence motif data
+-   'Sequence motif data' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2980
+Label: Protein classification
+-   'Protein classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2198
+Label: Gene cluster
+-   'Gene cluster' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene cluster' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1311
+Label: Operon
+-   'Operon' SubClassOf 'Gene structure'
++   'Operon' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1312
+Label: Promoters
+-   'Promoters' SubClassOf 'Transcription factors and regulatory sites'
++   'Promoters' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2191
+Label: Protein features report (chemical modifications)
+-   'Protein features report (chemical modifications)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (chemical modifications)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2192
+Label: Error
+-   'Error' SubClassOf 'Obsolete concept (EDAM)'
++   'Error' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1315
+Label: Transcription factor binding sites
+-   'Transcription factor binding sites' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcription factor binding sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1314
+Label: Gene features (SECIS element)
+-   'Gene features (SECIS element)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features (SECIS element)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1313
+Label: Coding region
+-   'Coding region' SubClassOf 'Obsolete concept (EDAM)'
++   'Coding region' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1312
+Label: Nucleic acid features report (promoters)
+-   'Nucleic acid features report (promoters)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (promoters)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1311
+Label: Gene features report (operon)
+-   'Gene features report (operon)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features report (operon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1310
+Label: Nucleic acid features (microRNA)
+-   'Nucleic acid features (microRNA)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (microRNA)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1237
+Label: HMMER synthetic sequences set
+-   'HMMER synthetic sequences set' SubClassOf 'Obsolete concept (EDAM)'
++   'HMMER synthetic sequences set' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1236
+Label: Psiblast checkpoint file
+-   'Psiblast checkpoint file' SubClassOf 'Obsolete concept (EDAM)'
++   'Psiblast checkpoint file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1810
+Label: ColiCard report format
+-   'ColiCard report format' SubClassOf 'Obsolete concept (EDAM)'
++   'ColiCard report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1774
+Label: Annotation retrieval
+-   'Annotation retrieval' SubClassOf 'Obsolete concept (EDAM)'
++   'Annotation retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0992
+Label: Ligand identifier
+-   'Ligand identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Ligand identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1264
+Label: Sequence composition table
+-   'Sequence composition table' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence composition table' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1269
+Label: DAS sequence feature annotation
+-   'DAS sequence feature annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'DAS sequence feature annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1780
+Label: Sequence submission
+-   'Sequence submission' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence submission' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1809
+Label: BacMap gene card format
+-   'BacMap gene card format' SubClassOf 'Obsolete concept (EDAM)'
++   'BacMap gene card format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_1808
+Label: GeneIlluminator gene report format
+-   'GeneIlluminator gene report format' SubClassOf 'Obsolete concept (EDAM)'
++   'GeneIlluminator gene report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1256
+Label: Sequence features (comparative)
+-   'Sequence features (comparative)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence features (comparative)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1258
+Label: Sequence property (nucleic acid)
+-   'Sequence property (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence property (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1257
+Label: Sequence property (protein)
+-   'Sequence property (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence property (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1252
+Label: Sequence length range
+-   'Sequence length range' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence length range' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1251
+Label: Window size
+-   'Window size' SubClassOf 'Obsolete concept (EDAM)'
++   'Window size' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1253
+Label: Sequence information report
+-   'Sequence information report' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence information report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1250
+Label: Word size
+-   'Word size' SubClassOf 'Obsolete concept (EDAM)'
++   'Word size' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1244
+Label: primersearch primer pairs sequence record
+-   'primersearch primer pairs sequence record' SubClassOf 'Obsolete concept (EDAM)'
++   'primersearch primer pairs sequence record' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1243
+Label: Primer3 mispriming library file
+-   'Primer3 mispriming library file' SubClassOf 'Obsolete concept (EDAM)'
++   'Primer3 mispriming library file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1242
+Label: Primer3 internal oligo mishybridizing library
+-   'Primer3 internal oligo mishybridizing library' SubClassOf 'Obsolete concept (EDAM)'
++   'Primer3 internal oligo mishybridizing library' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1241
+Label: vectorstrip cloning vector definition file
+-   'vectorstrip cloning vector definition file' SubClassOf 'Obsolete concept (EDAM)'
++   'vectorstrip cloning vector definition file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_3582
+Label: afg
+-   'afg' SubClassOf 'Sequence assembly format'
++   'afg' SubClassOf 'Sequence assembly format (text)'
+ 
+Class: http://edamontology.org/data_0948
+Label: Data resource definition
+-   'Data resource definition' SubClassOf 'Obsolete concept (EDAM)'
++   'Data resource definition' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0952
+Label: EMBOSS database resource definition
+-   'EMBOSS database resource definition' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS database resource definition' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0953
+Label: Version information
+-   'Version information' SubClassOf 'Obsolete concept (EDAM)'
++   'Version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3191
+Label: Trim to reference
+-   'Trim to reference' SubClassOf 'Obsolete concept (EDAM)'
++   'Trim to reference' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0959
+Label: Job metadata
+-   'Job metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Job metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3190
+Label: Trim vector
+-   'Trim vector' SubClassOf 'Obsolete concept (EDAM)'
++   'Trim vector' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0964
+Label: Scent annotation
+-   'Scent annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Scent annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1294
+Label: GlobPlot domain image
+-   'GlobPlot domain image' SubClassOf 'Obsolete concept (EDAM)'
++   'GlobPlot domain image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1293
+Label: SMART protein schematic
+-   'SMART protein schematic' SubClassOf 'Obsolete concept (EDAM)'
++   'SMART protein schematic' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1292
+Label: InterPro architecture image
+-   'InterPro architecture image' SubClassOf 'Obsolete concept (EDAM)'
++   'InterPro architecture image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1291
+Label: InterPro detailed match image
+-   'InterPro detailed match image' SubClassOf 'Obsolete concept (EDAM)'
++   'InterPro detailed match image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1290
+Label: InterPro compact match image
+-   'InterPro compact match image' SubClassOf 'Obsolete concept (EDAM)'
++   'InterPro compact match image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3542
+Label: Protein secondary structure
+-   'Protein secondary structure' SubClassOf 'Protein sites, features and motifs'
+ 
+Class: http://edamontology.org/topic_3543
+Label: Protein sequence repeats
+-   'Protein sequence repeats' SubClassOf 'Protein sites, features and motifs'
++   'Protein sequence repeats' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3540
+Label: Protein key folding sites
+-   'Protein key folding sites' SubClassOf 'Protein sites, features and motifs'
+-   'Protein key folding sites' SubClassOf 'Protein folding, stability and design'
++   'Protein key folding sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3541
+Label: Protein post-translational modifications
+-   'Protein post-translational modifications' SubClassOf 'Protein sites, features and motifs'
++   'Protein post-translational modifications' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0978
+Label: Discrete entity identifier
+-   'Discrete entity identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Discrete entity identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0979
+Label: Entity feature identifier
+-   'Entity feature identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Entity feature identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0974
+Label: Entity identifier
+-   'Entity identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Entity identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3544
+Label: Protein signal peptides
+-   'Protein signal peptides' SubClassOf 'Protein sites, features and motifs'
++   'Protein signal peptides' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0975
+Label: Data resource identifier
+-   'Data resource identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Data resource identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1299
+Label: Sequence features (repeats)
+-   'Sequence features (repeats)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence features (repeats)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1298
+Label: Sequence motif matches
+-   'Sequence motif matches' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif matches' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1281
+Label: Sequence signature map
+-   'Sequence signature map' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence signature map' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3530
+Label: Genetic information processing pathways
+-   'Genetic information processing pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Genetic information processing pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3531
+Label: Protein super-secondary structure
+-   'Protein super-secondary structure' SubClassOf 'Protein structural motifs and surfaces'
++   'Protein super-secondary structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3538
+Label: Protein disordered structure
+-   'Protein disordered structure' SubClassOf 'Protein sites, features and motifs'
++   'Protein disordered structure' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/topic_3537
+Label: Protein chemical modifications
+-   'Protein chemical modifications' SubClassOf 'Protein sites, features and motifs'
++   'Protein chemical modifications' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3539
+Label: Protein domains
+-   'Protein domains' SubClassOf 'Protein sites, features and motifs'
+-   'Protein domains' SubClassOf 'Protein domains and folds'
++   'Protein domains' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3534
+Label: Protein binding sites
+-   'Protein binding sites' SubClassOf 'Protein structural motifs and surfaces'
++   'Protein binding sites' SubClassOf 'Protein sites, features and motifs'
+ 
+Class: http://edamontology.org/topic_3533
+Label: Protein active sites
+-   'Protein active sites' SubClassOf 'Protein structural motifs and surfaces'
++   'Protein active sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0986
+Label: Chemical identifier
+-   'Chemical identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Chemical identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3536
+Label: Protein cleavage sites
+-   'Protein cleavage sites' SubClassOf 'Protein sites, features and motifs'
++   'Protein cleavage sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0985
+Label: Molecule type
+-   'Molecule type' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecule type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3535
+Label: Protein-nucleic acid binding sites
+-   'Protein-nucleic acid binding sites' SubClassOf 'Protein structural motifs and surfaces'
++   'Protein-nucleic acid binding sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0981
+Label: Phenomenon identifier
+-   'Phenomenon identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Phenomenon identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0980
+Label: Entity collection identifier
+-   'Entity collection identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Entity collection identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0904
+Label: Protein features (mutation)
+-   'Protein features (mutation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (mutation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0911
+Label: Nucleotide base annotation
+-   'Nucleotide base annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleotide base annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0918
+Label: DNA variation
+-   'DNA variation' SubClassOf 'Obsolete concept (EDAM)'
++   'DNA variation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0917
+Label: Gene classification
+-   'Gene classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0919
+Label: Chromosome report
+-   'Chromosome report' SubClassOf 'has topic' some 'Chromosomes'
+ 
+Class: http://edamontology.org/data_0922
+Label: Nucleic acid features report (primers)
+-   'Nucleic acid features report (primers)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (primers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0923
+Label: PCR experiment report
+-   'PCR experiment report' SubClassOf 'Obsolete concept (EDAM)'
++   'PCR experiment report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0933
+Label: SAGE experimental data
+-   'SAGE experimental data' SubClassOf 'Obsolete concept (EDAM)'
++   'SAGE experimental data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0934
+Label: MPSS experimental data
+-   'MPSS experimental data' SubClassOf 'Obsolete concept (EDAM)'
++   'MPSS experimental data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0935
+Label: SBS experimental data
+-   'SBS experimental data' SubClassOf 'Obsolete concept (EDAM)'
++   'SBS experimental data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0931
+Label: Microarray experiment report
+-   'Microarray experiment report' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarray experiment report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3189
+Label: Trim ends
+-   'Trim ends' SubClassOf 'Obsolete concept (EDAM)'
++   'Trim ends' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0932
+Label: Oligonucleotide probe data
+-   'Oligonucleotide probe data' SubClassOf 'Obsolete concept (EDAM)'
++   'Oligonucleotide probe data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0946
+Label: Pathway or network annotation
+-   'Pathway or network annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Pathway or network annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0947
+Label: Biological pathway map
+-   'Biological pathway map' SubClassOf 'Obsolete concept (EDAM)'
++   'Biological pathway map' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2201
+Label: Sequence record full
+-   'Sequence record full' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence record full' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3259
+Label: Transcriptome assembly (de novo)
+-   'Transcriptome assembly (de novo)' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcriptome assembly (de novo)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3260
+Label: Transcriptome assembly (mapping)
+-   'Transcriptome assembly (mapping)' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcriptome assembly (mapping)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2240
+Label: Heterogen annotation
+-   'Heterogen annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Heterogen annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2248
+Label: Schema
+-   'Schema' SubClassOf 'Obsolete concept (EDAM)'
++   'Schema' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2247
+Label: Phylogenetic consensus tree
+-   'Phylogenetic consensus tree' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic consensus tree' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2245
+Label: Sequence set (bootstrapped)
+-   'Sequence set (bootstrapped)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence set (bootstrapped)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2242
+Label: Phylogenetic property values
+-   'Phylogenetic property values' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic property values' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2249
+Label: DTD
+-   'DTD' SubClassOf 'Obsolete concept (EDAM)'
++   'DTD' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3200
+Label: DNA barcoding
++   'DNA barcoding' SubClassOf 'Taxonomic classification'
+ 
+Class: http://edamontology.org/data_2235
+Label: Raw SCOP domain classification
+-   'Raw SCOP domain classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Raw SCOP domain classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2236
+Label: Raw CATH domain classification
+-   'Raw CATH domain classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Raw CATH domain classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3213
+Label: Genome indexing (suffix arrays)
+-   'Genome indexing (suffix arrays)' SubClassOf 'Obsolete concept (EDAM)'
++   'Genome indexing (suffix arrays)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3212
+Label: Genome indexing (Burrows-Wheeler)
+-   'Genome indexing (Burrows-Wheeler)' SubClassOf 'Obsolete concept (EDAM)'
++   'Genome indexing (Burrows-Wheeler)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://www.geneontology.org/formats/oboInOwl#ObsoleteClass
+Label: Obsolete concept (EDAM)
+-   'Obsolete concept (EDAM)' SubClassOf 'Obsolete concept (EDAM)'
+ 
+Class: http://edamontology.org/data_2213
+Label: Mutation annotation (prevalence)
+-   'Mutation annotation (prevalence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Mutation annotation (prevalence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2212
+Label: Mutation annotation (basic)
+-   'Mutation annotation (basic)' SubClassOf 'Obsolete concept (EDAM)'
++   'Mutation annotation (basic)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2215
+Label: Mutation annotation (functional)
+-   'Mutation annotation (functional)' SubClassOf 'Obsolete concept (EDAM)'
++   'Mutation annotation (functional)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2214
+Label: Mutation annotation (prognostic)
+-   'Mutation annotation (prognostic)' SubClassOf 'Obsolete concept (EDAM)'
++   'Mutation annotation (prognostic)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2217
+Label: Tumor annotation
+-   'Tumor annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Tumor annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2218
+Label: Server metadata
+-   'Server metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Server metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2289
+Label: Sequence identifier (nucleic acid)
+-   'Sequence identifier (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence identifier (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2288
+Label: Sequence identifier (protein)
+-   'Sequence identifier (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence identifier (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2123
+Label: Small molecule data processing
+-   'Small molecule data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Small molecule data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2122
+Label: Sequence alignment file processing
+-   'Sequence alignment file processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment file processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2120
+Label: Listfile processing
+-   'Listfile processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Listfile processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1768
+Label: Nucleic acid folding family identification
+-   'Nucleic acid folding family identification' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid folding family identification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2252
+Label: XSLT stylesheet
+-   'XSLT stylesheet' SubClassOf 'Obsolete concept (EDAM)'
++   'XSLT stylesheet' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2251
+Label: Relax-NG schema
+-   'Relax-NG schema' SubClassOf 'Obsolete concept (EDAM)'
++   'Relax-NG schema' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2250
+Label: XML Schema
+-   'XML Schema' SubClassOf 'Obsolete concept (EDAM)'
++   'XML Schema' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2296
+Label: Gene name (AceView)
+-   'Gene name (AceView)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (AceView)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1456
+Label: Protein membrane regions
+-   'Protein membrane regions' SubClassOf 'Protein domains and folds'
+-   'Protein membrane regions' SubClassOf 'Protein domains'
++   'Protein membrane regions' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0317
+Label: EST and cDNA sequence analysis
+-   'EST and cDNA sequence analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'EST and cDNA sequence analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0316
+Label: Functional profiling
+-   'Functional profiling' SubClassOf 'Obsolete concept (EDAM)'
++   'Functional profiling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0312
+Label: Sequencing-based expression profile data processing
+-   'Sequencing-based expression profile data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequencing-based expression profile data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2748
+Label: Database name (Osteogenesis)
+-   'Database name (Osteogenesis)' SubClassOf 'Obsolete concept (EDAM)'
++   'Database name (Osteogenesis)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2018
+Label: Annotation
+-   'Annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2747
+Label: Database name (CMD)
+-   'Database name (CMD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Database name (CMD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2740
+Label: Gene name (Genolist)
+-   'Gene name (Genolist)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (Genolist)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2743
+Label: Gene name (HUGO)
+-   'Gene name (HUGO)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (HUGO)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2735
+Label: Database name (SwissRegulon)
+-   'Database name (SwissRegulon)' SubClassOf 'Obsolete concept (EDAM)'
++   'Database name (SwissRegulon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2733
+Label: Genus name (virus)
+-   'Genus name (virus)' SubClassOf 'Obsolete concept (EDAM)'
++   'Genus name (virus)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2734
+Label: Family name (virus)
+-   'Family name (virus)' SubClassOf 'Obsolete concept (EDAM)'
++   'Family name (virus)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2028
+Label: Experimental data
+-   'Experimental data' SubClassOf 'Obsolete concept (EDAM)'
++   'Experimental data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2023
+Label: Sequence mask parameter
+-   'Sequence mask parameter' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence mask parameter' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2022
+Label: Vienna RNA structural data
+-   'Vienna RNA structural data' SubClassOf 'Obsolete concept (EDAM)'
++   'Vienna RNA structural data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2767
+Label: Identifier with metadata
+-   'Identifier with metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Identifier with metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2768
+Label: Gene symbol annotation
+-   'Gene symbol annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene symbol annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2763
+Label: Locus annotation
+-   'Locus annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Locus annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2765
+Label: Term ID list
+-   'Term ID list' SubClassOf 'Obsolete concept (EDAM)'
++   'Term ID list' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2041
+Label: Genome version information
+-   'Genome version information' SubClassOf 'Obsolete concept (EDAM)'
++   'Genome version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2046
+Label: Nucleic acid sequence record (lite)
+-   'Nucleic acid sequence record (lite)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence record (lite)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2043
+Label: Sequence record lite
+-   'Sequence record lite' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence record lite' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2754
+Label: Gene features report (intron)
+-   'Gene features report (intron)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene features report (intron)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2047
+Label: Protein sequence record (lite)
+-   'Protein sequence record (lite)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence record (lite)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2053
+Label: Structural data
+-   'Structural data' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2661
+Label: Toxins and targets
+-   'Toxins and targets' SubClassOf 'Toxicology'
+-   'Toxins and targets' SubClassOf 'Small molecules'
++   'Toxins and targets' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2079
+Label: Search parameter
+-   'Search parameter' SubClassOf 'Obsolete concept (EDAM)'
++   'Search parameter' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2722
+Label: Protein features report (disordered structure)
+-   'Protein features report (disordered structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (disordered structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2724
+Label: Embryo report
+-   'Embryo report' SubClassOf 'Obsolete concept (EDAM)'
++   'Embryo report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2726
+Label: Inhibitor annotation
+-   'Inhibitor annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Inhibitor annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2081
+Label: Secondary structure
+-   'Secondary structure' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2083
+Label: Alignment data
+-   'Alignment data' SubClassOf 'Obsolete concept (EDAM)'
++   'Alignment data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3147
+Label: Mass spectrometry experiment
+-   'Mass spectrometry experiment' SubClassOf 'Obsolete concept (EDAM)'
++   'Mass spectrometry experiment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3143
+Label: SCOP superfamily
+-   'SCOP superfamily' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP superfamily' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3144
+Label: SCOP family
+-   'SCOP family' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP family' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3145
+Label: SCOP protein
+-   'SCOP protein' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP protein' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3146
+Label: SCOP species
+-   'SCOP species' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP species' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3295
+Label: Epigenetics
+-   'Epigenetics' SubClassOf 'Molecular genetics'
++   'Epigenetics' SubClassOf 'Genetics'
+ 
+Class: http://edamontology.org/data_3140
+Label: Nucleic acid features (immunoglobulin gene structure)
+-   'Nucleic acid features (immunoglobulin gene structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (immunoglobulin gene structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3142
+Label: SCOP fold
+-   'SCOP fold' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP fold' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3141
+Label: SCOP class
+-   'SCOP class' SubClassOf 'Obsolete concept (EDAM)'
++   'SCOP class' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1125
+Label: Comparison matrix type
+-   'Comparison matrix type' SubClassOf 'Obsolete concept (EDAM)'
++   'Comparison matrix type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1121
+Label: BLAST sequence alignment type
+-   'BLAST sequence alignment type' SubClassOf 'Obsolete concept (EDAM)'
++   'BLAST sequence alignment type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1122
+Label: Phylogenetic tree type
+-   'Phylogenetic tree type' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic tree type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1120
+Label: Sequence alignment type
+-   'Sequence alignment type' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3165
+Label: NGS experiment
+-   'NGS experiment' SubClassOf 'Obsolete concept (EDAM)'
++   'NGS experiment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1152
+Label: HIVDB identifier
+-   'HIVDB identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'HIVDB identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1156
+Label: Pathway ID (aMAZE)
+-   'Pathway ID (aMAZE)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pathway ID (aMAZE)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3105
+Label: Geotemporal metadata
+-   'Geotemporal metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Geotemporal metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3101
+Label: Protein domain classification node
+-   'Protein domain classification node' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein domain classification node' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1906
+Label: Quantitative trait locus
+-   'Quantitative trait locus' SubClassOf 'Obsolete concept (EDAM)'
++   'Quantitative trait locus' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2542
+Label: Protein features (domains) format
+-   'Protein features (domains) format' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features (domains) format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3116
+Label: Microarray protocol annotation
+-   'Microarray protocol annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarray protocol annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3119
+Label: Sequence features (compositionally-biased regions)
+-   'Sequence features (compositionally-biased regions)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence features (compositionally-biased regions)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3118
+Label: Protein features report (topological domains)
+-   'Protein features report (topological domains)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (topological domains)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3122
+Label: Nucleic acid features (difference and change)
+-   'Nucleic acid features (difference and change)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (difference and change)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3123
+Label: Nucleic acid features report (expression signal)
+-   'Nucleic acid features report (expression signal)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (expression signal)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3126
+Label: Nucleic acid repeats (report)
+-   'Nucleic acid repeats (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid repeats (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3125
+Label: Nucleic acid features report (binding)
+-   'Nucleic acid features report (binding)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (binding)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3127
+Label: Nucleic acid features report (replication and recombination)
+-   'Nucleic acid features report (replication and recombination)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (replication and recombination)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2560
+Label: STRING entry format
+-   'STRING entry format' SubClassOf 'Obsolete concept (EDAM)'
++   'STRING entry format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3129
+Label: Protein features report (repeats)
+-   'Protein features report (repeats)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein features report (repeats)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2562
+Label: Amino acid identifier format
+-   'Amino acid identifier format' SubClassOf 'Obsolete concept (EDAM)'
++   'Amino acid identifier format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1101
+Label: TREMBL accession
+-   'TREMBL accession' SubClassOf 'Obsolete concept (EDAM)'
++   'TREMBL accession' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3135
+Label: Nucleic acid features report (signal or transit peptide)
+-   'Nucleic acid features report (signal or transit peptide)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (signal or transit peptide)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3133
+Label: Nucleic acid features (stem loop)
+-   'Nucleic acid features (stem loop)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (stem loop)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3132
+Label: Nucleic acid features (d-loop)
+-   'Nucleic acid features (d-loop)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features (d-loop)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3139
+Label: Nucleic acid features report (STS)
+-   'Nucleic acid features report (STS)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (STS)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3138
+Label: Transcriptional features (report)
+-   'Transcriptional features (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcriptional features (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3137
+Label: Non-coding RNA
+-   'Non-coding RNA' SubClassOf 'Obsolete concept (EDAM)'
++   'Non-coding RNA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2009
+Label: Ordered locus name
+-   'Ordered locus name' SubClassOf 'Obsolete concept (EDAM)'
++   'Ordered locus name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1111
+Label: EMBOSS listfile
+-   'EMBOSS listfile' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS listfile' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1110
+Label: EMBOSS sequence type
+-   'EMBOSS sequence type' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS sequence type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3130
+Label: Sequence motif matches (protein)
+-   'Sequence motif matches (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif matches (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3131
+Label: Sequence motif matches (nucleic acid)
+-   'Sequence motif matches (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif matches (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1832
+Label: Residue contact calculation (residue-nucleic acid)
+-   'Residue contact calculation (residue-nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue contact calculation (residue-nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1835
+Label: Residue contact calculation (residue-negative ion)
+-   'Residue contact calculation (residue-negative ion)' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue contact calculation (residue-negative ion)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1826
+Label: Full torsion angle calculation
+-   'Full torsion angle calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Full torsion angle calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1825
+Label: Backbone torsion angle calculation
+-   'Backbone torsion angle calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Backbone torsion angle calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1828
+Label: Tau angle calculation
+-   'Tau angle calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Tau angle calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1827
+Label: Cysteine torsion angle calculation
+-   'Cysteine torsion angle calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Cysteine torsion angle calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1845
+Label: PDB file sequence retrieval
+-   'PDB file sequence retrieval' SubClassOf 'Obsolete concept (EDAM)'
++   'PDB file sequence retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1846
+Label: HET group detection
+-   'HET group detection' SubClassOf 'Obsolete concept (EDAM)'
++   'HET group detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1841
+Label: Rotamer likelihood prediction
+-   'Rotamer likelihood prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Rotamer likelihood prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1842
+Label: Proline mutation value calculation
+-   'Proline mutation value calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Proline mutation value calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1838
+Label: Residue contact calculation (residue-ligand)
+-   'Residue contact calculation (residue-ligand)' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue contact calculation (residue-ligand)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1837
+Label: Residue symmetry contact calculation
+-   'Residue symmetry contact calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue symmetry contact calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1813
+Label: Sequence retrieval
+-   'Sequence retrieval' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1820
+Label: Protein residue surface calculation (vacuum accessible)
+-   'Protein residue surface calculation (vacuum accessible)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue surface calculation (vacuum accessible)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1823
+Label: Protein surface calculation (accessible molecular)
+-   'Protein surface calculation (accessible molecular)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein surface calculation (accessible molecular)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1824
+Label: Protein surface calculation (accessible)
+-   'Protein surface calculation (accessible)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein surface calculation (accessible)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1821
+Label: Protein residue surface calculation (accessible molecular)
+-   'Protein residue surface calculation (accessible molecular)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue surface calculation (accessible molecular)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1822
+Label: Protein residue surface calculation (vacuum molecular)
+-   'Protein residue surface calculation (vacuum molecular)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue surface calculation (vacuum molecular)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1817
+Label: Protein atom surface calculation (accessible)
+-   'Protein atom surface calculation (accessible)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein atom surface calculation (accessible)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1814
+Label: Structure retrieval
+-   'Structure retrieval' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1819
+Label: Protein residue surface calculation (accessible)
+-   'Protein residue surface calculation (accessible)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue surface calculation (accessible)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1818
+Label: Protein atom surface calculation (accessible molecular)
+-   'Protein atom surface calculation (accessible molecular)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein atom surface calculation (accessible molecular)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2496
+Label: Gene regulatory network processing
+-   'Gene regulatory network processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene regulatory network processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2498
+Label: Sequencing-based expression profile data analysis
+-   'Sequencing-based expression profile data analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequencing-based expression profile data analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2491
+Label: Hydrogen bond calculation (inter-residue)
+-   'Hydrogen bond calculation (inter-residue)' SubClassOf 'Obsolete concept (EDAM)'
++   'Hydrogen bond calculation (inter-residue)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2493
+Label: Codon usage data processing
+-   'Codon usage data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Codon usage data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2490
+Label: Residue contact calculation (residue-residue)
+-   'Residue contact calculation (residue-residue)' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue contact calculation (residue-residue)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2482
+Label: Secondary structure processing
+-   'Secondary structure processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2483
+Label: Structure comparison
+-   'Structure comparison' SubClassOf 'has topic' some 'Structure comparison'
++   'Structure comparison' SubClassOf 'has topic' some 'Structure analysis'
+ 
+Class: http://edamontology.org/operation_3084
+Label: Protein function prediction (from sequence)
+-   'Protein function prediction (from sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein function prediction (from sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2470
+Label: Data retrieval (protein family annotation)
+-   'Data retrieval (protein family annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (protein family annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2471
+Label: Data retrieval (RNA family annotation)
+-   'Data retrieval (RNA family annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (RNA family annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2472
+Label: Data retrieval (gene annotation)
+-   'Data retrieval (gene annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (gene annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2473
+Label: Data retrieval (genotype and phenotype annotation)
+-   'Data retrieval (genotype and phenotype annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (genotype and phenotype annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3090
+Label: Protein feature prediction (from structure)
+-   'Protein feature prediction (from structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein feature prediction (from structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3093
+Label: Database search (by sequence)
+-   'Database search (by sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Database search (by sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1847
+Label: DSSP secondary structure assignment
+-   'DSSP secondary structure assignment' SubClassOf 'Obsolete concept (EDAM)'
++   'DSSP secondary structure assignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1848
+Label: Structure formatting
+-   'Structure formatting' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure formatting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2468
+Label: Data retrieval (phylogenetic tree)
+-   'Data retrieval (phylogenetic tree)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (phylogenetic tree)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2469
+Label: Data retrieval (protein interaction annotation)
+-   'Data retrieval (protein interaction annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (protein interaction annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2466
+Label: Map annotation
+-   'Map annotation' SubClassOf 'Obsolete concept (EDAM)'
++   'Map annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2467
+Label: Data retrieval (protein annotation)
+-   'Data retrieval (protein annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (protein annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3086
+Label: Nucleic acid sequence composition (report)
+-   'Nucleic acid sequence composition (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence composition (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2460
+Label: Protein atom surface calculation
+-   'Protein atom surface calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein atom surface calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2461
+Label: Protein residue surface calculation
+-   'Protein residue surface calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein residue surface calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3085
+Label: Protein sequence composition
+-   'Protein sequence composition' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence composition' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2465
+Label: Structure processing
+-   'Structure processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2462
+Label: Protein surface calculation
+-   'Protein surface calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein surface calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2463
+Label: Sequence alignment processing
+-   'Sequence alignment processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence alignment processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2453
+Label: Feature table processing
+-   'Feature table processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Feature table processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2452
+Label: Sequence cluster processing
+-   'Sequence cluster processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence cluster processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0385
+Label: Protein hydropathy cluster calculation
+-   'Protein hydropathy cluster calculation' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein hydropathy cluster calculation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0383
+Label: Protein hydropathy calculation (from structure)
+-   'Protein hydropathy calculation (from structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein hydropathy calculation (from structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0388
+Label: Protein binding site prediction (from structure)
+-   'Protein binding site prediction (from structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein binding site prediction (from structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2459
+Label: Structure processing (protein)
+-   'Structure processing (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure processing (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2440
+Label: Structure processing (RNA)
+-   'Structure processing (RNA)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure processing (RNA)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2443
+Label: Phylogenetic tree processing
+-   'Phylogenetic tree processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic tree processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0395
+Label: Residue non-canonical interaction detection
+-   'Residue non-canonical interaction detection' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue non-canonical interaction detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2448
+Label: Sequence processing (nucleic acid)
+-   'Sequence processing (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence processing (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2445
+Label: Protein interaction network processing
+-   'Protein interaction network processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein interaction network processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2444
+Label: Protein secondary structure processing
+-   'Protein secondary structure processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein secondary structure processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2447
+Label: Sequence processing (protein)
+-   'Sequence processing (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence processing (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2446
+Label: Sequence processing
+-   'Sequence processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0360
+Label: Structural similarity search
+-   'Structural similarity search' SubClassOf 'has topic' some 'Structure comparison'
+ 
+Class: http://edamontology.org/operation_2432
+Label: Microarray data processing
+-   'Microarray data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarray data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2435
+Label: Gene expression profile processing
+-   'Gene expression profile processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene expression profile processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2434
+Label: Data retrieval (codon usage table)
+-   'Data retrieval (codon usage table)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (codon usage table)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2438
+Label: Pathway or network processing
+-   'Pathway or network processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Pathway or network processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2420
+Label: Operation (typed)
+-   'Operation (typed)' SubClassOf 'Obsolete concept (EDAM)'
++   'Operation (typed)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0377
+Label: Sequence composition calculation (nucleic acid)
+-   'Sequence composition calculation (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence composition calculation (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2427
+Label: Data handling
+-   'Data handling' SubClassOf 'Obsolete concept (EDAM)'
++   'Data handling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0378
+Label: Sequence composition calculation (protein)
+-   'Sequence composition calculation (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence composition calculation (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2409
+Label: File handling
+-   'File handling' SubClassOf 'Analysis'
++   'File handling' SubClassOf 'Operation'
+ 
+Class: http://edamontology.org/operation_2408
+Label: Sequence feature analysis
+-   'Sequence feature analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence feature analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0345
+Label: Sequence retrieval (by keyword)
+-   'Sequence retrieval (by keyword)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence retrieval (by keyword)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2417
+Label: Physicochemical property data processing
+-   'Physicochemical property data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Physicochemical property data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0343
+Label: Transmembrane protein database search
+-   'Transmembrane protein database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Transmembrane protein database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0344
+Label: Sequence retrieval (by code)
+-   'Sequence retrieval (by code)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence retrieval (by code)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2413
+Label: Sequence profile processing
+-   'Sequence profile processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0347
+Label: Sequence database search (by motif or pattern)
+-   'Sequence database search (by motif or pattern)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by motif or pattern)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2411
+Label: Structural profile processing
+-   'Structural profile processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural profile processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0348
+Label: Sequence database search (by amino acid composition)
+-   'Sequence database search (by amino acid composition)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by amino acid composition)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2412
+Label: Data index processing
+-   'Data index processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Data index processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2410
+Label: Gene expression analysis
+-   'Gene expression analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene expression analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0341
+Label: Motif database search
+-   'Motif database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Motif database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0342
+Label: Sequence profile database search
+-   'Sequence profile database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0340
+Label: Protein secondary database search
+-   'Protein secondary database search' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein secondary database search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2788
+Label: Sequence profile data
+-   'Sequence profile data' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence profile data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0354
+Label: Sequence database search (by sequence for primer sequences)
+-   'Sequence database search (by sequence for primer sequences)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by sequence for primer sequences)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2404
+Label: Sequence motif processing
+-   'Sequence motif processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif processing' SubClassOf 'Sequence analysis'
+ 
+Class: http://edamontology.org/operation_0355
+Label: Sequence database search (by molecular weight)
+-   'Sequence database search (by molecular weight)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by molecular weight)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2405
+Label: Protein interaction data processing
+-   'Protein interaction data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein interaction data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0356
+Label: Sequence database search (by isoelectric point)
+-   'Sequence database search (by isoelectric point)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by isoelectric point)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0357
+Label: Structure retrieval (by code)
+-   'Structure retrieval (by code)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure retrieval (by code)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2407
+Label: Annotation processing
+-   'Annotation processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Annotation processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0358
+Label: Structure retrieval (by keyword)
+-   'Structure retrieval (by keyword)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure retrieval (by keyword)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0359
+Label: Structure database search (by sequence)
+-   'Structure database search (by sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure database search (by sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0350
+Label: Sequence database search (by sequence using word-based methods)
+-   'Sequence database search (by sequence using word-based methods)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by sequence using word-based methods)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0351
+Label: Sequence database search (by sequence using profile-based methods)
+-   'Sequence database search (by sequence using profile-based methods)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by sequence using profile-based methods)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0352
+Label: Sequence database search (by sequence using local alignment-based methods)
+-   'Sequence database search (by sequence using local alignment-based methods)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by sequence using local alignment-based methods)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0353
+Label: Sequence database search (by sequence using global alignment-based methods)
+-   'Sequence database search (by sequence using global alignment-based methods)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database search (by sequence using global alignment-based methods)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0318
+Label: Structural genomics target selection
+-   'Structural genomics target selection' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural genomics target selection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0332
+Label: Immunogen design
+-   'Immunogen design' SubClassOf 'Obsolete concept (EDAM)'
++   'Immunogen design' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0330
+Label: Protein SNP mapping
+-   'Protein SNP mapping' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein SNP mapping' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1890
+Label: Gene name (Arabidopsis)
+-   'Gene name (Arabidopsis)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (Arabidopsis)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1892
+Label: Gene name (GeneFarm)
+-   'Gene name (GeneFarm)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (GeneFarm)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0414
+Label: Protein feature prediction (from sequence)
+-   'Protein feature prediction (from sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein feature prediction (from sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0413
+Label: MHC peptide immunogenicity prediction
+-   'MHC peptide immunogenicity prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'MHC peptide immunogenicity prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2880
+Label: Secondary structure image
+-   'Secondary structure image' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure image' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2881
+Label: Secondary structure report
+-   'Secondary structure report' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2882
+Label: DNA features
+-   'DNA features' SubClassOf 'Obsolete concept (EDAM)'
++   'DNA features' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2883
+Label: RNA features report
+-   'RNA features report' SubClassOf 'Obsolete concept (EDAM)'
++   'RNA features report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2885
+Label: Nucleic acid features report (polymorphism)
+-   'Nucleic acid features report (polymorphism)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (polymorphism)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2888
+Label: Protein sequence record (full)
+-   'Protein sequence record (full)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence record (full)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2889
+Label: Nucleic acid sequence record (full)
+-   'Nucleic acid sequence record (full) ' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence record (full) ' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1880
+Label: Misnomer
+-   'Misnomer' SubClassOf 'Obsolete concept (EDAM)'
++   'Misnomer' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0401
+Label: Protein hydropathy calculation (from sequence)
+-   'Protein hydropathy calculation (from sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein hydropathy calculation (from sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1884
+Label: UniProt keywords
+-   'UniProt keywords' SubClassOf 'Obsolete concept (EDAM)'
++   'UniProt keywords' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1888
+Label: Gene ID (MIPS Medicago)
+-   'Gene ID (MIPS Medicago)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (MIPS Medicago)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1889
+Label: Gene name (DragonDB)
+-   'Gene name (DragonDB)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (DragonDB)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1887
+Label: Gene ID (MIPS Maize)
+-   'Gene ID (MIPS Maize)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (MIPS Maize)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2874
+Label: Sequence set (polymorphic)
+-   'Sequence set (polymorphic)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence set (polymorphic)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2875
+Label: DRCAT resource
+-   'DRCAT resource' SubClassOf 'Obsolete concept (EDAM)'
++   'DRCAT resource' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2754
+Label: Introns
+-   'Introns' SubClassOf 'Gene transcript features'
++   'Introns' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2869
+Label: Nucleic acid features report (RFLP)
+-   'Nucleic acid features report (RFLP)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (RFLP)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2866
+Label: Northern blot report
+-   'Northern blot report' SubClassOf 'Obsolete concept (EDAM)'
++   'Northern blot report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2867
+Label: Nucleic acid features report (VNTR)
+-   'Nucleic acid features report (VNTR)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (VNTR)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2868
+Label: Nucleic acid features report (microsatellite)
+-   'Nucleic acid features report (microsatellite)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (microsatellite)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0425
+Label: Whole gene prediction
+-   'Whole gene prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Whole gene prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0424
+Label: Epitope mapping (MHC Class II)
+-   'Epitope mapping (MHC Class II)' SubClassOf 'Obsolete concept (EDAM)'
++   'Epitope mapping (MHC Class II)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0426
+Label: Gene component prediction
+-   'Gene component prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene component prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1099
+Label: UniProt accession (extended)
+-   'UniProt accession (extended)' SubClassOf 'Obsolete concept (EDAM)'
++   'UniProt accession (extended)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0423
+Label: Epitope mapping (MHC Class I)
+-   'Epitope mapping (MHC Class I)' SubClassOf 'Obsolete concept (EDAM)'
++   'Epitope mapping (MHC Class I)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3346
+Label: Sequence search
+-   'Sequence search' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence search' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1094
+Label: Sequence type
+-   'Sequence type' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2857
+Label: Article metadata
+-   'Article metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Article metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0419
+Label: Protein binding site prediction (from sequence)
+-   'Protein binding site prediction (from sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein binding site prediction (from sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1853
+Label: Chromosome annotation (aberration)
+-   'Chromosome annotation (aberration)' SubClassOf 'Obsolete concept (EDAM)'
++   'Chromosome annotation (aberration)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1065
+Label: Sequence signature identifier
+-   'Sequence signature identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence signature identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1067
+Label: Phylogenetic distance matrix identifier
+-   'Phylogenetic distance matrix identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Phylogenetic distance matrix identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1852
+Label: Sequence assembly component
+-   'Sequence assembly component' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence assembly component' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1062
+Label: Database entry identifier
+-   'Database entry identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Database entry identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2832
+Label: Web portal
+-   'Web portal' SubClassOf 'Obsolete concept (EDAM)'
++   'Web portal' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2838
+Label: Experimental data (proteomics)
+-   'Experimental data (proteomics)' SubClassOf 'Obsolete concept (EDAM)'
++   'Experimental data (proteomics)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2831
+Label: Databank
+-   'Databank' SubClassOf 'Obsolete concept (EDAM)'
++   'Databank' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3323
+Label: Metabolic disease
+-   'Metabolic disease' SubClassOf 'Obsolete concept (EDAM)'
++   'Metabolic disease' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3321
+Label: Molecular genetics
++   'Molecular genetics' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/topic_3320
+Label: RNA splicing
+-   'RNA splicing' SubClassOf 'Molecular genetics'
++   'RNA splicing' SubClassOf 'Gene expression'
+ 
+Class: http://edamontology.org/data_1879
+Label: Acronym
+-   'Acronym' SubClassOf 'Obsolete concept (EDAM)'
++   'Acronym' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1878
+Label: Misspelling
+-   'Misspelling' SubClassOf 'Obsolete concept (EDAM)'
++   'Misspelling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1877
+Label: Synonym
+-   'Synonym' SubClassOf 'Obsolete concept (EDAM)'
++   'Synonym' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1866
+Label: Map type
+-   'Map type' SubClassOf 'Obsolete concept (EDAM)'
++   'Map type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1865
+Label: Map feature
+-   'Map feature' SubClassOf 'Obsolete concept (EDAM)'
++   'Map feature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1057
+Label: Sequence database name
+-   'Sequence database name' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1806
+Label: Gene synonym
+-   'Gene synonym' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene synonym' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1024
+Label: Codon name
+-   'Codon name' SubClassOf 'Obsolete concept (EDAM)'
++   'Codon name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1028
+Label: Gene identifier (NCBI RefSeq)
+-   'Gene identifier (NCBI RefSeq)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene identifier (NCBI RefSeq)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1029
+Label: Gene identifier (NCBI UniGene)
+-   'Gene identifier (NCBI UniGene)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene identifier (NCBI UniGene)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1030
+Label: Gene identifier (Entrez)
+-   'Gene identifier (Entrez)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene identifier (Entrez)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1800
+Label: Gene ID (GeneDB Schizosaccharomyces pombe)
+-   'Gene ID (GeneDB Schizosaccharomyces pombe)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (GeneDB Schizosaccharomyces pombe)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1801
+Label: Gene ID (GeneDB Trypanosoma brucei)
+-   'Gene ID (GeneDB Trypanosoma brucei)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (GeneDB Trypanosoma brucei)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3026
+Label: GO concept name (biological process)
+-   'GO concept name (biological process)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO concept name (biological process)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3027
+Label: GO concept name (molecular function)
+-   'GO concept name (molecular function)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO concept name (molecular function)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1014
+Label: Sequence position specification
+-   'Sequence position specification' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence position specification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3031
+Label: Core data
+-   'Core data' SubClassOf 'Obsolete concept (EDAM)'
++   'Core data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1018
+Label: Nucleic acid feature identifier
+-   'Nucleic acid feature identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid feature identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1019
+Label: Protein feature identifier
+-   'Protein feature identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein feature identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0486
+Label: Functional mapping
+-   'Functional mapping' SubClassOf 'Obsolete concept (EDAM)'
++   'Functional mapping' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0494
+Label: Pairwise sequence alignment generation (global)
+-   'Pairwise sequence alignment generation (global)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise sequence alignment generation (global)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0493
+Label: Pairwise sequence alignment generation (local)
+-   'Pairwise sequence alignment generation (local)' SubClassOf 'Obsolete concept (EDAM)'
++   'Pairwise sequence alignment generation (local)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0594
+Label: Sequence classification
+-   'Sequence classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0595
+Label: Protein classification
+-   'Protein classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0598
+Label: Sequence motif or profile
+-   'Sequence motif or profile' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence motif or profile' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0452
+Label: Indel detection
++   'Indel detection' SubClassOf 'Mutation detection'
+ 
+Class: http://edamontology.org/operation_0453
+Label: Nucleosome formation potential prediction
+-   'Nucleosome formation potential prediction' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleosome formation potential prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1913
+Label: Residue validation
+-   'Residue validation' SubClassOf 'Obsolete concept (EDAM)'
++   'Residue validation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_1914
+Label: Structure retrieval (water)
+-   'Structure retrieval (water)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure retrieval (water)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1729
+Label: GO (cellular component)
+-   'GO (cellular component)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO (cellular component)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1730
+Label: Ontology relation type
+-   'Ontology relation type' SubClassOf 'Obsolete concept (EDAM)'
++   'Ontology relation type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1733
+Label: Ontology concept reference
+-   'Ontology concept reference' SubClassOf 'Obsolete concept (EDAM)'
++   'Ontology concept reference' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1732
+Label: Ontology concept comment
+-   'Ontology concept comment' SubClassOf 'Obsolete concept (EDAM)'
++   'Ontology concept comment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1738
+Label: doc2loc document information
+-   'doc2loc document information' SubClassOf 'Obsolete concept (EDAM)'
++   'doc2loc document information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1718
+Label: HGNC
+-   'HGNC' SubClassOf 'Obsolete concept (EDAM)'
++   'HGNC' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1719
+Label: NCBI taxonomy vocabulary
+-   'NCBI taxonomy vocabulary' SubClassOf 'Obsolete concept (EDAM)'
++   'NCBI taxonomy vocabulary' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1720
+Label: Plant ontology term
+-   'Plant ontology term' SubClassOf 'Obsolete concept (EDAM)'
++   'Plant ontology term' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1724
+Label: ChEBI
+-   'ChEBI' SubClassOf 'Obsolete concept (EDAM)'
++   'ChEBI' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1723
+Label: EMAP
+-   'EMAP' SubClassOf 'Obsolete concept (EDAM)'
++   'EMAP' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1722
+Label: FMA
+-   'FMA' SubClassOf 'Obsolete concept (EDAM)'
++   'FMA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1721
+Label: UMLS
+-   'UMLS' SubClassOf 'Obsolete concept (EDAM)'
++   'UMLS' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1728
+Label: GO (molecular function)
+-   'GO (molecular function)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO (molecular function)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1727
+Label: GO (biological process)
+-   'GO (biological process)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO (biological process)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1726
+Label: myGrid
+-   'myGrid' SubClassOf 'Obsolete concept (EDAM)'
++   'myGrid' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1725
+Label: MGED
+-   'MGED' SubClassOf 'Obsolete concept (EDAM)'
++   'MGED' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1798
+Label: Gene ID (GeneDB Leishmania major)
+-   'Gene ID (GeneDB Leishmania major)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (GeneDB Leishmania major)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1799
+Label: Gene ID (GeneDB Plasmodium falciparum)
+-   'Gene ID (GeneDB Plasmodium falciparum)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (GeneDB Plasmodium falciparum)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1797
+Label: Gene ID (GeneDB Glossina morsitans)
+-   'Gene ID (GeneDB Glossina morsitans)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene ID (GeneDB Glossina morsitans)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1790
+Label: Gene name (CGSC)
+-   'Gene name (CGSC)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (CGSC)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1791
+Label: Gene name (HGNC)
+-   'Gene name (HGNC)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (HGNC)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1792
+Label: Gene name (MGD)
+-   'Gene name (MGD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (MGD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1793
+Label: Gene name (Bacillus subtilis)
+-   'Gene name (Bacillus subtilis)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (Bacillus subtilis)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2867
+Label: VNTR
+-   'VNTR' SubClassOf 'DNA polymorphism'
++   'VNTR' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2868
+Label: Microsatellites
+-   'Microsatellites' SubClassOf 'DNA polymorphism'
++   'Microsatellites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2869
+Label: RFLP
+-   'RFLP' SubClassOf 'DNA polymorphism'
++   'RFLP' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1789
+Label: Gene name (TGD)
+-   'Gene name (TGD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (TGD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1787
+Label: Gene name (MaizeGDB)
+-   'Gene name (MaizeGDB)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (MaizeGDB)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1788
+Label: Gene name (SGD)
+-   'Gene name (SGD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (SGD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1785
+Label: Gene name (dictyBase)
+-   'Gene name (dictyBase)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (dictyBase)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1786
+Label: Gene name (EcoGene primary)
+-   'Gene name (EcoGene primary)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (EcoGene primary)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1783
+Label: Gene name (ASPGD)
+-   'Gene name (ASPGD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (ASPGD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1784
+Label: Gene name (CGD)
+-   'Gene name (CGD)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene name (CGD)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2524
+Label: Protein data
+-   'Protein data' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2525
+Label: Nucleic acid data
+-   'Nucleic acid data' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2528
+Label: Molecular data
+-   'Molecular data' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2529
+Label: Molecule report
+-   'Molecule report' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecule report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2522
+Label: Map data
+-   'Map data' SubClassOf 'Obsolete concept (EDAM)'
++   'Map data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1776
+Label: Protein report (function)
+-   'Protein report (function)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein report (function)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1767
+Label: CATH domain sequences (COMBS)
+-   'CATH domain sequences (COMBS)' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH domain sequences (COMBS)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1765
+Label: CATH representative domain sequences (COMBS)
+-   'CATH representative domain sequences (COMBS)' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH representative domain sequences (COMBS)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2842
+Label: High-throughput sequencing
+-   'High-throughput sequencing' SubClassOf 'Obsolete concept (EDAM)'
++   'High-throughput sequencing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1766
+Label: CATH domain sequences (ATOM)
+-   'CATH domain sequences (ATOM)' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH domain sequences (ATOM)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2844
+Label: Structural clustering
+-   'Structural clustering' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural clustering' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2846
+Label: Gene regulatory networks
+-   'Gene regulatory networks' SubClassOf 'Molecular interactions, pathways and networks'
+-   'Gene regulatory networks' SubClassOf 'Gene regulation'
++   'Gene regulatory networks' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2847
+Label: Disease (specific)
+-   'Disease (specific)' SubClassOf 'Obsolete concept (EDAM)'
++   'Disease (specific)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1764
+Label: CATH representative domain sequences (ATOM)
+-   'CATH representative domain sequences (ATOM)' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH representative domain sequences (ATOM)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1762
+Label: CATH domain report
+-   'CATH domain report' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH domain report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2839
+Label: Molecules
+-   'Molecules' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecules' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2829
+Label: Ontologies, nomenclature and classification
+-   'Ontologies, nomenclature and classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Ontologies, nomenclature and classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2826
+Label: Protein structure alignment
+-   'Protein structure alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein structure alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2816
+Label: Gene resources
+-   'Gene resources' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene resources' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2817
+Label: Yeast
+-   'Yeast' SubClassOf 'Obsolete concept (EDAM)'
++   'Yeast' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3038
+Label: Structure databases
+-   'Structure databases' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure databases' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3039
+Label: Nucleic acid structure
+-   'Nucleic acid structure' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2811
+Label: Nomenclature
+-   'Nomenclature' SubClassOf 'Obsolete concept (EDAM)'
++   'Nomenclature' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2814
+Label: Protein structure analysis
++   'Protein structure analysis' SubClassOf 'Proteins'
+ 
+Class: http://edamontology.org/topic_2813
+Label: Disease genes and proteins
+-   'Disease genes and proteins' SubClassOf 'Obsolete concept (EDAM)'
++   'Disease genes and proteins' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3032
+Label: Primer or probe design
+-   'Primer or probe design' SubClassOf 'Obsolete concept (EDAM)'
++   'Primer or probe design' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2807
+Label: Tool topic
+-   'Tool topic' SubClassOf 'Obsolete concept (EDAM)'
++   'Tool topic' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2809
+Label: Study topic
+-   'Study topic' SubClassOf 'Obsolete concept (EDAM)'
++   'Study topic' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3042
+Label: Nucleic acid sequences
+-   'Nucleic acid sequences' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequences' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3041
+Label: Sequence databases
+-   'Sequence databases' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence databases' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3044
+Label: Protein interaction networks
+-   'Protein interaction networks' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein interaction networks' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3043
+Label: Protein sequences
+-   'Protein sequences' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequences' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3048
+Label: Mammals
+-   'Mammals' SubClassOf 'Obsolete concept (EDAM)'
++   'Mammals' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1716
+Label: GO
+-   'GO' SubClassOf 'Obsolete concept (EDAM)'
++   'GO' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1717
+Label: MeSH
+-   'MeSH' SubClassOf 'Obsolete concept (EDAM)'
++   'MeSH' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1715
+Label: BioPax term
+-   'BioPax term' SubClassOf 'Obsolete concept (EDAM)'
++   'BioPax term' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3052
+Label: Sequence clusters and classification
+-   'Sequence clusters and classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence clusters and classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3060
+Label: Regulatory RNA
+-   'Regulatory RNA' SubClassOf 'Obsolete concept (EDAM)'
++   'Regulatory RNA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3061
+Label: Documentation and help
+-   'Documentation and help' SubClassOf 'Literature and reference'
++   'Documentation and help' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3062
+Label: Genetic organisation
+-   'Genetic organisation' SubClassOf 'Obsolete concept (EDAM)'
++   'Genetic organisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3072
+Label: Sequence feature detection
+-   'Sequence feature detection' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence feature detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3073
+Label: Nucleic acid feature detection
+-   'Nucleic acid feature detection' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid feature detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3074
+Label: Protein feature detection
+-   'Protein feature detection' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein feature detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3075
+Label: Biological system modelling
+-   'Biological system modelling' SubClassOf 'Obsolete concept (EDAM)'
++   'Biological system modelling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3078
+Label: Genes and proteins resources
+-   'Genes and proteins resources' SubClassOf 'Obsolete concept (EDAM)'
++   'Genes and proteins resources' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_1770
+Label: Structure comparison
+-   'Structure comparison' SubClassOf 'Structure analysis'
++   'Structure comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0644
+Label: Proteome
+-   'Proteome' SubClassOf 'Obsolete concept (EDAM)'
++   'Proteome' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0642
+Label: Low complexity sequences
+-   'Low complexity sequences' SubClassOf 'Obsolete concept (EDAM)'
++   'Low complexity sequences' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0641
+Label: Repeat sequences
+-   'Repeat sequences' SubClassOf 'Obsolete concept (EDAM)'
++   'Repeat sequences' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0640
+Label: Nucleic acid sequence analysis
+-   'Nucleic acid sequence analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0655
+Label: Coding RNA
+-   'Coding RNA' SubClassOf 'Gene transcript features'
++   'Coding RNA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0629
+Label: Gene expression and microarray
+-   'Gene expression and microarray' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene expression and microarray' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0620
+Label: Drugs and target structures
+-   'Drugs and target structures' SubClassOf 'Drug discovery'
+-   'Drugs and target structures' SubClassOf 'Small molecules'
++   'Drugs and target structures' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0624
+Label: Chromosomes
+-   'Chromosomes' SubClassOf 'DNA'
++   'Chromosomes' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0623
+Label: Gene families
+-   'Gene families' SubClassOf 'Genetics'
++   'Gene families' SubClassOf 'Molecular genetics'
+ 
+Class: http://edamontology.org/topic_0639
+Label: Protein sequence analysis
+-   'Protein sequence analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0635
+Label: Specific protein resources
+-   'Specific protein resources' SubClassOf 'Obsolete concept (EDAM)'
++   'Specific protein resources' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0602
+Label: Molecular interactions, pathways and networks
+-   'Molecular interactions, pathways and networks' SubClassOf 'Biology'
++   'Molecular interactions, pathways and networks' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/topic_0608
+Label: Cell and tissue culture
+-   'Cell and tissue culture' SubClassOf 'Obsolete concept (EDAM)'
++   'Cell and tissue culture' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0606
+Label: Literature data resources
+-   'Literature data resources' SubClassOf 'Obsolete concept (EDAM)'
++   'Literature data resources' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0612
+Label: Cell cycle
+-   'Cell cycle' SubClassOf 'Obsolete concept (EDAM)'
++   'Cell cycle' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0613
+Label: Peptides and amino acids
+-   'Peptides and amino acids' SubClassOf 'Small molecules'
++   'Peptides and amino acids' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0616
+Label: Organelles
+-   'Organelles' SubClassOf 'Obsolete concept (EDAM)'
++   'Organelles' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0617
+Label: Ribosomes
+-   'Ribosomes' SubClassOf 'Obsolete concept (EDAM)'
++   'Ribosomes' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0618
+Label: Scents
+-   'Scents' SubClassOf 'Obsolete concept (EDAM)'
++   'Scents' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2533
+Label: Nucleic acid features report (mutation)
+-   'Nucleic acid features report (mutation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid features report (mutation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2539
+Label: Alignment data
+-   'Alignment data' SubClassOf 'Obsolete concept (EDAM)'
++   'Alignment data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2540
+Label: Data index data
+-   'Data index data' SubClassOf 'Obsolete concept (EDAM)'
++   'Data index data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2579
+Label: Expressed gene list
+-   'Expressed gene list' SubClassOf 'Obsolete concept (EDAM)'
++   'Expressed gene list' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2581
+Label: GO concept name
+-   'GO concept name' SubClassOf 'Obsolete concept (EDAM)'
++   'GO concept name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0697
+Label: RNA structure
+-   'RNA structure' SubClassOf 'Obsolete concept (EDAM)'
++   'RNA structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0698
+Label: Protein tertiary structure
+-   'Protein tertiary structure' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein tertiary structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2584
+Label: GO concept name (cellular component)
+-   'GO concept name (cellular component)' SubClassOf 'Obsolete concept (EDAM)'
++   'GO concept name (cellular component)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0694
+Label: Protein secondary structure
+-   'Protein secondary structure' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein secondary structure' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2590
+Label: Hierarchy identifier
+-   'Hierarchy identifier' SubClassOf 'Obsolete concept (EDAM)'
++   'Hierarchy identifier' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0663
+Label: tRNA
+-   'tRNA' SubClassOf 'Obsolete concept (EDAM)'
++   'tRNA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2592
+Label: Cancer type
+-   'Cancer type' SubClassOf 'Obsolete concept (EDAM)'
++   'Cancer type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2598
+Label: Secondary structure alignment metadata
+-   'Secondary structure alignment metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Secondary structure alignment metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2599
+Label: Molecule interaction report
+-   'Molecule interaction report' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecule interaction report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0660
+Label: rRNA
+-   'rRNA' SubClassOf 'Obsolete concept (EDAM)'
++   'rRNA' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2602
+Label: Genotype and phenotype data
+-   'Genotype and phenotype data' SubClassOf 'Obsolete concept (EDAM)'
++   'Genotype and phenotype data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2601
+Label: Small molecule data
+-   'Small molecule data' SubClassOf 'Obsolete concept (EDAM)'
++   'Small molecule data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1601
+Label: Nc statistic
+-   'Nc statistic' SubClassOf 'Obsolete concept (EDAM)'
++   'Nc statistic' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1634
+Label: Linkage disequilibrium (report)
+-   'Linkage disequilibrium (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Linkage disequilibrium (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1656
+Label: Metabolic pathway report
+-   'Metabolic pathway report' SubClassOf 'Obsolete concept (EDAM)'
++   'Metabolic pathway report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1657
+Label: Genetic information processing pathway report
+-   'Genetic information processing pathway report' SubClassOf 'Obsolete concept (EDAM)'
++   'Genetic information processing pathway report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3118
+Label: Protein topological domains
+-   'Protein topological domains' SubClassOf 'Protein domains and folds'
+-   'Protein topological domains' SubClassOf 'Protein domains'
++   'Protein topological domains' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1658
+Label: Environmental information processing pathway report
+-   'Environmental information processing pathway report' SubClassOf 'Obsolete concept (EDAM)'
++   'Environmental information processing pathway report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1659
+Label: Signal transduction pathway report
+-   'Signal transduction pathway report' SubClassOf 'Obsolete concept (EDAM)'
++   'Signal transduction pathway report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3120
+Label: Protein variants
+-   'Protein variants' SubClassOf 'Protein structure analysis'
++   'Protein variants' SubClassOf 'Protein expression'
+ 
+Class: http://edamontology.org/topic_3123
+Label: Expression signals
+-   'Expression signals' SubClassOf 'Obsolete concept (EDAM)'
++   'Expression signals' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1642
+Label: Affymetrix probe sets library file
+-   'Affymetrix probe sets library file' SubClassOf 'Obsolete concept (EDAM)'
++   'Affymetrix probe sets library file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1643
+Label: Affymetrix probe sets information library file
+-   'Affymetrix probe sets information library file' SubClassOf 'Obsolete concept (EDAM)'
++   'Affymetrix probe sets information library file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1646
+Label: Molecular weights standard fingerprint
+-   'Molecular weights standard fingerprint' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular weights standard fingerprint' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3127
+Label: DNA replication and recombination
+-   'DNA replication and recombination' SubClassOf 'DNA binding sites'
++   'DNA replication and recombination' SubClassOf 'DNA'
+ 
+Class: http://edamontology.org/topic_3126
+Label: Nucleic acid repeats
+-   'Nucleic acid repeats' SubClassOf 'Nucleic acid sites, features and motifs'
++   'Nucleic acid repeats' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2627
+Label: Molecular interaction ID
+-   'Molecular interaction ID' SubClassOf 'Obsolete concept (EDAM)'
++   'Molecular interaction ID' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1673
+Label: Swiss-Prot to PDB mapping
+-   'Swiss-Prot to PDB mapping' SubClassOf 'Obsolete concept (EDAM)'
++   'Swiss-Prot to PDB mapping' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1674
+Label: Sequence database cross-references
+-   'Sequence database cross-references' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence database cross-references' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1675
+Label: Job status
+-   'Job status' SubClassOf 'Obsolete concept (EDAM)'
++   'Job status' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1676
+Label: Job ID
+-   'Job ID' SubClassOf 'Obsolete concept (EDAM)'
++   'Job ID' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1670
+Label: Database version information
+-   'Database version information' SubClassOf 'Obsolete concept (EDAM)'
++   'Database version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1671
+Label: Tool version information
+-   'Tool version information' SubClassOf 'Obsolete concept (EDAM)'
++   'Tool version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1672
+Label: CATH version information
+-   'CATH version information' SubClassOf 'Obsolete concept (EDAM)'
++   'CATH version information' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1677
+Label: Job type
+-   'Job type' SubClassOf 'Obsolete concept (EDAM)'
++   'Job type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1678
+Label: Tool log
+-   'Tool log' SubClassOf 'Obsolete concept (EDAM)'
++   'Tool log' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1679
+Label: DaliLite log file
+-   'DaliLite log file' SubClassOf 'Obsolete concept (EDAM)'
++   'DaliLite log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1664
+Label: MIRIAM datatype
+-   'MIRIAM datatype' SubClassOf 'Obsolete concept (EDAM)'
++   'MIRIAM datatype' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1663
+Label: Protein interaction networks
+-   'Protein interaction networks' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein interaction networks' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1660
+Label: Cellular process pathways report
+-   'Cellular process pathways report' SubClassOf 'Obsolete concept (EDAM)'
++   'Cellular process pathways report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1661
+Label: Disease pathway or network report
+-   'Disease pathway or network report' SubClassOf 'Obsolete concept (EDAM)'
++   'Disease pathway or network report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3139
+Label: Sequence tagged sites
+-   'Sequence tagged sites' SubClassOf 'Nucleic acid sites, features and motifs'
++   'Sequence tagged sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2953
+Label: Nucleic acid design
+-   'Nucleic acid design' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid design' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0581
+Label: Database
+-   'Database' SubClassOf 'Obsolete concept (EDAM)'
++   'Database' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0583
+Label: Directory metadata
+-   'Directory metadata' SubClassOf 'Obsolete concept (EDAM)'
++   'Directory metadata' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3135
+Label: Signal or transit peptide
+-   'Signal or transit peptide' SubClassOf 'Gene transcript features'
++   'Signal or transit peptide' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3231
+Label: GWAS report
+-   'GWAS report' SubClassOf 'Obsolete concept (EDAM)'
++   'GWAS report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3268
+Label: Sequence feature type
+-   'Sequence feature type' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence feature type' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3179
+Label: ChIP-on-chip
+-   'ChIP-on-chip' SubClassOf 'Obsolete concept (EDAM)'
+ 
+Class: http://edamontology.org/data_3269
+Label: Gene homology (report)
+-   'Gene homology (report)' SubClassOf 'Obsolete concept (EDAM)'
++   'Gene homology (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3177
+Label: DNA-Seq
+-   'DNA-Seq' SubClassOf 'Obsolete concept (EDAM)'
++   'DNA-Seq' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3178
+Label: RNA-Seq alignment
+-   'RNA-Seq alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'RNA-Seq alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3175
+Label: DNA structural variation
+-   'DNA structural variation' SubClassOf 'Chromosomes'
++   'DNA structural variation' SubClassOf 'DNA'
+ 
+Class: http://edamontology.org/topic_3171
+Label: DNA methylation
+-   'DNA methylation' SubClassOf 'Obsolete concept (EDAM)'
++   'DNA methylation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0741
+Label: Protein sequence alignment
+-   'Protein sequence alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0740
+Label: Nucleic acid sequence alignment
+-   'Nucleic acid sequence alignment' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0280
+Label: Data retrieval (restriction enzyme annotation)
+-   'Data retrieval (restriction enzyme annotation)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (restriction enzyme annotation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0281
+Label: Genetic marker identification
+-   'Genetic marker identification' SubClassOf 'Obsolete concept (EDAM)'
++   'Genetic marker identification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0749
+Label: Transcription factors and regulatory sites
+-   'Transcription factors and regulatory sites' SubClassOf 'Gene transcription features'
++   'Transcription factors and regulatory sites' SubClassOf 'Gene expression'
+ 
+Class: http://edamontology.org/topic_0748
+Label: Protein sites and features
+-   'Protein sites and features' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sites and features' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0747
+Label: Nucleic acid sites and features
+-   'Nucleic acid sites and features' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sites and features' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2034
+Label: Biological model format
+-   'Biological model format' SubClassOf 'Obsolete concept (EDAM)'
++   'Biological model format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0751
+Label: Phosphorylation sites
+-   'Phosphorylation sites' SubClassOf 'Obsolete concept (EDAM)'
++   'Phosphorylation sites' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0753
+Label: Metabolic pathways
+-   'Metabolic pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Metabolic pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0293
+Label: Hybrid sequence alignment construction
+-   'Hybrid sequence alignment construction' SubClassOf 'Obsolete concept (EDAM)'
++   'Hybrid sequence alignment construction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0754
+Label: Signaling pathways
+-   'Signaling pathways' SubClassOf 'Molecular interactions, pathways and networks'
++   'Signaling pathways' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2045
+Label: Electron microscopy model format
+-   'Electron microscopy model format' SubClassOf 'Obsolete concept (EDAM)'
++   'Electron microscopy model format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0767
+Label: Protein and peptide identification
+-   'Protein and peptide identification' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein and peptide identification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2051
+Label: Polymorphism report format
+-   'Polymorphism report format' SubClassOf 'Obsolete concept (EDAM)'
++   'Polymorphism report format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2059
+Label: Genotype and phenotype annotation format
+-   'Genotype and phenotype annotation format' SubClassOf 'Obsolete concept (EDAM)'
++   'Genotype and phenotype annotation format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0770
+Label: Data types and objects
+-   'Data types and objects' SubClassOf 'Obsolete concept (EDAM)'
++   'Data types and objects' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0771
+Label: Theoretical biology
+-   'Theoretical biology' SubClassOf 'Obsolete concept (EDAM)'
++   'Theoretical biology' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0779
+Label: Mitochondria
+-   'Mitochondria' SubClassOf 'Obsolete concept (EDAM)'
++   'Mitochondria' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2063
+Label: Protein report (enzyme) format
+-   'Protein report (enzyme) format' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein report (enzyme) format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0722
+Label: Nucleic acid classification
+-   'Nucleic acid classification' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1688
+Label: EMBOSS vectorstrip log file
+-   'EMBOSS vectorstrip log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS vectorstrip log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1685
+Label: EMBOSS supermatcher error file
+-   'EMBOSS supermatcher error file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS supermatcher error file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2512
+Label: Sequence editing (protein)
+-   'Sequence editing (protein)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence editing (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1684
+Label: EMBOSS sites log file
+-   'EMBOSS sites log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS sites log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1687
+Label: EMBOSS whichdb log file
+-   'EMBOSS whichdb log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS whichdb log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1686
+Label: EMBOSS megamerger log file
+-   'EMBOSS megamerger log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS megamerger log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2511
+Label: Sequence editing (nucleic acid)
+-   'Sequence editing (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence editing (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1681
+Label: NACCESS log file
+-   'NACCESS log file' SubClassOf 'Obsolete concept (EDAM)'
++   'NACCESS log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2516
+Label: Protein sequence visualisation
+-   'Protein sequence visualisation' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein sequence visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1680
+Label: STRIDE log file
+-   'STRIDE log file' SubClassOf 'Obsolete concept (EDAM)'
++   'STRIDE log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1683
+Label: EMBOSS domainatrix log file
+-   'EMBOSS domainatrix log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS domainatrix log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1682
+Label: EMBOSS wordfinder log file
+-   'EMBOSS wordfinder log file' SubClassOf 'Obsolete concept (EDAM)'
++   'EMBOSS wordfinder log file' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2515
+Label: Nucleic acid sequence visualisation
+-   'Nucleic acid sequence visualisation' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid sequence visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2679
+Label: Ensembl ID ('Echinops telfairi')
+-   'Ensembl ID ('Echinops telfairi')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Echinops telfairi')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2678
+Label: Ensembl ID ('Dasypus novemcinctus')
+-   'Ensembl ID ('Dasypus novemcinctus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Dasypus novemcinctus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2675
+Label: Ensembl ID ('Ciona intestinalis')
+-   'Ensembl ID ('Ciona intestinalis')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Ciona intestinalis')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2674
+Label: Ensembl ID ('Cavia porcellus')
+-   'Ensembl ID ('Cavia porcellus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Cavia porcellus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2677
+Label: Ensembl ID ('Danio rerio')
+-   'Ensembl ID ('Danio rerio')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Danio rerio')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2676
+Label: Ensembl ID ('Ciona savignyi')
+-   'Ensembl ID ('Ciona savignyi')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Ciona savignyi')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2671
+Label: Ensembl ID (Homo sapiens)
+-   'Ensembl ID (Homo sapiens)' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID (Homo sapiens)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2673
+Label: Ensembl ID ('Canis familiaris')
+-   'Ensembl ID ('Canis familiaris')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Canis familiaris')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2672
+Label: Ensembl ID ('Bos taurus')
+-   'Ensembl ID ('Bos taurus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Bos taurus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2680
+Label: Ensembl ID ('Erinaceus europaeus')
+-   'Ensembl ID ('Erinaceus europaeus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Erinaceus europaeus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2500
+Label: Microarray raw data analysis
+-   'Microarray raw data analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Microarray raw data analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1695
+Label: Hit sort order
+-   'Hit sort order' SubClassOf 'Obsolete concept (EDAM)'
++   'Hit sort order' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1694
+Label: Number of output entities
+-   'Number of output entities' SubClassOf 'Obsolete concept (EDAM)'
++   'Number of output entities' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2503
+Label: Sequence data processing
+-   'Sequence data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1693
+Label: Number of iterations
+-   'Number of iterations' SubClassOf 'Obsolete concept (EDAM)'
++   'Number of iterations' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2504
+Label: Structural data processing
+-   'Structural data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Structural data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2505
+Label: Text processing
+-   'Text processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Text processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2689
+Label: Ensembl ID ('Myotis lucifugus')
+-   'Ensembl ID ('Myotis lucifugus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Myotis lucifugus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2688
+Label: Ensembl ID ('Mus musculus')
+-   'Ensembl ID ('Mus musculus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Mus musculus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2687
+Label: Ensembl ID ('Monodelphis domestica')
+-   'Ensembl ID ('Monodelphis domestica')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Monodelphis domestica')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2686
+Label: Ensembl ID ('Macaca mulatta')
+-   'Ensembl ID ('Macaca mulatta')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Macaca mulatta')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2685
+Label: Ensembl ID ('Loxodonta africana')
+-   'Ensembl ID ('Loxodonta africana')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Loxodonta africana')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2684
+Label: Ensembl ID ('Homo sapiens')
+-   'Ensembl ID ('Homo sapiens')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Homo sapiens')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2683
+Label: Ensembl ID ('Gasterosteus aculeatus')
+-   'Ensembl ID ('Gasterosteus aculeatus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Gasterosteus aculeatus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2682
+Label: Ensembl ID ('Gallus gallus')
+-   'Ensembl ID ('Gallus gallus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Gallus gallus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2681
+Label: Ensembl ID ('Felis catus')
+-   'Ensembl ID ('Felis catus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Felis catus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0225
+Label: Data retrieval (database cross-reference)
+-   'Data retrieval (database cross-reference)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (database cross-reference)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0228
+Label: Data index analysis
+-   'Data index analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Data index analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0229
+Label: Annotation retrieval (sequence)
+-   'Annotation retrieval (sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Annotation retrieval (sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2521
+Label: Map data processing
+-   'Map data processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Map data processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0238
+Label: Sequence motif discovery
++   'Sequence motif discovery' SubClassOf 'Sequence motif processing'
+ 
+Class: http://edamontology.org/operation_0239
+Label: Sequence motif recognition
++   'Sequence motif recognition' SubClassOf 'Sequence motif processing'
+ 
+Class: http://edamontology.org/operation_2519
+Label: Structure processing (nucleic acid)
+-   'Structure processing (nucleic acid)' SubClassOf 'Obsolete concept (EDAM)'
++   'Structure processing (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0241
+Label: Transcription regulatory sequence analysis
+-   'Transcription regulatory sequence analysis' SubClassOf 'Obsolete concept (EDAM)'
++   'Transcription regulatory sequence analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0240
+Label: Sequence motif comparison
++   'Sequence motif comparison' SubClassOf 'Sequence motif processing'
+ 
+Class: http://edamontology.org/topic_0786
+Label: Arabidopsis
+-   'Arabidopsis' SubClassOf 'Obsolete concept (EDAM)'
++   'Arabidopsis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0787
+Label: Rice
+-   'Rice' SubClassOf 'Obsolete concept (EDAM)'
++   'Rice' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0255
+Label: Feature table query
+-   'Feature table query' SubClassOf 'Obsolete concept (EDAM)'
++   'Feature table query' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0257
+Label: Data retrieval (sequence alignment)
+-   'Data retrieval (sequence alignment)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (sequence alignment)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0796
+Label: Genetic mapping and linkage
+-   'Genetic mapping and linkage' SubClassOf 'Obsolete concept (EDAM)'
++   'Genetic mapping and linkage' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0254
+Label: Data retrieval (feature table)
+-   'Data retrieval (feature table)' SubClassOf 'Obsolete concept (EDAM)'
++   'Data retrieval (feature table)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0798
+Label: Mobile genetic elements
+-   'Mobile genetic elements' SubClassOf 'Nucleic acid sites, features and motifs'
+-   'Mobile genetic elements' SubClassOf 'Genetics'
++   'Mobile genetic elements' SubClassOf 'Gene structure'
+ 
+Class: http://edamontology.org/operation_0261
+Label: Nucleic acid property processing
+-   'Nucleic acid property processing' SubClassOf 'Obsolete concept (EDAM)'
++   'Nucleic acid property processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2691
+Label: Ensembl ID ('Oryctolagus cuniculus')
+-   'Ensembl ID ('Oryctolagus cuniculus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Oryctolagus cuniculus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2690
+Label: Ensembl ID ("Ornithorhynchus anatinus")
+-   'Ensembl ID ("Ornithorhynchus anatinus")' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ("Ornithorhynchus anatinus")' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2692
+Label: Ensembl ID ('Oryzias latipes')
+-   'Ensembl ID ('Oryzias latipes')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Oryzias latipes')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2693
+Label: Ensembl ID ('Otolemur garnettii')
+-   'Ensembl ID ('Otolemur garnettii')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Otolemur garnettii')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2694
+Label: Ensembl ID ('Pan troglodytes')
+-   'Ensembl ID ('Pan troglodytes')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Pan troglodytes')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2695
+Label: Ensembl ID ('Rattus norvegicus')
+-   'Ensembl ID ('Rattus norvegicus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Rattus norvegicus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2696
+Label: Ensembl ID ('Spermophilus tridecemlineatus')
+-   'Ensembl ID ('Spermophilus tridecemlineatus')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Spermophilus tridecemlineatus')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2697
+Label: Ensembl ID ('Takifugu rubripes')
+-   'Ensembl ID ('Takifugu rubripes')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Takifugu rubripes')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2698
+Label: Ensembl ID ('Tupaia belangeri')
+-   'Ensembl ID ('Tupaia belangeri')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Tupaia belangeri')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2699
+Label: Ensembl ID ('Xenopus tropicalis')
+-   'Ensembl ID ('Xenopus tropicalis')' SubClassOf 'Obsolete concept (EDAM)'
++   'Ensembl ID ('Xenopus tropicalis')' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0274
+Label: Protein-protein interaction prediction (from protein sequence)
+-   'Protein-protein interaction prediction (from protein sequence)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-protein interaction prediction (from protein sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0275
+Label: Protein-protein interaction prediction (from protein structure)
+-   'Protein-protein interaction prediction (from protein structure)' SubClassOf 'Obsolete concept (EDAM)'
++   'Protein-protein interaction prediction (from protein structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_2015
+Label: Sequence-profile alignment (HMM) format
+-   'Sequence-profile alignment (HMM) format' SubClassOf 'Obsolete concept (EDAM)'
++   'Sequence-profile alignment (HMM) format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+
+## New classes:
+ 
+Class: http://edamontology.org/topic_3697
+Label: Microbial ecology
++   'Microbial ecology' SubClassOf 'Ecology'
++   'Microbial ecology' SubClassOf 'Microbiology'
+ 
+Class: http://edamontology.org/format_3688
+Label: SBtab
++   'SBtab' SubClassOf 'Textual format'
++   'SBtab' SubClassOf 'Biological pathway or network format'
+ 
+Class: http://edamontology.org/format_3687
+Label: ISA-TAB
++   'ISA-TAB' SubClassOf 'Experiment annotation format'
++   'ISA-TAB' SubClassOf 'Textual format'
++   'ISA-TAB' SubClassOf 'Gene expression report format'
+ 
+Class: http://edamontology.org/format_3689
+Label: BCML
++   'BCML' SubClassOf 'Biological pathway or network format'
++   'BCML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3684
+Label: PRIDE XML
++   'PRIDE XML' SubClassOf 'Experiment annotation format'
++   'PRIDE XML' SubClassOf 'Mass spectrometry data format'
++   'PRIDE XML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3683
+Label: qcML
++   'qcML' SubClassOf 'Mass spectrometry data format'
++   'qcML' SubClassOf 'Experiment annotation format'
++   'qcML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3686
+Label: COMBINE OMEX
++   'COMBINE OMEX' SubClassOf 'Biological pathway or network format'
++   'COMBINE OMEX' SubClassOf 'Binary format'
++   'COMBINE OMEX' SubClassOf 'Experiment annotation format'
+ 
+Class: http://edamontology.org/format_3685
+Label: SED-ML
++   'SED-ML' SubClassOf 'XML'
++   'SED-ML' SubClassOf 'Experiment annotation format'
+ 
+Class: http://edamontology.org/format_3682
+Label: imzML
++   'imzML' SubClassOf 'Mass spectrometry data format'
++   'imzML' SubClassOf 'Binary format'
++   'imzML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3681
+Label: mzTab
++   'mzTab' SubClassOf 'Mass spectrometry data format'
++   'mzTab' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3699
+Label: VDB
++   'VDB' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3698
+Label: SRA format
++   'SRA format' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3693
+Label: AGP
++   'AGP' SubClassOf 'Textual format'
++   'AGP' SubClassOf 'Sequence assembly format'
+ 
+Class: http://edamontology.org/format_3692
+Label: SBGN-ML
++   'SBGN-ML' SubClassOf 'XML'
++   'SBGN-ML' SubClassOf 'Biological pathway or network format'
+ 
+Class: http://edamontology.org/format_3691
+Label: BEL
++   'BEL' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3690
+Label: BDML
++   'BDML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3696
+Label: PS
++   'PS' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3700
+Label: Tabix index file format
++   'Tabix index file format' SubClassOf 'Data index format'
++   'Tabix index file format' SubClassOf 'is format of' some 'Data index'
+ 
+Class: http://edamontology.org/format_3701
+Label: sequin
++   'sequin' SubClassOf 'Sequence feature table format (text)'
+ 
+Class: http://edamontology.org/operation_3680
+Label: RNA-Seq analysis
++   'RNA-Seq analysis' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3694
+Label: Mass spectrum visualisation
++   'Mass spectrum visualisation' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_3695
+Label: Filtering
++   'Filtering' SubClassOf 'File handling'
 
 # EDAM\_1.12.owl
+
 Class: http://edamontology.org/data_0872
 Label: Phylogenetic tree
 -   'Phylogenetic tree' SubClassOf 'Data'
