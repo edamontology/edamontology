@@ -12,6 +12,15 @@ See the [detailed change log](https://github.com/edamontology/edamontology/blob/
 
 22 new concepts were added and 1075 were changed.
 
+## Added
+* multiple new formats and operations added, following requests from de.nbi and EBI hackathons
+
+## Modified
+* multiple references to obsolete concepts to point to their replacements (consider and replacedBy)
+* addition of the mapping to debtags, following the Debian-Med sprint
+* a few topics structure changes
+* a few miscelaneous corrections
+
 # EDAM\_1.12.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
