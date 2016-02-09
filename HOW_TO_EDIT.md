@@ -27,6 +27,9 @@ The workflow is:
 4. Push your changes to the GitHub master:
 
     `git push origin`
+
+** Please provide a meaningful commit message so that we can easily generate the ChangeLog upon next release **
+
 5. Release the editing token for the other developers:
    - Contact edam-core@elixir-dk.org and release the “editing token” .
    - Summarise what you actually did and why.
@@ -39,7 +42,7 @@ From January 2016, EDAM follows a monthly release cycle to this schedule:
 3.  Last Wed of every month:  Complete the work for the release.  Make the release.  Ensure it works in BioPortal, OLS, and in bio.tools.
 4.  Last Fri of every month:  Announcee the release, incuding summary of changes.
 
-**Before to create a new release, please make sure you have the approval of leader of EDAM core-dev, and that the changelog.md file is up-to-date with the changes of the new release**. Once you're clear to go, do the following:
+**Before to create a new release, please make sure you have the approval of leader of EDAM core-dev, and that the [changelog.md](https://github.com/edamontology/edamontology/blob/master/changelog.md) and [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) files are up-to-date with the changes of the new release**.  See section below on creating the ChangeLog files.  Once you're clear to go, do the following:
 
 1. Update your local version of the repository:
 
@@ -85,6 +88,22 @@ The workflow is:
 Please make sure to:
 - Keep your forked repository synchronized with the core repository, to avoid inconsistencies.
 - Make sure to follow the “Best practices for edition” below.
+
+# Editing the ChangeLog
+The ChangeLog includes:
+1. [changelog](https://github.com/edamontology/edamontology/blob/master/changelog.md) - a summary of the major changes and what motivated them
+2. [detailed changelog](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) - fine-grained details obtained using [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) 
+
+The changelog should include:
+1. (as 1st paragraph) an "executive summary" suitable for consumption by technical managers, describing the motivation for major changes, including e.g. requests at recent hackathons, requests via GitHub, strategic directions etc.
+2. summary of changes distilled from the output of [Bubastis](http://www.ebi.ac.uk/efo/bubastis/)  (see below). 
+3. summary of GitHub commit messages.  ** PLEASE ensure meaningful commit messages are provided on every commit**
+
+Some hacking of bubastis output is needed to identify (at least):
+  - number of new concepts
+  - number of deprecations
+  - summary of activity, i.e. in which branches was most work focucssed ?
+
 
 # Best practices for edition
 
