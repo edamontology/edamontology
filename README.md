@@ -113,6 +113,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Jon Ison (DTU, DK) *- lead developer*
 * Matúš Kalaš (University of Bergen, NO)
 * Hervé Ménager (Institut Pasteur, FR)
+* Veit Schwämmle (SDU, DK)
 
 ## EDAM Editors
 * David Sehnal (MU, CZ) - General bioinformatics
@@ -121,7 +122,6 @@ We very much welcome new editors and contributors.  Representatives of projects 
 * Laura Emery (EMBL-EBI, UK) - EBI tools and training
 * Lukáš Pravda (MU, CZ) - Structural bioinformatics
 * Stanislav Geidl (MU, CZ) - Chemoinformatics 
-* Veit Schwämmle (SDU, DK) - Mass spectrometry
 * Wouter Touw (CMBI, NL) -  Protein structure
 
 ## EDAM Steering Group
