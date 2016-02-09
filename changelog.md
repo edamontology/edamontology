@@ -10,16 +10,33 @@ Description of changes are grouped as follows:
 # EDAM\_1.13.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
-22 new concepts were added and 1075 were changed.
+The main focus of EDAM\_1.13.owl is:
+* a Topic branch simplification in response to requests for a smaller, more usable and thus also more sustainable set of topics
+* addition of new concepts requested via GitHub, prioritising addition of new formats from recent [de.NBI/EDAM](http://tinyurl.com/registryhackathon7) hackathon
+* additions and changes for NGS tools packages within Debian Med but not included in SEQanswers Wiki (SEQwiki) (work in progress)
 
 ## Added
-* multiple new formats and operations added, following requests from de.nbi and EBI hackathons
+* 23 new concepts (mostly in Format branch) added
 
-## Modified
-* multiple references to obsolete concepts to point to their replacements (consider and replacedBy)
-* addition of the mapping to debtags, following the Debian-Med sprint
-* a few topics structure changes
-* a few miscelaneous corrections
+## Changed
+* 105 concepts changed (excluding changes/additions to synonyms)
+* topic branch restructured for easier navigation
+* all deprecated classes are now child of SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+
+## Deprecated
+* 60 concepts were deprecated, mostly to greatly simplify the Topics branch
+* removal of some overly specialised Operation concepts (work in progress)
+* NB: terms, synonyms and comments on deprecated concepts were generally preserved in the parent concepts
+
+## Fixed
+* all deprecated concepts now have a suggestion (either consider or replacedBy) for an alternative
+* all suggested alternatives for deprecated concepts are now to active (i.e. non-deprecated) concepts
+* various other miscellaneous fixes as requested via GitHub
+
+## Misc
+* new 'isdebtags' annotation defined on concepts to annotate a concept is a candidate for tagging Debian Med packages, following the recent [Debian Med sprint](https://wiki.debian.org/Sprints/2016/DebianMed2016)
+
+
 
 # EDAM\_1.12.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
