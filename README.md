@@ -176,7 +176,7 @@ Thanks to the many people who have contributed - if you're not listed below, ple
 
 
 # Recent workshops (2014 - )
-Thank you to all of the participants of various meetings and workshops organised by ELIXIR, BioMedBridges and others.  See the complete list of past and forthcoming [workshops](https://docs.google.com/document/d/1K-6IG_7a-4amstSSOxYjjJ3uDUEg4-WGSSt9jvvO7Ik/edit).
+Thank you to all of the participants of various meetings and workshops organised by ELIXIR, BioMedBridges and others.  See the complete list of past and forthcoming [workshops](https://bio.tools/events).
 
 # Publication
 
