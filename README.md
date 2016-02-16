@@ -193,3 +193,7 @@ This article is freely available (Open Access).
 Full user documentation of the EDAM ontology is available at http://edamontology.org.
 
 The _edamontology.org_ site provides content negotiation with respect to the desired media type (_i.e._ format, _e.g._ HTML, OWL, _etc._). This applies also to the URIs of EDAM concepts that are in this way dereferencable, concise, and stable. Alternatively to requesting the format in the HTTP header, users can retrieve the desired content from a web browser by inserting _?format=\<desiredformat\>_ query into the URL.
+
+# Current development status
+
+[![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
