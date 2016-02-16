@@ -1,0 +1,7 @@
+language: python
+python:
+  - "2.7"
+# command to install dependencies
+install: "pip install git+https://github.com/edamontology/edamxpathvalidator.git"
+# command to run tests
+script: "edamxpathvalidator EDAM_dev.owl" 
