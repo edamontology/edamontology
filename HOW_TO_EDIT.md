@@ -48,23 +48,18 @@ From January 2016, EDAM follows a monthly release cycle to this schedule:
 
     `git pull`
 2. Assuming you are releasing version n+1, n being the current version:
-   - you initially have EDAM\_n.owl and EDAM\_n+1\_dev.owl in the repository
-   - make sure to update 'oboOther:date' in the EDAM\_n+1\_dev.owl file
-   - remove the file EDAM\_n.owl from the repository
+   - you initially have EDAM\_dev.owl in the repository
+   - make sure to update 'oboOther:date' in this file
+   - copy the file EDAM\_dev.owl to releases/EDAM\_n+1.owl
 
-    `git rm EDAM\_n.owl`
-   - copy the file EDAM\_n+1\_dev.owl to EDAM\_n+1.owl
+    `cp EDAM\_dev.owl releases/EDAM\_n+1.owl`
+    `git add releases/EDAM\_n+1.owl`
 
-    `cp EDAM\_n+1\_dev.owl EDAM\_n+1.owl`
-   - rename the file EDAM\_n+1\_dev.owl to EDAM\_n+2\_dev.owl
-
-    `git mv EDAM\_n+1\_dev.owl EDAM\_n+2\_dev.owl`
-    
-   - modify the doap:version property to **n+1** in `EDAM\_n+1.owl` and to **n+2\_dev** in `EDAM\_n+2.owl`
+   - modify the doap:version property to **n+1** in `releases/EDAM\_n+1.owl` and to **n+2\_dev** in `EDAM\_dev.owl`
    
    - commit and push your changes
 
-    `git commit`
+    `git commit -a`
 
     `git push origin`
 
@@ -181,3 +176,7 @@ Common problems include:
 - end-point of relations are in the wrong branch, e.g. 'class has_topic some operation'.  These can easily occur if you use the "Class expression editor" in Protege to define such axioms: this is NOT EDAM namespace aware, and in cases where a concept with the same preferred label exists in both classes, can easily pick the wrong one.
 
 The problems are easily fixed within Protege: ask on the mailing list if you're not sure how.  Finally, do not be tempted to click "Reasoner->Synchronise reasoner" between changes: it tends to hang Protege.  Instead, use "Reasoner->Stop reasoner" than "Reasoner->Start reasoner".
+
+## Continuous Integration
+
+Every modification on the ontology pushed to github triggers an automated test in Travis CI. For now, it only checks a few rules using the edamxpathvalidator tool (https://github.com/edamontology/edamxpathvalidator). The Travis-CI website shows you the current status here https://travis-ci.org/edamontology/edamontology. The fact that the continuous integration task succeeds does not guarantee that it there are no remaining bugs, but a failure means that you must take action to correct the problem, either fix it, fix the edamxpathvalidator program, or ask the mailing list if you're unsure.
