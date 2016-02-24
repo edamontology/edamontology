@@ -15,10 +15,6 @@ Label: Membrane and lipoproteins
 -   'Membrane and lipoproteins' SubClassOf 'Protein families'
 +   'Membrane and lipoproteins' SubClassOf 'Protein analysis'
  
-Class: http://edamontology.org/format_2333
-Label: Binary format
-+   'Binary format' SubClassOf 'XML'
- 
 Class: http://edamontology.org/operation_0527
 Label: Tag mapping
 -   'Tag mapping' SubClassOf 'has output' some 'Sequence tag profile (with gene assignment)'
