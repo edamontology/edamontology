@@ -1,6 +1,205 @@
 # Detailed Changelog for EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
 
+# EDAM\_1.14.owl
+
+## Classes modified:
+ 
+Class: http://edamontology.org/topic_0821
+Label: Enzymes
+-   'Enzymes' SubClassOf 'Protein families'
++   'Enzymes' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/topic_0820
+Label: Membrane and lipoproteins
+-   'Membrane and lipoproteins' SubClassOf 'Protein families'
++   'Membrane and lipoproteins' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/format_2333
+Label: Binary format
++   'Binary format' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/operation_0527
+Label: Tag mapping
+-   'Tag mapping' SubClassOf 'has output' some 'Sequence tag profile (with gene assignment)'
+ 
+Class: http://edamontology.org/data_2966
+Label: Oligonucleotide probe sets annotation
+-   'Oligonucleotide probe sets annotation' SubClassOf 'Oligonucleotide probe annotation'
++   'Oligonucleotide probe sets annotation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1235
+Label: Sequence cluster
+-   'Sequence cluster' SubClassOf 'has topic' some 'Protein families'
++   'Sequence cluster' SubClassOf 'has topic' some 'Gene families'
+ 
+Class: http://edamontology.org/data_0907
+Label: Protein family report
+-   'Protein family report' SubClassOf 'has topic' some 'Protein families'
++   'Protein family report' SubClassOf 'has topic' some 'Gene families'
+ 
+Class: http://edamontology.org/data_0936
+Label: Sequence tag profile (with gene assignment)
+-   'Sequence tag profile (with gene assignment)' SubClassOf 'Sequence tag profile'
++   'Sequence tag profile (with gene assignment)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3096
+Label: Editing
+-   'Editing' SubClassOf 'Operation'
++   'Editing' SubClassOf 'File handling'
+ 
+Class: http://edamontology.org/topic_2830
+Label: Immunoproteins, genes and antigens
+-   'Immunoproteins, genes and antigens' SubClassOf 'Protein families'
++   'Immunoproteins, genes and antigens' SubClassOf 'Gene families'
+ 
+Class: http://edamontology.org/topic_0623
+Label: Gene families
++   'Gene families' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/topic_0749
+Label: Transcription factors and regulatory sites
+-   'Transcription factors and regulatory sites' SubClassOf 'Protein families'
++   'Transcription factors and regulatory sites' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/format_2055
+Label: Sequence assembly format
+-   'Sequence assembly format' SubClassOf 'is format of' some 'Data'
++   'Sequence assembly format' SubClassOf 'is format of' some 'Sequence assembly'
+ 
+Class: http://edamontology.org/topic_0724
+Label: Protein families
+-   'Protein families' SubClassOf 'Protein analysis'
++   'Protein families' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0248
+Label: Residue interaction calculation
+-   'Residue interaction calculation' SubClassOf 'Residue interaction calculation'
+
+## New classes:
+ 
+Class: http://edamontology.org/format_3702
+Label: MSF
++   'MSF' SubClassOf 'Mass spectrometry data format'
+ 
+Class: http://edamontology.org/format_3709
+Label: GCT/Res format
++   'GCT/Res format' SubClassOf 'Textual format'
++   'GCT/Res format' SubClassOf 'Gene expression report format'
+ 
+Class: http://edamontology.org/format_3708
+Label: ABCD format
++   'ABCD format' SubClassOf 'is format of' some 'Biodiversity report'
++   'ABCD format' SubClassOf 'Biodiversity data format'
+ 
+Class: http://edamontology.org/format_3706
+Label: Biodiversity data format
++   'Biodiversity data format' SubClassOf 'is format of' some 'Biodiversity report'
++   'Biodiversity data format' SubClassOf 'Format (typed)'
+ 
+Class: http://edamontology.org/format_3710
+Label: WIFF format
++   'WIFF format' SubClassOf 'Mass spectrometry data format'
++   'WIFF format' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3712
+Label: Thermo RAW
++   'Thermo RAW' SubClassOf 'Binary format'
++   'Thermo RAW' SubClassOf 'Mass spectrometry data format'
+ 
+Class: http://edamontology.org/format_3711
+Label: X!Tandem XML
++   'X!Tandem XML' SubClassOf 'Mass spectrometry data format'
++   'X!Tandem XML' SubClassOf 'Binary format'
++   'X!Tandem XML' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3714
+Label: MaxQuant APL peaklist format
++   'MaxQuant APL peaklist format' SubClassOf 'Mass spectrometry data format'
++   'MaxQuant APL peaklist format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3713
+Label: Mascot .dat file
++   'Mascot .dat file' SubClassOf 'Textual format'
++   'Mascot .dat file' SubClassOf 'Mass spectrometry data format'
+ 
+Class: http://edamontology.org/format_3727
+Label: OME-TIFF
++   'OME-TIFF' SubClassOf 'Binary format'
++   'OME-TIFF' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3726
+Label: PMML
++   'PMML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3725
+Label: SBOL
++   'SBOL' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3728
+Label: LocARNA PP
++   'LocARNA PP' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3729
+Label: dbGaP format
++   'dbGaP format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/data_3724
+Label: Cultivation parameter
++   'Cultivation parameter' SubClassOf 'Experimental measurement'
+ 
+Class: http://edamontology.org/data_3723
+Label: Morphology parameter
++   'Morphology parameter' SubClassOf 'Experimental measurement'
+ 
+Class: http://edamontology.org/data_3722
+Label: Physiology parameter
++   'Physiology parameter' SubClassOf 'Experimental measurement'
+ 
+Class: http://edamontology.org/data_3721
+Label: Isolation source
++   'Isolation source' SubClassOf 'Isolation report'
+ 
+Class: http://edamontology.org/data_3720
+Label: Geographic location
++   'Geographic location' SubClassOf 'Isolation report'
+ 
+Class: http://edamontology.org/data_3707
+Label: Biodiversity report
++   'Biodiversity report' SubClassOf 'Report'
+ 
+Class: http://edamontology.org/data_3717
+Label: Isolation report
++   'Isolation report' SubClassOf 'Report'
+ 
+Class: http://edamontology.org/data_3716
+Label: Biosafety report
++   'Biosafety report' SubClassOf 'Report'
+ 
+Class: http://edamontology.org/data_3719
+Label: Biosafety classification
++   'Biosafety classification' SubClassOf 'Biosafety report'
+ 
+Class: http://edamontology.org/data_3718
+Label: Pathogenicity report
++   'Pathogenicity report' SubClassOf 'Biosafety report'
+ 
+Class: http://edamontology.org/operation_3703
+Label: Reference identification
++   'Reference identification' SubClassOf 'Genetic variation analysis'
+ 
+Class: http://edamontology.org/operation_3705
+Label: Isotope-coded protein label
++   'Isotope-coded protein label' SubClassOf 'Labeled quantification'
+ 
+Class: http://edamontology.org/operation_3704
+Label: Ion counting
++   'Ion counting' SubClassOf 'Label-free quantification'
+ 
+Class: http://edamontology.org/operation_3715
+Label: Metabolic labeling
++   'Metabolic labeling' SubClassOf 'Labeled quantification'
+
 # EDAM\_1.13.owl
 
 ## Classes modified:
