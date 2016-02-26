@@ -11,7 +11,7 @@ Description of changes are grouped as follows:
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
 EDAM\_14 includes:
-* many new terms or term corrections requested by the community (directly on GitHub, or during the last hackathons).
+* many new terms or changes requested by the community (directly on GitHub, or during the last hackathons).
 * a new CI process that will be extended over time to monitor and improve the quality of the ontology.
 
 ## Added
