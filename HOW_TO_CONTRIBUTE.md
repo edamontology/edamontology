@@ -18,7 +18,7 @@ http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce
 
 
 # Requesting terms
-To suggest new terms, please use the GitHub tracker (see below).  We need at least the following for each concept:
+To suggest new terms, please use the [GitHub tracker](https://github.com/edamontology/edamontology/blob/master/HOW_TO_CONTRIBUTE.md#github-issue-tracker-preferred).  We need at least the following for each concept:
 - EDAM branch (Topic, Operation, Format, Data)
 - Term
 
