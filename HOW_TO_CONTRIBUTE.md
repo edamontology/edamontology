@@ -29,7 +29,7 @@ It will speed up things a lot if you can also provide:
 - URL to formal specification (Format concepts only)
 - type of data representated (Format concepts only) 
 
-If it turns out you need a lot of new concepts, we can find a more efficient way (e.g. shared Google sheet), and you can join us as [EDAM Editor]{https://github.com/edamontology/edamontology#governance-of-edam}.
+If it turns out you need a lot of new concepts, we can find a more efficient way (e.g. shared Google sheet), and you can join us as [EDAM Editor](https://github.com/edamontology/edamontology#governance-of-edam).
 
 
 # GitHub issue tracker (preferred)
