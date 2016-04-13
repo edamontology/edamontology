@@ -117,6 +117,7 @@ We very much welcome new editors and contributors.  Representatives of projects 
 
 ## EDAM Editors
 * David Sehnal (MU, CZ) - General bioinformatics
+* Dmitry Repchevsky (BSC, ES) - ES tools & services
 * Ivan Mičetić (University of Padova, IT) - Protein structure
 * Kristian Davidsen (DTU, DK) - Sequencing
 * Laura Emery (EMBL-EBI, UK) - EBI tools and training
