@@ -1,6 +1,8 @@
 # What is EDAM?
 EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
 
+__Current status of development file__: [![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
+
 You can browse EDAM at the new [OLS beta](http://www.ebi.ac.uk/ols/beta/ontologies/edam) and the [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/).
 
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
@@ -194,7 +196,3 @@ This article is freely available (Open Access).
 Full user documentation of the EDAM ontology is available at http://edamontology.org.
 
 The _edamontology.org_ site provides content negotiation with respect to the desired media type (_i.e._ format, _e.g._ HTML, OWL, _etc._). This applies also to the URIs of EDAM concepts that are in this way dereferencable, concise, and stable. Alternatively to requesting the format in the HTTP header, users can retrieve the desired content from a web browser by inserting _?format=\<desiredformat\>_ query into the URL.
-
-# Current development status
-
-[![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
