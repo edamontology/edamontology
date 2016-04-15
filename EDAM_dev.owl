@@ -32443,6 +32443,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3655">
         <rdfs:label>pepXML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3655"/>
         <documentation>http://sashimi.sourceforge.net/schema_revision/pepXML/pepXML_v118.xsd</documentation>
         <oboInOwl:hasDefinition>Open data format for the storage, exchange, and processing of peptide sequence assignments of MS/MS scans, intended to provide a common data output format for many different MS/MS search engines and subsequent peptide-level analyses.</oboInOwl:hasDefinition>
         <created_in>1.12</created_in>
