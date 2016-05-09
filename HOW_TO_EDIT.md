@@ -128,6 +128,9 @@ Note that :
    - Exact synonym (`oboInOwl:hasExactSynonym`) - bog-standard synyonsm
    - Narrow synonym (`oboInOwl:hasNarrowSynonym`) - specialisms of the term
    - Broad synonym (`oboInOwl:hasBroadSynonym`) - generalisations of the term
+
+NB: Do **not** include American spellings or case variants as synyonyms.
+
 - The **definition** should be a concise and lucid description of the concept, without acronyms, and avoiding jargon.
 - Peripheral but important information can go in the **comment** (`rdfs:comment`).
 
