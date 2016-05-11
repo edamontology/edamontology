@@ -46,7 +46,7 @@
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>Jon Ison</dc:creator>
         <next_id>3748</next_id>
-        <oboOther:date>11:05:2016 18:57 GMT</oboOther:date>
+        <oboOther:date>11:05:2016 19:24 GMT</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -33169,157 +33169,20 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
     <!-- http://edamontology.org/format_3747 -->
-
+    
     <owl:Class rdf:about="http://edamontology.org/format_3747">
-        <rdfs:label></rdfs:label>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:label>protXML</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <oboInOwl:hasDefinition>.</oboInOwl:hasDefinition>
-        <rdfs:comment>.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>A format for storage, exchange, and processing of protein identifications created from ms/ms-derived peptide sequence data.</oboInOwl:hasDefinition>
+        <rdfs:comment>No human-consumable information about this format is available (see http://tools.proteomecenter.org/wiki/index.php?title=Formats:protXML).</rdfs:comment>
         <created_in>1.15</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://"/>
-        <citation rdf:resource="http://doi.org/10."/>
-        <file_extension></file_extension>
-        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/..."/>
-        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
+        <documentation rdf:resource="http://tools.proteomecenter.org/formats/protXML/protXML_xmlspy_docs.html"/>
+        <oboInOwl:hasDbXref rdf:resource="http://purl.obolibrary.org/obo/MS_1001422"/>
     </owl:Class>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-    <!-- http://edamontology.org/format_37.. 
-
-    <owl:Class rdf:about="http://edamontology.org/format_37..">
-        <rdfs:label></rdfs:label>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <oboInOwl:hasDefinition>.</oboInOwl:hasDefinition>
-        <rdfs:comment>.</rdfs:comment>
-        <created_in>1.15</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://"/>
-        <citation rdf:resource="http://doi.org/10."/>
-        <file_extension></file_extension>
-        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/..."/>
-        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
-    </owl:Class>
-
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- http://edamontology.org/operation_0004 -->
