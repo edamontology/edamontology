@@ -17,9 +17,9 @@ To receive low-traffic announcements, subscribe here:
 http://elixirmail.cbs.dtu.dk/mailman/listinfo/edam-announce
 
 
-# Requesting terms
-To suggest new terms, please use the [GitHub tracker](https://github.com/edamontology/edamontology/blob/master/HOW_TO_CONTRIBUTE.md#github-issue-tracker-preferred).  We need at least the following for each concept:
-- EDAM branch (Topic, Operation, Format, Data)
+# Requesting concepts
+To suggest new concepts, please use the [GitHub tracker](https://github.com/edamontology/edamontology/blob/master/HOW_TO_CONTRIBUTE.md#github-issue-tracker-preferred).  We need at least the following for each concept:
+- EDAM sub-ontology (Topic, Operation, Format, Data)
 - Term
 
 It will speed up things a lot if you can also provide:
@@ -28,8 +28,11 @@ It will speed up things a lot if you can also provide:
 - synonyms
 - URL to formal specification (Format concepts only)
 - type of data representated (Format concepts only) 
+- media type (Format concepts only)
+- file extension (Format concepts only) 
+- citation DOI (Format concepts only. Only if the article publishes the format and should be cited with every mention or use of the format!) 
 
-If it turns out you need a lot of new concepts, we can find a more efficient way (e.g. shared Google sheet), and you can join us as [EDAM Editor](https://github.com/edamontology/edamontology#governance-of-edam).
+If it turns out you need a lot of new concepts, we can find a more efficient way (_e.g._ shared Google sheet), and you can join us as [EDAM Editor](https://github.com/edamontology/edamontology#governance-of-edam).
 
 
 # GitHub issue tracker (preferred)
