@@ -3,7 +3,7 @@ EDAM is a simple ontology of well established, familiar concepts that are preval
 
 __Current status of development file__: [![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
-You can browse EDAM at the new [OLS beta](http://www.ebi.ac.uk/ols/beta/ontologies/edam) and the [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/).
+You can browse EDAM at the [OLS](http://www.ebi.ac.uk/ols/ontologies/edam) and the [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/).
 
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
