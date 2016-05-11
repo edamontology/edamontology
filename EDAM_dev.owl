@@ -33,7 +33,7 @@
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
-        <oboOther:date>11:05:2016 09:14 GMT</oboOther:date>
+        <oboOther:date>11:05:2016 11:25 GMT</oboOther:date>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -46,7 +46,7 @@
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3736</next_id>
+        <next_id>3738</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -31327,16 +31327,23 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3475">
         <rdfs:label>TSV</rdfs:label>
+        <oboInOwl:hasExactSynonym>Tab-separated values</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>Tabular format</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Delimiter-separated values</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>DSV</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym>Comma-separated values</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>CSV</oboInOwl:hasRelatedSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <oboInOwl:hasExactSynonym>Tabular format</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso>http://filext.com/file-extension/CSV</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.iana.org/assignments/media-types/text/csv</rdfs:seeAlso>
         <oboInOwl:hasDefinition>Tabular data represented as tab-separated values in a text file.</oboInOwl:hasDefinition>
         <created_in>1.7</created_in>
-        <rdfs:seeAlso>http://filext.com/file-extension/TSV</rdfs:seeAlso>
-        <oboInOwl:hasNarrowSynonym>CSV</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <file_extension>tsv|tab</file_extension>
+        <oboInOwl:hasDbXRef rdf:resource="http://filext.com/file-extension/TSV"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Delimiter-separated_values</rdfs:seeAlso>
+        <rdfs:seeAlso>http://filext.com/file-extension/CSV</rdfs:seeAlso>
+        <rdfs:seeAlso>http://www.iana.org/assignments/media-types/text/csv</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -32531,11 +32538,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3617"/>
         <created_in>1.12</created_in>
         <file_extension>oxlicg</file_extension>
-        <oboInOwl:hasExactSynonym>http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A list of k-mers and their occurences in a dataset. Can also be used as an implicit De Bruijn graph.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://khmer.readthedocs.org/en/v2.0/dev/binary-file-formats.html#countgraph"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph"/>
     </owl:Class>
     
 
@@ -32834,7 +32840,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_3701 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3701">
-        <rdfs:label>sequin</rdfs:label>
+        <rdfs:label>Sequin format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2206"/>
         <oboInOwl:hasDefinition>A five-column, tab-delimited table of feature locations and qualifiers for importing annotation into an existing Sequin submission (an NCBI tool for submitting and updating GenBank entries). </oboInOwl:hasDefinition>
         <created_in>1.13</created_in>
@@ -32850,7 +32856,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:label>MSF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
         <oboInOwl:hasExactSynonym>Magellan storage file format</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This format corresponds to an SQLite database, and you can look into the files with e.g. SQLiteStudio3. There are also some readers (http://pubs.acs.org/doi/abs/10.1021/pr2005154) and converters (http://www.sciencedirect.com/science/article/pii/S1874391915300531) for this format available, which re-engineered the database schema, but there is no official DB schema specification of Thermo Scientific for the format. </rdfs:comment>
+        <rdfs:comment>This format corresponds to an SQLite database, and you can look into the files with e.g. SQLiteStudio3. There are also some readers (http://doi.org/10.1021/pr2005154) and converters (http://doi.org/10.1016/j.jprot.2015.06.015) for this format available, which re-engineered the database schema, but there is no official DB schema specification of Thermo Scientific for the format. </rdfs:comment>
         <oboInOwl:hasDefinition>Proprietary mass-spectrometry format of Thermo Scientific&apos;s ProteomeDiscoverer software.</oboInOwl:hasDefinition>
         <created_in>1.14</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32986,7 +32992,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.14</created_in>
         <oboInOwl:hasExactSynonym>MaxQuant APL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Format of peak list files from Andromeda search engine (MaxQuant) that consist of arbitrarily many spectra.</oboInOwl:hasDefinition>
-        <documentation rdf:resource="http://pubs.acs.org/doi/pdf/10.1021/pr101065j"/>
+        <documentation rdf:resource="http://doi.org/10.1021/pr101065j"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -33069,6 +33075,179 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://www.ncbi.nlm.nih.gov/books/NBK154410/"/>
     </owl:Class>
     
+
+
+    <!-- http://edamontology.org/format_3736 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3736">
+        <rdfs:label>BIOM format</rdfs:label>
+        <oboInOwl:hasExactSynonym>BIological Observation Matrix format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3706"/>
+        <oboInOwl:hasDefinition>The BIological Observation Matrix (BIOM) is a format for representing biological sample by observation contingency tables in broad areas of comparative omics. The primary use of this format is to represent OTU tables and metagenome tables.</oboInOwl:hasDefinition>
+        <rdfs:comment>BIOM is a recognized standard for the Earth Microbiome Project, and is a project supported by Genomics Standards Consortium. Supported in QIIME, Mothur, MEGAN, etc.</rdfs:comment>
+        <created_in>1.15</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://biom-format.org"/>
+        <citation rdf:resource="http://doi.org/10.1186/2047-217X-1-7"/>
+        <file_extension>biom</file_extension>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_3737 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3737">
+        <rdfs:label></rdfs:label>
+        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <oboInOwl:hasDefinition>.</oboInOwl:hasDefinition>
+        <rdfs:comment>.</rdfs:comment>
+        <created_in>1.15</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://"/>
+        <citation rdf:resource="http://doi.org/10."/>
+        <file_extension></file_extension>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/..."/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
+    </owl:Class>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- http://edamontology.org/format_37.. 
+
+    <owl:Class rdf:about="http://edamontology.org/format_37..">
+        <rdfs:label></rdfs:label>
+        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <oboInOwl:hasDefinition>.</oboInOwl:hasDefinition>
+        <rdfs:comment>.</rdfs:comment>
+        <created_in>1.15</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://"/>
+        <citation rdf:resource="http://doi.org/10."/>
+        <file_extension></file_extension>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/..."/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/..."/>
+    </owl:Class>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
