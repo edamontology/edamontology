@@ -33,7 +33,6 @@
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
-        <oboOther:date>11:05:2016 11:25 GMT</oboOther:date>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -47,6 +46,7 @@
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>Jon Ison</dc:creator>
         <next_id>3748</next_id>
+        <oboOther:date>11:05:2016 18:47 GMT</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -23756,6 +23756,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_3707">
         <rdfs:label>Biodiversity report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
         <oboInOwl:hasExactSynonym>Biodiversity information</oboInOwl:hasExactSynonym>
         <created_in>1.9</created_in>
         <oboInOwl:hasDefinition>A report about biodiversity data.</oboInOwl:hasDefinition>
@@ -23910,7 +23911,7 @@
     <!-- http://edamontology.org/data_3733 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3733">
-        <rdfs:label>Flow cell</rdfs:label>
+        <rdfs:label>Flow cell identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3732"/>
         <rdfs:comment>A flow cell is used to immobilise, amplify and sequence millions of molecules at once.  In Illumina machines, a flowcell is composed of  8 &quot;lanes&quot; which allows 8 experiments in a single analysis.</rdfs:comment>
         <oboInOwl:hasDefinition>An identifier of a flow cell of a sequencing machine.</oboInOwl:hasDefinition>
@@ -23924,7 +23925,7 @@
     <!-- http://edamontology.org/data_3734 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3734">
-        <rdfs:label>Lane</rdfs:label>
+        <rdfs:label>Lane identifier</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3732"/>
         <oboInOwl:hasDefinition>An identifier of a lane within a flow cell of a sequencing machine, within which millions of sequences are immobilized, amplified and sequenced.</oboInOwl:hasDefinition>
         <created_in>1.15</created_in>
@@ -23937,14 +23938,17 @@
     <!-- http://edamontology.org/data_3735 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3735">
-        <rdfs:label>Run</rdfs:label>
+        <rdfs:label>Run number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3732"/>
         <created_in>1.15</created_in>
-        <oboInOwl:hasDefinition>A number corresponding to the number of an analysis performed by a sequencing machine.  For exemple, if it&apos;s the 13th analysis, the run is 13.
+        <oboInOwl:hasDefinition>A number corresponding to the number of an analysis performed by a sequencing machine.  For example, if it&apos;s the 13th analysis, the run is 13.
 </oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
+    
+    
+    
     <!-- http://edamontology.org/data_3736 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3736">
@@ -23962,8 +23966,8 @@
     <!-- http://edamontology.org/data_3737 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3737">
-        <rdfs:label>Alpha diversity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
+        <rdfs:label>Alpha diversity data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
         <oboInOwl:hasExactSynonym>α-diversity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>The mean species diversity in sites or habitats at a local scale.</oboInOwl:hasDefinition>
         <created_in>1.15</created_in>
@@ -23976,8 +23980,8 @@
     <!-- http://edamontology.org/data_3738 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3738">
-        <rdfs:label>Beta diversity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
+        <rdfs:label>Beta diversity data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
         <oboInOwl:hasExactSynonym>β-diversity</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>The ratio between regional and local species diversity.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>True beta diversity</oboInOwl:hasExactSynonym>
@@ -23991,26 +23995,10 @@
     <!-- http://edamontology.org/data_3739 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3739">
-        <rdfs:label>Gamma diversity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
+        <rdfs:label>Gamma diversity data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
         <oboInOwl:hasDefinition>The total species diversity in a landscape. </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>γ-diversity</oboInOwl:hasExactSynonym>
-        <created_in>1.15</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/data_3740 -->
-
-    <owl:Class rdf:about="http://edamontology.org/data_3740">
-        <rdfs:label>BIOM table</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
-        <oboInOwl:hasDefinition>A matrix of counts of observations on a per-sample basis used in the in QIIME package. The observations are typically OTUs or taxa, and the samples are the unit of sampling in a study (e.g., a microbiome sample from some tissue at some time point).</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>OTU table</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Biological Observation Matrix</oboInOwl:hasExactSynonym>
-        <rdfs:comment>The  BIOM  table is the core data type for downstream analyses in QIIME.</rdfs:comment>
         <created_in>1.15</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
