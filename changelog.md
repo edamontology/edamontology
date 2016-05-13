@@ -11,18 +11,19 @@ Description of changes are grouped as follows:
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
 EDAM\_15 includes:
-* new terms or corrections requested by the community, especially to add new formats
-  and synonym cleanups
+* new terms requested by the community, including for metagenomics and biodiversity
+* requests for structural improvements and fixes, including a clean-up of synonyms (automation of this in the pipeline)
 
 ## Added
-* 24 concepts changed
+* 20 concepts added  (9 Data, 6 Operation, 5 Format)
 
 ## Changed
-* 20 concepts added, mainly formats.
+* 24 concepts changed (simplifying the "Visualisation" operation concepts)
 
 ## Deprecated
 * 5 concepts deprecated
 
+	
 # EDAM\_1.14.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
