@@ -7,6 +7,22 @@ Description of changes are grouped as follows:
 * **Fixed:** a bug fix
 * **Misc:** some miscellaneous other change
 
+# EDAM\_1.15.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+
+EDAM\_15 includes:
+* new terms or corrections requested by the community, especially to add new formats
+  and synonym cleanups
+
+## Added
+* 24 concepts changed
+
+## Changed
+* 20 concepts added, mainly formats.
+
+## Deprecated
+* 5 concepts deprecated
+
 # EDAM\_1.14.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 

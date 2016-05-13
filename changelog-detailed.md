@@ -1,6 +1,251 @@
 # Detailed Changelog for EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
 
+# EDAM\_1.15.owl
+
+## Classes modified:
+
+Class: http://edamontology.org/data_0886
+Label: Structure alignment
+-   'Structure alignment' SubClassOf 'has topic' some 'Structure comparison'
++   'Structure alignment' SubClassOf 'has topic' some 'Structure analysis'
+ 
+Class: http://edamontology.org/format_2197
+Label: OWL format
+-   'OWL format' SubClassOf 'XML'
++   'OWL format' SubClassOf 'Ontology format'
++   'OWL format' SubClassOf 'RDF format'
+ 
+Class: http://edamontology.org/format_3655
+Label: pepXML
++   'pepXML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/data_0863
+Label: Sequence alignment
+-   'Sequence alignment' SubClassOf 'has topic' some 'Sequence comparison'
++   'Sequence alignment' SubClassOf 'has topic' some 'Sequence analysis'
+ 
+Class: http://edamontology.org/data_1364
+Label: Hidden Markov model
++   'Hidden Markov model' SubClassOf 'Mathematical model'
+ 
+Class: http://edamontology.org/format_2376
+Label: RDF format
+-   'RDF format' SubClassOf 'XML'
++   'RDF format' SubClassOf 'Format'
++   'RDF format' SubClassOf http://edamontology.org/format_3748
+ 
+Class: http://edamontology.org/format_3464
+Label: JSON
+-   'JSON' SubClassOf 'Textual format'
++   'JSON' SubClassOf 'Format'
++   'JSON' SubClassOf http://edamontology.org/format_3750
+ 
+Class: http://edamontology.org/operation_0569
+Label: Protein secondary structure rendering
+Label: Protein secondary structure visualisation
+-   'Protein secondary structure visualisation' SubClassOf 'has topic' some 'Protein structure analysis'
+-   'Protein secondary structure visualisation' SubClassOf 'Visualisation'
++   'Protein secondary structure visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0568
+Label: RNA secondary structure visualisation
+-   'RNA secondary structure visualisation' SubClassOf 'RNA secondary structure analysis'
+-   'RNA secondary structure visualisation' SubClassOf 'Visualisation'
+-   'RNA secondary structure visualisation' SubClassOf 'has input' some 'RNA secondary structure'
++   'RNA secondary structure visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0565
+Label: Sequence alignment visualisation
+-   'Sequence alignment visualisation' SubClassOf 'has output' some 'Sequence alignment image'
+-   'Sequence alignment visualisation' SubClassOf 'has input' some 'Sequence alignment'
+-   'Sequence alignment visualisation' SubClassOf 'Visualisation'
+-   'Sequence alignment visualisation' SubClassOf 'Sequence analysis'
++   'Sequence alignment visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2106
+Label: Reaction ID (BioCyc)
+-   'Reaction ID (BioCyc)' SubClassOf 'has topic' some 'Peptides and amino acids'
++   'Reaction ID (BioCyc)' SubClassOf 'has topic' some 'Small molecules'
+ 
+Class: http://edamontology.org/operation_2241
+Label: Transmembrane protein visualisation
+-   'Transmembrane protein visualisation' SubClassOf 'Protein secondary structure visualisation'
++   'Transmembrane protein visualisation' SubClassOf 'Structure visualisation'
+ 
+Class: http://edamontology.org/data_3707
+Label: Biodiversity report
++   'Biodiversity report' SubClassOf http://edamontology.org/data_3736
+ 
+Class: http://edamontology.org/operation_1781
+Label: Gene regulatory network analysis
+-   'Gene regulatory network analysis' SubClassOf 'has topic' some 'Gene regulatory networks'
++   'Gene regulatory network analysis' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+ 
+Class: http://edamontology.org/data_0956
+Label: Data index report
+-   'Data index report' SubClassOf 'has topic' some 'Document, record and content management'
++   'Data index report' SubClassOf 'has topic' some 'Database management'
+ 
+Class: http://edamontology.org/data_0955
+Label: Data index
+-   'Data index' SubClassOf 'has topic' some 'Document, record and content management'
++   'Data index' SubClassOf 'has topic' some 'Database management'
+ 
+Class: http://edamontology.org/operation_3223
+Label: Differential expression analysis
+-   'Differential expression analysis' SubClassOf 'Gene expression profile comparison'
++   'Differential expression analysis' SubClassOf 'Nucleic acid comparison'
++   'Differential expression analysis' SubClassOf http://edamontology.org/operation_3742
+ 
+Class: http://edamontology.org/data_3107
+Label: Sequence feature name
+-   'Sequence feature name' SubClassOf 'Sequence feature identifier'
+-   'Sequence feature name' SubClassOf 'Name'
++   'Sequence feature name' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2486
+Label: Topology diagram drawing
+-   'Topology diagram drawing' SubClassOf 'Protein secondary structure visualisation'
++   'Topology diagram drawing' SubClassOf 'Structure visualisation'
+ 
+Class: http://edamontology.org/operation_2485
+Label: Helical wheel drawing
+-   'Helical wheel drawing' SubClassOf 'Protein secondary structure visualisation'
++   'Helical wheel drawing' SubClassOf 'Structure visualisation'
+ 
+Class: http://edamontology.org/format_3261
+Label: RDF/XML
+-   'RDF/XML' SubClassOf 'OWL format'
+ 
+Class: http://edamontology.org/operation_2437
+Label: Gene regulatory network prediction
+-   'Gene regulatory network prediction' SubClassOf 'has topic' some 'Gene regulatory networks'
++   'Gene regulatory network prediction' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+ 
+Class: http://edamontology.org/operation_2409
+Label: Data handling
+-   'Data handling' SubClassOf 'has topic' some 'Document, record and content management'
++   'Data handling' SubClassOf 'has topic' some 'Database management'
+ 
+Class: http://edamontology.org/topic_3301
+Label: Microbiology
+-   'Microbiology' SubClassOf 'Biomedical science'
++   'Microbiology' SubClassOf 'Biology'
+ 
+Class: http://edamontology.org/data_1022
+Label: Sequence feature label
++   'Sequence feature label' SubClassOf 'Sequence feature identifier'
++   'Sequence feature label' SubClassOf 'Name'
+ 
+Class: http://edamontology.org/operation_0490
+Label: Dotplot plotting
+-   'Dotplot plotting' SubClassOf 'Sequence alignment visualisation'
++   'Dotplot plotting' SubClassOf 'Sequence visualisation'
+ 
+Class: http://edamontology.org/data_3356
+Label: Hidden Markov model
+-   'Hidden Markov model' SubClassOf 'Mathematical model'
++   'Hidden Markov model' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1696
+Label: Drug report
+-   'Drug report' SubClassOf 'has topic' some 'Drugs and target structures'
++   'Drug report' SubClassOf 'has topic' some 'Small molecules'
+ 
+Class: http://edamontology.org/operation_0224
+Label: Query and retrieval
+-   'Query and retrieval' SubClassOf 'has topic' some 'Information retrieval'
++   'Query and retrieval' SubClassOf 'has topic' some 'Data management'
+
+## New classes:
+ 
+Class: http://edamontology.org/format_3750
+Label: YAML
++   'YAML' SubClassOf 'Format'
+ 
+Class: http://edamontology.org/format_3749
+Label: JSON-LD
++   'JSON-LD' SubClassOf 'JSON'
++   'JSON-LD' SubClassOf 'Linked data format'
++   'JSON-LD' SubClassOf 'RDF format'
+ 
+Class: http://edamontology.org/format_3748
+Label: Linked data format
++   'Linked data format' SubClassOf 'Format (typed)'
+ 
+Class: http://edamontology.org/format_3747
+Label: protXML
++   'protXML' SubClassOf 'Mass spectrometry data format'
++   'protXML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3746
+Label: BIOM format
++   'BIOM format' SubClassOf 'Biodiversity data format'
++   'BIOM format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/data_3735
+Label: Run number
++   'Run number' SubClassOf 'Sequencing metadata name'
+ 
+Class: http://edamontology.org/data_3734
+Label: Lane identifier
++   'Lane identifier' SubClassOf 'Sequencing metadata name'
+ 
+Class: http://edamontology.org/data_3737
+Label: Alpha diversity data
++   'Alpha diversity data' SubClassOf 'Biodiversity report'
+ 
+Class: http://edamontology.org/data_3736
+Label: Ecological data
++   'Ecological data' SubClassOf 'Data'
+ 
+Class: http://edamontology.org/data_3739
+Label: Gamma diversity data
++   'Gamma diversity data' SubClassOf 'Biodiversity report'
+ 
+Class: http://edamontology.org/data_3738
+Label: Beta diversity data
++   'Beta diversity data' SubClassOf 'Biodiversity report'
+ 
+Class: http://edamontology.org/data_3733
+Label: Flow cell identifier
++   'Flow cell identifier' SubClassOf 'Sequencing metadata name'
+ 
+Class: http://edamontology.org/data_3732
+Label: Sequencing metadata name
++   'Sequencing metadata name' SubClassOf 'Name'
+ 
+Class: http://edamontology.org/data_3743
+Label: Ordination plot
++   'Ordination plot' SubClassOf 'Plot'
++   'Ordination plot' SubClassOf 'Protein property'
+ 
+Class: http://edamontology.org/operation_3741
+Label: Differential protein expression analysis
++   'Differential protein expression analysis' SubClassOf 'Protein comparison'
++   'Differential protein expression analysis' SubClassOf 'Differential expression analysis'
+ 
+Class: http://edamontology.org/operation_3744
+Label: Multiple sample visualisation
++   'Multiple sample visualisation' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_3745
+Label: Ancestral reconstruction
++   'Ancestral reconstruction' SubClassOf 'Phylogenetic tree analysis'
+ 
+Class: http://edamontology.org/operation_3742
+Label: Differential expression analysis
++   'Differential expression analysis' SubClassOf 'Comparison'
+ 
+Class: http://edamontology.org/operation_3730
+Label: Cross-assembly
++   'Cross-assembly' SubClassOf 'Sequence assembly'
+ 
+Class: http://edamontology.org/operation_3731
+Label: Sample comparison
++   'Sample comparison' SubClassOf 'Comparison'
+
 # EDAM\_1.14.owl
 
 ## Classes modified:
