@@ -20,7 +20,7 @@ EDAM\_1.15 includes:
 ## Changed
 * 24 concepts changed (9 Data, 5 Format, 9 Operation, 1 Topic)
 * Added citations, media types, and/or file extensions of some Format concepts
-* Added and/or cleaned-up synonymys of various concepts
+* Added and/or cleaned-up synonyms of various concepts
 
 ## Deprecated
 * 5 concepts deprecated (2 Data, 3 Operation)
