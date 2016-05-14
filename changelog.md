@@ -1,27 +1,40 @@
 # Changelog for EDAM
-Description of changes are grouped as follows:
-* **Added:** new features
-* **Changed:** changes to existing functionality
-* **Deprecated:** a once-stable feature that has been removed
-* **Removed:** a deprecated feature that has been removed
-* **Fixed:** a bug fix
-* **Misc:** some miscellaneous other change
+Descriptions of changes are grouped as follows:
+* **Added:** new concepts or features
+* **Changed:** changes to existing concepts and features
+* **Deprecated:** once-stable concepts or features that became obsolete
+* **Removed:** deprecated concepts or features that have been removed
+* **Fixed:** fixed bugs, issues, corrected concepts and features
+* **Misc:** miscellaneous other changes
 
 # EDAM\_1.15.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
-EDAM\_15 includes:
-* new terms requested by the community, including for metagenomics and biodiversity
-* requests for structural improvements and fixes, including a clean-up of synonyms (automation of this in the pipeline)
+EDAM\_1.15 includes:
+* new concepts and terms requested by the community, including ones for environmental omics and biodiversity
+* structural improvements and fixes, including a clean-up of synonyms (automation of this in the pipeline), updates of formats, and simplification of _Visualisation_ concepts
 
 ## Added
 * 20 concepts added  (9 Data, 6 Operation, 5 Format)
 
 ## Changed
-* 24 concepts changed (simplifying the "Visualisation" operation concepts)
+* 24 concepts changed (9 Data, 5 Format, 9 Operation, 1 Topic)
+* Added citations, media types, and/or file extensions of some Format concepts
+* Added and/or cleaned-up synonymys of various concepts
 
 ## Deprecated
-* 5 concepts deprecated
+* 5 concepts deprecated (2 Data, 3 Operation)
+
+## Fixed
+* 26 issues fixed and closed (#119, #121, #130, #131, #132, #133, #134, #135, #136, #141, #142, #144, #145, #146, #150, #151, #152, #156, #157, #158, #159, #160, #165, #168, #169, #172)
+* 3 issues fixed and left open for eventual further discussion (#120, #143, #166)
+
+## Misc
+* 1 invalid issue closed (#149)
+* 2 issues closed, wrong project (#153, #154)
+* 4 issues closed, won't fix (#125, #147, #148, #155)
+* 2 other issues closed (#124, #140)
+
 
 	
 # EDAM\_1.14.owl
