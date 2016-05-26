@@ -31941,10 +31941,10 @@
     <owl:Class rdf:about="http://edamontology.org/format_3590">
         <rdfs:label>hdf5</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:comment>An HDF5 file appears to the user as a directed graph. The nodes of this graph are the higher-level HDF5 objects that are exposed by the HDF5 APIs: Groups, Datasets, Named datatypes. H5py uses straightforward NumPy and Python metaphors, like dictionary and NumPy array syntax.</rdfs:comment>
+        <rdfs:comment>An HDF5 file appears to the user as a directed graph. The nodes of this graph are the higher-level HDF5 objects that are exposed by the HDF5 APIs: Groups, Datasets, Named datatypes.</rdfs:comment>
         <created_in>1.11</created_in>
         <oboInOwl:hasExactSynonym>h5</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Binary format used by Galaxy for hierarchical data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>HDF5 is a generic hierarchical data file format used to store and organize large amounts of data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <oboInOwl:hasDbXref rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
