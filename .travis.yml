@@ -3,6 +3,10 @@ python:
   - "2.7"
 # command to install dependencies
 install: "pip install git+https://github.com/edamontology/edamxpathvalidator.git"
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
 # install dependencies for owltools checker
 before_script:
   - mkdir -p bin
