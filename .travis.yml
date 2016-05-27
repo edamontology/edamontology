@@ -10,10 +10,6 @@ addons:
 # install dependencies for owltools checker
 before_script:
   - sudo update-java-alternatives -s java-8-oracle
-  - mkdir -p bin
-  - export PATH=$PATH:$PWD/bin
-  - wget http://build.berkeleybop.org/userContent/owltools/owltools -O bin/owltools
-  - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O bin/owltools-runner-all.jar
-  - chmod +x bin/*
+  - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
 # command to run tests
-script: "java -version && edamxpathvalidator EDAM_dev.owl && owltools --log-error EDAM_dev.owl --reasoner hermit --run-reasoner" 
+script: "edamxpathvalidator EDAM_dev.owl && java -jar HermiT.jar -U EDAM_dev.owl  | diff .hermit_ok -" 
