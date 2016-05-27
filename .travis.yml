@@ -9,6 +9,7 @@ addons:
       - oracle-java8-installer
 # install dependencies for owltools checker
 before_script:
+  - sudo update-java-alternatives -s java-8-oracle
   - mkdir -p bin
   - export PATH=$PATH:$PWD/bin
   - wget http://build.berkeleybop.org/userContent/owltools/owltools -O bin/owltools
