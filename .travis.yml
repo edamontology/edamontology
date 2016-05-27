@@ -15,4 +15,4 @@ before_script:
   - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O bin/owltools-runner-all.jar
   - chmod +x bin/*
 # command to run tests
-script: "edamxpathvalidator EDAM_dev.owl && owltools --log-error EDAM_dev.owl --reasoner hermit --run-reasoner" 
+script: "java -version && edamxpathvalidator EDAM_dev.owl && owltools --log-error EDAM_dev.owl --reasoner hermit --run-reasoner" 
