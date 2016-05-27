@@ -9,5 +9,6 @@ before_script:
   - export PATH=$PATH:$PWD/bin
   - wget http://build.berkeleybop.org/userContent/owltools/owltools -O bin/owltools
   - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O bin/owltools-runner-all.jar
+  - chmod +x bin/*
 # command to run tests
 script: "edamxpathvalidator EDAM_dev.owl && owltools --log-error EDAM_dev.owl --reasoner hermit --run-reasoner" 
