@@ -3,5 +3,11 @@ python:
   - "2.7"
 # command to install dependencies
 install: "pip install git+https://github.com/edamontology/edamxpathvalidator.git"
+# install dependencies for owltools checker
+before_script:
+  - mkdir -p bin
+  - export PATH=$PATH:$PWD/bin
+  - wget http://build.berkeleybop.org/userContent/owltools/owltools -O bin/owltools
+  - wget http://build.berkeleybop.org/userContent/owltools/owltools-runner-all.jar -O bin/owltools-runner-all.jar
 # command to run tests
-script: "edamxpathvalidator EDAM_dev.owl" 
+script: "edamxpathvalidator EDAM_dev.owl && owltools --log-error EDAM_dev.owl --reasoner hermit --run-reasoner" 
