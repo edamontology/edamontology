@@ -401,22 +401,6 @@ combination of EDAM-specific relation types to be displayed.</p>-->
 
 <p><i>"Operation"</i> concepts provide mostly fine-grained concepts for annotation of tool functions.</p>
 
-<p>The top-level concepts are:</p>
-<ul>
-<li><i>"Alignment"</i></li>
-<li><i>"Analysis and processing"</i></li>
-<li><i>"Annotation"</i></li>
-<li><i>"Classification"</i></li>
-<li><i>"Comparison"</i></li>
-<li><i>"Editing"</i></li>
-<li><i>"Mapping and assembly"</i></li>
-<li><i>"Modelling and simulation"</i></li>
-<li><i>"Optimisation and refinement"</i></li>
-<li><i>"Plotting and rendering"</i></li>
-<li><i>"Prediction, detection and recognition"</i></li>
-<li><i>"Search and retrieval"</i></li>
-<li><i>"Validation and standardisation"</i></li>
-</ul>
 
 <p>The top-level operations are necessarily coarse-grained (abstract) 
 providing a navigable top-level. They serve as placeholders for other, 
@@ -437,64 +421,6 @@ more specific concepts lower down in the tree.</p>
 <li>Can be somewhat (necessarily) overlapping</li>
 </ul>
 
-<p>The top-level concepts are:</p>
-<ul>
-<li><i>"Core data"</i></li>
-<li><i>"Identifier"</i></li>
-<li><i>"Parameter"</i></li>
-<li><i>"Report"</i></li>
-</ul>
-
-<p>Their meaning is:</p>
-<ul>
-<li><i>"Core data"</i> - Data that typically are the primary input or 
-output of a tool or which correspond to entries from the primary (<i>e.g.</i> 
-sequence or structural) biological databases.</li>
-<li><i>"Identifier"</i> - A short numerical or textual label that 
-identifies (typically uniquely) something such as data, a resource or a 
-biological entity.</li>
-<li><i>"Parameter"</i> - Typically a simple numerical or string value that controls the operation of a tool.</li>
-<li><i>"Report"</i> - A human-readable collection of information that is
- distinct from primary (<i>e.g.</i> sequence or structural) biological data, 
-including free text, annotation about biological entities and phenomena,
- computer-generated reports of analysis of primary data and metadata.</li>
-</ul>
-
-<p>Concepts within <i>"Core data"</i> are:</p>
- <ul>
- <li><i>"Alignment"</i></li>
- <li><i>"Article"</i></li>
- <li><i>"Biological model"</i></li>
- <li><i>"Classification"</i></li>
- <li><i>"Codon usage table"</i></li>
- <li><i>"Data index"</i></li>
- <li><i>"Data reference"</i></li>
- <li><i>"Experimental measurement"</i></li>
- <li><i>"Gene expression profile"</i></li>
- <li><i>"Image"</i></li>
- <li><i>"Map"</i></li>
- <li><i>"Matrix"</i></li>
- <li><i>"Microarray data"</i></li>
- <li><i>"Molecular interaction"</i></li>
- <li><i>"Molecular property"</i></li>
- <li><i>"Ontology"</i></li>
- <li><i>"Ontology concept"</i></li>
- <li><i>"Pathway or network"</i></li>
- <li><i>"Phylogenetic raw data"</i></li>
- <li><i>"Phylogenetic tree"</i></li>
- <li><i>"Reaction data"</i></li>
- <li><i>"Schema"</i></li>
- <li><i>"Secondary structure"</i></li>
- <li><i>"Sequence"</i></li>
- <li><i>"Sequence motif"</i></li>
- <li><i>"Sequence profile"</i></li>
- <li><i>"Structural (3D) profile"</i></li>
- <li><i>"Structure"</i></li>
- <li><i>"Workflow"</i></li>
- </ul>
-
-
-
 
 
 <br/><h2><br/><a id="Topic">Topic</a></h2>
@@ -506,26 +432,6 @@ including free text, annotation about biological entities and phenomena,
 annotation of diverse bioinformatics resources. They do not cover 
 biology or computer science exhaustively.</p>
 
-<p>The top-level concepts are:</p>
-<ul>
-<li><i>"Biological data resources"</i></li>
-<li><i>"Nucleic acid analysis"</i></li>
-<li><i>"Protein analysis"</i></li>
-<li><i>"Sequence analysis"</i></li>
-<li><i>"Structure analysis"</i></li>
-<li><i>"Phylogenetics"</i></li>
-<li><i>"Proteomics"</i></li>
-<li><i>"Data handling"</i></li>
-<li><i>"Chemoinformatics"</i></li>
-<li><i>"Transcriptomics"</i></li>
-<li><i>"Literature and reference"</i></li>
-<li><i>"Ontologies, nomenclature and classification"</i></li>
-<li><i>"Genetics"</i></li>
-<li><i>"Systems biology"</i></li>
-<li><i>"Ecoinformatics"</i></li>
-<li><i>"Genomics"</i></li>
-<li><i>"Immunoinformatics"</i></li>
-</ul>
 
 <br/><h2><br/><a id="Format">Format</a></h2>
 <p><b>"A specific layout for encoding a specific type of data in a computer file or memory."</b></p>
@@ -538,17 +444,8 @@ biology or computer science exhaustively.</p>
 <li>Concept statements may include a reference (typically a URL) to the format specification proper.</li>
 </ul>
 
-<p>The top-level concepts are:</p>
- <ul>
- <li><i>"Binary format"</i></li>
- <li><i>"Format (typed)"</i></li>
- <li><i>"HTML"</i></li>
- <li><i>"RDF"</i></li>
- <li><i>"Textual format"</i></li>
- <li><i>"XML"</i></li>
- </ul>
 
-<p>All concepts are nested under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>, with exception of pure <i>"HTML"</i> or <i>"RDF"</i> (and <i>"BioPAX"</i>). The <i>"Format (typed)"</i> branch arranges formats by type of data and provides an additional axis over (the same set of) concepts under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>.</p>
+<p>Most concepts are nested under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>. The <i>"Format (typed)"</i> branch arranges formats by type of data and provides an additional axis over (the same set of) concepts under <i>"Binary format"</i>, <i>"Textual format"</i> and <i>"XML"</i>.</p>
 
 
 <br/><h2><br/><a id="Identifier">Identifier</a></h2>
@@ -561,15 +458,6 @@ biology or computer science exhaustively.</p>
 <li>Typically correspond to simple strings.</li>
 <li>Have concept definitions which may include a regular expression defining valid string values.</li>
 </ul>
-
-<p>The top-level concepts are:</p>
- <ul>
- <li><i>"Accession"</i></li>
- <li><i>"Identifier (hybrid)"</i></li>
- <li><i>"Identifier (typed)"</i></li>
- <li><i>"Identifier with metadata"</i></li>
- <li><i>"Name"</i></li>
- </ul>
 
 <p>As for <i>"Format"</i>, the <i>"Identifier (typed)"</i> branch provides an additional axis over (the same set of) concepts under <i>"Accession"</i> and <i>"Name"</i>.</p>
 
@@ -728,7 +616,7 @@ of B, and B is a generalisation of A.</p>
 <br/><br/><hr/><br/><h1 style="text-align:center"><a id="Sources">Sources</a></h1>
 <!--<br/><h2><br/><a id="s3.1">Current version</a></h2>-->
 
-<p>Various resources were analysed while constructing EDAM and were used as sources listing common bioinformatics concepts in scope.</p>
+<p>Various resources were analysed while constructing early versions of EDAM and were used as sources listing common bioinformatics concepts in scope. They are listed below.  Nowadays, EDAM development is mostly driven by the ELIXIR Tools & Data Services Registry (<a href="https://dev.bio.tools">bio.tools"</a>) </p>
 
 <h3>Web services and applications</h3>
 <ul>
@@ -1727,123 +1615,6 @@ http://ebi.ac.uk/edam/0000182%format=browser
 
 
 
-
-
-
-<br/><br/><hr/><br/><h1 style="text-align:center"><a id="Implementations">Existing implementations and annotations with EDAM</a></h1>
-
-
-
-<br/><h3><a id="Implementations_EMBOSS">EMBOSS</a></h3>
-<p>EMBOSS applications have been annotated using EDAM and these annotations appear in corresponding Web services.
-</p>
-<p>Annotated WSDL files (and associated XSD data schema) are available from:</p>
-<ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/list">http://www.ebi.ac.uk/soaplab/typed/services/list</a></li></ul>
-
-<p>You will see a list of service end-points with WSDL URLs. For example:
-</p><ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?wsdl">http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?wsdl</a></li></ul>
-
-<p>To see the data schema associated with a WSDL, you must replace <kbd>"?wsdl"</kbd> with <kbd>"?xsd=1"</kbd>, <kbd>"?xsd=2"</kbd> or <kbd>"?xsd=3"</kbd>. For example:
-</p><ul><li><a href="http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?xsd=1">http://www.ebi.ac.uk/soaplab/typed/services/alignment_consensus.cons.sa?xsd=1</a></li></ul>
-
-
-
-
-
-<br/><h3><a id="Implementations_BioXSD">BioXSD</a></h3>
-<p>The BioXSD XML schema (XSD) defines exchange formats of everyday 
-bioinformatics data types. BioXSD aims to serve as the common, canonical
- data model for bioinformatics Web services. It includes commonly used 
-types including sequences, sequence annotations, alignments and 
-references to resources:</p>
-<ul><li><a href="http://bioxsd.org">http://bioxsd.org</a></li></ul><p>BioXSD has been annotated with EDAM concepts.</p>
-
-
-<br/><h3><a id="Implementations_DRCAT">DRCAT biological resource catalogue</a></h3>
-<p>A catalogue of data resources (DRCAT) is being compiled as part of 
-the EMBOSS project. Each entry in DRCAT gives metadata on a data 
-resource available on the Web. The metadata includes "Query" lines 
-describe the type(s) of data available, the data format, data identifier
- (used to query) and a URL from which data can be retrieved. The 
-"Query" lines and the resources themselves are annotated with EDAM 
-concepts.</p>
-
-<p>A typical entry is shown below:</p>
-<p><small>(<i>NB.</i> The format of EDAM ids has not been upgraded yet. Will be done asap.)</small></p>
-<pre>ID PDB
-Acc DB-0070
-Name The RCSB Protein Data Bank
-Desc A repository for 3D biological macromolecular structure data.
-URL http://www.rcsb.org/pdb/
-Cat 3D structure databases
-EDAMres EDAM:0000693 | Tertiary structure
-EDAMdat EDAM:0000883 | Tertiary structure
-EDAMdat EDAM:0002085 | Structure annotation
-EDAMfmt EDAM:0001476 | pdb
-EDAMfmt EDAM:0001478 | pdbml
-EDAMfmt EDAM:0001477 | mmCIF
-EDAMfmt EDAM:0002331 | HTML 
-EDAMid EDAM:0001127 | PDB ID
-Xref SP_explicit | None
-Xref SP_FT | None
-Xref EMBL_explicit | None
-Query EDAM:0002085 | EDAM:0002331 | EDAM:0001127 | http://www.pdb.org/pdb/explore/explore.do?structureId=%s
-Query EDAM:0000693 | EDAM:0001476 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.pdb
-Query EDAM:0000693 | EDAM:0001477 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.cif
-Query EDAM:0000693 | EDAM:0001478 | EDAM:0001127 | http://www.pdb.org/pdb/files/%s.xml
-Example EDAM:0001127 | 1rbp
-Email deposit@deposit.rcsb.org
-CCmisc EMBL DR line example "1OSN", /dbxref="PDB:12GS"
-Status Referenced
-</pre>
-
-<p>DRCAT development will proceed in harmony with bioDBCore, which proposes a community-defined, uniform, generic description of the core attributes of biological databases:</p>
-
-<ul><li><a href="http://biocurator.org/biodbcore.shtml">http://biocurator.org/biodbcore.shtml</a></li></ul>
-
-<p>bioDBCore is under the auspices of the International Society for Biocuration:</p>
-
-<ul><li><a href="http://biocurator.org/home.shtml">http://biocurator.org/home.shtml</a></li></ul>
-
-<p>All enquiries to <a href="mailto:edam-core@elixir-dk.org">EDAM developers</a>.</p>
-
-
-
-
-
-
-<br/><h3><a id="Implementations_Bio-jETI">Bio-jETI</a></h3>
-<p>Bio-jETI allows 
-automatic composition of functional units into software systems 
-according to higher-level specifications using EDAM:</p>
-<ul><li><a href="http://biojeti.cs.tu-dortmund.de/about.php">http://biojeti.cs.tu-dortmund.de/about.php</a></li></ul>
-
-
-
-<br/><h3><a id="Implementations_iHOP">iHOP Web service</a></h3>
-<p>The iHOP Web service is annotated with EDAM concepts, either directly or via its use of BioXSD:</p>
-<ul><li><a href="http://ws.bioinfo.cnio.es/iHOP/#EMBRACE">http://ws.bioinfo.cnio.es/iHOP/#EMBRACE</a></li></ul>
-
-
-
-
-
-<br/><h3><a id="Implementations_CBU">CBU Web services</a></h3>
-<p>The Web services provided by the Computational Biology Unit (CBU) of the University of Bergen and its affiliated Uni Computing are annotated with EDAM concepts:</p>
-<ul><li><a href="http://cbu.bioinfo.no/wsdl">http://cbu.bioinfo.no/wsdl</a></li></ul>
-
-
-
-
-
-<br/><h3><a id="Implementations_eSysbio">eSysbio</a></h3>
-<p>eSysbio was a proof-of-concept prototype workbench for sharing and analysing bioinformatics data using public or private Web services and R scripts. eSysbio used EDAM to annotate and denote the type and format of data items submitted to the system.</p>
-<ul><li><a href="http://esysbio.org/about">http://esysbio.org/about</a></li></ul>
-
-
-<br/><h3><a id="Implementations_SEQwiki">SEQwiki</a></h3>
-<p>The SEQanswers wiki is an open catalogue of bioinformatics software tools, non-exclusively focussed on sequencing data analysis. SEQanswers tool wiki uses EDAM for annotation of the listed tools where applicable.</p>
-<ul><li><a href="http://seqanswers.com/wiki/Software">http://seqanswers.com/wiki/Software</a></li></ul>
 
 
 
