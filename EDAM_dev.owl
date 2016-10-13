@@ -41,7 +41,7 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <next_id>3771</next_id>
+        <next_id>3772</next_id>
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:date>12.05.2016 18:23 GMT</oboOther:date>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -33354,14 +33354,40 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_3770 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3770">
-        <rdfs:label>UniProt XML format</rdfs:label>
+        <rdfs:label>UniProtKB XML</rdfs:label>
+        <oboInOwl:hasExactSynonym>UniProt XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt XML format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2552"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2547"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDefinition>XML sequence format used for UniProt entries.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>UniProtKB XML sequence features format is an XML format available for downloading UniProt entries.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="http://www.uniprot.org/docs/uniprot.xsd"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3771 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3771">
+        <rdfs:label>UniProtKB RDF</rdfs:label>
+        <oboInOwl:hasExactSynonym>UniProt RDF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF/XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF/XML format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2547"/>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>UniProtKB RDF sequence features format is an RDF format (RDF/XML) available for downloading UniProt entries.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.uniprot.org/format/uniprot_rdf"/>
     </owl:Class>
     
 
