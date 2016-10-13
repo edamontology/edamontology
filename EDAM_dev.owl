@@ -30742,11 +30742,11 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3164">
         <rdfs:label>GTrack</rdfs:label>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack GTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|GSuite|BTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|BTrack|GSuite</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite GTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GTrack format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
@@ -33431,12 +33431,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
     <owl:Class rdf:about="http://edamontology.org/format_3772">
         <rdfs:label>BioJSON (BioXSD)</rdfs:label>
-        <oboInOwl:hasBroadSynonym>BioXSD</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD format</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|BioJSON|BioYAML</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioJSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioJSON (BioXSD data model)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioJSON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in JSON format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in JSON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD JSON format</oboInOwl:hasExactSynonym>
@@ -33494,12 +33494,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
     <owl:Class rdf:about="http://edamontology.org/format_3773">
         <rdfs:label>BioYAML</rdfs:label>
-        <oboInOwl:hasBroadSynonym>BioXSD</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD format</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|BioJSON|BioYAML</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioYAML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML (BioXSD data model)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML (BioXSD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioYAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in YAML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in YAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD YAML format</oboInOwl:hasExactSynonym>
@@ -33594,11 +33595,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
     <owl:Class rdf:about="http://edamontology.org/format_3775">
         <rdfs:label>GSuite</rdfs:label>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|GSuite|BTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|BTrack|GSuite</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GSuite (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite GSuite</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GSuite format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
@@ -33619,11 +33620,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
     <owl:Class rdf:about="http://edamontology.org/format_3776">
         <rdfs:label>BTrack</rdfs:label>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|GSuite|BTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>GTrack|BTrack|GSuite</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BTrack (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite BTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BTrack format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
