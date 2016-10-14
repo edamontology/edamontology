@@ -113,7 +113,7 @@
         <rdfs:label>Example</rdfs:label>
         <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadata tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
-        <rdfs:comment>Separated by bar (&apos;|&apos;).</rdfs:comment>
+        <rdfs:comment>Separated by bar (&apos;|&apos;). For more complex data and data formats, it can be a link to a website with examples, instead.</rdfs:comment>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
     
@@ -203,6 +203,17 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/regex">
         <rdfs:label>Regular expression</rdfs:label>
         <oboInOwl:hasDefinition>&apos;Regular expression&apos; concept property (&apos;regex&apos; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+    
+    
+    
+    <!-- http://edamontology.org/ontology_used -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension">
+        <rdfs:label>Ontology used</rdfs:label>
+        <oboInOwl:hasDefinition>&apos;Ontology used&apos; concept property (&apos;ontology_used&apos; metadata tag) of format concepts links to a domain ontology that is used inside the given data format, or contains a note about ontology use within the format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
@@ -27558,8 +27569,9 @@
         <oboInOwl:hasDefinition>Generic Feature Format version 3 (GFF3) of sequence features.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://sequenceontology.org/resources/gff3.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://sequenceontology.org/resources/gff3.html"/>
+        <documentation rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+        <ontology_used rdf:resource="http://www.sequenceontology.org/"/>
     </owl:Class>
     
 
@@ -29600,6 +29612,13 @@
         </rdfs:subClassOf>
         <documentation rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <documentation rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
+        <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
+        <example rdf:resource="http://bioxsd.org/accession.xml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <example rdf:resource="http://bioxsd.org/exampleFeatureRecords.html"/>
+        <ontology_used>Any ontology allowed, none mandatory. Preferrably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
         <citation rdf:resource="http://doi.org/10.1093/bioinformatics/btq391"/>
         <citation rdf:resource="http://doi.org/10.1186/1471-2105-12-494"/>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
@@ -30783,6 +30802,11 @@
         <oboInOwl:comment>'GTrack' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'GTrack' is the tabular format for representing features of sequences and genomes.</oboInOwl:comment>
         <documentation rdf:resource="http://www.gtrack.no"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.gtrack.no"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
+        <example rdf:resource="https://hyperbrowser.uio.no/hb/u/hb-superuser/h/gtrack-examples-from-the-specification"/>
         <citation rdf:resource="http://doi.org/10.1186/1471-2105-12-494"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33526,6 +33550,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <documentation rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.json"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33591,6 +33617,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <documentation rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.yaml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33651,7 +33679,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:comment>'GSuite' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'GSuite' is the tabular format for an annotated collection of individual GTrack files.</oboInOwl:comment>
         <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
-        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
+        <rdfs:seeAlso rdf:resource="https://hyperbrowser.uio.no/gsuite"/>
+        <citation rdf:resource="http://dx.doi.org/10.1101/067561"/>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1112716.1"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
