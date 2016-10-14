@@ -29531,6 +29531,7 @@
         <oboInOwl:hasBroadSynonym>BioXSD|BioJSON|BioYAML</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in XML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+XML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD XML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in XML format</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
@@ -33412,14 +33413,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>UniProt RDF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>UniProtKB RDF format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>UniProt RDF format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>UniProt RDF/XML</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>UniProt RDF/XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML format</oboInOwl:hasNarrowSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2547"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDefinition>UniProtKB RDF sequence features format is an RDF format (RDF/XML) available for downloading UniProt entries.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>UniProtKB RDF sequence features format is an RDF format available for downloading UniProt entries (in RDF/XML).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="http://www.uniprot.org/format/uniprot_rdf"/>
@@ -33437,12 +33438,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack BioJSON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|GTrack BioJSON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioJSON format (BioXSD)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in JSON format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in JSON</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD JSON format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD JSON</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioXSD BioJSON format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioXSD BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+JSON</oboInOwl:hasExactSynonym>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>BioJSON is a BioXSD schema-based JSON format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web applications and APIs, and object-oriented programming.</oboInOwl:hasDefinition>
         <oboInOwl:comment>Work in progress. 'BioXSD' belongs to the 'BioXSD|GTrack' ecosystem of generic formats. 'BioJSON' is the JSON format based on the common, unified 'BioXSD data model', a.k.a. 'BioXSD|BioJSON|BioYAML'.</oboInOwl:comment>
@@ -33498,6 +33499,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioXSD BioYAML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioYAML (BioXSD data model)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioYAML (BioXSD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML format (BioXSD)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack BioYAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|GTrack BioYAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioYAML</oboInOwl:hasExactSynonym>
@@ -33505,8 +33507,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioXSD in YAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD YAML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD YAML</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioXSD BioYAML format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioXSD BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+YAML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioYAML format</oboInOwl:hasExactSynonym>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>BioYAML is a BioXSD schema-based YAML format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web APIs, human readability and editting, and object-oriented programming.</oboInOwl:hasDefinition>
