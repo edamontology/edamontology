@@ -31804,12 +31804,28 @@
     <!-- http://edamontology.org/format_3556 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3556">
-        <rdfs:label>MHT</rdfs:label>
-        <rdfs:label>MIME  HTML format for Web pages, which can include external resources, including images, Flash animations and so on. </rdfs:label>
+        <rdfs:label>MHTML</rdfs:label>
+        <oboInOwl:hasExactSynonym>MHT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MIME  HTML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MHTML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MHT format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MIME  HTML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>HTML email format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>HTML email message format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart format</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart message</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart message format</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition>MIME  HTML format for Web pages, which can include external resources, including images, Flash animations and so on. </oboInOwl:hasDefinition>
+        <oboInOwl:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons incuded in EDAM as a specialisation of 'HTML'.</oboInOwl:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2331"/>
-        <oboInOwl:hasDefinition>EMBL entry format wrapped in HTML elements.</oboInOwl:hasDefinition>
         <created_in>1.9</created_in>
-        <oboInOwl:hasExactSynonym>MHTML</oboInOwl:hasExactSynonym>
+        <file_extension>mhtml|mht|eml</file_extension>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/MHTML"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
+        <documentation rdf:resource="https://tools.ietf.org/html/rfc2557"/>
+        <oboInOwl:hasDbXref rdf:resource="https://tools.ietf.org/html/rfc2557"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
