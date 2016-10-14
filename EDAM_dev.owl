@@ -130,6 +130,20 @@
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
     
+    
+    
+    <!-- http://edamontology.org/information_standard -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/information_standard">
+        <rdfs:label>Information standard</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Minimum information standard</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Minimum information checklist</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>&apos;Information standard&apos; trailing modifier (qualifier, &apos;information_standard&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an information standard supported by the given data format.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>"Supported by the given data format" here means, that the given format enables representation of data that satisfies the information standard.</oboInOwl:comment>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
 
 
     <!-- http://edamontology.org/isdebtag -->
@@ -141,14 +155,26 @@
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
     
-
-
+    
+    
     <!-- http://edamontology.org/media_type -->
-
+    
     <owl:AnnotationProperty rdf:about="http://edamontology.org/media_type">
         <rdfs:label>Media type</rdfs:label>
         <oboInOwl:hasNarrowSynonym>MIME type</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>&apos;Media type&apos; trailing modifier (qualifier, &apos;media_type&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to a page specifying a media type of the given data format.</oboInOwl:hasDefinition>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
+    
+    
+    <!-- http://edamontology.org/organisation -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/organisation">
+        <rdfs:label>Organisation</rdfs:label>
+        <oboInOwl:hasExactSynonym>Organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>&apos;Organisation&apos; trailing modifier (qualifier, &apos;organisation&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an organisation that developed, standardised, and maintains the given data format.</oboInOwl:hasDefinition>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
@@ -33514,7 +33540,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:comment>Work in progress. 'BioXSD' belongs to the 'BioXSD|GTrack' ecosystem of generic formats. 'BioYAML' is the YAML format based on the common, unified 'BioXSD data model', a.k.a. 'BioXSD|BioJSON|BioYAML'.</oboInOwl:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1919"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3750"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
         <rdfs:subClassOf>
