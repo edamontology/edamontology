@@ -41,7 +41,7 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <next_id>3770</next_id>
+        <next_id>3777</next_id>
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:date>12.05.2016 18:23 GMT</oboOther:date>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -113,7 +113,7 @@
         <rdfs:label>Example</rdfs:label>
         <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadata tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
-        <rdfs:comment>Separated by bar (&apos;|&apos;).</rdfs:comment>
+        <rdfs:comment>Separated by bar (&apos;|&apos;). For more complex data and data formats, it can be a link to a website with examples, instead.</rdfs:comment>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
     
@@ -125,8 +125,23 @@
         <rdfs:label>File extension</rdfs:label>
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferrably not all capital characters.</rdfs:comment>
+        <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+    
+    
+    
+    <!-- http://edamontology.org/information_standard -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/information_standard">
+        <rdfs:label>Information standard</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Minimum information standard</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Minimum information checklist</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>&apos;Information standard&apos; trailing modifier (qualifier, &apos;information_standard&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an information standard supported by the given data format.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>"Supported by the given data format" here means, that the given format enables representation of data that satisfies the information standard.</oboInOwl:comment>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
     
 
@@ -135,15 +150,15 @@
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/isdebtag">
         <rdfs:label>isdebtag</rdfs:label>
-        <oboInOwl:hasDefinition>When &apos;true&apos;, the term has been proposed or is supported within Debian Med as a tag.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed or is supported within Debian as a tag.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
     
-
-
+    
+    
     <!-- http://edamontology.org/media_type -->
-
+    
     <owl:AnnotationProperty rdf:about="http://edamontology.org/media_type">
         <rdfs:label>Media type</rdfs:label>
         <oboInOwl:hasNarrowSynonym>MIME type</oboInOwl:hasNarrowSynonym>
@@ -152,11 +167,23 @@
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
     
+    
+    
+    <!-- http://edamontology.org/organisation -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/organisation">
+        <rdfs:label>Organisation</rdfs:label>
+        <oboInOwl:hasExactSynonym>Organization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>&apos;Organisation&apos; trailing modifier (qualifier, &apos;organisation&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an organisation that developed, standardised, and maintains the given data format.</oboInOwl:hasDefinition>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
 
 
-    <!-- http://edamontology.org/noClue -->
+    <!-- http://edamontology.org/comment_handle -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/noClue"/>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/comment_handle"/>
     
 
 
@@ -176,6 +203,17 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/regex">
         <rdfs:label>Regular expression</rdfs:label>
         <oboInOwl:hasDefinition>&apos;Regular expression&apos; concept property (&apos;regex&apos; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+    
+    
+    
+    <!-- http://edamontology.org/ontology_used -->
+    
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension">
+        <rdfs:label>Ontology used</rdfs:label>
+        <oboInOwl:hasDefinition>&apos;Ontology used&apos; concept property (&apos;ontology_used&apos; metadata tag) of format concepts links to a domain ontology that is used inside the given data format, or contains a note about ontology use within the format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
@@ -27531,8 +27569,9 @@
         <oboInOwl:hasDefinition>Generic Feature Format version 3 (GFF3) of sequence features.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://sequenceontology.org/resources/gff3.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://sequenceontology.org/resources/gff3.html"/>
+        <documentation rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+        <ontology_used rdf:resource="http://www.sequenceontology.org/"/>
     </owl:Class>
     
 
@@ -29506,11 +29545,12 @@
     <!-- http://edamontology.org/format_2350 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_2350">
-        <rdfs:label>Format (typed)</rdfs:label>
+        <rdfs:label>Format (by type of data)</rdfs:label>
+        <oboInOwl:hasExactSynonym>Format (typed)</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
         <rdfs:comment>This concept exists only to assist EDAM maintenance and navigation in graphical browsers.  It does not add semantic information. The concept branch under &apos;Format (typed)&apos; provides an alternative organisation of the concepts nested under the other top-level branches (&apos;Binary&apos;, &apos;HTML&apos;, &apos;RDF&apos;, &apos;Text&apos; and &apos;XML&apos;. All concepts under here are already included under those branches.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>A broad class of format distinguished by the scientific nature of the data that is identified.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A placeholder concept for visual navigation by dividing data formats by the content of the data that is represented.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -29520,7 +29560,21 @@
     <!-- http://edamontology.org/format_2352 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_2352">
-        <rdfs:label>BioXSD</rdfs:label>
+        <rdfs:label>BioXSD (XML)</rdfs:label>
+        <oboInOwl:hasBroadSynonym>BioXSD</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>BioXSD format</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>BioXSD|BioJSON|BioYAML</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in XML format</oboInOwl:hasExactSynonym>
+        <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>BioXSD schema-based XML format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, Web services, and object-oriented programming.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>'BioXSD' belongs to the 'BioXSD|GTrack' ecosystem of generic formats. 'BioXSD in XML' is the XML format based on the common, unified 'BioXSD data model', a.k.a. 'BioXSD|BioJSON|BioYAML'.</oboInOwl:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1919"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
@@ -29544,13 +29598,30 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>BioXSD XML format</oboInOwl:hasExactSynonym>
-        <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>BioXSD XML format of basic bioinformatics types of data (sequence records, alignments, feature records, references to resources, and more).</oboInOwl:hasDefinition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1772"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <documentation rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <documentation rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
+        <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
+        <example rdf:resource="http://bioxsd.org/accession.xml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <example rdf:resource="http://bioxsd.org/exampleFeatureRecords.html"/>
+        <ontology_used>Any ontology allowed, none mandatory. Preferrably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
         <citation rdf:resource="http://doi.org/10.1093/bioinformatics/btq391"/>
         <citation rdf:resource="http://doi.org/10.1186/1471-2105-12-494"/>
+        <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -30717,12 +30788,25 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3164">
         <rdfs:label>GTrack</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2206"/>
         <created_in>1.0</created_in>
-        <oboInOwl:hasDefinition>GTrack is an optimised tabular format for genome/sequence feature tracks unifying the power of other tabular formats (e.g. GFF3, BED, WIG).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>GTrack is a generic and optimised tabular format for genome or sequence feature tracks. GTrack unifies the power of other track formats (e.g. GFF3, BED, WIG), and while optimised in size, adds more flexibility, customisation, and automation ("machine understandability").</oboInOwl:hasDefinition>
+        <oboInOwl:comment>'GTrack' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'GTrack' is the tabular format for representing features of sequences and genomes.</oboInOwl:comment>
         <documentation rdf:resource="http://www.gtrack.no"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.gtrack.no"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
+        <example rdf:resource="https://hyperbrowser.uio.no/hb/u/hb-superuser/h/gtrack-examples-from-the-specification"/>
         <citation rdf:resource="http://doi.org/10.1186/1471-2105-12-494"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -31448,6 +31532,7 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+        <oboInOwl:hasDbXRef rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
     </owl:Class>
     
 
@@ -31743,12 +31828,28 @@
     <!-- http://edamontology.org/format_3556 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3556">
-        <rdfs:label>MHT</rdfs:label>
-        <rdfs:label>MIME  HTML format for Web pages, which can include external resources, including images, Flash animations and so on. </rdfs:label>
+        <rdfs:label>MHTML</rdfs:label>
+        <oboInOwl:hasExactSynonym>MHT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MIME  HTML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MHTML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MHT format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MIME  HTML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>HTML email format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>HTML email message format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart format</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart message</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>MIME multipart message format</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDefinition>MIME  HTML format for Web pages, which can include external resources, including images, Flash animations and so on. </oboInOwl:hasDefinition>
+        <oboInOwl:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons incuded in EDAM as a specialisation of 'HTML'.</oboInOwl:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2331"/>
-        <oboInOwl:hasDefinition>EMBL entry format wrapped in HTML elements.</oboInOwl:hasDefinition>
         <created_in>1.9</created_in>
-        <oboInOwl:hasExactSynonym>MHTML</oboInOwl:hasExactSynonym>
+        <file_extension>mhtml|mht|eml</file_extension>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/MHTML"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
+        <documentation rdf:resource="https://tools.ietf.org/html/rfc2557"/>
+        <oboInOwl:hasDbXref rdf:resource="https://tools.ietf.org/html/rfc2557"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -33267,9 +33368,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>YAML Ain&apos;t Markup Language</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>YAML (YAML Ain&apos;t Markup Language) is a human-readable tree-structured data serialisation language.</oboInOwl:hasDefinition>
         <file_extension>yaml|yml</file_extension>
-        <documentation rdf:resource="http://yaml.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/YML"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <documentation rdf:resource="http://yaml.org"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/> 
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/YAML"/>
     </owl:Class>
@@ -33283,9 +33384,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>Tabular data represented as values in a text file delimited by some character.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Tabular format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>Tabular format</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>Delimiter-separated values</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Delimiter-separated_values</rdfs:seeAlso>
+        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Delimiter-separated_values"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -33298,9 +33399,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:label>CSV</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3751"/>
         <oboInOwl:hasExactSynonym>Comma-separated values</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso>http://filext.com/file-extension/CSV</rdfs:seeAlso>
+        <file_extension>csv</file_extension>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/CSV"/>
         <created_in>1.16</created_in>
-        <rdfs:seeAlso>http://www.iana.org/assignments/media-types/text/csv</rdfs:seeAlso>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
         <oboInOwl:hasDefinition>Tabular data represented as comma-separated values in a text file.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33353,14 +33456,259 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_3770 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3770">
-        <rdfs:label>UniProt XML format</rdfs:label>
+        <rdfs:label>UniProtKB XML</rdfs:label>
+        <oboInOwl:hasExactSynonym>UniProt XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt XML format</oboInOwl:hasExactSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2552"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2547"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDefinition>XML sequence format used for UniProt entries.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>UniProtKB XML sequence features format is an XML format available for downloading UniProt entries.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="http://www.uniprot.org/docs/uniprot.xsd"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3771 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3771">
+        <rdfs:label>UniProtKB RDF</rdfs:label>
+        <oboInOwl:hasExactSynonym>UniProt RDF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML format</oboInOwl:hasNarrowSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2547"/>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>UniProtKB RDF sequence features format is an RDF format available for downloading UniProt entries (in RDF/XML).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.uniprot.org/format/uniprot_rdf"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3772 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3772">
+        <rdfs:label>BioJSON (BioXSD)</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioXSD BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioJSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioJSON (BioXSD data model)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioJSON format (BioXSD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in JSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in JSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD JSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD JSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+JSON</oboInOwl:hasExactSynonym>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>BioJSON is a BioXSD schema-based JSON format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web applications and APIs, and object-oriented programming.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>Work in progress. 'BioXSD' belongs to the 'BioXSD|GTrack' ecosystem of generic formats. 'BioJSON' is the JSON format based on the common, unified 'BioXSD data model', a.k.a. 'BioXSD|BioJSON|BioYAML'.</oboInOwl:comment>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1919"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1772"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://bioxsd.org"/>
+        <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.json"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3773 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3773">
+        <rdfs:label>BioYAML</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioXSD BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD BioYAML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML (BioXSD data model)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML (BioXSD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML format (BioXSD)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|BioJSON|BioYAML BioYAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in YAML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD in YAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD YAML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD YAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD+YAML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML format</oboInOwl:hasExactSynonym>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>BioYAML is a BioXSD schema-based YAML format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web APIs, human readability and editting, and object-oriented programming.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>Work in progress. 'BioXSD' belongs to the 'BioXSD|GTrack' ecosystem of generic formats. 'BioYAML' is the YAML format based on the common, unified 'BioXSD data model', a.k.a. 'BioXSD|BioJSON|BioYAML'.</oboInOwl:comment>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1919"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3750"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1772"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://bioxsd.org"/>
+        <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.yaml"/>
+        <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3774 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3774">
+        <rdfs:label>BioJSON (Jalview)</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioJSON format (Jalview)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Jalview BioJSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Jalview BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>JSON format (Jalview)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>JSON (Jalview)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Jalview JSON format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Jalview JSON</oboInOwl:hasExactSynonym>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>BioJSON.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://jalview.github.io/biojson"/>
+        <oboInOwl:hasDbXref rdf:resource="http://jalview.github.io/biojson"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3775 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3775">
+        <rdfs:label>GSuite</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GSuite (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite GSuite</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GSuite format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>GSuite is a tabular format for collections of genome or sequence feature tracks, suitable for integrative multi-track analysis. GSuite contains links to genome/sequence tracks, with additional metadata.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>'GSuite' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'GSuite' is the tabular format for an annotated collection of individual GTrack files.</oboInOwl:comment>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
+        <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
+        <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
+        <rdfs:seeAlso rdf:resource="https://hyperbrowser.uio.no/gsuite"/>
+        <citation rdf:resource="http://dx.doi.org/10.1101/067561"/>
+        <citation rdf:resource="http://doi.org/10.7490/f1000research.1112716.1"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3776 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3776">
+        <rdfs:label>BTrack</rdfs:label>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BTrack (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite BTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BTrack format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2548"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>BTrack is an HDF5-based binary format for genome or sequence feature tracks and their collections, suitable for integrative multi-track analysis. BTrack is a binary, compressed alternative to the GTrack and GSuite formats.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>'BTrack' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'BTrack' is the binary, optionally compressed HDF5-based version of the GTrack and GSuite formats.</oboInOwl:comment>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
 
@@ -44840,14 +45188,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>Format recognition</oboInOwl:hasExactSynonym>
         <rdfs:comment>&apos;Format recognition&apos; is not a bioinformatics-specific operation, but of great relevance in bioinformatics. Should be removed from EDAM if/when captured satisfactorily in a suitable domain-generic ontology.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Format inference</oboInOwl:hasExactSynonym>
-        <noClue rdf:resource="http://edamontology.org/noClue"/>
+        <comment_handle rdf:resource="http://edamontology.org/comment_handle"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
     <owl:Axiom>
         <rdfs:comment>The has_input &quot;Data&quot; (data_0006) may cause visualisation or other problems although ontologically correct. But on the other hand it may be useful to distinguish from nullary operations without inputs.</rdfs:comment>
-        <owl:annotatedProperty rdf:resource="http://edamontology.org/noClue"/>
-        <owl:annotatedTarget rdf:resource="http://edamontology.org/noClue"/>
+        <owl:annotatedProperty rdf:resource="http://edamontology.org/comment_handle"/>
+        <owl:annotatedTarget rdf:resource="http://edamontology.org/comment_handle"/>
         <owl:annotatedSource rdf:resource="http://edamontology.org/operation_3357"/>
     </owl:Axiom>
     
@@ -46515,7 +46863,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Peptide-spectrum-matching</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein inference</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Identification of protein, for example from one or more peptide identifications by tandem mass spectrometry.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
