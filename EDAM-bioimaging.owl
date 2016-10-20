@@ -32,7 +32,7 @@
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Jon Ison</oboInOwl:savedBy>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -41,19 +41,22 @@
         <oboOther:remark>EDAM ontology subset created on behalf of NEUBIAS.</oboOther:remark>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
-        <oboOther:date>12.05.2016 18:23 GMT</oboOther:date>
+        <oboOther:date>20.10.2016 10:41 GMT</oboOther:date>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>Jon Ison</dc:creator>
+	<dc:creator>Aaron Ponti</dc:creator>
+	<dc:creator>Petter Ranefall</dc:creator>
+	<dc:creator>Jeremy Pike</dc:creator>
+	<dc:creator>Hervé Ménager</dc:creator>
+	<dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioimaging operations, data types, formats, identifiers and topics</dc:title>
-        <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
-        <next_id>3751</next_id>
+        <next_id></next_id>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
-        <dc:creator>Hervé Ménager</dc:creator>
-        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorization of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+        <oboOther:remark>EDAM-Bioimaging is an extension to the EDAM ontology (edamontology.org) for bioimaging, developed in collaboration with partners from NEUBIAS (neubias.org).</oboOther:remark>
         <doap:Version>1.16_dev</doap:Version>
-        <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM-Bioimaging.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
     </owl:Ontology>
     
