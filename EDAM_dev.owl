@@ -42,7 +42,7 @@
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <next_id>3777</next_id>
-        <oboOther:date>24.10.2016 01:13 GMT</oboOther:date>
+        <oboOther:date>24.10.2016 11:48 GMT</oboOther:date>
         <doap:Version>1.16_dev</doap:Version>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
@@ -23994,6 +23994,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_3753">
         <rdfs:label>Over-representation report</rdfs:label>
         <oboInOwl:hasExactSynonym>Enrichment report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Functional enrichment report</oboInOwl:hasNarrowSynonym>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>An informative report containing a ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data.</oboInOwl:hasDefinition>
@@ -45830,6 +45831,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>Categories from a relevant ontology can be used. The input is typically a set of genes or other biological objects, possibly represented by their identifiers, and the output of the analysis is typically a ranked list of categories, each associated with a statistical metric of over-/under-representation within the studied data.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Enrichment analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Enrichment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Functional enrichment</oboInOwl:hasNarrowSynonym>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Analysis of a set of objects, such as genes, annotated with given categories, where eventual over-/under-representation of certain categories within the studied set of objects is revealed.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -46731,7 +46733,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Differential protein expression analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2997"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3742"/>
-        <oboInOwl:hasExactSynonym>Differential protein analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>Differential protein analysis</oboInOwl:hasBroadSynonym>
         <created_in>1.15</created_in>
         <oboInOwl:hasDefinition>The analysis, using proteomics techniques, to identify proteins whose encoding genes are differentially expressed under a given experimental setup.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -46743,7 +46745,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3742 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3742">
-        <rdfs:label>Differential expression analysis</rdfs:label>
+        <rdfs:label>Differential gene expression analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2424"/>
         <oboInOwl:hasDefinition>The analysis, using any of diverse techniques, to identify genes that are differentially expressed under a given experimental setup.</oboInOwl:hasDefinition>
         <created_in>1.15</created_in>
