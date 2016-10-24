@@ -41,8 +41,8 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <next_id>3777</next_id>
-        <oboOther:date>24.10.2016 11:48 GMT</oboOther:date>
+        <next_id>3778</next_id>
+        <oboOther:date>24.10.2016 15:26 GMT</oboOther:date>
         <doap:Version>1.16_dev</doap:Version>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
@@ -33717,6 +33717,58 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>BTrack is an HDF5-based binary format for genome or sequence feature tracks and their collections, suitable for integrative multi-track analysis. BTrack is a binary, compressed alternative to the GTrack and GSuite formats.</oboInOwl:hasDefinition>
         <oboInOwl:comment>'BTrack' belongs to the 'BioXSD|GTrack' ecosystem of generic formats, and particular to its subset, the 'GTrack ecosystem' (GTrack, GSuite, BTrack). 'BTrack' is the binary, optionally compressed HDF5-based version of the GTrack and GSuite formats.</oboInOwl:comment>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3777 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3777">
+        <rdfs:label>MCPD</rdfs:label>
+        <oboInOwl:hasExactSynonym>MCPD format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Multi-Crop Passport Descriptors</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Multi-Crop Passport Descriptors format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FAO MCPD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bioversity MCPD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>IPGRI MCPD</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MCPD V.1</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MCPD V.2</oboInOwl:hasNarrowSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3706"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2350"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>The FAO/Bioversity/IPGRI Multi-Crop Passport Descriptors (MCPD) is an international standard format for exchange of germplasm information.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>Multi-Crop Passport Descriptors is a format available in 2 successive versions, V.1 (FAO/Bioversity 2001) and V.2 (FAO/IPGRI 2012).</oboInOwl:comment>
+        <documentation rdf:resource="https://www.bioversityinternational.org/fileadmin/user_upload/online_library/publications/pdfs/FAO-Bioversity_multi_crop_passport_descriptors_V_2_Final_rev_1526.pdf"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.bioversityinternational.org/fileadmin/user_upload/online_library/publications/pdfs/FAO-Bioversity_multi_crop_passport_descriptors_V_2_Final_rev_1526.pdf"/>
+        <documentation rdf:resource="https://www.bioversityinternational.org/e-library/publications/detail/faobioversity-multi-crop-passport-descriptors-v2-mcpd-v2/"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.bioversityinternational.org/e-library/publications/detail/faobioversity-multi-crop-passport-descriptors-v2-mcpd-v2/"/>
+        <documentation rdf:resource="https://www.bioversityinternational.org/fileadmin/_migrated/uploads/tx_news/FAO_IPGRI_Multi-Crop_Passport_Descriptors__MCPD__124_01.pdf"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.bioversityinternational.org/fileadmin/_migrated/uploads/tx_news/FAO_IPGRI_Multi-Crop_Passport_Descriptors__MCPD__124_01.pdf"/>
+        <documentation rdf:resource="https://www.bioversityinternational.org/e-library/publications/detail/faoipgri-multi-crop-passport-descriptors-mcpd/"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.bioversityinternational.org/e-library/publications/detail/faoipgri-multi-crop-passport-descriptors-mcpd/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multi-Crop_Passport_Descriptor"/>
+        <organisation rdf:resource="http://www.fao.org"/>
+        <organisation rdf:resource="https://www.bioversityinternational.org/"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
