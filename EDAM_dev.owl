@@ -41,7 +41,7 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <next_id>3786</next_id>
+        <next_id>3791</next_id>
         <oboOther:date>31.10.2016 23:53 GMT</oboOther:date>
         <doap:Version>1.16_dev</doap:Version>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -24116,6 +24116,19 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
     
+    
+    
+    <!-- http://edamontology.org/data_3786 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/data_3786">
+        <rdfs:label>Query script</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>     
+        <oboInOwl:hasDefinition>A structured query, in form of a script, that defines a database search task.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+    </owl:Class>
+    
 
 
     <!-- http://edamontology.org/format_1196 -->
@@ -32588,7 +32601,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3621">
         <rdfs:label>SQLite format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <documentation>https://www.sqlite.org/fileformat2.html</documentation>
+        <documentation rdf:resource="https://www.sqlite.org/fileformat2.html"/>
         <oboInOwl:hasDefinition>Data format used by the SQLite database.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32603,7 +32616,7 @@
         <rdfs:label>Gemini SQLite format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2921"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3621"/>
-        <documentation>https://gemini.readthedocs.org/en/latest/content/quick_start.html</documentation>
+        <documentation rdf:resource="https://gemini.readthedocs.org/en/latest/content/quick_start.html"/>
         <created_in>1.11</created_in>
         <oboInOwl:hasDefinition>Data format used by the SQLite database conformant to the Gemini schema.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32780,6 +32793,7 @@
         <file_extension>oxlicg</file_extension>
         <oboInOwl:hasDefinition>A list of k-mers and their occurences in a dataset. Can also be used as an implicit De Bruijn graph.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://khmer.readthedocs.org/en/v2.0/dev/binary-file-formats.html#countgraph"/>
+        <oboInOwl:hasDbXref rdf:resource="http://khmer.readthedocs.org/en/v2.0/dev/binary-file-formats.html#countgraph"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph"/>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.oxli.countgraph"/>
     </owl:Class>
@@ -33910,6 +33924,80 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDbXref rdf:resource="http://2013.bionlp-st.org/file-formats"/>
         <example rdf:resource="http://www.nactem.ac.uk/tsujii/GENIA/SharedTask/detail.shtml#format"/>
         <example rdf:resource="http://brat.nlplab.org/examples.html"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3787 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3787">
+        <rdfs:label>Query language</rdfs:label>
+        <oboInOwl:hasExactSynonym>Query format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3786"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>A query language (format) for structured database queries.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3788 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3788">
+        <rdfs:label>SQL</rdfs:label>
+        <oboInOwl:hasExactSynonym>Structured Query Language</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>SQL (Structured Query Language) is the de-facto standard query language (format of queries) for querying and manipulating data in relational databases.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <file_extension>sql</file_extension>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/SQL"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sql"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/sql"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/SQL"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3789 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3789">
+        <rdfs:label>XQuery</rdfs:label>
+        <oboInOwl:hasExactSynonym>XML Query</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>XQuery (XML Query) is a query language (format of queries) for querying and manipulating structured and unstructured data, usually in the form of XML, text, and with vendor-specific extensions for other data formats (JSON, binary, etc.).</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <file_extension>xq|xqy|xquery</file_extension>
+        <documentation rdf:resource="https://www.w3.org/XML/Query/"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.w3.org/XML/Query/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/XQuery"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3790 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3790">
+        <rdfs:label>SPARQL</rdfs:label>
+        <oboInOwl:hasExactSynonym>SPARQL Protocol and RDF Query Language</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>SPARQL (SPARQL Protocol and RDF Query Language) is a semantic query language for querying and manipulating data stored in Resource Description Framework (RDF) format.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="https://www.w3.org/TR/sparql11-query/"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.w3.org/TR/sparql11-query/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/SPARQL"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
