@@ -1,7 +1,7 @@
 format-version: 1.2
-data-version: 1.0
-date: 13:01:2012 18:00 ! Always GMT (UTC) or British Summer Time
-saved-by: Matus Kalas
+data-version: 1.1
+date: 05:07:2012 18:00 ! Always GMT (UTC) or British Summer Time
+saved-by: Jon Ison
 subsetdef: operations "EDAM operations" !{note="Singular, bioinformatics-specific operations that are functions of tools, workflows, or scripts, or can be performed manually."}
 subsetdef: data "EDAM types of data" !{note="Types of data that are relevant in bioinformatics, commonly used as inputs, outputs, or intermediate data of analyses, or provided by databases and portals."}
 subsetdef: topics "EDAM topics" !{note="Application domains of bioinformatics tools and resources; topics of research, studies, or analyses; approaches, techniques, and paradigms within - or directly related to - bioinformatics."}
@@ -17,14 +17,8 @@ idspace: EDAM http://edamontology.org/ "EDAM Relations and Concept Attributes"
 default-relationship-id-prefix: EDAM
 remark: EDAM (EMBRACE Data And Methods) is an ontology of bioinformatics operations (tool, application, or workflow functions), types of data, topics (application domains), and data formats. The applications of EDAM are within organising tools and data, finding suitable tools in catalogues, and integrating them into complex applications or workflows. Semantic annotations with EDAM are applicable to diverse entities such as for example Web services, databases, programmatic libraries, standalone tools and toolkits, interactive applications, data schemas, data sets, or publications within bioinformatics. Annotation with EDAM may also contribute to data provenance, and EDAM terms and synonyms can be used in text mining. EDAM - and in particular the EDAM Data sub-ontology - serves also as a markup vocabulary for bioinformatics data on the Semantic Web.
 remark: EDAM editors: Jon Ison and Matus Kalas. Co-authors: Inge Jonassen, Hamish McWilliam, James Malone, Rodrigo Lopez, Helen Parkinson, Steve Pettifer, and Peter Rice. Funding: No funding targetted exclusively the development of EDAM; contibutions from these projects: EMBRACE (FP6, EU), EMBOSS (BBSRC, UK), eSysbio and FUGE Bioinformatics Platform (both Research Council of Norway). See http://edamontology.org for documentation and licence.
-remark: NB.! This is a version for the NCBO BioPortal with all attribute modifiers commented out (due to a current problem at BioPortal). Download the full, canonical version from http://edamontology.org/ontology?format=obo (always the latest stable version) or http://edamontology.org/EDAM_1.0.obo (version 1.0).
-
-
-
-
-
-
-
+next_id:3234  !{since=1.2}
+remark: NB. This is a version for the NCBO BioPortal with all attribute modifiers commented out (due to a problem at BioPortal). Download the full, canonical version from http://edamontology.org/ontology?format=obo (always the latest stable version), or http://edamontology.org/EDAM.obo for latest stable and http://edamontology.org/EDAM_1.1.obo for version 1.1.
 
 
 
@@ -380,17 +374,17 @@ synonym: "Computational tool" RELATED [http://edamontology.org] !{note="Computat
 synonym: "Operation" EXACT [http://wsio.org/operation_001]
 synonym: "function" BROAD [http://purl.org/biotop/biotop.owl#Function] !{note="Operation is a function that has input(s) and output(s) that are data. In addition, one may think of 'biotop:Disposition' (parent of 'biotop:Function') being also a 'biotop:Quality'."}
 synonym: "function" BROAD [http://semanticscience.org/resource/SIO_000017]
-synonym: "continuant" BROAD [snap:Continuant]
+synonym: "continuant" BROAD [http://purl.obolibrary.org/obo/BFO_00000??, http://www.ifomis.org/bfo/1.1/snap#Continuant]
 synonym: "Function" BROAD [http://www.onto-med.de/ontologies/gfo.owl#Function] !{note="However, operation is not a GFO 'Concept' present only in someone's mind."}
 synonym: "Subroutine" NARROW [http://en.wikipedia.org/wiki/Subroutine, http://en.wikipedia.org/wiki/Function_(computer_science)]
 synonym: "Function (mathematics)" NARROW [http://en.wikipedia.org/wiki/Function_(mathematics)]
 synonym: "function" RELATED [sumo:Function] ! Related external synonyms in EDAM without a note is usually almost exact.
 synonym: "Perpetuant" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Perpetuant] !{note="GFO 'Perpetuant' is in general broader than operation, but it may be seen narrower in the sense of being a concrete individual and exhibiting presentials."}
-synonym: "function" RELATED [snap:Function] !{note="BFO 'function' is narrower in the sense that it is a 'realizable_entity' (snap:RealizableEntity) and a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it does not need to have input(s) and output(s)."}
+synonym: "function" RELATED [http://purl.obolibrary.org/obo/BFO_0000034, http://www.ifomis.org/bfo/1.1/snap#Function] !{note="BFO 'function' is narrower in the sense that it is a 'realizable_entity' (snap:RealizableEntity) and a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it does not need to have input(s) and output(s)."}
 synonym: "quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality] !{note="Function, including an operation, can be a quality/attribute of e.g. a computational tool."}
-synonym: "quality" RELATED [snap:Quality] !{note="Function, including an operation, can have a role of a quality/attribute in semantic annotation of e.g. a computational tool."}
+synonym: "quality" RELATED [http://purl.obolibrary.org/obo/BFO_0000019, http://www.ifomis.org/bfo/1.1/snap#Quality] !{note="Function, including an operation, can have a role of a quality/attribute in semantic annotation of e.g. a computational tool."}
 synonym: "process" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process] !{note="Process can have a function (as its quality/attribute), and can also have (perform) an operation with inputs and outputs."}
-synonym: "process" RELATED [span:Process] !{note="Process can have a function (as its quality/attribute), and can also have (perform) an operation with inputs and outputs."}
+synonym: "process" RELATED [http://purl.obolibrary.org/obo/BFO_00000??, http://www.ifomis.org/bfo/1.1/span#Process] !{note="Process can have a function (as its quality/attribute), and can also have (perform) an operation with inputs and outputs."}
 synonym: "Process" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Process] !{note="Process can have a function (as its quality/attribute), and can also have (perform) an operation with inputs and outputs."}
 synonym: "information processing" RELATED [http://www.ebi.ac.uk/swo/SWO_0000003] !{note="However, one may think that an operation is not a process."}
 synonym: "information processing" RELATED [http://semanticscience.org/resource/SIO_000649] !{note="However, one may think that an operation is not a process and not a physical entity."}
@@ -411,7 +405,7 @@ synonym: "Datum" EXACT [http://edamontology.org] !{note="The multiplicity is not
 synonym: "Data record" EXACT [http://edamontology.org] !{note="Currently we are for practical purposes not distinguishing a data record (a tool-understandable information artefact) from data or datum (its content, the tool-understandable information)."}
 synonym: "Data set" EXACT [http://edamontology.org] !{note="The multiplicity is not taken into account."}
 synonym: "Data" EXACT [http://wsio.org/data_002]
-synonym: "continuant" BROAD [snap:Continuant]
+synonym: "continuant" BROAD [http://purl.obolibrary.org/obo/BFO_00000??, http://www.ifomis.org/bfo/1.1/snap#Continuant]
 synonym: "digital entity" RELATED [http://purl.org/biotop/biotop.owl#DigitalEntity]
 synonym: "Perpetuant" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Perpetuant] !{note="GFO 'Perpetuant' is in general broader than data, but it may be seen narrower in the sense of being a concrete individual."}
 synonym: "data item" RELATED [http://semanticscience.org/resource/SIO_000069] !{note="Data does theoretically not need to have a purpose, but in all regular cases it does. Remark: EDAM Data sub-ontology focuses on scientific data (SIO_000472), in particular the bioinformatics (SIO_010065) and biological (SIO_010019)."}
@@ -428,13 +422,13 @@ namespace: topic
 subset: topics
 def: "A category denoting a rather broad domain or field of interest, of study, application, work, data, or technology. Topics have no clearly defined borders between each other." [http://edamontology.org]
 synonym: "quality" BROAD [http://purl.org/biotop/biotop.owl#Quality]
-synonym: "continuant" BROAD [snap:Continuant]
+synonym: "continuant" BROAD [http://purl.obolibrary.org/obo/BFO_00000??, http://www.ifomis.org/bfo/1.1/snap#Continuant]
 synonym: "field of study" RELATED [sumo:FiledOfStudy] ! Related external synonym in EDAM without a note is usually almost exact.
 synonym: "Area of Research" RELATED [http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research]
 synonym: "Category" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Category] !{note="GFO 'Category' is in general broader than topic, but it may be seen narrower in the sense that it can be instantiated."}
 synonym: "Perpetuant" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Perpetuant] !{note="GFO 'Perpetuant' is in general broader than topic, but depending on metaphysical (non-)beliefs it may be seen narrower in the sense of being a concrete individual and exhibiting presentials."}
 synonym: "Method" RELATED [http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method]
-synonym: "quality" RELATED [snap:Quality] !{note="BFO 'quality' is narrower in the sense that it is a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it is any quality not just the topic."}
+synonym: "quality" RELATED [http://purl.obolibrary.org/obo/BFO_0000019, http://www.ifomis.org/bfo/1.1/snap#Quality] !{note="BFO 'quality' is narrower in the sense that it is a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it is any quality not just the topic."}
 synonym: "quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality] !{note="Topic can be a quality of an entity."}
 
 
@@ -448,7 +442,7 @@ synonym: "Data format" EXACT [http://edamontology.org]
 synonym: "File format" NARROW [http://edamontology.org] !{note="File format denotes only formats of a computer file, but the same formats apply also to data blobs or messages. Thus the synonym is in practical terms exact."}
 synonym: "Format" BROAD [http://purl.org/dc/elements/1.1/format]
 synonym: "quality" BROAD [http://purl.org/biotop/biotop.owl#Quality]
-synonym: "continuant" BROAD [snap:Continuant]
+synonym: "continuant" BROAD [http://purl.obolibrary.org/obo/BFO_00000??, http://www.ifomis.org/bfo/1.1/snap#Continuant]
 synonym: "data format specification" RELATED [http://purl.obolibrary.org/obo/IAO_0000098] !{note="Closely related concept focusing on the specification of a data format."}
 synonym: "Perpetuant" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Perpetuant] !{note="GFO 'Perpetuant' is in general broader than format, but it may be seen narrower in the sense of being a concrete individual and in the way of exhibiting presentials."}
 synonym: "Symbol structure" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure]
@@ -457,7 +451,7 @@ synonym: "machine language" RELATED [http://purl.org/biotop/biotop.owl#MachineLa
 synonym: "Compression and encoding" RELATED [http://wsio.org/compression_004] !{note="'Compression and encoding' defines additional 'formatting' and/or encoding on top of the primary format."}
 synonym: "standard" RELATED [http://semanticscience.org/resource/SIO_000618]
 synonym: "representation" RELATED [http://semanticscience.org/resource/SIO_000612]
-synonym: "quality" RELATED [snap:Quality] !{note="BFO 'quality' is narrower in the sense that it is a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it is any quality not just the data format."}
+synonym: "quality" RELATED [http://purl.obolibrary.org/obo/BFO_0000019, http://www.ifomis.org/bfo/1.1/snap#Quality] !{note="BFO 'quality' is narrower in the sense that it is a 'dependent_continuant' (snap:DependentContinuant), and broader in the sense that it is any quality not just the data format."}
 synonym: "quality" RELATED [http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality] !{note="Format can be a quality of a data record."}
 relationship: is_format_of EDAM_data:0006 ! Data ! Unfortunately, OBO-Edit2 doesn't show the subject concept at the top level when browsed with the 'f' option.
 
@@ -586,6 +580,27 @@ is_a: EDAM_topic:0078 ! Protein analysis
 
 
 [Term]
+id: EDAM_topic:3174 !{since=1.1}
+name: Metagenomics
+namespace: topic
+subset: topics
+def: "Topic concerning the study of genetic material recovered from environmental samples." [http://edamontology.org]
+synonym: "Environmental genomics" EXACT [http://edamontology.org]
+synonym: "Ecogenomics" EXACT [http://edamontology.org]
+synonym: "Community genomics" EXACT [http://edamontology.org]
+is_a: EDAM_topic:0610 ! Ecoinformatics
+is_a: EDAM_topic:0622 ! Genomics
+
+
+[Term]
+id: EDAM_topic:3172 !{since=1.1}
+name: Metabolomics
+namespace: topic
+subset: topics
+def: "Topic concerning the study of metabolites and the chemical processes they are involved in, especially the systematic study of the chemical fingerprints of specific cellular processes." [http://edamontology.org]
+is_a: EDAM_topic:0003 ! Topic
+
+[Term]
 id: EDAM_topic:0079
 name: Metabolites
 namespace: topic
@@ -593,6 +608,7 @@ subset: topics
 def: "Topic concerning the reactants or products of metabolism, for example small molecules such as including vitamins, polyols, nucleotides and amino acids." [http://edamontology.org]
 comment: This concept excludes macromolecules such as proteins and nucleic acids.
 is_a: EDAM_topic:0154 ! Small molecules
+is_a: EDAM_topic:3172 ! Metabolomics
 
 [Term]
 id: EDAM_topic:0080
@@ -692,10 +708,10 @@ is_a: EDAM_topic:0003 ! Topic
 
 [Term]
 id: EDAM_topic:0200
-! alt_id: EDAM_topic:0206
 name: Microarrays
 namespace: topic
 subset: topics
+! alt_id: EDAM_topic:0206
 def: "Topic concerning microarrays, for example, to process microarray data or design probes and experiments." [http://edamontology.org]
 xref: BioCatalogue:Microarrays
 synonym: "DNA microarrays" EXACT [http://edamontology.org]
@@ -735,6 +751,15 @@ xref: BioCatalogue:Structural Genomics
 is_a: EDAM_topic:2226 ! Structure determination
 is_a: EDAM_topic:0622 ! Genomics
 
+[Term]
+id: EDAM_topic:3173 !{since=1.1}
+name: Epigenomics
+namespace: topic
+subset: topics
+def: "A topic concerning the study of the epigenetic modifications of a whole cell, tissue, organism etc." [http://edamontology.org]
+comment: Epigenetics concerns the heritable changes in gene expression owing to mechanisms other than DNA sequence variation.
+synonym: "Epigenetics" EXACT [http://edamontology.org]
+is_a: EDAM_topic:0622 ! Genomics
 
 
 
@@ -775,12 +800,12 @@ is_a: EDAM_topic:2829 ! Ontologies, nomenclature and classification
 
 [Term]
 id: EDAM_topic:0090
-! alt_id: EDAM_topic:0155
-! alt_id: EDAM_topic:2274
-! alt_id: EDAM_topic:0165
 name: Data search and retrieval
 namespace: topic
 subset: topics
+! alt_id: EDAM_topic:0155
+! alt_id: EDAM_topic:2274
+! alt_id: EDAM_topic:0165
 def: "Topic concerning the search and query of data sources (typically biological databases or ontologies) in order to retrieve entries or other information." [http://edamontology.org]
 comment: This includes, for example, search, query and retrieval of molecular sequences and associated data.
 synonym: "Data retrieval" EXACT [http://edamontology.org]
@@ -923,6 +948,7 @@ subset: topics
 def: "Topic that aims to identify, predict, model or analyse genes or gene structure in DNA sequences." [http://edamontology.org]
 comment: This includes the study of promoters, coding regions, splice sites, etc. Methods for gene prediction might be ab initio, based on phylogenetic comparisons, use motifs, sequence features, support vector machine, alignment etc.
 synonym: "Gene prediction" EXACT [http://edamontology.org]
+synonym: "Gene discovery" EXACT [http://edamontology.org]
 xref: BioCatalogue:Gene Prediction
 is_a: EDAM_topic:3073 ! Nucleic acid feature detection
 
@@ -1005,6 +1031,7 @@ namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0587
 def: "Topic concerning protein-protein, protein-DNA/RNA and protein-ligand interactions, including analysis of known interactions and prediction of putative interactions." [http://edamontology.org]
+comment: This includes experimental (e.g. yeast two-hybrid) and computational analysis techniques.
 xref: BioCatalogue:Protein Interaction
 is_a: EDAM_topic:1775 ! Protein function analysis
 is_a: EDAM_topic:2225 ! Protein databases
@@ -1198,11 +1225,11 @@ is_a: EDAM_topic:0080 ! Sequence analysis
 
 [Term]
 id: EDAM_topic:0158
-! alt_id: EDAM_topic:0161
-! alt_id: EDAM_topic:0162
 name: Sequence motifs
 namespace: topic
 subset: topics
+! alt_id: EDAM_topic:0161
+! alt_id: EDAM_topic:0162
 def: "Topic concerning conserved patterns (motifs) in molecular sequences, that (typically) describe functional or other key sites." [http://edamontology.org]
 synonym: "Motifs" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0594 ! Sequence classification
@@ -1445,6 +1472,7 @@ subset: topics
 def: "Topic concerning the prediction of secondary or supersecondary structure of protein sequences." [http://edamontology.org]
 xref: BioCatalogue:Protein Secondary Structure
 is_a: EDAM_topic:0172 ! Protein structure prediction
+is_a: EDAM_topic:0694 ! Protein secondary structure
 
 [Term]
 id: EDAM_topic:0179
@@ -1454,6 +1482,7 @@ subset: topics
 def: "Topic concerning the prediction of tertiary structure of protein sequences." [http://edamontology.org]
 xref: BioCatalogue:Protein Tertiary Structure
 is_a: EDAM_topic:0172 ! Protein structure prediction
+is_a: EDAM_topic:0698 ! Protein tertiary structure
 
 [Term]
 id: EDAM_topic:0180
@@ -1485,6 +1514,18 @@ xref: BioCatalogue:Protein Multiple Alignment
 xref: BioCatalogue:Nucleotide Multiple Alignment
 is_a: EDAM_topic:0159 ! Sequence comparison
 is_a: EDAM_topic:3041 ! Sequence databases
+
+
+[Term]
+id: EDAM_topic:3178
+name: RNA-Seq alignment
+namespace: topic
+subset: topics
+def: "Topic concerning the alignment of sequences of (typically millions) of short reads to a reference genome.  This is a specialised topic within sequence alignment, especially because of complications arising from RNA splicing." [http://edamontology.org]
+synonym: "RNA-seq alignment" EXACT [http://edamontology.org]
+is_a: EDAM_topic:0182 ! Sequence alignment
+
+
 
 
 [Term]
@@ -1555,7 +1596,7 @@ subset: topics
 def: "Topic concerning parallelized sequencing processes that are capable of sequencing many thousands of sequences simultaneously." [http://edamontology.org]
 synonym: "Next-generation sequencing" EXACT [http://edamontology.org]
 is_obsolete: true !{since=beta13}
-consider: EDAM_topic:0102 ! Sequencing and mapping
+consider: EDAM_topic:3168 ! Sequencing
 
 [Term]
 id: EDAM_topic:0195
@@ -1574,7 +1615,7 @@ name: Sequence assembly
 namespace: topic
 subset: topics
 def: "Topic concerning the assembly of fragments of a DNA sequence to reconstruct the original sequence." [http://edamontology.org]
-is_a: EDAM_topic:0102 ! Sequencing and mapping
+is_a: EDAM_topic:3168 ! Sequencing
 
 
 [Term]
@@ -1614,22 +1655,72 @@ consider: EDAM_topic:0200 ! Microarrays
 
 [Term]
 id: EDAM_topic:0102
-name: Sequencing and mapping
+name: Mapping
 namespace: topic
 subset: topics
-def: "Topic concerning the determination and mapping of complete (typically nucleotide) sequences." [http://edamontology.org]
+def: "Topic concerning the mapping of complete (typically nucleotide) sequences." [http://edamontology.org]
+is_a: EDAM_topic:0640 ! Nucleic acid sequence analysis
+
+[Term]
+id: EDAM_topic:3168 !{since=1.1}
+name: Sequencing
+namespace: topic
+subset: topics
+def: "Topic concerning the determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes." [http://edamontology.org]
 is_a: EDAM_topic:0640 ! Nucleic acid sequence analysis
 
 
 [Term]
-id: EDAM_topic:0197
-name: Gene expression resources
+id: EDAM_topic:3169 !{since=1.1}
+name: ChIP-seq
 namespace: topic
 subset: topics
-def: "Topic concerning primarily raw or processed gene expression (typically microarray) data." [http://edamontology.org]
-comment: This includes microarray data, northern blots, gene-indexed expression profiles and any annotation on genetic information that is used in the synthesis of a protein.
-is_a: EDAM_topic:2816 ! Gene resources
+def: "Topic concerning the analysis of protein-DNA interactions where chromatin immunoprecipitation (ChIP) is used in combination with massively parallel DNA sequencing to identify the binding sites of DNA-associated proteins." [http://edamontology.org]
+synonym: "Chip-sequencing" EXACT [http://edamontology.org]
+synonym: "Chip sequencing" EXACT [http://edamontology.org]
+synonym: "Chip seq" EXACT [http://edamontology.org]
+is_a: EDAM_topic:3168 ! Sequencing
+is_a: EDAM_topic:0128 ! Protein interactions
+
+[Term]
+id: EDAM_topic:3179 !{since=1.1}
+name: ChIP-on-chip
+namespace: topic
+subset: topics
+def: "Topic concerning experimental techniques that combine chromatin immunoprecipitation ('ChIP') with microarray ('chip'). ChIP-on-chip is used for high-throughput study protein-DNA interactions." [http://edamontology.org]
+synonym: "ChIP-chip" EXACT [http://edamontology.org]
+is_a: EDAM_topic:3168 ! Sequencing
+is_a: EDAM_topic:0128 ! Protein interactions
+
+
+
+[Term]
+id: EDAM_topic:3170 !{since=1.1}
+name: RNA-Seq
+namespace: topic
+subset: topics
+def: "A topic concerning high-throughput sequencing of cDNA to measure the RNA content (transcriptome) of a sample, for example, to investigate how different alleles of a gene are expressed, detect post-transcriptional mutations or identify gene fusions.  " [http://edamontology.org]
+comment: This includes small RNA profiling (small RNA-Seq), for example to find novel small RNAs, characterize mutations and analyze expression of small RNAs.
+synonym: "RNA-seq" EXACT [http://edamontology.org]
+synonym: "Small RNA-Seq" EXACT [http://edamontology.org]
+synonym: "Small RNA-seq" EXACT [http://edamontology.org]
+synonym: "Whole transcriptome shotgun sequencing" EXACT [http://edamontology.org]
+synonym: "WTSS" EXACT [http://edamontology.org]
+is_a: EDAM_topic:3168 ! Sequencing
 is_a: EDAM_topic:0203 ! Transcriptomics
+
+
+
+
+
+[Term]
+id: EDAM_topic:3177 !{since=1.1}
+name: DNA-Seq
+namespace: topic
+subset: topics
+def: "A topic concerning high-throughput sequencing of randomly fragmented genomic DNA, for example, to investigate whole-genome sequencing and resequencing, SNP discovery, identification of copy number variations and chromosomal rearrangements." [http://edamontology.org]
+synonym: "DNA-seq" EXACT [http://edamontology.org]
+is_a: EDAM_topic:3168 ! Sequencing
 
 
 [Term]
@@ -1645,12 +1736,13 @@ is_a: EDAM_topic:2816 ! Gene resources
 
 [Term]
 id: EDAM_topic:0204
-name: Gene regulation resources
+name: Gene regulation
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:3049
 ! alt_id: EDAM_topic:0631
 def: "Topic concerning primarily the regulation of gene expression." [http://edamontology.org]
+synonym: "Gene regulation resources" EXACT [http://edamontology.org]
 is_a: EDAM_topic:2816 ! Gene resources
 
 
@@ -1663,7 +1755,7 @@ subset: topics
 def: "Topic concerning DNA sequence variation (mutation and polymorphism) data." [http://edamontology.org]
 synonym: "Mutation and polymorphism" EXACT [http://edamontology.org]
 synonym: "DNA variation" EXACT [http://edamontology.org]
-is_a: EDAM_topic:0625 ! Genotype and phenotype resources
+is_a: EDAM_topic:0625 ! Genotype and phenotype
 is_a: EDAM_topic:3041 ! Sequence databases
 is_a: EDAM_topic:0640 ! Nucleic acid sequence analysis
 
@@ -1681,10 +1773,15 @@ id: EDAM_topic:0203
 name: Transcriptomics
 namespace: topic
 subset: topics
-def: "Topic concerning the analysis of mRNA expression levels, by identifying, quantifying or comparing mRNA transcripts or interpreting (in functional terms) gene expression data." [http://edamontology.org]
+alt_id: EDAM_topic:0197
+def: "Topic concerning primarily raw or processed gene (mRNA) expression (typically microarray) data, including the analysis of gene expression levels, by identifying, quantifying or comparing mRNA transcripts and the interpretation (in functional terms) of gene expression data." [http://edamontology.org]
+comment: This includes microarray data, northern blots, gene-indexed expression profiles and any annotation on genetic information that is used in the synthesis of a protein.
 synonym: "Gene expression profiling" EXACT [http://edamontology.org]
 synonym: "Expression profiling" EXACT [http://edamontology.org]
+synonym: "Gene expression resources" EXACT [http://edamontology.org]
+synonym: "Gene expression analysis" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0003 ! Topic
+is_a: EDAM_topic:2816 ! Gene resources
 
 
 [Term]
@@ -1692,7 +1789,7 @@ id: EDAM_topic:2277
 name: SNPs
 namespace: topic
 subset: topics
-def: "Topic concerning single nucleotide polymorphisms (SNP) and associated data." [http://edamontology.org]
+def: "Topic concerning single nucleotide polymorphisms (SNP) and associated data, for example, the discovery and annotation of SNPs." [http://edamontology.org]
 comment: A SNP is a DNA sequence variation where a single nucleotide differs between members of a species or paired chromosomes in an individual.
 is_a: EDAM_topic:0199 ! Genetic variation
 
@@ -1818,10 +1915,10 @@ is_a: EDAM_topic:0217 ! Literature analysis
 
 [Term]
 id: EDAM_topic:0219
-! alt_id: EDAM_topic:2256
 name: Annotation
 namespace: topic
 subset: topics
+! alt_id: EDAM_topic:2256
 def: "Topic for the annotation of entities (typically biological database entries) with terms from a controlled vocabulary." [http://edamontology.org]
 synonym: "Ontology annotation" EXACT [http://edamontology.org]
 xref: BioCatalogue:Genome Annotation
@@ -1983,13 +2080,16 @@ id: EDAM_topic:0602
 name: Pathways, networks and models
 namespace: topic
 subset: topics
+alt_id: EDAM_topic:3076 !{since=beta13}
 ! alt_id: EDAM_topic:0198
 ! alt_id: EDAM_topic:0755
-def: "Topic concerning biological pathways, networks and other models." [http://edamontology.org]
+def: "Topic concerning biological pathways, networks and other models, including their construction and analysis." [http://edamontology.org]
+synonym: "Network or pathway analysis" EXACT [http://edamontology.org]
 xref: BioCatalogue:Pathways
 xref: BioCatalogue:Pathway Retrieval
 is_a: EDAM_topic:2259 ! Systems biology
 is_a: EDAM_topic:3071 ! Biological data resources
+
 
 
 [Term]
@@ -2002,13 +2102,6 @@ xref: BioCatalogue:Model Analysis
 xref: BioCatalogue:Model Execution
 is_a: EDAM_topic:2259 ! Systems biology
 
-[Term]
-id: EDAM_topic:3076 !{since=beta13}
-name: Network or pathway analysis
-namespace: topic
-subset: topics
-def: "The processing (including construction) and analysis of biological networks and pathways." [http://edamontology.org]
-is_a: EDAM_topic:2259 ! Systems biology
 
 
 [Term]
@@ -2190,7 +2283,7 @@ comment: General information on or more organisms, genomes (including molecular 
 synonym: "Genome map" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0622 ! Genomics
 is_a: EDAM_topic:0121 ! Proteomics
-is_a: EDAM_topic:0625 ! Genotype and phenotype resources
+is_a: EDAM_topic:0625 ! Genotype and phenotype
 
 [Term]
 id: EDAM_topic:0622
@@ -2267,15 +2360,28 @@ subset: topics
 def: "Topic concerning chromosomes." [http://edamontology.org]
 is_a: EDAM_topic:3062 ! Genetic organisation
 
+[Term]
+id: EDAM_topic:3175 !{since=1.1}
+name: Structural variation
+namespace: topic
+subset: topics
+def: "Topic concerning variation in chromosome structure including microscopic and submicroscopic types of variation such as deletions, duplications, copy-number variants, insertions, inversions and translocations." [http://edamontology.org]
+synonym: "Genomic structural variation" EXACT [http://edamontology.org]
+is_a: EDAM_topic:0624 ! Chromosomes
+is_a: EDAM_topic:0199 ! Genetic variation
+
+
 
 
 [Term]
 id: EDAM_topic:0625
-name: Genotype and phenotype resources
+name: Genotype and phenotype
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:2231
 def: "Topic concerning the study of genetic constitution of a living entity, such as an individual, and organism, a cell and so on, typically with respect to a particular observable phenotypic traits, or resources concerning such traits, which might be an aspect of biochemistry, physiology, morphology, anatomy, development and so on." [http://edamontology.org]
+synonym: "Genotyping" EXACT [http://edamontology.org]
+synonym: "Genotype and phenotype resources" EXACT [http://edamontology.org]
 is_a: EDAM_topic:2816 ! Gene resources
 
 [Term]
@@ -2307,7 +2413,7 @@ namespace: topic
 subset: topics
 def: "Topic concerning gene expression e.g. microarray data, northern blots, gene-indexed expression profiles etc." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_topic:0197 ! Gene expression resources
+consider: EDAM_topic:0203 ! Transcriptomics
 consider: EDAM_topic:0200 ! Microarrays
 
 
@@ -2317,7 +2423,7 @@ name: Disease resources
 namespace: topic
 subset: topics
 def: "Topic concerning diseases." [http://edamontology.org]
-is_a: EDAM_topic:0625 ! Genotype and phenotype resources
+is_a: EDAM_topic:0625 ! Genotype and phenotype
 
 [Term]
 id: EDAM_topic:2813
@@ -2442,23 +2548,46 @@ subset: topics
 ! alt_id: EDAM_topic:0628
 def: "Topic concerning DNA sequences and structure, including processes such as methylation and replication." [http://edamontology.org]
 comment: The DNA sequences might be coding or non-coding sequences.
+synonym: "DNA analysis" EXACT [http://edamontology.org]
 is_a: EDAM_topic:3042 ! Nucleic acid sequences
+is_a: EDAM_topic:0077 ! Nucleic acid analysis
+
+[Term]
+id: EDAM_topic:3176
+name: DNA packaging
+namespace: topic
+subset: topics
+def: "Topic concerning DNA-histone complexes (chromatin), organisation of chromatin into nucleosomes and packaging into higher-order structures." [http://edamontology.org]
+is_a: EDAM_topic:0654 ! DNA
+is_a: EDAM_topic:0624 ! Chromosomes
+
+
+[Term]
+id: EDAM_topic:3171 !{since=1.1}
+name: DNA methylation
+namespace: topic
+subset: topics
+def: "Topic concerning DNA methylation including bisulfite sequencing, methylation sites and analysis, for example of patterns and profiles of DNA methylation in a population, tissue etc." [http://edamontology.org]
+is_a: EDAM_topic:0654 ! DNA
+
 
 
 
 [Term]
 id: EDAM_topic:0655
-name: mRNA, EST or cDNA
+name: mRNA, EST or cDNA database
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0205
-def: "Topic concerning messenger RNA (mRNA), expressed sequence tag (EST) or complementary DNA (cDNA) sequences." [http://edamontology.org]
+def: "Topic concerning data resources for messenger RNA (mRNA), expressed sequence tag (EST) or complementary DNA (cDNA) sequences." [http://edamontology.org]
 synonym: "Transcriptome" EXACT [http://edamontology.org]
+synonym: "Transcriptome database" EXACT [http://edamontology.org]
+synonym: "mRNA, EST or cDNA" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0099 ! RNA
 
 [Term]
 id: EDAM_topic:0659
-name: Functional RNA
+name: Functional and non-coding RNA
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0113
@@ -2468,7 +2597,10 @@ subset: topics
 ! alt_id: EDAM_topic:0120
 def: "Topic concerning functional or non-coding RNA sequences." [http://edamontology.org]
 comment: For example, piwi-interacting RNA (piRNA), small nuclear RNA (snRNA) and small nucleolar RNA (snoRNA).
+synonym: "Non-coding RNA" EXACT [http://edamontology.org]
+synonym: "Functional RNA" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0099 ! RNA
+
 
 [Term]
 id: EDAM_topic:3060 !{since=beta13}
@@ -2481,7 +2613,7 @@ subset: topics
 ! alt_id: EDAM_topic:0118
 def: "Topic concerning regulatory RNA sequences including  microRNA (miRNA) and small interfering RNA (siRNA)." [http://edamontology.org]
 comment: Micro RNAs are short single stranded RNA molecules that regulate gene expression.
-is_a: EDAM_topic:0659 ! Functional RNA
+is_a: EDAM_topic:0659 ! Functional and non-coding RNA
 
 
 [Term]
@@ -2491,7 +2623,7 @@ namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0116
 def: "Topic concerning one or more ribosomal RNA (rRNA) sequences." [http://edamontology.org]
-is_a: EDAM_topic:0659 ! Functional RNA
+is_a: EDAM_topic:0659 ! Functional and non-coding RNA
 
 
 [Term]
@@ -2501,7 +2633,7 @@ namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0115
 def: "Topic concerning one or more transfer RNA (tRNA) sequences." [http://edamontology.org]
-is_a: EDAM_topic:0659 ! Functional RNA
+is_a: EDAM_topic:0659 ! Functional and non-coding RNA
 
 
 [Term]
@@ -2511,16 +2643,11 @@ namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0126
 ! alt_id: EDAM_topic:0590
+alt_id: EDAM_topic:3040 !{since=beta13}
 def: "Topic concerning protein secondary or tertiary structural data and/or associated annotation." [http://edamontology.org]
+synonym: "Protein structure" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0078 ! Protein analysis
 is_a: EDAM_topic:0081 ! Structure analysis
-
-[Term]
-id: EDAM_topic:3040 !{since=beta13}
-name: Protein structure
-namespace: topic
-subset: topics
-def: "Topic concerning protein secondary or tertiary structural data and/or associated annotation." [http://edamontology.org]
 is_a: EDAM_topic:3038 ! Structure databases
 is_a: EDAM_topic:2225 ! Protein databases
 
@@ -2534,7 +2661,7 @@ subset: topics
 def: "Topic concerning protein secondary structure or secondary structure alignments." [http://edamontology.org]
 comment: This includes assignment, analysis, comparison, prediction, rendering etc. of secondary structure data.
 synonym: "Protein secondary structure analysis" EXACT [http://edamontology.org]
-is_a: EDAM_topic:3040 ! Protein structure
+is_a: EDAM_topic:2814 ! Protein structure analysis
 
 [Term]
 id: EDAM_topic:0698
@@ -2543,7 +2670,8 @@ namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:2125
 def: "Topic concerning protein tertiary structures." [http://edamontology.org]
-is_a: EDAM_topic:3040 ! Protein structure
+synonym: "Protein tertiary structure analysis" EXACT [http://edamontology.org]
+is_a: EDAM_topic:2814 ! Protein structure analysis
 
 
 
@@ -2732,7 +2860,7 @@ comment: This includes promoters, enhancers, silencers and boundary elements / i
 synonym: "Transcriptional regulatory sites" EXACT [http://edamontology.org]
 synonym: "Transcription factors" EXACT [http://edamontology.org]
 synonym: "Transcription factor and binding site" EXACT [http://edamontology.org]
-is_a: EDAM_topic:0204 ! Gene regulation resources
+is_a: EDAM_topic:0204 ! Gene regulation
 is_a: EDAM_topic:0110 ! Transcription
 is_a: EDAM_topic:0635 ! Specific protein resources
 is_a: EDAM_topic:0747 ! Nucleic acid sites and features
@@ -2760,6 +2888,8 @@ namespace: topic
 subset: topics
 def: "Topic concerning metabolic pathways." [http://edamontology.org]
 is_a: EDAM_topic:0602 ! Pathways, networks and models
+is_a: EDAM_topic:3172 ! Metabolomics
+
 
 [Term]
 id: EDAM_topic:0754
@@ -2798,7 +2928,7 @@ namespace: topic
 subset: topics
 def: "Topic concerning gene regulatory networks." [http://edamontology.org]
 is_a: EDAM_topic:0602 ! Pathways, networks and models
-is_a: EDAM_topic:0204 ! Gene regulation resources
+is_a: EDAM_topic:0204 ! Gene regulation
 
 
 [Term]
@@ -3060,7 +3190,7 @@ subset: topics
 def: "Informatics resources that aim to identify, map or analyse genetic markers in DNA sequences, for example to produce a genetic (linkage) map of a chromosome or genome or to analyse genetic linkage and synteny." [http://edamontology.org]
 synonym: "Genetic linkage" EXACT [http://edamontology.org]
 synonym: "Linkage mapping" EXACT [http://edamontology.org]
-is_a: EDAM_topic:0102 ! Sequencing and mapping
+is_a: EDAM_topic:0102 ! Mapping
 relationship: has_topic EDAM_topic:3053 ! Genetics
 
 
@@ -3070,7 +3200,7 @@ name: Comparative genomics
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0101
-def: "Topic for the study (typically comparison) of the structure or function of multiple genomes." [http://edamontology.org]
+def: "Topic concerning the study (typically comparison) of the sequence, structure or function of multiple genomes." [http://edamontology.org]
 xref: BioCatalogue:Comparative Genomics
 is_a: EDAM_topic:0622 ! Genomics
 
@@ -3111,7 +3241,7 @@ subset: topics
 ! alt_id: EDAM_topic:0633
 def: "Topic for the application of information technology to immunology such as immunological processes, immunological genes, proteins and peptide ligands, antigens and so on." [http://edamontology.org]
 synonym: "Computational immunology" EXACT [http://edamontology.org]
-is_a: EDAM_topic:0003 ! Topics
+is_a: EDAM_topic:0003 ! Topic
 
 [Term]
 id: EDAM_topic:2830
@@ -3136,11 +3266,12 @@ consider: EDAM_topic:0634 ! Disease resources
 
 [Term]
 id: EDAM_topic:2640
-name: Cancer resources
+name: Cancer
 namespace: topic
 subset: topics
 ! alt_id: EDAM_topic:0805
 def: "Informatics resources dedicated to the study of cancer, for example, genes and proteins implicated in cancer." [http://edamontology.org]
+synonym: "Cancer resources" EXACT [http://edamontology.org]
 is_a: EDAM_topic:0634 ! Disease resources
 
 
@@ -3219,8 +3350,8 @@ def: "Process (read and / or write) data of a specific type, for example applyin
 synonym: "Calculation" EXACT [http://edamontology.org]
 synonym: "Computation" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0004 ! Operation
-relationship: has_input EDAM_data:0006 ! Data ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0006 ! Data ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0006 !{min_cardinality=0} ! Data
+relationship: has_output EDAM_data:0006 !{min_cardinality=0} ! Data
 
 [Term]
 id: EDAM_operation:2423
@@ -3292,7 +3423,7 @@ namespace: operation
 subset: operations
 def: "Analyse known protein-protein, protein-DNA/RNA or protein-ligand interactions." [http://edamontology.org]
 is_a: EDAM_operation:2405 ! Protein interaction data processing
-relationship: has_output EDAM_data:0906 !{min_cardinality=1} ! Protein report (interaction)
+relationship: has_output EDAM_data:0906 !{min_cardinality=1} ! Protein interaction
 relationship: has_topic EDAM_topic:0128 ! Protein interactions
 
 
@@ -3313,7 +3444,6 @@ namespace: operation
 subset: operations
 def: "Compare two or more entities, typically the sequence or structure (or derivatives) of macromolecules, to identify equivalent subunits." [http://edamontology.org]
 synonym: "Alignment" EXACT [http://edamontology.org]
-is_a: EDAM_operation:0004 ! Operation
 is_a: EDAM_operation:2951 ! Alignment processing
 relationship: has_output EDAM_data:1916 !{min_cardinality=1} ! Alignment
 
@@ -3428,7 +3558,8 @@ subset: operations
 def: "Map properties to positions on an biological entity (typically a molecular sequence or structure), or assemble such an entity from constituent parts." [http://edamontology.org]
 comment: This is a broad concept and is used a placeholder for other, more specific concepts.
 is_a: EDAM_operation:0004 ! Operation
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+relationship: has_topic EDAM_topic:0102 ! Mapping
+relationship: has_topic EDAM_topic:0196 ! Sequence assembly
 
 [Term]
 id: EDAM_operation:2430
@@ -3457,7 +3588,7 @@ subset: operations
 def: "Search or query a data resource and retrieve entries and / or annotation." [http://edamontology.org]
 synonym: "Database retrieval" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0004 ! Operation
-relationship: has_output EDAM_data:0006 ! Data ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0006 !{min_cardinality=0} ! Data
 relationship: has_topic EDAM_topic:0090 ! Data search and retrieval
 
 [Term]
@@ -3467,8 +3598,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) nucleic acid sequence or structural data." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:2084 ! Nucleic acid report ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2084 ! Nucleic acid report ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2084 !{min_cardinality=0} ! Nucleic acid report
+relationship: has_output EDAM_data:2084 !{min_cardinality=0} ! Nucleic acid report
 relationship: has_topic EDAM_topic:0077 ! Nucleic acid analysis
 
 
@@ -3479,8 +3610,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) protein sequence or structural data." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:0896 ! Protein report ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0896 ! Protein report ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0896 !{min_cardinality=0} ! Protein report
+relationship: has_output EDAM_data:0896 !{min_cardinality=0} ! Protein report
 relationship: has_topic EDAM_topic:0078 ! Protein analysis
 
 
@@ -3501,8 +3632,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) an alignment of two or more molecular sequences, structures or derived data." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:1916 ! Alignment ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1916 ! Alignment ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1916 !{min_cardinality=0} ! Alignment
+relationship: has_output EDAM_data:1916 !{min_cardinality=0} ! Alignment
 
 
 
@@ -3514,8 +3645,8 @@ subset: operations
 def: "Process (read and / or write) an index of (typically a file of) biological data." [http://edamontology.org]
 synonym: "Database index processing" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2409 ! File processing
-relationship: has_input EDAM_data:0955 ! Data index ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0955 ! Data index ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0955 !{min_cardinality=0} ! Data index
+relationship: has_output EDAM_data:0955 !{min_cardinality=0} ! Data index
 relationship: has_topic EDAM_topic:0220 ! Data processing and validation
 
 [Term]
@@ -3558,8 +3689,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) molecular sequence motifs." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:1353 ! Sequence motif ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1353 ! Sequence motif ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1353 !{min_cardinality=0} ! Sequence motif
+relationship: has_output EDAM_data:1353 !{min_cardinality=0} ! Sequence motif
 relationship: has_topic EDAM_topic:0158 ! Sequence motifs
 
 
@@ -3678,8 +3809,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) protein interaction data." [http://edamontology.org]
 is_a: EDAM_operation:2502 ! Protein data processing
-relationship: has_input EDAM_data:0906 ! Protein report (interaction) ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0906 ! Protein report (interaction) ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0906 !{min_cardinality=0} ! Protein interaction
+relationship: has_output EDAM_data:0906 !{min_cardinality=0} ! Protein interaction
 relationship: has_topic EDAM_topic:0128 ! Protein interactions
 
 [Term]
@@ -3690,9 +3821,98 @@ subset: operations
 def: "Process (read and / or write) a DNA map of some type." [http://edamontology.org]
 synonym: "DNA map data processing" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2501 ! Nucleic acid data processing
-relationship: has_input EDAM_data:1274 ! Map ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1274 ! Map ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1274 !{min_cardinality=0} ! Map
+relationship: has_output EDAM_data:1274 !{min_cardinality=0} ! Map
 relationship: has_topic EDAM_topic:0796 ! Genetic mapping and linkage
+
+
+
+[Term]
+id: EDAM_operation:3229 !{since=1.1}
+name: Exome analysis
+namespace: operation
+subset: operations
+def: "Anaylse sequencing data from experiments aiming to selectively sequence the coding regions of the genome." [http://edamontology.org]
+comment: Exome sequencing is considered a cheap alternative to whole genome sequencing.
+synonym: "Exome sequence analysis" EXACT [http://edamontology.org]
+synonym: "Targeted exome capture" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+
+[Term]
+id: EDAM_operation:3230 !{since=1.1}
+name: Read depth analysis
+namespace: operation
+subset: operations
+def: "Analyse mapping density (read depth) of (typically) short reads from sequencing platforms, for example, to detect deletions and duplications." [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+
+[Term]
+id: EDAM_operation:3225 !{since=1.1}
+name: Variant classification
+namespace: operation
+subset: operations
+def: "Classify variants based on their potential effect on genes, especially functional effects on the expressed proteins." [http://edamontology.org]
+comment: Variants are typically classified by their position (intronic, exonic, etc.) in a gene transcript and (for variants in coding exons) by their effect on the protein sequence (synonymous, non-synonymous, frameshifting, etc.)
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+is_a: EDAM_operation:2995 ! Sequence classification
+
+[Term]
+id: EDAM_operation:3226 !{since=1.1}
+name: Variant prioritization
+namespace: operation
+subset: operations
+def: "Identify biologically interesting variants by prioritizing individual variants, for example, homozygous variants absent in control genomes." [http://edamontology.org]
+comment: Variant prioritization can be used for example to produce a list of variants responsible for 'knocking out' genes in specific genomes. Methods amino acid substitution, aggregative approaches, probabilistic approach, inheritance and unified likelihood-frameworks.
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+[Term]
+id: EDAM_operation:3221 !{since=1.1}
+name: Species frequency estimation
+namespace: operation
+subset: operations
+def: "Estimate the frequencies of different species from analysis of the molecular sequences, typically of DNA recovered from environmental samples." [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+relationship: has_topic EDAM_topic:3174 ! Metagenomics
+
+
+
+[Term]
+id: EDAM_operation:3216 !{since=1.1}
+name: Scaffolding
+namespace: operation
+subset: operations
+def: "Link together a non-contiguous series of genomic sequences into a scaffold, consisting of sequences separated by gaps of known length.  The sequences that are linked are typically typically contigs; contiguous sequences corresponding to read overlaps." [http://edamontology.org]
+comment: Scaffold may be positioned along a chromosome physical map to create a "golden path".
+synonym: "Scaffold construction" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2429 ! Mapping and assembly
+is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+[Term]
+id: EDAM_operation:3217 !{since=1.1}
+name: Scaffold gap completion
+namespace: operation
+subset: operations
+def: "Fill the gaps in a sequence assembly (scaffold) by merging in additional sequences." [http://edamontology.org]
+comment: Different techniques are used to generate gap sequences to connect contigs, depending on the size of the gap. For small (5-20kb) gaps, PCR amplification and sequencing is used.  For large (>20kb) gaps, fragments are cloned (e.g. in BAC (Bacterial artificial chromosomes) vectors) and then sequenced. 
+is_a: EDAM_operation:2429 ! Mapping and assembly
+is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+
+
+[Term]
+id: EDAM_operation:3218 !{since=1.1}
+name: Sequencing quality control
+namespace: operation
+subset: operations
+def: "Raw sequence data quality control." [http://edamontology.org]
+synonym: "Sequencing QC" EXACT [http://edamontology.org]
+synonym: "Analyse raw sequence data from a sequencing pipeline and identify problems." EXACT [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+is_a: EDAM_operation:2428 ! Evaluation and validation
 
 
 [Term]
@@ -3728,7 +3948,7 @@ subset: operations
 def: "Generate a physical (sequence) map of a DNA sequence showing the physical distance (base pairs) between features or landmarks such as restriction sites, cloned DNA fragments, genes and other genetic markers." [http://edamontology.org]
 is_a: EDAM_operation:2520 ! DNA mapping
 relationship: has_output EDAM_data:1280 !{min_cardinality=1} ! Physical map
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+relationship: has_topic EDAM_topic:0102 ! Mapping
 
 
 [Term]
@@ -3741,6 +3961,29 @@ comment: An STS is a short subsequence of known sequence and location that occur
 synonym: "Sequence mapping" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2944 ! Physical mapping
 relationship: has_output EDAM_data:1279 !{min_cardinality=1} ! Sequence map
+
+
+
+[Term]
+id: EDAM_operation:3233 !{since=1.1}
+name: Copy number estimation
+namespace: operation
+subset: operations
+def: "Estimate the number of copies of loci of particular gene(s) in DNA sequences typically from gene-expression profiling technology based on microarray hybridization-based experiments. For example, estimate copy number (or marker dosage) of a dominant marker in samples from polyploid plant cells or tissues, or chromosomal gains and losses in tumors." [http://edamontology.org]
+comment: Methods typically implement some statistical model for hypothesis testing, and methods estimate total copy number, i.e. do not distinguish the two inherited chromosomes quantities (specific copy number).
+synonym: "Transcript copy number estimation" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
+[Term]
+id: EDAM_operation:3219 !{since=1.1}
+name: Read pre-processing
+namespace: operation
+subset: operations
+def: "Pre-process sequence reads to ensure (or improve) quality and reliability." [http://edamontology.org]
+comment: This is a broad concept and is used a placeholder for other, more specific concepts.  For example process paired end reads to trim low quality ends remove short sequences, identify sequence inserts, detect chimeric reads, or remove low quality sequnces including vector, adaptor, low complexity and contaminant sequences. Sequences might come from genomic DNA library, EST libraries, SSH library and so on.
+synonym: "Sequence read pre-processing" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+
 
 [Term]
 id: EDAM_operation:0283
@@ -3781,8 +4024,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a molecular sequence alignment." [http://edamontology.org]
 is_a: EDAM_operation:2951 ! Alignment processing
-relationship: has_input EDAM_data:0863 ! Sequence alignment ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0863 ! Sequence alignment ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0863 !{min_cardinality=0} ! Sequence alignment
+relationship: has_output EDAM_data:0863 !{min_cardinality=0} ! Sequence alignment
 relationship: has_topic EDAM_topic:0182 ! Sequence alignment
 
 [Term]
@@ -3792,8 +4035,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a molecular tertiary (3D) structure alignment." [http://edamontology.org]
 is_a: EDAM_operation:2951 ! Alignment processing
-relationship: has_input EDAM_data:0886 ! Structure alignment ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0886 ! Structure alignment ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0886 !{min_cardinality=0} ! Structure alignment
+relationship: has_output EDAM_data:0886 !{min_cardinality=0} ! Structure alignment
 relationship: has_topic EDAM_topic:0183 ! Structure alignment
 
 
@@ -3809,7 +4052,7 @@ synonym: "Sequence alignment generation" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2463 ! Sequence alignment processing !(?)
 is_a: EDAM_operation:2451 ! Sequence comparison
 is_a: EDAM_operation:2928 ! Alignment construction
-relationship: has_input EDAM_data:2044 !{min_cardinality=2, note="Applies to both pure/raw sequences and sequence records. Indirectly also to sequence sets or IDs (?)"} ! Sequence
+relationship: has_input EDAM_data:2044 !{minCardinality=2, note="Applies to both pure/raw sequences and sequence records. Indirectly also to sequence sets or IDs (?)"} ! Sequence
 relationship: has_output EDAM_data:0863 !{min_cardinality=1} ! Sequence alignment
 relationship: has_topic EDAM_topic:0182 ! Sequence alignment
 
@@ -3821,7 +4064,7 @@ subset: operations
 def: "Align two or more molecular sequences of different types (for example genomic DNA to EST, cDNA or mRNA)." [http://edamontology.org]
 synonym: "Hybrid sequence alignment" EXACT [http://edamontology.org]
 is_obsolete: true !{since=beta13}
-consider: EDAM_operation:0292 ! Sequence alignment
+consider: EDAM_operation:0292 ! Sequence alignment construction
 
 [Term]
 id: EDAM_operation:0294
@@ -3876,7 +4119,7 @@ namespace: operation
 subset: operations
 def: "Align (superimpose) molecular tertiary structures." [http://edamontology.org]
 synonym: "Structure alignment" EXACT [http://edamontology.org]
-is_a: EDAM_operation:2928 ! Alignment
+is_a: EDAM_operation:2928 ! Alignment construction
 is_a: EDAM_operation:2483 ! Structure comparison
 is_a: EDAM_operation:2952 ! Structure alignment processing
 relationship: has_output EDAM_data:0886 !{min_cardinality=1} ! Structure alignment
@@ -3889,8 +4132,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) some type of sequence profile." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:1354 ! Sequence profile ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1354 ! Sequence profile ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1354 !{min_cardinality=0} ! Sequence profile
+relationship: has_output EDAM_data:1354 !{min_cardinality=0} ! Sequence profile
 relationship: has_topic EDAM_topic:0188 ! Sequence profiles and HMMs
 
 [Term]
@@ -3900,8 +4143,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) one or more structural (3D) profile(s) or template(s) of some type." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:0889 ! Structural (3D) profile ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0889 ! Structural (3D) profile ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0889 !{min_cardinality=0} ! Structural (3D) profile
+relationship: has_output EDAM_data:0889 !{min_cardinality=0} ! Structural (3D) profile
 relationship: has_topic EDAM_topic:0167 ! Structural (3D) profiles
 
 
@@ -3914,7 +4157,7 @@ def: "Recognize (predict and identify) known protein structural domains or folds
 comment: Methods use some type of mapping between sequence and fold, for example secondary structure prediction and alignment, profile comparison, sequence properties, homologous sequence search, kernel machines etc. Domains and folds might be taken from SCOP or CATH.
 synonym: "Protein domain prediction" EXACT [http://edamontology.org]
 synonym: "Protein fold prediction" EXACT [http://edamontology.org]
-is_a: EDAM_operation:0414 ! Protein feature detection (from sequence)
+is_a: EDAM_operation:0414 ! Protein feature prediction (from sequence)
 is_a: EDAM_operation:0474 ! Protein structure prediction
 is_a: EDAM_operation:2997 ! Protein comparison
 relationship: has_output EDAM_data:0901 !{min_cardinality=1} ! Protein features (domains)
@@ -3935,8 +4178,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) text." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:2048 ! Report ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2048 ! Report ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2048 !{min_cardinality=0} ! Report
+relationship: has_output EDAM_data:2048 !{min_cardinality=0} ! Report
 
 [Term]
 id: EDAM_operation:0306
@@ -3946,7 +4189,7 @@ subset: operations
 def: "Process and analyse text (typically the biomedical and informatics literature) to extract information from it." [http://edamontology.org]
 synonym: "Text data mining" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2947 ! Article analysis
-relationship: has_input EDAM_data:2048 ! Report ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2048 !{min_cardinality=0} ! Report
 relationship: has_output EDAM_data:0972 ! Text mining report
 relationship: has_topic EDAM_topic:0218 ! Text mining
 
@@ -3966,13 +4209,27 @@ id: EDAM_operation:0310
 name: Sequence assembly
 namespace: operation
 subset: operations
-def: "Assemble fragments of a DNA sequence to reconstruct the original sequence." [http://edamontology.org]
-comment: Typically, contigs (for example ESTs and genomic DNA fragments) are aligned and merged, depending on the detected fragment overlaps. Annotation of the assembled sequence might be generated.
+def: "Combine (align and merge) overlapping fragments of a DNA sequence to reconstruct the original sequence." [http://edamontology.org]
+comment: For example, assemble overlapping reads from paired-end sequencers into contigs (a contiguous sequence corresponding to read overlaps). Or assemble contigs, for example ESTs and genomic DNA fragments, depending on the detected fragment overlaps.
 is_a: EDAM_operation:2429 ! Mapping and assembly
-is_a: EDAM_operation:2446 ! Sequence processing
+is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
 is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
 relationship: has_output EDAM_data:0925 ! Sequence assembly
 relationship: has_topic EDAM_topic:0196 ! Sequence assembly
+
+[Term]
+id: EDAM_operation:3180 !{since=1.1}
+name: Sequence assembly evaluation
+namespace: operation
+subset: operations
+def: "Evaluate a DNA sequence assembly, typically for purposes of quality control." [http://edamontology.org]
+is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+is_a: EDAM_operation:2425 ! Optimisation and refinement
+relationship: has_input EDAM_data:0925 ! Sequence assembly
+relationship: has_output EDAM_data:3181 ! Sequence assembly report
+relationship: has_topic EDAM_topic:0196 ! Sequence assembly
+
 
 [Term]
 id: EDAM_operation:2432
@@ -3992,9 +4249,9 @@ def: "Process (read and / or write) gene expression (typically microarray) data.
 is_a: EDAM_operation:2420 ! Analysis and processing
 synonym: "Gene expression (microarray) data processing" EXACT [http://edamontology.org]
 synonym: "Microarray data processing" EXACT [http://edamontology.org]
-relationship: has_input EDAM_data:3117 ! Microarray  hybridisation data ! !{min_cardinality=0}
-relationship: has_output EDAM_data:3117 ! Microarray  hybridisation data ! !{min_cardinality=0}
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_input EDAM_data:3117 !{min_cardinality=0} ! Microarray hybridisation data
+relationship: has_output EDAM_data:3117 !{min_cardinality=0} ! Microarray hybridisation data
+relationship: has_topic EDAM_topic:0203 ! Transcriptomics
 relationship: has_topic EDAM_topic:0200 ! Microarrays
 
 
@@ -4016,8 +4273,8 @@ def: "Standardize or normalize microarray data." [http://edamontology.org]
 comment: This includes statistical analysis, for example of variability amongst microarrays experiments, comparison of heterogeneous microarray platforms etc.
 is_a: EDAM_operation:2495 ! Gene expression data processing
 is_a: EDAM_operation:2428 ! Evaluation and validation
-relationship: has_input EDAM_data:3117 !{min_cardinality=1} ! Microarray  hybridisation data
-relationship: has_output EDAM_data:3117 !{min_cardinality=1} ! Microarray  hybridisation data
+relationship: has_input EDAM_data:3117 !{min_cardinality=1} ! Microarray hybridisation data
+relationship: has_output EDAM_data:3117 !{min_cardinality=1} ! Microarray hybridisation data
 
 [Term]
 id: EDAM_operation:0318
@@ -4072,8 +4329,8 @@ namespace: operation
 subset: operations
 def: "Generate, analyse or handle a biological pathway or network." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:2600 ! Pathway or network ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2600 ! Pathway or network ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2600 !{min_cardinality=0} ! Pathway or network
+relationship: has_output EDAM_data:2600 !{min_cardinality=0} ! Pathway or network
 relationship: has_topic EDAM_topic:0602 ! Pathways, networks and models
 
 [Term]
@@ -4088,6 +4345,16 @@ relationship: has_input EDAM_data:2600 !{min_cardinality=1} ! Pathway or network
 relationship: has_topic EDAM_topic:0602 ! Pathways, networks and models
 
 
+[Term]
+id: EDAM_operation:3203 !{since=1.1}
+name: Chromatogram visualisation
+namespace: operation
+subset: operations
+def: "Visualise, format or render an image of a Chromatogram." [http://edamontology.org]
+synonym: "Chromatogram viewing" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0337 ! Plotting and rendering
+
+
 
 
 [Term]
@@ -4096,6 +4363,8 @@ name: Pathway or network analysis
 namespace: operation
 subset: operations
 def: "Analyse a known biological pathway or network." [http://edamontology.org]
+synonym: "Network analysis" EXACT [http://edamontology.org]
+synonym: "Pathway analysis" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2438 ! Pathway or network processing
 relationship: has_input EDAM_data:2600 !{min_cardinality=1} ! Pathway or network
 relationship: has_output EDAM_data:2984 !{min_cardinality=1} ! Pathway or network report
@@ -4147,8 +4416,8 @@ synonym: "Report handling" EXACT [http://edamontology.org]
 synonym: "File handling" EXACT [http://edamontology.org]
 synonym: "Data file processing" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:0006 ! Data ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0006 ! Data ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0006 !{min_cardinality=0} ! Data
+relationship: has_output EDAM_data:0006 !{min_cardinality=0} ! Data
 relationship: has_topic EDAM_topic:0220 ! Data processing and validation
 
 
@@ -4161,7 +4430,7 @@ def: "Visualise, plot or render (graphically) biomolecular data such as molecula
 synonym: "Visualisation" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0004 ! Operation
 relationship: has_input EDAM_data:0006 !{min_cardinality=1} ! Data
-relationship: has_output EDAM_data:2968 ! Image ! !{min_cardinality=0}
+relationship: has_output EDAM_data:2968 !{min_cardinality=0} ! Image
 relationship: has_topic EDAM_topic:0092 ! Data visualisation
 
 
@@ -4236,6 +4505,8 @@ name: Data loading
 namespace: operation
 subset: operations
 def: "Prepare or load a user-specified data file so that it is available for use." [http://edamontology.org]
+synonym: "Database submission" EXACT [http://edamontology.org]
+synonym: "Data submission" EXACT [http://edamontology.org]
 xref: WHATIF:UploadPDB
 is_a: EDAM_operation:2409 ! File processing
 relationship: has_input EDAM_data:0842 !{min_cardinality=1} ! Identifier
@@ -4268,7 +4539,7 @@ def: "Search a database (or other data resource) with a supplied query and retri
 comment: Typically the query is compared to each entry and high scoring matches (hits) are returned. For example, a BLAST search of a sequence database.
 is_a: EDAM_operation:0224 ! Search and retrieval
 is_a: EDAM_operation:2424 ! Comparison
-relationship: has_output EDAM_data:2080 ! Database hits ! !{min_cardinality=0}
+relationship: has_output EDAM_data:2080 !{min_cardinality=0} ! Database hits
 
 [Term]
 id: EDAM_operation:2422
@@ -4321,7 +4592,7 @@ comment: This includes direct retrieval methods (e.g. the dbfetch program) but n
 synonym: "Data retrieval (sequences)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2422 ! Data retrieval
 is_a: EDAM_operation:2446 ! Sequence processing
-relationship: has_output EDAM_data:2044 ! Sequence ! !{min_cardinality=0}
+relationship: has_output EDAM_data:2044 !{min_cardinality=0} ! Sequence
 
 [Term]
 id: EDAM_operation:1814
@@ -4334,7 +4605,7 @@ xref: WHATIF:DownloadPDB
 xref: WHATIF:EchoPDB
 is_a: EDAM_operation:2422 ! Data retrieval
 is_a: EDAM_operation:2465 ! Structure processing
-relationship: has_output EDAM_data:0883 ! Structure ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0883 !{min_cardinality=0} ! Structure
 
 
 [Term]
@@ -4494,7 +4765,7 @@ def: "Search and retrieve names of or documentation on bioinformatics tools, for
 synonym: "Tool information retrieval" EXACT [http://edamontology.org]
 synonym: "Data retrieval (tool annotation)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0304 ! Data retrieval (metadata and documentation)
-relationship: has_output EDAM_data:0958 ! Tool metadata ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0958 !{min_cardinality=0} ! Tool metadata
 
 
 [Term]
@@ -4506,7 +4777,7 @@ def: "Search and retrieve names of or documentation on bioinformatics databases 
 synonym: "Database information retrieval" EXACT [http://edamontology.org]
 synonym: "Data retrieval (database annotation)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0304 ! Data retrieval (metadata and documentation)
-relationship: has_output EDAM_data:0957 ! Database metadata ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0957 !{min_cardinality=0} ! Database metadata
 
 
 [Term]
@@ -4543,7 +4814,7 @@ namespace: operation
 subset: operations
 def: "Query the biomedical and informatics literature." [http://edamontology.org]
 is_a: EDAM_operation:2421 ! Database search
-relationship: has_output EDAM_data:0970 ! Bibliographic reference ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0970 !{min_cardinality=0} ! Bibliographic reference
 relationship: has_topic EDAM_topic:0217 ! Literature analysis
 
 [Term]
@@ -4555,7 +4826,7 @@ def: "Search a sequence database by sequence comparison and retrieve similar seq
 comment: This excludes direct retrieval methods (e.g. the dbfetch program).
 is_a: EDAM_operation:2421 ! Database search
 is_a: EDAM_operation:2403 ! Sequence analysis
-relationship: has_output EDAM_data:0857 ! Database hits (sequence) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0857 !{min_cardinality=0} ! Database hits (sequence)
 relationship: has_topic EDAM_topic:0159 ! Sequence comparison
 
 
@@ -4567,7 +4838,7 @@ subset: operations
 def: "Search a tertiary structure database by sequence and/or structure comparison and retrieve structures and associated data." [http://edamontology.org]
 is_a: EDAM_operation:2421 ! Database search
 is_a: EDAM_operation:2996 ! Structure classification
-relationship: has_output EDAM_data:0885 ! Database hits (structure) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0885 !{min_cardinality=0} ! Database hits (structure)
 relationship: has_topic EDAM_topic:0081 ! Structure analysis
 
 [Term]
@@ -4580,7 +4851,7 @@ comment: Methods might use fingerprints, profiles, hidden Markov models, sequenc
 synonym: "Protein sequence classification" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2421 ! Database search
 is_a: EDAM_operation:3093 ! Sequence screening
-relationship: has_output EDAM_data:0858 ! Database hits (secondary) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0858 !{min_cardinality=0} ! Database hits (secondary)
 relationship: has_topic EDAM_topic:0595 ! Protein classification
 
 [Term]
@@ -4592,7 +4863,7 @@ def: "Screen a sequence against a motif or pattern database." [http://edamontolo
 is_a: EDAM_operation:2421 ! Database search
 is_a: EDAM_operation:0239 ! Sequence motif recognition
 is_a: EDAM_operation:3093 ! Sequence screening
-relationship: has_output EDAM_data:1298 ! Sequence features (motifs) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1298 !{min_cardinality=0} ! Sequence features (motifs)
 relationship: has_topic EDAM_topic:0158 ! Sequence motifs
 
 [Term]
@@ -4602,7 +4873,7 @@ namespace: operation
 subset: operations
 def: "Search a database of sequence profiles with a query sequence." [http://edamontology.org]
 is_a: EDAM_operation:2421 ! Database search
-is_a: EDAM_operation:0300 ! Sequence-profile alignment
+is_a: EDAM_operation:0300 ! Sequence-profile alignment construction
 is_a: EDAM_operation:3093 ! Sequence screening
 relationship: has_output EDAM_data:1298 ! Sequence features (motifs)
 
@@ -4671,7 +4942,7 @@ def: "Search a sequence database and retrieve sequences that are similar to a qu
 comment: This includes tools based on PSI-BLAST.
 synonym: "Sequence similarity search (profile-based methods)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0346 ! Sequence database search (by sequence)
-is_a: EDAM_operation:0300 ! Sequence-profile alignment
+is_a: EDAM_operation:0300 ! Sequence-profile alignment construction
 
 [Term]
 id: EDAM_operation:0352
@@ -4682,7 +4953,7 @@ def: "Search a sequence database for sequences that are similar to a query seque
 comment: This includes tools based on the Smith-Waterman algorithm or FASTA.
 synonym: "Sequence similarity search (local alignment-based methods) " EXACT [http://edamontology.org]
 is_a: EDAM_operation:0346 ! Sequence database search (by sequence)
-is_a: EDAM_operation:0493 ! Pairwise sequence alignment (local)
+is_a: EDAM_operation:0493 ! Pairwise sequence alignment construction (local)
 relationship: has_topic EDAM_topic:0182 ! Sequence alignment
 
 [Term]
@@ -4694,7 +4965,7 @@ def: "Search sequence(s) or a sequence database for sequences that are similar t
 comment: This includes tools based on the Needleman and Wunsch algorithm.
 synonym: "Sequence similarity search (global alignment-based methods)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0346 ! Sequence database search (by sequence)
-is_a: EDAM_operation:0494 ! Pairwise sequence alignment (global)
+is_a: EDAM_operation:0494 ! Pairwise sequence alignment construction (global)
 relationship: has_topic EDAM_topic:0182 ! Sequence alignment
 
 [Term]
@@ -4789,7 +5060,7 @@ def: "Annotate an entity (typically a biological or biomedical database entity) 
 comment: This is a broad concept and is used a placeholder for other, more specific concepts.
 is_a: EDAM_operation:0004 ! Operation
 relationship: has_input EDAM_data:0582 ! Ontology
-relationship: has_topic EDAM_topic:0089 ! Ontologies
+relationship: has_topic EDAM_topic:0089 ! Ontology
 
 
 [Term]
@@ -4845,6 +5116,41 @@ synonym: "Database indexing" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2412 ! Data index processing
 relationship: has_output EDAM_data:0955 ! Data index
 
+
+[Term]
+id: EDAM_operation:3211 !{since=1.1}
+name: Genome indexing
+namespace: operation
+subset: operations
+def: "Generate an index of a genome sequence." [http://edamontology.org]
+comment: Many sequence alignment tasks involving many or very large sequences rely on a precomputed index of the sequence to accelerate the alignment.
+is_a: EDAM_operation:0227 ! Data indexing
+relationship: has_output EDAM_data:3210 ! Genome index
+
+[Term]
+id: EDAM_operation:3212 !{since=1.1}
+name: Genome indexing (Burrows-Wheeler)
+namespace: operation
+subset: operations
+def: "Generate an index of a genome sequence using the Burrows-Wheeler algorithm." [http://edamontology.org]
+comment:  The Burrows-Wheeler Transform (BWT) is a permutation of the genome based on a suffix array algorithm.
+synonym: "Burrows-Wheeler" EXACT [http://edamontology.org]
+synonym: "Burrows Wheeler" EXACT [http://edamontology.org]
+synonym: "Genome indexing (Burrows Wheeler)" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3211 ! Genome indexing
+
+[Term]
+id: EDAM_operation:3213 !{since=1.1}
+name: Genome indexing (suffix arrays)
+namespace: operation
+subset: operations
+def: "Generate an index of a genome sequence using a suffix arrays algorithm." [http://edamontology.org]
+comment: A suffix array consists of the lexicographically sorted list of suffixes of a genome.
+synonym: "suffix arrays" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3211 ! Genome indexing
+
+
+
 [Term]
 id: EDAM_operation:0228
 name: Data index analysis
@@ -4864,6 +5170,7 @@ name: Nucleic acid sequence analysis
 namespace: operation
 subset: operations
 def: "Analyse a nucleic acid sequence (using methods that are only applicable to nucleic acid sequences)." [http://edamontology.org]
+synonym: "Sequence analysis (nucleic acid)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2403 ! Sequence analysis
 is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
 relationship: has_input EDAM_data:2977 !{min_cardinality=1} ! Nucleic acid sequence
@@ -4888,12 +5195,34 @@ name: Protein sequence analysis
 namespace: operation
 subset: operations
 def: "Analyse a protein sequence (using methods that are only applicable to protein sequences)." [http://edamontology.org]
+synonym: "Sequence analysis (protein)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2403 ! Sequence analysis
 is_a: EDAM_operation:2447 ! Sequence processing (protein)
 synonym: "Sequence analysis (protein)" EXACT [http://edamontology.org]
 relationship: has_input EDAM_data:2976 !{min_cardinality=1} ! Protein sequence
 relationship: has_topic EDAM_topic:0639 ! Protein sequence analysis
 
+
+
+[Term]
+id: EDAM_operation:3214 !{since=1.1}
+name: Spectrum analysis
+namespace: operation
+subset: operations
+def: "Analyse a spectrum from a mass spectrometry (or other) experiment." [http://edamontology.org]
+synonym: "Spectral analysis" EXACT [http://edamontology.org]
+synonym: "Mass spectrum analysis" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2420 ! Analysis and processing
+
+[Term]
+id: EDAM_operation:3215 !{since=1.1}
+name: Peak detection
+namespace: operation
+subset: operations
+def: "Identify peaks in a spectrum from a mass spectrometry experiment." [http://edamontology.org]
+synonym: "Peak finding" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3214 ! Spectrum analysis
+relationship: has_input EDAM_data:0943 !{min_cardinality=1} ! Mass spectrometry spectra
 
 
 [Term]
@@ -4905,8 +5234,8 @@ subset: operations
 def: "Process (read and / or write) one or more molecular sequences and associated annotation." [http://edamontology.org]
 synonym: "Sequence processing (general)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:2044 ! Sequence ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2044 ! Sequence ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2044 !{min_cardinality=0} ! Sequence
+relationship: has_output EDAM_data:2044 !{min_cardinality=0} ! Sequence
 relationship: has_topic EDAM_topic:0080 ! Sequence analysis
 
 [Term]
@@ -4917,8 +5246,8 @@ subset: operations
 def: "Process (read and / or write) a protein sequence and associated annotation." [http://edamontology.org]
 is_a: EDAM_operation:2446 ! Sequence processing
 is_a: EDAM_operation:2502 ! Protein data processing
-relationship: has_input EDAM_data:2976 ! Protein sequence ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2976 ! Protein sequence ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2976 !{min_cardinality=0} ! Protein sequence
+relationship: has_output EDAM_data:2976 !{min_cardinality=0} ! Protein sequence
 
 [Term]
 id: EDAM_operation:2448
@@ -4928,8 +5257,8 @@ subset: operations
 def: "Process (read and / or write) a nucleotide sequence and associated annotation." [http://edamontology.org]
 is_a: EDAM_operation:2446 ! Sequence processing
 is_a: EDAM_operation:2501 ! Nucleic acid data processing
-relationship: has_input EDAM_data:2977 ! Nucleic acid sequence ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2977 ! Nucleic acid sequence ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2977 !{min_cardinality=0} ! Nucleic acid sequence
+relationship: has_output EDAM_data:2977 !{min_cardinality=0} ! Nucleic acid sequence
 
 [Term]
 id: EDAM_operation:0229
@@ -5022,7 +5351,7 @@ subset: operations
 def: "Submit a molecular sequence to a database." [http://edamontology.org]
 is_a: EDAM_operation:2446 ! Sequence processing
 relationship: has_input EDAM_data:2044 !{min_cardinality=1} ! Sequence
-relationship: has_topic EDAM_topic:0091 ! Data handling
+relationship: has_topic EDAM_topic:3077 ! Data acquisition and deposition
 
 [Term]
 id: EDAM_operation:0234
@@ -5061,7 +5390,7 @@ synonym: "Sequence cluster generation" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2451 ! Sequence comparison
 is_a: EDAM_operation:2452 ! Sequence cluster processing
 is_a: EDAM_operation:2995 ! Sequence classification
-relationship: has_output EDAM_data:1235 ! Sequence cluster ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1235 !{min_cardinality=0} ! Sequence cluster
 
 [Term]
 id: EDAM_operation:0236
@@ -5092,7 +5421,7 @@ namespace: operation
 subset: operations
 def: "Compare two or more molecular sequences, identify and remove redundant sequences based on some criteria." [http://edamontology.org]
 is_a: EDAM_operation:0291 ! Sequence clustering
-relationship: has_output EDAM_data:2044 ! Sequence ! !{min_cardinality=0}
+relationship: has_output EDAM_data:2044 !{min_cardinality=0} ! Sequence
 relationship: has_topic EDAM_topic:0164 ! Sequence clustering
 
 
@@ -5151,6 +5480,62 @@ is_a: EDAM_operation:2451 ! Sequence comparison
 relationship: has_output EDAM_data:0870 ! Sequence distance matrix
 relationship: has_topic EDAM_topic:0084 ! Phylogenetics
 
+[Term]
+id: EDAM_operation:3200 !{since=1.1}
+name: DNA barcoding
+namespace: operation
+subset: operations
+def: "Analyse DNA sequences in order to identify a DNA barcode; short fragment(s) of DNA that are useful to diagnose the taxa of biological organisms." [http://edamontology.org]
+synonym: "Sample barcoding" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
+
+
+
+[Term]
+id: EDAM_operation:3204 !{since=1.1}
+name: Methylation analysis
+namespace: operation
+subset: operations
+def: "Determine cytosine methylation states in nucleic acid sequences." [http://edamontology.org]
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
+
+[Term]
+id: EDAM_operation:3205 !{since=1.1}
+name: Methylation calling
+namespace: operation
+subset: operations
+def: "Determine cytosine methylation status of specific positions in a nucleic acid sequences." [http://edamontology.org]
+is_a: EDAM_operation:3204 ! Methylation analysis
+
+[Term]
+id: EDAM_operation:3206 !{since=1.1}
+name: Methylation level analysis (global)
+namespace: operation
+subset: operations
+def: "Measure the overall level of methyl cytosines in a genome from analysis of experimental data, typically from chromatographic methods and methyl accepting capacity assay." [http://edamontology.org]
+synonym: "Global methylation analysis" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3205 ! Methylation calling
+
+[Term]
+id: EDAM_operation:3207 !{since=1.1}
+name: Methylation level analysis (gene-specific)
+namespace: operation
+subset: operations
+def: "Measure the level of methyl cytosines in specific genes." [http://edamontology.org]
+comment: Many different techniques are available for this.
+synonym: "Gene-specific methylation analysis" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3205 ! Methylation calling
+
+
+[Term]
+id: EDAM_operation:3209 !{since=1.1}
+name: Genome comparison
+namespace: operation
+subset: operations
+def: "Compare the sequence or features of two or more genomes, for example, to find matching regions." [http://edamontology.org]
+synonym: "Genomic region matching" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
+
 
 [Term]
 id: EDAM_operation:0266
@@ -5159,7 +5544,7 @@ namespace: operation
 subset: operations
 def: "Detect vector sequences in nucleotide sequence, typically by comparison to a set of known vector sequences." [http://edamontology.org]
 is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 
 [Term]
 id: EDAM_operation:2233
@@ -5180,6 +5565,29 @@ comment: For example, identify full-length cDNAs from EST sequences or detect po
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_operation:2403 ! Sequence analysis
 
+[Term]
+id: EDAM_operation:3185 !{since=1.1}
+name: Base-calling
+namespace: operation
+subset: operations
+def: "Identify base (nucleobase) sequence from a fluorescence 'trace' data generated by an automated DNA sequencer." [http://edamontology.org]
+synonym: "Base calling" EXACT [http://edamontology.org]
+synonym: "Phred base calling" EXACT [http://edamontology.org]
+synonym: "Phred base-calling" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2448 ! Sequence processing (nucleic acid)
+relationship: has_topic EDAM_topic:3168 ! Sequencing
+
+
+[Term]
+id: EDAM_operation:3195
+name: Sequencing error detection
+namespace: operation
+subset: operations
+def: "Detect errors in DNA sequences generated from sequencing projects)." [http://edamontology.org]
+synonym: "Short-read error correction" EXACT [http://edamontology.org]
+synonym: "Short read error correction" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
+relationship: has_topic EDAM_topic:3168 ! Sequencing
 
 [Term]
 id: EDAM_operation:0265
@@ -5188,9 +5596,9 @@ namespace: operation
 subset: operations
 def: "Detect frameshift errors in DNA sequences (from sequencing projects)." [http://edamontology.org]
 comment: Methods include sequence alignment (if related sequences are available) and word-based sequence comparison.
-is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+is_a: EDAM_operation:3195 ! Sequencing error detection
+is_a: EDAM_operation:3197 ! Genetic variation analysis
+relationship: has_topic EDAM_topic:3168 ! Sequencing
 
 
 [Term]
@@ -5212,7 +5620,7 @@ subset: operations
 def: "Identify genetic markers in DNA sequences." [http://edamontology.org]
 comment: A genetic marker is any DNA sequence of known chromosomal location that is associated with and specific to a particular gene or trait. This includes short sequences surrounding a SNP, Sequence-Tagged Sites (STS) which are well suited for PCR amplification, a longer minisatellites sequence etc.
 is_obsolete: true !{since=beta13}
-consider: EDAM_operation:0415 ! Nucleic acid feature detection
+consider: EDAM_operation:0415 ! Nucleic acid feature prediction
 
 
 [Term]
@@ -5279,6 +5687,51 @@ namespace: operation
 subset: operations
 def: "Cut (remove) characters or a region from a molecular sequence." [http://edamontology.org]
 is_a: EDAM_operation:0231 ! Sequence editing
+
+[Term]
+id: EDAM_operation:3192 !{since=1.1}
+name: Sequence trimming
+namespace: operation
+subset: operations
+def: "Cut (remove) the end from a molecular sequence." [http://edamontology.org]
+is_a: EDAM_operation:0369 ! Sequence cutting
+
+
+[Term]
+id: EDAM_operation:3212 !{since=1.1}
+name: Primer removal
+namespace: operation
+subset: operations
+def: "Remove forward and/or reverse primers from nucleic acid sequences (typically PCR products)." [http://edamontology.org]
+is_a: EDAM_operation:0369 ! Sequence cutting
+is_a: EDAM_operation:2511 ! Sequence editing (nucleic acid)
+
+
+[Term]
+id: EDAM_operation:3189 !{since=1.1}
+name: Trim ends
+namespace: operation
+subset: operations
+def: "Trim sequences (typically from an automated DNA sequencer) to remove misleading ends." [http://edamontology.org]
+comment: For example trim polyA tails, introns and primer sequence flanking the sequence of amplified exons, or other unwanted sequence.
+is_a: EDAM_operation:3192 ! Sequence trimming
+
+[Term]
+id: EDAM_operation:3190 !{since=1.1}
+name: Trim vector
+namespace: operation
+subset: operations
+def: "Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences." [http://edamontology.org]
+is_a: EDAM_operation:3192 ! Sequence trimming
+
+[Term]
+id: EDAM_operation:3191 !{since=1.1}
+name: Trim to reference
+namespace: operation
+subset: operations
+def: "Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence." [http://edamontology.org]
+is_a: EDAM_operation:3192 ! Sequence trimming
+
 
 
 [Term]
@@ -5355,7 +5808,7 @@ subset: operations
 ! alt_id: EDAM_operation:2450
 def: "Find (and possibly render) short repetitive subsequences (repeat sequences) in (typically nucleotide) sequences." [http://edamontology.org]
 is_a: EDAM_operation:0237 ! Repeat sequence analysis
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1299 ! Sequence features (repeats)
 
 
@@ -5387,7 +5840,7 @@ subset: operations
 def: "Identify common, conserved (homologous) or synonymous transcriptional regulatory motifs (transcription factor binding sites)." [http://edamontology.org]
 comment: For example cross-species comparison of transcription factor binding sites (TFBS). Methods might analyse co-regulated or co-expressed genes, or sets of oppositely expressed genes.
 is_a: EDAM_operation:0438 ! Transcription regulatory element prediction
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1315 ! Gene features (TFBS)
 
 [Term]
@@ -5409,6 +5862,8 @@ namespace: operation
 subset: operations
 def: "Find (scan for) known motifs, patterns and regular expressions in molecular sequence(s)." [http://edamontology.org]
 synonym: "Sequence motif detection" EXACT [http://edamontology.org]
+synonym: "Motif detection" EXACT [http://edamontology.org]
+synonym: "Motif recognition" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2404 ! Sequence motif processing
 is_a: EDAM_operation:0253 ! Feature prediction
 relationship: has_output EDAM_data:1298 ! Sequence features (motifs)
@@ -5447,8 +5902,8 @@ comment: This includes methods to render and visualise the properties of a prote
 synonym: "Protein property rendering" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2502 ! Protein data processing
 is_a: EDAM_operation:3023 ! Prediction, detection and recognition (protein)
-relationship: has_input EDAM_data:0897 ! Protein property ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0897 ! Protein property ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0897 !{min_cardinality=0} ! Protein property
+relationship: has_output EDAM_data:0897 !{min_cardinality=0} ! Protein property
 relationship: has_topic EDAM_topic:0123 ! Protein properties
 
 [Term]
@@ -5549,7 +6004,7 @@ def: "Predict antigenicity, allergenicity / immunogenicity, allergic cross-react
 comment: This is usually done in the development of peptide-specific antibodies or multi-epitope vaccines. Methods might use sequence data (for example motifs) and / or structural data.
 is_a: EDAM_operation:2492 ! Protein interaction prediction
 is_a: EDAM_operation:3088 ! Protein property calculation (from sequence)
-relationship: has_output EDAM_data:1534 !{min_cardinality=1} ! Peptide immunogenicity
+relationship: has_output EDAM_data:1534 !{min_cardinality=1} ! Peptide immunogenicity data
 relationship: has_topic EDAM_topic:0804 ! Immunoinformatics
 
 
@@ -5687,8 +6142,8 @@ subset: operations
 def: "Process (read and / or write) RNA secondary structure data." [http://edamontology.org]
 is_a: EDAM_operation:2482 ! Secondary structure processing
 is_a: EDAM_operation:2501 ! Nucleic acid data processing
-relationship: has_input EDAM_data:0880 ! RNA secondary structure ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0880 ! RNA secondary structure ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0880 !{min_cardinality=0} ! RNA secondary structure record
+relationship: has_output EDAM_data:0880 !{min_cardinality=0} ! RNA secondary structure record
 relationship: has_topic EDAM_topic:0097 ! Nucleic acid structure analysis
 relationship: has_topic EDAM_topic:0697 ! RNA structure and alignment
 
@@ -5701,8 +6156,8 @@ subset: operations
 def: "Process (read and / or write) nucleic acid tertiary structure data." [http://edamontology.org]
 is_a: EDAM_operation:2465 ! Structure processing
 is_a: EDAM_operation:2501 ! Nucleic acid data processing
-relationship: has_input EDAM_data:1459 ! Nucleic acid structure ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1459 ! Nucleic acid structure ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1459 !{min_cardinality=0} ! Nucleic acid structure
+relationship: has_output EDAM_data:1459 !{min_cardinality=0} ! Nucleic acid structure
 relationship: has_topic EDAM_topic:0097 ! Nucleic acid structure analysis
 
 
@@ -5725,8 +6180,8 @@ subset: operations
 def: "Predict RNA secondary structure (for example knots, pseudoknots, alternative structures etc)." [http://edamontology.org]
 comment: Methods might use RNA motifs, predicted intermolecular contacts, or RNA sequence-structure compatibility (inverse RNA folding).
 is_a: EDAM_operation:2439 ! RNA secondary structure processing
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
-relationship: has_output EDAM_data:0880 !{min_cardinality=1} ! RNA secondary structure
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
+relationship: has_output EDAM_data:0880 !{min_cardinality=1} ! RNA secondary structure record
 relationship: has_topic EDAM_topic:0173 ! Nucleic acid structure prediction
 
 [Term]
@@ -5846,7 +6301,7 @@ synonym: "sequence_feature" RELATED [SO:0000110]
 is_a: EDAM_operation:2403 ! Sequence analysis
 is_a: EDAM_operation:2423 ! Prediction, detection and recognition
 relationship: has_output EDAM_data:1255 !{min_cardinality=1} ! Feature record
-relationship: has_topic EDAM_topic:3072 ! Feature prediction
+relationship: has_topic EDAM_topic:3072 ! Sequence feature detection
 
 
 [Term]
@@ -5856,9 +6311,9 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a sequence feature table." [http://edamontology.org]
 is_a: EDAM_operation:2446 ! Sequence processing
-relationship: has_input EDAM_data:1270 ! Sequence feature table ! !{min_cardinality=0}
-relationship: has_input EDAM_data:2201 ! Sequence record full ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1255 ! Sequence features ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1270 !{min_cardinality=0} ! Sequence feature table
+relationship: has_input EDAM_data:2201 !{min_cardinality=0} ! Sequence record full
+relationship: has_output EDAM_data:1255 !{min_cardinality=0} ! Feature record
 relationship: has_topic EDAM_topic:0160 ! Sequence sites and features
 
 [Term]
@@ -5878,20 +6333,22 @@ namespace: operation
 subset: operations
 def: "Query the features (in a feature table) of molecular sequence(s)." [http://edamontology.org]
 is_a: EDAM_operation:2453 ! Feature table processing
-relationship: has_input EDAM_data:1270 ! Sequence feature table ! !{min_cardinality=0}
-relationship: has_input EDAM_data:2201 ! Sequence record full ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1255 ! Sequence features
+relationship: has_input EDAM_data:1270 !{min_cardinality=0} ! Sequence feature table
+relationship: has_input EDAM_data:2201 !{min_cardinality=0} ! Sequence record full
+relationship: has_output EDAM_data:1255 ! Feature record
 
 [Term]
 id: EDAM_operation:0256
-name: Feature table comparison
+name: Feature comparison
 namespace: operation
 subset: operations
 def: "Compare the feature tables of two or more molecular sequences." [http://edamontology.org]
+synonym: "Feature table comparison" EXACT [http://edamontology.org]
+synonym: "Sequence feature comparison" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2453 ! Feature table processing
 is_a: EDAM_operation:2424 ! Comparison
-relationship: has_input EDAM_data:1270 ! Sequence feature table ! !{min_cardinality=0}
-relationship: has_input EDAM_data:2201 ! Sequence record full ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1270 !{min_cardinality=0} ! Sequence feature table
+relationship: has_input EDAM_data:2201 !{min_cardinality=0} ! Sequence record full
 
 
 
@@ -5917,7 +6374,7 @@ subset: operations
 def: "Predict, recognise and identify positional features in protein sequences such as functional sites or regions and secondary structure." [http://edamontology.org]
 comment: Methods typically involve scanning for known motifs, patterns and regular expressions.
 synonym: "Sequence feature detection (protein)" EXACT [http://edamontology.org]
-is_a: EDAM_operation:3092 ! Protein feature detection
+is_a: EDAM_operation:3092 ! Protein feature prediction
 ! is_a: EDAM_operation:0253 ! Feature prediction
 is_a: EDAM_operation:2479 ! Protein sequence analysis
 
@@ -5929,7 +6386,7 @@ name: Protein feature prediction (from structure)
 namespace: operation
 subset: operations
 def: "Predict, recognise and identify positional features in proteins from analysing protein structure." [http://edamontology.org]
-is_a: EDAM_operation:3092 ! Protein feature detection
+is_a: EDAM_operation:3092 ! Protein feature prediction
 is_a: EDAM_operation:2406 ! Protein structure analysis
 
 
@@ -5943,7 +6400,7 @@ subset: operations
 ! alt_id: EDAM_operation:0382
 def: "Predict, recognise and identify functional or other key sites within protein sequences, typically by scanning for known motifs, patterns and regular expressions." [http://edamontology.org]
 synonym: "name: Sequence motif recognition (protein)" EXACT [http://edamontology.org]
-is_a: EDAM_operation:0414 ! Protein feature detection (from sequence)
+is_a: EDAM_operation:0414 ! Protein feature prediction (from sequence)
 is_a: EDAM_operation:0239 ! Sequence motif recognition
 
 
@@ -6039,7 +6496,7 @@ namespace: operation
 subset: operations
 def: "Predict RNA and DNA-binding binding sites in protein sequences." [http://edamontology.org]
 is_a: EDAM_operation:0419 ! Binding site prediction (from sequence)
-relationship: has_output EDAM_data:1326 ! Protein features (binding sites) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1326 !{min_cardinality=0} ! Protein features (binding sites)
 
 [Term]
 id: EDAM_operation:0421
@@ -6096,6 +6553,20 @@ def: "Detect or predict signal peptides (and typically predict subcellular local
 is_a: EDAM_operation:0418 ! Protein signal peptide detection
 
 
+
+
+[Term]
+id: EDAM_operation:3222 !{since=1.1}
+name: Peak calling
+namespace: operation
+subset: operations
+def: "Identify putative protein-binding regions in a genome sequence from analysis of Chip-sequencing data or ChIP-on-chip data." [http://edamontology.org]
+comment: Chip-sequencing combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to generate a set of reads, which are aligned to a genome sequence.  The enriched areas contain the binding sites of DNA-associated proteins.  For example, a transcription factor binding site. ChIP-on-chip in contrast combines chromatin immunoprecipitation ('ChIP') with microarray ('chip'). 
+synonym: "Protein binding peak detection" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
+
+
+
 [Term]
 id: EDAM_operation:2454
 name: Gene and gene component prediction
@@ -6103,9 +6574,11 @@ namespace: operation
 subset: operations
 def: "Detect, predict and identify genes or components of genes in DNA sequences." [http://edamontology.org]
 synonym: "Gene finding" EXACT [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
-relationship: has_output EDAM_data:1300 ! Nucleic acid features (gene structure)
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
+relationship: has_output EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 relationship: has_topic EDAM_topic:0109 ! Gene finding
+
+
 
 
 [Term]
@@ -6133,7 +6606,7 @@ name: Transposon prediction
 namespace: operation
 subset: operations
 def: "Detect or predict transposons, retrotransposons / retrotransposition signatures etc." [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1301 ! Nucleic acid features (mobile genetic elements)
 
 [Term]
@@ -6142,7 +6615,7 @@ name: PolyA signal detection
 namespace: operation
 subset: operations
 def: "Detect polyA signals in nucleotide sequences." [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1302 ! Nucleic acid features (PolyA signal or site)
 
 [Term]
@@ -6153,7 +6626,7 @@ subset: operations
 ! alt_id: EDAM_operation:2455
 def: "Detect quadruplex-forming motifs in nucleotide sequences." [http://edamontology.org]
 comment: Quadruplex (4-stranded) structures are formed by guanine-rich regions and are implicated in various important biological processes and as therapeutic targets.
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 synonym: "Quadruplex structure prediction" EXACT [http://edamontology.org]
 relationship: has_output EDAM_data:1303 ! Nucleic acid features (quadruplexes)
 relationship: has_topic EDAM_topic:0173 ! Nucleic acid structure prediction
@@ -6168,7 +6641,7 @@ def: "Find CpG rich regions in a nucleotide sequence or isochores in genome sequ
 comment: An isochore is long region (> 3 KB) of DNA with very uniform GC content, in contrast to the rest of the genome. Isochores tend tends to have more genes, higher local melting or denaturation temperatures, and different flexibility. Methods might calculate fractional GC content or variation of GC content, predict methylation status of CpG islands etc. This includes methods that visualise CpG rich regions in a nucleotide sequence, for example plot isochores in a genome sequence.
 synonym: "CpG island and isochores detection" EXACT [http://edamontology.org]
 synonym: "CpG island and isochores rendering" EXACT [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1304 ! Nucleic acid features (CpG island and isochore)
 relationship: has_topic EDAM_topic:0157 ! Sequence composition analysis
 
@@ -6179,7 +6652,7 @@ name: Restriction site recognition
 namespace: operation
 subset: operations
 def: "Find and identify restriction enzyme cleavage sites (restriction sites) in (typically) DNA sequences, for example to generate a restriction map." [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1305 ! Nucleic acid features (restriction sites)
 relationship: has_topic EDAM_topic:0100 ! Nucleic acid restriction
 
@@ -6190,7 +6663,7 @@ namespace: operation
 subset: operations
 def: "Identify, predict or analyse splice sites in nucleotide sequences." [http://edamontology.org]
 comment: Methods might require a pre-mRNA or genomic DNA sequence.
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1307 ! Nucleic acid features (splice sites)
 relationship: has_topic EDAM_topic:0114 ! Gene structure and RNA splicing
 
@@ -6209,7 +6682,7 @@ name: Nucleosome formation or exclusion sequence prediction
 namespace: operation
 subset: operations
 def: "Identify or predict nucleosome exclusion sequences (nucleosome free regions) in DNA." [http://edamontology.org]
-is_a: EDAM_operation:0415 ! Nucleic acid feature detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:1306 ! Nucleic acid features (nucleosome exclusion sequences)
 
 
@@ -6258,7 +6731,7 @@ subset: operations
 def: "Predict selenocysteine insertion sequence (SECIS) in a DNA sequence." [http://edamontology.org]
 comment: SECIS elements are around 60 nucleotides in length with a stem-loop structure directs the cell to translate UGA codons as selenocysteines.
 is_a: EDAM_operation:0426 ! Gene component prediction
-relationship: has_output EDAM_data:1300 ! Nucleic acid features (gene structure)
+relationship: has_output EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 
 [Term]
 id: EDAM_operation:0438
@@ -6512,8 +6985,8 @@ subset: operations
 def: "Process (read and / or write) protein secondary structure data." [http://edamontology.org]
 is_a: EDAM_operation:2482 ! Secondary structure processing
 is_a: EDAM_operation:2502 ! Protein data processing
-relationship: has_input EDAM_data:0876 ! Protein features (secondary structure) ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0876 ! Protein features (secondary structure) ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0876 !{min_cardinality=0} ! Protein features (secondary structure)
+relationship: has_output EDAM_data:0876 !{min_cardinality=0} ! Protein features (secondary structure)
 relationship: has_topic EDAM_topic:0694 ! Protein secondary structure
 
 [Term]
@@ -6536,7 +7009,7 @@ def: "Predict secondary structure of protein sequences." [http://edamontology.or
 comment: Methods might use amino acid composition, local sequence information, multiple sequence alignments, physicochemical features, estimated energy content, statistical algorithms, hidden Markov models, support vector machines, kernel machines, neural networks etc.
 synonym: "Secondary structure prediction (protein)" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2444 ! Protein secondary structure processing
-is_a: EDAM_operation:0414 ! Protein feature detection (from sequence)
+is_a: EDAM_operation:0414 ! Protein feature prediction (from sequence)
 is_a: EDAM_operation:3023 ! Prediction, detection and recognition (protein)
 relationship: has_output EDAM_data:0876 !{min_cardinality=1} ! Protein features (secondary structure)
 relationship: has_topic EDAM_topic:0178 ! Protein secondary structure prediction
@@ -6558,7 +7031,7 @@ namespace: operation
 subset: operations
 def: "Assign secondary structure from protein coordinate data." [http://edamontology.org]
 is_a: EDAM_operation:0319 ! Protein secondary structure assignment
-is_a: EDAM_operation:3090 ! Protein feature detection (from structure)
+is_a: EDAM_operation:3090 ! Protein feature prediction (from structure)
 
 [Term]
 id: EDAM_operation:0535
@@ -6740,8 +7213,8 @@ def: "Model the structure of a protein in complex with a small molecule or anoth
 comment: This includes protein-protein interactions, protein-nucleic acid, protein-ligand binding etc. Methods might predict whether the molecules are likely to bind in vivo, their conformation when bound, the strength of the interaction, possible mutations to achieve bonding and so on.
 is_a: EDAM_operation:0477 ! Protein modelling
 is_a: EDAM_operation:2492 ! Protein interaction prediction
-relationship: has_output EDAM_data:1461 ! Protein-ligand complex ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2877 ! Protein complex ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1461 !{min_cardinality=0} ! Protein-ligand complex
+relationship: has_output EDAM_data:2877 !{min_cardinality=0} ! Protein complex
 relationship: has_topic EDAM_topic:0177 ! Molecular docking
 
 
@@ -6754,7 +7227,7 @@ def: "Align molecular sequence to structure in 3D space (threading)." [http://ed
 comment: Use this concept for methods that evaluate sequence-structure compatibility by assessing residue interactions in 3D. Methods might perform one-to-one, one-to-many or many-to-many comparisons.
 synonym: "Sequence-structure alignment" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0303 ! Protein fold recognition
-is_a: EDAM_operation:2928 ! Alignment
+is_a: EDAM_operation:2928 ! Alignment construction
 relationship: has_input EDAM_data:1460 !{min_cardinality=1} ! Protein structure
 relationship: has_output EDAM_data:0893 !{min_cardinality=1} ! Sequence-structure alignment
 relationship: has_topic EDAM_topic:0175 ! Homology modelling
@@ -6850,7 +7323,7 @@ subset: operations
 def: "Predict the interactions of proteins with other molecules." [http://edamontology.org]
 is_a: EDAM_operation:2405 ! Protein interaction data processing
 is_a: EDAM_operation:3023 ! Prediction, detection and recognition (protein)
-relationship: has_output EDAM_data:0906 !{min_cardinality=1} ! Protein report (interaction)
+relationship: has_output EDAM_data:0906 !{min_cardinality=1} ! Protein interaction
 
 [Term]
 id: EDAM_operation:2464
@@ -6879,7 +7352,7 @@ namespace: operation
 subset: operations
 def: "Identify or predict protein-protein interactions, interfaces, binding sites etc in protein structures." [http://edamontology.org]
 is_a: EDAM_operation:2464 ! Protein-protein interaction prediction
-is_a: EDAM_operation:3090 ! Protein feature detection (from structure)
+is_a: EDAM_operation:3090 ! Protein feature prediction (from structure)
 
 
 
@@ -6891,8 +7364,8 @@ subset: operations
 def: "Process (read and / or write) a network of protein interactions." [http://edamontology.org]
 is_a: EDAM_operation:2405 ! Protein interaction data processing
 is_a: EDAM_operation:2438 ! Pathway or network processing
-relationship: has_input EDAM_data:1663 ! Pathway or network (protein-protein interaction) ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1663 ! Pathway or network (protein-protein interaction) ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1663 !{min_cardinality=0} ! Pathway or network (protein-protein interaction)
+relationship: has_output EDAM_data:1663 !{min_cardinality=0} ! Pathway or network (protein-protein interaction)
 relationship: has_topic EDAM_topic:3044 ! Protein interaction networks
 
 [Term]
@@ -6930,6 +7403,62 @@ is_a: EDAM_operation:1778 ! Protein function comparison
 relationship: has_input EDAM_data:1663 !{min_cardinality=2} ! Pathway or network (protein-protein interaction)
 
 
+
+[Term]
+id: EDAM_operation:3197 !{since=1.1}
+name: Genetic variation analysis
+namespace: operation
+subset: operations
+def: "Analyse a genetic variation, for example to annotate its location, alleles, classification, and effects on individual transcripts predicted for a gene model." [http://edamontology.org]
+comment: Genetic variation annotation provides contextual interpretation of coding SNP consequences in transcripts. It allows comparisons to be made between variation data in different populations or strains for the same transcript.
+synonym: "Sequence variation analysis" EXACT [http://edamontology.org]
+synonym: "Genetic variation annotation" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
+relationship: has_output EDAM_data:0918 ! Nucleic acid features (variation)
+
+
+[Term]
+id: EDAM_operation:3227 !{since=1.1}
+name: Variant mapping
+namespace: operation
+subset: operations
+def: "Identify and map genomic alterations, including single nucleotide polymorphisms, short indels and structural variants, in a genome sequence." [http://edamontology.org]
+comment: Methods often utilise a database of aligned reads.
+synonym: "Variant calling" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3197 ! Genetic variation analysis
+
+
+[Term]
+id: EDAM_operation:3228 !{since=1.1}
+name: Structural variation discovery
+namespace: operation
+subset: operations
+def: "Detect large regions in a genome subject to copy-number variation, or other structural variations in genome(s)." [http://edamontology.org]
+comment: Methods might involve analysis of whole-genome array comparative genome hybridization or single-nucleotide polymorphism arrays, paired-end mapping of sequencing data, or from analysis of short reads from new sequencing technologies.
+is_a: EDAM_operation:3197 ! Genetic variation analysis
+
+
+[Term]
+id: EDAM_operation:3196 !{since=1.1}
+name: Genotyping
+namespace: operation
+subset: operations
+def: "Analyse DNA sequence data to identify differences between the genetic composition (genotype) of an individual compared to other individual's or a reference sequence." [http://edamontology.org]
+comment: Methods might consider cytogenetic analyses, copy number polymorphism (and calculate copy number calls for copy-number variation(CNV) regions), single nucleotide polymorphism (SNP), , rare copy number variation (CNV) identification, loss of heterozygosity data and so on.
+is_a: EDAM_operation:3197 ! Genetic variation analysis
+
+
+! Link frameshift error detection and SNP detection to this one
+[Term]
+id: EDAM_operation:3202 !{since=1.1}
+name: Mutation detection
+namespace: operation
+subset: operations
+def: "Detect mutations in multiple DNA sequences, for example, from the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware." [http://edamontology.org]
+synonym: "Polymorphism detection" EXACT [http://edamontology.org]
+is_a: EDAM_operation:3197 ! Genetic variation analysis
+
+
 [Term]
 id: EDAM_operation:0484
 name: SNP detection
@@ -6938,9 +7467,20 @@ subset: operations
 def: "Find single nucleotide polymorphisms (SNPs) between sequences." [http://edamontology.org]
 comment: This includes functional SNPs for large-scale genotyping purposes, disease-associated non-synonymous SNPs etc.
 synonym: "Single nucleotide polymorphism detection" EXACT [http://edamontology.org]
-is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
-is_a: EDAM_operation:2508 ! Nucleic acid sequence comparison
+is_a: EDAM_operation:3202 ! Mutation detection
+is_a: EDAM_operation:0415 ! Nucleic acid feature prediction
 relationship: has_output EDAM_data:2885 ! Nucleic acid features (polymorphism annotation)
+
+
+[Term]
+id: EDAM_operation:3201 !{since=1.1}
+name: SNP calling
+namespace: operation
+subset: operations
+def: "Identify single nucleotide change in base positions in sequencing data that differ from a reference genome and which might, especially by reference to population frequency or functional data, indicate a polymorphism." [http://edamontology.org]
+comment: Operations usually score confidence in the prediction or some other statistical measure of evidence.
+is_a: EDAM_operation:0484 ! SNP detection
+
 
 [Term]
 id: EDAM_operation:0485
@@ -6950,6 +7490,19 @@ subset: operations
 def: "Generate a physical (radiation hybrid) map of genetic markers in a DNA sequence using provided radiation hybrid (RH) scores for one or more markers." [http://edamontology.org]
 is_a: EDAM_operation:2944 ! Physical mapping
 relationship: has_output EDAM_data:2870 !{min_cardinality=1} ! Radiation hybrid map
+
+
+[Term]
+id: EDAM_operation:3186 !{since=1.1}
+name: Bisulfite mapping
+namespace: operation
+subset: operations
+def: "The mapping of methylation sites in a DNA (genome) sequence." [http://edamontology.org]
+comment: Bisulfite mapping follows high-throughput sequencing of DNA which has undergone bisulfite treatment followed by PCR amplification; unmethylated cytosines are specifically converted to thymine, allowing the methylation status of cytosine in the DNA to be detected.
+synonym: "Bisulfite sequence mapping" EXACT [http://edamontology.org]
+synonym: "Bisulfite sequence alignment" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2944 ! Physical mapping
+
 
 [Term]
 id: EDAM_operation:0486
@@ -6968,8 +7521,9 @@ name: Haplotype inference
 namespace: operation
 subset: operations
 def: "Infer haplotypes, either alleles at multiple loci that are transmitted together on the same chromosome, or a set of single nucleotide polymorphisms (SNPs) on a single chromatid that are statistically associated." [http://edamontology.org]
-comment: Haplotype inference can help in population genetic studies and the identification of complex disease genes. Tools might use combinatorial functions (for example parsimony) or a likelihood function or model with optimization such as minimum error correction (MEC) model, expectation-maximization algorithm (EM), genetic algorithm or Markov chain Monte Carlo (MCMC).
+comment: Haplotype inference can help in population genetic studies and the identification of complex disease genes, , and is typically based on aligned single nucleotide polymorphism (SNP) fragments. Haplotype comparison is a useful way to characterize the genetic variation between individuals. An individual's haplotype describes which nucleotide base occurs at each position for a set of common SNPs. Tools might use combinatorial functions (for example parsimony) or a likelihood function or model with optimization such as minimum error correction (MEC) model, expectation-maximization algorithm (EM), genetic algorithm or Markov chain Monte Carlo (MCMC).
 synonym: "Haplotype mapping" EXACT [http://edamontology.org]
+synonym: "Haplotype reconstruction" EXACT [http://edamontology.org]
 is_a: EDAM_operation:0283 ! Linkage analysis
 relationship: has_output EDAM_data:1863 !{min_cardinality=1} ! Haplotype map
 
@@ -6994,10 +7548,10 @@ def: "Process (read and / or write) codon usage data, e.g. analyse codon usage t
 synonym: "synon: Codon usage table analysis" EXACT [http://edamontology.org]
 synonym: "synon: Codon usage data analysis" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2501 ! Nucleic acid data processing
-relationship: has_input EDAM_data:2977 ! Nucleic acid sequence ! !{min_cardinality=0}
-relationship: has_input EDAM_data:1597 ! Codon usage table ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1597 ! Codon usage table ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0914 ! Codon usage report ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2977 !{min_cardinality=0} ! Nucleic acid sequence
+relationship: has_input EDAM_data:1597 !{min_cardinality=0} ! Codon usage table
+relationship: has_output EDAM_data:1597 !{min_cardinality=0} ! Codon usage table
+relationship: has_output EDAM_data:0914 !{min_cardinality=0} ! Codon usage report
 relationship: has_topic EDAM_topic:0107 ! Codon usage analysis
 
 
@@ -7008,8 +7562,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a codon usage table." [http://edamontology.org]
 is_a: EDAM_operation:0286 ! Codon usage analysis
-relationship: has_input EDAM_data:1597 ! Codon usage table ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1597 ! Codon usage table ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1597 !{min_cardinality=0} ! Codon usage table
+relationship: has_output EDAM_data:1597 !{min_cardinality=0} ! Codon usage table
 
 [Term]
 id: EDAM_operation:0287
@@ -7078,6 +7632,63 @@ subset: operations
 def: "Compare two or more codon usage tables." [http://edamontology.org]
 is_a: EDAM_operation:2433 ! Codon usage table processing
 is_a: EDAM_operation:2998 ! Nucleic acid comparison
+
+
+[Term]
+id: EDAM_operation:3193 !{since=1.1}
+name: Genome comparison
+namespace: operation
+subset: operations
+def: "Compare two (tpyically huge) molecular sequences that represent genomes." [http://edamontology.org]
+is_a: EDAM_operation:2451 ! Sequence comparison
+
+[Term]
+id: EDAM_operation:3194 !{since=1.1}
+name: Genome feature comparison
+namespace: operation
+subset: operations
+def: "Compare the features of two genome sequences." [http://edamontology.org]
+comment: Genomic elements that might be compared include genes, indels, single nucleotide polymorphisms (SNPs), retrotransposons, tandem repeats and so on.
+is_a: EDAM_operation:0256 ! Feature comparison
+
+
+[Term]
+id: EDAM_operation:3182 !{since=1.1}
+name: Genome alignment construction
+namespace: operation
+subset: operations
+def: "Align two or more (tpyically huge) molecular sequences that represent genomes." [http://edamontology.org]
+synonym: "Genome alignment" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0292 ! Sequence alignment construction
+
+
+[Term]
+id: EDAM_operation:3198 !{since=1.1}
+name: Oligonucleotide alignment construction
+namespace: operation
+subset: operations
+def: "Align short oligonucleotide sequences (reads) to a larger (genomic) sequence." [http://edamontology.org]
+comment: The purpose of read mapping is to identify the location of sequenced fragments within a reference genome and assumes that there is, in fact, at least local similarity between the fragment and reference sequences.
+synonym: "Short sequence read mapping" EXACT [http://edamontology.org]
+synonym: "Short read mapping" EXACT [http://edamontology.org]
+synonym: "Read mapping" EXACT [http://edamontology.org]
+synonym: "Short oligonucleotide alignment" EXACT [http://edamontology.org]
+synonym: "Oligonucleotide mapping" EXACT [http://edamontology.org]
+synonym: "Oligonucleotide alignment" EXACT [http://edamontology.org]
+synonym: "Short read alignment" EXACT [http://edamontology.org]
+synonym: "Read alignment" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0292 ! Sequence alignment construction
+
+
+[Term]
+id: EDAM_operation:3199 !{since=1.1}
+name: Split read mapping
+namespace: operation
+subset: operations
+def: "A varient of oligonucleotide mapping where a read is mapped to two separate locations because of possible structural variation." [http://edamontology.org]
+is_a: EDAM_operation:3198 ! Oligonucleotide alignment construction
+
+
 
 [Term]
 id: EDAM_operation:0491
@@ -7223,7 +7834,7 @@ synonym: "RNA secondary structure alignment" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2439 ! RNA secondary structure processing
 is_a: EDAM_operation:0500 ! Secondary structure alignment construction
 synonym: "Secondary structure alignment (RNA)" EXACT [http://edamontology.org]
-relationship: has_input EDAM_data:0880 !{min_cardinality=2} ! RNA secondary structure
+relationship: has_input EDAM_data:0880 !{min_cardinality=2} ! RNA secondary structure record
 relationship: has_output EDAM_data:0881 !{min_cardinality=1} ! Secondary structure alignment (RNA)
 
 [Term]
@@ -7292,7 +7903,7 @@ namespace: operation
 subset: operations
 def: "Align protein tertiary structures." [http://edamontology.org]
 is_obsolete: true !{since=beta13}
-consider: EDAM_operation:0295 ! Structure alignment
+consider: EDAM_operation:0295 ! Structure alignment construction
 
 [Term]
 id: EDAM_operation:0506
@@ -7301,7 +7912,7 @@ namespace: operation
 subset: operations
 def: "Align RNA tertiary structures." [http://edamontology.org]
 is_obsolete: true !{since=beta13}
-consider: EDAM_operation:0295 ! Structure alignment
+consider: EDAM_operation:0295 ! Structure alignment construction
 
 [Term]
 id: EDAM_operation:0507
@@ -7467,7 +8078,7 @@ def: "Align molecular sequence(s) to structural (3D) profile(s) or template(s) (
 synonym: "Sequence-3D profile alignment" EXACT [http://edamontology.org]
 comment: Methods might perform one-to-one, one-to-many or many-to-many comparisons.
 is_a: EDAM_operation:0303 ! Protein fold recognition
-is_a: EDAM_operation:2928 ! Alignment
+is_a: EDAM_operation:2928 ! Alignment construction
 is_a: EDAM_operation:2403 ! Sequence analysis
 relationship: has_input EDAM_data:0889 !{min_cardinality=2} ! Structural (3D) profile
 relationship: has_output EDAM_data:0891 !{min_cardinality=1} ! Sequence-3D profile alignment
@@ -7484,7 +8095,7 @@ comment: Primer design involves predicting or selecting primers that are specifi
 synonym: "PCR primer prediction" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2419 ! Primer and probe design
 relationship: has_input EDAM_data:2977 ! Nucleic acid sequence
-relationship: has_output EDAM_data:1240 ! PCR primers ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1240 !{min_cardinality=0} ! PCR primers
 relationship: has_topic EDAM_topic:3032 ! Primer or probe design
 
 [Term]
@@ -7511,6 +8122,17 @@ def: "Perform in-silico (virtual) PCR." [http://edamontology.org]
 is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
 relationship: has_topic EDAM_topic:0077 ! Nucleic acid analysis
 
+
+[Term]
+id: EDAM_operation:3187
+name: Sequence contamination filtering
+namespace: operation
+subset: operations
+def: "Identify and filter a (typically large) sequence data set to remove sequences from contaminants in the sample that was sequenced." [http://edamontology.org]
+is_a: EDAM_operation:2478 ! Nucleic acid sequence analysis
+relationship: has_topic EDAM_topic:0077 ! Nucleic acid analysis
+
+
 [Term]
 id: EDAM_operation:0517
 name: PCR primer design (for large scale sequencing)
@@ -7518,7 +8140,7 @@ namespace: operation
 subset: operations
 def: "Predict primers for large scale sequencing." [http://edamontology.org]
 is_a: EDAM_operation:0308 ! PCR primer design
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+relationship: has_topic EDAM_topic:3168 ! Sequencing
 
 [Term]
 id: EDAM_operation:0518
@@ -7562,6 +8184,16 @@ namespace: operation
 subset: operations
 def: "Predict primers for methylation PCRs." [http://edamontology.org]
 is_a: EDAM_operation:0308 ! PCR primer design
+
+
+[Term]
+id: EDAM_operation:3183 !{since=1.1}
+name: Localized reassembly
+namespace: operation
+subset: operations
+def: "Reconstruction of a sequence assembly in a localised area." [http://edamontology.org]
+is_a: EDAM_operation:0310 ! Sequence assembly
+
 
 [Term]
 id: EDAM_operation:0523
@@ -7615,10 +8247,10 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a gene expression profile." [http://edamontology.org]
 is_a: EDAM_operation:2495 ! Gene expression data processing
-relationship: has_input EDAM_data:0928 ! Gene expression profile ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0928 ! Gene expression profile ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0928 !{min_cardinality=0} ! Gene expression profile
+relationship: has_output EDAM_data:0928 !{min_cardinality=0} ! Gene expression profile
 relationship: has_topic EDAM_topic:0203 ! Transcriptomics
-relationship: has_topic EDAM_topic:0200 ! Microarrays
+
 
 
 [Term]
@@ -7648,9 +8280,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a network of gene regulation." [http://edamontology.org]
 is_a: EDAM_operation:2438 ! Pathway or network processing
-relationship: has_input EDAM_data:2961 ! Pathway or network (gene regulation) ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2961 ! Pathway or network (gene regulation) ! !{min_cardinality=0}
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_input EDAM_data:2961 !{min_cardinality=0} ! Pathway or network (gene regulation)
+relationship: has_output EDAM_data:2961 !{min_cardinality=0} ! Pathway or network (gene regulation)
 relationship: has_topic EDAM_topic:2846 ! Gene regulatory networks
 
 
@@ -7704,7 +8335,7 @@ name: Splice transcript prediction
 namespace: operation
 subset: operations
 def: "Predict splicing alternatives or transcript isoforms from analysis of sequence data." [http://edamontology.org]
-is_a: EDAM_operation:2499 ! Splicing modelling
+is_a: EDAM_operation:2499 ! Splicing analysis
 relationship: has_topic EDAM_topic:0114 ! Gene structure and RNA splicing
 
 [Term]
@@ -7730,11 +8361,34 @@ is_a: EDAM_operation:0315 ! Gene expression profile comparison
 relationship: has_output EDAM_data:3111 ! Processed microarray data
 
 [Term]
+id: EDAM_operation:3223 !{since=1.1}
+name: Differential expression analysis
+namespace: operation
+subset: operations
+def: "Identify (typically from analysis of microarray or RNA-seq data) genes whose expression levels are significantly different between two sample groups." [http://edamontology.org]
+comment: Differential expression analysis is used, for example, to identify which genes are up-regulated (increased expression) or down-regulated (decreased expression) between a group treated with a drug and a control groups.
+synonym: "Differentially expressed gene identification" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0315 ! Gene expression profile comparison
+
+
+[Term]
+id: EDAM_operation:3224 !{since=1.1}
+name: Gene set testing
+namespace: operation
+subset: operations
+def: "Analyse gene expression patterns (typically from DNA microarray datasets) to identify sets of genes that are associated with a specific trait, condition, clinical outcome etc." [http://edamontology.org]
+comment: Gene sets can be defined beforehand by biological function, chromosome locations and so on.
+is_a: EDAM_operation:2435 ! Gene expression profile processing
+
+
+[Term]
 id: EDAM_operation:0314
 name: Gene expression profile generation
 namespace: operation
 subset: operations
 def: "Generate a gene expression profile or pattern, for example from microarray data." [http://edamontology.org]
+synonym: "Expression profiling" EXACT [http://edamontology.org]
+synonym: "Gene expression profiling" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2435 ! Gene expression profile processing
 relationship: has_output EDAM_data:0928 !{min_cardinality=1} ! Gene expression profile
 
@@ -7782,6 +8436,19 @@ relationship: has_output EDAM_data:2984 ! Pathway or network report
 
 
 [Term]
+id: EDAM_operation:3232 !{since=1.1}
+name: Gene expression QTL analysis
+namespace: operation
+subset: operations
+def: "Combine classical quantitative trait loci (QTL) analysis with gene expression profiling, for example, to describe describe cis- and trans-controlling elements for the expression of phenotype associated genes." [http://edamontology.org]
+synonym: "eQTL profiling" EXACT [http://edamontology.org]
+synonym: "expression QTL profiling" EXACT [http://edamontology.org]
+synonym: "expression quantitative trait loci profiling" EXACT [http://edamontology.org]
+is_a: EDAM_operation:0532 ! Gene expression profile analysis
+relationship: has_output EDAM_data:2984 ! Pathway or network report
+
+
+[Term]
 id: EDAM_operation:0527
 name: Tag mapping
 namespace: operation
@@ -7790,7 +8457,7 @@ def: "Make gene to tag assignments (tag mapping) of SAGE, MPSS and SBS data, by 
 comment: Tag mapping might assign experimentally obtained tags to known transcripts or annotate potential virtual tags in a genome.
 synonym: "Tag to gene assignment" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2436 ! Gene expression profile annotation
-relationship: has_output EDAM_data:0936 ! Sequence tag profile (with gene assignment) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0936 !{min_cardinality=0} ! Sequence tag profile (with gene assignment)
 
 [Term]
 id: EDAM_operation:0528
@@ -7941,8 +8608,8 @@ subset: operations
 def: "Process (read and / or write) a protein tertiary structure." [http://edamontology.org]
 is_a: EDAM_operation:2465 ! Structure processing
 is_a: EDAM_operation:2502 ! Protein data processing
-relationship: has_input EDAM_data:1460 ! Protein structure ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1460 ! Protein structure ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1460 !{min_cardinality=0} ! Protein structure
+relationship: has_output EDAM_data:1460 !{min_cardinality=0} ! Protein structure
 relationship: has_topic EDAM_topic:0698 ! Protein tertiary structure
 
 
@@ -7957,7 +8624,7 @@ comment: This might be a residue-level search for properties such as solvent acc
 is_a: EDAM_operation:2406 ! Protein structure analysis
 is_a: EDAM_operation:0250 ! Protein property calculation
 synonym: "Protein structural property calculation" EXACT [http://edamontology.org]
-relationship: has_output EDAM_data:0897 ! Protein property ! !{min_cardinality=0}
+relationship: has_output EDAM_data:0897 !{min_cardinality=0} ! Protein property
 relationship: has_topic EDAM_topic:0123 ! Protein properties
 relationship: has_topic EDAM_topic:2814 ! Protein structure analysis
 
@@ -7981,7 +8648,7 @@ subset: operations
 def: "Identify or screen for 3D structural motifs in protein structure(s)." [http://edamontology.org]
 comment: This includes conserved substructures and conserved geometry, such as spatial arrangement of secondary structure or protein backbone. Methods might use structure alignment, structural templates, searches for similar electrostatic potential and molecular surface shape, surface-mapping of phylogenetic information etc.
 synonym: "Protein structural feature identification" EXACT [http://edamontology.org]
-is_a: EDAM_operation:3090 ! Protein feature detection (from structure)
+is_a: EDAM_operation:3090 ! Protein feature prediction (from structure)
 relationship: has_output EDAM_data:0899 !{min_cardinality=1} ! Protein features (3D motif)
 relationship: has_topic EDAM_topic:0166 ! Protein structural motifs and surfaces
 
@@ -7991,7 +8658,7 @@ name: Protein domain recognition
 namespace: operation
 subset: operations
 def: "Identify structural domains in a protein structure from first principles (for example calculations on structural compactness)." [http://edamontology.org]
-is_a: EDAM_operation:3090 ! Protein feature detection (from structure)
+is_a: EDAM_operation:3090 ! Protein feature prediction (from structure)
 relationship: has_output EDAM_data:0901 !{min_cardinality=1} ! Protein features (domains)
 relationship: has_topic EDAM_topic:0736 ! Protein domains and folds
 
@@ -8352,8 +9019,8 @@ subset: operations
 def: "Identify or predict catalytic residues, active sites or other ligand-binding sites in protein sequences or structures." [http://edamontology.org]
 synonym: "Ligand-binding and active site prediction" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2492 ! Protein interaction prediction
-relationship: has_output EDAM_data:1325 ! Protein features (active sites) ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1326 ! Protein features (binding sites) ! !{min_cardinality=0}
+relationship: has_output EDAM_data:1325 !{min_cardinality=0} ! Protein features (active sites)
+relationship: has_output EDAM_data:1326 !{min_cardinality=0} ! Protein features (binding sites)
 relationship: has_topic EDAM_topic:0148 ! Protein-ligand interactions
 
 [Term]
@@ -8506,7 +9173,7 @@ def: "Calculate protein residue contacts with nucleic acids in a structure." [ht
 xref: WHATIF:HasNucleicContacts
 xref: WHATIF:ShowProteiNucleicContacts
 is_a: EDAM_operation:2950 ! Residue contact calculation
-is_a: EDAM_operation:0389 ! Protein-nucleic acid binding site data analysis
+is_a: EDAM_operation:0389 ! Protein-nucleic acid binding site analysis
 is_a: EDAM_operation:0245 ! Protein structural motif recognition
 
 
@@ -8679,8 +9346,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a phylogenetic tree." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:0872 ! Phylogenetic tree ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0872 ! Phylogenetic tree ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0872 !{min_cardinality=0} ! Phylogenetic tree
+relationship: has_output EDAM_data:0872 !{min_cardinality=0} ! Phylogenetic tree
 relationship: has_topic EDAM_topic:0084 ! Phylogenetics
 
 
@@ -8820,7 +9487,7 @@ subset: operations
 def: "Phylogenetic tree construction from gene frequency data." [http://edamontology.org]
 is_a: EDAM_operation:0538 ! Phylogenetic tree construction (data centric)
 relationship: has_input EDAM_data:2873 !{min_cardinality=1} ! Phylogenetic gene frequencies data
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_topic EDAM_topic:0203 ! Transcriptomics
 
 
 [Term]
@@ -8930,7 +9597,7 @@ name: Phylogenetic tree annotation
 namespace: operation
 subset: operations
 def: "Annotate a phylogenetic tree with terms from a controlled vocabulary." [http://edamontology.org]
-synonym "CDAOAnnotattion" RELATED [http://www.evolutionaryontology.org/cdao.owl#CDAOAnnotation]
+synonym: "CDAOAnnotattion" RELATED [http://www.evolutionaryontology.org/cdao.owl#CDAOAnnotation]
 is_a: EDAM_operation:0326 ! Phylogenetic tree editing
 is_a: EDAM_operation:0226 ! Annotation
 
@@ -9014,7 +9681,7 @@ namespace: operation
 subset: operations
 def: "Reformat (a file or other report of) molecular sequence alignment(s)." [http://edamontology.org]
 is_a: EDAM_operation:0335 ! File reformatting
-is_a: EDAM_operation:2122 ! Sequence alignment editing
+is_a: EDAM_operation:2122 ! Sequence alignment file processing
 
 [Term]
 id: EDAM_operation:0563
@@ -9063,6 +9730,19 @@ relationship: has_topic EDAM_topic:0640 ! Nucleic acid sequence analysis
 
 
 [Term]
+id: EDAM_operation:3208 !{since=1.1}
+name: Genome rendering
+namespace: operation
+subset: operations
+def: "Visualise, format or render a nucleic acid sequence that is part of (and in context of) a complete genome sequence." [http://edamontology.org]
+synonym: "Genome browsing" EXACT [http://edamontology.org]
+synonym: "Genome viewing" EXACT [http://edamontology.org]
+synonym: "Genome visualisation" EXACT [http://edamontology.org]
+synonym: "Genome visualization" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2515 ! Sequence rendering (nucleic acid)
+
+
+[Term]
 id: EDAM_operation:2516
 name: Sequence rendering (protein)
 namespace: operation
@@ -9083,6 +9763,8 @@ is_a: EDAM_operation:2463 ! Sequence alignment processing
 relationship: has_input EDAM_data:0863 !{min_cardinality=1} ! Sequence alignment
 relationship: has_output EDAM_data:1711 !{min_cardinality=1} ! Sequence alignment image
 
+
+
 [Term]
 id: EDAM_operation:2452
 name: Sequence cluster processing
@@ -9090,8 +9772,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a sequence cluster." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:1235 ! Sequence cluster ! !{min_cardinality=0}
-relationship: has_output EDAM_data:1235 ! Sequence cluster ! !{min_cardinality=0}
+relationship: has_input EDAM_data:1235 !{min_cardinality=0} ! Sequence cluster
+relationship: has_output EDAM_data:1235 !{min_cardinality=0} ! Sequence cluster
 relationship: has_topic EDAM_topic:0164 ! Sequence clustering
 
 
@@ -9124,7 +9806,7 @@ subset: operations
 def: "Visualise RNA secondary structure, knots, pseudoknots etc." [http://edamontology.org]
 is_a: EDAM_operation:0337 ! Plotting and rendering
 is_a: EDAM_operation:2439 ! RNA secondary structure processing
-relationship: has_input EDAM_data:0880 !{min_cardinality=1} ! RNA secondary structure
+relationship: has_input EDAM_data:0880 !{min_cardinality=1} ! RNA secondary structure record
 
 [Term]
 id: EDAM_operation:0569
@@ -9172,8 +9854,8 @@ namespace: operation
 subset: operations
 def: "Process (read and / or write) a molecular secondary structure." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:2081 ! Secondary structure ! !{min_cardinality=0}
-relationship: has_output EDAM_data:2081 ! Secondary structure ! !{min_cardinality=0}
+relationship: has_input EDAM_data:2081 !{min_cardinality=0} ! Secondary structure
+relationship: has_output EDAM_data:2081 !{min_cardinality=0} ! Secondary structure
 relationship: has_topic EDAM_topic:0081 ! Structure analysis
 
 
@@ -9185,8 +9867,8 @@ subset: operations
 ! alt_id: EDAM_operation:2484
 def: "Process (read and / or write) a molecular tertiary structure." [http://edamontology.org]
 is_a: EDAM_operation:2420 ! Analysis and processing
-relationship: has_input EDAM_data:0883 ! Structure ! !{min_cardinality=0}
-relationship: has_output EDAM_data:0883 ! Structure ! !{min_cardinality=0}
+relationship: has_input EDAM_data:0883 !{min_cardinality=0} ! Structure
+relationship: has_output EDAM_data:0883 !{min_cardinality=0} ! Structure
 relationship: has_topic EDAM_topic:0081 ! Structure analysis
 
 [Term]
@@ -9209,7 +9891,7 @@ subset: operations
 def: "Visualise microarray data." [http://edamontology.org]
 is_a: EDAM_operation:0337 ! Plotting and rendering
 is_a: EDAM_operation:2435 ! Gene expression profile processing
-relationship: has_input EDAM_data:3117 !{min_cardinality=1} ! Microarray  hybridisation data
+relationship: has_input EDAM_data:3117 !{min_cardinality=1} ! Microarray hybridisation data
 relationship: has_output EDAM_data:2967 !{min_cardinality=1} ! Microarray image
 
 [Term]
@@ -9232,6 +9914,19 @@ synonym: "DNA map rendering" EXACT [http://edamontology.org]
 is_a: EDAM_operation:2515 ! Sequence rendering (nucleic acid)
 is_a: EDAM_operation:2521 ! Map data processing
 relationship: has_input EDAM_data:1274 !{min_cardinality=1} ! Map
+
+
+[Term]
+id: EDAM_operation:3184 !{since=1.1}
+name: Sequence assembly rendering
+namespace: operation
+subset: operations
+def: "Render and visualise a DNA sequence assembly." [http://edamontology.org]
+synonym: "Assembly rendering" EXACT [http://edamontology.org]
+synonym: "Assembly visualisation" EXACT [http://edamontology.org]
+synonym: "Sequence assembly visualisation" EXACT [http://edamontology.org]
+is_a: EDAM_operation:2515 ! Sequence rendering (nucleic acid)
+
 
 [Term]
 id: EDAM_operation:0574
@@ -9631,7 +10326,7 @@ namespace: data
 subset: data
 def: "A map of (typically one) DNA sequence annotated with positional or non-positional features." [http://edamontology.org]
 synonym: "DNA map" EXACT [http://edamontology.org]
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+relationship: has_topic EDAM_topic:0102 ! Mapping
 is_a: EDAM_data:3031 ! Core data
 
 [Term]
@@ -9652,7 +10347,7 @@ namespace: data
 subset: data
 def: "An attribute of a molecular map (genetic or physical)." [http://edamontology.org]
 is_a: EDAM_data:2337 ! Metadata
-relationship: has_topic EDAM_topic:0102 ! Sequencing and mapping
+relationship: has_topic EDAM_topic:0102 ! Mapping
 
 
 [Term]
@@ -9803,6 +10498,16 @@ comment: This is a broad data type and is used a placeholder for other, more spe
 is_a: EDAM_data:2083 ! Alignment report
 
 
+
+[Term]
+id: EDAM_data:3181 !{since=1.1}
+name: Sequence assembly report
+namespace: data
+subset: data
+def: "An informative report about a DNA sequence assembly." [http://edamontology.org]
+is_a: EDAM_data:2955 ! Sequence report
+
+
 [Term]
 id: EDAM_data:2598
 name: Secondary structure alignment metadata
@@ -9887,7 +10592,7 @@ namespace: data
 subset: data
 def: "Data from which a phylogenetic tree may be generated." [http://edamontology.org]
 is_a: EDAM_data:2523 ! Phylogenetic raw data
-synonym "Character" RELATED [http://www.evolutionaryontology.org/cdao.owl#Character]
+synonym: "Character" RELATED [http://www.evolutionaryontology.org/cdao.owl#Character]
 ! Phylogenetic character data! Also molecular sequences, microsatellites), polymorphisms (RAPDs, RFLPs, or AFLPs), restriction sites and fragments
 
 [Term]
@@ -9897,7 +10602,7 @@ namespace: data
 subset: data
 def: "The raw data (not just an image) from which a phylogenetic tree is directly generated or plotted, such as topology, lengths (in time or in expected amounts of variance) and a confidence interval for each length." [http://edamontology.org]
 comment: A phylogenetic tree is usually constructed from a set of sequences from which an alignment (or data matrix) is calculated. See also 'Phylogenetic tree image'.
-synonym "Tree" RELATED [http://www.evolutionaryontology.org/cdao.owl#Tree]
+synonym: "Tree" RELATED [http://www.evolutionaryontology.org/cdao.owl#Tree]
 xref: Moby:Tree
 xref: Moby:phylogenetic_tree
 xref: Moby:myTree
@@ -9914,7 +10619,6 @@ subset: data
 def: "A report of data concerning or derived from a phylogenetic tree, or from comparing two or more phylogenetic trees." [http://edamontology.org]
 comment: This is a broad data type and is used a placeholder for other, more specific types.
 synonym: "Phylogenetic tree-derived report" EXACT [http://edamontology.org]
-synonym "Tree" RELATED [http://www.evolutionaryontology.org/cdao.owl#Tree]
 is_a: EDAM_data:2048 ! Report
 
 
@@ -9937,7 +10641,7 @@ subset: data
 def: "Data concerning molecular structural data." [http://edamontology.org]
 comment: This is a broad data type and is used a placeholder for other, more specific types.
 is_obsolete: true !{since=beta13}
-consider: EDAM_data:0883 ! Structure data
+consider: EDAM_data:0883 ! Structure
 consider: EDAM_data:2085 ! Structure report
 
 
@@ -10409,7 +11113,7 @@ synonym: "Gene expression report" EXACT [http://edamontology.org]
 synonym: "Gene annotation (expression)" EXACT [http://edamontology.org]
 is_a: EDAM_data:3117 ! Microarray hybridisation data
 is_a: EDAM_data:0928 ! Gene expression profile
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_topic EDAM_topic:0200 ! Microarrays
 
 
 [Term]
@@ -10419,7 +11123,7 @@ namespace: data
 subset: data
 def: "Data concerning the hybridisations measured during a microarray experiment." [http://edamontology.org]
 is_a: EDAM_data:2603 ! Microarray data
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_topic EDAM_topic:0200 ! Microarrays
 
 [Term]
 id: EDAM_data:3112 !{since=beta13}
@@ -10573,6 +11277,18 @@ namespace: data
 subset: data
 def: "Metadata on a genotype experiment including case control, population, and family studies. These might use array based methods and re-sequencing methods." [http://edamontology.org]
 is_a: EDAM_data:2531 ! Experiment annotation
+
+
+[Term]
+id: EDAM_data:3231 !{since=1.1}
+name: Experiment annotation (GWAS)
+namespace: data
+subset: data
+def: "Metadata on a genome-wide association study (GWAS)." [http://edamontology.org]
+synonym: "Experiment annotation (genome-wide association study)" EXACT [http://edamontology.org]
+is_a: EDAM_data:2531 ! Experiment annotation
+
+
 
 
 [Term]
@@ -10780,6 +11496,17 @@ relationship: has_topic EDAM_topic:0220 ! Data processing and validation
 
 
 [Term]
+id: EDAM_data:3210 !{since=1.1}
+name: Genome index
+namespace: data
+subset: data
+def: "An index of a genome sequence." [http://edamontology.org]
+comment: Many sequence alignment tasks involving many or very large sequences rely on a precomputed index of the sequence to accelerate the alignment.
+is_a: EDAM_data:0955 ! Data index
+
+
+
+[Term]
 id: EDAM_data:0956
 name: Data index report
 namespace: data
@@ -10832,7 +11559,6 @@ subset: data
 def: "An informative report on a specific chemical compound." [http://edamontology.org]
 synonym: "Chemical compound annotation" EXACT [http://edamontology.org]
 synonym: "Small molecule report" EXACT [http://edamontology.org]
-synonym: "molecular entity" RELATED [CHEBI:23367]
 is_a: EDAM_data:2085 ! Structure report
 is_a: EDAM_data:2529 ! Molecule report
 relationship: has_topic EDAM_topic:0154 ! Small molecules
@@ -10955,7 +11681,7 @@ namespace: data
 subset: data
 def: "A body of scientific text, typically a full text article from a scientific journal." [http://edamontology.org]
 is_a: EDAM_data:3031 ! Core data
-relationship: has_topic EDAM_topic:3068 ! Literature data resources
+relationship: has_topic EDAM_topic:3068 ! Literature and reference
 
 [Term]
 id: EDAM_data:2857
@@ -10965,7 +11691,7 @@ subset: data
 def: "Bibliographic data concerning scientific article(s)." [http://edamontology.org]
 is_a: EDAM_data:2954 ! Article report
 is_a: EDAM_data:2337 ! Metadata
-relationship: has_topic EDAM_topic:3068 ! Literature data resources
+relationship: has_topic EDAM_topic:3068 ! Literature and reference
 
 
 [Term]
@@ -11651,7 +12377,7 @@ def: "The type of a sequence feature, typically a term or accession from the Seq
 comment: A feature key indicates the biological nature of the feature or information about changes to or versions of the sequence.
 synonym: "Sequence feature type" EXACT [http://edamontology.org]
 synonym: "Sequence feature method" EXACT [http://edamontology.org]
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 
 [Term]
@@ -11661,7 +12387,7 @@ namespace: data
 subset: data
 def: "Typically one of the EMBL or Swiss-Prot feature qualifiers." [http://edamontology.org]
 comment: Feature qualifiers hold information about a feature beyond that provided by the feature key and location.
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 [Term]
 id: EDAM_data:1022
@@ -11671,7 +12397,7 @@ subset: data
 def: "Typically an EMBL or Swiss-Prot feature label." [http://edamontology.org]
 comment: A feature label identifies a feature of a sequence database entry. When used with the database name and the entry's primary accession number, it is a unique identifier of that feature.
 synonym: "Sequence feature name" EXACT [http://edamontology.org]
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 [Term]
 id: EDAM_data:1278
@@ -11801,7 +12527,7 @@ def: "A feature which may mapped (positioned) on a genetic or other type of map.
 comment: Mappable features may be based on Gramene's notion of map features; see http://www.gramene.org/db/cmap/feature_type_info.
 xref: Moby:MapFeature
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_data:1255 ! Sequence features
+consider: EDAM_data:1255 ! Feature record
 consider: EDAM_data:2019 ! Map attribute
 consider: EDAM_data:1276 ! Nucleic acid features
 
@@ -11990,7 +12716,7 @@ synonym: "Genome track" EXACT [http://edamontology.org]
 synonym: "Genomic track" EXACT [http://edamontology.org]
 synonym: "Genome-browser track" EXACT [http://edamontology.org]
 synonym: "Genome annotation track" EXACT [http://edamontology.org]
-is_a: EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:1255 ! Feature record
 
 
 [Term]
@@ -12000,7 +12726,7 @@ namespace: data
 subset: data
 def: "Annotation of positional sequence features, organized into a standard feature table." [http://edamontology.org]
 synonym: "Feature table" EXACT [http://edamontology.org]
-is_a: EDAM_data:1255 ! Sequence feature annotation
+is_a: EDAM_data:1255 ! Feature record
 
 
 [Term]
@@ -12014,7 +12740,7 @@ comment: This includes nucleotide sequence feature annotation in any known seque
 synonym: "Nucleic acid feature table" EXACT [http://edamontology.org]
 synonym: "Feature table (nucleic acid)" EXACT [http://edamontology.org]
 is_a: EDAM_data:2084 ! Nucleic acid report
-is_a: EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:1255 ! Feature record
 
 
 [Term]
@@ -12117,7 +12843,7 @@ namespace: data
 subset: data
 def: "Features concerning RNA or regions of DNA that encode an RNA molecule." [http://edamontology.org]
 synonym: "RNA features" EXACT [http://edamontology.org]
-is_a: EDAM_data:1300 ! Nucleic acid features (gene structure)
+is_a: EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 
 [Term]
 id: EDAM_data:3134 !{since=beta13}
@@ -12160,7 +12886,7 @@ def: "Protein sequence-specific feature annotation (positional features of a pro
 comment: This includes protein sequence feature annotation in any known sequence feature table format and any other report of protein features.
 synonym: "Feature table (protein)" EXACT [http://edamontology.org]
 synonym: "Protein feature table" EXACT [http://edamontology.org]
-is_a: EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:1255 ! Feature record
 is_a: EDAM_data:0896 ! Protein report
 
 
@@ -12172,7 +12898,7 @@ subset: data
 def: "Comparative data on sequence features such as statistics, intersections (and data on intersections), differences etc." [http://edamontology.org]
 comment: This is a broad data type and is used a placeholder for other, more specific types.  It is primarily intended to help navigation of EDAM and would not typically be used for annotation.
 is_obsolete: true !{since=beta13}
-consider: EDAM_data:1255 ! Sequence features
+consider: EDAM_data:1255 ! Feature record
 
 
 [Term]
@@ -12182,7 +12908,7 @@ namespace: data
 subset: data
 def: "Report on the location of matches to profiles, motifs (conserved or functional patterns) or other signatures in one or more sequences." [http://edamontology.org]
 comment: Use this concept if another, more specific concept is not available.
-is_a: EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:1255 ! Feature record
 
 [Term]
 id: EDAM_data:3130 !{since=beta13}
@@ -12251,7 +12977,7 @@ subset: data
 def: "Location of short repetitive subsequences (repeat sequences) in (typically nucleotide) sequences." [http://edamontology.org]
 comment: The report might include derived data map such as classification, annotation, organization, periodicity etc.
 synonym: "Repeat sequence map" EXACT [http://edamontology.org]
-is_a: EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:1255 ! Feature record
 
 
 [Term]
@@ -12351,7 +13077,7 @@ name: Nucleic acid features (immunoglobulin gene structure)
 namespace: data
 subset: data
 def: "A report on predicted or actual immunoglobulin gene structure including constant, switch and variable regions and diversity, joining and variable segments." [http://edamontology.org]
-is_a: EDAM_data:1300 ! Nucleic acid features (gene structure)
+is_a: EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 
 
 
@@ -12494,7 +13220,7 @@ subset: data
 def: "A report on operons (operators, promoters and genes) from a bacterial genome." [http://edamontology.org]
 comment: The report for a query sequence or gene might include the predicted operon leader and trailer gene, gene composition of the operon and associated information, as well as information on the query.
 synonym: "Gene features (operon)" EXACT [http://edamontology.org]
-is_a: EDAM_data:1300 ! Nucleic acid features (gene structure)
+is_a: EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 
 [Term]
 id: EDAM_data:1312
@@ -12524,7 +13250,7 @@ namespace: data
 subset: data
 def: "A report on selenocysteine insertion sequence (SECIS) element in a DNA sequence." [http://edamontology.org]
 is_obsolete: true !{since=beta13}
-consider: EDAM_data:1300 ! Nucleic acid features (gene structure)
+consider: EDAM_data:1300 ! Nucleic acid features (gene and transcript structure)
 
 
 [Term]
@@ -12621,9 +13347,7 @@ subset: data
 def: "A report on post-translation modifications in a protein sequence, typically describing the specific sites involved." [http://edamontology.org]
 synonym: "Protein features (post-translation modification sites)" EXACT [http://edamontology.org]
 synonym: "Post-translation modification" EXACT [http://edamontology.org]
-synonym: "protein modification" RELATED [MOD:00000]
-synonym: "protein modification process" RELATED [GO:0006464]
-is_a: EDAM_data:1277 ! Protein features
+is_a: EDAM_data:2191 ! Protein features (chemical modification)
 
 [Term]
 id: EDAM_data:1325
@@ -13025,7 +13749,7 @@ subset: data
 def: "Alignment (superimposition) of molecular tertiary (3D) structures." [http://edamontology.org]
 comment: A tertiary structure alignment will include the untransformed coordinates of one macromolecule, followed by the second (or subsequent) structure(s) with all the coordinates transformed (by rotation / translation) to give a superposition.
 is_a: EDAM_data:1916 ! Alignment
-is_a: EDAM_data:0883 ! Structure data
+is_a: EDAM_data:0883 ! Structure
 relationship: has_topic EDAM_topic:0183 ! Structure alignment
 
 [Term]
@@ -13635,10 +14359,11 @@ is_a: EDAM_data:1537 ! Protein structure report
 
 [Term]
 id: EDAM_data:0883
-name: Structure data
+name: Structure
 namespace: data
 subset: data
 def: "3D coordinate and associated data for a macromolecular tertiary (3D) structure or part of a structure." [http://edamontology.org]
+synonym: "Structure data" EXACT [http://edamontology.org]
 comment: The coordinate data may be predicted or real.
 relationship: has_topic EDAM_topic:0081 ! Structure analysis
 is_a: EDAM_data:3031 ! Core data
@@ -13727,7 +14452,7 @@ subset: data
 def: "An informative report of secondary structure (predicted or real) of an RNA molecule." [http://edamontology.org]
 comment: This includes thermodynamically stable or evolutionarily conserved structures such as knots, pseudoknots etc.
 xref: Moby:RNAStructML
-is_a: EDAM_data:2081 ! Secondary structure record
+is_a: EDAM_data:2081 ! Secondary structure
 relationship: has_topic EDAM_topic:0697 ! RNA structure and alignment
 
 
@@ -14571,7 +15296,7 @@ subset: data
 def: "Data on protein-protein interaction(s)." [http://edamontology.org]
 comment: For example, an informative report about a specific protein complex (of multiple polypeptide chains).
 synonym: "Protein structure report (protein complex)" EXACT [http://edamontology.org]
-is_a: EDAM_data:0906 ! Protein report (interaction)
+is_a: EDAM_data:0906 ! Protein interaction
 relationship: has_topic EDAM_topic:0147 ! Protein-protein interactions
 
 
@@ -14581,7 +15306,7 @@ name: Protein-ligand interaction
 namespace: data
 subset: data
 def: "Data on protein-ligand (small molecule) interaction(s)." [http://edamontology.org]
-is_a: EDAM_data:0906 ! Protein report (interaction)
+is_a: EDAM_data:0906 ! Protein interaction
 relationship: has_topic EDAM_topic:0148 ! Protein-ligand interactions
 
 [Term]
@@ -14590,7 +15315,7 @@ name: Protein-nucleic acid interaction
 namespace: data
 subset: data
 def: "Data on protein-DNA/RNA interaction(s)." [http://edamontology.org]
-is_a: EDAM_data:0906 ! Protein report (interaction)
+is_a: EDAM_data:0906 ! Protein interaction
 relationship: has_topic EDAM_topic:0149 ! Protein-nucleic acid interactions
 
 
@@ -14627,7 +15352,7 @@ name: Protein-drug interaction
 namespace: data
 subset: data
 def: "Informative report on protein-drug interaction(s) including binding affinity data." [http://edamontology.org]
-is_a: EDAM_data:1566 ! Protein ligand interaction
+is_a: EDAM_data:1566 ! Protein-ligand interaction
 
 [Term]
 id: EDAM_data:2358
@@ -15021,7 +15746,7 @@ namespace: data
 subset: data
 def: "A report on a chromosome aberration such as abnormalities in chromosome structure." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_data:0919 ! Nucleic acid features (chromosome)
+consider: EDAM_data:0919 ! Gene annotation (chromosome)
 
 
 [Term]
@@ -15031,7 +15756,7 @@ namespace: data
 subset: data
 def: "Data on the influence of genotype on drug response." [http://edamontology.org]
 comment: The report might correlate gene expression or single-nucleotide polymorphisms with drug efficacy or toxicity.
-is_a: EDAM_data:0920 ! Genotype and phenotype annotation
+is_a: EDAM_data:0920 ! Genotype/phenotype annotation
 
 
 [Term]
@@ -15144,7 +15869,7 @@ id: EDAM_data:0924
 name: Sequence trace
 namespace: data
 subset: data
-def: "A molecular sequence (reads) with associated sequencing metadata (such as base-call quality scores or raw sequencing data)." [http://edamontology.org]
+def: "Fluorescence trace data generated by an automated DNA sequencer, which can be interprted as a molecular sequence (reads), given associated sequencing metadata such as base-call quality scores." [http://edamontology.org]
 comment: This is the raw data produced by a DNA sequencing machine.
 is_a: EDAM_data:3108 ! Experimental measurement
 is_a: EDAM_data:2887 ! Sequence record (nucleic acid)
@@ -15287,7 +16012,7 @@ def: "Information on a microarray experiment such as conditions, protocol, sampl
 comment: This might specify which raw data file relates to which sample and information on hybridisations, e.g. which are technical and which are biological replicates.
 synonym: "Experimental design annotation" EXACT [http://edamontology.org]
 is_a: EDAM_data:2531 ! Experiment annotation
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_topic EDAM_topic:0200 ! Microarrays
 
 [Term]
 id: EDAM_data:2866
@@ -15465,7 +16190,7 @@ subset: data
 def: "How the annotation of a sequence feature (for example in EMBL or Swiss-Prot) was derived." [http://edamontology.org]
 comment: This might be the name and version of a software tool, the name of a database, or 'curated' to indicate a manual annotation (made by a human).
 is_a: EDAM_data:2042 ! Evidence
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 
 [Term]
@@ -15672,7 +16397,7 @@ namespace: data
 subset: data
 def: "A value representing estimated statistical significance of some observed data; typically sequence database hits." [http://edamontology.org]
 is_a: EDAM_data:1772 ! Score or penalty
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 [Term]
 id: EDAM_data:0865
@@ -15853,7 +16578,7 @@ namespace: data
 subset: data
 def: "Data concerning a biological ontology." [http://edamontology.org]
 is_a: EDAM_data:2337 ! Metadata
-relationship: has_topic EDAM_topic:0089 ! Ontologies
+relationship: has_topic EDAM_topic:0089 ! Ontology
 
 [Term]
 id: EDAM_data:2193
@@ -16054,7 +16779,6 @@ consider: EDAM_data:1678 ! Tool log
 id: EDAM_data:1685
 name: EMBOSS supermatcher error file
 namespace: data
-
 subset: data
 def: "EMBOSS (EMBASSY) supermatcher error file." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
@@ -16207,7 +16931,7 @@ comment: The forward or 'top' strand might specify a sequence is to be used as g
 synonym: "DNA strand specification" EXACT [http://edamontology.org]
 synonym: "Strand" EXACT [http://edamontology.org]
 is_a: EDAM_data:2534 ! Sequence parameter
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 
 [Term]
@@ -16216,7 +16940,7 @@ name: Translation frame specification
 namespace: data
 subset: data
 def: "Frame for translation of DNA (3 forward and 3 reverse frames relative to a chromosome)." [http://edamontology.org]
-is_a: EDAM_data:2534 ! Sequence parameter3
+is_a: EDAM_data:2534 ! Sequence parameter
 
 
 [Term]
@@ -16227,7 +16951,7 @@ subset: data
 def: "Phase for translation of DNA (0, 1 or 2) relative to a fragment of the coding sequence." [http://edamontology.org]
 synonym: "Phase" EXACT [http://edamontology.org]
 is_a: EDAM_data:2534 ! Sequence parameter
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 
 [Term]
@@ -16477,7 +17201,7 @@ namespace: data
 subset: data
 def: "An offset for a single-point sequence position." [http://edamontology.org]
 is_a: EDAM_data:1016 ! Sequence position
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 [Term]
 id: EDAM_data:1017
@@ -17059,7 +17783,7 @@ def: "An image from a microarray experiment which (typically) allows a visualisa
 synonym: "Gene expression image" EXACT [http://edamontology.org]
 is_a: EDAM_data:2603 ! Microarray data
 is_a: EDAM_data:2968 ! Image
-relationship: has_topic EDAM_topic:0197 ! Gene expression resources
+relationship: has_topic EDAM_topic:0200 ! Microarrays
 
 [Term]
 id: EDAM_data:1714
@@ -17112,7 +17836,7 @@ subset: data
 ! alt_id: EDAM_data:2221
 def: "An ontology of biological or bioinformatics concepts and relations, a controlled vocabulary, structured glossary etc." [http://edamontology.org]
 is_a: EDAM_data:3031 ! Core data
-relationship: has_topic EDAM_topic:0089 ! Ontologies
+relationship: has_topic EDAM_topic:0089 ! Ontology
 
 
 [Term]
@@ -17123,7 +17847,7 @@ subset: data
 def: "A concept from a biological ontology." [http://edamontology.org]
 comment: This includes any fields from the concept definition such as concept name, definition, comments and so on.
 is_a: EDAM_data:3031 ! Core data
-relationship: has_topic EDAM_topic:0089 ! Ontologies
+relationship: has_topic EDAM_topic:0089 ! Ontology
 
 
 [Term]
@@ -17142,7 +17866,7 @@ namespace: data
 subset: data
 def: "Data concerning or derived from a concept from a biological ontology." [http://edamontology.org]
 is_a: EDAM_data:2337 ! Metadata
-relationship: has_topic EDAM_topic:0089 ! Ontologies
+relationship: has_topic EDAM_topic:0089 ! Ontology
 
 
 [Term]
@@ -17688,7 +18412,6 @@ id: EDAM_data:2779
 name: Stock number
 namespace: identifier
 subset: identifiers
-
 subset: data
 def: "An identifier of stock from a catalogue of biological resources." [http://edamontology.org]
 is_a: EDAM_data:0976 ! Identifier (typed)
@@ -17747,8 +18470,8 @@ subset: identifiers
 subset: data
 def: "Name or other identifier of molecular sequence feature(s)." [http://edamontology.org]
 is_a: EDAM_data:0976 ! Identifier (typed)
-is_a: EDAM_data:2914 ! Sequence feature metadata
-relationship: is_identifier_of EDAM_data:1255 ! Sequence features
+is_a: EDAM_data:2914 ! Sequence features metadata
+relationship: is_identifier_of EDAM_data:1255 ! Feature record
 
 [Term]
 id: EDAM_data:1023
@@ -18300,7 +19023,7 @@ subset: identifiers
 subset: data
 def: "Identifier of an entry from a database of microarray data." [http://edamontology.org]
 is_a: EDAM_data:0976 ! Identifier (typed)
-relationship: is_identifier_of EDAM_data:0931 ! Microarray experiment annotation
+relationship: is_identifier_of EDAM_data:0931 ! Experiment annotation (microarray)
 
 [Term]
 id: EDAM_data:1079
@@ -18336,7 +19059,7 @@ subset: data
 def: "Identifier of an entry from a database of genotypes and phenotypes." [http://edamontology.org]
 is_a: EDAM_data:0976 ! Identifier (typed)
 is_a: EDAM_data:2091 ! Accession
-relationship: is_identifier_of EDAM_data:0920 ! Genotype and phenotype annotation
+relationship: is_identifier_of EDAM_data:0920 ! Genotype/phenotype annotation
 
 
 [Term]
@@ -18794,198 +19517,198 @@ consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2672
-name: Ensembl ID ("Bos taurus")
+name: Ensembl ID ('Bos taurus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Bos taurus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Bos taurus' division)." [http://edamontology.org]
 regex: "ENSBTA([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2673
-name: Ensembl ID ("Canis familiaris")
+name: Ensembl ID ('Canis familiaris')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Canis familiaris" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Canis familiaris' division)." [http://edamontology.org]
 regex: "ENSCAF([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2674
-name: Ensembl ID ("Cavia porcellus")
+name: Ensembl ID ('Cavia porcellus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Cavia porcellus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Cavia porcellus' division)." [http://edamontology.org]
 regex: "ENSCPO([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2675
-name: Ensembl ID ("Ciona intestinalis")
+name: Ensembl ID ('Ciona intestinalis')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Ciona intestinalis" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Ciona intestinalis' division)." [http://edamontology.org]
 regex: "ENSCIN([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2676
-name: Ensembl ID ("Ciona savignyi")
+name: Ensembl ID ('Ciona savignyi')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Ciona savignyi" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Ciona savignyi' division)." [http://edamontology.org]
 regex: "ENSCSAV([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2677
-name: Ensembl ID ("Danio rerio")
+name: Ensembl ID ('Danio rerio')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Danio rerio" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Danio rerio' division)." [http://edamontology.org]
 regex: "ENSDAR([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2678
-name: Ensembl ID ("Dasypus novemcinctus")
+name: Ensembl ID ('Dasypus novemcinctus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Dasypus novemcinctus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Dasypus novemcinctus' division)." [http://edamontology.org]
 regex: "ENSDNO([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2679
-name: Ensembl ID ("Echinops telfairi")
+name: Ensembl ID ('Echinops telfairi')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Echinops telfairi" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Echinops telfairi' division)." [http://edamontology.org]
 regex: "ENSETE([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2680
-name: Ensembl ID ("Erinaceus europaeus")
+name: Ensembl ID ('Erinaceus europaeus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Erinaceus europaeus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Erinaceus europaeus' division)." [http://edamontology.org]
 regex: "ENSEEU([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2681
-name: Ensembl ID ("Felis catus")
+name: Ensembl ID ('Felis catus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Felis catus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Felis catus' division)." [http://edamontology.org]
 regex: "ENSFCA([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2682
-name: Ensembl ID ("Gallus gallus")
+name: Ensembl ID ('Gallus gallus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Gallus gallus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Gallus gallus' division)." [http://edamontology.org]
 regex: "ENSGAL([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2683
-name: Ensembl ID ("Gasterosteus aculeatus")
+name: Ensembl ID ('Gasterosteus aculeatus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Gasterosteus aculeatus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Gasterosteus aculeatus' division)." [http://edamontology.org]
 regex: "ENSGAC([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2684
-name: Ensembl ID ("Homo sapiens")
+name: Ensembl ID ('Homo sapiens')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Homo sapiens" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Homo sapiens' division)." [http://edamontology.org]
 regex: "ENSHUM([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2685
-name: Ensembl ID ("Loxodonta africana")
+name: Ensembl ID ('Loxodonta africana')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Loxodonta africana" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Loxodonta africana' division)." [http://edamontology.org]
 regex: "ENSLAF([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2686
-name: Ensembl ID ("Macaca mulatta")
+name: Ensembl ID ('Macaca mulatta')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Macaca mulatta" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Macaca mulatta' division)." [http://edamontology.org]
 regex: "ENSMMU([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2687
-name: Ensembl ID ("Monodelphis domestica")
+name: Ensembl ID ('Monodelphis domestica')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Monodelphis domestica" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Monodelphis domestica' division)." [http://edamontology.org]
 regex: "ENSMOD([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2688
-name: Ensembl ID ("Mus musculus")
+name: Ensembl ID ('Mus musculus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Mus musculus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Mus musculus' division)." [http://edamontology.org]
 regex: "ENSMUS([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2689
-name: Ensembl ID ("Myotis lucifugus")
+name: Ensembl ID ('Myotis lucifugus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Myotis lucifugus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Myotis lucifugus' division)." [http://edamontology.org]
 regex: "ENSMLU([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
@@ -18996,106 +19719,106 @@ name: Ensembl ID ("Ornithorhynchus anatinus")
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Ornithorhynchus anatinus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Ornithorhynchus anatinus' division)." [http://edamontology.org]
 regex: "ENSOAN([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2691
-name: Ensembl ID ("Oryctolagus cuniculus")
+name: Ensembl ID ('Oryctolagus cuniculus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Oryctolagus cuniculus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Oryctolagus cuniculus' division)." [http://edamontology.org]
 regex: "ENSOCU([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2692
-name: Ensembl ID ("Oryzias latipes")
+name: Ensembl ID ('Oryzias latipes')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Oryzias latipes" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Oryzias latipes' division)." [http://edamontology.org]
 regex: "ENSORL([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2693
-name: Ensembl ID ("Otolemur garnettii")
+name: Ensembl ID ('Otolemur garnettii')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Otolemur garnettii" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Otolemur garnettii' division)." [http://edamontology.org]
 regex: "ENSSAR([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2694
-name: Ensembl ID ("Pan troglodytes")
+name: Ensembl ID ('Pan troglodytes')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Pan troglodytes" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Pan troglodytes' division)." [http://edamontology.org]
 regex: "ENSPTR([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2695
-name: Ensembl ID ("Rattus norvegicus")
+name: Ensembl ID ('Rattus norvegicus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Rattus norvegicus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Rattus norvegicus' division)." [http://edamontology.org]
 regex: "ENSRNO([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2696
-name: Ensembl ID ("Spermophilus tridecemlineatus")
+name: Ensembl ID ('Spermophilus tridecemlineatus')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Spermophilus tridecemlineatus" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Spermophilus tridecemlineatus' division)." [http://edamontology.org]
 regex: "ENSSTO([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2697
-name: Ensembl ID ("Takifugu rubripes")
+name: Ensembl ID ('Takifugu rubripes')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Takifugu rubripes" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Takifugu rubripes' division)." [http://edamontology.org]
 regex: "ENSFRU([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2698
-name: Ensembl ID ("Tupaia belangeri")
+name: Ensembl ID ('Tupaia belangeri')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Tupaia belangeri" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Tupaia belangeri' division)." [http://edamontology.org]
 regex: "ENSTBE([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
 
 [Term]
 id: EDAM_data:2699
-name: Ensembl ID ("Xenopus tropicalis")
+name: Ensembl ID ('Xenopus tropicalis')
 namespace: identifier
 subset: identifiers
 subset: data
-def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ("Xenopus tropicalis" division)." [http://edamontology.org]
+def: "Identifier of an entry (exon, gene, transcript or protein) from the Ensembl 'core' database ('Xenopus tropicalis' division)." [http://edamontology.org]
 regex: "ENSXET([EGTP])[0-9]{11}"
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_data:2610 ! Ensembl ID
@@ -19973,7 +20696,7 @@ subset: data
 def: "Name of a chromosome." [http://edamontology.org]
 is_a: EDAM_data:2119 ! Nucleic acid identifier
 is_a: EDAM_data:0984 ! Molecule name
-relationship: is_identifier_of EDAM_data:0919 ! Nucleic acid features (chromosome)
+relationship: is_identifier_of EDAM_data:0919 ! Gene annotation (chromosome)
 
 [Term]
 id: EDAM_data:2208
@@ -20308,7 +21031,7 @@ synonym: "Enzyme Commission number" EXACT [http://edamontology.org]
 xref: Moby:EC_Number
 xref: Moby:Annotated_EC_Number
 regex: "[0-9]+\.-\.-\.-|[0-9]+\.[0-9]+\.-\.-|[0-9]+\.[0-9]+\.[0-9]+\.-|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+"
-is_a: EDAM_data:2321 ! Enzyme accession
+is_a: EDAM_data:2321 ! Enzyme ID
 
 [Term]
 id: EDAM_data:2107
@@ -20349,7 +21072,7 @@ namespace: identifier
 subset: identifiers
 subset: data
 def: "Identifier of an enzyme from the REBASE enzymes database." [http://edamontology.org]
-is_a: EDAM_data:2091 ! Enzyme accession
+is_a: EDAM_data:2321 ! Enzyme ID
 
 
 [Term]
@@ -20679,7 +21402,7 @@ subset: data
 def: "Any name (other than the recommended one) for a gene." [http://edamontology.org]
 synonym: "Gene name synonym" EXACT [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_data:1026 ! Gene name
+consider: EDAM_data:1026 ! Gene symbol
 
 
 [Term]
@@ -20969,7 +21692,7 @@ subset: identifiers
 subset: data
 def: "An NCBI RefSeq unique identifier of a gene." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_data:1027 ! NCBI gene ID
+consider: EDAM_data:1027 ! Gene ID (NCBI)
 
 [Term]
 id: EDAM_data:1029
@@ -20990,7 +21713,7 @@ subset: data
 def: "An Entrez unique identifier of a gene." [http://edamontology.org]
 regex: "[0-9]+"
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_data:1027 ! NCBI gene ID
+consider: EDAM_data:1027 ! Gene ID (NCBI)
 
 
 [Term]
@@ -21901,7 +22624,7 @@ def: "A persistent, unique identifier of a molecular sequence database entry." [
 synonym: "Sequence accession number" EXACT [http://edamontology.org]
 is_a: EDAM_data:1063 ! Sequence identifier
 is_a: EDAM_data:2091 ! Accession
-is_a: EDAM_data:2914 ! Sequence feature metadata
+is_a: EDAM_data:2914 ! Sequence features metadata
 
 
 [Term]
@@ -21948,7 +22671,7 @@ subset: data
 def: "An identifier of PIR sequence database entry." [http://edamontology.org]
 synonym: "PIR accession number" EXACT [http://edamontology.org]
 synonym: "PIR ID" EXACT [http://edamontology.org]
-is_a: EDAM_data:1096 ! Sequence identifier (protein)
+is_a: EDAM_data:1096 ! Sequence accession (protein)
 relationship: is_identifier_of EDAM_data:0849 ! Sequence record
 
 [Term]
@@ -21971,7 +22694,7 @@ subset: identifiers
 subset: data
 def: "Identifier of a protein sequence from the TAIR database." [http://edamontology.org]
 regex: "AASequence:[0-9]{10}"
-is_a: EDAM_data:1096 ! Sequence identifier (protein)
+is_a: EDAM_data:1096 ! Sequence accession (protein)
 is_a: EDAM_data:2387 ! TAIR accession
 relationship: is_identifier_of EDAM_data:0849 ! Sequence record
 
@@ -22068,7 +22791,7 @@ subset: data
 def: "Accession number of a nucleotide sequence database entry." [http://edamontology.org]
 synonym: "Nucleotide sequence accession number" EXACT [http://edamontology.org]
 is_a: EDAM_data:1093 ! Sequence accession
-relationship: is_identifier_of EDAM_data:2977 ! Nucleotide sequence
+relationship: is_identifier_of EDAM_data:2977 ! Nucleic acid sequence
 
 
 [Term]
@@ -22146,7 +22869,7 @@ namespace: identifier
 subset: identifiers
 subset: data
 def: "Accession number of a UniProt (protein sequence) database entry. May contain version or isoform number." [http://edamontology.org]
-regex: "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]" "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9].[0-9]+" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9].[0-9]+" "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]-[0-9]+" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]-[0-9]+" 
+regex: "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]" "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9].[0-9]+" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9].[0-9]+" "[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]-[0-9]+" "[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]-[0-9]+"
 example: "Q7M1G0" "P43353-2" "P01012.107"
 ! is_a: EDAM_data:3021 ! UniProt accession
 ! relationship: is_identifier_of EDAM_format:1208 ! Protein sequence ! now 'protein' format
@@ -23929,7 +24652,6 @@ synonym: "TXT" NARROW [http://filext.com/file-extension/TXT]
 synonym: "Text File" NARROW [http://filext.com/file-extension/TXT]
 synonym: "TSV" NARROW [http://filext.com/file-extension/TSV]
 synonym: "Tab-Separated Values" NARROW [http://filext.com/file-extension/TSV]
-synonym: "Symbol sequence" RELATED [http://www.onto-med.de/ontologies/gfo.owl#Symbol_sequence]
 is_a: EDAM_format:1915 ! Format
 
 [Term]
@@ -24055,7 +24777,7 @@ namespace: format
 subset: formats
 def: "Data format for molecular sequence feature information." [http://edamontology.org]
 is_a: EDAM_format:2350 ! Format (typed)
-relationship: is_format_of EDAM_data:1255 ! Sequence features
+relationship: is_format_of EDAM_data:1255 ! Feature record
 
 [Term]
 id: EDAM_format:1921
@@ -24294,7 +25016,7 @@ namespace: format
 subset: formats
 def: "Format for protein interaction data." [http://edamontology.org]
 is_a: EDAM_format:2350 ! Format (typed)
-relationship: is_format_of EDAM_data:0906 ! Protein report (interaction)
+relationship: is_format_of EDAM_data:0906 ! Protein interaction
 
 
 [Term]
@@ -24332,7 +25054,7 @@ subset: formats
 def: "Format of a report on genotype / phenotype information." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
 consider: EDAM_format:2350 ! Format (typed)
-relationship: is_format_of EDAM_data:0920 ! Genotype and phenotype annotation
+relationship: is_format_of EDAM_data:0920 ! Genotype/phenotype annotation
 
 [Term]
 id: EDAM_format:2060
@@ -24459,7 +25181,7 @@ namespace: format
 subset: formats
 def: "Format for secondary structure (predicted or real) of an RNA molecule." [http://edamontology.org]
 is_a: EDAM_format:2350 ! Format (typed)
-relationship: is_format_of EDAM_data:0880 ! RNA secondary structure
+relationship: is_format_of EDAM_data:0880 ! RNA secondary structure record
 
 [Term]
 id: EDAM_format:2078
@@ -24651,7 +25373,7 @@ namespace: format
 subset: formats
 def: "Clustalw output format." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:1982 ! clustal alignment format
+consider: EDAM_format:1982 ! clustal
 
 [Term]
 id: EDAM_format:1925
@@ -24706,7 +25428,7 @@ namespace: format
 subset: formats
 def: "GFF3 feature file format with sequence." [http://edamontology.org]
 is_a: EDAM_format:2551 ! Sequence record format (text)
-is_a: EDAM_format:1975 ! GFF2
+is_a: EDAM_format:1975 ! GFF3
 
 
 [Term]
@@ -24872,7 +25594,7 @@ namespace: format
 subset: formats
 def: "Selex sequence format." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:2000 ! selex alignment format
+consider: EDAM_format:2000 ! selex
 
 
 [Term]
@@ -25009,7 +25731,6 @@ namespace: format
 subset: formats
 def: "A text format resembling FASTA format." [http://edamontology.org]
 comment: This concept may also be used for the many non-standard FASTA-like formats.
-synonym: "FASTA" EXACT [http://filext.com/file-extension/FASTA] !{note="fileext.com synonyms are in general narrower in the sense of being defined only as file formats, as opposed to data formats."}
 synonym: "DNA and Protein Sequence Alignment" NARROW [http://filext.com/file-extension/FASTA]
 is_a: EDAM_format:2546 ! FASTA-like
 is_a: EDAM_format:2330 ! Textual format
@@ -25111,7 +25832,7 @@ namespace: format
 subset: formats
 def: "A text format resembling EMBL entry format." [http://edamontology.org]
 comment: This concept may be used for the many non-standard EMBL-like text formats.
-is_a: EDAM_format:2543 ! EMBL-like
+is_a: EDAM_format:2543 ! EMBL-like format
 is_a: EDAM_format:2330 ! Textual format
 
 [Term]
@@ -25121,7 +25842,7 @@ namespace: format
 subset: formats
 def: "An XML format resembling EMBL entry format." [http://edamontology.org]
 comment: This concept may be used for the any non-standard EMBL-like XML formats.
-is_a: EDAM_format:2543 ! EMBL-like
+is_a: EDAM_format:2543 ! EMBL-like format
 is_a: EDAM_format:2332 ! XML
 
 [Term]
@@ -25130,7 +25851,7 @@ name: EMBL-HTML
 namespace: format
 subset: formats
 def: "EMBL entry format wrapped in HTML elements." [http://edamontology.org]
-is_a: EDAM_format:2543 ! EMBL-like
+is_a: EDAM_format:2543 ! EMBL-like format
 is_a: EDAM_format:2331 ! HTML
 
 
@@ -25168,7 +25889,7 @@ name: EMBLXML
 namespace: format
 subset: formats
 def: "XML format for EMBL entries." [http://edamontology.org]
-is_a: EDAM_format:2204 ! EMBL (XML)
+is_a: EDAM_format:2204 ! EMBL format (XML)
 
 
 [Term]
@@ -25177,7 +25898,7 @@ name: cdsxml
 namespace: format
 subset: formats
 def: "XML format for EMBL entries." [http://edamontology.org]
-is_a: EDAM_format:2204 ! EMBL (XML)
+is_a: EDAM_format:2204 ! EMBL format (XML)
 
 [Term]
 id: EDAM_format:2185
@@ -25185,7 +25906,7 @@ name: insdxml
 namespace: format
 subset: formats
 def: "XML format for EMBL entries." [http://edamontology.org]
-is_a: EDAM_format:2204 ! EMBL (XML)
+is_a: EDAM_format:2204 ! EMBL format (XML)
 
 
 [Term]
@@ -25233,7 +25954,7 @@ name: uniprotkb-like (text)
 namespace: format
 subset: formats
 def: "A text sequence format resembling uniprotkb entry format." [http://edamontology.org]
-is_a: EDAM_format:2547 ! uniprotkb-like
+is_a: EDAM_format:2547 ! uniprotkb-like format
 is_a: EDAM_format:2330 ! Textual format
 
 
@@ -25321,7 +26042,7 @@ namespace: format
 subset: formats
 def: "A text format resembling FASTQ short read format." [http://edamontology.org]
 comment: This concept may be used for non-standard FASTQ short read-like formats.
-is_a: EDAM_format:2545 ! FASTQ-like
+is_a: EDAM_format:2545 ! FASTQ-like format
 is_a: EDAM_format:2330 ! Textual format
 
 [Term]
@@ -25330,7 +26051,7 @@ name: FASTQ
 namespace: format
 subset: formats
 def: "FASTQ short read format ignoring quality scores." [http://edamontology.org]
-is_a: EDAM_format:2182 ! FASTQ-like (text)
+is_a: EDAM_format:2182 ! FASTQ-like format (text)
 
 [Term]
 id: EDAM_format:1931
@@ -25338,7 +26059,7 @@ name: FASTQ-illumina
 namespace: format
 subset: formats
 def: "FASTQ Illumina 1.3 short read format." [http://edamontology.org]
-is_a: EDAM_format:2182 ! FASTQ-like (text)
+is_a: EDAM_format:2182 ! FASTQ-like format (text)
 
 [Term]
 id: EDAM_format:1932
@@ -25346,7 +26067,7 @@ name: FASTQ-sanger
 namespace: format
 subset: formats
 def: "FASTQ short read format with phred quality." [http://edamontology.org]
-is_a: EDAM_format:2182 ! FASTQ-like (text)
+is_a: EDAM_format:2182 ! FASTQ-like format (text)
 
 [Term]
 id: EDAM_format:1933
@@ -25354,7 +26075,7 @@ name: FASTQ-solexa
 namespace: format
 subset: formats
 def: "FASTQ Solexa/Illumina 1.0 short read format." [http://edamontology.org]
-is_a: EDAM_format:2182 ! FASTQ-like (text)
+is_a: EDAM_format:2182 ! FASTQ-like format (text)
 
 [Term]
 id: EDAM_format:2548
@@ -25363,7 +26084,7 @@ namespace: format
 subset: formats
 def: "Format for a sequence feature table." [http://edamontology.org]
 is_a: EDAM_format:1920 ! Sequence feature annotation format
-relationship: is_format_of EDAM_data:1255 ! Sequence features
+relationship: is_format_of EDAM_data:1255 ! Feature record
 
 [Term]
 id: EDAM_format:1979
@@ -25417,7 +26138,7 @@ namespace: format
 subset: formats
 def: "Swiss-Prot feature format." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:1963 ! swiss
+consider: EDAM_format:1963 ! Swiss-Prot format
 
 
 [Term]
@@ -25427,7 +26148,7 @@ namespace: format
 subset: formats
 def: "EMBL feature format." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:1927 ! EMBL
+consider: EDAM_format:1927 ! EMBL format
 
 
 [Term]
@@ -25437,7 +26158,7 @@ namespace: format
 subset: formats
 def: "Genbank feature format." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:1936 ! GenBank
+consider: EDAM_format:1936 ! GenBank format
 
 
 [Term]
@@ -25633,7 +26354,7 @@ namespace: format
 subset: formats
 def: "Nexus/paup format for (aligned) sequences." [http://edamontology.org]
 is_obsolete: true !{since=beta12orEarlier}
-consider: EDAM_format:1949 ! nexus
+consider: EDAM_format:1949 ! nexus-seq
 
 [Term]
 id: EDAM_format:1995
@@ -26659,7 +27380,7 @@ namespace: format
 subset: formats
 def: "Format of phylogenetic cliques data." [http://edamontology.org]
 is_a: EDAM_format:2036 ! Phylogenetic character data format
-relationship: is_format_of EDAM_data:1428 ! Phylogenetic tree report (cliques)
+relationship: is_format_of EDAM_data:1428 ! Phylogenetic character cliques
 
 
 [Term]
@@ -26669,7 +27390,7 @@ namespace: format
 subset: formats
 def: "Format of phylogenetic invariants data." [http://edamontology.org]
 is_a: EDAM_format:2036 ! Phylogenetic character data format
-relationship: is_format_of EDAM_data:1429 ! Phylogenetic tree report (invariants)
+relationship: is_format_of EDAM_data:1429 ! Phylogenetic invariants
 
 [Term]
 id: EDAM_format:1430
@@ -27427,8 +28148,7 @@ name: Vienna local RNA secondary structure
 namespace: format
 subset: formats
 def: "Format of local RNA secondary structure components with free energy values, generated by the Vienna program." [http://edamontology.org]
-synonym: "Dot-bracket format" EXACT [http://edamontology.org]
-is_a: EDAM_format:2076 ! RNA secondary structure format
+is_a: EDAM_format:1457 ! Vienna RNA secondary structure
 is_a: EDAM_format:2330 ! Textual format
 
 [Term]
@@ -27822,7 +28542,7 @@ namespace: format
 subset: formats
 def: "Alphabet for a molecular sequence with possible unknown positions but without ambiguity or non-sequence characters." [http://edamontology.org]
 is_a: EDAM_format:2094 ! pure
-is_a: EDAM_format:2096 ! unambiguous
+is_a: EDAM_format:2096 ! unambiguous sequence
 
 [Term]
 id: EDAM_format:2567
