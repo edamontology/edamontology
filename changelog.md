@@ -7,6 +7,37 @@ Descriptions of changes are grouped as follows:
 * **Fixed:** fixed bugs, issues, corrected concepts and features
 * **Misc:** miscellaneous other changes
 
+# EDAM\_1.16.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+
+EDAM\_1.16 includes:
+* concept and term updates and additions, as requested by EDAM users (mostly Bio.Tools registrants), including ones for text mining and natural language processing (BioNLP), and gene expression
+* structural improvements and fixes, improvements of synonyms, new attributes for formats
+
+## Added
+* 40 concepts added  (23 Format, 9 Data, 8 Operation)
+
+## Changed
+* 32 concepts changed relations (12 Data, 12 Operation, 7 Format, 1 Topic)
+* Added synonyms, updated primary terms and synonyms of various concepts
+* Added Wikipedia links to some concepts
+* Added documentation, examples, citations, media types, file extensions, information standards, organisations, and used ontologies of a couple of Format concepts
+
+## Deprecated
+* 7 concepts deprecated (6 Operation, 1 Data)
+
+## Fixed
+* 32 issues fixed and closed (#99, #139, #177, #178, #179, #180, #181, #182, #186, #187, #188, #189, #191, #192, #194, #195, #196, #201, #202, #217, #220, #221, #222, #223, #224, #225, #227, #228, #230, #231, #232, #238)
+* 4 issues partially fixed and left open for further improvements (#6, #120, #143, #237)
+
+## Misc
+* 0 invalid issues closed ()
+* 4 issues closed, wrong project (#161, #170, #192, #229)
+* 1 issue closed, won't fix (#226)
+* 3 issues closed, duplicate (#126, #167, #175)
+
+
+
 # EDAM\_1.15.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
