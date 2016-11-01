@@ -1,6 +1,428 @@
 # Detailed Changelog for EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
 
+# EDAM\_1.16.owl
+
+## Classes modified:
+ 
+Class: http://edamontology.org/format_1740
+Label: iHOP text mining abstract format
+-   'iHOP text mining abstract format' SubClassOf 'Textual format'
++   'iHOP text mining abstract format' SubClassOf 'HTML'
++   'iHOP text mining abstract format' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_1741
+Label: Oscar3
+-   'Oscar3' SubClassOf 'Text mining report format'
++   'Oscar3' SubClassOf 'XML'
++   'Oscar3' SubClassOf http://edamontology.org/format_3780
+ 
+Class: http://edamontology.org/data_0842
+Label: Identifier
+-   'Identifier' DisjointWith 'Parameter'
+ 
+Class: http://edamontology.org/operation_2947
+Label: Article analysis
+-   'Article analysis' SubClassOf 'has output' some 'Article data'
+-   'Article analysis' SubClassOf 'Text mining'
+-   'Article analysis' SubClassOf 'has topic' some 'Literature and reference'
+-   'Article analysis' SubClassOf 'has input' some 'Article'
++   'Article analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_3622
+Label: GeminiSQLite
+-   'GeminiSQLite' SubClassOf 'Binary format'
++   'GeminiSQLite' SubClassOf 'Sequence variation annotation format'
++   'GeminiSQLite' SubClassOf 'SQLite'
+ 
+Class: http://edamontology.org/operation_3502
+Label: Chemical class enrichment
+-   'Chemical class enrichment' SubClassOf 'Gene expression data analysis'
+ 
+Class: http://edamontology.org/operation_3501
+Label: Enrichment
+-   'Enrichment' SubClassOf 'Gene expression data analysis'
+-   'Enrichment' SubClassOf 'Operation'
+-   'Enrichment' SubClassOf 'has topic' some 'Function analysis'
++   'Enrichment' SubClassOf 'Analysis'
++   'Enrichment' SubClassOf 'has output' some http://edamontology.org/data_3753
+ 
+Class: http://edamontology.org/operation_3437
+Label: Article comparison
++   'Article comparison' SubClassOf 'has topic' some 'Literature and reference'
+ 
+Class: http://edamontology.org/operation_3435
+Label: Standardization and normalization
+-   'Standardization and normalization' SubClassOf 'Operation'
++   'Standardization and normalization' SubClassOf 'Statistical calculation'
+ 
+Class: http://edamontology.org/format_2352
+Label: BioXSD
++   'BioXSD' SubClassOf 'is format of' some 'Score'
++   'BioXSD' SubClassOf 'is format of' some 'Experimental measurement'
+ 
+Class: http://edamontology.org/format_3475
+Label: TSV
+-   'TSV' SubClassOf 'Textual format'
++   'TSV' SubClassOf http://edamontology.org/format_3751
+ 
+Class: http://edamontology.org/data_1394
+Label: Alignment score or penalty
+-   'Alignment score or penalty' SubClassOf 'Parameter'
++   'Alignment score or penalty' SubClassOf 'Score'
+ 
+Class: http://edamontology.org/operation_0504
+Label: Multiple structure alignment construction
+-   'Multiple structure alignment construction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
++   'Multiple structure alignment construction' SubClassOf 'Structure alignment'
+ 
+Class: http://edamontology.org/operation_0513
+Label: 3D profile-to-3D profile alignment (pairwise)
+-   '3D profile-to-3D profile alignment (pairwise)' SubClassOf '3D profile-to-3D profile alignment'
++   '3D profile-to-3D profile alignment (pairwise)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0511
+Label: Profile-to-profile alignment (pairwise)
+-   'Profile-to-profile alignment (pairwise)' SubClassOf 'Profile-to-profile alignment'
++   'Profile-to-profile alignment (pairwise)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3280
+Label: Named entity recognition
+-   'Named entity recognition' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/topic_0218
+Label: Text mining
++   'Text mining' SubClassOf 'Computer science'
+ 
+Class: http://edamontology.org/data_2914
+Label: Sequence features metadata
+-   'Sequence features metadata' SubClassOf 'Parameter'
++   'Sequence features metadata' SubClassOf 'Data'
+ 
+Class: http://edamontology.org/data_3671
+Label: Text
+-   'Text' SubClassOf 'Parameter'
+ 
+Class: http://edamontology.org/data_2984
+Label: Pathway or network report
+-   'Pathway or network report' SubClassOf 'Report'
++   'Pathway or network report' SubClassOf http://edamontology.org/data_3753
+ 
+Class: http://edamontology.org/data_0972
+Label: Text mining report
++   'Text mining report' SubClassOf 'Article data'
+ 
+Class: http://edamontology.org/data_0971
+Label: Article
+-   'Article' SubClassOf 'has topic' some 'Literature and reference'
++   'Article' SubClassOf 'Text'
+ 
+Class: http://edamontology.org/data_0945
+Label: Peptide identification
++   'Peptide identification' SubClassOf 'Protein property'
+ 
+Class: http://edamontology.org/operation_3200
+Label: Community profiling
+-   'Community profiling' SubClassOf 'Taxonomic classification'
+ 
+Class: http://edamontology.org/operation_0311
+Label: Microarray data standardization and normalization
+-   'Microarray data standardization and normalization' SubClassOf 'has output' some 'Microarray hybridisation data'
+-   'Microarray data standardization and normalization' SubClassOf 'has input' some 'Microarray hybridisation data'
+-   'Microarray data standardization and normalization' SubClassOf 'Standardization and normalization'
+-   'Microarray data standardization and normalization' SubClassOf 'Gene expression data analysis'
++   'Microarray data standardization and normalization' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0306
+Label: Text mining
+-   'Text mining' SubClassOf 'has input' some 'Report'
++   'Text mining' SubClassOf 'Prediction and recognition'
++   'Text mining' SubClassOf 'has input' some 'Text'
+ 
+Class: http://edamontology.org/operation_0305
+Label: Literature search
+-   'Literature search' SubClassOf 'has output' some 'Citation'
+ 
+Class: http://edamontology.org/format_2547
+Label: uniprotkb-like format
+-   'uniprotkb-like format' SubClassOf 'Sequence feature table format (text)'
++   'uniprotkb-like format' SubClassOf 'Sequence feature table format'
+ 
+Class: http://edamontology.org/operation_2456
+Label: GPCR classification
+-   'GPCR classification' SubClassOf 'Sequence classification'
+-   'GPCR classification' SubClassOf 'GPCR analysis'
+-   'GPCR classification' SubClassOf 'has output' some 'Protein family report'
++   'GPCR classification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2436
+Label: Functional enrichment
++   'Functional enrichment' SubClassOf 'has output' some http://edamontology.org/data_3754
++   'Functional enrichment' SubClassOf 'Gene set testing'
+ 
+Class: http://edamontology.org/operation_0346
+Label: Sequence similarity search
+-   'Sequence similarity search' SubClassOf 'Database search'
++   'Sequence similarity search' SubClassOf 'Structure database search'
++   'Sequence similarity search' SubClassOf 'Sequence database search'
+ 
+Class: http://edamontology.org/operation_0498
+Label: Consensus-based sequence alignment
+-   'Consensus-based sequence alignment' SubClassOf 'Sequence alignment'
++   'Consensus-based sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0491
+Label: Pairwise sequence alignment
+-   'Pairwise sequence alignment' SubClassOf 'Multiple sequence alignment'
++   'Pairwise sequence alignment' SubClassOf 'Sequence alignment'
+ 
+Class: http://edamontology.org/data_2526
+Label: Article data
++   'Article data' SubClassOf 'has topic' some 'Literature and reference'
+ 
+Class: http://edamontology.org/data_2527
+Label: Parameter
+-   'Identifier' DisjointWith 'Parameter'
+-   'Parameter' SubClassOf 'Data'
++   'Parameter' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2534
+Label: Sequence attribute
+-   'Sequence attribute' SubClassOf 'Parameter'
++   'Sequence attribute' SubClassOf 'Data'
+ 
+Class: http://edamontology.org/data_1636
+Label: Heat map
+-   'Heat map' SubClassOf 'Gene expression data'
++   'Heat map' SubClassOf http://edamontology.org/data_3768
+ 
+Class: http://edamontology.org/operation_3625
+Label: Relationship inference
+-   'Relationship inference' SubClassOf 'has output' some 'Article data'
+-   'Relationship inference' SubClassOf 'has input' some 'Article'
+-   'Relationship inference' SubClassOf 'has topic' some 'Literature and reference'
+ 
+Class: http://edamontology.org/format_3164
+Label: GTrack
++   'GTrack' SubClassOf 'Sequence feature table format (text)'
+
+
+## New classes:
+ 
+Class: http://edamontology.org/format_3787
+Label: Query language
++   'Query language' SubClassOf 'Format (by type of data)'
++   'Query language' SubClassOf 'is format of' some 'Query script'
+ 
+Class: http://edamontology.org/format_3788
+Label: SQL
++   'SQL' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3789
+Label: XQuery
++   'XQuery' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3780
+Label: Annotated text format
++   'Annotated text format' SubClassOf 'is format of' some 'Annotated text'
++   'Annotated text format' SubClassOf 'Format (by type of data)'
+ 
+Class: http://edamontology.org/format_3781
+Label: PubAnnotation format
++   'PubAnnotation format' SubClassOf 'Annotated text format'
++   'PubAnnotation format' SubClassOf 'JSON'
+ 
+Class: http://edamontology.org/format_3782
+Label: BioC
++   'BioC' SubClassOf 'XML'
++   'BioC' SubClassOf 'Annotated text format'
+ 
+Class: http://edamontology.org/format_3783
+Label: PubTator format
++   'PubTator format' SubClassOf 'Textual format'
++   'PubTator format' SubClassOf 'Annotated text format'
+ 
+Class: http://edamontology.org/format_3784
+Label: Open Annotation format
++   'Open Annotation format' SubClassOf 'Annotated text format'
++   'Open Annotation format' SubClassOf 'JSON-LD'
++   'Open Annotation format' SubClassOf 'RDF format'
+ 
+Class: http://edamontology.org/format_3785
+Label: BioNLP Shared Task format
++   'BioNLP Shared Task format' SubClassOf 'Annotated text format'
++   'BioNLP Shared Task format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3777
+Label: MCPD
++   'MCPD' SubClassOf 'is format of' some 'Reference sample report'
++   'MCPD' SubClassOf 'Textual format'
++   'MCPD' SubClassOf 'Biodiversity data format'
++   'MCPD' SubClassOf 'is format of' some 'Organism report'
++   'MCPD' SubClassOf 'is format of' some 'Sample annotation'
+ 
+Class: http://edamontology.org/format_3775
+Label: GSuite
++   'GSuite' SubClassOf 'Sequence feature annotation format'
++   'GSuite' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3776
+Label: BTrack
++   'BTrack' SubClassOf 'Sequence feature table format'
++   'BTrack' SubClassOf 'Sequence feature annotation format'
++   'BTrack' SubClassOf 'Sequence annotation track format'
++   'BTrack' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3770
+Label: UniProtKB XML
++   'UniProtKB XML' SubClassOf 'uniprotkb-like format'
++   'UniProtKB XML' SubClassOf 'XML'
++   'UniProtKB XML' SubClassOf 'Sequence record format (XML)'
+ 
+Class: http://edamontology.org/format_3773
+Label: BioYAML
++   'BioYAML' SubClassOf 'Sequence record format'
++   'BioYAML' SubClassOf 'is format of' some 'Sequence alignment'
++   'BioYAML' SubClassOf 'is format of' some 'Sequence features'
++   'BioYAML' SubClassOf 'Raw sequence format'
++   'BioYAML' SubClassOf 'is format of' some 'Experimental measurement'
++   'BioYAML' SubClassOf 'YAML'
++   'BioYAML' SubClassOf 'is format of' some 'Sequence'
++   'BioYAML' SubClassOf 'is format of' some 'Score'
++   'BioYAML' SubClassOf 'Sequence feature annotation format'
++   'BioYAML' SubClassOf 'Alignment format'
+ 
+Class: http://edamontology.org/format_3774
+Label: BioJSON (Jalview)
++   'BioJSON (Jalview)' SubClassOf 'Alignment format'
++   'BioJSON (Jalview)' SubClassOf 'Sequence feature annotation format'
++   'BioJSON (Jalview)' SubClassOf 'JSON'
++   'BioJSON (Jalview)' SubClassOf 'is format of' some 'Sequence features'
++   'BioJSON (Jalview)' SubClassOf 'is format of' some 'Sequence alignment'
+ 
+Class: http://edamontology.org/format_3771
+Label: UniProtKB RDF
++   'UniProtKB RDF' SubClassOf 'uniprotkb-like format'
++   'UniProtKB RDF' SubClassOf 'RDF format'
+ 
+Class: http://edamontology.org/format_3772
+Label: BioJSON (BioXSD)
++   'BioJSON (BioXSD)' SubClassOf 'Sequence record format'
++   'BioJSON (BioXSD)' SubClassOf 'Alignment format'
++   'BioJSON (BioXSD)' SubClassOf 'JSON'
++   'BioJSON (BioXSD)' SubClassOf 'Raw sequence format'
++   'BioJSON (BioXSD)' SubClassOf 'is format of' some 'Sequence features'
++   'BioJSON (BioXSD)' SubClassOf 'is format of' some 'Score'
++   'BioJSON (BioXSD)' SubClassOf 'Sequence feature annotation format'
++   'BioJSON (BioXSD)' SubClassOf 'is format of' some 'Sequence'
++   'BioJSON (BioXSD)' SubClassOf 'is format of' some 'Experimental measurement'
++   'BioJSON (BioXSD)' SubClassOf 'is format of' some 'Sequence alignment'
+ 
+Class: http://edamontology.org/format_3764
+Label: idXML
++   'idXML' SubClassOf 'Mass spectrometry data format'
++   'idXML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3765
+Label: KNIME datatable format
++   'KNIME datatable format' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/format_3758
+Label: SEQUEST .out file
++   'SEQUEST .out file' SubClassOf 'Textual format'
++   'SEQUEST .out file' SubClassOf 'Mass spectrometry data format'
+ 
+Class: http://edamontology.org/format_3751
+Label: DSV
++   'DSV' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3752
+Label: CSV
++   'CSV' SubClassOf 'DSV'
+ 
+Class: http://edamontology.org/format_3790
+Label: SPARQL
++   'SPARQL' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/data_3786
+Label: Query script
++   'Query script' SubClassOf 'Data'
+ 
+Class: http://edamontology.org/data_3779
+Label: Annotated text
++   'Annotated text' SubClassOf 'Text data'
++   'Annotated text' SubClassOf 'Text'
+ 
+Class: http://edamontology.org/data_3768
+Label: Clustered gene expression profiles
++   'Clustered gene expression profiles' SubClassOf 'Gene expression data'
+ 
+Class: http://edamontology.org/data_3769
+Label: BRENDA ontology concept ID
++   'BRENDA ontology concept ID' SubClassOf 'Ontology concept ID'
+ 
+Class: http://edamontology.org/data_3754
+Label: GO-term enrichment report
++   'GO-term enrichment report' SubClassOf 'has topic' some 'Function analysis'
++   'GO-term enrichment report' SubClassOf 'Over-representation report'
+ 
+Class: http://edamontology.org/data_3753
+Label: Over-representation report
++   'Over-representation report' SubClassOf 'Report'
+ 
+Class: http://edamontology.org/data_3759
+Label: ProteomeXchange ID
++   'ProteomeXchange ID' SubClassOf 'Experiment annotation ID'
+ 
+Class: http://edamontology.org/data_3756
+Label: Localisation score
++   'Localisation score' SubClassOf 'Score'
+ 
+Class: http://edamontology.org/data_3757
+Label: Unimod ID
++   'Unimod ID' SubClassOf 'Protein modification ID'
+ 
+Class: http://edamontology.org/operation_3778
+Label: Text annotation
++   'Text annotation' SubClassOf 'Analysis'
++   'Text annotation' SubClassOf 'has topic' some 'Literature and language'
++   'Text annotation' SubClassOf 'has input' some 'Text'
++   'Text annotation' SubClassOf 'Annotation'
++   'Text annotation' SubClassOf 'has output' some 'Annotated text'
+ 
+Class: http://edamontology.org/operation_3767
+Label: Protein identification
++   'Protein identification' SubClassOf 'Protein analysis'
++   'Protein identification' SubClassOf 'Spectral analysis'
++   'Protein identification' SubClassOf 'has input' some 'Mass spectrometry spectra'
+ 
+Class: http://edamontology.org/operation_3766
+Label: Weighted correlation network analysis
++   'Weighted correlation network analysis' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
++   'Weighted correlation network analysis' SubClassOf 'Pathway or network analysis'
+ 
+Class: http://edamontology.org/operation_3763
+Label: Service invocation
++   'Service invocation' SubClassOf 'Service management'
+ 
+Class: http://edamontology.org/operation_3762
+Label: Service composition
++   'Service composition' SubClassOf 'Service management'
+ 
+Class: http://edamontology.org/operation_3761
+Label: Service discovery
++   'Service discovery' SubClassOf 'Service management'
+ 
+Class: http://edamontology.org/operation_3760
+Label: Service management
++   'Service management' SubClassOf 'Operation'
+ 
+Class: http://edamontology.org/operation_3755
+Label: PTM localisation
++   'PTM localisation' SubClassOf 'PTM identification'
+
+
+
 # EDAM\_1.15.owl
 
 ## Classes modified:
