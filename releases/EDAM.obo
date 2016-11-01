@@ -1,10 +1,10 @@
 format-version: 1.2
-date: 28:05:2010 15:40
-data-version:  Beta07
+date: 18:08:2010 14:15
+data-version:  Beta08
 ! Use for mapping to "global" id space(s) e.g.: 
 ! idspace: EDAM urn:lsid:ebi.ac.uk:edam: "EDAM terms"
 ! idspace: EDAM http://purl.org/edam/ "EDAM terms"
-! NEXT term number is 2028
+! NEXT term number is 2246
 subsetdef: EDAM_EXTRA "EDAM extra terms"
 ! xref: WHATIF: CorrectedPDBasXML
 ! xref: http://www.geneontology.org/doc/GO.xrf_abbs: FB
@@ -201,6 +201,7 @@ def: "A specific, singular function or process performed by a tool, for example 
 [Term]
 id: EDAM:0000005
 name: Data resource
+namespace: resource
 def: "A category of content of a data resource including databases, ontologies and servers." [EDAM:EBI "EMBRACE definition"]
 
 
@@ -498,7 +499,6 @@ id: EDAM:0000027
 name: Oligonucleotide
 namespace: entity
 def: "An organic polymer of nucleotide monomers in a short (typically less than 30 subunits) unbranched chain, bound together by covalent bonds." [EDAM:EBI "EMBRACE definition"]
-synonym: "Polynucleotide chain" EXACT []
 is_a: EDAM:0000024 ! Nucleic acid
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: has_identifier EDAM:0002119 ! Nucleic acid identifier
@@ -1436,7 +1436,7 @@ relationship: concerns EDAM:0000008 ! Undefined
 id: EDAM:0000090
 name: Database search and retrieval
 namespace: topic
-def: "Search or query a biological database and retrieve entries or other information." [EDAM:EBI "EMBRACE definition"]
+def: "Search or query a biological database or ontology and retrieve entries or other information." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000003 ! Topic
 relationship: concerns EDAM:0000008 ! Undefined
 
@@ -1893,6 +1893,14 @@ id: EDAM:0000131
 name: Transmembrane protein analysis
 namespace: topic
 def: "Data and analysis on transmembrane proteins / regions." [EDAM:EBI  "EMBRACE definition"]
+is_a: EDAM:0000078 ! Protein analysis
+relationship: concerns EDAM:0000008 ! Undefined
+
+[Term]
+id: EDAM:0002232
+name: Lipoprotein analysis
+namespace: topic
+def: "Data and analysis on lipoproteins." [EDAM:EBI  "EMBRACE definition"]
 is_a: EDAM:0000078 ! Protein analysis
 relationship: concerns EDAM:0000008 ! Undefined
 
@@ -2589,7 +2597,7 @@ relationship: concerns EDAM:0000008 ! Undefined
 id: EDAM:0000185
 name: Pairwise sequence alignment
 namespace: topic
-def: "Alignment of multiple molecular sequences or sequence profiles (representing sequence alignments)." [EDAM:EBI "EMBRACE definition"]
+def: "Alignment of exactly two molecular sequences or sequence profiles (representing sequence alignments)." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000182 ! Sequence alignment
 relationship: concerns EDAM:0000008 ! Undefined
 
@@ -2597,7 +2605,7 @@ relationship: concerns EDAM:0000008 ! Undefined
 id: EDAM:0000186
 name: Multiple sequence alignment
 namespace: topic
-def: "Alignment of two molecular sequences or sequence profiles (representing sequence alignments)." [EDAM:EBI "EMBRACE definition"]
+def: "Alignment of two or more molecular sequences or sequence profiles (representing sequence alignments)." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000182 ! Sequence alignment
 relationship: concerns EDAM:0000008 ! Undefined
 
@@ -3087,6 +3095,19 @@ relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
 
 [Term]
+id: EDAM:0002238
+name: Statistical operation
+namespace: operation
+def: "Perform a statistical data operation of some type, e.g. calibration or validation." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000841 ! Undefined
+
+
+
+
+[Term]
 id: EDAM:0000224
 name: Database search and retrieval
 namespace: operation
@@ -3096,6 +3117,17 @@ is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000090 ! Database search and retrieval
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000843 ! Database entry
+
+[Term]
+id: EDAM:0002224
+name: Ontology search and retrieval
+namespace: operation
+def: "Search or query an ontology and retrieve terms." [EDAM:EBI "EMBRACE definition"]
+synonym: "Ontology retrieval" EXACT []
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000090 ! Database search and retrieval
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000966 ! Ontology term
 
 [Term]
 id: EDAM:0000225
@@ -3274,7 +3306,7 @@ id: EDAM:0000239
 name: Sequence motif searching
 namespace: operation
 def: "Find (scan for) known motifs, patterns and regular expressions in molecular sequence(s)." [EDAM:EBI "EMBRACE definition"]
-synonym: "Motif discovery" EXACT []
+synonym: "Sequence motif detection" EXACT []
 is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000158 ! Sequence motifs
 relationship: has_input EDAM:0000841 ! Undefined
@@ -3761,8 +3793,6 @@ name: Genetic marker identification
 namespace: operation
 def: "Identify genetic markers in DNA sequences." [EDAM:EBI "EMBRACE definition"]
 comment: A genetic marker is any DNA sequence of known chromosomal location that is associated with and specific to a particular gene or trait. This includes short sequences surrounding a SNP, Sequence-Tagged Sites (STS) which are well suited for PCR amplification, a longer minisatellites sequence etc.
-synonym: "Genetic linkage" EXACT []
-synonym: "Linkage mapping" EXACT []
 is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000103 ! Genetic mapping
 relationship: has_input EDAM:0000841 ! Undefined
@@ -3845,6 +3875,15 @@ relationship: is_concern_of EDAM:0000159 ! Sequence comparison
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000861 ! Sequence word alignment
 
+[Term]
+id: EDAM:0002239
+name: 3D-1D scoring matrix generation
+namespace: operation
+def: "Calculate a 3D-1D scoring matrix." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000870 ! Sequence distance matrix
 
 [Term]
 id: EDAM:0000289
@@ -3854,6 +3893,7 @@ def: "Calculate a sequence distance matrix or otherwise estimate genetic distanc
 synonym: "Phylogenetic distance matrix generation" EXACT []
 is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000159 ! Sequence comparison
+relationship: is_concern_of EDAM:0000084 ! Phylogenetics
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000870 ! Sequence distance matrix
 
@@ -3872,6 +3912,16 @@ id: EDAM:0000291
 name: Sequence clustering
 namespace: operation
 def: "Build clusters of similar sequences, typically using scores from pair-wise alignment or other comparison of the sequences." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000164 ! Sequence clustering
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0001235 ! Sequence cluster
+
+[Term]
+id: EDAM:0002233
+name: Representative sequence identification
+namespace: operation
+def: "Identify a representative sequence from a set of sequences, typically using scores from pair-wise alignment or other comparison of the sequences." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000164 ! Sequence clustering
 relationship: has_input EDAM:0000841 ! Undefined
@@ -3986,7 +4036,7 @@ def: "Align molecular sequence to structure in 3D space (threading)." [EDAM:EBI 
 comment: Use this term for methods that evaluate sequence-structure compatibility by assessing residue interactions in 3D.  Methods might perform one-to-one, one-to-many or many-to-many comparisons.
 synonym: "Threading" EXACT []
 is_a: EDAM:0000004 ! Operation
-relationship: is_concern_of EDAM:0000083 ! Alignment
+relationship: is_concern_of EDAM:0000184 ! Sequence-structure alignment
 relationship: is_concern_of EDAM:0000175 ! Molecular modelling
 relationship: is_concern_of EDAM:0000180 ! Protein fold recognition
 relationship: has_input EDAM:0000841 ! Undefined
@@ -3998,12 +4048,23 @@ name: Protein fold recognition
 namespace: operation
 def: "Recognize (predict and assign) known protein structural domains or folds in protein sequence(s)." [EDAM:EBI "EMBRACE definition"]
 comment: Methods use some type of mapping between sequence and fold, for example secondary structure prediction and alignment, profile comparison, sequence properties, homologous sequence search, kernel machines etc. Domains and folds might be taken from SCOP or CATH.
+synonym: "Protein domain prediction" EXACT [] 
+synonym: "Protein fold prediction" EXACT [] 
 is_a: EDAM:0000004 ! Operation
 relationship: is_concern_of EDAM:0000180 ! Protein fold recognition
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0001564 ! Protein fold recognition report
 
 
+[Term]
+id: EDAM:0000304
+name: Demonstration
+namespace: operation
+def: "An operation performing purely illustrative (pedagogical) purposes." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000088 ! Literature and documentation
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000841 ! Undefined
 
 [Term]
 id: EDAM:0000304
@@ -4088,7 +4149,7 @@ name: Microarray data standardization and normalization
 namespace: operation
 def: "Standardize or normalize microarray data." [EDAM:EBI "EMBRACE definition"]
 comment: This includes statistical analysis, for example of variability amongst microarrays experiments, comparison of heterogeneous microarray platforms etc.
-is_a: EDAM:0000004 ! Operation
+is_a: EDAM:0002238 ! Statistical calibration
 relationship: is_concern_of EDAM:0000200 ! Microarrays
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
@@ -4392,6 +4453,16 @@ relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
 
 [Term]
+id: EDAM:0002234
+name: Structure file handling
+namespace: operation
+def: "Perform basic operations on a file of molecular structural data (for example coordinates or domain classification), such as file creation or concatenation, removal or ordering of structures and so on." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000004 ! Operation
+relationship: is_concern_of EDAM:0000220 ! File handling
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000841 ! Undefined
+
+[Term]
 id: EDAM:0002120
 name: Listfile handling
 namespace: operation
@@ -4519,6 +4590,17 @@ is_a: EDAM:0000224 ! Database search and retrieval
 relationship: is_concern_of EDAM:0000158 ! Sequence motifs
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0001298 ! Sequence motif report
+
+[Term]
+id: EDAM:0002237
+name: Profile retrieval
+namespace: operation
+def: "Query a profile database and retrieve one or more profile(s)." [EDAM:EBI "EMBRACE definition"]
+comment: This includes direct retrieval methods that retrieve a profile by, e.g. the profile name.
+is_a: EDAM:0000224 ! Database search and retrieval
+relationship: is_concern_of EDAM:0000188 ! Sequence profiles
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000849 ! Sequence record
 
 [Term]
 id: EDAM:0000342
@@ -5428,7 +5510,7 @@ relationship: has_output EDAM:0000841 ! Undefined
 !
 [Term]
 id: EDAM:0000388
-name: Ligand-binding and active site prediction in protein structures
+name: Ligand-binding and active site prediction (from structure)
 namespace: operation
 def: "Identify or predict catalytic residues, active sites or other ligand-binding sites in protein structures." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000245 ! Protein structural motif identification
@@ -5552,7 +5634,7 @@ relationship: has_output EDAM:0000841 ! Undefined
 id: EDAM:0000392
 name: Protein contact map calculation
 namespace: operation
-def: "Calculate a residue contact map (all-versus-all inter-residue contacts) for a protein structure." [EDAM:EBI "EMBRACE definition"]
+def: "Calculate a residue contact map (typically all-versus-all inter-residue contacts) for a protein structure." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0001833 ! Residue contact identification
 relationship: is_concern_of EDAM:0000144 ! Protein residue interactions
 relationship: has_input EDAM:0000841 ! Undefined
@@ -5590,7 +5672,7 @@ def: "Identify protein residue contacts with metal in a structure." [EDAM:WHATIF
 xref: WHATIF:HasMetalContacts
 xref: WHATIF:HasMetalContactsPlus
 is_a: EDAM:0001833 ! Residue contact identification
-is_a: EDAM:0000388 ! Ligand-binding and active site prediction in protein structures
+is_a: EDAM:0000388 ! Ligand-binding and active site prediction (from structure)
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
@@ -5630,7 +5712,7 @@ xref: WHATIF:ShowLigandContacts
 xref: WHATIF:ShowDrugContacts
 xref: WHATIF:ShowDrugContactsShort
 is_a: EDAM:0001833 ! Residue contact identification
-is_a: EDAM:0000388 ! Ligand-binding and active site prediction in protein structures
+is_a: EDAM:0000388 ! Ligand-binding and active site prediction (from structure)
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
@@ -5981,7 +6063,7 @@ relationship: has_output EDAM:0001271 ! Sequence feature report
 
 [Term]
 id: EDAM:0000419
-name: Protein ligand-binding and active site prediction
+name: Ligand-binding and active site prediction (from sequence)
 namespace: operation
 def: "Identify or predict catalytic residues, active sites or other ligand-binding sites in protein sequences." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000414 ! Protein sequence feature detection
@@ -6079,7 +6161,7 @@ relationship: has_output EDAM:0000841 ! Undefined
 
 
 !
-! Operation<-Sequence feature detection<-Protein sequence feature detection<-Protein ligand-binding and active site prediction
+! Operation<-Sequence feature detection<-Protein sequence feature detection<-Ligand-binding and active site prediction (from sequence)
 !
 
 !
@@ -7157,9 +7239,6 @@ relationship: has_output EDAM:0000862 ! Dotplot
 !
 
 
-
-
-
 !
 ! Operation<-Sequence alignment
 !
@@ -7568,6 +7647,16 @@ is_a: EDAM:0000304 ! Documentation search and retrieval
 relationship: is_concern_of EDAM:0000088 ! Literature and documentation
 relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000957 ! Database metadata
+
+[Term]
+id: EDAM:0002222
+name: Ontology information retrieval
+namespace: operation
+def: "Search and retrieve documentation on a bioinformatics ontology." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000304 ! Documentation search and retrieval
+relationship: is_concern_of EDAM:0000088 ! Literature and documentation
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0002223 ! Ontology metadata
 
 
 !
@@ -8076,7 +8165,7 @@ relationship: has_output EDAM:0000872 ! Phylogenetic tree
 id: EDAM:0000546
 name: Phylogenetic tree construction (minimum distance methods)
 namespace: operation
-def: "Construct a phylogenetic tree by computing distances between sequences and searching for the tree with minimal discrepancies between pairwise distances." [EDAM:EBI "EMBRACE definition"]
+def: "Construct a phylogenetic tree by computing (or using precomputed) distances between sequences and searching for the tree with minimal discrepancies between pairwise distances." [EDAM:EBI "EMBRACE definition"]
 comment: This includes neighbor joining (NJ) clustering method.
 is_a: EDAM:0000539 ! Phylogenetic tree construction (method centric)
 relationship: is_concern_of EDAM:0000191 ! Phylogeny reconstruction
@@ -8134,7 +8223,8 @@ relationship: has_output EDAM:0001439 ! DNA substitution model
 id: EDAM:0000551
 name: Phylogenetic tree shape analysis
 namespace: operation
-def: "Analyse the shape of a phylogenetic tree." [EDAM:EBI "EMBRACE definition"]
+def: "Analyse the shape (topology) of a phylogenetic tree." [EDAM:EBI "EMBRACE definition"]
+synonym: "Phylogenetic tree topology analysis" EXACT []
 is_a: EDAM:0000324 ! Phylogenetic tree analysis
 relationship: is_concern_of EDAM:0000084 ! Phylogenetics
 relationship: has_input EDAM:0000841 ! Undefined
@@ -8190,7 +8280,7 @@ comment: Methods typically test for topological similarity between trees using f
 is_a: EDAM:0000325 ! Phylogenetic tree comparison
 relationship: is_concern_of EDAM:0000084 ! Phylogenetics
 relationship: has_input EDAM:0000841 ! Undefined
-relationship: has_output EDAM:0000872 ! Phylogenetic tree
+relationship: has_output EDAM:0002245 ! Phylogenetic consensus tree
 
 
 [Term]
@@ -8415,6 +8505,17 @@ relationship: has_input EDAM:0000841 ! Undefined
 relationship: has_output EDAM:0000841 ! Undefined
 
 [Term]
+id: EDAM:0002241
+name: Protein transmembrane region visualisation
+namespace: operation
+def: "Visualise protein transmembrane regions." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000337 ! Visualisation and rendering
+relationship: is_concern_of EDAM:0000081 ! Structure analysis
+relationship: is_concern_of EDAM:0000078 ! Protein analysis
+relationship: has_input EDAM:0000841 ! Undefined
+relationship: has_output EDAM:0000841 ! Undefined
+
+[Term]
 id: EDAM:0000570
 name: Structure visualisation
 namespace: operation
@@ -8560,6 +8661,67 @@ relationship: has_output EDAM:0000841 ! Undefined
 !
 ! Data resource
 !
+
+[Term]
+id: EDAM:0002231
+name: Phenotype and disease data resource
+namespace: resource
+def: "An information resource for biological genotypes, phenotypes and/or diseases." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002230
+name: Classification and nomenclature data resource
+namespace: resource
+def: "An information resource for biological classification and nomenclature." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002229
+name: Cell biology and culture data resource
+namespace: resource
+def: "An information resource for cellular biology and cell culture." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002228
+name: Sequence-related data resource
+namespace: resource
+def: "An information resource for molecular sequence and related data such as alignments and motifs." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002227
+name: Genetics data resource
+namespace: resource
+def: "An information resource for genetics." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002221
+name: Ontology data resource
+namespace: resource
+def: "An ontology of biological or bioinformatics terms and relations, a controlled vocabulary or structured glossary, or other resource in this area." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0002230 ! Classification and nomenclature resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000841 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
+
 [Term]
 id: EDAM:0000580
 name: Undefined
@@ -8575,7 +8737,7 @@ id: EDAM:0000584
 name: Sequence data resource
 namespace: resource
 def: "A database of molecular sequences." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002228 ! Sequence-related data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000849 ! Sequence record
 relationship: is_source_of EDAM:0002044 ! Sequence data
@@ -8587,6 +8749,27 @@ id: EDAM:0000585
 name: Structure data resource
 namespace: resource
 def: "A database of molecular secondary or tertiary (3D) structure." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0002226 ! Structural biology data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+
+[Term]
+id: EDAM:0002226
+name: Structural biology data resource
+namespace: resource
+def: "An information resource on biological molecular structures." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000005 ! Data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000843 ! Database entry
+relationship: has_identifier EDAM:0001056 ! Database name
+
+[Term]
+id: EDAM:0002225
+name: Protein data resource
+namespace: resource
+def: "A database of information on proteins, peptides or amino acids." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000005 ! Data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
@@ -8597,7 +8780,7 @@ id: EDAM:0000586
 name: General protein data resource
 namespace: resource
 def: "A database of protein information in general." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000896 ! Protein annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8607,7 +8790,7 @@ id: EDAM:0000587
 name: Protein interaction data resource
 namespace: resource
 def: "A database of protein interactions." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_source_of EDAM:0000906 ! Protein interaction
 relationship: has_identifier EDAM:0001056 ! Database name
 
@@ -8616,7 +8799,7 @@ id: EDAM:0000588
 name: Protein localization data resource
 namespace: resource
 def: "A database concerning protein localization." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8626,7 +8809,8 @@ id: EDAM:0000589
 name: Protein structural motif data resource
 namespace: resource
 def: "A database of protein structural motifs." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000899 ! Protein 3D structural motif annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8636,7 +8820,8 @@ id: EDAM:0000590
 name: Protein structure annotation data resource
 namespace: resource
 def: "A database of protein structure annotation." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0001537 ! Protein structure annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8646,7 +8831,7 @@ id: EDAM:0000591
 name: Proteome annotation data resource
 namespace: resource
 def: "A database of annotation for an entire proteome." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8656,7 +8841,7 @@ id: EDAM:0000592
 name: Molecular motions data resource
 namespace: resource
 def: "A database of molecular motions." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8666,7 +8851,7 @@ id: EDAM:0000593
 name: NMR data resource
 namespace: resource
 def: "A database of raw NMR data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8677,7 +8862,8 @@ name: Sequence classification data resource
 namespace: resource
 def: "A database of molecular sequence classifications or clusters." [EDAM:EBI "EMBRACE definition"]
 comment: This includes the results of sequence clustering, ortholog identification, assignment to families, annotation etc.
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002228 ! Sequence-related data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0001235 ! Sequence cluster
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8688,7 +8874,8 @@ id: EDAM:0000595
 name: Protein classification data resource
 namespace: resource
 def: "A database of protein sequence or structural classifications." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8699,7 +8886,7 @@ id: EDAM:0000596
 name: Sequence alignment data resource
 namespace: resource
 def: "A database of molecular sequence alignments." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002228 ! Sequence-related data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000863 ! Sequence alignment
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8709,7 +8896,7 @@ id: EDAM:0000597
 name: Structure alignment data resource
 namespace: resource
 def: "A database of molecular tertiary (3D) structure alignments." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000886 ! Tertiary structure alignment
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8719,7 +8906,8 @@ id: EDAM:0000598
 name: Sequence motif or profile data resource
 namespace: resource
 def: "A database of sequence motifs, or sequence profiles derived from an alignment of molecular sequences of a particular type." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002228 ! Sequence-related data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0001353 ! Sequence motif
 relationship: is_source_of EDAM:0001354 ! Sequence profile
@@ -8730,7 +8918,8 @@ id: EDAM:0000599
 name: Structural profile data resource
 namespace: resource
 def: "A database of one or more structural (3D) profiles or templates derived from a molecular structure or structural alignment of a particular type." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002226 ! Structural biology data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000889 ! Structural (3D) profile
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8740,7 +8929,7 @@ id: EDAM:0000600
 name: Functional sites data resource
 namespace: resource
 def: "A database of functional sites in molecular sequences." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002228 ! Sequence-related data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8751,7 +8940,7 @@ id: EDAM:0000601
 name: General protein modifications data resource
 namespace: resource
 def: "A database on protein modification, e.g. post-translational modifications." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8772,7 +8961,7 @@ id: EDAM:0000603
 name: Proteomics data resource
 namespace: resource
 def: "A proteomics database." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8782,7 +8971,7 @@ id: EDAM:0000604
 name: General peptides data resource
 namespace: resource
 def: "A general database about peptides." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000895 ! Peptide
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8821,12 +9010,13 @@ relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
 
+
 [Term]
 id: EDAM:0000608
 name: Cell culture data resource
 namespace: resource
 def: "A database of general cell culture or data on a specific cell lines." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002229 ! Cell biology and culture data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8836,14 +9026,14 @@ id: EDAM:0000609
 name: Cell cycle data resource
 namespace: resource
 def: "A database on the cell cycle including key genes and proteins." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002229 ! Cell biology and culture data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
 
 [Term]
 id: EDAM:0000610
-name: Ecological data resource
+name: Ecology data resource
 namespace: resource
 def: "A database of ecological data." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000005 ! Data resource
@@ -8856,7 +9046,7 @@ id: EDAM:0000611
 name: Electron microscopy data resource
 namespace: resource
 def: "A database of electron microscopy data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002226 ! Structural biology data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000940 ! Electron microscopy volume map
 relationship: is_source_of EDAM:0000941 ! Electron microscopy model annotation
@@ -8867,7 +9057,7 @@ id: EDAM:0000612
 name: Embryology and development data resource
 namespace: resource
 def: "A database on embryology and cell and tissue development." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002229 ! Cell biology and culture data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8877,7 +9067,7 @@ id: EDAM:0000613
 name: Amino acid data resource
 namespace: resource
 def: "A database of amino acid physicochemical and biochemical property data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0002016 ! Amino acid data
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8887,7 +9077,7 @@ id: EDAM:0000614
 name: Nucleic acid physicochemical property data resource
 namespace: resource
 def: "A database of nucleic acid physicochemical and biochemical property data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8897,7 +9087,7 @@ id: EDAM:0000615
 name: Protein physicochemical property data resource
 namespace: resource
 def: "A database of protein physicochemical and biochemical property data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8907,7 +9097,7 @@ id: EDAM:0000616
 name: Organelle data resource
 namespace: resource
 def: "A database on a specific organelle, or organelles in general." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002229 ! Cell biology and culture data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8917,19 +9107,9 @@ id: EDAM:0000617
 name: Ribosome data resource
 namespace: resource
 def: "A database on ribosome-specific data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002229 ! Cell biology and culture data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
-relationship: has_identifier EDAM:0001056 ! Database name
-
-[Term]
-id: EDAM:0000618
-name: Scents data resource
-namespace: resource
-def: "A database about scents." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
-relationship: is_concern_of EDAM:0000076 ! Undefined
-relationship: is_source_of EDAM:0000964 ! Scent annotation
 relationship: has_identifier EDAM:0001056 ! Database name
 
 [Term]
@@ -8937,7 +9117,7 @@ id: EDAM:0000619
 name: Biochemical nomenclature data resource
 namespace: resource
 def: "A database of biochemical nomenclature, symbols or terminology." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8960,7 +9140,7 @@ id: EDAM:0000622
 name: Genomics data resource
 namespace: resource
 def: "A database in the broad field of genomics." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8968,10 +9148,10 @@ relationship: has_identifier EDAM:0001056 ! Database name
 
 [Term]
 id: EDAM:0000623
-name: Genes data resource
+name: Specific genes data resource
 namespace: resource
 def: "A database on a particular gene, gene system or groups of genes." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000916 ! Gene annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8981,7 +9161,7 @@ id: EDAM:0000624
 name: Chromosome data resource
 namespace: resource
 def: "A database on chromosomes." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000919 ! Chromosome annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -8991,7 +9171,8 @@ id: EDAM:0000625
 name: Genotype / phenotype data resource
 namespace: resource
 def: "A database on genotypes and / or phenotypes especially concerning diseases, mutations and variations." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002231 ! Phenotype and disease data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001081 ! Genotype / phenotype report identifier
@@ -9002,7 +9183,7 @@ id: EDAM:0000627
 name: DNA methylation data resource
 namespace: resource
 def: "A database on DNA methylation." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9012,7 +9193,7 @@ id: EDAM:0000628
 name: DNA replication data resource
 namespace: resource
 def: "A database on DNA replication." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9022,7 +9203,7 @@ id: EDAM:0000629
 name: Gene expression and microarray data resource
 namespace: resource
 def: "A database of gene expression e.g. microarray data, northern blots, gene-indexed expression profiles etc." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000931 ! Microarray experimental data
 relationship: is_source_of EDAM:0000928 ! Gene expression profile
@@ -9034,7 +9215,7 @@ id: EDAM:0000630
 name: Gene structure data resource
 namespace: resource
 def: "A database on gene structure, including introns, exons and splice sites, splicing pattern, gene fusion etc." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9044,20 +9225,9 @@ id: EDAM:0000631
 name: Gene regulation data resource
 namespace: resource
 def: "A database of gene regulation including regulatory networks, regulatory sequences etc." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
-relationship: has_identifier EDAM:0001056 ! Database name
-
-[Term]
-id: EDAM:0000632
-name: Molecular probes or primers data resource
-namespace: resource
-def: "A database of molecular probes or primers." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
-relationship: is_concern_of EDAM:0000076 ! Undefined
-relationship: is_source_of EDAM:0000932 ! Microarray probe data
-relationship: is_source_of EDAM:0000922 ! Primer report
 relationship: has_identifier EDAM:0001056 ! Database name
 
 [Term]
@@ -9065,7 +9235,8 @@ id: EDAM:0000633
 name: Immunological data resource
 namespace: resource
 def: "A database concerning immunology in general, including immune processes, immunity related proteins and peptide ligands etc." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002231 ! Phenotype and disease data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9075,7 +9246,7 @@ id: EDAM:0000634
 name: Disease data resource
 namespace: resource
 def: "A database of disease." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002231 ! Phenotype and disease data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0001622 ! Disease
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9085,7 +9256,7 @@ id: EDAM:0000635
 name: Specific protein data resource
 namespace: resource
 def: "A database on a particular protein or group of proteins." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002225 ! Protein data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9095,7 +9266,8 @@ id: EDAM:0000636
 name: Phylogenetic data resource
 namespace: resource
 def: "A database on phylogeny; phylogenetic trees, gene transfer, mode of selection / evolution etc." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
+is_a: EDAM:0002227 ! Genetics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000872 ! Phylogenetic tree
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9106,7 +9278,7 @@ id: EDAM:0000637
 name: Taxonomic data resource
 namespace: resource
 def: "A database on taxonomy and identification." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000005 ! Data resource
+is_a: EDAM:0002230 ! Classification and nomenclature resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000843 ! Database entry
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -9772,6 +9944,16 @@ relationship: is_source_of EDAM:0001696 ! Drug
 relationship: has_identifier EDAM:0001056 ! Database name
 
 
+[Term]
+id: EDAM:0000618
+name: Scents data resource
+namespace: resource
+def: "A database about scents." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000696 ! Chemical and small molecule data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000964 ! Scent annotation
+relationship: has_identifier EDAM:0001056 ! Database name
+
 
 
 
@@ -10192,9 +10374,9 @@ relationship: has_identifier EDAM:0001056 ! Database name
 
 [Term]
 id: EDAM:0000766
-name: Mass spectromery data resource
+name: Mass spectrometry data resource
 namespace: resource
-def: "A database of mass spectromery data." [EDAM:EBI "EMBRACE definition"]
+def: "A database of mass spectrometry data." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000603 ! Proteomics data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000943 ! Mass spectrometry spectra
@@ -10296,6 +10478,19 @@ relationship: has_identifier EDAM:0001056 ! Database name
 !
 ! Data resource<-Biological resource data resource
 !
+[Term]
+id: EDAM:0000632
+name: Molecular probes or primers data resource
+namespace: resource
+def: "A database of molecular probes or primers." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000607 ! Biological resource data resource
+relationship: is_concern_of EDAM:0000076 ! Undefined
+relationship: is_source_of EDAM:0000932 ! Microarray probe data
+relationship: is_source_of EDAM:0000922 ! Primer report
+relationship: has_identifier EDAM:0001056 ! Database name
+
+
+
 
 
 
@@ -10311,7 +10506,7 @@ relationship: has_identifier EDAM:0001056 ! Database name
 
 
 !
-! Data resource<-Ecological data resource
+! Data resource<-Ecology data resource
 !
 
 
@@ -10644,14 +10839,14 @@ relationship: has_identifier EDAM:0000841 ! Undefined
 
 
 !
-! Data resource<-Genes data resource
+! Data resource<-Specific genes data resource
 !
 [Term]
 id: EDAM:0000801
 name: Human genes data resource
 namespace: resource
 def: "A database of human genes." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000623 ! Genes data resource
+is_a: EDAM:0000623 ! Specific genes data resource
 relationship: is_concern_of EDAM:0000076 ! Undefined
 relationship: is_source_of EDAM:0000916 ! Gene annotation
 relationship: has_identifier EDAM:0001056 ! Database name
@@ -10660,7 +10855,7 @@ relationship: has_identifier EDAM:0001056 ! Database name
 
 
 !
-! Data resource<-Genes data resource<-Human genes data resource
+! Data resource<-Specific genes data resource<-Human genes data resource
 !
 
 [Term]
@@ -10689,7 +10884,7 @@ relationship: has_identifier EDAM:0001056 ! Database name
 
 
 !
-! Data resource<-Genes data resource<-Human genes data resource<-Human genes, mutation and disease data resource
+! Data resource<-Specific genes data resource<-Human genes data resource<-Human genes, mutation and disease data resource
 !
 
 [Term]
@@ -11056,6 +11251,7 @@ relationship: has_identifier EDAM:0001048 ! Database identifier
 [Term]
 id: EDAM:0000007
 name: Tool
+namespace: data
 def: "A bioinformatics package or tool, e.g. a standalone application or web service." [EDAM:EBI "EMBRACE definition"]
 comment: This term is required for completeness and should not be subclassed (have child terms): EDAM does not include individual tools.
 is_a: EDAM:0000006 ! Data
@@ -11414,6 +11610,7 @@ name: Comparison matrix
 namespace: data
 def: "Matrix of integer or floating point numbers for amino acid or nucleotide comparison." [EDAM:EBI "EMBRACE definition"]
 comment: The comparison matrix might include matrix name, optional comment, height and width (or size) of matrix, an index row/column (of characters) and data rows/columns (of integers or floats).
+synonym: "Substitution matrix" EXACT []
 is_a: EDAM:0002082 ! Matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -11695,7 +11892,7 @@ name: Codon
 namespace: data
 def: "A trinucleotide sequence that encodes an amino acid." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0000006 ! Data
-relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_attribute_of EDAM:0000050 ! Codon
 relationship: is_input_of EDAM:0000223 ! Undefined
 relationship: is_output_of EDAM:0000223 ! Undefined
 relationship: has_source EDAM:0000580 ! Undefined
@@ -11785,7 +11982,7 @@ is_a: EDAM:0002048 ! Annotation
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
 relationship: is_output_of EDAM:0000223 ! Undefined
-relationship: has_source EDAM:0000623 ! Genes data resource
+relationship: has_source EDAM:0000623 ! Specific genes data resource
 relationship: has_source EDAM:0000643 ! Genome data resource
 relationship: has_identifier EDAM:0000841 ! Undefined
 
@@ -12651,6 +12848,7 @@ id: EDAM:0001069
 name: Comparison matrix identifier
 namespace: data
 def: "Unique name or identifier of a comparison matrix." [EDAM:EBI "EMBRACE definition"]
+synonym: "Substitution matrix identifier" EXACT []
 is_a: EDAM:0000842 ! Identifier
 relationship: is_identifier_of EDAM:0000874 ! Comparison matrix
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -15457,6 +15655,7 @@ name: Comparison matrix type
 namespace: data
 def: "The type of a comparison matrix." [EDAM:EBI "EMBRACE definition"]
 comment: For example 'blosum', 'pam', 'gonnet', 'id' etc. Comparison matrix type may be required where a series of matrices of a certain type are used.
+synonym: "Substitution matrix type" EXACT []
 is_a: EDAM:0001069 ! Comparison matrix identifier
 is_a: EDAM:0002100 ! Type
 relationship: is_identifier_of EDAM:0000874 ! Comparison matrix
@@ -15470,6 +15669,7 @@ name: Comparison matrix name
 namespace: data
 def: "Unique name or identifier of a comparison matrix." [EDAM:EBI "EMBRACE definition"]
 comment: See for example http://www.ebi.ac.uk/Tools/webservices/help/matrix
+synonym: "Substitution matrix name" EXACT []
 is_a: EDAM:0001069 ! Comparison matrix identifier
 is_a: EDAM:0002099 ! Name
 relationship: is_identifier_of EDAM:0000874 ! Comparison matrix
@@ -16478,11 +16678,6 @@ relationship: has_source EDAM:0000580 ! Undefined
 !
 
 
-!
-! Data<-Report
-!
-
-
 
 
 
@@ -17304,6 +17499,18 @@ comment: This term may be used for sequence sets that are expected to be read an
 is_obsolete: true
 consider: EDAM:0000850 ! Sequence set
 
+[Term]
+id: EDAM:0002245
+name: Bootstrapped sequence set
+namespace: data
+def: "A collection of sequences output from a (phylogenetic) bootstrapping resampling procedure." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000850 ! Sequence set
+relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0001064 ! Sequence set identifier
+relationship: has_identifier EDAM:0001095 ! EMBOSS Uniform Sequence Address
 
 
 [Term]
@@ -19595,6 +19802,7 @@ id: EDAM:0000869
 name: Sequence-profile alignment
 namespace: data
 def: "Alignment of molecular sequence(s) to a sequence profile(s) (representing sequence alignment(s))." [EDAM:EBI "EMBRACE definition"]
+comment: Data associated with the alignment might also be included, e.g. ranked list of best-scoring sequences and a graphical representation of scores.
 is_a: EDAM:0001916 ! Alignment
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -19660,7 +19868,6 @@ id: EDAM:0000891
 name: Sequence-3D profile alignment
 namespace: data
 def: "An alignment of a sequence to a 3D profile (representing structures or a structure alignment)." [EDAM:EBI "EMBRACE definition"]
-synonym: "Structural profile alignment" EXACT []
 is_a: EDAM:0001916 ! Alignment
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20290,6 +20497,18 @@ relationship: has_identifier EDAM:0000841 ! Undefined
 !
 
 [Term]
+id: EDAM:0002242
+name: Phylogenetic property values
+namespace: data
+def: "Phylogenetic property values data." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000871 ! Phylogenetic raw data
+relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
+
+[Term]
 id: EDAM:0001426
 name: Phylogenetic continuous quantitative characters
 namespace: data
@@ -20382,7 +20601,17 @@ relationship: has_identifier EDAM:0000841 ! Undefined
 !
 ! Data<-Phylogenetic tree
 !
-
+[Term]
+id: EDAM:0002245
+name: Phylogenetic consensus tree
+namespace: data
+def: "An informative report on a consensus phylogenetic tree derived from comparison of multiple trees." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000872 ! Phylogenetic tree
+relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000636 ! Phylogenetic data resource
+relationship: has_identifier EDAM:0001068 ! Phylogenetic tree identifier
 
 !
 ! Data<-Phylogenetic tree annotation
@@ -20511,6 +20740,7 @@ id: EDAM:0001446
 name: Comparison matrix (integers)
 namespace: data
 def: "Matrix of integer numbers for sequence comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Substitution matrix (integers)" EXACT []
 is_a: EDAM:0000874 ! Comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20524,6 +20754,7 @@ id: EDAM:0001447
 name: Comparison matrix (floats)
 namespace: data
 def: "Matrix of floating point numbers for sequence comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Substitution matrix (floats)" EXACT []
 is_a: EDAM:0000874 ! Comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20539,6 +20770,7 @@ id: EDAM:0001448
 name: Nucleotide comparison matrix
 namespace: data
 def: "Matrix of integer or floating point numbers for nucleotide comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Nucleotide substitution matrix" EXACT []
 is_a: EDAM:0000874 ! Comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20554,6 +20786,7 @@ id: EDAM:0001449
 name: Amino acid comparison matrix
 namespace: data
 def: "Matrix of integer or floating point numbers for amino acid comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Amino acid substitution matrix" EXACT []
 is_a: EDAM:0002016 ! Amino acid data
 is_a: EDAM:0000874 ! Comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
@@ -20572,6 +20805,7 @@ id: EDAM:0001450
 name: Nucleotide comparison matrix (integers)
 namespace: data
 def: "Matrix of integer numbers for nucleotide comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Nucleotide substitution matrix (integers)" EXACT []
 is_a: EDAM:0001448 ! Nucleotide comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20586,6 +20820,7 @@ id: EDAM:0001451
 name: Nucleotide comparison matrix (floats)
 namespace: data
 def: "Matrix of floating point numbers for nucleotide comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Nucleotide substitution matrix (floats)" EXACT []
 is_a: EDAM:0001448 ! Nucleotide comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20604,6 +20839,7 @@ id: EDAM:0001452
 name: Amino acid comparison matrix (integers)
 namespace: data
 def: "Matrix of integer numbers for amino acid comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Amino acid substitution matrix (integers)" EXACT []
 is_a: EDAM:0001449 ! Amino acid comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -20618,6 +20854,7 @@ id: EDAM:0001453
 name: Amino acid comparison matrix (floats)
 namespace: data
 def: "Matrix of floating point numbers for amino acid comparison." [EDAM:EBI "EMBRACE definition"]
+synonym: "Amino acid substitution matrix (floats)" EXACT []
 is_a: EDAM:0001449 ! Amino acid comparison matrix
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -21417,7 +21654,6 @@ name: Protein function annotation
 namespace: data
 def: "Report on general functional properties of specific protein(s)." [EDAM:EBI "EMBRACE definition"]
 comment: For properties that can be mapped to a sequence, use 'Sequence annotation' instead.
-synonym: "Protein function annotation" EXACT []
 is_a: EDAM:0000896 ! Protein annotation
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -21876,6 +22112,30 @@ relationship: has_identifier EDAM:0000841 ! Undefined
 ! Data<-Protein domain classification
 !
 [Term]
+id: EDAM:0002235
+name: Raw SCOP domain classification
+namespace: data
+def: "Raw parsable data files of SCOP domain classification." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000006 ! Data
+relationship: is_attribute_of EDAM:0000223 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
+
+[Term]
+id: EDAM:0002236
+name: Raw CATH domain classification
+namespace: data
+def: "Raw parsable data files of CATH domain classification." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000006 ! Data
+relationship: is_attribute_of EDAM:0000223 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
+
+[Term]
 id: EDAM:0001762
 name: CATH domain report
 namespace: data
@@ -22230,13 +22490,9 @@ id: EDAM:0001586
 name: Nucleic acid melting temperature
 namespace: data
 def: "Melting temperature of hybridized or double stranded nucleic acid (DNA or RNA/DNA)." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0000912 ! Nucleic acid physicochemical property
-relationship: is_attribute_of EDAM:0000028 ! DNA
-relationship: is_attribute_of EDAM:0000043 ! RNA/DNA hybrid
-relationship: is_input_of EDAM:0000223 ! Undefined
-relationship: is_output_of EDAM:0000223 ! Undefined
-relationship: has_source EDAM:0000580 ! Undefined
-relationship: has_identifier EDAM:0000841 ! Undefined
+is_obsolete: true
+consider: EDAM:0002139 ! Melting temperature
+
 
 [Term]
 id: EDAM:0002088
@@ -23559,10 +23815,11 @@ relationship: has_identifier EDAM:0000841 ! Undefined
 
 [Term]
 id: EDAM:0001667
-name: Expectation value (E-value)
+name: E-value
 namespace: data
 def: "A simple floating point number defining the lower or upper limit of an expectation value (E-value)." [EDAM:EBI "EMBRACE definition"]
 comment: An expectation value (E-Value) is the expected number of observations which are at least as extreme as observations expected to occur by random chance. The E-value describes the number of hits with a given score or better that are expected to occur at random when searching a database of a particular size. It decreases exponentially with the score (S) of a hit. A low E value indicates a more significant score.
+synonym: "Expectation value" EXACT []
 is_a: EDAM:0000951 ! Statistical estimate score
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -23746,6 +24003,18 @@ id: EDAM:0000957
 name: Database metadata
 namespace: data
 def: "Basic information on bioinformatics database(s) or other data sources such as name, type, description, URL etc." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0002018 ! Metadata
+relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
+
+[Term]
+id: EDAM:0002223
+name: Ontology metadata
+namespace: data
+def: "Basic information on a bioinformatics ontology." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0002018 ! Metadata
 relationship: is_attribute_of EDAM:0000008 ! Undefined
 relationship: is_input_of EDAM:0000223 ! Undefined
@@ -24409,12 +24678,14 @@ relationship: has_source EDAM:0000580 ! Undefined
 id: EDAM:0002139
 name: Melting temperature
 namespace: data
-def: "A temperature concerning nucleic acid denaturation, for example the temperature at which the two strands of a nucleic acid molecule separate." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0002029 ! Parameter
-relationship: is_attribute_of EDAM:0000008 ! Undefined
+def: "A temperature concerning nucleic acid denaturation, typically the temperature at which the two strands of a hybridized or double stranded nucleic acid (DNA or RNA/DNA) molecule separate." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000912 ! Nucleic acid physicochemical property
+relationship: is_attribute_of EDAM:0000028 ! DNA
+relationship: is_attribute_of EDAM:0000043 ! RNA/DNA hybrid
 relationship: is_input_of EDAM:0000223 ! Undefined
 relationship: is_output_of EDAM:0000223 ! Undefined
 relationship: has_source EDAM:0000580 ! Undefined
+relationship: has_identifier EDAM:0000841 ! Undefined
 
 [Term]
 id: EDAM:0002140
@@ -24443,6 +24714,8 @@ id: EDAM:0002152
 name: Rendering parameter
 namespace: data
 def: "A parameter that is used to control rendering (drawing) to a device or image." [EDAM:EBI "EMBRACE definition"]
+synonym: "Graphics parameter" EXACT []
+synonym: "Graphical parameter" EXACT []
 is_a: EDAM:0002029 ! Parameter
 relationship: is_input_of EDAM:0000223 ! Undefined
 relationship: is_output_of EDAM:0000223 ! Undefined
@@ -25227,7 +25500,18 @@ relationship: has_identifier EDAM:0001086 ! Chemical compound identifier
 
 
 
-
+[Term]
+id: EDAM:0002240
+name: Heterogen
+namespace: data
+def: "An informative report on the types of small molecules or 'heterogens' (non-protein groups) that are represented in PDB files." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0000006 ! Data
+relationship: is_attribute_of EDAM:0000008 ! Undefined
+relationship: is_input_of EDAM:0000223 ! Undefined
+relationship: is_output_of EDAM:0000223 ! Undefined
+relationship: has_source EDAM:0000696 ! Chemical and small molecule data resource
+relationship: has_identifier EDAM:0001086 ! Chemical compound identifier
+! relationship: is_source_of EDAM:0001247 ! Chemical formula
 
 
 !
@@ -27763,6 +28047,14 @@ def: "Format of phylogenetic continuous quantitative character data." [EDAM:EBI 
 is_a: EDAM:0002036 ! Phylogenetic raw data format
 
 [Term]
+id: EDAM:0001431
+name: Phylogenetic property values format
+namespace: format
+def: "Format of phylogenetic property data." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0002036 ! Phylogenetic raw data format
+
+
+[Term]
 id: EDAM:0002038
 name: Phylogenetic discrete states format
 namespace: format
@@ -27792,25 +28084,28 @@ is_a: EDAM:0002036 ! Phylogenetic raw data format
 id: EDAM:0001430
 name: PHYLIP continuous quantitative characters format
 namespace: format
-def: "A file containing continuous quantitative character data." [EDAM:EBI "EMBRACE definition"]
+def: "PHYLIP file format for continuous quantitative character data." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0002037 ! Phylogenetic continuous quantitative character format
-
-
-[Term]
-id: EDAM:0001431
-name: PHYLIP phylogenetic property values
-namespace: format
-def: "A file of PHYLIP phylogenetic property data." [EDAM:EBI "EMBRACE definition"]
-is_a: EDAM:0002037 ! Phylogenetic continuous quantitative character format
-
 
 
 [Term]
 id: EDAM:0001432
 name: PHYLIP phylogenetic character frequencies
 namespace: format
-def: "A file of PHYLIP phylogenetics character frequency data." [EDAM:EBI "EMBRACE definition"]
+def: "PHYLIP file format for phylogenetics character frequency data." [EDAM:EBI "EMBRACE definition"]
 is_a: EDAM:0002037 ! Phylogenetic continuous quantitative character format
+
+
+!
+! Data format<-Phylogenetic raw data format<-Phylogenetic property values format
+!
+
+[Term]
+id: EDAM:0002243
+name: PHYLIP phylogenetic property values format
+namespace: format
+def: "PHYLIP file format for phylogenetic property data." [EDAM:EBI "EMBRACE definition"]
+is_a: EDAM:0001431 ! Phylogenetic property values format
 
 
 
