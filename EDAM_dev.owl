@@ -41,8 +41,8 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <next_id>3778</next_id>
-        <oboOther:date>24.10.2016 16:51 GMT</oboOther:date>
+        <next_id>3786</next_id>
+        <oboOther:date>31.10.2016 23:53 GMT</oboOther:date>
         <doap:Version>1.16_dev</doap:Version>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
@@ -2886,13 +2886,10 @@
     <owl:Class rdf:about="http://edamontology.org/data_0971">
         <rdfs:label>Article</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2526"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>A document of scientific text, typically a full text article from a scientific journal.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3671"/>
+        <oboInOwl:hasNarrowSynonym>Scientific article</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Article text</oboInOwl:hasNarrowSynonym>        
+        <oboInOwl:hasDefinition>A scientific text, typically a full text article from a scientific journal.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -2905,6 +2902,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_0972">
         <rdfs:label>Text mining report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2526"/>
         <oboInOwl:hasDefinition>An abstract of the results of text mining.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Text mining output</oboInOwl:hasExactSynonym>
@@ -16873,13 +16871,19 @@
     <!-- http://edamontology.org/data_2526 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2526">
-        <rdfs:label>Article data</rdfs:label>
+        <rdfs:label>Text data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.  It is primarily intended to help navigation of EDAM and would not typically be used for annotation. It includes concepts that are best described as scientific text or closely concerned with or derived from text.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>Article report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Article data</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Scientific text data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Data concerning, extracted from, or derived from the analysis of a scientific text (or texts) such as a full text article from a scientific journal.</oboInOwl:hasDefinition>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/data_0971"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -21471,7 +21475,8 @@
         <obsolete_since>1.5</obsolete_since>
         <oboInOwl:hasDefinition>Data derived from the analysis of a scientific text such as a full text article from a scientific journal.</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/data_2526"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_0972"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_3779"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -23709,8 +23714,9 @@
     <owl:Class rdf:about="http://edamontology.org/data_3671">
         <rdfs:label>Text</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2526"/>
-        <oboInOwl:hasDefinition>Any free or plain text, as often specified as some search query.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Plain text</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Any free or plain text, typically for human consumption and in English. Can instantiate also as a textual search query.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Plain text</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Textual search query</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Free text</oboInOwl:hasExactSynonym>
         <created_in>1.12</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -24094,6 +24100,20 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#identifiers"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/data_3779 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/data_3779">
+        <rdfs:label>Annotated text</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2526"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3671"/>     
+        <oboInOwl:hasDefinition>A text (such as a scientific article), annotated with notes, data and metadata, such as recognised entities, concepts, and their relations.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
     
 
@@ -26503,11 +26523,13 @@
     <!-- http://edamontology.org/format_1740 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1740">
-        <rdfs:label>iHOP text mining abstract format</rdfs:label>
+        <rdfs:label>iHOP format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2021"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2331"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>iHOP abstract format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The format of iHOP (Information Hyperlinked over Proteins) text-mining result.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_Hyperlinked_over_Proteins"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -26517,12 +26539,14 @@
     <!-- http://edamontology.org/format_1741 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1741">
-        <rdfs:label>Oscar3</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2021"/>
+        <rdfs:label>OSCAR format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <rdfs:comment>Oscar 3 performs chemistry-specific parsing of chemical documents. It attempts to identify chemical names, ontology concepts and chemical data from a document.</rdfs:comment>
-        <oboInOwl:hasDefinition>Text mining abstract format from the Oscar 3 application.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:comment>OSCAR (Open-Source Chemistry Analysis Routines) software performs chemistry-specific parsing of chemical documents. It attempts to identify chemical names, ontology concepts, and chemical data from a document.</rdfs:comment>
+        <oboInOwl:hasDefinition>OSCAR format of annotated chemical text.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <citation rdf:resource="http://doi.org/10.1186/1758-2946-3-41"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28137,7 +28161,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Data format for an abstract (report) from text mining.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data format of a report from text mining.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -33735,7 +33759,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>IPGRI MCPD</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MCPD V.1</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MCPD V.2</oboInOwl:hasNarrowSynonym>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3706"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -33769,6 +33793,123 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multi-Crop_Passport_Descriptor"/>
         <organisation rdf:resource="http://www.fao.org"/>
         <organisation rdf:resource="https://www.bioversityinternational.org/"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3780 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3780">
+        <rdfs:label>Annotated text format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3779"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>Data format of an annotated text, e.g. with recognised entities, concepts, and relations.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3781 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3781">
+        <rdfs:label>PubAnnotation format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
+          <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <oboInOwl:hasDefinition>JSON format of annotated scientific text used by PubAnnotations and other tools.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="http://www.pubannotation.org/docs/annotation-format/"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.pubannotation.org/docs/annotation-format/"/>
+        <citation rdf:resource="http://dl.acm.org/citation.cfm?id=2391150"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3782 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3782">
+        <rdfs:label>BioC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <oboInOwl:hasDefinition>BioC is a standardised XML format for sharing and integrating text data and annotations.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="http://bioc.sourceforge.net/"/>
+        <oboInOwl:hasDbXref rdf:resource="http://bioc.sourceforge.net/"/>
+        <citation rdf:resource="http://doi.org/10.1093/database/bat064"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3783 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3783">
+        <rdfs:label>PubTator format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>Native textual export format of annotated scientific text from PubTator.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/PubTator/tutorial/"/>
+        <oboInOwl:hasDbXref rdf:resource="https://www.ncbi.nlm.nih.gov/CBBresearch/Lu/Demo/PubTator/tutorial/"/>
+        <citation rdf:resource="http://doi.org/10.1093/database/bas041"/>
+        <citation rdf:resource="http://doi.org/10.1093/nar/gkt441"/>    
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3784 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3784">
+        <rdfs:label>Open Annotation format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3749"/>
+        <oboInOwl:hasDefinition>A format of text annotation using the linked-data Open Annotation Data Model, serialised typically in RDF or JSON-LD.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="http://www.openannotation.org/spec/core/core.html"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.openannotation.org/spec/core/core.html"/>
+        <rdfs:seeAlso rdf:resource="http://restoa.github.io/"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/format_3785 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3785">
+        <rdfs:label>BioNLP Shared Task format</rdfs:label>
+        <oboInOwl:hasExactSynonym>BRAT standoff format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BRAT format</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3780"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>A family of similar formats of text annotation, used by BRAT and other tools, known as BioNLP Shared Task format (BioNLP 2009 Shared Task on Event Extraction, BioNLP Shared Task 2011, BioNLP Shared Task 2013), BRAT format, BRAT standoff format, and similar.</oboInOwl:hasDefinition>
+        <created_in>1.16</created_in>
+        <documentation rdf:resource="http://www.nactem.ac.uk/tsujii/GENIA/SharedTask/detail.shtml#format"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.nactem.ac.uk/tsujii/GENIA/SharedTask/detail.shtml#format"/>
+        <documentation rdf:resource="https://github.com/nlplab/brat/wiki/Annotation-Data-Format"/>
+        <oboInOwl:hasDbXref rdf:resource="https://github.com/nlplab/brat/wiki/Annotation-Data-Format"/>
+        <documentation rdf:resource="http://brat.nlplab.org/standoff.html"/>
+        <oboInOwl:hasDbXref rdf:resource="http://brat.nlplab.org/standoff.html"/>
+        <documentation rdf:resource="http://2011.bionlp-st.org/home/file-formats"/>
+        <oboInOwl:hasDbXref rdf:resource="http://2011.bionlp-st.org/home/file-formats"/>
+        <documentation rdf:resource="http://2013.bionlp-st.org/file-formats"/>
+        <oboInOwl:hasDbXref rdf:resource="http://2013.bionlp-st.org/file-formats"/>
+        <example rdf:resource="http://www.nactem.ac.uk/tsujii/GENIA/SharedTask/detail.shtml#format"/>
+        <example rdf:resource="http://brat.nlplab.org/examples.html"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -35560,14 +35701,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0970"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Query the biomedical and informatics literature.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Query scientific literature, in search for articles, article data, concepts, named entities, or for statistics.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -35579,6 +35714,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/operation_0306">
         <rdfs:label>Text mining</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -35587,19 +35723,25 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0972"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3671"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2048"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0972"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Text data mining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Text analytics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Literature mining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>Text analysis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasRelatedSynonym>Literature analysis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Article analysis</oboInOwl:hasRelatedSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Process and analyse text (typically the biomedical and informatics literature) to extract information from it.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Process and analyse text (typically scientific literature) to extract information from it.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Text_mining"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -36427,7 +36569,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0346">
         <rdfs:label>Sequence similarity search</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2421"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0338"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0339"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2451"/>
         <oboInOwl:hasNarrowSynonym>Structure database search (by sequence)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Sequence database search (by sequence)</oboInOwl:hasNarrowSynonym>
@@ -39383,12 +39526,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0527 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0527">
-        <rdfs:label>Tag mapping</rdfs:label>
+        <rdfs:label>Sequence tag mapping</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0226"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2520"/>
-        <rdfs:comment>Tag mapping might assign experimentally obtained tags to known transcripts or annotate potential virtual tags in a genome.</rdfs:comment>
+        <rdfs:comment>Sequence tag mapping assigns experimentally obtained sequence tags to known transcripts or annotate potential virtual sequence tags in a genome.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Tag to gene assignment</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Make gene to tag assignments (tag mapping) of SAGE, MPSS and SBS data, by annotating tags with ontology concepts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Make sequence tag to gene assignments (tag mapping) of SAGE, MPSS and SBS data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -41826,6 +41969,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2436">
         <rdfs:label>Gene-set enrichment analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3501"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3224"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -42970,6 +43115,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasDefinition>Process (read and / or write) text.</oboInOwl:hasDefinition>
         <obsolete_since>1.6</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0306"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3778"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -43600,29 +43746,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2947">
         <rdfs:label>Article analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0971"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Analyse a body of scientific text (typically a full text article from a scientific journal.)</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.16</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0306"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3778"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -45047,6 +45178,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3437"/>
         <oboInOwl:hasDefinition>Cluster (group) documents on the basis of their calculated similarity.</oboInOwl:hasDefinition>
         <created_in>1.3</created_in>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Document_clustering"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -45056,13 +45188,17 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3280 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3280">
-        <rdfs:label>Named entity recognition</rdfs:label>
+        <rdfs:label>Named-entity and concept recognition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
-        <oboInOwl:hasExactSynonym>Entity identification</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Entity chunking</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Entity extraction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Recognise named entities (text tokens) within documents.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Concept mining</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Named-entity recognition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Entity identification</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Entity chunking</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Entity extraction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Event extraction</oboInOwl:hasNarrowSynonym>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Named-entity_recognition"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Concept_mining"/>
+        <oboInOwl:hasDefinition>Recognise named entities, ontology concepts, tags, events, and dictionary terms within documents.</oboInOwl:hasDefinition>
         <created_in>1.3</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -45410,6 +45546,12 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3437">
         <rdfs:label>Article comparison</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Compare two or more scientific articles.</oboInOwl:hasDefinition>
         <created_in>1.6</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -45872,8 +46014,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3501">
         <rdfs:label>Over-representation analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -46118,28 +46259,11 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3625 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3625">
-        <rdfs:label>Relationship inference</rdfs:label>
+        <rdfs:label>Relation inference</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2526"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0971"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>1.12</created_in>
-        <oboInOwl:hasDefinition>Identify semantic relationships within a text or between two or more texts using text mining techniques.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Relationship inference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Identify semantic relations among entities and concepts within a text, using text mining techniques.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -46939,6 +47063,41 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>Protein inference</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Identification of protein, for example from one or more peptide identifications by tandem mass spectrometry.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+    
+    
+    <!-- http://edamontology.org/operation_3778 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/operation_3778">
+        <rdfs:label>Text annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0226"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3671"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3779"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasNarrowSynonym>Literature annotation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Article annotation</oboInOwl:hasNarrowSynonym>
+        <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>Text annotation is the operation of adding notes, data and metadata, recognised entities and concepts, and their relations to a text (such as a scientific article).</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Text_annotation"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -48375,7 +48534,7 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <obsolete_since>1.3</obsolete_since>
         <oboInOwl:hasDefinition>The processing and analysis of the bioinformatics literature and bibliographic data, such as literature search and query.</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0218"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0218"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -48384,13 +48543,20 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
     <!-- http://edamontology.org/topic_0218 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0218">
-        <rdfs:label>Text mining</rdfs:label>
+        <rdfs:label>Natural language processing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3068"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>The analysis of the biomedical and informatics literature.</oboInOwl:hasDefinition>
-        <oboInOwl:hasBroadSynonym>Literature analysis</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasExactSynonym>Literature mining</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The processing and analysis of natural language, such as scientific literature in English, in order to extract data and information, or to enable human-computer interaction.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>NLP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>BioNLP</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Text mining</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Text data mining</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Text analytics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Literature mining</oboInOwl:hasNarrowSynonym>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Natural_language_processing"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Text_mining"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biomedical_text_mining"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -48611,7 +48777,7 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <owl:deprecated>true</owl:deprecated>
         <obsolete_since>1.3</obsolete_since>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3068"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_3068"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -50946,16 +51112,18 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_3068 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3068">
-        <rdfs:label>Literature and reference</rdfs:label>
+        <rdfs:label>Literature and language</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <isdebtag>true</isdebtag>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D011642</rdfs:seeAlso>
-        <oboInOwl:hasDefinition>The scientific literature, reference information and documentation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Literature sources</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>The scientific literature, language processing, reference information, and documentation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Scientific literature</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Bibliography</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>This includes the documentation of resources such as tools, services and databases, user support, how to get help etc.</rdfs:comment>
+        <oboInOwl:hasNarrowSynonym>References</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Citations</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Documentation</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment>This includes the documentation of resources such as tools, services and databases, user support, how to get help etc.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
