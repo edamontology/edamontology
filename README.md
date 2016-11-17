@@ -6,7 +6,7 @@ You can browse EDAM at [NCBO BioPortal](http://bioportal.bioontology.org/ontolog
 Comprehensive documentation is available at http://edamontologydocs.readthedocs.io/en/latest/.
 
 
-![EDAM relations figure](https://raw.githubusercontent.com/edamontology/edamontology/master/web/EDAMconcepts.png)
+![EDAM relations figure](https://github.com/edamontology/edamontology/blob/master/EDAMrelations.png)
 
 
 If you use EDAM or its part, please reference:
