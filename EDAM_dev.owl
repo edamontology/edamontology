@@ -173,8 +173,61 @@
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
     </owl:AnnotationProperty>
-    
 
+
+
+    <!-- http://edamontology.org/is_deprecation_candidate -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/is_deprecation_candidate">
+        <rdfs:label>deprecation_candidate</rdfs:label>
+        <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed to be deprecated.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://edamontology.org/deprecation_comment -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/deprecation_comment">
+        <rdfs:label>deprecation_comment</rdfs:label>
+        <oboInOwl:hasDefinition>A comment explaining why the comment should be or was deprecated, including name of person commenting (jison, mkalas etc.)</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+
+
+
+        <!-- http://edamontology.org/is_refactor_candidate -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/is_refactor_candidate">
+        <rdfs:label>refactor_candidate</rdfs:label>
+        <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed to be refactored.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+
+
+    <!-- http://edamontology.org/refactor_comment -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/refactor_comment">
+        <rdfs:label>refactor_comment</rdfs:label>
+        <oboInOwl:hasDefinition>A comment explaining the proposed refactoring, including name of person commenting (jison, mkalas etc.)</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+
+
+
+
+    <!-- http://edamontology.org/thematic_editor -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/thematic_editor">
+        <rdfs:label>thematic_editor</rdfs:label>
+        <oboInOwl:hasDefinition>Name of thematic editor (http://biotools.readthedocs.io/en/latest/governance.html#registry-editors) responsible for this concept and its children.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+    </owl:AnnotationProperty>
+    
 
     <!-- http://edamontology.org/media_type -->
 
@@ -48767,6 +48820,8 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -49745,6 +49800,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Transcription factor binding sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison) No siblings. Consolidate with it's parent? (Nucleic acid sites, features and motifs).</deprecation_comment>
     </owl:Class>
     
 
@@ -49881,6 +49938,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <refactor_candidate>true</refactor_candidate>
+        <refactor_comment>(jison)Refactor to "Botany" or "Plant science".  Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</refactor_comment>	
     </owl:Class>
     
 
@@ -49897,6 +49956,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <rdfs:comment>The resource may be specific to a virus, a group of viruses or all viruses.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -49914,6 +49975,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDefinition>Fungi and molds, e.g. information on a specific fungal genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -49928,6 +49991,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <rdfs:comment>The resource may be specific to a pathogen, a group of pathogens or all pathogens.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).  Definition is wrong anyway.</deprecation_comment>	
     </owl:Class>
     
 
@@ -50276,6 +50341,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDefinition>Specific bacteria or archaea, e.g. information on a specific prokaryote genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -50703,6 +50770,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDefinition>The human genome, including molecular sequences, genes, annotation, maps and viewers, the human proteome or human beings in general.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).  We have "Human genetics" anyway.</deprecation_comment>	
     </owl:Class>
     
 
@@ -50748,6 +50817,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+k        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison) Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
     </owl:Class>
     
 
@@ -50762,6 +50833,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDefinition>Invertebrates, e.g. information on a specific invertebrate genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -50776,6 +50849,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -50790,6 +50865,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <rdfs:comment>The resource may be specific to a unicellular eukaryote, a group of unicellular eukaryotes or all unicellular eukaryotes.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -52521,6 +52598,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDefinition>Collections of chemicals, typically for use in high-throughput screening experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Compound library</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Chemical screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Target identification and validation</oboInOwl:hasNarrowSynonym>
         <created_in>1.3</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
@@ -52747,12 +52825,12 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_3374 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3374">
-        <rdfs:label>Drug formulation and delivery</rdfs:label>
+        <rdfs:label>Biotherapeutics</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
-        <oboInOwl:hasNarrowSynonym>Biotherapeutics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>The process of formulating abd administering a pharmaceutical compound to achieve a therapeutic effect.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Drug delivery</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Drug formulation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasBroadSynonym>Drug delivery</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Drug formulation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Drug formulation and delivery</oboInOwl:hasBroadSynonym>
         <created_in>1.4</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
@@ -52764,18 +52842,18 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_3375 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3375">
-        <rdfs:label>Pharmacokinetics and pharmacodynamics</rdfs:label>
+        <rdfs:label>Drug metabolism</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
-        <oboInOwl:hasNarrowSynonym>Pharmacodynamics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Pharmacokinetics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Drug distribution</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
         <created_in>1.4</created_in>
-        <oboInOwl:hasNarrowSynonym>Drug excretion</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>The study of how a drug interacts with the body.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Pharmacodynamics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pharmacokinetics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pharmacokinetics and pharmacodynamics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drug distribution</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drug excretion</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Drug absorption</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>ADME</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasBroadSynonym>Drug metabolism</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym>ADME</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -52843,6 +52921,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Clinical study</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Preclinical study</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Clinical studies</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Drug trials</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -53636,6 +53715,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasExactSynonym>Metazoa</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <refactor_candidate>true</refactor_candidate>
+        <refactor_comment>(jison) Refactor into "Zoology".  Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</refactor_comment>	
     </owl:Class>
     
 
@@ -53653,6 +53734,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Signal peptide cleavage sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison) It introduces an unnecessary level in the hierarchy.  Otherwise deprecate / consolidate with it's only child (Protein binding sites).</deprecation_comment>
     </owl:Class>
     
 
@@ -53672,6 +53755,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <rdfs:comment>Sequence tagged sites are short DNA sequences that are unique within a genome and serve as a mapping landmark, detectable by PCR they allow a genome to be mapped via an ordering of STSs.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison) It introduces an unnecessary level in the hierarchy.  Otherwise deprecate / consolidate with it's only child (Transcription factors and regulatory sites).</deprecation_comment>
     </owl:Class>
     
 
@@ -54012,6 +54097,8 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Protein key folding sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison) No siblings. Consolidate with it's parent? (Protein sites, features and motifs).</deprecation_comment>
     </owl:Class>
     
 
@@ -54481,7 +54568,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
     </owl:Class>
     
-
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
