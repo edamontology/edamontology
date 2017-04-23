@@ -35826,6 +35826,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes documentation, general information and other metadata on entities such as databases, database entries and tools.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>	
     </owl:Class>
     
 
@@ -37743,6 +37745,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasDefinition>Detect or predict signal peptides (and typically predict subcellular localisation) of eukaryotic proteins.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+	<deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>	
     </owl:Class>
     
 
@@ -37756,6 +37760,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+	<deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>	
     </owl:Class>
     
 
@@ -44258,6 +44264,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta13</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed (consolidate with "Protein feature detection"). If this is done, should add note to "Sequence feature detection" to also look in "Protein feature detection" and "Nucleic acid feature detection" for more specific terms, if needed.</deprecation_comment>	
     </owl:Class>
     
 
@@ -45410,6 +45418,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.3</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>	
     </owl:Class>
     
 
@@ -45603,6 +45613,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>Nucleic acid site detection</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed (consolidate with "Nucleic acid feature detection").  If this is done, should add note to "Sequence feature detection" to also look in "Protein feature detection" and "Nucleic acid feature detection" for more specific terms, if needed.</deprecation_comment>	
     </owl:Class>
     
 
@@ -50817,7 +50829,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-k        <deprecation_candidate>true</deprecation_candidate>
+        <deprecation_candidate>true</deprecation_candidate>
         <deprecation_comment>(jison) Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
     </owl:Class>
     
