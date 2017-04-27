@@ -16,6 +16,15 @@ EDAM\_1.17 includes:
 * deprecation of multiple terms
 * multiple typo and other minor fixes
 
+## Added
+* 14 concepts added (2 topics, 11 operations, 1 format)
+
+## Changed
+* 24 concepts changed (minor edits or structural/synonym changes)
+
+## Deprecated
+* 15 concepts deprecated (8 Operations, 7 topics)
+
 # EDAM\_1.16.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
