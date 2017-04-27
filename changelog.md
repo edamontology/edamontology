@@ -7,6 +7,15 @@ Descriptions of changes are grouped as follows:
 * **Fixed:** fixed bugs, issues, corrected concepts and features
 * **Misc:** miscellaneous other changes
 
+# EDAM\_1.17.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+
+EDAM\_1.17 includes:
+* addition of concepts for NGS terms from SEQWiki
+* addition of the spectral library search
+* deprecation of multiple terms
+* multiple typo and other minor fixes
+
 # EDAM\_1.16.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
