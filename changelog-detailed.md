@@ -1,6 +1,268 @@
 # Detailed Changelog for EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
 
+# EDAM\_1.17.owl
+
+## Classes modified:
+ 
+Class: http://edamontology.org/operation_3430
+Label: Nucleic acid sequence feature detection
+-   'Nucleic acid sequence feature detection' SubClassOf 'Sequence feature detection'
+-   'Nucleic acid sequence feature detection' SubClassOf 'Nucleic acid feature detection'
++   'Nucleic acid sequence feature detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3289
+Label: ID retrieval
+-   'ID retrieval' SubClassOf 'Metadata retrieval'
+-   'ID retrieval' SubClassOf 'has output' some 'Identifier'
++   'ID retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0213
+Label: Mice or rats
+-   'Mice or rats' SubClassOf 'Vertebrates'
++   'Mice or rats' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_3500
+Label: Animals
+-   'Animals' SubClassOf 'Eukaryotes'
++   'Animals' SubClassOf 'Biology'
+ 
+Class: http://edamontology.org/operation_3197
+Label: Genetic variation analysis
+-   'Genetic variation analysis' SubClassOf 'Nucleic acid sequence feature detection'
++   'Genetic variation analysis' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_3222
+Label: Peak calling
+-   'Peak calling' SubClassOf 'Nucleic acid sequence feature detection'
++   'Peak calling' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_3223
+Label: Differential gene expression analysis
+-   'Differential gene expression analysis' SubClassOf 'Differential gene expression analysis'
+ 
+Class: http://edamontology.org/operation_0304
+Label: Metadata retrieval
+-   'Metadata retrieval' SubClassOf 'Data retrieval'
+-   'Metadata retrieval' SubClassOf 'has output' some 'Resource metadata'
++   'Metadata retrieval' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3087
+Label: Protein sequence feature detection
+-   'Protein sequence feature detection' SubClassOf 'Sequence feature detection'
+-   'Protein sequence feature detection' SubClassOf 'Protein sequence analysis'
+-   'Protein sequence feature detection' SubClassOf 'Protein feature detection'
++   'Protein sequence feature detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2454
+Label: Gene prediction
+-   'Gene prediction' SubClassOf 'Nucleic acid sequence feature detection'
++   'Gene prediction' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0412
+Label: Protein signal peptide detection (bacteria)
+-   'Protein signal peptide detection (bacteria)' SubClassOf 'Protein signal peptide detection'
++   'Protein signal peptide detection (bacteria)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0411
+Label: Protein signal peptide detection (eukaryotes)
+-   'Protein signal peptide detection (eukaryotes)' SubClassOf 'Protein signal peptide detection'
++   'Protein signal peptide detection (eukaryotes)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0416
+Label: Epitope mapping
+-   'Epitope mapping' SubClassOf 'Protein sequence feature detection'
++   'Epitope mapping' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_0433
+Label: Splice site prediction
+-   'Splice site prediction' SubClassOf 'Nucleic acid sequence feature detection'
++   'Splice site prediction' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0432
+Label: Nucleosome formation or exclusion sequence prediction
+-   'Nucleosome formation or exclusion sequence prediction' SubClassOf 'Nucleic acid sequence feature detection'
++   'Nucleosome formation or exclusion sequence prediction' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0431
+Label: Restriction site recognition
+-   'Restriction site recognition' SubClassOf 'Nucleic acid sequence feature detection'
++   'Restriction site recognition' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0430
+Label: CpG island and isochore detection
+-   'CpG island and isochore detection' SubClassOf 'Nucleic acid sequence feature detection'
++   'CpG island and isochore detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0428
+Label: PolyA signal detection
+-   'PolyA signal detection' SubClassOf 'Nucleic acid sequence feature detection'
++   'PolyA signal detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0429
+Label: Quadruplex formation site detection
+-   'Quadruplex formation site detection' SubClassOf 'Nucleic acid sequence feature detection'
++   'Quadruplex formation site detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0427
+Label: Transposon prediction
+-   'Transposon prediction' SubClassOf 'Nucleic acid sequence feature detection'
++   'Transposon prediction' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0421
+Label: Protein folding site prediction
+-   'Protein folding site prediction' SubClassOf 'Protein sequence feature detection'
++   'Protein folding site prediction' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_0422
+Label: Protein cleavage site prediction
+-   'Protein cleavage site prediction' SubClassOf 'Protein sequence feature detection'
++   'Protein cleavage site prediction' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_0417
+Label: Protein post-translation modification site prediction
+-   'Protein post-translation modification site prediction' SubClassOf 'Protein sequence feature detection'
++   'Protein post-translation modification site prediction' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_0418
+Label: Protein signal peptide detection
+-   'Protein signal peptide detection' SubClassOf 'Protein sequence feature detection'
++   'Protein signal peptide detection' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_0484
+Label: SNP detection
+-   'SNP detection' SubClassOf 'Nucleic acid sequence feature detection'
++   'SNP detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/topic_2821
+Label: Unicellular eukaryotes
+-   'Unicellular eukaryotes' SubClassOf 'Eukaryotes'
++   'Unicellular eukaryotes' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2820
+Label: Vertebrates
+-   'Vertebrates' SubClassOf 'Animals'
++   'Vertebrates' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2815
+Label: Humans
+-   'Humans' SubClassOf 'Vertebrates'
++   'Humans' SubClassOf 'Biology'
+ 
+Class: http://edamontology.org/topic_2818
+Label: Eukaryotes
+-   'Eukaryotes' SubClassOf 'Model organisms'
++   'Eukaryotes' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_2819
+Label: Invertebrates
+-   'Invertebrates' SubClassOf 'Animals'
++   'Invertebrates' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3741
+Label: Differential protein expression analysis
+-   'Differential protein expression analysis' SubClassOf 'Differential gene expression analysis'
++   'Differential protein expression analysis' SubClassOf 'Differential gene expression analysis'
+ 
+Class: http://edamontology.org/operation_3742
+Label: Differential gene expression analysis
+-   'Differential gene expression analysis' SubClassOf 'Comparison'
++   'Differential gene expression analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3630
+Label: Protein quantification
++   'Protein quantification' SubClassOf http://edamontology.org/operation_3799
+ 
+Class: http://edamontology.org/topic_1811
+Label: Prokaryotes and Archaea
+-   'Prokaryotes and Archaea' SubClassOf 'Model organisms'
++   'Prokaryotes and Archaea' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0783
+Label: Pathogens
+-   'Pathogens' SubClassOf 'Model organisms'
++   'Pathogens' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0242
+Label: Conserved transcription regulatory sequence identification
+-   'Conserved transcription regulatory sequence identification' SubClassOf 'Nucleic acid sequence feature detection'
++   'Conserved transcription regulatory sequence identification' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/topic_0780
+Label: Plants
+-   'Plants' SubClassOf 'Eukaryotes'
++   'Plants' SubClassOf 'Biology'
+ 
+Class: http://edamontology.org/topic_0782
+Label: Fungi
+-   'Fungi' SubClassOf 'Eukaryotes'
++   'Fungi' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/topic_0781
+Label: Viruses
+-   'Viruses' SubClassOf 'Model organisms'
++   'Viruses' SubClassOf 'Biology'
+
+## New classes:
+ 
+Class: http://edamontology.org/topic_3794
+Label: RNA immunoprecipitation
++   'RNA immunoprecipitation' SubClassOf 'Immunoprecipitation experiment'
+ 
+Class: http://edamontology.org/topic_3796
+Label: Population genomics
++   'Population genomics' SubClassOf 'Genomics'
+ 
+Class: http://edamontology.org/operation_3802
+Label: Sorting
++   'Sorting' SubClassOf 'Data handling'
+ 
+Class: http://edamontology.org/operation_3801
+Label: Spectral library search
++   'Spectral library search' SubClassOf 'has input' some 'Mass spectrometry spectra'
++   'Spectral library search' SubClassOf 'Peptide identification'
+ 
+Class: http://edamontology.org/operation_3803
+Label: Natural product identification
++   'Natural product identification' SubClassOf 'Spectral analysis'
+ 
+Class: http://edamontology.org/operation_3800
+Label: RNA-Seq quantification
++   'RNA-Seq quantification' SubClassOf 'Quantification'
+ 
+Class: http://edamontology.org/format_3804
+Label: xsd
++   'xsd' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/operation_3791
+Label: Collapsing methods
++   'Collapsing methods' SubClassOf 'Genetic variation analysis'
+ 
+Class: http://edamontology.org/operation_3792
+Label: miRNA analysis
++   'miRNA analysis' SubClassOf 'Gene expression analysis'
+ 
+Class: http://edamontology.org/operation_3795
+Label: In vitro selection
++   'In vitro selection' SubClassOf 'Nucleic acid design'
+ 
+Class: http://edamontology.org/operation_3793
+Label: Read summarisation
++   'Read summarisation' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3799
+Label: Quantification
++   'Quantification' SubClassOf 'Operation'
+ 
+Class: http://edamontology.org/operation_3797
+Label: Rarefaction
++   'Rarefaction' SubClassOf 'Operation'
+ 
+Class: http://edamontology.org/operation_3798
+Label: Read binning
++   'Read binning' SubClassOf 'Nucleic acid sequence analysis'
+
+
 # EDAM\_1.16.owl
 
 ## Classes modified:
