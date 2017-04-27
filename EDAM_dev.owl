@@ -34504,7 +34504,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/operation_0242">
         <rdfs:label>Conserved transcription regulatory sequence identification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0438"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:comment>For example cross-species comparison of transcription factor binding sites (TFBS). Methods might analyse co-regulated or co-expressed genes, or sets of oppositely expressed genes.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify common, conserved (homologous) or synonymous transcriptional regulatory motifs (transcription factor binding sites).</oboInOwl:hasDefinition>
@@ -34734,6 +34734,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Sequence feature prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Predict, recognise and identify positional features in molecular sequences such as key functional sites or regions.</oboInOwl:hasDefinition>
+        <rdfs:comment>Look at "Protein feature detection" (http://edamontology.org/operation_3092) and "Nucleic acid feature detection" (http://edamontology.org/operation_0415) in case more specific terms are needed.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Sequence feature recognition</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Motif database search</oboInOwl:hasNarrowSynonym>
@@ -35812,22 +35813,16 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0304">
         <rdfs:label>Metadata retrieval</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2422"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2337"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Data retrieval (documentation)</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Search for and retrieve data concerning or describing some core data, as distinct from the primary data that is being described.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Data retrieval (metadata)</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>This includes documentation, general information and other metadata on entities such as databases, database entries and tools.</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>	
+        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2422"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2422"/>
     </owl:Class>
     
 
@@ -37740,13 +37735,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0411">
         <rdfs:label>Protein signal peptide detection (eukaryotes)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0418"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Detect or predict signal peptides (and typically predict subcellular localisation) of eukaryotic proteins.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-	<deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>	
+        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0418"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0418"/>
     </owl:Class>
     
 
@@ -37755,13 +37752,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0412">
         <rdfs:label>Protein signal peptide detection (bacteria)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0418"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Detect or predict signal peptides (and typically predict subcellular localisation) of bacterial proteins.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-	<deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>	
+        <deprecation_comment>(jison)Too fine-grained.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0418"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0418"/>
     </owl:Class>
     
 
@@ -37821,6 +37820,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:comment>Methods typically involve scanning for known motifs, patterns and regular expressions.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Nucleic acid feature recognition</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Nucleic acid site recognition</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Nucleic acid site detection</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid site prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Nucleic acid feature prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -37833,7 +37835,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0416">
         <rdfs:label>Epitope mapping</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2429"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -37853,7 +37855,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0417">
         <rdfs:label>Protein post-translation modification site prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -37874,7 +37876,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0418">
         <rdfs:label>Protein signal peptide detection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2489"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -37923,7 +37925,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0421">
         <rdfs:label>Protein folding site prediction</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2415"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <oboInOwl:hasDefinition>Predict protein sites that are key to protein folding, such as possible sites of nucleation or stabilisation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -37936,7 +37938,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0422">
         <rdfs:label>Protein cleavage site prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3087"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38017,7 +38019,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0427">
         <rdfs:label>Transposon prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Detect or predict transposons, retrotransposons / retrotransposition signatures etc.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -38030,7 +38032,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0428">
         <rdfs:label>PolyA signal detection</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <oboInOwl:hasDefinition>Detect polyA signals in nucleotide sequences.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -38043,7 +38045,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0429">
         <rdfs:label>Quadruplex formation site detection</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -38064,7 +38066,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0430">
         <rdfs:label>CpG island and isochore detection</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38086,7 +38088,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0431">
         <rdfs:label>Restriction site recognition</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38105,7 +38107,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0432">
         <rdfs:label>Nucleosome formation or exclusion sequence prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify or predict nucleosome exclusion sequences (nucleosome free regions) in DNA.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -38118,7 +38120,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0433">
         <rdfs:label>Splice site prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38951,7 +38953,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>SNP detection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2507"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3202"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <oboInOwl:hasDefinition>Find single nucleotide polymorphisms (SNPs) between sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Single nucleotide polymorphism detection</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
@@ -41935,6 +41937,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Retrieve an entry (or part of an entry) from a data resource that matches a supplied query. This might include some primary data and annotation. The query is a data identifier or other indexed term. For example, retrieve a sequence record with the specified accession number, or matching supplied keywords.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Retrieval</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Metadata retrieval</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data retrieval (metadata)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -42414,7 +42418,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2454">
         <rdfs:label>Gene prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -44251,21 +44255,17 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_3087">
         <rdfs:label>Protein sequence feature detection</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0253"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2479"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
-        <oboInOwl:hasNarrowSynonym>Protein site recognition</oboInOwl:hasNarrowSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Predict, recognise and identify functional or other key sites within protein sequences, typically by scanning for known motifs, patterns and regular expressions.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Protein site prediction</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Sequence profile database search</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Protein site detection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein secondary database search</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Sequence feature detection (protein)</oboInOwl:hasExactSynonym>
         <created_in>beta13</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed (consolidate with "Protein feature detection"). If this is done, should add note to "Sequence feature detection" to also look in "Protein feature detection" and "Nucleic acid feature detection" for more specific terms, if needed.</deprecation_comment>	
+        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed (consolidate with "Protein feature detection").</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3092"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3092"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0253"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2479"/>
     </owl:Class>
     
 
@@ -44323,6 +44323,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta13</created_in>
         <oboInOwl:hasExactSynonym>Protein feature recognition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein feature prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein site prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Sequence profile database search</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein site detection</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein secondary database search</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Sequence feature detection (protein)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein site recognition</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -44662,7 +44668,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3197">
         <rdfs:label>Genetic variation analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2508"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasExactSynonym>Variant analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sequence variation analysis</oboInOwl:hasExactSynonym>
@@ -45050,7 +45056,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3222">
         <rdfs:label>Peak calling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3430"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <oboInOwl:hasNarrowSynonym>Peak-pair calling</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>Chip-sequencing combines chromatin immunoprecipitation (ChIP) with massively parallel DNA sequencing to generate a set of reads, which are aligned to a genome sequence.  The enriched areas contain the binding sites of DNA-associated proteins.  For example, a transcription factor binding site. ChIP-on-chip in contrast combines chromatin immunoprecipitation (&apos;ChIP&apos;) with microarray (&apos;chip&apos;).  &quot;Peak-pair calling&quot; is similar to &quot;Peak calling&quot; in the context of ChIP-exo.</rdfs:comment>
         <oboInOwl:hasDefinition>Identify putative protein-binding regions in a genome sequence from analysis of Chip-sequencing data or ChIP-on-chip data.</oboInOwl:hasDefinition>
@@ -45401,25 +45407,15 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3289">
         <rdfs:label>ID retrieval</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0304"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0842"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>id retrieval</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Data retrieval (accession)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Data retrieval (ID)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Identifier retrieval</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Data retrieval (id)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Accession retrieval</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Search for and retrieve a data identifier of some kind, e.g. a database entry accession.</oboInOwl:hasDefinition>
         <created_in>1.3</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>	
+        <deprecation_comment>(jison)Too fine-grained, the operation (Data retrieval) hasn't changed, just what is retrieved.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2422"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0304"/>
     </owl:Class>
     
 
@@ -45604,17 +45600,16 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3430">
         <rdfs:label>Nucleic acid sequence feature detection</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0253"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
-        <oboInOwl:hasExactSynonym>Nucleic acid site prediction</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Predict, recognise and identify functional or other key sites within nucleic acid sequences, typically by scanning for known motifs, patterns and regular expressions.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid site recognition</oboInOwl:hasExactSynonym>
         <created_in>1.6</created_in>
-        <oboInOwl:hasExactSynonym>Nucleic acid site detection</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed (consolidate with "Nucleic acid feature detection").  If this is done, should add note to "Sequence feature detection" to also look in "Protein feature detection" and "Nucleic acid feature detection" for more specific terms, if needed.</deprecation_comment>	
+        <deprecation_comment>(jison)This is a distinction made on basis of input; all features exist can be mapped to a sequence so this isn't needed.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0415"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0415"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0253"/>
     </owl:Class>
     
 
@@ -48826,14 +48821,16 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
 
     <owl:Class rdf:about="http://edamontology.org/topic_0213">
         <rdfs:label>Mice or rats</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2820"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Information on a specific mouse or rat genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <rdfs:comment>The resource may be specific to a group of mice / rats or all mice / rats.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_2820"/>
     </owl:Class>
     
 
@@ -49812,8 +49809,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Transcription factor binding sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison) No siblings. Consolidate with it's parent? (Nucleic acid sites, features and motifs).</deprecation_comment>
     </owl:Class>
     
 
@@ -49937,21 +49932,20 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_0780 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0780">
-        <rdfs:label>Plants</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2818"/>
+        <rdfs:label>Plant biology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <rdfs:comment>The resource may be specific to a plant, a group of plants or all plants.</rdfs:comment>
         <oboInOwl:hasBroadSynonym>Plant science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Plants, e.g. information on a specific plant genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasBroadSynonym>Plant biology</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>Botany</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>VT 1.5.22 Plant science</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Plants</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Plant</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Botany</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Plant science</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref>VT 1.5.22 Plant science</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.10 Botany</oboInOwl:hasDbXref>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <refactor_candidate>true</refactor_candidate>
-        <refactor_comment>(jison)Refactor to "Botany" or "Plant science".  Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</refactor_comment>	
     </owl:Class>
     
 
@@ -49959,17 +49953,13 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_0781 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0781">
-        <rdfs:label>Viruses</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0621"/>
-        <oboInOwl:hasBroadSynonym>Virology</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>VT 1.5.28 Virology</oboInOwl:hasDbXref>
+        <rdfs:label>Virology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <oboInOwl:hasDbXref>VT 1.5.28 </oboInOwl:hasDbXref>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Viruses, e.g. sequence and structural data, interactions of viral proteins, or a viral genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <rdfs:comment>The resource may be specific to a virus, a group of viruses or all viruses.</rdfs:comment>
+        <oboInOwl:hasDefinition>Study of viruses, e.g. sequence and structural data, interactions of viral proteins, or a viral genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
     </owl:Class>
     
 
@@ -49978,17 +49968,18 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_0782">
         <rdfs:label>Fungi</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2818"/>
-        <oboInOwl:hasBroadSynonym>Mycology</oboInOwl:hasBroadSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>The resource may be specific to a fungus, a group of fungi or all fungi.</rdfs:comment>
         <oboInOwl:hasNarrowSynonym>Yeast</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDbXref>VT 1.5.21 Mycology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Fungi and molds, e.g. information on a specific fungal genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
         <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_2818"/>
     </owl:Class>
     
 
@@ -49997,14 +49988,16 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_0783">
         <rdfs:label>Pathogens</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0621"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Pathogens, e.g. information on a specific vertebrate genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>The resource may be specific to a pathogen, a group of pathogens or all pathogens.</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).  Definition is wrong anyway.</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).  Definition is wrong anyway.</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_0621"/>
     </owl:Class>
     
 
@@ -50345,16 +50338,18 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_1811">
         <rdfs:label>Prokaryotes and Archaea</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0621"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <rdfs:comment>The resource may be specific to a prokaryote, a group of prokaryotes or all prokaryotes.</rdfs:comment>
         <oboInOwl:hasDbXref>VT 1.5.2 Bacteriology</oboInOwl:hasDbXref>
         <oboInOwl:hasBroadSynonym>Bacteriology</oboInOwl:hasBroadSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Specific bacteria or archaea, e.g. information on a specific prokaryote genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_0621"/>
     </owl:Class>
     
 
@@ -50776,14 +50771,13 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_2815 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_2815">
-        <rdfs:label>Humans</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2820"/>
+        <rdfs:label>Human biology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+	<oboInOwl:hasExactSynonym>Humans</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>The human genome, including molecular sequences, genes, annotation, maps and viewers, the human proteome or human beings in general.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The study of human beings in general, including the human genome and proteome.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).  We have "Human genetics" anyway.</deprecation_comment>	
     </owl:Class>
     
 
@@ -50822,15 +50816,16 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_2818">
         <rdfs:label>Eukaryotes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0621"/>
-        <oboInOwl:hasExactSynonym>Eukaryote</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Eukaryotes or data concerning eukaryotes, e.g. information on a specific eukaryote genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <rdfs:comment>The resource may be specific to a eukaryote, a group of eukaryotes or all eukaryotes.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
         <deprecation_comment>(jison) Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_0621"/>
     </owl:Class>
     
 
@@ -50839,14 +50834,16 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_2819">
         <rdfs:label>Invertebrates</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3500"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <rdfs:comment>The resource may be specific to an invertebrate, a group of invertebrates or all invertebrates.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Invertebrates, e.g. information on a specific invertebrate genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_3500"/>
     </owl:Class>
     
 
@@ -50855,14 +50852,16 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_2820">
         <rdfs:label>Vertebrates</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3500"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <rdfs:comment>The resource may be specific to a vertebrate, a group of vertebrates or all vertebrates.</rdfs:comment>
         <oboInOwl:hasDefinition>Vertebrates, e.g. information on a specific vertebrate genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_3500"/>
     </owl:Class>
     
 
@@ -50871,14 +50870,16 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
 
     <owl:Class rdf:about="http://edamontology.org/topic_2821">
         <rdfs:label>Unicellular eukaryotes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2818"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Unicellular eukaryotes, e.g. information on a unicellular eukaryote genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>The resource may be specific to a unicellular eukaryote, a group of unicellular eukaryotes or all unicellular eukaryotes.</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>	
+        <deprecation_comment>(jison)Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</deprecation_comment>
+        <obsolete_since>1.17</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_2818"/>
     </owl:Class>
     
 
@@ -51542,7 +51543,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <owl:deprecated>true</owl:deprecated>
         <created_in>beta13</created_in>
         <oboInOwl:hasDefinition>The detection of the positional features, such as functional and other key sites, in molecular sequences.</oboInOwl:hasDefinition>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D058977</rdfs:seeAlso>
+	<rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D058977</rdfs:seeAlso>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
@@ -53715,20 +53716,18 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <!-- http://edamontology.org/topic_3500 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3500">
-        <rdfs:label>Animals</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2818"/>
+        <rdfs:label>Zoology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.8</created_in>
-        <oboInOwl:hasBroadSynonym>Animal biology</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Animals, e.g. information on a specific animal genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasBroadSynonym>Zoology</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym>Animal biology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Animal</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Animals</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>VT 1.5.29 Zoology</oboInOwl:hasDbXref>
-        <rdfs:comment>The resource may be specific to a plant, a group of plants or all plants.</rdfs:comment>
+        <rdfs:comment>The study of the animal kingdom.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Metazoa</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <refactor_candidate>true</refactor_candidate>
-        <refactor_comment>(jison) Refactor into "Zoology".  Out of EDAM scope.  While very useful to have a basic set of IDs for organisms, should find a better way to provide this e.g. in bio.tools (NCBI taxon ID subset).</refactor_comment>	
     </owl:Class>
     
 
@@ -53746,8 +53745,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Signal peptide cleavage sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison) It introduces an unnecessary level in the hierarchy.  Otherwise deprecate / consolidate with it's only child (Protein binding sites).</deprecation_comment>
     </owl:Class>
     
 
@@ -53767,8 +53764,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <rdfs:comment>Sequence tagged sites are short DNA sequences that are unique within a genome and serve as a mapping landmark, detectable by PCR they allow a genome to be mapped via an ordering of STSs.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison) It introduces an unnecessary level in the hierarchy.  Otherwise deprecate / consolidate with it's only child (Transcription factors and regulatory sites).</deprecation_comment>
     </owl:Class>
     
 
@@ -54109,8 +54104,6 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Protein key folding sites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
-        <deprecation_candidate>true</deprecation_candidate>
-        <deprecation_comment>(jison) No siblings. Consolidate with it's parent? (Protein sites, features and motifs).</deprecation_comment>
     </owl:Class>
     
 
