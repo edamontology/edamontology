@@ -11,10 +11,10 @@ Descriptions of changes are grouped as follows:
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
 
 EDAM\_1.17 includes:
-* addition of concepts for NGS terms from SEQWiki
-* addition of the spectral library search
-* deprecation of multiple terms
-* multiple typo and other minor fixes
+* miscellaneous term requests, bug fixes and other changes received via GitHub
+* deprecation of multiple Topics (especially removing organism types from under "Model organisms")
+* simplification to Operation branch for sequence feature detection concepts
+* new attributes for better provenance on deprecated concepts
 
 ## Added
 * 14 concepts added (2 topics, 11 operations, 1 format)
@@ -24,6 +24,10 @@ EDAM\_1.17 includes:
 
 ## Deprecated
 * 15 concepts deprecated (8 Operations, 7 topics)
+
+## Misc
+oldParent: attribute for URI of erstwhile parents of now deprecated concepts
+deprecation_comment: comment as to why the concept was deprecated
 
 # EDAM\_1.16.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
