@@ -7,27 +7,43 @@ Descriptions of changes are grouped as follows:
 * **Fixed:** fixed bugs, issues, corrected concepts and features
 * **Misc:** miscellaneous other changes
 
+**_NB._:** For clickable closed issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
+
 # EDAM\_1.17.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
 EDAM\_1.17 includes:
+* addition of concepts for sequencing terms from SEQWiki
+* addition of _Spectral library search_
 * miscellaneous term requests, bug fixes and other changes received via GitHub
-* deprecation of multiple Topics (especially removing organism types from under "Model organisms")
+* deprecation of multiple Topics (especially removing organism types from under _Model organisms_), and Operations
 * simplification to Operation branch for sequence feature detection concepts
 * new attributes for better provenance on deprecated concepts
+  * `oldParent`: attribute for URI of erstwhile parents of now deprecated concepts
+  * `deprecation_comment`: comment as to why the concept was deprecated
+* multiple typo and other minor fixes
 
 ## Added
-* 14 concepts added (2 topics, 11 operations, 1 format)
+* 14 concepts added (11 Operation, 2 Topic, 1 Format)
 
 ## Changed
-* 24 concepts changed (minor edits or structural/synonym changes)
+* 24 concepts changed (20 Operation, 4 Topic; minor edits or relational|synonym changes)
 
 ## Deprecated
-* 15 concepts deprecated (8 Operations, 7 topics)
+* 15 concepts deprecated (8 Topic, 7 Operation)
+
+## Fixed
+- 15 issues fixed and closed (#118, #241, #243, #247, #248, #250, #251, #252, #254, #255, #256, #258, #259, #260, edamontology/edamxpathvalidator#4)
+- 2 issues partially fixed but left open for further improvements (#128, #268)
 
 ## Misc
-oldParent: attribute for URI of erstwhile parents of now deprecated concepts
-deprecation_comment: comment as to why the concept was deprecated
+- 1 invalid issue closed (#203)
+- 1 issue closed, wrong project (#240)
+- 1 issue closed, won't fix (#185)
+- 2 issues closed, duplicate (#242 fixed in #241, #249 fixed in #118)
+- 2 issues reopened (#118 fixed, #130)
+
+
 
 # EDAM\_1.16.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
