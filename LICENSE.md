@@ -1,7 +1,3 @@
-__CC-BY-SA-4.0__. Canonical URL for this license is https://creativecommons.org/licenses/by-sa/4.0/.
-
-Original HTML version of this legal code is available at https://creativecommons.org/licenses/by-sa/4.0/legalcode. Plain-text version is at https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt.
-
 ## creative commons
 
 # Attribution-ShareAlike 4.0 International
@@ -181,3 +177,7 @@ d. Nothing in this Public License constitutes or may be interpreted as a limitat
 Original HTML version of this legal code is available at https://creativecommons.org/licenses/by-sa/4.0/legalcode. Plain-text version is at https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt.
 
 > __Additional languages available__: [Bahasa Indonesia](https://creativecommons.org/licenses/by-sa/4.0/legalcode.id), [Deutsch](https://creativecommons.org/licenses/by-sa/4.0/legalcode.de), [hrvatski](https://creativecommons.org/licenses/by-sa/4.0/legalcode.hr), [Nederlands](https://creativecommons.org/licenses/by-sa/4.0/legalcode.nl), [norsk](https://creativecommons.org/licenses/by-sa/4.0/legalcode.no), [polski](https://creativecommons.org/licenses/by-sa/4.0/legalcode.pl), [suomeksi](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fi), [svenska](https://creativecommons.org/licenses/by-sa/4.0/legalcode.sv), [te reo Māori](https://creativecommons.org/licenses/by-sa/4.0/legalcode.mi), [українська](https://creativecommons.org/licenses/by-sa/4.0/legalcode.uk), [العربية](https://creativecommons.org/licenses/by-sa/4.0/legalcode.ar), [日本語](https://creativecommons.org/licenses/by-sa/4.0/legalcode.ja). Please read the [FAQ](https://wiki.creativecommons.org/FAQ#officialtranslations) for more information about official translations.
+
+Abbreviation: __CC-BY-SA-4.0__. The canonical URL for this license is https://creativecommons.org/licenses/by-sa/4.0/.
+
+The original HTML version of this legal code is available at https://creativecommons.org/licenses/by-sa/4.0/legalcode. A plain-text version is at https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt.
