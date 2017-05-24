@@ -9,6 +9,24 @@ Descriptions of changes are grouped as follows:
 
 **_NB._:** For clickable closed issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM\_1.18.owl
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
+
+EDAM\_1.18 includes:
+
+## Added
+
+## Changed
+* 1 concept changed (1 Operation)
+
+## Deprecated
+
+## Fixed
+- 1 issue fixed (#276)
+
+## Misc
+- LICENSE.md file added for clarification (#273)
+
 # EDAM\_1.17.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
