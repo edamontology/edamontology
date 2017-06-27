@@ -35191,6 +35191,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0880"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasNarrowSynonym>RNA shape prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Predict RNA secondary structure (for example knots, pseudoknots, alternative structures etc).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>Methods might use RNA motifs, predicted intermolecular contacts, or RNA sequence-structure compatibility (inverse RNA folding).</rdfs:comment>
@@ -36182,6 +36183,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:comment>Includes secondary structure assignment from circular dichroism (CD) spectroscopic data, and from protein coordinate data.</oboInOwl:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Assign secondary structure from protein coordinate or experimental data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -36465,23 +36467,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0333">
         <rdfs:label>Zinc finger prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0130"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Predict and optimise zinc finger protein domains for DNA/RNA binding (for example for transcription factors and nucleases).</oboInOwl:hasDefinition>
+        <obsolete_since>1.18</obsolete_since>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oldParent rdf:resource="http://edamontology.org/operation_0420"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0420"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -37916,7 +37909,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>Protein-nucleic acid binding prediction</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
         <created_in>beta12orEarlier</created_in>
+        <rdfs:comment>This includes methods that predict and optimise zinc finger protein domains for DNA/RNA binding (for example for transcription factors and nucleases).</rdfs:comment>
         <oboInOwl:hasDefinition>Predict RNA and DNA-binding binding sites in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Zinc finger prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -38651,11 +38646,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0467">
         <rdfs:label>Protein secondary structure prediction (integrated)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0267"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.18</obsolete_since>
         <oboInOwl:hasDefinition>Predict secondary structure of protein sequence(s) using multiple methods to achieve better predictions.</oboInOwl:hasDefinition>
+        <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0267"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0267"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -38702,8 +38700,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0471 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0471">
-        <rdfs:label>Protein secondary structure prediction (disulfide bonds)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0267"/>
+        <rdfs:label>Disulfide bond prediction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict cysteine bonding state and disulfide bond partners in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -39265,21 +39263,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0501">
         <rdfs:label>Protein secondary structure alignment generation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2488"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0878"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Protein secondary structure alignment construction</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.18</obsolete_since>
         <oboInOwl:hasDefinition>Align protein secondary structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Secondary structure alignment (protein)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Protein secondary structure alignment</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2488"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2488"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -39801,12 +39792,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0534">
         <rdfs:label>Protein secondary structure assignment (from coordinate data)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0319"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2406"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Assign secondary structure from protein coordinate data.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <obsolete_since>1.18</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_0319"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0319"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -39815,17 +39808,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0535">
         <rdfs:label>Protein secondary structure assignment (from CD data)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0319"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0939"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Assign secondary structure from circular dichroism (CD) spectroscopic data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <obsolete_since>1.18</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oldParent rdf:resource="http://edamontology.org/operation_0319"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0319"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -40438,7 +40428,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0571 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0571">
-        <rdfs:label>Microarray data rendering</rdfs:label>
+        <rdfs:label>Expression data rendering</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0337"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
@@ -40448,8 +40438,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>Visualise microarray data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasNarrowSynonym>Microarray data rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Visualise microarray or other expression data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -41249,7 +41240,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_1850">
         <rdfs:label>Protein cysteine and disulfide bond assignment</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0534"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -42730,7 +42721,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2474">
         <rdfs:label>Protein architecture comparison</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0247"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2488"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2997"/>
         <oboInOwl:hasDefinition>Compare the architecture of two or more protein structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -42984,11 +42975,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2488">
         <rdfs:label>Protein secondary structure comparison</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2416"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2931"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2997"/>
         <oboInOwl:hasDefinition>Compare protein secondary structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Secondary structure comparison (protein)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein secondary structure alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Protein secondary structure</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -43681,17 +43672,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2931">
         <rdfs:label>Secondary structure comparison</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2424"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0081"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasDefinition>Compare two or more molecular secondary structures.</oboInOwl:hasDefinition>
+        <obsolete_since>1.18</obsolete_since>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2424"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_2487"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_2518"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -43714,10 +43703,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2934 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2934">
-        <rdfs:label>Microarray cluster textual view generation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <rdfs:label>Cluster textual view generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
+        <oboInOwl:hasNarrowSynonym>Microarray cluster textual view generation</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Visualise gene clusters with gene names.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Generate a view of clustered quantitative data, annotated with textual information.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>In the case of microarray data, visualise gene clusters with gene names.</oboInOwl:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43727,13 +43718,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2935 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2935">
-        <rdfs:label>Microarray wave graph plotting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
-        <oboInOwl:hasExactSynonym>Microarray wave graph rendering</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Microarray cluster temporal graph rendering</oboInOwl:hasExactSynonym>
+        <rdfs:label>Wave graph plotting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasNarrowSynonym>Microarray cluster temporal graph rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Visualise clustered quantitative data as a set of waves, where each wave corresponds to a certain entity or sample on the X-axis.</oboInOwl:hasDefinition>
+        <rdfs:comment>In the case of microarray data, visualise clustered gene expression data as a set of waves, where each wave corresponds to a gene across samples on the X-axis.</rdfs:comment>
+        <oboInOwl:hasNarrowSynonym>Microarray wave graph rendering</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>This view can be rendered as a pie graph.  The distance matrix is sorted by cluster number and typically represented as a diagonal matrix with distance values displayed in different color shades.</rdfs:comment>
-        <oboInOwl:hasDefinition>Visualise clustered gene expression data as a set of waves, where each wave corresponds to a gene across samples on the X-axis.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Microarray wave graph plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43743,13 +43736,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2936 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2936">
-        <rdfs:label>Microarray dendrograph plotting</rdfs:label>
+        <rdfs:label>Dendrograph plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
         <oboInOwl:hasNarrowSynonym>Microarray dendrograph rendering</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Generate a dendrograph of raw, preprocessed or clustered microarray data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Generate a dendrograph of raw, preprocessed or clustered expression (e.g. microarray) data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Microarray view rendering</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Microarray checks view rendering</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Microarray view rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray dendrograph plotting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray checks view rendering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43759,12 +43753,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2937 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2937">
-        <rdfs:label>Microarray proximity map plotting</rdfs:label>
+        <rdfs:label>Proximity map plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Microarray distance map rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray proximity map rendering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Generate a plot of distances (distance matrix) between genes.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Microarray proximity map rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray distance map rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray proximity map plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43774,12 +43769,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2938 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2938">
-        <rdfs:label>Microarray tree or dendrogram rendering</rdfs:label>
+        <rdfs:label>Expression data tree or dendrogram rendering</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <oboInOwl:hasNarrowSynonym>Microarray matrix tree plot rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray tree or dendrogram rendering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray 2-way dendrogram rendering</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Visualise clustered gene expression data using a gene tree, array tree and color coded band of gene expression.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Microarray matrix tree plot rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43789,11 +43785,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2939 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2939">
-        <rdfs:label>Microarray principal component plotting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <rdfs:label>Principal component plotting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Microarray principal component rendering</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Generate a line graph drawn as sum of principal components (Eigen value) and individual expression values.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Generate a line graph drawn as sum of principal components (Eigen value) and, for example in the case of microarray data, individual expression values.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Microarray principal component rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray principal component plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43803,11 +43800,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2940 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2940">
-        <rdfs:label>Microarray scatter plot plotting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
-        <oboInOwl:hasDefinition>Generate a scatter plot of microarray data, typically after principal component analysis.</oboInOwl:hasDefinition>
+        <rdfs:label>Scatter plot plotting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Microarray scatter plot rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray scatter plot plotting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Generate a scatter plot of quantitative data, typically after principal component analysis.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43818,12 +43816,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2941">
         <rdfs:label>Whole microarray graph plotting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Visualise gene expression data where each band (or line graph) corresponds to a sample.</oboInOwl:hasDefinition>
+        <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Whole microarray graph rendering</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <obsolete_since>1.18</obsolete_since>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0571"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0571"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -43831,8 +43831,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2942 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2942">
-        <rdfs:label>Microarray tree-map rendering</rdfs:label>
+        <rdfs:label>Expression data tree-map rendering</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <oboInOwl:hasNarrowSynonym>Microarray tree-map rendering</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Visualise gene expression data after hierarchical clustering for representing hierarchical relationships.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -43844,10 +43845,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2943 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2943">
-        <rdfs:label>Microarray Box-Whisker plot plotting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
+        <rdfs:label>Box-Whisker plot plotting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3441"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Visualise raw and pre-processed gene expression data, via a plot showing over- and under-expression along with mean, upper and lower quartiles.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>In the case of micorarray data, visualise raw and pre-processed gene expression data, via a plot showing over- and under-expression along with mean, upper and lower quartiles.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>Microarray Box-Whisker plot plotting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Box plot plotting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Generate a box plot, i.e. a depiction of groups of numerical data through their quartiles.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -46075,12 +46079,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3470">
         <rdfs:label>RNA secondary structure prediction (shape-based)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0278"/>
-        <oboInOwl:hasExactSynonym>RNA shape prediction</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasDefinition>Predict RNA secondary structure by analysis, e.g. probabilistic analysis, of the shape of RNA folds.</oboInOwl:hasDefinition>
+        <obsolete_since>1.18</obsolete_since>
         <created_in>1.7</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0278"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0278"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
