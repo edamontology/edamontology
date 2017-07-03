@@ -17,6 +17,7 @@ EDAM\_1.18 includes:
 * various refactoring including concepts deprecations within the Operation branch to make this more simple and improve usability
 * new attribute to provide tips e.g. in bio.tools UI indicating "organisational classes", i.e. higher-level concepts which primarily structure the hierarchy and are not normally recommended for annotation.
 
+
 ## Added
 
 ## Changed
