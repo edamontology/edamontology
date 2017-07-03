@@ -14,6 +14,8 @@ See the [detailed change log](https://github.com/edamontology/edamontology/blob/
 
 EDAM\_1.18 includes:
 
+* various deprecations wihtin the Operation branch to improve usability
+
 ## Added
 
 ## Changed
