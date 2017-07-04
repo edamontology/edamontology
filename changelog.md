@@ -17,19 +17,14 @@ EDAM\_1.18 includes:
 * various refactoring including concepts deprecations within the Operation branch to make this more simple and improve usability
 * new attribute to provide tips e.g. in bio.tools UI indicating "organisational classes", i.e. higher-level concepts which primarily structure the hierarchy and are not normally recommended for annotation.
 
-
-## Added
-
 ## Changed
-* 1 concept changed (1 Operation)
+* 37 concepts changed (37 Operations)
 
 ## Deprecated
+* 16 concepts deprecated (16 Operations)
 
 ## Fixed
-- 1 issue fixed (#276)
-
-## Misc
-- LICENSE.md file added for clarification (#273)
+- 1 issue fixed (#265, #269, #270, #277, #276)
 
 # EDAM\_1.17.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
