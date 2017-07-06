@@ -1,6 +1,297 @@
 # Detailed Changelog for EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
 
+# EDAM\_1.18.owl
+
+## Classes modified:
+
+Class changed: IRI http://edamontology.org/operation_0334
+label: Enzyme kinetics calculation
++ 'Enzyme kinetics calculation' SubClassOf 'Protein property calculation'
+- 'Enzyme kinetics calculation' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_0333
+label: Zinc finger prediction
++ 'Zinc finger prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Zinc finger prediction' SubClassOf 'has topic' some 'Protein folding, stability and design'
+- 'Zinc finger prediction' SubClassOf 'has output' some 'Protein interaction report'
+- 'Zinc finger prediction' SubClassOf 'Protein-nucleic acid binding prediction'
+
+Class changed: IRI http://edamontology.org/operation_0386
+label: Protein dipole moment calculation
++ 'Protein dipole moment calculation' SubClassOf 'Protein property calculation'
+- 'Protein dipole moment calculation' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_0398
+label: Protein molecular weight calculation
++ 'Protein molecular weight calculation' SubClassOf 'Protein property calculation'
+- 'Protein molecular weight calculation' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_0399
+label: Protein extinction coefficient calculation
++ 'Protein extinction coefficient calculation' SubClassOf 'Protein property calculation'
+- 'Protein extinction coefficient calculation' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_0366
+label: Protein sequence cleavage
++ 'Protein sequence cleavage' SubClassOf 'Protein property calculation'
+- 'Protein sequence cleavage' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_3441
+label: Plotting
++ 'Plotting' SubClassOf 'Visualisation'
+- 'Plotting' SubClassOf 'Operation'
+
+Class changed: IRI http://edamontology.org/operation_3471
+label: Nucleic acid folding prediction (alignment-based)
++ 'Nucleic acid folding prediction (alignment-based)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Nucleic acid folding prediction (alignment-based)' SubClassOf 'Nucleic acid folding analysis'
+
+Class changed: IRI http://edamontology.org/operation_3470
+label: RNA secondary structure prediction (shape-based)
++ 'RNA secondary structure prediction (shape-based)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'RNA secondary structure prediction (shape-based)' SubClassOf 'RNA secondary structure prediction'
+
+Class changed: IRI http://edamontology.org/operation_2931
+label: Secondary structure comparison
++ 'Secondary structure comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Secondary structure comparison' SubClassOf 'Comparison'
+- 'Secondary structure comparison' SubClassOf 'has topic' some 'Structure analysis'
+
+Class changed: IRI http://edamontology.org/operation_2935
+label: Microarray wave graph plotting
++ 'Microarray wave graph plotting' SubClassOf 'Plotting'
+- 'Microarray wave graph plotting' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_2934
+label: Microarray cluster textual view generation
++ 'Microarray cluster textual view generation' SubClassOf 'Plotting'
+- 'Microarray cluster textual view generation' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_2941
+label: Whole microarray graph plotting
++ 'Whole microarray graph plotting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Whole microarray graph plotting' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_2940
+label: Microarray scatter plot plotting
++ 'Microarray scatter plot plotting' SubClassOf 'Plotting'
+- 'Microarray scatter plot plotting' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_2943
+label: Microarray Box-Whisker plot plotting
++ 'Microarray Box-Whisker plot plotting' SubClassOf 'Plotting'
+- 'Microarray Box-Whisker plot plotting' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_2939
+label: Microarray principal component plotting
++ 'Microarray principal component plotting' SubClassOf 'Plotting'
+- 'Microarray principal component plotting' SubClassOf 'Microarray data rendering'
+
+Class changed: IRI http://edamontology.org/operation_0467
+label: Protein secondary structure prediction (integrated)
++ 'Protein secondary structure prediction (integrated)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein secondary structure prediction (integrated)' SubClassOf 'Protein secondary structure prediction'
+
+Class changed: IRI http://edamontology.org/operation_0471
+label: Protein secondary structure prediction (disulfide bonds)
++ 'Protein secondary structure prediction (disulfide bonds)' SubClassOf 'Protein feature detection'
+- 'Protein secondary structure prediction (disulfide bonds)' SubClassOf 'Protein secondary structure prediction'
+
+Class changed: IRI http://edamontology.org/operation_0451
+label: Recombination detection
++ 'Recombination detection' SubClassOf 'Nucleic acid sequence analysis'
+- 'Recombination detection' SubClassOf 'Nucleic acid sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_0452
+label: Indel detection
++ 'Indel detection' SubClassOf 'Nucleic acid sequence analysis'
+- 'Indel detection' SubClassOf 'Nucleic acid sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_0450
+label: Chimeric sequence detection
++ 'Chimeric sequence detection' SubClassOf 'Nucleic acid sequence analysis'
+- 'Chimeric sequence detection' SubClassOf 'Nucleic acid sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_0484
+label: SNP detection
++ 'SNP detection' SubClassOf 'Nucleic acid sequence analysis'
+- 'SNP detection' SubClassOf 'Nucleic acid sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_2239
+label: 3D-1D scoring matrix generation
++ '3D-1D scoring matrix generation' SubClassOf 'Protein property calculation'
+- '3D-1D scoring matrix generation' SubClassOf 'Protein property calculation (from sequence)'
+- '3D-1D scoring matrix generation' SubClassOf 'Protein property calculation (from structure)'
+
+Class changed: IRI http://edamontology.org/operation_0400
+label: Protein pH-dependent property calculation
++ 'Protein pH-dependent property calculation' SubClassOf 'Protein property calculation'
+- 'Protein pH-dependent property calculation' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_3209
+label: Genome comparison
++ 'Genome comparison' SubClassOf 'Sequence comparison'
+- 'Genome comparison' SubClassOf 'Nucleic acid sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_3197
+label: Genetic variation analysis
+- 'Genetic variation analysis' SubClassOf 'Nucleic acid sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_3195
+label: Sequencing error detection
++ 'Sequencing error detection' SubClassOf 'Sequence comparison'
+- 'Sequencing error detection' SubClassOf 'Nucleic acid sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_0224
+label: Query and retrieval
++ 'Query and retrieval' SubClassOf 'Data handling'
+- 'Query and retrieval' SubClassOf 'Operation'
+
+Class changed: IRI http://edamontology.org/operation_0266
+label: Vector sequence detection
++ 'Vector sequence detection' SubClassOf 'Sequence comparison'
+- 'Vector sequence detection' SubClassOf 'Nucleic acid sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_0272
+label: Residue interaction prediction
++ 'Residue interaction prediction' SubClassOf 'Protein sequence analysis'
++ 'Residue interaction prediction' SubClassOf 'Protein property calculation'
+- 'Residue interaction prediction' SubClassOf 'Protein sequence alignment analysis'
+- 'Residue interaction prediction' SubClassOf 'Protein property calculation (from structure)'
+
+Class changed: IRI http://edamontology.org/operation_0244
+label: Protein flexibility and motion analysis
++ 'Protein flexibility and motion analysis' SubClassOf 'Protein property calculation'
+- 'Protein flexibility and motion analysis' SubClassOf 'Protein property calculation (from structure)'
+
+Class changed: IRI http://edamontology.org/operation_0248
+label: Residue interaction calculation
++ 'Residue interaction calculation' SubClassOf 'Protein property calculation'
+- 'Residue interaction calculation' SubClassOf 'Protein property calculation (from structure)'
+
+Class changed: IRI http://edamontology.org/operation_0249
+label: Protein geometry calculation
++ 'Protein geometry calculation' SubClassOf 'Protein property calculation'
+- 'Protein geometry calculation' SubClassOf 'Protein property calculation (from structure)'
+
+Class changed: IRI http://edamontology.org/operation_0243
+label: Protein property calculation (from structure)
++ 'Protein property calculation (from structure)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein property calculation (from structure)' SubClassOf 'Protein structure analysis'
+- 'Protein property calculation (from structure)' SubClassOf 'has topic' some 'Protein structure analysis'
+- 'Protein property calculation (from structure)' SubClassOf 'has output' some 'Protein property'
+- 'Protein property calculation (from structure)' SubClassOf 'Protein property calculation'
+
+Class changed: IRI http://edamontology.org/operation_0252
+label: Peptide immunogenicity prediction
++ 'Peptide immunogenicity prediction' SubClassOf 'Protein property calculation'
+- 'Peptide immunogenicity prediction' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_0284
+label: Codon usage table generation
++ 'Codon usage table generation' SubClassOf 'Codon usage analysis'
+- 'Codon usage table generation' SubClassOf 'Codon usage table processing'
+
+Class changed: IRI http://edamontology.org/operation_0285
+label: Codon usage table comparison
++ 'Codon usage table comparison' SubClassOf 'Codon usage analysis'
+- 'Codon usage table comparison' SubClassOf 'Codon usage table processing'
+
+Class changed: IRI http://edamontology.org/operation_2506
+label: Protein sequence alignment analysis
++ 'Protein sequence alignment analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein sequence alignment analysis' SubClassOf 'has input' some 'Sequence alignment (protein)'
+- 'Protein sequence alignment analysis' SubClassOf 'Sequence alignment analysis'
+- 'Protein sequence alignment analysis' SubClassOf 'Prediction and recognition (protein)'
+- 'Protein sequence alignment analysis' SubClassOf 'Protein analysis'
+
+Class changed: IRI http://edamontology.org/operation_2509
+label: Protein sequence comparison
++ 'Protein sequence comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein sequence comparison' SubClassOf 'Sequence comparison'
+- 'Protein sequence comparison' SubClassOf 'Protein comparison'
+- 'Protein sequence comparison' SubClassOf 'Protein sequence analysis'
+
+Class changed: IRI http://edamontology.org/operation_2508
+label: Nucleic acid sequence comparison
++ 'Nucleic acid sequence comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Nucleic acid sequence comparison' SubClassOf 'Nucleic acid comparison'
+- 'Nucleic acid sequence comparison' SubClassOf 'Nucleic acid sequence analysis'
+- 'Nucleic acid sequence comparison' SubClassOf 'Sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_2507
+label: Nucleic acid sequence alignment analysis
++ 'Nucleic acid sequence alignment analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Nucleic acid sequence alignment analysis' SubClassOf 'Prediction and recognition (nucleic acid)'
+- 'Nucleic acid sequence alignment analysis' SubClassOf 'has input' some 'Sequence alignment (nucleic acid)'
+- 'Nucleic acid sequence alignment analysis' SubClassOf 'Nucleic acid analysis'
+- 'Nucleic acid sequence alignment analysis' SubClassOf 'Sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_3088
+label: Protein property calculation (from sequence)
++ 'Protein property calculation (from sequence)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein property calculation (from sequence)' SubClassOf 'Protein property calculation'
+- 'Protein property calculation (from sequence)' SubClassOf 'Protein sequence analysis'
+
+Class changed: IRI http://edamontology.org/operation_0501
+label: Protein secondary structure alignment generation
++ 'Protein secondary structure alignment generation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein secondary structure alignment generation' SubClassOf 'Protein secondary structure comparison'
+- 'Protein secondary structure alignment generation' SubClassOf 'has output' some 'Secondary structure alignment (protein)'
+- 'Protein secondary structure alignment generation' SubClassOf 'Generation'
+
+Class changed: IRI http://edamontology.org/operation_0550
+label: DNA substitution modelling
++ 'DNA substitution modelling' SubClassOf 'Nucleic acid sequence analysis'
+- 'DNA substitution modelling' SubClassOf 'Nucleic acid sequence alignment analysis'
+
+Class changed: IRI http://edamontology.org/operation_1850
+label: Protein cysteine and disulfide bond assignment
++ 'Protein cysteine and disulfide bond assignment' SubClassOf 'Prediction and recognition (protein)'
+- 'Protein cysteine and disulfide bond assignment' SubClassOf 'Protein secondary structure assignment (from coordinate data)'
+
+Class changed: IRI http://edamontology.org/operation_0534
+label: Protein secondary structure assignment (from coordinate data)
++ 'Protein secondary structure assignment (from coordinate data)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein secondary structure assignment (from coordinate data)' SubClassOf 'Protein secondary structure assignment'
+- 'Protein secondary structure assignment (from coordinate data)' SubClassOf 'Protein structure analysis'
+
+Class changed: IRI http://edamontology.org/operation_0535
+label: Protein secondary structure assignment (from CD data)
++ 'Protein secondary structure assignment (from CD data)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Protein secondary structure assignment (from CD data)' SubClassOf 'Protein secondary structure assignment'
+- 'Protein secondary structure assignment (from CD data)' SubClassOf 'has input' some 'Protein circular dichroism (CD) spectroscopic data'
+
+Class changed: IRI http://edamontology.org/operation_3778
+label: Text annotation
+- 'Text annotation' SubClassOf 'Analysis'
+
+Class changed: IRI http://edamontology.org/operation_2457
+label: GPCR coupling selectivity prediction
++ 'GPCR coupling selectivity prediction' SubClassOf 'Protein property calculation'
+- 'GPCR coupling selectivity prediction' SubClassOf 'Protein property calculation (from sequence)'
+
+Class changed: IRI http://edamontology.org/operation_2433
+label: Codon usage table processing
++ 'Codon usage table processing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+- 'Codon usage table processing' SubClassOf 'Codon usage analysis'
+
+Class changed: IRI http://edamontology.org/operation_2488
+label: Protein secondary structure comparison
+- 'Protein secondary structure comparison' SubClassOf 'Secondary structure comparison'
+
+Class changed: IRI http://edamontology.org/operation_2499
+label: Splicing model analysis
++ 'Splicing model analysis' SubClassOf 'Sequence comparison'
+- 'Splicing model analysis' SubClassOf 'Nucleic acid sequence comparison'
+
+Class changed: IRI http://edamontology.org/operation_2474
+label: Protein architecture comparison
++ 'Protein architecture comparison' SubClassOf 'Protein comparison'
+- 'Protein architecture comparison' SubClassOf 'Protein secondary structure comparison'
+
+
 # EDAM\_1.17.owl
 
 ## Classes modified:
