@@ -44,7 +44,7 @@
         <doap:Version>1.19_dev</doap:Version>
         <dc:format>application/rdf+xml</dc:format>
         <next_id>3805</next_id>
-        <oboOther:date>04.07.2017 12:47 GMT</oboOther:date>
+        <oboOther:date>06.07.2017 13:44 GMT</oboOther:date>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
@@ -35724,7 +35724,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.19</obsolete_since>
         <oboInOwl:hasDefinition>Align sequence profiles (representing sequence alignments).</oboInOwl:hasDefinition>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0292"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0292"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0300"/>
         <oldParent rdf:resource="http://edamontology.org/operation_0292"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
@@ -39501,7 +39502,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <owl:deprecated>true</owl:deprecated>
         <obsolete_since>1.16</obsolete_since>
         <oboInOwl:hasDefinition>Align exactly two molecular profiles.</oboInOwl:hasDefinition>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0298"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0292"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0300"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0298"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -39516,7 +39519,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <obsolete_since>1.6</obsolete_since>
         <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0298"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0292"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0300"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0298"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -39531,7 +39536,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasDefinition>Align exactly two molecular Structural (3D) profiles.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0299"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0294"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0295"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0503"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0299"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -39546,7 +39554,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasDefinition>Align two or more molecular 3D profiles.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.6</obsolete_since>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0299"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0294"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0295"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0504"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0299"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
