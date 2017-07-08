@@ -1,3 +1,11 @@
+__DOI representing all stable versions, resolving to the latest__: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690)
+
+__DOI of the latest stable version__: [![DOI](https://zenodo.org/badge/20960594.svg)](https://zenodo.org/badge/latestdoi/20960594)
+
+__Current status of the 'master' development file__: [![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
+
+Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
+
 # What is EDAM?
 EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within bioinformatics and computational biology, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of concepts with preferred terms and synonyms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use (see figure).
 
@@ -11,14 +19,9 @@ Comprehensive documentation is available at http://edamontologydocs.readthedocs.
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/master/EDAMrelations.png)
 
 
-If you use EDAM or its part, please reference:
+If you use or refer to EDAM or its part, please cite:
 
 Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
 doi: [10.1093/bioinformatics/btt113](http://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)
 
 This article is freely available (Open Access).
-
-
-__Current status of development file__: [![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
-
-Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
