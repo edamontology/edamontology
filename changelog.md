@@ -9,22 +9,43 @@ Descriptions of changes are grouped as follows:
 
 **_NB._:** For clickable closed issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
-# EDAM\_1.18.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
+# EDAM\_1.18.owl  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
+See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
 EDAM\_1.18 includes:
 
-* various refactoring including concepts deprecations within the Operation branch to make this more simple and improve usability
-* new attribute to provide tips e.g. in bio.tools UI indicating "organisational classes", i.e. higher-level concepts which primarily structure the hierarchy and are not normally recommended for annotation.
+* EDAM is now available in 2 additional formats: CSV and TSV
+  * http://edamontology.org/EDAM.csv is optimised for use in spreadsheet apps (_e.g._ Excel)
+  * http://edamontology.org/EDAM.tsv is optimised for scripting
+  * Available for EDAM versions 1.16 and newer
+  * More details in [#268](https://github.com/edamontology/edamontology/issues/268)
+* EDAM versions are now graphically browsable online in WebProtégé
+  * Free registration required
+  * Available for EDAM versions 1.16 and newer, including the unstable [development version](http://webprotege.stanford.edu/#projects/4befad5f-f27b-430c-a07d-fcf635093169/edit/Classes)
+  * Links to the different EDAM versions are at http://edamontology.org/page#Viewing and in [README.md](README.md)
+* EDAM releases now have DOIs
+  * DOI representing all released versions, resolving to the latest: [10.5281/zenodo.822690](https://doi.org/10.5281/zenodo.822690)
+  * DOI of EDAM version 1.18: [10.5281/zenodo.822691](https://doi.org/10.5281/zenodo.822691)
+* various refactoring including concepts deprecations within the Operation sub-ontology to make this simpler and improve usability
+* new attribute to provide tips _e.g._ in bio.tools UI indicating "organisational concepts", _i.e._ higher-level concepts which primarily structure the hierarchy and are not normally recommended for annotation
+* LICENSE added to the EDAM repo (in _.md_ and plain text) for immediate recognition
 
 ## Changed
-* 37 concepts changed (37 Operations)
+* 37 concepts have changed place in the hierarchy (37 Operation)
 
 ## Deprecated
-* 16 concepts deprecated (16 Operations)
+* 16 concepts deprecated (16 Operation)
 
 ## Fixed
-- 1 issue fixed (#265, #269, #270, #277, #276)
+- 6 issues fixed and closed (#269, #270, #273, #275, #276, #280)
+- 3 issues partially fixed but left open for further improvements (#265, #268, #277)
+
+## Misc
+- 0 invalid issues closed ()
+- 0 issues closed, wrong project ()
+- 1 issue closed, won't fix (#264)
+- 0 issues closed, duplicate ()
+- 0 issues reopened ()
 
 # EDAM\_1.17.owl
 See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.

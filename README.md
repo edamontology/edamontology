@@ -1,7 +1,17 @@
-# What is EDAM?
-EDAM is a simple ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use.
+__DOI representing all stable versions, resolving to the latest__: [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690)
 
-You can browse EDAM at [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/) and [OLS](http://www.ebi.ac.uk/ols/ontologies/edam).
+__DOI of the latest stable version__: [![Latest DOI](https://zenodo.org/badge/20960594.svg)](https://zenodo.org/badge/latestdoi/20960594)
+
+__Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
+
+Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
+
+# What is EDAM?
+EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within bioinformatics and computational biology, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of concepts with preferred terms and synonyms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use (see figure).
+
+You can browse EDAM online at [NCBO BioPortal](http://bioportal.bioontology.org/ontologies/EDAM/), at [OLS](http://www.ebi.ac.uk/ols/ontologies/edam), and WebProtégé (free registration required; [dev](http://webprotege.stanford.edu/#projects/4befad5f-f27b-430c-a07d-fcf635093169/edit/Classes), [1.18](https://webprotege.stanford.edu/#projects/7403c5f8-e0cb-4f13-8dea-18a60c04e879/edit/Classes), [1.17](https://webprotege.stanford.edu/#projects/baee8c5b-8524-403a-b0ff-95f4d26ffd19/edit/Classes), [1.16](https://webprotege.stanford.edu/#projects/1c592f8c-b3ac-4797-adba-7a883c0e18aa/edit/Classes)).
+
+The latest stable version is always at http://edamontology.org/EDAM.owl. For other available formats and versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/master/releases).
 
 Comprehensive documentation is available at http://edamontologydocs.readthedocs.io/en/latest/.
 
@@ -9,15 +19,9 @@ Comprehensive documentation is available at http://edamontologydocs.readthedocs.
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/master/EDAMrelations.png)
 
 
-If you use EDAM or its part, please reference:
+If you use or refer to EDAM or its part, please cite:
 
 Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
-
 doi: [10.1093/bioinformatics/btt113](http://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348)
 
 This article is freely available (Open Access).
-
-
-__Current status of development file__: [![Build Status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
-
-Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
