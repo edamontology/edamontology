@@ -5483,7 +5483,8 @@
         <rdfs:label>PDB ID</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1070"/>
         <oboInOwl:hasDefinition>An identifier of an entry from the PDB database.</oboInOwl:hasDefinition>
-        <regex>[a-zA-Z_0-9]{4}</regex>
+        <rdfs:comment>A PDB identification code which consists of 4 characters, the first of which is a digit in the range 0 - 9; the remaining 3 are alpha-numeric, and letters are upper case only. (source: https://cdn.rcsb.org/wwpdb/docs/documentation/file-format/PDB_format_1996.pdf)</rdfs:comment>
+        <regex>[0-9][a-zA-Z_0-9]{3}</regex>
         <oboInOwl:hasExactSynonym>PDBID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PDB identifier</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
