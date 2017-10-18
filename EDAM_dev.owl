@@ -44692,6 +44692,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_3186">
         <rdfs:label>Bisulfite mapping</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2944"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3809"/>
         <created_in>1.1</created_in>
         <rdfs:comment>Bisulfite mapping follows high-throughput sequencing of DNA which has undergone bisulfite treatment followed by PCR amplification; unmethylated cytosines are specifically converted to thymine, allowing the methylation status of cytosine in the DNA to be detected.</rdfs:comment>
         <oboInOwl:hasDefinition>The mapping of methylation sites in a DNA (genome) sequence.</oboInOwl:hasDefinition>
@@ -44969,8 +44970,10 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3204">
         <rdfs:label>Methylation analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <oboInOwl:hasNarrowSynonym>Methylation calling</oboInOwl:hasNarrowSynonym>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Determine cytosine methylation states in nucleic acid sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>&quot;Methylation calling&quot; refers to determination of cytosine methylation status of specific positions in a nucleic acid sequences.</oboInOwl:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -44981,12 +44984,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3205">
         <rdfs:label>Methylation calling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2944"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>1.1</created_in>
+        <obsolete_since>1.19</obsolete_since>
         <oboInOwl:hasDefinition>Determine cytosine methylation status of specific positions in a nucleic acid sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3204"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3204"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -44994,8 +44999,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3206 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3206">
-        <rdfs:label>Methylation level analysis (global)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3205"/>
+        <rdfs:label>Whole genome methylation analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <oboInOwl:hasExactSynonym>Methylation level analysis (global)</oboInOwl:hasExactSynonym>
         <created_in>1.1</created_in>
         <oboInOwl:hasExactSynonym>Global methylation analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Measure the overall level of methyl cytosines in a genome from analysis of experimental data, typically from chromatographic methods and methyl accepting capacity assay.</oboInOwl:hasDefinition>
@@ -45008,12 +45014,12 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3207 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3207">
-        <rdfs:label>Methylation level analysis (gene-specific)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3205"/>
+        <rdfs:label>Gene methylation analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <oboInOwl:hasExactSynonym>Methylation level analysis (gene-specific)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene-specific methylation analysis</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Many different techniques are available for this.</rdfs:comment>
-        <oboInOwl:hasDefinition>Measure the level of methyl cytosines in specific genes.</oboInOwl:hasDefinition>
         <created_in>1.1</created_in>
+        <oboInOwl:hasDefinition>Analysing the DNA methylation of specific genes or regions of interest.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -47636,6 +47642,19 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasBroadSynonym>Metabolite identification</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Mass spectra identification of compounds that are produced by living systems. Including polyketides, terpenoids, phenylpropanoids, alkaloids and antibiotics.</oboInOwl:hasDefinition>
         <created_in>1.17</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3809 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3809">
+        <rdfs:label>Differentially-methylated region identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <created_in>1.19</created_in>
+        <oboInOwl:hasDefinition>Identify and assess specific genes or regulatory regions of interest that are differentially methylated.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
