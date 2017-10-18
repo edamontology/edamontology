@@ -46966,12 +46966,15 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3648">
         <rdfs:label>Validation of peptide-spectrum matches</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2428"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3646"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>Statistical estimation of false discovery rate from score distribution for peptide-spectrum-matches, following a peptide database search.</oboInOwl:hasDefinition>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.19</obsolete_since>
         <created_in>1.12</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2428"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3646"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3649"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -46980,8 +46983,10 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3649">
         <rdfs:label>Target-Decoy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3648"/>
-        <oboInOwl:hasDefinition>Estimation of false discovery rate by comparison to search results with a database containing incorrect information.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2428"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3646"/>
+        <oboInOwl:hasDefinition>Statistical estimation of false discovery rate from score distribution for peptide-spectrum-matches, following a peptide database search, and by comparison to search results with a database containing incorrect information.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>Validation of peptide-spectrum matches</oboInOwl:hasBroadSynonym>
         <created_in>1.12</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
