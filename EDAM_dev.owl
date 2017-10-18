@@ -2512,18 +2512,15 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_0941">
         <rdfs:label>Electron microscopy model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0883"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.19</obsolete_since>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Annotation on a structural 3D model (volume map) from electron microscopy.</oboInOwl:hasDefinition>
-        <rdfs:comment>This might include the location in the model of the known features of a particular macromolecule.</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oldParent rdf:resource="http://edamontology.org/data_0883"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_3805"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_3806"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
