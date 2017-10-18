@@ -21875,7 +21875,10 @@
     <owl:Class rdf:about="http://edamontology.org/data_2980">
         <rdfs:label>Protein classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.19</obsolete_since>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
+        <owl:deprecated>true</owl:deprecated>
+        <deprecation_comment>Was obsolete prior to 1.19, but not fully / correctly deprecated until 1.19.</deprecation_comment>
         <oboInOwl:hasDefinition>An informative report concerning the classification of protein sequences or structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0907"/>
