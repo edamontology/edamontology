@@ -39931,9 +39931,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1636"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>Generate a heat map of gene expression from e.g. microarray data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>The heat map usually uses a coloring scheme to represent clusters. They can show how expression of mRNA by a set of genes was influenced by experimental conditions.</rdfs:comment>
+        <rdfs:comment>The heat map usually uses a coloring scheme to represent expression values. They can show how quantitative measurements were influenced by experimental conditions.</rdfs:comment>
+        <oboInOwl:hasDefinition>Generate a heat map of expression data from e.g. microarray data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Heatmap generation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Heat map construction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -43941,10 +43941,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>Proximity map plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0571"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasNarrowSynonym>Microarray proximity map rendering</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Generate a plot of distances (distance matrix) between genes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Correlation matrix plotting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Correlation matrix rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Distance matrix rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray distance map rendering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray proximity map plotting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Proximity map rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Generate a plot of distances (distance or correlation matrix) between expression values.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Distance matrix plotting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Microarray proximity map rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Distance map rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -43960,13 +43966,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasNarrowSynonym>Microarray tree or dendrogram rendering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Dendrograph visualisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Expression data tree visualisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Visualise clustered expression data using a tree diagram.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Dendrograph plotting</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray 2-way dendrogram rendering</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Visualise clustered gene expression data using a gene tree, array tree and color coded band of gene expression.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Microarray checks view rendering</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Expression data tree or dendrogram rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Dendrogram plotting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Expression data tree or dendrogram rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Dendrogram"/>
