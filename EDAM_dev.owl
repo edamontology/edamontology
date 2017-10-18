@@ -1238,8 +1238,10 @@
         <rdfs:label>DNA sense specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2534"/>
         <oboInOwl:hasExactSynonym>DNA strand specification</oboInOwl:hasExactSynonym>
+        <deprecation_comment>This is similar to other such concepts that were deprecated (see https://github.com/edamontology/edamontology/issues/317).</deprecation_comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Strand</oboInOwl:hasExactSynonym>
+        <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:hasDefinition>The strand of a DNA sequence (forward or reverse).</oboInOwl:hasDefinition>
         <rdfs:comment>The forward or &apos;top&apos; strand might specify a sequence is to be used as given, the reverse or &apos;bottom&apos; strand specifying the reverse complement of the sequence is to be used.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -14373,6 +14375,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2534"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Frame for translation of DNA (3 forward and 3 reverse frames relative to a chromosome).</oboInOwl:hasDefinition>
+        <is_deprecation_candidate>true</is_deprecation_candidate>
+        <deprecation_comment>This is similar to other such concepts that were deprecated (see https://github.com/edamontology/edamontology/issues/317).</deprecation_comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -15987,7 +15991,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2534"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Phase for translation of DNA (0, 1 or 2) relative to a fragment of the coding sequence.</oboInOwl:hasDefinition>
+        <deprecation_comment>This is similar to other such concepts that were deprecated (see https://github.com/edamontology/edamontology/issues/317).</deprecation_comment>
         <oboInOwl:hasExactSynonym>Phase</oboInOwl:hasExactSynonym>
+        <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -36131,8 +36137,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0310">
         <rdfs:label>Sequence assembly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3433"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -45882,12 +45888,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3433">
         <rdfs:label>Assembly</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>1.6</created_in>
         <oboInOwl:hasDefinition>Construct some entity (typically a molecule sequence) from component pieces.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <obsolete_since>1.19</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oldParent rdf:resource="http://edamontology.org/operation_0004"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0310"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
