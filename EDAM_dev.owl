@@ -24187,6 +24187,82 @@
     
 
 
+    <!-- http://edamontology.org/data_3805 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3805">
+        <rdfs:label>3D EM Map</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0883"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Structural 3D model (volume map) from electron microscopy.</oboInOwl:hasDefinition>
+        <created_in>1.19</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3806 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3806">
+        <rdfs:label>3D EM Mask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0883"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Annotation on a structural 3D EM Map from electron microscopy. This might include one or several locations in the map of the known features of a particular macromolecule.</oboInOwl:hasDefinition>
+        <created_in>1.19</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3807 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3807">
+        <rdfs:label>EM Movie</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDefinition>Raw DDD movie acquisition from electron microscopy.</oboInOwl:hasDefinition>
+        <created_in>1.19</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3808 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3808">
+        <rdfs:label>EM Micrograph</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3424"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.19</created_in>
+        <oboInOwl:hasDefinition>Raw acquistion from electron microscopy or average of an aligned DDD movie.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/format_1196 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1196">
