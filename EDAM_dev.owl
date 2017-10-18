@@ -21882,6 +21882,7 @@
         <oboInOwl:hasDefinition>An informative report concerning the classification of protein sequences or structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0907"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -21973,10 +21974,14 @@
     <owl:Class rdf:about="http://edamontology.org/data_2986">
         <rdfs:label>Nucleic acid classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <deprecation_comment>Obsolete prior to 1.19, but only fully / properly deprecated at 1.19</deprecation_comment>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data concerning the classification of nucleic acid sequences or structures.</oboInOwl:hasDefinition>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.19</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_3148"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
