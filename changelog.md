@@ -7,7 +7,7 @@ Descriptions of changes are grouped as follows:
 * **Fixed:** fixed bugs, issues, corrected concepts and features
 * **Misc:** miscellaneous other changes
 
-**_NB._:** For clickable closed issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
+**_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
 # EDAM\_1.18.owl  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
 See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
