@@ -40,7 +40,7 @@
         <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, and Herve Menager. Contributors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Contibutions from these projects: EMBRACE, ELIXIR, and BioMedBridges (EU); EMBOSS (BBSRC, UK); eSysbio, FUGE Bioinformatics Platform, and ELIXIR.NO/Norwegian Bioinformatics Platform (Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-        <oboOther:date>30.10.2017 16:35 GMT</oboOther:date>
+        <oboOther:date>30.10.2017 23:45 GMT</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <doap:Version>1.19_dev</doap:Version>
         <dc:format>application/rdf+xml</dc:format>
@@ -22793,8 +22793,7 @@
         <oboInOwl:hasExactSynonym>Gene transcript annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Clone or EST (report)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>mRNA (report)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>An informative report on features of a messenger RNA (mRNA) molecules including precursor RNA, primary (unprocessed) transcript and fully processed molecules. This includes reports on a specific gene transcript, clone or EST.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An informative report on features of a messenger RNA (mRNA) molecules including precursor RNA, primary (unprocessed) transcript and fully processed molecules. This includes reports on a specific gene transcript, clone or EST.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -23451,10 +23450,8 @@
         <oboInOwl:hasExactSynonym>MRT image</oboInOwl:hasExactSynonym>
         <created_in>1.7</created_in>
         <oboInOwl:hasExactSynonym>Magnetic resonance tomography image </oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Nuclear magnetic resonance imaging image
-</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Magnetic resonance imaging image
-</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nuclear magnetic resonance imaging image</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Magnetic resonance imaging image</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NMRI image</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>An imaging technique that uses magnetic fields and radiowaves to form images, typically to investigate the anatomy and physiology of the human body.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -24010,8 +24007,7 @@
         <rdfs:label>Run number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3732"/>
         <created_in>1.15</created_in>
-        <oboInOwl:hasDefinition>A number corresponding to the number of an analysis performed by a sequencing machine.  For example, if it&apos;s the 13th analysis, the run is 13.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A number corresponding to the number of an analysis performed by a sequencing machine.  For example, if it&apos;s the 13th analysis, the run is 13.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -32008,9 +32004,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.9</created_in>
-        <oboInOwl:hasDefinition>Medical image format corresponding to the Digital Imaging and Communications in Medicine (DICOM) standard.
-
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Medical image format corresponding to the Digital Imaging and Communications in Medicine (DICOM) standard.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://dicom.nema.org/"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32024,9 +32018,7 @@
         <rdfs:label>nii</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>Medical image and metadata format of the Neuroimaging Informatics Technology Initiative.
-
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Medical image and metadata format of the Neuroimaging Informatics Technology Initiative.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NIfTI-1 format</oboInOwl:hasExactSynonym>
         <created_in>1.9</created_in>
         <documentation rdf:resource="http://nifti.nimh.nih.gov/nifti-1"/>
@@ -32072,8 +32064,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3554">
         <rdfs:label>R file format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <oboInOwl:hasDefinition>File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>File format used for scripts written in the R programming language for execution within the R software environment, typically for statistical computation and graphics.</oboInOwl:hasDefinition>
         <created_in>1.9</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32087,8 +32078,7 @@
         <rdfs:label>SPSS</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.9</created_in>
-        <oboInOwl:hasDefinition>File format used for scripts for the Statistical Package for the Social Sciences.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>File format used for scripts for the Statistical Package for the Social Sciences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -32153,8 +32143,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.10</created_in>
-        <oboInOwl:hasDefinition>Joint Picture Group file format for lossy graphics file.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Joint Picture Group file format for lossy graphics file.</oboInOwl:hasDefinition>
         <rdfs:comment>Sequence of segments with markers. Begins with byte of 0xFF and follows by marker type.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32348,8 +32337,7 @@
         <rdfs:label>tiff</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <rdfs:comment>The TIFF format is perhaps the most versatile and diverse bitmap format in existence. Its extensible nature and support for numerous data compression schemes allow developers to customize the TIFF format to fit any peculiar data storage needs.
-</rdfs:comment>
+        <rdfs:comment>The TIFF format is perhaps the most versatile and diverse bitmap format in existence. Its extensible nature and support for numerous data compression schemes allow developers to customize the TIFF format to fit any peculiar data storage needs.</rdfs:comment>
         <oboInOwl:hasDefinition>A versatile bitmap format.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32382,8 +32370,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <oboInOwl:hasDefinition>IM is a format used by LabEye and other applications based on the IFUNC image processing library.</oboInOwl:hasDefinition>
-        <rdfs:comment>IFUNC library reads and writes most uncompressed interchange versions of this format.
-</rdfs:comment>
+        <rdfs:comment>IFUNC library reads and writes most uncompressed interchange versions of this format.</rdfs:comment>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://pillow.readthedocs.org/en/latest/handbook/image-file-formats.html"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32415,8 +32402,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.11</created_in>
-        <oboInOwl:hasDefinition>PCX is an image file format that uses a simple form of run-length encoding. It is lossless.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>PCX is an image file format that uses a simple form of run-length encoding. It is lossless.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="https://www.coolutils.com/Formats/PCX"/>
@@ -32430,8 +32416,7 @@
         <rdfs:label>ppm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>The PPM format is a lowest common denominator color image file format.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The PPM format is a lowest common denominator color image file format.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://netpbm.sourceforge.net/doc/ppm.html"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32477,8 +32462,7 @@
         <rdfs:label>xpm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>X PixMap (XPM) is an image file format used by the X Window System, it is intended primarily for creating icon pixmaps, and supports transparent pixels.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>X PixMap (XPM) is an image file format used by the X Window System, it is intended primarily for creating icon pixmaps, and supports transparent pixels.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <rdfs:comment>Sequence of segments with markers. Begins with byte of 0xFF and follows by marker type.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32494,8 +32478,7 @@
         <rdfs:label>rgb</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>RGB file format is the native raster graphics file format for Silicon Graphics workstations.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>RGB file format is the native raster graphics file format for Silicon Graphics workstations.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32510,8 +32493,7 @@
         <rdfs:label>pbm</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The PBM format is a lowest common denominator monochrome file format. It serves as the common language of a large family of bitmap image conversion filters.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://netpbm.sourceforge.net/doc/pbm.html"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32527,8 +32509,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <rdfs:comment>It is designed to be extremely easy to learn and write programs for.</rdfs:comment>
-        <oboInOwl:hasDefinition>The PGM format is a lowest common denominator grayscale file format.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The PGM format is a lowest common denominator grayscale file format.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://netpbm.sourceforge.net/doc/pgm.html"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32545,8 +32526,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.11</created_in>
         <oboInOwl:hasExactSynonym>png</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>PNG is a file format for image compression.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>PNG is a file format for image compression.</oboInOwl:hasDefinition>
         <rdfs:comment>It iis expected to replace the Graphics Interchange Format (GIF).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33514,8 +33494,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:label>OME-TIFF</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>Image file format used by the Open Microscopy Environment (OME).
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Image file format used by the Open Microscopy Environment (OME).</oboInOwl:hasDefinition>
         <created_in>1.14</created_in>
         <rdfs:comment>OME develops open-source software and data format standards for the storage and manipulation of biological microscopy data. It is a joint project between universities, research establishments, industry and the software development community.</rdfs:comment>
         <rdfs:comment>An OME-TIFF dataset consists of one or more files in standard TIFF or BigTIFF format, with the file extension .ome.tif or .ome.tiff, and an identical (or in the case of multiple files, nearly identical) string of OME-XML metadata embedded in the ImageDescription tag of each file’s first IFD (Image File Directory). BigTIFF file extensions are also permitted, with the file extension .ome.tf2, .ome.tf8 or .ome.btf, but note these file extensions are an addition to the original specification, and software using an older version of the specification may not be able to handle these file extensions.</rdfs:comment>
@@ -34858,8 +34837,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3438"/>
         <oboInOwl:hasNarrowSynonym>Protein property calculation (from structure)</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Extract, calculate or predict non-positional (physical or chemical) properties of a protein, including any non-positional properties of the molecular sequence, from processing a protein sequence or 3D structure.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Extract, calculate or predict non-positional (physical or chemical) properties of a protein, including any non-positional properties of the molecular sequence, from processing a protein sequence or 3D structure.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Protein structural property calculation</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>This includes methods to render and visualise the properties of a protein sequence, and a residue-level search for properties such as solvent accessibility, hydropathy, secondary structure, ligand-binding etc.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
@@ -36732,7 +36710,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Search a sequence database by sequence comparison and retrieve similar sequences.
-
 sequences matching a given sequence motif or pattern, such as a Prosite pattern or regular expression.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>This excludes direct retrieval methods (e.g. the dbfetch program).</rdfs:comment>
@@ -43285,8 +43262,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>RNA-seq analysis</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray data analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>The application of bioinformatics methods to the study of gene products, typically by processing gene expression data or profiles, interpreting them in functional terms.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The application of bioinformatics methods to the study of gene products, typically by processing gene expression data or profiles, interpreting them in functional terms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene expression data analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -44557,8 +44533,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Protein site detection</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>Features includes functional sites or regions, secondary structure, structural domains and so on. Methods might use fingerprints, motifs, profiles, hidden Markov models, sequence alignment etc to provide a mapping of a query protein sequence to a discriminatory element. This includes methods that search a secondary protein database (Prosite, Blocks, ProDom, Prints, Pfam etc.) to assign a protein sequence(s) to a known protein family or group.
-</rdfs:comment>
+        <rdfs:comment>Features includes functional sites or regions, secondary structure, structural domains and so on. Methods might use fingerprints, motifs, profiles, hidden Markov models, sequence alignment etc to provide a mapping of a query protein sequence to a discriminatory element. This includes methods that search a secondary protein database (Prosite, Blocks, ProDom, Prints, Pfam etc.) to assign a protein sequence(s) to a known protein family or group.</rdfs:comment>
         <oboInOwl:hasDefinition>Predict, recognise and identify positional features in proteins from analysing protein sequences or structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Sequence profile database search</oboInOwl:hasNarrowSynonym>
         <created_in>beta13</created_in>
@@ -44838,8 +44813,7 @@ trimming to a reference sequence,
 Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence.
 
 vector trimming
-Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.
-</rdfs:comment>
+Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -46273,8 +46247,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.7</created_in>
         <oboInOwl:hasExactSynonym>Gene co-expression network analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene expression correlation analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Analyse the correlation patterns among genes across across a variety of experiments, microarray samples etc.
- </oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Analyse the correlation patterns among genes across across a variety of experiments, microarray samples etc.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -47646,8 +47619,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>RNA-Seq quantification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3799"/>
         <oboInOwl:hasExactSynonym>RNA-Seq quantitation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Quantification of data arising from RNA-Seq high-throughput sequencing, typically the quantification of transcript abundances durnig transcriptome analysis in a gene expression study.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Quantification of data arising from RNA-Seq high-throughput sequencing, typically the quantification of transcript abundances durnig transcriptome analysis in a gene expression study.</oboInOwl:hasDefinition>
         <created_in>1.17</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -47835,9 +47807,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Structure prediction</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <oboInOwl:hasNarrowSynonym>Protein fold recognition</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>The prediction of molecular structure, including the prediction, modelling, recognition or design of protein secondary or tertiary structure or other structural features, and the folding of nucleic acid molecules and the prediction or design of nucleic acid (typically RNA) sequences with specific conformations.
-
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The prediction of molecular structure, including the prediction, modelling, recognition or design of protein secondary or tertiary structure or other structural features, and the folding of nucleic acid molecules and the prediction or design of nucleic acid (typically RNA) sequences with specific conformations.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Nucleic acid structure prediction</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Protein structure prediction</oboInOwl:hasNarrowSynonym>
@@ -48163,8 +48133,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Fusion genes</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Gene features</oboInOwl:hasExactSynonym>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasDefinition>Gene structure, regions which make an RNA product and features such as promoters, coding regions, gene fusion, splice sites etc.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Gene structure, regions which make an RNA product and features such as promoters, coding regions, gene fusion, splice sites etc.</oboInOwl:hasDefinition>
         <rdfs:comment>This incudes operons (operators, promoters and genes) from a bacterial genome.  For example the operon leader and trailer gene, gene composition of the operon and associated information.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -48553,8 +48522,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Protein sequence repeats</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Nucleic acid repeats</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>This includes repetitive elements within a nucleic acid sequence, e.g.
-long terminal repeats (LTRs); sequences (typically retroviral) directly repeated at  both ends of a sequence and other types of repeating unit.</rdfs:comment>
+        <rdfs:comment>This includes repetitive elements within a nucleic acid sequence, e.g. long terminal repeats (LTRs); sequences (typically retroviral) directly repeated at  both ends of a sequence and other types of repeating unit.</rdfs:comment>
         <oboInOwl:hasNarrowSynonym>Sequence complexity</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Low complexity sequences</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Sequence repeats</oboInOwl:hasNarrowSynonym>
@@ -49462,8 +49430,7 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <oboInOwl:hasNarrowSynonym>SEM</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Scanning electron microscopy</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>TEM</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>The study of matter by studying the interference pattern from firing electrons at a sample, to analyse structures at resolutions higher than can be achieved using light.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The study of matter by studying the interference pattern from firing electrons at a sample, to analyse structures at resolutions higher than can be achieved using light.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Transmission electron microscopy</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Electron crystallography</oboInOwl:hasNarrowSynonym>
@@ -49678,8 +49645,7 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <rdfs:label>Probes and primers</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <oboInOwl:hasNarrowSynonym>Probes</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes the design of primers for PCR and DNA amplification or the design of molecular probes.</rdfs:comment>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D015335</rdfs:seeAlso>
         <oboInOwl:hasNarrowSynonym>Primers</oboInOwl:hasNarrowSynonym>
@@ -50047,8 +50013,7 @@ long terminal repeats (LTRs); sequences (typically retroviral) directly repeated
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <owl:deprecated>true</owl:deprecated>
-        <oboInOwl:hasDefinition>The archival, detection, prediction and analysis of
-positional features such as functional sites in nucleotide sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The archival, detection, prediction and analysis ofpositional features such as functional sites in nucleotide sequences.</oboInOwl:hasDefinition>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0640"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
@@ -51800,8 +51765,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasDbXref>VT 1.5.99 Other</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>Chronobiology</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasDbXref>VT 1.5.13 Cryobiology
-</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VT 1.5.13 Cryobiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.1 Aerobiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.3 Behavioural biology</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>Reproductive biology</oboInOwl:hasNarrowSynonym>
@@ -53016,9 +52980,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
     <owl:Class rdf:about="http://edamontology.org/topic_3366">
         <rdfs:label>Data integration and warehousing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
-        <oboInOwl:hasDefinition>The combination and integration of data from different sources, for example into a central repository or warehouse, to provide users with a unified view of these data.
-
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The combination and integration of data from different sources, for example into a central repository or warehouse, to provide users with a unified view of these data.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Data integration</oboInOwl:hasNarrowSynonym>
         <created_in>1.4</created_in>
         <oboInOwl:hasNarrowSynonym>Data warehousing</oboInOwl:hasNarrowSynonym>
@@ -53912,8 +53874,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasExactSynonym>Magnetic resonance tomography</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Techniques that uses magnetic fields and radiowaves to form images, typically to investigate the anatomy and physiology of the human body.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NMRI</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Magnetic resonance imaging
-</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Magnetic resonance imaging</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
     </owl:Class>
@@ -53999,8 +53960,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <created_in>1.8</created_in>
         <oboInOwl:hasExactSynonym>Databases</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Data maintenance</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>The general handling of data stored in digital archives such as databanks, databases proper, web portals and other data resources.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The general handling of data stored in digital archives such as databanks, databases proper, web portals and other data resources.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Record management</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Biological databases</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -54707,8 +54667,7 @@ positional features such as functional sites in nucleotide sequences.</oboInOwl:
         <oboInOwl:hasNarrowSynonym>Molecular diagnostics</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.4.5 Molecular diagnostics</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.
-</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
