@@ -40,7 +40,7 @@
         <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, and Herve Menager. Contributors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Contibutions from these projects: EMBRACE, ELIXIR, and BioMedBridges (EU); EMBOSS (BBSRC, UK); eSysbio, FUGE Bioinformatics Platform, and ELIXIR.NO/Norwegian Bioinformatics Platform (Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-        <oboOther:date>31.10.2017 00:15 GMT</oboOther:date>
+        <oboOther:date>31.10.2017 01:13 GMT</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <doap:Version>1.19_dev</doap:Version>
         <dc:format>application/rdf+xml</dc:format>
@@ -1817,8 +1817,7 @@
         <oboInOwl:hasExactSynonym>3D profile</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Some type of structural (3D) profile or template (representing a structure or structure alignment).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structural (3D) profile</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -9641,7 +9640,8 @@
         <oboInOwl:hasExactSynonym>RNA structure alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Alignment (superimposition) of RNA tertiary (3D) structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
     
 
@@ -17529,10 +17529,10 @@
         <rdfs:label>Molecule interaction report</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>An informative report on the physical, chemical or other information concerning the interaction of two or more molecules (or parts of molecules).</oboInOwl:hasDefinition>
-        <deprecation_comment>Was obsoleted before 1.19, but not correctly / fully obsoleted until 1.19.</deprecation_comment>
+        <deprecation_comment>Was deprecated since 1.5, but not correctly (fully) obsoleted until 1.19.</deprecation_comment>
         <created_in>beta12orEarlier</created_in>
         <owl:deprecated>true</owl:deprecated>
-        <obsolete_since>1.19</obsolete_since>
+        <obsolete_since>1.5</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0906"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
@@ -21905,10 +21905,10 @@
     <owl:Class rdf:about="http://edamontology.org/data_2980">
         <rdfs:label>Protein classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
-        <obsolete_since>1.19</obsolete_since>
+        <obsolete_since>1.5</obsolete_since>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
         <owl:deprecated>true</owl:deprecated>
-        <deprecation_comment>Was obsolete prior to 1.19, but not fully / correctly deprecated until 1.19.</deprecation_comment>
+        <deprecation_comment>Was deprecated since 1.5, but not correctly (fully) obsoleted until 1.19.</deprecation_comment>
         <oboInOwl:hasDefinition>An informative report concerning the classification of protein sequences or structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0907"/>
@@ -22004,12 +22004,12 @@
     <owl:Class rdf:about="http://edamontology.org/data_2986">
         <rdfs:label>Nucleic acid classification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
-        <deprecation_comment>Obsolete prior to 1.19, but only fully / properly deprecated at 1.19</deprecation_comment>
+        <deprecation_comment>Was deprecated since 1.5, but not correctly (fully) obsoleted until 1.19.</deprecation_comment>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data concerning the classification of nucleic acid sequences or structures.</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
-        <obsolete_since>1.19</obsolete_since>
+        <obsolete_since>1.5</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_3148"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
@@ -38106,9 +38106,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <obsolete_since>1.8</obsolete_since>
         <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0416"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0416
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -45981,7 +45980,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such thay they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0525"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -49730,7 +49728,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasDefinition>The archival, processing and analysis of nucleotide sequences and and sequence-based entities such as alignments, motifs and profiles.</oboInOwl:hasDefinition>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0080"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
