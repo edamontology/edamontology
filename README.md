@@ -17,7 +17,7 @@ You can browse EDAM online at [NCBO BioPortal](https://bioportal.bioontology.org
 The latest stable version is always at http://edamontology.org/EDAM.owl. For other available formats and versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/master/releases).
 
 
-## Viewing and download
+## Documentation
 
 Comprehensive documentation is available at http://edamontologydocs.readthedocs.io/en/latest/.
 
