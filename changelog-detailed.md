@@ -1,5 +1,560 @@
-# Detailed Changelog for EDAM
+# Changelog of relations between EDAM concepts
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool.
+
+# EDAM\_1.19
+
+## Modified concepts:
+
+Class: http://edamontology.org/operation_2963
+Label: Codon usage bias plotting
+-   'Codon usage bias plotting' SubClassOf 'Plotting'
++   'Codon usage bias plotting' SubClassOf 'Sequence visualisation'
+ 
+Class: http://edamontology.org/operation_2949
+Label: Protein interaction analysis
+-   'Protein interaction analysis' SubClassOf 'Protein analysis'
++   'Protein interaction analysis' SubClassOf 'Protein function analysis'
+ 
+Class: http://edamontology.org/operation_2936
+Label: Dendrograph plotting
+-   'Dendrograph plotting' SubClassOf 'Expression data rendering'
++   'Dendrograph plotting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2939
+Label: Principal component plotting
+-   'Principal component plotting' SubClassOf 'Plotting'
++   'Principal component plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_2940
+Label: Scatter plot plotting
+-   'Scatter plot plotting' SubClassOf 'Plotting'
++   'Scatter plot plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_2943
+Label: Box-Whisker plot plotting
+-   'Box-Whisker plot plotting' SubClassOf 'Plotting'
++   'Box-Whisker plot plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_2935
+Label: Wave graph plotting
+-   'Wave graph plotting' SubClassOf 'Plotting'
++   'Wave graph plotting' SubClassOf 'Expression data rendering'
+ 
+Class: http://edamontology.org/operation_2934
+Label: Cluster textual view generation
+-   'Cluster textual view generation' SubClassOf 'Plotting'
++   'Cluster textual view generation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3503
+Label: Incident curve plotting
+-   'Incident curve plotting' SubClassOf 'Plotting'
++   'Incident curve plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_3433
+Label: Assembly
+-   'Assembly' SubClassOf 'Operation'
++   'Assembly' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3431
+Label: Deposition
+-   'Deposition' SubClassOf 'Operation'
++   'Deposition' SubClassOf 'Data handling'
+ 
+Class: http://edamontology.org/operation_3441
+Label: Plotting
+-   'Plotting' SubClassOf 'Visualisation'
++   'Plotting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3283
+Label: Anonymisation
+-   'Anonymisation' SubClassOf 'Operation'
++   'Anonymisation' SubClassOf 'Data handling'
+ 
+Class: http://edamontology.org/operation_0571
+Label: Expression data rendering
+-   'Expression data rendering' SubClassOf 'Plotting'
+ 
+Class: http://edamontology.org/operation_0572
+Label: Protein interaction network rendering
+Label: Protein interaction network visualisation
+-   'Protein interaction network visualisation' SubClassOf 'has topic' some 'Protein interactions'
+-   'Protein interaction network visualisation' SubClassOf 'Pathway or network visualisation'
++   'Protein interaction network visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3350
+Label: Protein quaternary structure prediction
+-   'Protein quaternary structure prediction' SubClassOf 'Protein structure prediction'
++   'Protein quaternary structure prediction' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_2284
+Label: Nucleic acid density plotting
+-   'Nucleic acid density plotting' SubClassOf 'Plotting'
++   'Nucleic acid density plotting' SubClassOf 'Sequence visualisation'
+ 
+Class: http://edamontology.org/operation_1777
+Label: Protein function prediction
+-   'Protein function prediction' SubClassOf 'Prediction and recognition (protein)'
++   'Protein function prediction' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_3197
+Label: Genetic variation analysis
+-   'Genetic variation analysis' SubClassOf 'Nucleic acid feature detection'
++   'Genetic variation analysis' SubClassOf 'Analysis'
+ 
+Class: http://edamontology.org/operation_3186
+Label: Bisulfite mapping
++   'Bisulfite mapping' SubClassOf http://edamontology.org/operation_3809
+ 
+Class: http://edamontology.org/data_0941
+Label: Electron microscopy model
+-   'Electron microscopy model' SubClassOf 'Structure'
+-   'Electron microscopy model' SubClassOf 'has topic' some 'Structural biology'
++   'Electron microscopy model' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3232
+Label: Gene expression QTL analysis
+-   'Gene expression QTL analysis' SubClassOf 'Gene expression analysis'
++   'Gene expression QTL analysis' SubClassOf 'Gene expression profiling'
+ 
+Class: http://edamontology.org/operation_3206
+Label: Methylation level analysis (global)
+-   'Methylation level analysis (global)' SubClassOf 'Methylation calling'
++   'Methylation level analysis (global)' SubClassOf 'Methylation analysis'
+ 
+Class: http://edamontology.org/operation_3205
+Label: Methylation calling
+-   'Methylation calling' SubClassOf 'Methylation analysis'
+-   'Methylation calling' SubClassOf 'Physical mapping'
++   'Methylation calling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3207
+Label: Methylation level analysis (gene-specific)
+-   'Methylation level analysis (gene-specific)' SubClassOf 'Methylation calling'
++   'Methylation level analysis (gene-specific)' SubClassOf 'Methylation analysis'
+ 
+Class: http://edamontology.org/operation_3202
+Label: Polymorphism detection
++   'Polymorphism detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_3201
+Label: SNP calling
+-   'SNP calling' SubClassOf 'SNP detection'
++   'SNP calling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3219
+Label: Read pre-processing
+-   'Read pre-processing' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3227
+Label: Variant calling
+-   'Variant calling' SubClassOf 'Genetic variation analysis'
++   'Variant calling' SubClassOf 'Polymorphism detection'
+ 
+Class: http://edamontology.org/operation_0310
+Label: Sequence assembly
+-   'Sequence assembly' SubClassOf 'Assembly'
++   'Sequence assembly' SubClassOf 'Sequence analysis'
+ 
+Class: http://edamontology.org/operation_0303
+Label: Protein fold recognition
++   'Protein fold recognition' SubClassOf 'Alignment'
+ 
+Class: http://edamontology.org/operation_0302
+Label: Protein threading
+-   'Protein threading' SubClassOf 'Alignment'
+ 
+Class: http://edamontology.org/operation_0301
+Label: Sequence-to-3D-profile alignment
+-   'Sequence-to-3D-profile alignment' SubClassOf 'has output' some 'Sequence-structure alignment'
+-   'Sequence-to-3D-profile alignment' SubClassOf 'Alignment'
+-   'Sequence-to-3D-profile alignment' SubClassOf 'has input' some 'Structural profile'
+-   'Sequence-to-3D-profile alignment' SubClassOf 'Protein fold recognition'
++   'Sequence-to-3D-profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2499
+Label: Splicing model analysis
+-   'Splicing model analysis' SubClassOf 'Sequence comparison'
+-   'Splicing model analysis' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Splicing model analysis' SubClassOf 'Prediction and recognition'
++   'Splicing model analysis' SubClassOf 'Sequence analysis'
+ 
+Class: http://edamontology.org/operation_2492
+Label: Protein interaction prediction
+-   'Protein interaction prediction' SubClassOf 'Protein analysis'
+-   'Protein interaction prediction' SubClassOf 'Prediction and recognition (protein)'
++   'Protein interaction prediction' SubClassOf 'Protein interaction analysis'
++   'Protein interaction prediction' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_2489
+Label: Protein subcellular localisation prediction
+-   'Protein subcellular localisation prediction' SubClassOf 'Prediction and recognition (protein)'
+ 
+Class: http://edamontology.org/operation_2487
+Label: Protein structure comparison
+-   'Protein structure comparison' SubClassOf 'Protein analysis'
++   'Protein structure comparison' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/operation_2481
+Label: Nucleic acid structure analysis
+-   'Nucleic acid structure analysis' SubClassOf 'Nucleic acid analysis'
+ 
+Class: http://edamontology.org/operation_2478
+Label: Nucleic acid sequence analysis
+-   'Nucleic acid sequence analysis' SubClassOf 'Nucleic acid analysis'
+ 
+Class: http://edamontology.org/operation_1850
+Label: Protein cysteine and disulfide bond assignment
+-   'Protein cysteine and disulfide bond assignment' SubClassOf 'Prediction and recognition (protein)'
++   'Protein cysteine and disulfide bond assignment' SubClassOf 'Protein structure assignment'
+ 
+Class: http://edamontology.org/operation_2479
+Label: Protein sequence analysis
+-   'Protein sequence analysis' SubClassOf 'Protein analysis'
++   'Protein sequence analysis' SubClassOf 'has topic' some 'Proteins'
+ 
+Class: http://edamontology.org/operation_2475
+Label: Protein architecture recognition
+-   'Protein architecture recognition' SubClassOf 'Prediction and recognition (protein)'
++   'Protein architecture recognition' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_3094
+Label: Protein interaction network prediction
+-   'Protein interaction network prediction' SubClassOf 'has topic' some 'Protein interactions'
+-   'Protein interaction network prediction' SubClassOf 'Pathway or network prediction'
+-   'Protein interaction network prediction' SubClassOf 'has output' some 'Protein interaction report'
++   'Protein interaction network prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3092
+Label: Protein feature detection
+-   'Protein feature detection' SubClassOf 'Protein analysis'
+-   'Protein feature detection' SubClassOf 'Prediction and recognition (protein)'
++   'Protein feature detection' SubClassOf 'Prediction and recognition'
++   'Protein feature detection' SubClassOf 'has topic' some 'Proteins'
++   'Protein feature detection' SubClassOf 'Protein sequence analysis'
+ 
+Class: http://edamontology.org/operation_2464
+Label: Protein-protein interaction prediction
+-   'Protein-protein interaction prediction' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_2457
+Label: GPCR coupling selectivity prediction
+-   'GPCR coupling selectivity prediction' SubClassOf 'has output' some 'Protein report'
+-   'GPCR coupling selectivity prediction' SubClassOf 'GPCR analysis'
+-   'GPCR coupling selectivity prediction' SubClassOf 'Protein interaction prediction'
+-   'GPCR coupling selectivity prediction' SubClassOf 'Protein property calculation'
++   'GPCR coupling selectivity prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2436
+Label: Gene-set enrichment analysis
+-   'Gene-set enrichment analysis' SubClassOf 'Gene expression analysis'
+ 
+Class: http://edamontology.org/operation_0366
+Label: Protein sequence cleavage
+-   'Protein sequence cleavage' SubClassOf 'Protein property calculation'
+ 
+Class: http://edamontology.org/operation_2437
+Label: Gene regulatory network prediction
+-   'Gene regulatory network prediction' SubClassOf 'has output' some 'Pathway or network report'
+-   'Gene regulatory network prediction' SubClassOf 'Prediction and recognition (nucleic acid)'
+-   'Gene regulatory network prediction' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+-   'Gene regulatory network prediction' SubClassOf 'Pathway or network prediction'
++   'Gene regulatory network prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2419
+Label: Primer and probe design
+-   'Primer and probe design' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Primer and probe design' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_2415
+Label: Protein folding analysis
+-   'Protein folding analysis' SubClassOf 'Protein analysis'
++   'Protein folding analysis' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/operation_2416
+Label: Protein secondary structure analysis
+-   'Protein secondary structure analysis' SubClassOf 'Protein analysis'
++   'Protein secondary structure analysis' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/operation_2414
+Label: Protein function analysis
+-   'Protein function analysis' SubClassOf 'Protein analysis'
++   'Protein function analysis' SubClassOf 'Analysis'
++   'Protein function analysis' SubClassOf 'has topic' some 'Proteins'
+ 
+Class: http://edamontology.org/operation_2406
+Label: Protein structure analysis
+-   'Protein structure analysis' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/operation_0319
+Label: Protein secondary structure assignment
+-   'Protein secondary structure assignment' SubClassOf 'Prediction and recognition (protein)'
++   'Protein secondary structure assignment' SubClassOf 'Protein structure assignment'
+ 
+Class: http://edamontology.org/operation_0320
+Label: Protein structure assignment
+-   'Protein structure assignment' SubClassOf 'Protein analysis'
++   'Protein structure assignment' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0329
+Label: Protein folding pathway prediction
+-   'Protein folding pathway prediction' SubClassOf 'Prediction and recognition (protein)'
+-   'Protein folding pathway prediction' SubClassOf 'Protein folding analysis'
++   'Protein folding pathway prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0331
+Label: Protein modelling (mutation)
+-   'Protein modelling (mutation)' SubClassOf 'Prediction and recognition (protein)'
+ 
+Class: http://edamontology.org/operation_0415
+Label: Nucleic acid feature detection
+-   'Nucleic acid feature detection' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Nucleic acid feature detection' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0407
+Label: Protein hydrophobic moment plotting
+-   'Protein hydrophobic moment plotting' SubClassOf 'Plotting'
++   'Protein hydrophobic moment plotting' SubClassOf 'Sequence visualisation'
+ 
+Class: http://edamontology.org/operation_0402
+Label: Protein titration curve plotting
+-   'Protein titration curve plotting' SubClassOf 'Plotting'
++   'Protein titration curve plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_0434
+Label: Integrated gene prediction
+-   'Integrated gene prediction' SubClassOf 'Gene prediction'
++   'Integrated gene prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0433
+Label: Splice site prediction
+-   'Splice site prediction' SubClassOf 'Nucleic acid feature detection'
++   'Splice site prediction' SubClassOf 'Gene prediction'
+ 
+Class: http://edamontology.org/data_1079
+Label: Electron microscopy model ID
+-   'Electron microscopy model ID' SubClassOf 'is identifier of' some 'Electron microscopy model'
++   'Electron microscopy model ID' SubClassOf 'is identifier of' some http://edamontology.org/data_3805
+ 
+Class: http://edamontology.org/operation_3024
+Label: Prediction and recognition (nucleic acid)
+-   'Prediction and recognition (nucleic acid)' SubClassOf 'Prediction and recognition'
++   'Prediction and recognition (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3023
+Label: Prediction and recognition (protein)
+-   'Prediction and recognition (protein)' SubClassOf 'Prediction and recognition'
++   'Prediction and recognition (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0489
+Label: Genetic code prediction
+-   'Genetic code prediction' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Genetic code prediction' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0484
+Label: SNP detection
+-   'SNP detection' SubClassOf 'Nucleic acid sequence analysis'
+-   'SNP detection' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_0497
+Label: Constrained sequence alignment
+-   'Constrained sequence alignment' SubClassOf 'Sequence alignment'
++   'Constrained sequence alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0490
+Label: Dotplot plotting
+-   'Dotplot plotting' SubClassOf 'Plotting'
+ 
+Class: http://edamontology.org/operation_0442
+Label: Transcription regulatory element prediction (RNA-cis)
+-   'Transcription regulatory element prediction (RNA-cis)' SubClassOf 'Regulatory element prediction'
++   'Transcription regulatory element prediction (RNA-cis)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0452
+Label: Indel detection
+-   'Indel detection' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_0456
+Label: Nucleic acid melting profile plotting
+-   'Nucleic acid melting profile plotting' SubClassOf 'Plotting'
++   'Nucleic acid melting profile plotting' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_0472
+Label: GPCR prediction
+-   'GPCR prediction' SubClassOf 'Transmembrane protein prediction'
+-   'GPCR prediction' SubClassOf 'GPCR analysis'
++   'GPCR prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0473
+Label: GPCR analysis
+-   'GPCR analysis' SubClassOf 'Transmembrane protein analysis'
+-   'GPCR analysis' SubClassOf 'has topic' some 'Membrane and lipoproteins'
++   'GPCR analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0474
+Label: Protein structure prediction
+-   'Protein structure prediction' SubClassOf 'Prediction and recognition (protein)'
+-   'Protein structure prediction' SubClassOf 'Protein analysis'
+-   'Protein structure prediction' SubClassOf 'Structure prediction'
++   'Protein structure prediction' SubClassOf 'Prediction and recognition'
++   'Protein structure prediction' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/operation_0475
+Label: Nucleic acid structure prediction
+-   'Nucleic acid structure prediction' SubClassOf 'Structure prediction'
+-   'Nucleic acid structure prediction' SubClassOf 'Nucleic acid sequence analysis'
+-   'Nucleic acid structure prediction' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Nucleic acid structure prediction' SubClassOf 'Prediction and recognition'
++   'Nucleic acid structure prediction' SubClassOf 'Nucleic acid structure analysis'
+ 
+Class: http://edamontology.org/operation_0477
+Label: Protein modelling
+-   'Protein modelling' SubClassOf 'Protein structure analysis'
+ 
+Class: http://edamontology.org/operation_3767
+Label: Protein identification
+-   'Protein identification' SubClassOf 'Protein analysis'
++   'Protein identification' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_3797
+Label: Rarefaction
+-   'Rarefaction' SubClassOf 'Operation'
++   'Rarefaction' SubClassOf 'Calculation'
+ 
+Class: http://edamontology.org/operation_0287
+Label: Base position variability plotting
+-   'Base position variability plotting' SubClassOf 'Plotting'
++   'Base position variability plotting' SubClassOf 'Sequence visualisation'
+ 
+Class: http://edamontology.org/operation_3649
+Label: Target-Decoy
+-   'Target-Decoy' SubClassOf 'Validation of peptide-spectrum matches'
++   'Target-Decoy' SubClassOf 'Validation'
++   'Target-Decoy' SubClassOf 'Peptide database search'
+ 
+Class: http://edamontology.org/operation_3648
+Label: Validation of peptide-spectrum matches
+-   'Validation of peptide-spectrum matches' SubClassOf 'Peptide database search'
+-   'Validation of peptide-spectrum matches' SubClassOf 'Validation'
++   'Validation of peptide-spectrum matches' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0298
+Label: Profile-profile alignment
+-   'Profile-profile alignment' SubClassOf 'has output' some 'Profile-profile alignment'
+-   'Profile-profile alignment' SubClassOf 'has topic' some 'Sequence sites, features and motifs'
+-   'Profile-profile alignment' SubClassOf 'Sequence alignment'
+-   'Profile-profile alignment' SubClassOf 'has input' some 'Sequence profile'
++   'Profile-profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0299
+Label: 3D profile-to-3D profile alignment
+-   '3D profile-to-3D profile alignment' SubClassOf 'has input' some 'Structural profile'
+-   '3D profile-to-3D profile alignment' SubClassOf 'has output' some 'Structural (3D) profile alignment'
+-   '3D profile-to-3D profile alignment' SubClassOf 'Structure alignment'
++   '3D profile-to-3D profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2514
+Label: Sequence generation (protein)
+-   'Sequence generation (protein)' SubClassOf 'Protein analysis'
+ 
+Class: http://edamontology.org/operation_2501
+Label: Nucleic acid analysis
+-   'Nucleic acid analysis' SubClassOf 'Analysis'
+-   'Nucleic acid analysis' SubClassOf 'has topic' some 'Nucleic acids'
++   'Nucleic acid analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2502
+Label: Protein analysis
+-   'Protein analysis' SubClassOf 'has topic' some 'Proteomics'
+-   'Protein analysis' SubClassOf 'Analysis'
++   'Protein analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0242
+Label: Conserved transcription regulatory sequence identification
+-   'Conserved transcription regulatory sequence identification' SubClassOf 'Regulatory element prediction'
+-   'Conserved transcription regulatory sequence identification' SubClassOf 'Nucleic acid feature detection'
++   'Conserved transcription regulatory sequence identification' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3675
+Label: Variant filtering
+-   'Variant filtering' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_0250
+Label: Protein property calculation
+-   'Protein property calculation' SubClassOf 'Prediction and recognition (protein)'
+-   'Protein property calculation' SubClassOf 'Protein analysis'
++   'Protein property calculation' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0267
+Label: Protein secondary structure prediction
+-   'Protein secondary structure prediction' SubClassOf 'Prediction and recognition (protein)'
++   'Protein secondary structure prediction' SubClassOf 'Protein secondary structure analysis'
++   'Protein secondary structure prediction' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0266
+Label: Vector sequence detection
+-   'Vector sequence detection' SubClassOf 'Sequence comparison'
+ 
+Class: http://edamontology.org/operation_0262
+Label: Nucleic acid property calculation
+-   'Nucleic acid property calculation' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_0277
+Label: Protein interaction network comparison
+-   'Protein interaction network comparison' SubClassOf 'Protein interaction network analysis'
+-   'Protein interaction network comparison' SubClassOf 'Protein function comparison'
++   'Protein interaction network comparison' SubClassOf 'Pathway or network analysis'
+ 
+Class: http://edamontology.org/operation_0279
+Label: Nucleic acid folding analysis
+-   'Nucleic acid folding analysis' SubClassOf 'Prediction and recognition (nucleic acid)'
++   'Nucleic acid folding analysis' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0270
+Label: Transmembrane protein analysis
+-   'Transmembrane protein analysis' SubClassOf 'Protein analysis'
++   'Transmembrane protein analysis' SubClassOf 'Analysis'
+ 
+Class: http://edamontology.org/operation_0271
+Label: Structure prediction
+-   'Structure prediction' SubClassOf 'has output' some 'Structure'
+-   'Structure prediction' SubClassOf 'Prediction and recognition'
+-   'Structure prediction' SubClassOf 'Structure analysis'
+-   'Structure prediction' SubClassOf 'has topic' some 'Structure prediction'
++   'Structure prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0273
+Label: Protein interaction raw data analysis
+-   'Protein interaction raw data analysis' SubClassOf 'has input' some 'Protein interaction raw data'
+-   'Protein interaction raw data analysis' SubClassOf 'has topic' some 'Protein interactions'
+-   'Protein interaction raw data analysis' SubClassOf 'Protein interaction analysis'
++   'Protein interaction raw data analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+
+## New concepts:
+ 
+Class: http://edamontology.org/data_3808
+Label: EM Micrograph
++   'EM Micrograph' SubClassOf 'has topic' some 'Structural biology'
++   'EM Micrograph' SubClassOf 'Raw image'
+ 
+Class: http://edamontology.org/data_3807
+Label: EM Movie
++   'EM Movie' SubClassOf 'has topic' some 'Structural biology'
++   'EM Movie' SubClassOf 'Raw image'
+ 
+Class: http://edamontology.org/data_3806
+Label: 3D EM Mask
++   '3D EM Mask' SubClassOf 'Structure'
++   '3D EM Mask' SubClassOf 'has topic' some 'Structural biology'
+ 
+Class: http://edamontology.org/data_3805
+Label: 3D EM Map
++   '3D EM Map' SubClassOf 'has topic' some 'Structural biology'
++   '3D EM Map' SubClassOf 'Structure'
+ 
+Class: http://edamontology.org/operation_3809
+Label: Differentially-methylated region identification
++   'Differentially-methylated region identification' SubClassOf 'Methylation analysis'
+
 
 # EDAM\_1.18.owl
 
