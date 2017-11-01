@@ -6,7 +6,7 @@
 
 ### Summary of changes
 * Various deprecations, synonyms, and rearrangements in the Operation sub-ontology
-* Clean-up of technical artifacts: most newlines and all tab characters (from definitions _etc._), corrections of wrong `created_in`-s, corrections of deprecated concepts (`subset`-s, relations, replacement concepts, _etc._)
+* Clean-up of technical artifacts: most newlines and all tab characters removed (from definitions _etc._), corrections of wrong `created_in`-s, corrections of deprecated concepts (`subset`-s, relations, replacement concepts, _etc._)
 * Clean-up of the _git_ repo
 * Changes and additions of concepts related to electron microscopy
 * Other updates (_e.g._ among Identifiers and Formats)
