@@ -2,7 +2,7 @@
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
-# EDAM\_1.19
+# EDAM\_1.19 [![DOI: 10.5281/zenodo.1039989](https://zenodo.org/badge/DOI/10.5281/zenodo.1039989.svg)](https://doi.org/10.5281/zenodo.1039989)
 
 ### Summary of changes
 * Various deprecations, synonyms, and rearrangements in the Operation sub-ontology
@@ -30,7 +30,7 @@ See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/ma
 
 
 
-# EDAM\_1.18.owl  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
+# EDAM\_1.18.owl  [![DOI: 10.5281/zenodo.822691](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
 See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
 EDAM\_1.18 includes:
