@@ -1,13 +1,34 @@
 # Changelog for EDAM
-Descriptions of changes are grouped as follows:
-* **Added:** new concepts or features
-* **Changed:** changes to existing concepts and features
-* **Deprecated:** once-stable concepts or features that became obsolete
-* **Removed:** deprecated concepts or features that have been removed
-* **Fixed:** fixed bugs, issues, corrected concepts and features
-* **Misc:** miscellaneous other changes
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
+
+# EDAM\_1.19
+
+### Summary of changes
+* Various deprecations, synonyms, and rearrangements in the Operation sub-ontology
+* Clean-up of technical artifacts: most newlines and all tab characters (from definitions _etc._), corrections of wrong `created_in`-s, corrections of deprecated concepts (`subset`-s, relations, replacement concepts, _etc._)
+* Clean-up of the _git_ repo
+* Changes and additions of concepts related to electron microscopy
+* Other updates (_e.g._ among Identifiers and Formats)
+
+### Changes in hierarchy
+* 5 concepts added  (4 Data, 1 Operation)
+* 28 concepts deprecated (1 Data, 27 Operation)
+* 71 concepts have changed relations|hierarchy (1 Data, 70 Operation)
+
+See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
+
+### Fixed issues
+- 22 issues fixed and closed (#266, #267, #277, #300, #301, #303, #304, #307, #308, #309, #310, #311, #312, #313, #314, #315, #316, #317, #318, #320, #323, #324)
+- 2 issues partially fixed but left open for further improvements (#257, #268)
+
+### Other closed issues
+- 4 invalid issues closed (#208, #209 #298, #325)
+- 0 issues closed, wrong project ()
+- 0 issues closed, won't fix ()
+- 3 issues closed, duplicate (#205, #212, #320)
+
+
 
 # EDAM\_1.18.owl  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
 See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
