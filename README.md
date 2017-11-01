@@ -1,7 +1,5 @@
 __DOI representing all stable versions, resolving to the latest__: [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690)
 
-__DOI of the latest stable version__: [![Latest DOI](https://zenodo.org/badge/20960594.svg)](https://zenodo.org/badge/latestdoi/20960594)
-
 __Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
