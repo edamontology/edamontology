@@ -2,6 +2,13 @@
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM\_1.20
+
+### Fixed issues
+- syntactic problems in a few terms, now automatically checked for by edamxpathvalidator (#331)
+
+See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
+
 # EDAM\_1.19 [![DOI: 10.5281/zenodo.1039989](https://zenodo.org/badge/DOI/10.5281/zenodo.1039989.svg)](https://doi.org/10.5281/zenodo.1039989)
 
 ### Summary of changes
