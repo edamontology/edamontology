@@ -46704,10 +46704,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3625 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3625">
-        <rdfs:label>Relation inference</rdfs:label>
+        <rdfs:label>Relation extraction</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
         <oboInOwl:hasDefinition>Identify semantic relations among entities and concepts within a text, using text mining techniques.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Relationship inference</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Relation discovery</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Relation inference</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Relationship extraction</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Relationship discovery</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Relationship inference</oboInOwl:hasExactSynonym>
         <created_in>1.12</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -47411,6 +47415,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>Ancestral reconstruction is often used to recover possible ancestral character states of ancient, extinct organisms.</rdfs:comment>
         <oboInOwl:hasDefinition>The extrapolation of empirical characteristics of individuals or populations, backwards in time, to their common ancestors.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Character mapping</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Ancestral sequence reconstruction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -49252,6 +49257,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0219"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
+	<oboInOwl:consider rdf:resource="http://edamontology.org/topic_0622"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
@@ -49604,6 +49610,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D023281</rdfs:seeAlso>
         <oboInOwl:hasNarrowSynonym>Personal genomics</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Genome annotation</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Whole genomes of one or more organisms, or genomes in general, such as meta-information on genomes, genome projects, gene names etc.</oboInOwl:hasDefinition>
         <isdebtag>true</isdebtag>
@@ -49866,12 +49873,23 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Functional, regulatory and non-coding RNA</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0114"/>
+	<rdfs:subClassOf>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+            <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3308"/>
+          </owl:Restriction>
+        </rdfs:subClassOf>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasNarrowSynonym>small interfering RNA</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>small nucleolar RNA</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>ncRNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Non-coding RNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Functional RNA</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Small interfering RNA</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Small nucleolar RNA</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>ncRNA</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Small ncRNA</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Small non-coding RNA</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>lncRNA</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Long ncRNA</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Lon non-coding RNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>snRNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Non-coding or functional RNA sequences, including regulatory RNA sequences, ribosomal RNA (rRNA) and transfer RNA (tRNA).</oboInOwl:hasDefinition>
         <rdfs:comment>Non-coding RNA includes  piwi-interacting RNA (piRNA), small nuclear RNA (snRNA) and small nucleolar RNA (snoRNA).  Regulatory RNA includes microRNA (miRNA) - short single stranded RNA molecules that regulate gene expression, and small interfering RNA (siRNA).</rdfs:comment>
@@ -49879,7 +49897,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>siRNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>piRNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>snoRNA</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>small nuclear RNA</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Small nuclear RNA</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>miRNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>microRNA</oboInOwl:hasNarrowSynonym>
@@ -52112,6 +52130,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>RNA sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Whole transcriptome shotgun sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RNA-seq</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>RNA-seq analysis</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>RNA-Seq analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>miRNA-seq</oboInOwl:hasNarrowSynonym>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>A topic concerning high-throughput sequencing of cDNA to measure the RNA content (transcriptome) of a sample, for example, to investigate how different alleles of a gene are expressed, detect post-transcriptional mutations or identify gene fusions.</oboInOwl:hasDefinition>
