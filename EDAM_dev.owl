@@ -38539,12 +38539,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0450 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0450">
-        <rdfs:label>Chimeric sequence detection</rdfs:label>
+        <rdfs:label>Chimera detection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>A chimera includes regions from two or more phylogenetically distinct sequences. They are usually artifacts of PCR and are thought to occur when a prematurely terminated amplicon reanneals to another DNA strand and is subsequently copied to completion in later PCR cycles.</rdfs:comment>
         <oboInOwl:hasDefinition>Detects chimeric sequences (chimeras) from a sequence alignment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence alignment analysis (chimeric sequence detection)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chimeric sequence detection</oboInOwl:hasExactSynonym>	
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
