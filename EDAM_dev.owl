@@ -37981,7 +37981,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0417 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0417">
-        <rdfs:label>Protein post-translation modification site prediction</rdfs:label>
+        <rdfs:label>Post-translation modification site prediction</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37989,6 +37989,56 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>PTM prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PTM analysis</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>PTM site prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PTM site analysis</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Protein post-translation modification site prediction</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasNarrowSynonym>Methylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Methylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Pupylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Pupylation prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>N-terminal myristoylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>N-terminal myristoylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>N-myristoylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>N-myristoylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>N-terminal acetylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>N-terminal acetylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Acetylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Acetylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sumoylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sumoylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Succinylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Succinylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Palmitoylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Palmitoylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Phosphorylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Phosphorylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Phosphoglycerylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Phosphoglycerylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Dephosphorylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Dephosphorylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Ubiquitination site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Ubiquitination prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sulfation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sulfation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>S-nitrosylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>S-nitrosylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Glycosylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Glycosylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>GPI modification site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>GPI modification prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>GPI anchor prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>GPI anchor site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Hydroxylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Hydroxylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Prenylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Prenylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>S-sulfenylation site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>S-sulfenylation prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Tyrosine nitration site prediction</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Tyrosine nitration prediction</oboInOwl:hasNarrowSynonym>
+	
         <oboInOwl:hasDefinition>Predict post-translation modification sites in protein sequences.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>Methods might predict sites of methylation, N-terminal myristoylation, N-terminal acetylation, sumoylation, palmitoylation, phosphorylation, sulfation, glycosylation, glycosylphosphatidylinositol (GPI) modification sites (GPI lipid anchor signals) etc.</rdfs:comment>
