@@ -37,7 +37,7 @@
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
-        <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, and Herve Menager. Contributors: Inge Jonassen, Dan Bolser, Hamish McWilliam, Mahmut Uludag, James Malone, Rodrigo Lopez, Steve Pettifer, and Peter Rice. Contibutions from these projects: EMBRACE, ELIXIR, and BioMedBridges (EU); EMBOSS (BBSRC, UK); eSysbio, FUGE Bioinformatics Platform, and ELIXIR.NO/Norwegian Bioinformatics Platform (Research Council of Norway). See http://edamontology.org for documentation and licence.</oboOther:remark>
+        <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, Herve Menager and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html.  License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:date>01.11.2017 01:50 GMT</oboOther:date>
@@ -49,7 +49,7 @@
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
-        <next_id>3810</next_id>
+        <next_id>3811</next_id>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
@@ -54910,7 +54910,29 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:replacedBy rdf:resource="&owl;DeprecatedClass"/>
     </owl:Class>
-    
+
+
+
+    <!-- http://edamontology.org/topic_3810 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3810">
+        <rdfs:label>Agricultural science</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasBroadSynonym>Agriculture</oboInOwl:hasBroadSynonym>
+	<oboInOwl:hasBroadSynonym>Agronomy</oboInOwl:hasBroadSynonym>
+	<oboInOwl:hasNarrowSynonym>Plant breeding</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Plant pathology</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Horticulture</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Soil science</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Agricultural biotechnology</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Multidisciplinary study, research and development within the field of agriculture.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Agricultural_science"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+    </owl:Class>    
 
 
     <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
