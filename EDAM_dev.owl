@@ -34225,6 +34225,22 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
+    <!-- http://edamontology.org/format_3811 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3811">
+        <rdfs:label>XMFA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2200"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
+        <oboInOwl:hasDefinition>The A2M format is used as the primary format for multiple alignments of protein or nucleic-acid sequences in the SAM suite of tools. It is a small modification of FASTA format for sequences and is compatible with most tools that read FASTA.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation rdf:resource="http://darlinglab.org/mauve/user-guide/files.html"/>
+        <oboInOwl:hasExactSynonym>eXtended Multi-FastA format</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>alignment format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
