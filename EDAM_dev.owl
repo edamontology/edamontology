@@ -33565,11 +33565,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
         <rdfs:comment>No human-consumable information about this format is available (see http://tools.proteomecenter.org/wiki/index.php?title=Formats:protXML).</rdfs:comment>
         <oboInOwl:hasDefinition>A format for storage, exchange, and processing of protein identifications created from ms/ms-derived peptide sequence data.</oboInOwl:hasDefinition>
+	<rdfs:seeAlso>http://doi.org/10.1038/msb4100024</rdfs:seeAlso>
+	<rdfs:seeAlso>http://sashimi.sourceforge.net/schema_revision/protXML/protXML_v3.xsd</rdfs:seeAlso>
+        <documentation rdf:resource="http://tools.proteomecenter.org/formats/protXML/protXML_xmlspy_docs.html"/>
         <created_in>1.15</created_in>
         <oboInOwl:hasDbXref rdf:resource="&oboOther;MS_1001422"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
-        <documentation rdf:resource="http://tools.proteomecenter.org/formats/protXML/protXML_xmlspy_docs.html"/>
     </owl:Class>
     
 
