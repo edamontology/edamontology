@@ -49,7 +49,7 @@
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
-        <next_id>3814</next_id>
+        <next_id>3817</next_id>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
@@ -28379,7 +28379,7 @@
     <!-- http://edamontology.org/format_2030 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_2030">
-        <rdfs:label>Small molecule report format</rdfs:label>
+        <rdfs:label>Chemical data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -28389,7 +28389,10 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <oboInOwl:hasExactSynonym>Chemical structure format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chemical compound annotation format</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Small molecule structure format</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>Small molecule report format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Format of a report on a chemical compound.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -34269,7 +34272,52 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
-    
+       
+
+
+    <!-- http://edamontology.org/format_3814 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3814">
+        <rdfs:label>SDF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>SDF is one of a family of chemical-data file formats developed by MDL Information Systems; it is intended especially for structural information.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation rdf:resource="https://en.wikipedia.org/wiki/Chemical_table_file#SDF"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+           
+
+
+    <!-- http://edamontology.org/format_3815 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3815">
+        <rdfs:label>Molfile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>An MDL Molfile is a file format for holding information about the atoms, bonds, connectivity and coordinates of a molecule.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation rdf:resource="https://en.wikipedia.org/wiki/Chemical_table_file#Molfile"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+           
+
+
+    <!-- http://edamontology.org/format_3816 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3816">
+        <rdfs:label>Mol2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>Complete, portable representation of a SYBYL molecule. ASCII file which contains all the information needed to reconstruct a SYBYL molecule.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation rdf:resource="https://docs.chemaxon.com/display/docs/Tripos+Mol2+format"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+   
 
     
     <!-- http://edamontology.org/operation_0004 -->
