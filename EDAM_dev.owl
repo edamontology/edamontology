@@ -34482,6 +34482,34 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
+    <!-- http://edamontology.org/format_3826 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3826">
+        <rdfs:label>proBAM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2057"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>. proBAM is an adaptation of BAM (format_2572), which was extended to meet specific requirements entailed by proteomics data.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://www.psidev.info/probam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+ 
+
+    <!-- http://edamontology.org/format_3827 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3827">
+        <rdfs:label>proBED</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>. proBED is an adaptation of BED (format_3003), which was extended to meet specific requirements entailed by proteomics data.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://www.psidev.info/probed"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+ 
  
     
     <!-- http://edamontology.org/operation_0004 -->
