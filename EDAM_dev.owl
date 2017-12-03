@@ -283,11 +283,11 @@
     
 
 
-    <!-- http://edamontology.org/uiTip -->
+    <!-- http://edamontology.org/usageGuideline -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/uiTip">
-        <rdfs:label>UI tip</rdfs:label>
-        <oboInOwl:hasDefinition>Specify a tip to expose in graphical user interfaces, e.g. https://bio.tools registration interface.</oboInOwl:hasDefinition>
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/usageGuideline">
+        <rdfs:label>Usage guideline</rdfs:label>
+        <oboInOwl:hasDefinition>A usage guideline for terms associated with the concept, e.g. within https://bio.tools registration interface.</oboInOwl:hasDefinition>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
@@ -920,7 +920,7 @@
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#DigitalEntity</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
         <oboInOwl:hasNarrowSynonym>Datum</oboInOwl:hasNarrowSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -26906,7 +26906,7 @@
         <owl:disjointWith rdf:resource="http://edamontology.org/operation_0004"/>
         <owl:disjointWith rdf:resource="http://edamontology.org/topic_0003"/>
         <owl:disjointWith rdf:resource="&owl;DeprecatedClass"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:seeAlso>http://en.wikipedia.org/wiki/File_format</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#MachineLanguage</rdfs:seeAlso>
         <oboInOwl:hasNarrowSynonym>File format</oboInOwl:hasNarrowSynonym>
@@ -26974,7 +26974,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format for a molecular sequence record.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -26993,7 +26993,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format for molecular sequence feature information.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -27013,7 +27013,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format for molecular sequence alignment information.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28234,7 +28234,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0872"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format for a phylogenetic tree.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28255,7 +28255,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format for a biological pathway or network.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28274,7 +28274,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0869"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data format for a sequence-profile alignment.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28331,7 +28331,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Literature format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Data format for a full-text scientific article.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28349,7 +28349,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0972"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format of a report from text mining.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28371,7 +28371,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format for reports on enzyme kinetics.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28390,7 +28390,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasExactSynonym>Chemical structure format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chemical compound annotation format</oboInOwl:hasExactSynonym>
 	<oboInOwl:hasExactSynonym>Small molecule structure format</oboInOwl:hasExactSynonym>
@@ -28416,7 +28416,7 @@
         <oboInOwl:hasDefinition>Format of a report on a particular locus, gene, gene system or groups of genes.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Gene features format</oboInOwl:hasExactSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28428,7 +28428,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_2032">
         <rdfs:label>Workflow format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format of a workflow.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28444,7 +28444,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data format for a molecular tertiary structure.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28478,7 +28478,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Text format of a chemical formula.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28498,7 +28498,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of raw (unplotted) phylogenetic data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28608,7 +28608,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1442"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format for phylogenetic tree distance data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28645,7 +28645,7 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format for reports on a protein family.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28663,7 +28663,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format for molecular interaction data.</oboInOwl:hasDefinition>
         <oboInOwl:hasBroadSynonym>Molecular interaction format</oboInOwl:hasBroadSynonym>
@@ -28686,7 +28686,7 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format for sequence assembly data.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28738,7 +28738,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Gene expression data format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Format of a file of gene expression data, e.g. a gene expression matrix or profile.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28773,7 +28773,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a map of (typically one) molecular sequence annotated with features.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28788,7 +28788,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <oboInOwl:hasDefinition>Format of a report on PCR primers or hybridisation oligos in a nucleic acid sequence.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28806,7 +28806,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0896"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of a report of general information about a specific protein.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28862,7 +28862,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a report on the quality of a protein three-dimensional model.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -28880,7 +28880,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0857"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of a report on sequence hits and associated data from searching a sequence database.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28900,7 +28900,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0870"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format of a matrix of genetic distances between molecular sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -28921,7 +28921,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a sequence motif.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28941,7 +28941,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a sequence profile.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -28981,7 +28981,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format of a dirichlet distribution.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -29006,7 +29006,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format for the emission and transition counts of a hidden Markov model.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -29026,7 +29026,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format for secondary structure (predicted or real) of an RNA molecule.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -29039,7 +29039,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_2077">
         <rdfs:label>Protein secondary structure format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format for secondary structure (predicted or real) of a protein molecule.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -29061,7 +29061,7 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format used to specify range(s) of sequence positions.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -29130,7 +29130,7 @@
         <rdfs:label>Sequence features (repeats) format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format used for map of repeats in molecular (typically nucleotide) sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -29143,7 +29143,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_2158">
         <rdfs:label>Nucleic acid features (restriction sites) format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format used for report on restriction enzyme recognition sites in nucleotide sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -29179,7 +29179,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format used for clusters of molecular sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -29379,7 +29379,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0582"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format used for ontologies.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -29759,7 +29759,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_2333">
         <rdfs:label>Binary format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:comment>Only specific native binary formats are listed under &apos;Binary format&apos; in EDAM. Generic binary formats - such as any data being zipped, or any XML data being serialised into the Efficient XML Interchange (EXI) format - are not modelled in EDAM. Refer to http://wsio.org/compression_004.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Binary format.</oboInOwl:hasDefinition>
@@ -29807,7 +29807,7 @@
         <oboInOwl:hasExactSynonym>Format (typed)</oboInOwl:hasExactSynonym>
         <rdfs:comment>This concept exists only to assist EDAM maintenance and navigation in graphical browsers.  It does not add semantic information. The concept branch under &apos;Format (typed)&apos; provides an alternative organisation of the concepts nested under the other top-level branches (&apos;Binary&apos;, &apos;HTML&apos;, &apos;RDF&apos;, &apos;Text&apos; and &apos;XML&apos;. All concepts under here are already included under those branches.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>A placeholder concept for visual navigation by dividing data formats by the content of the data that is represented.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -30281,7 +30281,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0848"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Symbol_sequence</rdfs:seeAlso>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format of a raw molecular sequence (i.e. the alphabet used).</oboInOwl:hasDefinition>
@@ -30373,7 +30373,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0970"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of a bibliographic reference.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -30431,7 +30431,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3498"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of sequence variation annotation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -30819,7 +30819,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format of a matrix (array) of numerical values.</oboInOwl:hasDefinition>
         <created_in>beta13</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -30840,7 +30840,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of data concerning the classification of the sequences and/or structures of protein structural domain(s).</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta13</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -31089,7 +31089,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Data format for a report of information derived from a biological pathway or network.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.0</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -31108,7 +31108,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.0</created_in>
         <oboInOwl:hasDefinition>Data format for annotation on a laboratory experiment.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -31234,7 +31234,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2536"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format for mass pectra and derived data, include peptide sequences etc.</oboInOwl:hasDefinition>
         <created_in>1.2</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -31512,7 +31512,7 @@
         <rdfs:label>Individual genetic data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <oboInOwl:hasDefinition>Data format for a metadata on an individual and their genetic data.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.3</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -31627,7 +31627,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.3</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -31961,7 +31961,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <oboInOwl:hasDefinition>Format of documents including word processor, spreadsheet and presentation.</oboInOwl:hasDefinition>
         <created_in>1.8</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -31993,7 +31993,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2968"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Format used for images and image metadata.</oboInOwl:hasDefinition>
         <created_in>1.9</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -32587,7 +32587,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Textual report format for sequence quality for reports from sequencing machines.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -32757,7 +32757,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <oboInOwl:hasDefinition>Data format for graph data.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
@@ -32848,7 +32848,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a data index of some type.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33339,7 +33339,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3707"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format for biodiversity data.</oboInOwl:hasDefinition>
         <created_in>1.14</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -33583,7 +33583,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3748">
         <rdfs:label>Linked data format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasRelatedSynonym>Semantic Web format</oboInOwl:hasRelatedSynonym>
         <created_in>1.15</created_in>
         <oboInOwl:hasExactSynonym>Linked Data format</oboInOwl:hasExactSynonym>
@@ -34037,7 +34037,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3779"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>Data format of an annotated text, e.g. with recognised entities, concepts, and relations.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -34156,7 +34156,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Query format</oboInOwl:hasExactSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>A query language (format) for structured database queries.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -34476,7 +34476,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Computational procedure</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Mathematical function</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Lambda abstraction</oboInOwl:hasNarrowSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasNarrowSynonym>Function (programming)</oboInOwl:hasNarrowSynonym>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Process</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
@@ -34570,7 +34570,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Annotate an entity (typically a biological or biomedical database entity) with terms from a controlled vocabulary.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>This is a broad concept and is used a placeholder for other, more specific concepts.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -34591,7 +34591,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Data indexing</oboInOwl:hasExactSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Generate an index of (typically a file of) biological data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Database indexing</oboInOwl:hasExactSynonym>
@@ -36912,7 +36912,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Visualise, plot or render (graphically) biomolecular data such as molecular sequences or structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Rendering</oboInOwl:hasExactSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_data_visualization"/>
@@ -42140,7 +42140,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasExactSynonym>Utility operation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Processing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Basic (non-analytical) operations of some data, either a file or equivalent entity in memory, such that the same basic type of data is consumed as input and generated as output.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -42226,7 +42226,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse protein function, typically by processing protein sequence and/or structural data, and generate an informative report.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -42251,7 +42251,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Analyse protein folding, typically by processing sequence and / or structural data, and write an informative report.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein folding modelling</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
@@ -42387,7 +42387,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2423">
         <rdfs:label>Prediction and recognition</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Recognition</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Prediction</oboInOwl:hasNarrowSynonym>
@@ -42405,7 +42405,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>Comparison</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Compare two or more things to identify similarities.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -42418,7 +42418,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2425">
         <rdfs:label>Optimisation and refinement</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Refine or optimise some data model.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -42438,7 +42438,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2275"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model or simulate some biological entity or system, typically using mathematical techniques including  dynamical systems, statistical models, differential equations, and game theoretic models.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Mathematical modelling</oboInOwl:hasNarrowSynonym>
@@ -42469,7 +42469,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>Validation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasNarrowSynonym>Quality control</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Validate some data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -42485,7 +42485,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <oboInOwl:hasDefinition>Map properties to positions on an biological entity (typically a molecular sequence or structure), or assemble such an entity from constituent parts.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -42497,7 +42497,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2430">
         <rdfs:label>Design</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Design a biological entity (typically a molecular sequence or structure) with specific properties.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -44048,7 +44048,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1916"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Alignment generation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Compare two or more entities, typically the sequence or structure (or derivatives) of macromolecules, to identify equivalent subunits.</oboInOwl:hasDefinition>
@@ -44340,7 +44340,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>Analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <oboInOwl:hasDefinition>Apply analytical methods to existing data of a specific type.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:comment>This excludes non-analytical methods that read and write the same basic type of data (for that, see &apos;Data handling&apos;).</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -44548,7 +44548,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Assign molecular sequences, structures or other biological data to a specific group or category according to qualities it shares with that group or category.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -46073,7 +46073,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <oboInOwl:hasExactSynonym>Construction</oboInOwl:hasExactSynonym>
         <created_in>1.6</created_in>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:comment>For non-analytical operations, see the &apos;Processing&apos; branch.</rdfs:comment>
         <oboInOwl:hasDefinition>Construct some data entity.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -46126,7 +46126,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <created_in>1.6</created_in>
         <oboInOwl:hasDefinition>Group together some data entities on the basis of similarities such that entities in the same group (cluster) are more similar to each other than to those in other groups (clusters).</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -46155,7 +46155,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Conversion</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <oboInOwl:hasDefinition>Convert a data set from one form to another.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.6</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -46216,7 +46216,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3438">
         <rdfs:label>Calculation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Mathematical determination of the value of something, typically a properly of a  molecule.</oboInOwl:hasDefinition>
         <created_in>1.6</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -46538,7 +46538,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Identify a correlation, i.e. a statistical relationship between two random variables or two sets of data.</oboInOwl:hasDefinition>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -47880,7 +47880,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Quantification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <oboInOwl:hasExactSynonym>Quantitation</oboInOwl:hasExactSynonym>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <created_in>1.17</created_in>
         <oboInOwl:hasDefinition>Counting and measuring experimentally determined observations into quantities.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -47969,7 +47969,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <owl:disjointWith rdf:resource="&owl;DeprecatedClass"/>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
         <rdfs:seeAlso>http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research</rdfs:seeAlso>
-        <uiTip>Not recommended for annotation in bio.tools.</uiTip>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Category</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
