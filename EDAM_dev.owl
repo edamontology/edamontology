@@ -34319,7 +34319,21 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
-   
+    
+
+
+    <!-- http://edamontology.org/format_3817 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3817">
+        <rdfs:label>tex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasExactSynonym>LaTeX format</oboInOwl:hasExactSynonym>
+	<documentation rdf:resource="https://www.latex-project.org/help/documentation/"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>   
 
     
     <!-- http://edamontology.org/operation_0004 -->
