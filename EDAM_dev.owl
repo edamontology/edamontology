@@ -49,7 +49,7 @@
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
-        <next_id>3828</next_id>
+        <next_id>3836</next_id>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
@@ -26148,10 +26148,13 @@
     <!-- http://edamontology.org/format_1631 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_1631">
-        <rdfs:label>exp</rdfs:label>
+        <rdfs:label>EXP</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2561"/>
         <oboInOwl:hasDefinition>Sequence assembly project file EXP format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Affymetrix EXP format</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>EXP</oboInOwl:hasExactSynonym>
+	<documentation rdf:resource="http://media.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/exp.html"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -33695,7 +33698,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>XML file format for files containing information about peptide identifications from mass spectrometry data analysis carried out with OpenMS.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <documentation>http://open-ms.sourceforge.net/schemas/</documentation>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+	<documentation>http://ftp.mi.fu-berlin.de/pub/OpenMS/release1.9-documentation/html/classOpenMS_1_1IdXMLFile.html</documentation>
+	<oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
@@ -34546,7 +34550,99 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
 
+
+
+    <!-- http://edamontology.org/format_3830 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3830">
+        <rdfs:label>ADF</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2056"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <oboInOwl:hasDefinition>The ADF (Array Design Format) file captures information about a microarray chip.</oboInOwl:hasDefinition>
+        <rdfs:comment>The file contains two section, separated by a [main] tag: 1) A multi-row meta-data header (e.g. who submitted the array design, how the probes or composite "probe sets" were designed); followed by. 2) A table with columns of annotation for each probe/probe set in rows, e.g. unique probe identifier, probe sequences, probe coordinate location (on spotted arrays), cross-references to other databases, where the probes map to in the genome, and so on.</rdfs:comment>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasExactSynonym>Array Design Format</oboInOwl:hasExactSynonym>
+        <documentation>https://www.ebi.ac.uk/arrayexpress/help/creating_an_adf.html#WhatIsADF</documentation>	
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_3831 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3830">
+        <rdfs:label>ARB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <oboInOwl:hasDefinition>Binary format used by the ARB software suite</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasExactSynonym>ARB binary format</oboInOwl:hasExactSynonym>
+        <documentation>https://www.ebi.ac.uk/arrayexpress/help/creating_an_adf.html#WhatIsADF</documentation>	
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
     
+    <!-- http://edamontology.org/format_3832 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3832">
+        <rdfs:label>consensusXML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>OpenMS format for grouping features in one map or across several maps.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation>http://ftp.mi.fu-berlin.de/pub/OpenMS/release1.9-documentation/html/classOpenMS_1_1ConsensusXMLFile.html</documentation>
+	<oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
+
+        <!-- http://edamontology.org/format_3833 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3833">
+        <rdfs:label>featureXML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>OpenMS format for quantitation results (LC/MS features).</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation>http://ftp.mi.fu-berlin.de/pub/OpenMS/release1.9-documentation/html/classOpenMS_1_1FeatureXMLFile.html</documentation>
+	<oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_3834 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3834">
+        <rdfs:label>mzData</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>Now deprecated data format of the HUPO Proteomics Standards Initiative.  Replaced by mzML (format_3244).</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation>http://www.psidev.info/mzdata-1_0_5-docs</documentation>
+	<oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_3835 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3835">
+        <rdfs:label>TIDE TXT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>Format supported by the Tide tool for identifying peptides from tandem mass spectra.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <documentation>http://cruxtoolkit.sourceforge.net/tide-search.html</documentation>
+	<oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
     
     <!-- http://edamontology.org/operation_0004 -->
 
