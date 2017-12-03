@@ -34351,6 +34351,24 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://ccg.vital-it.ch/chipseq/elandformat.php"/>
     </owl:Class>
 
+
+
+    <!-- http://edamontology.org/format_3819 -->
+    
+    <owl:Class rdf:about="http://edamontology.org/format_3819">
+        <rdfs:label>Relaxed PHYLIP Interleaved</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2924"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>Phylip multiple alignment sequence format, less stringent than PHYLIP format.</oboInOwl:hasDefinition>
+	<rdfs:comment>It differs from Phylip Format (format_1997) on length of the ID sequence. There no length restrictions on the ID, but whitespaces aren't allowed in the sequence ID/Name because one space separates the longest ID and the beginning of the sequence. Sequences IDs must be padded to the longest ID length.</rdfs:comment>
+        <documentation rdf:resource="http://www.phylo.org/index.php/help/relaxed_phylip"/>
+	<documentation rdf:resource="http://biopython.org/DIST/docs/api/Bio.AlignIO.PhylipIO-module.html"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+ 
     
     <!-- http://edamontology.org/operation_0004 -->
 
