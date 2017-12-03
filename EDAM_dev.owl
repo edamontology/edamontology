@@ -34423,6 +34423,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     </owl:Class>
 
 
+
+    <!-- http://edamontology.org/format_ -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_">
+        <rdfs:label>FASTG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2561"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>FASTG is a format for faithfully representing genome assemblies in the face of allelic polymorphism and assembly uncertainty.</oboInOwl:hasDefinition>
+	<rdfs:comment>It is called FASTG, like FASTA, but the G stands for ‘graph’.</rdfs:comment>
+	<oboInOwl:hasExactSynonym>FASTG assembly graph format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://fastg.sourceforge.net/"/>
+	<documentation rdf:resource="http://fastg.sourceforge.net/FASTG_Spec_v1.00.pdf"/>
+    </owl:Class>
+    
+
+
+
+
  
     
     <!-- http://edamontology.org/operation_0004 -->
