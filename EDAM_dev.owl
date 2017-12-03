@@ -49,7 +49,7 @@
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
-        <next_id>3821</next_id>
+        <next_id>3823</next_id>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
@@ -34389,6 +34389,39 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
+
+
+    <!-- http://edamontology.org/format_3821 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3821">
+        <rdfs:label>VisML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>Default XML format of VisANT, containing all the network information.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://visant.bu.edu/misi/visML.htm"/>
+	<oboInOwl:hasExactSynonym>VisANT xml format</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>VisANT xml</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_3822 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3822">
+        <rdfs:label>GML</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>GML (Graph Modeling Language) is a text file format supporting network data with a very easy syntax. It is used by Graphlet, Pajek, yEd, LEDA and NetworkX.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://gephi.org/users/supported-graph-formats/gml-format/"/>
+	<oboInOwl:hasExactSynonym>GML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+
 
  
     
