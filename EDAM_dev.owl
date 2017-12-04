@@ -35135,7 +35135,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/operation_0244">
         <rdfs:label>Protein flexibility and motion analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0250"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2476"/>
         <oboInOwl:hasExactSynonym>Protein flexibility prediction</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Protein motion prediction</oboInOwl:hasExactSynonym>
@@ -35757,8 +35756,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0278">
         <rdfs:label>RNA secondary structure prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0279"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2439"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -35780,7 +35779,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0279">
         <rdfs:label>Nucleic acid folding analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2481"/>
         <rdfs:subClassOf>
@@ -35790,9 +35789,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Analyse some aspect of RNA/DNA folding, typically by processing sequence and/or structural data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid folding modelling</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid folding prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Analyse some aspect of RNA/DNA folding, typically by processing sequence and/or structural data.  For example, compute folding energies such as minimum folding energies for DNA or RNA sequences or energy landscape of RNA mutants.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid folding energy calculation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid folding</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -36935,11 +36935,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0328">
         <rdfs:label>Protein folding simulation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2415"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Simulate the folding of a protein.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <obsolete_since>1.20</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2415"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2415"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -38534,12 +38537,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0421">
         <rdfs:label>Protein folding site prediction</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2415"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.20</obsolete_since>
         <oboInOwl:hasDefinition>Predict protein sites that are key to protein folding, such as possible sites of nucleation or stabilisation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2415"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2415"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -38706,6 +38711,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Find and identify restriction enzyme cleavage sites (restriction sites) in (typically) DNA sequences, for example to generate a restriction map.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="http://edamontology.org/operation_0575"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -39407,7 +39413,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>Methods might identify thermodynamically stable or evolutionarily conserved structures.</rdfs:comment>
-        <oboInOwl:hasDefinition>Predict tertiary structure of DNA or RNA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict structure of DNA or RNA.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nucleic_acid_structure_prediction"/>
@@ -39481,6 +39487,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasExactSynonym>Protein docking</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Docking_(molecular)"/>
     </owl:Class>
     
 
@@ -41153,7 +41160,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0575">
         <rdfs:label>Restriction map drawing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0431"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0573"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41163,6 +41169,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Draw or visualise restriction maps in DNA sequences.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <rdfs:seeAlso rdf:resource="http://edamontology.org/operation_0431"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -41237,11 +41244,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_1769">
         <rdfs:label>Nucleic acid folding energy calculation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0279"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.20</obsolete_since>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Compute energies of nucleic acid folding, e.g. minimum folding energies for DNA or RNA sequences or energy landscape of RNA mutants.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0279"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_0279"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -42460,9 +42470,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
-        <oboInOwl:hasDefinition>Analyse protein folding, typically by processing sequence and / or structural data, and write an informative report.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein folding site prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Analyse, simulate or predict protein folding, typically by processing sequence and / or structural data.  For example, predict sites of nucleation or stabilisation key to protein folding.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein folding modelling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein folding simulation</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
@@ -43391,16 +43402,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2476 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2476">
-        <rdfs:label>Molecular dynamics simulation</rdfs:label>
+        <rdfs:label>Molecular dynamics</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2480"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0082"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -43409,14 +43414,22 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0082"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>Simulate molecular (typically protein) conformation using a computational model of physical forces and computer simulation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Molecular dynamics simulation</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>Simulate molecular (typically protein) conformation using a computational model of physical forces and computer simulation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_dynamics"/>
     </owl:Class>
     
 
