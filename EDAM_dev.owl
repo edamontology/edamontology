@@ -51,7 +51,7 @@
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <next_id>3837</next_id>
+        <next_id>3839</next_id>
         <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, Herve Menager and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html.  License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -34651,6 +34651,22 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
+    <!-- http://edamontology.org/format_3838 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3838">
+        <rdfs:label>pptx</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <oboInOwl:hasDefinition>Microsoft Powerpoint format.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="https://msdn.microsoft.com/en-us/library/dd926741(v=office.12).aspx"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -48478,6 +48494,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>DNA melting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Nucleic acid denaturation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>RNA alignment</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>DNA structure</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>The archival, curation, processing and analysis of nucleic acid structural information, such as whole structures, structural features and alignments, and associated annotation.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>RNA structure alignment</oboInOwl:hasNarrowSynonym>
@@ -48653,13 +48670,15 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Metaproteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Protein and peptide identification, especially in the study of whole proteomes of organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Protein and peptide identification</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
+        <oboInOwl:hasNarrowSynonym>Targeted proteomics</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>Proteomics includes any methods (especially high-throughput) that separate, characterize and identify expressed proteins such as mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D040901</rdfs:seeAlso>
         <rdfs:comment>Includes metaproteomics: proteomics analysis of an environmental sample.</rdfs:comment>
+        <oboInOwl:hasNarrowSynonym>Discovery proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -49429,11 +49448,12 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Genetic variation</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
         <oboInOwl:hasNarrowSynonym>Mutation</oboInOwl:hasNarrowSynonym>
-        <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Polymorphism</oboInOwl:hasNarrowSynonym>
+        <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Somatic mutations</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Stable, naturally occuring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D014644</rdfs:seeAlso>
+        <oboInOwl:hasNarrowSynonym>Genomic variation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>DNA variation</oboInOwl:hasExactSynonym>
         <isdebtag>true</isdebtag>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -50117,12 +50137,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/topic_0625">
         <rdfs:label>Genotype and phenotype</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
-        <oboInOwl:hasExactSynonym>Genotype and phenotype resources</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Genotype-phenotype</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>The study of genetic constitution of a living entity, such as an individual, and organism, a cell and so on, typically with respect to a particular observable phenotypic traits, or resources concerning such traits, which might be an aspect of biochemistry, physiology, morphology, anatomy, development and so on.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Genotyping</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Phenotyping</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Genotyping</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasExactSynonym>Genotype and phenotype resources</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Genotype-phenotype analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -51421,12 +51443,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/topic_2640">
         <rdfs:label>Oncology</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
-        <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDbXref>VT 3.2.16 Oncology</oboInOwl:hasDbXref>
-        <oboInOwl:hasNarrowSynonym>Cancer</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Neoplasm</oboInOwl:hasNarrowSynonym>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The study of cancer, for example, genes and proteins implicated in cancer.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Cancer biology</oboInOwl:hasExactSynonym>
+        <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDbXref>VT 3.2.16 Oncology</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>Cancer</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Neoplasms</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -54622,10 +54646,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>GWAS study</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3678"/>
         <created_in>1.8</created_in>
+        <oboInOwl:hasExactSynonym>GWAS analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>Genome-wide association study experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome-wide association study</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GWAS</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genome-wide_association_study"/>
     </owl:Class>
     
 
@@ -54643,14 +54670,17 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>mRNA microarray</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Multichannel microarray</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Proprietary platform micoarray</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>SNP array</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MicroRNA array</oboInOwl:hasNarrowSynonym>
         <created_in>1.8</created_in>
         <oboInOwl:hasNarrowSynonym>Two channel microarray</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>miRNA array</oboInOwl:hasNarrowSynonym>
         <rdfs:comment>This might specify which raw data file relates to which sample and information on hybridisations, e.g. which are technical and which are biological replicates.</rdfs:comment>
         <oboInOwl:hasNarrowSynonym>One channel microarray</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>aCGH microarray</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>ChIP-on-chip</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Genotyping array</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression microarray</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
     </owl:Class>
@@ -55213,6 +55243,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Whole genome sequencing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
         <created_in>1.12</created_in>
+        <oboInOwl:hasNarrowSynonym>De novo genome sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>Laboratory technique to sequence the complete DNA sequence of an organism&apos;s genome at a single time.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>WGS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Whole genome resequencing</oboInOwl:hasNarrowSynonym>
@@ -55238,8 +55269,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Bisulfite sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>methy-seq</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>methyl-seq</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MeDIP</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>mDIP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>MeDIP</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>BS-Seq</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
         <documentation rdf:resource="https://en.wikipedia.org/wiki/Whole_genome_sequencing"/>
     </owl:Class>
@@ -55254,9 +55286,11 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>Exome capture</oboInOwl:hasExactSynonym>
         <rdfs:comment>Exome sequencing is considered a cheap alternative to whole genome sequencing.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Targeted exome capture</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Whole exome sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>WES</oboInOwl:hasExactSynonym>
         <created_in>1.12</created_in>
-        <oboInOwl:hasDefinition>Laboratory technique to sequence all the protein-coding regions in a genome, i.e., the exome.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Exome analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Laboratory technique to sequence all the protein-coding regions in a genome, i.e., the exome.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Exome</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -55367,6 +55401,20 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Agricultural_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3837 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3837">
+        <rdfs:label>Metagenomic sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <oboInOwl:hasExactSynonym>Shotgun metagenomic sequencing</oboInOwl:hasExactSynonym>
+        <created_in>1.20</created_in>
+        <oboInOwl:hasDefinition>Approach which samples, in parallel, all genes in all organisms present in a given sample, e.g. to provide insight into biodiversity and function.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
+        <documentation rdf:resource="https://en.wikipedia.org/wiki/Metagenomics"/>
     </owl:Class>
     
 
