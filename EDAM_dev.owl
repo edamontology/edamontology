@@ -50346,12 +50346,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Functional, regulatory and non-coding RNA</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0114"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3308"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Small interfering RNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Non-coding RNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Lon non-coding RNA</oboInOwl:hasNarrowSynonym>
