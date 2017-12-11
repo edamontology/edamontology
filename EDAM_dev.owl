@@ -34557,16 +34557,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3830">
         <rdfs:label>ARB</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1921"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2056"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <oboInOwl:hasDefinition>Binary format used by the ARB software suite</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>ARB binary format</oboInOwl:hasExactSynonym>
-        <rdfs:comment>The file contains two section, separated by a [main] tag: 1) A multi-row meta-data header (e.g. who submitted the array design, how the probes or composite &quot;probe sets&quot; were designed); followed by. 2) A table with columns of annotation for each probe/probe set in rows, e.g. unique probe identifier, probe sequences, probe coordinate location (on spotted arrays), cross-references to other databases, where the probes map to in the genome, and so on.</rdfs:comment>
-        <oboInOwl:hasDefinition>The ADF (Array Design Format) file captures information about a microarray chip.</oboInOwl:hasDefinition>
         <created_in>1.20</created_in>
-        <oboInOwl:hasExactSynonym>Array Design Format</oboInOwl:hasExactSynonym>
-        <documentation>https://www.ebi.ac.uk/arrayexpress/help/creating_an_adf.html#WhatIsADF</documentation>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
