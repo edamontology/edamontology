@@ -51,7 +51,7 @@
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <next_id>3839</next_id>
+        <next_id>3840</next_id>
         <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, Herve Menager and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html.  License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -33036,14 +33036,13 @@
     <!-- http://edamontology.org/format_3682 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3682">
-        <rdfs:label>imzML</rdfs:label>
+        <rdfs:label>imzML metadata file</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
-        <oboInOwl:hasDefinition>imzML is a data format for mass spectrometry imaging data. NB.: See comment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>imzML metadata is a data format for mass spectrometry imaging metadata.</oboInOwl:hasDefinition>
         <created_in>1.13</created_in>
-        <file_extension>imzML|ibd</file_extension>
-        <rdfs:comment>Data is recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra.</rdfs:comment>
+        <file_extension>imzML</file_extension>
+        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra. This entry is for the metadata XML file</rdfs:comment>
         <citation rdf:resource="http://doi.org/10.1016/j.jprot.2012.07.026"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
@@ -34661,6 +34660,25 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://msdn.microsoft.com/en-us/library/dd926741(v=office.12).aspx"/>
     </owl:Class>
     
+
+
+    <!-- http://edamontology.org/format_3839 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3839">
+        <rdfs:label>ibd</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>ibd is a data format for mass spectrometry imaging data.</oboInOwl:hasDefinition>
+        <created_in>1.20</created_in>
+        <file_extension>ibd</file_extension>
+        <rdfs:comment>imzML data is recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra.</rdfs:comment>
+        <citation rdf:resource="http://doi.org/10.1016/j.jprot.2012.07.026"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.imzml.org/index.php?option=com_content&amp;view=article&amp;id=188&amp;Itemid=63"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
