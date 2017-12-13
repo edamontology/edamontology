@@ -32845,8 +32845,15 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3623">
         <rdfs:label>Index format</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.20</obsolete_since>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3326"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
+        <oldParent rdf:resource="http://edamontology.org/format_2333"/>
+        <oldParent rdf:resource="http://edamontology.org/format_2350"/>
+        <deprecation_comment>Duplicate of http://edamontology.org/format_3326</deprecation_comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
@@ -32855,9 +32862,6 @@
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Format of a data index of some type.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
-        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
 
@@ -32866,7 +32870,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3624">
         <rdfs:label>snpeffdb</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3623"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>An index of a genome database, indexed for use by the snpeff tool.</oboInOwl:hasDefinition>
         <created_in>1.11</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
