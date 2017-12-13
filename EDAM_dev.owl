@@ -29762,6 +29762,9 @@
     <owl:Class rdf:about="http://edamontology.org/format_2333">
         <rdfs:label>Binary format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
+        <owl:disjointWith rdf:resource="http://edamontology.org/format_2330"/>
+        <owl:disjointWith rdf:resource="http://edamontology.org/format_2331"/>
+        <owl:disjointWith rdf:resource="http://edamontology.org/format_2332"/>
         <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <rdfs:comment>Only specific native binary formats are listed under &apos;Binary format&apos; in EDAM. Generic binary formats - such as any data being zipped, or any XML data being serialised into the Efficient XML Interchange (EXI) format - are not modelled in EDAM. Refer to http://wsio.org/compression_004.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
