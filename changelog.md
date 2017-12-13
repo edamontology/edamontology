@@ -6,6 +6,14 @@
 
 ### Fixed issues
 - syntactic problems in a few terms, now automatically checked for by edamxpathvalidator (#331)
+- fixing bugged subset in http://edamontology.org/data_0889
+- Improved operation label for http://edamontology.org/operation_0450
+- Much better synonyms (& label) for PTM site prediction http://edamontology.org/operation_3092
+- Misc. improved synonyms on Topics & Operations
+- add "NOE assignment" and "Structure calculation" as synonyms of Protein structure assignment (#333)
+- Add topic "Agricultural Science" (#329)
+- Add XMFA format (#122)
+- Add synonyms for Metagenomics (#143)
 
 See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
 
