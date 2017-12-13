@@ -34338,7 +34338,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_3817 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3817">
-        <rdfs:label>tex</rdfs:label>
+        <rdfs:label>latex</rdfs:label>
+        <oboInOwl:hasDefinition>format for the LaTeX document preparation system</oboInOwl:hasDefinition>
+        <rdfs:comment>uses the TeX typesetting program format</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
         <created_in>1.20</created_in>
@@ -40270,6 +40272,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:label>PCR primer design (based on gene structure)</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <obsolete_since>1.13</obsolete_since>
+        <oboInOwl:hasDefinition>Predict primers based on gene structure.</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0308"/>
@@ -50673,6 +50676,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Protein and peptide identification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <obsolete_since>1.3</obsolete_since>
+        <oboInOwl:hasDefinition>Protein and peptide identification</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0121"/>
@@ -50715,6 +50719,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Theoretical biology</rdfs:label>
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <obsolete_since>1.3</obsolete_since>
+        <oboInOwl:hasDefinition>Theoretical biology</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3307"/>
@@ -52044,6 +52049,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta13</created_in>
         <obsolete_since>1.3</obsolete_since>
+        <oboInOwl:hasDefinition>Protein interaction networks</oboInOwl:hasDefinition>
         <owl:deprecated>true</owl:deprecated>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0128"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
@@ -53261,12 +53267,12 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/topic_3332">
         <rdfs:label>Computational chemistry</rdfs:label>
+        <oboInOwl:hasDefinition>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <created_in>1.3</created_in>
         <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasDbXref>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDbXref>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
