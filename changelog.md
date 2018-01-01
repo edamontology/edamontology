@@ -7,13 +7,14 @@
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for the detailed list of semantic changes in the EDAM ontology.
 
 ### Summary of changes
-* Numerous Formats added (27, _e.g._ #122, listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-120))
-* Added Topics _Agricultural Science_ and _Metagenomic sequencing_ (#329)
-* Improved a number of synonyms and labels (especially among Operations and Topics, _e.g._ http://edamontology.org/operation_0450, http://edamontology.org/operation_3092, #333, or #143)
-* Fixed a couple of bugs in syntax and `subset` (_e.g._ #331 or http://edamontology.org/data_0889)
+* Numerous Formats added (27, listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-120))
+* Added Topics _Agricultural Science_ and _Metagenomic sequencing_
+* Improved a number of synonyms and labels (especially among Operations and Topics)
+* Fixed a couple of bugs in syntax and `subset`
 * _Binary format_ defined as strictly disjoint with _HTML_, _XML_, and _Textual format_
-* Pre-parsing EDAM into "unrolled" JSON tree structure by [edam2json](https://github.com/edamontology/edam2json) 
+* Pre-parsing EDAM into "unrolled" JSON tree structure by [edam2json](https://github.com/edamontology/edam2json) (https://github.com/edamontology/edamontology/issues/326)
 * Additional CI validations by [edamxpathvalidator](https://github.com/edamontology/edamxpathvalidator): `label`, `definition`, `consider`, `replacedBy`
+* Added a browsable latest-stable version of EDAM to WebProtégé as [EDAM latest stable](https://webprotege.stanford.edu/#projects/98640503-a37d-4404-84da-caf30fadd685/edit/Classes) permalink
 * Major improvements of the [changelog-detailed.md](changelog-detailed.md) file listing detailed semantic changes between stable versions of EDAM
 
 ### Changes in hierarchy
@@ -22,14 +23,14 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for 
 * 7 concepts have changed relations|hierarchy (3 Format, 4 Operation)
 
 ### Fixed issues
--  issues fixed and closed ()
--  issues partially fixed but left open for further improvements ()
+- 22 issues fixed and closed (#122, #143, #183, #197, #198, #199, #200, #211, #234, #261, #262, #272, #285, #286, #304, #327, #329, #330, #331, #332, #333, #337)
+- 5 issues partially fixed but left open for further improvements (#128, #164, #265, #271, #326)
 
 ### Other closed issues
-- 0 invalid issues closed ()
+- 1 invalid issue closed (#176)
 - 0 issues closed, wrong project ()
-- 0 issues closed, won't fix ()
-- 0 issues closed, duplicate ()
+- 3 issues closed, won't fix (#69, #219, #296)
+- 4 issues closed, duplicate (#128, #166, #193, #297)
 
 
 
