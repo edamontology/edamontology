@@ -1,9 +1,25 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
-# EDAM\_1.20.owl
+  - [EDAM_1.20.owl](#edam_120owl)
+  - [EDAM_1.19.owl](#edam_119owl)
+  - [EDAM_1.18.owl](#edam_118owl)
+  - [EDAM_1.17.owl](#edam_117owl)
+  - [EDAM_1.16.owl](#edam_116owl)
+  - [EDAM_1.15.owl](#edam_115owl)
+  - [EDAM_1.14.owl](#edam_114owl)
+  - [EDAM_1.13.owl](#edam_113owl)
+  - [EDAM_1.12.owl](#edam_112owl)
 
-## New concepts:
+# EDAM_1.20.owl
+
+  - [New concepts](#new-concepts) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts)
+  - [All semantic changes](#all-semantic-changes)
+
+## New concepts (1.20):
+
+_**Note**: More details about the new concepts are listed in [All semantic changes](#all-semantic-changes)._
 
 Class: http://edamontology.org/topic_3837
 Label: Metagenomic sequencing
@@ -147,9 +163,9 @@ Label: XMFA
 +   (+) 'XMFA' SubClassOf 'Alignment format (text)'
 
 
-## Changed relations between concepts:
+## Changed relations between concepts (1.20):
 
-_Note: These include concept deprecations ("_SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass_")._
+_**Note**: These include concept deprecations ("SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass")._
 
 Class: http://edamontology.org/data_0853
 Label: DNA sense specification
@@ -241,7 +257,7 @@ Label: Nucleic acid folding analysis
 +   (+) 'Nucleic acid folding analysis' SubClassOf 'Nucleic acid structure prediction'
 
 
-## All semantic changes:
+## All semantic changes (1.20):
 ```
 [-]Alignment 'UI tip' "Not recommended for annotation in bio.tools."
 [+]Alignment 'Usage guideline' "Not recommended for annotation in bio.tools."
@@ -1000,7 +1016,7 @@ Label: Nucleic acid folding analysis
 
 # EDAM\_1.19.owl
 
-## Modified concepts:
+## Modified concepts (1.19):
 
 Class: http://edamontology.org/operation_2963
 Label: Codon usage bias plotting
@@ -1526,7 +1542,7 @@ Label: Protein interaction raw data analysis
 -   (-) 'Protein interaction raw data analysis' SubClassOf 'Protein interaction analysis'
 +   (+) 'Protein interaction raw data analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
 
-## New concepts:
+## New concepts (1.19):
  
 Class: http://edamontology.org/data_3808
 Label: EM Micrograph
@@ -1555,7 +1571,7 @@ Label: Differentially-methylated region identification
 
 # EDAM\_1.18.owl
 
-## Classes modified:
+## Classes modified (1.18):
 
 Class changed: IRI http://edamontology.org/operation_0334
 label: Enzyme kinetics calculation
@@ -1846,7 +1862,7 @@ label: Protein architecture comparison
 
 # EDAM\_1.17.owl
 
-## Classes modified:
+## Classes modified (1.17):
  
 Class: http://edamontology.org/operation_3430
 Label: Nucleic acid sequence feature detection
@@ -2046,7 +2062,7 @@ Label: Viruses
 -   (-) 'Viruses' SubClassOf 'Model organisms'
 +   (+) 'Viruses' SubClassOf 'Biology'
 
-## New classes:
+## New classes (1.17):
  
 Class: http://edamontology.org/topic_3794
 Label: RNA immunoprecipitation
@@ -2108,7 +2124,7 @@ Label: Read binning
 
 # EDAM\_1.16.owl
 
-## Classes modified:
+## Classes modified (1.16):
  
 Class: http://edamontology.org/format_1740
 Label: iHOP text mining abstract format
@@ -2312,7 +2328,7 @@ Label: GTrack
 +   (+) 'GTrack' SubClassOf 'Sequence feature table format (text)'
 
 
-## New classes:
+## New classes (1.16):
  
 Class: http://edamontology.org/format_3787
 Label: Query language
@@ -2530,7 +2546,7 @@ Label: PTM localisation
 
 # EDAM\_1.15.owl
 
-## Classes modified:
+## Classes modified (1.15):
 
 Class: http://edamontology.org/data_0886
 Label: Structure alignment
@@ -2685,7 +2701,7 @@ Label: Query and retrieval
 -   (-) 'Query and retrieval' SubClassOf 'has topic' some 'Information retrieval'
 +   (+) 'Query and retrieval' SubClassOf 'has topic' some 'Data management'
 
-## New classes:
+## New classes (1.15):
  
 Class: http://edamontology.org/format_3750
 Label: YAML
@@ -2775,7 +2791,7 @@ Label: Sample comparison
 
 # EDAM\_1.14.owl
 
-## Classes modified:
+## Classes modified (1.14):
  
 Class: http://edamontology.org/topic_0821
 Label: Enzymes
@@ -2844,7 +2860,7 @@ Class: http://edamontology.org/operation_0248
 Label: Residue interaction calculation
 -   (-) 'Residue interaction calculation' SubClassOf 'Residue interaction calculation'
 
-## New classes:
+## New classes (1.14):
  
 Class: http://edamontology.org/format_3702
 Label: MSF
@@ -2970,7 +2986,7 @@ Label: Metabolic labeling
 
 # EDAM\_1.13.owl
 
-## Classes modified:
+## Classes modified (1.13):
 
 Class: http://edamontology.org/data_0899
 Label: Protein structural motifs and surfaces
@@ -8341,7 +8357,7 @@ Label: Sequence-profile alignment (HMM) format
 -   (-) 'Sequence-profile alignment (HMM) format' SubClassOf 'Obsolete concept (EDAM)'
 +   (+) 'Sequence-profile alignment (HMM) format' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
 
-## New classes:
+## New classes (1.13):
  
 Class: http://edamontology.org/topic_3697
 Label: Microbial ecology
@@ -8451,7 +8467,7 @@ Label: Filtering
 
 # EDAM\_1.12.owl
 
-## Classes modified:
+## Classes modified (1.12):
 
 Class: http://edamontology.org/data_0872
 Label: Phylogenetic tree
@@ -9433,7 +9449,7 @@ Label: Protein-protein interaction prediction (from protein structure)
 -   (-) 'Protein-protein interaction prediction (from protein structure)' SubClassOf 'Protein feature detection'
 +   (+) 'Protein-protein interaction prediction (from protein structure)' SubClassOf 'Obsolete concept (EDAM)'
 
-## New classes:
+## New classes (1.12):
  
 Class: http://edamontology.org/format_3665
 Label: K-mer countgraph
