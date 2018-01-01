@@ -2,20 +2,36 @@
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
-# EDAM\_1.20
+# EDAM 1.20
+
+See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for the detailed list of semantic changes in the EDAM ontology.
+
+### Summary of changes
+* Numerous Formats added (_e.g._ #122)
+* Improved a number of synonyms and labels (especially among Operations and Topics, _e.g._ http://edamontology.org/operation_0450, http://edamontology.org/operation_3092, #333, or #143)
+* Fixed a couple of bugs in syntax and `subset` (_e.g._ #331 or http://edamontology.org/data_0889)
+* Added Topic _Agricultural Science_ (#329)
+* Pre-parsing EDAM into "unrolled" JSON tree structure by [edam2json](https://github.com/edamontology/edam2json) 
+* Additional CI validations by [edamxpathvalidator](https://github.com/edamontology/edamxpathvalidator): `label`, `definition`, `consider`, `replacedBy`
+* Major improvements of the [changelog-detailed.md](changelog-detailed.md#edam_120owl) file listing detailed semantic changes between stable versions of EDAM
+
+### Changes in hierarchy
+*  concepts added  ( Data,  Operation)
+*  concepts deprecated ( Data,  Operation)
+*  concepts have changed relations|hierarchy ( Data,  Operation)
 
 ### Fixed issues
-- syntactic problems in a few terms, now automatically checked for by edamxpathvalidator (#331)
-- fixing bugged subset in http://edamontology.org/data_0889
-- Improved operation label for http://edamontology.org/operation_0450
-- Much better synonyms (& label) for PTM site prediction http://edamontology.org/operation_3092
-- Misc. improved synonyms on Topics & Operations
-- add "NOE assignment" and "Structure calculation" as synonyms of Protein structure assignment (#333)
-- Add topic "Agricultural Science" (#329)
-- Add XMFA format (#122)
-- Add synonyms for Metagenomics (#143)
+-  issues fixed and closed ()
+-  issues partially fixed but left open for further improvements ()
 
-See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
+### Other closed issues
+- 0 invalid issues closed ()
+- 0 issues closed, wrong project ()
+- 0 issues closed, won't fix ()
+- 0 issues closed, duplicate ()
+
+
+
 
 # EDAM\_1.19 [![DOI: 10.5281/zenodo.1039989](https://zenodo.org/badge/DOI/10.5281/zenodo.1039989.svg)](https://doi.org/10.5281/zenodo.1039989)
 
