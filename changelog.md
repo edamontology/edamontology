@@ -7,18 +7,19 @@
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for the detailed list of semantic changes in the EDAM ontology.
 
 ### Summary of changes
-* Numerous Formats added (_e.g._ #122)
+* Numerous Formats added (27, _e.g._ #122, listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-120))
+* Added Topics _Agricultural Science_ and _Metagenomic sequencing_ (#329)
 * Improved a number of synonyms and labels (especially among Operations and Topics, _e.g._ http://edamontology.org/operation_0450, http://edamontology.org/operation_3092, #333, or #143)
 * Fixed a couple of bugs in syntax and `subset` (_e.g._ #331 or http://edamontology.org/data_0889)
-* Added Topic _Agricultural Science_ (#329)
+* _Binary format_ defined as strictly disjoint with _HTML_, _XML_, and _Textual format_
 * Pre-parsing EDAM into "unrolled" JSON tree structure by [edam2json](https://github.com/edamontology/edam2json) 
 * Additional CI validations by [edamxpathvalidator](https://github.com/edamontology/edamxpathvalidator): `label`, `definition`, `consider`, `replacedBy`
-* Major improvements of the [changelog-detailed.md](changelog-detailed.md#edam_120owl) file listing detailed semantic changes between stable versions of EDAM
+* Major improvements of the [changelog-detailed.md](changelog-detailed.md) file listing detailed semantic changes between stable versions of EDAM
 
 ### Changes in hierarchy
-*  concepts added  ( Data,  Operation)
-*  concepts deprecated ( Data,  Operation)
-*  concepts have changed relations|hierarchy ( Data,  Operation)
+* 29 concepts added  (27 Format, 2 Topic)
+* 7 concepts deprecated (3 Data, 1 Format, 3 Operation)
+* 7 concepts have changed relations|hierarchy (3 Format, 4 Operation)
 
 ### Fixed issues
 -  issues fixed and closed ()
