@@ -13,13 +13,13 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 
 # EDAM_1.20.owl
 
-  - [New concepts](#new-concepts) with relations
-  - [Changed relations between concepts](#changed-relations-between-concepts)
-  - [All semantic changes](#all-semantic-changes)
+  - [New concepts](#new-concepts-120) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-120)
+  - [All semantic changes](#all-semantic-changes-120)
 
 ## New concepts (1.20):
 
-_**Note**: More details about the new concepts are listed in [All semantic changes](#all-semantic-changes)._
+_**Note**: More details about the new concepts are listed in [All semantic changes](#all-semantic-changes-120)._
 
 Class: http://edamontology.org/topic_3837
 Label: Metagenomic sequencing
