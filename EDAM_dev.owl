@@ -30,10 +30,10 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
-        <oboOther:date>01.01.2018 05:43 GMT</oboOther:date>
+        <oboOther:date>12.02.2018 13:13 GMT</oboOther:date>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <oboInOwl:savedBy>Jon Ison, Matus Kalas, Hervé Ménager</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
         <doap:Version>1.21_dev</doap:Version>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -52,7 +52,8 @@
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
-        <oboOther:remark>EDAM editors: Jon Ison, Matus Kalas, Herve Menager and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html.  License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
+        <dc:contributor>Veit Schwämmle</dc:contributor>
+        <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
     </owl:Ontology>
@@ -34704,14 +34705,16 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     </owl:Class>
     
 
-<!-- http://edamontology.org/format_3841 -->
+	<!-- http://edamontology.org/format_3841 -->
 
-<owl:Class rdf:about="http://edamontology.org/format_3841">
-    <rdfs:label>NLP format</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
-    <created_in>1.21</created_in>
-    <rdfs:comment>Data format used in Natural Language Processing.</rdfs:comment>
-</owl:Class>
+	<owl:Class rdf:about="http://edamontology.org/format_3841">
+		<rdfs:label>NLP format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+		<created_in>1.21</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+		<oboInOwl:hasDefinition>Data format used in Natural Language Processing.</oboInOwl:hasDefinition>
+	</owl:Class>
 
     
     <!-- http://edamontology.org/operation_0004 -->
@@ -48260,13 +48263,15 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Multilocus sequence typing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3196"/>
         <created_in>1.21</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <oboInOwl:hasDefinition>Genotyping of multiple loci, typically characterizing microbial species isolates using internal fragments of multiple housekeeping genes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>MLST</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref rdf:resource="&oboOther;OBI_0000435"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.phyloviz.net/ontology/typon#MLST"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multilocus_sequence_typing"/>
     </owl:Class>
-    
+
 
 
     <!-- http://edamontology.org/topic_0003 -->
