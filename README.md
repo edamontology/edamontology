@@ -19,9 +19,9 @@ The latest stable version is always at http://edamontology.org/EDAM.owl. For oth
 
 ## Documentation
 
-A comprehensive documentation is available at http://edamontologydocs.readthedocs.io/en/latest/.
-
 A quick overview is at the http://edamontology.org home page.
+
+A comprehensive documentation is available at http://edamontologydocs.readthedocs.io/en/latest/.
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/master/EDAMrelations.png)
@@ -29,10 +29,9 @@ A quick overview is at the http://edamontology.org home page.
 
 ## Citing EDAM
 
-
-If you use or refer to EDAM or its part, please cite:
+If you refer to EDAM or its part in a scholarly publication, please cite:
 
 Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
-DOI: [10.1093/bioinformatics/btt113](http://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348) _Open Access_
+DOI: [![10.1093/bioinformatics/btt113](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btt113.svg)](https://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348) _Open Access_
 
-EDAM releases are citable with DOIs too, for cases when that is needed. [10.5281/zenodo.822690](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/master/releases).
+EDAM releases are citable with DOIs too, for cases when that is needed. [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/master/releases).
