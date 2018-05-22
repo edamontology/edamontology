@@ -46,12 +46,12 @@ File extension(s) in common use delimited by pipe ('|') *e.g.* "png".
 Please specify all file name extensions that are commonly used.
 -->
 **File extension(s):** *<Extension1|Extension2|...>*
- 
+
 <!--
 Media type *e.g.* "image/png".
 Specify the formal media type (if available) as per https://www.iana.org/assignments/media-types/media-types.xhtml.
 -->
-**Media type:** *<mediaType>*
+**Media type:** *<media_type>*
 
 <!--
 Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html".
