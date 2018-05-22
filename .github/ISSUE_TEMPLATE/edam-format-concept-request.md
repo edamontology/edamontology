@@ -51,7 +51,7 @@ Please specify all file name extensions that are commonly used.
 Media type *e.g.* "image/png".
 Specify the formal media type (if available) as per https://www.iana.org/assignments/media-types/media-types.xhtml.
 -->
-**Media type:** *< media_type >*
+**Media type:** < media_type >
 
 <!--
 Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html".
@@ -63,4 +63,4 @@ Specify a DOI of an article (if available) that describes the format, and should
 Comment to the EDAM developers.
 Add any comments you like for the EDAM developers to consider.
 -->
-**Comment:** *< comment >*
+**Comment:** < comment >
