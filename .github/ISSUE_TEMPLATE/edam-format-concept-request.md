@@ -6,12 +6,12 @@ about: Request a new concept is added to the EDAM Format sub-ontology
 
 <!--
 Name of format, *e.g.* "PNG".  
-This is the most commonly used term.  Do not prefix with "." unless the prefixed version e.g. ".nib" really is in prevalent use.
+This is the most commonly used term.  Do not prefix with "." unless the prefixed version *e.g.* ".nib" really is in prevalent use.
 -->
 **Format name:**  *<format_name>*
 
 <!--
-Short description, e.g. "PNG is a file format for image compression." 
+Short description, *e.g.* "PNG is a file format for image compression." 
 A sentence or two describing the format, notably what type of data is used for.  See http://edamontology.org/format_1915 for examples.
 -->
 
@@ -54,7 +54,7 @@ Specify the formal media type (if available) as per https://www.iana.org/assignm
 **Media type:** *<mediaType>*
 
 <!--
-Citation DOI or URL e.g. "https://www.iso.org/standard/29581.html".
+Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html".
 Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  If a DOI is not available, a URL may be specified.
 -->
 **DOI:** *<doi>*
