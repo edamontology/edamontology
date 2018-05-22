@@ -57,4 +57,4 @@ Specify the formal media type (if available) as per https://www.iana.org/assignm
 Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html".
 Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  If a DOI is not available, a URL may be specified.
 -->
-**DOI:** *<doi>*
+**DOI:** *< doi >*
