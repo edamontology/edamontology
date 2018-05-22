@@ -21,7 +21,7 @@ A sentence or two describing the format, notably what type of data is used for. 
 URI(s) of suggested EDAM Format parent(s) delimited by pipe ('|') *e.g.* "http://edamontology.org/format_3547|http://edamontology.org/format_2333".
 Format concepts normally have two parents: 1) indicating the basic type *e.g.* "Binary format", "Textual format" *etc.* (see http://edamontology.org/format_1915) and 2) indicating the type of data *e.g.* "Image format" (see http://edamontology.org/format_2350)
 -->
-**Parent URI(s):** *<EDAM Format URI1|EDAM Format URI2|...>
+**Parent URI(s):** *<EDAM Format URI1|EDAM Format URI2|...>*
 
 <!--
 Exact synonym(s) delimited by pipe ('|') *e.g.* "png" 
@@ -33,7 +33,7 @@ Other commonly-used terms, acronyms *etc.* by which the concept is referred to. 
 URL(s) to formal specification or documentation delimited by pipe ('|') *e.g.* http://www.w3.org/TR/PNG/ 
 Please provide a link to the official specification of the format (if available) and / or to the most pertinent documentation.
 -->
-**Specification/documentation:** *<URL1|URL2|...>"
+**Specification/documentation:** *<URL1|URL2|...>*
 
 <!--
 URI(s) of EDAM Data concept(s) the format represents delimited by pipe ('|') *e.g.* "http://edamontology.org/data_2968"
@@ -45,7 +45,7 @@ Please specify the EDAM Data concept(s) for the type(s) of data represented by t
 File extension(s) in common use delimited by pipe ('|') *e.g.* "png".
 Please specify all file name extensions that are commonly used.
 -->
-**File extension(s):** *<Extension1|Extension2|..."
+**File extension(s):** *<Extension1|Extension2|...*
  
 <!--
 Media type *e.g.* "image/png"
