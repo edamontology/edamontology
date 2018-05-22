@@ -4,7 +4,7 @@ about: Request a new concept is added to the EDAM Format sub-ontology
 
 ---
 
-# *Name of format, *e.g.* "PNG".  
+# Name of format, *e.g.* "PNG".  
 # This is the most commonly used term.  Do not prefix with "." unless the prefixed version e.g. ".nib" really is in prevalent use.  
 **Format name:**  *<format_name>*
 
