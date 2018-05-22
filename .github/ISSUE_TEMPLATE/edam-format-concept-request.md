@@ -39,13 +39,13 @@ Please provide a link to the official specification of the format (if available)
 URI(s) of EDAM Data concept(s) the format represents delimited by pipe ('|') *e.g.* "http://edamontology.org/data_2968"
 Please specify the EDAM Data concept(s) for the type(s) of data represented by the format.  If you are not sure, or if you can't find the Data concept you need, you can use free text *e.g.* "Image data" instead of the URI.
 -->
-**Data represented:** *<EDAM Data URI1|EDAM Data URI2|..."*
+**Data represented:** *<EDAM Data URI1|EDAM Data URI2|...>*
 
 <!--
 File extension(s) in common use delimited by pipe ('|') *e.g.* "png".
 Please specify all file name extensions that are commonly used.
 -->
-**File extension(s):** *<Extension1|Extension2|...*
+**File extension(s):** *<Extension1|Extension2|...>*
  
 <!--
 Media type *e.g.* "image/png"
