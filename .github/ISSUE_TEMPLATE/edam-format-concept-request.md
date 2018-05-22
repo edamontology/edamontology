@@ -63,4 +63,4 @@ Specify a DOI of an article (if available) that describes the format, and should
 Comment to the EDAM developers.
 Add any comments you like for the EDAM developers to consider.
 -->
-**Comment:** < comment >
+**Comment:** *< comment >*
