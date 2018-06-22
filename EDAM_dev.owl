@@ -10847,9 +10847,8 @@
         <rdfs:label>Heat map</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2968"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3768"/>
-        <oboInOwl:hasDefinition>A graphical 2D tabular representation of gene expression data, typically derived from a DNA microarray experiment.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>A heat map is a table where rows and columns correspond to different genes and contexts (for example, cells or samples) and the cell color represents the level of expression of a gene that context.</rdfs:comment>
+        <oboInOwl:hasDefinition>A graphical 2D tabular representation of expression data, typically derived from an omics experiment. A heat map is a table where rows and columns correspond to different features and contexts (for example, cells or samples) and the cell colour represents the level of expression of a gene that context.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -17611,7 +17610,7 @@
     <!-- http://edamontology.org/data_2603 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2603">
-        <rdfs:label>Gene expression data</rdfs:label>
+        <rdfs:label>Expression data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -17622,7 +17621,6 @@
         <oboInOwl:hasRelatedSynonym>Protein profile</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Proteome profile</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasNarrowSynonym>Gene transcription quantification data</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Image, hybridisation or some other data arising from a study of gene expression, typically profiling or quantification.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>mRNA profile</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene product quantification data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>Protein quantification data</oboInOwl:hasRelatedSynonym>
@@ -17631,13 +17629,17 @@
         <oboInOwl:hasNarrowSynonym>RNA profile</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene transcription profile</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene product profile</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite expression data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Non-coding RNA profile</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Transcriptome profile</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein expression data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>mRNA quantification data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Non-coding RNA quantification data</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Transcriptome quantification data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>Proteome quantification data</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasNarrowSynonym>RNA-seq data</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition> Image, hybridisation or some other data arising from a study of feature/molecule expression, typically profiling or quantification.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Microarray data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -24192,10 +24194,11 @@
     <!-- http://edamontology.org/data_3768 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3768">
-        <rdfs:label>Clustered gene expression profiles</rdfs:label>
+        <rdfs:label>Clustered expression profiles</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2603"/>
+        <oboInOwl:hasDefinition>Groupings of expression profiles according to a clustering algorithm.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDefinition>Groupings of gene expression profiles according to a clustering algorithm.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Clustered gene expression profiles</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -36687,7 +36690,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0313 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0313">
-        <rdfs:label>Gene expression clustering</rdfs:label>
+        <rdfs:label>Expression profile clustering</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0315"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3432"/>
         <rdfs:subClassOf>
@@ -36696,9 +36699,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Gene expression profile clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression profile clustering</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Perform cluster analysis of gene expression data to identify groups with similar gene-expression profiles, for example by clustering.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene expression clustering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Perform cluster analysis of expression data to identify groups with similar expression profiles, for example by clustering.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -36709,31 +36713,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0314">
         <rdfs:label>Gene expression profiling</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0928"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasNarrowSynonym>Metagenomic inference</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Gene expression profile construction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:hasDefinition>
-        <oboInOwl:hasRelatedSynonym>Protein profiling</oboInOwl:hasRelatedSynonym>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Gene_expression_profiling</rdfs:seeAlso>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasNarrowSynonym>RNA profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasBroadSynonym>Gene expression quantification</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasNarrowSynonym>Non-coding RNA profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>mRNA profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene transcription profiling</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>Gene expression profiling generates some sort of gene expression profile, for example from microarray data.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>Gene expression profile generation</oboInOwl:hasExactSynonym>
-        <rdfs:comment>Metagenomic inference is the profiling of phylogenetic marker genes in order to predict metagenome function.</rdfs:comment>
-        <oboInOwl:hasRelatedSynonym>Functional profiling</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.21</obsolete_since>
+        <oboInOwl:hasDefinition>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:hasDefinition>
+        <oldParent rdf:resource="http://edamontology.org/operation_2495"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2495"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -36741,18 +36728,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0315 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0315">
-        <rdfs:label>Gene expression comparison</rdfs:label>
+        <rdfs:label>Expression profile comparison</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2998"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3111"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Gene expression profile comparison</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Comparison of gene expression profiles.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Comparison of expression profiles.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene expression comparison</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasNarrowSynonym>Gene expression profile comparison</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -40511,7 +40492,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0533 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0533">
-        <rdfs:label>Gene to pathway mapping</rdfs:label>
+        <rdfs:label>Expression profile pathway mapping</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2429"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
@@ -40521,11 +40502,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2984"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasNarrowSynonym>Gene expression profile pathway mapping</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene to pathway mapping</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Gene expression profile pathway mapping</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Map a gene expression profile to known biological pathways, for example, to identify or reconstruct a pathway.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Pathway mapping</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gene-to-pathway mapping</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene-to-pathway mapping</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Map an expression profile to known biological pathways, for example, to identify or reconstruct a pathway.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
@@ -42880,7 +42862,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2436">
         <rdfs:label>Gene-set enrichment analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3224"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3501"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -42897,8 +42879,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:comment>The Gene Ontology (GO) is typically used, the input is a set of Gene IDs, and the output of the analysis is typically a ranked list of GO concepts, each associated with a p-value.</rdfs:comment>
         <oboInOwl:hasRelatedSynonym>GO-term enrichment</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Gene Ontology term enrichment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym>Gene set testing</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasRelatedSynonym>Gene Ontology concept enrichment</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:comment>Analyse gene expression patterns to identify sets of genes that are associated with a specific trait, condition, clinical outcome etc.</oboInOwl:comment>
         <oboInOwl:hasExactSynonym>Gene-set over-represenation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:comment>Gene sets can be defined beforehand by biological function, chromosome locations and so on.</oboInOwl:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analysis of a set of genes, corresponding e.g. to a gene expression profile, annotated with Gene Ontology (GO) concepts, where eventual over-/under-representation of certain GO concept within the studied set of genes is revealed.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -43834,7 +43819,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2495 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2495">
-        <rdfs:label>Gene expression analysis</rdfs:label>
+        <rdfs:label>Expression analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -43842,13 +43827,33 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>Feature expression analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression profile construction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>mRNA profiling</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>The application of bioinformatics methods to the study of gene products, typically by processing gene expression data or profiles, interpreting them in functional terms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene expression profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray data analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasExactSynonym>Gene expression data analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Expression data analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression profile generation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression data analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite expression analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene transcription profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>Gene expression profiling generates some sort of gene expression profile, for example from microarray data.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>Metagenomic inference</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein expression analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>Non-coding RNA profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>Metagenomic inference is the profiling of phylogenetic marker genes in order to predict metagenome function.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>RNA profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Process (read and/or write) expression data from experiments measuring molecules (e.g. omics data), including analysis of one or more expression profiles, typically to interpret them in functional terms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene expression quantification</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Functional profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/w/index.php?title=Gene_expression_analysis"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_expression_profiling"/>
     </owl:Class>
     
 
@@ -45885,12 +45890,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3224">
         <rdfs:label>Gene set testing</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.21</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
         <created_in>1.1</created_in>
-        <rdfs:comment>Gene sets can be defined beforehand by biological function, chromosome locations and so on.</rdfs:comment>
         <oboInOwl:hasDefinition>Analyse gene expression patterns (typically from DNA microarray datasets) to identify sets of genes that are associated with a specific trait, condition, clinical outcome etc.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2436"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_2495"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -45992,7 +45999,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3232">
         <rdfs:label>Gene expression QTL analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0314"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -46826,14 +46833,16 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3463 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3463">
-        <rdfs:label>Gene expression correlation</rdfs:label>
+        <rdfs:label> Expression correlation analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0315"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3465"/>
+        <oboInOwl:hasExactSynonym>Co-expression analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene expression correlation analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Analyse the correlation patterns among features/molecules across across a variety of experiments, samples etc.</oboInOwl:hasDefinition>
         <created_in>1.7</created_in>
-        <oboInOwl:hasExactSynonym>Gene co-expression network analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gene expression correlation analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Analyse the correlation patterns among genes across across a variety of experiments, microarray samples etc.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:hasNarrowSynonym>Gene expression correlation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene co-expression network analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
     
