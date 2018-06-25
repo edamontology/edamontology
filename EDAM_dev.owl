@@ -41696,7 +41696,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_1812 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_1812">
-        <rdfs:label>Loading</rdfs:label>
+        <rdfs:label>Parsing</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -41705,8 +41705,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Data loading</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Loading</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>WHATIF:UploadPDB</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>Prepare or load a user-specified data file so that it is available for use.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Parse, prepare or load a user-specified data file so that it is available for use.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
