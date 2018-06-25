@@ -11601,6 +11601,8 @@
         <rdfs:comment>The molecular identifier and formula are typically included.</rdfs:comment>
         <oboInOwl:hasExactSynonym>Small molecule structure image</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasNarrowSynonym>Small molecule sketch</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Chemical structure sketch</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -11979,15 +11981,17 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1744">
         <rdfs:label>Atomic x coordinate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1743"/>
-        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_x</oboInOwl:hasDbXref>
-        <is_deprecation_candidate>true</is_deprecation_candidate>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasExactSynonym>Cartesian x coordinate</oboInOwl:hasExactSynonym>
-        <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_x in PDBML</oboInOwl:hasDbXref>
+        <obsolete_since>1.21</obsolete_since>
+        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_x</oboInOwl:hasDbXref>
+        <created_in>beta12orEarlier</created_in>
+        <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasDefinition>Cartesian x coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -11996,15 +12000,17 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1745">
         <rdfs:label>Atomic y coordinate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1743"/>
-        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_y</oboInOwl:hasDbXref>
-        <is_deprecation_candidate>true</is_deprecation_candidate>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasExactSynonym>Cartesian y coordinate</oboInOwl:hasExactSynonym>
+        <owl:deprecated>true</owl:deprecated>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_y in PDBML</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cartesian y coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_y</oboInOwl:hasDbXref>
+        <obsolete_since>1.21</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -12013,15 +12019,17 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1746">
         <rdfs:label>Atomic z coordinate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1743"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_z</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_z</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cartesian z coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <owl:deprecated>true</owl:deprecated>
         <oboInOwl:hasExactSynonym>Cartesian z coordinate</oboInOwl:hasExactSynonym>
-        <is_deprecation_candidate>true</is_deprecation_candidate>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <obsolete_since>1.21</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -23603,14 +23611,16 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_3490">
         <rdfs:label>Chemical structure sketch</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1712"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.21</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
         <rdfs:comment>Chemical structure sketches are used for presentational purposes but also as inputs to various analysis software.</rdfs:comment>
         <created_in>1.8</created_in>
-        <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:hasExactSynonym>Small molecule sketch</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A sketch of a small molecule made with some specialised drawing package.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1712"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1712"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
