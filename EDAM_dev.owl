@@ -46,12 +46,12 @@
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
+        <next_id>3860</next_id>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3859</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -35002,6 +35002,23 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.21</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3859 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3859">
+        <rdfs:label>JCAMP-DX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:comment> JCAMP-DX is an ASCII based format and therefore not very compact even though it includes standards for file compression.</rdfs:comment>
+        <oboInOwl:hasDefinition>A standardized file format for data exchange in mass spectrometry, initially developed for infrared spectrometry.</oboInOwl:hasDefinition>
+        <created_in>1.21</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
+        <documentation rdf:resource="http://www.jcamp-dx.org/drafts/JCAMP6_2b%20Draft.pdf"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mass_spectrometry_data_format#cite_note-3"/>
     </owl:Class>
     
 
