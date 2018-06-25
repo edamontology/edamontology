@@ -51,7 +51,7 @@
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3858</next_id>
+        <next_id>3859</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -34981,11 +34981,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3857">
         <rdfs:label>CWL</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <oboInOwl:hasDefinition>Common Workflow Language (CWL) format for description of command-line tools and workflows.</oboInOwl:hasDefinition>
         <created_in>1.21</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <oboInOwl:hasDefinition rdf:resource="https://www.commonwl.org/v1.0/CommandLineTool.html"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3858 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3858">
+        <rdfs:label>Waters RAW</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <oboInOwl:hasDefinition>Proprietary file format for mass spectrometry data from Waters.</oboInOwl:hasDefinition>
+        <rdfs:comment>Proprietary format for which documentation is not available, but used by multiple tools.</rdfs:comment>
+        <created_in>1.21</created_in>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
     
 
