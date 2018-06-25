@@ -46,9 +46,9 @@
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
-        <next_id>3860</next_id>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <next_id>3861</next_id>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Jon Ison</dc:creator>
@@ -48570,6 +48570,27 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
         <oboInOwl:hasDbXref rdf:resource="http://purl.phyloviz.net/ontology/typon#MLST"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multilocus_sequence_typing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3860 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3860">
+        <rdfs:label>Spectrum calculation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0250"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym>Spectrum prediction</oboInOwl:hasExactSynonym>
+        <created_in>1.21</created_in>
+        <oboInOwl:hasDefinition>Calculate a theoretical mass spectrometry spectra for given sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
     
 
