@@ -47,8 +47,8 @@
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
+        <next_id>3862</next_id>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id>3861</next_id>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Jon Ison</dc:creator>
@@ -13784,6 +13784,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:comment>You can use this term by default for any textual report, in case you can&apos;t find another, more specific term. Reports may be generated automatically or collated by hand and can include metadata on the origin, source, history, ownership or location of some thing.</rdfs:comment>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000148</rdfs:seeAlso>
+        <oboInOwl:hasExactSynonym>Record</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Document</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A human-readable collection of information including annotation on a biological entity or phenomena, computer-generated reports of analysis of primary data (e.g. sequence or structural), and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
@@ -21786,7 +21787,7 @@
         <rdfs:label>Image</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000081</rdfs:seeAlso>
-        <oboInOwl:hasDefinition>Biological or biomedical data has been rendered into an image, typically for display on screen.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data (typically biological or biomedical) that has been rendered into an image, typically for display on screen.</oboInOwl:hasDefinition>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000079</rdfs:seeAlso>
         <oboInOwl:hasExactSynonym>Image data</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
@@ -24405,6 +24406,22 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#identifiers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3861 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3861">
+        <rdfs:label>Electronic health record</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <oboInOwl:hasExactSynonym>EHR</oboInOwl:hasExactSynonym>
+        <created_in>1.21</created_in>
+        <oboInOwl:hasExactSynonym>Electronic medical record</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>EMR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A systematic collection of patient (or population) health information in a digital format.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
     
 
@@ -52879,6 +52896,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <oboInOwl:hasDefinition>The acquisition of data, typically measurements of physical systems using any type of sampling system, or by another other means.</oboInOwl:hasDefinition>
         <created_in>beta13</created_in>
+        <oboInOwl:hasExactSynonym>Data collection</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
     </owl:Class>
@@ -53631,9 +53649,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:label>Computer science</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.3</created_in>
-        <oboInOwl:hasHumanReadableId>Computer_science</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Cloud computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDbXref>VT 1.2 Computer sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.2.99 Other</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym>High performance computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>High-performance computing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasHumanReadableId>Computer_science</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>HPC</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDefinition>The theory and practical use of computer systems.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#events"/>
@@ -54333,6 +54355,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasHumanReadableId>Medical_imaging</oboInOwl:hasHumanReadableId>
         <created_in>1.4</created_in>
         <oboInOwl:hasNarrowSynonym>Radiology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Neuroimaging</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDbXref>VT 3.2.14 Nuclear medicine</oboInOwl:hasDbXref>
         <oboInOwl:hasNarrowSynonym>Nuclear medicine</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasDbXref>VT 3.2.13 Medical imaging</oboInOwl:hasDbXref>
@@ -55710,6 +55733,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasHumanReadableId>Pure_mathematics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasDbXref>VT 1.1.1 Pure mathematics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of abstract mathematical concepts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Linear algebra</oboInOwl:hasNarrowSynonym>
         <created_in>1.10</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#topics"/>
@@ -55742,6 +55766,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDefinition>The quality, integrity, and cleaning up of data. </oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Data_quality_management</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Data quality</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data cleaning</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Data integrity</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Data clean-up</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
