@@ -31127,7 +31127,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3162">
         <rdfs:label>MAGE-TAB</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
@@ -31911,9 +31911,10 @@
         <rdfs:label>TSV</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3751"/>
         <file_extension>tsv|tab</file_extension>
-        <oboInOwl:hasDefinition>Tabular data represented as tab-separated values in a text file.</oboInOwl:hasDefinition>
-        <created_in>1.7</created_in>
         <oboInOwl:hasExactSynonym>Tab-separated values</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Tabular data represented as tab-separated values in a text file.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Tab-delimited</oboInOwl:hasExactSynonym>
+        <created_in>1.7</created_in>
         <oboInOwl:hasDbXRef rdf:resource="http://filext.com/file-extension/TSV"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
