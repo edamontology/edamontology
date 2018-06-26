@@ -21875,6 +21875,8 @@
         <rdfs:label>Protein sequence (raw)</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0848"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2976"/>
+        <oboInOwl:hasExactSynonym>Raw amino acid sequences</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raw amino acid sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw protein sequence</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Raw sequence (protein)</oboInOwl:hasExactSynonym>
@@ -21911,6 +21913,8 @@
         <oboInOwl:hasDefinition>One or more protein sequences, possibly with associated annotation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein sequences</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasExactSynonym>Amino acid sequence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Amino acid sequences</oboInOwl:hasExactSynonym>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#AminoAcidSequenceInformation</rdfs:seeAlso>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -34765,10 +34769,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <oboInOwl:hasDefinition>Microsoft Powerpoint format.</oboInOwl:hasDefinition>
         <created_in>1.20</created_in>
-        <media_type rdf:resource="(https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
         <documentation rdf:resource="https://msdn.microsoft.com/en-us/library/dd926741(v=office.12).aspx"/>
+        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
     </owl:Class>
     
 
