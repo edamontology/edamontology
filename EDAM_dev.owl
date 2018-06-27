@@ -1976,7 +1976,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Protein sequence statistics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Protein properties</oboInOwl:hasExactSynonym>
-        <rdfs:comment>The report may be based on analysis of nucleic acid sequence or structural data. This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
+        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.  Data may be based on analysis of nucleic acid sequence or structural data, for example reports on the surface properties (shape, hydropathy, electrostatic patches etc) of a protein structure, protein flexibility or motion, and protein architecture (spatial arrangement of secondary structure).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -2090,8 +2090,8 @@
     <!-- http://edamontology.org/data_0906 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_0906">
-        <rdfs:label>Protein interaction report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1537"/>
+        <rdfs:label>Protein interaction data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0897"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -2103,11 +2103,11 @@
         <oboInOwl:hasExactSynonym>Protein interaction record</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Residue interaction data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Atom interaction data</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein non-covalent interactions report</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>An informative report on interactions (predicted or known) within or between a protein, structural domain or part of a protein. This includes intra- and inter-residue contacts and distances, as well as interactions with other proteins and non-protein entities such as nucleic acid, metal atoms, water, ions etc. 
+        <oboInOwl:hasDefinition>Data concerning the interactions (predicted or known) within or between a protein, structural domain or part of a protein. This includes intra- and inter-residue contacts and distances, as well as interactions with other proteins and non-protein entities such as nucleic acid, metal atoms, water, ions etc. 
 
  
 </oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein non-covalent interactions report</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -2181,11 +2181,16 @@
     <owl:Class rdf:about="http://edamontology.org/data_0912">
         <rdfs:label>Nucleic acid property</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2087"/>
+        <oboInOwl:comment>Nucleic acid structural properties stiffness, curvature, twist/roll data or other conformational parameters or properties.
+</oboInOwl:comment>
         <oboInOwl:hasDefinition>A report of primarily non-positional data describing intrinsic physical, chemical or other properties of a nucleic acid molecule.</oboInOwl:hasDefinition>
-        <rdfs:comment>The report may be based on analysis of nucleic acid sequence or structural data. This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>Nucleic acid physicochemical property</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
+        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.
+</rdfs:comment>
+        <oboInOwl:hasExactSynonym>Nucleic acid physicochemical property</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>GC-content</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid property (structural)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid structural property</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -2216,7 +2221,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_0916">
         <rdfs:label>Gene report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1276"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
         <oboInOwl:hasExactSynonym>Gene structure (repot)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A report on predicted or actual gene structure, regions which make an RNA product and features such as promoters, coding regions, splice sites etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene and transcript structure (report)</oboInOwl:hasExactSynonym>
@@ -2271,7 +2276,7 @@
         <rdfs:label>Chromosome report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>An informative report on a specific chromosome.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific chromosome.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes basic information. e.g. chromosome number, length, karyotype features, chromosome sequence etc.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -2284,8 +2289,8 @@
     <owl:Class rdf:about="http://edamontology.org/data_0920">
         <rdfs:label>Genotype/phenotype report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>An informative report on the set of genes (or allelic forms) present in an individual, organism or cell and associated with a specific physical characteristic, or a report concerning an organisms traits and phenotypes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genotype/phenotype annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about the set of genes (or allelic forms) present in an individual, organism or cell and associated with a specific physical characteristic, or a report concerning an organisms traits and phenotypes.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -2384,7 +2389,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Gene annotation (linkage)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Linkage disequilibrium (report)</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>An informative report on the linkage of alleles.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about the linkage of alleles.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes linkage disequilibrium; the non-random association of alleles or polymorphisms at two or more loci (not necessarily on the same chromosome).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -2820,8 +2825,8 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>A report of an analysis of an index of biological data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Database index annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information concerning an analysis of an index of biological data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -2896,7 +2901,7 @@
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Small molecule annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chemical structure report</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>An informative report on a specific chemical compound.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific chemical compound.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Chemical compound annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -2912,8 +2917,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2530"/>
         <oboInOwl:hasExactSynonym>Organism strain data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Cell line annotation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Report on a particular strain of organism cell line including plants, virus, fungi and bacteria. The data typically includes strain number, organism type, growth conditions, source and so on.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a particular strain of organism cell line including plants, virus, fungi and bacteria. The data typically includes strain number, organism type, growth conditions, source and so on.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -3025,7 +3030,7 @@
         <rdfs:label>Text mining report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2526"/>
-        <oboInOwl:hasDefinition>An abstract of the results of text mining.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information resulting from text mining.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Text mining output</oboInOwl:hasExactSynonym>
         <rdfs:comment>A text mining abstract will typically include an annotated a list of words or sentences extracted from one or more scientific articles.</rdfs:comment>
@@ -7195,7 +7200,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1274">
         <rdfs:label>Map</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -7216,14 +7221,13 @@
     <owl:Class rdf:about="http://edamontology.org/data_1276">
         <rdfs:label>Nucleic acid features</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1255"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
-        <oboInOwl:hasDefinition>An informative report on intrinsic positional features of a nucleotide sequence.</oboInOwl:hasDefinition>
-        <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasNarrowSynonym>Genome features</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>This includes nucleotide sequence feature annotation in any known sequence feature table format and any other report of nucleic acid features.</rdfs:comment>
         <oboInOwl:hasNarrowSynonym>Genomic features</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid feature table</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>An informative report on intrinsic positional features of a nucleotide sequence, formatted to be machine-readable.</oboInOwl:hasDefinition>
+        <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Feature table (nucleic acid)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Genome features</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment>This includes nucleotide sequence feature annotation in any known sequence feature table format and any other report of nucleic acid features.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -10155,11 +10159,10 @@
         <rdfs:label>Protein structure report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0896"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2085"/>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more specific protein 3D structure(s) or structural domains.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein structural property</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein structure-derived report</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This includes for example reports on the surface properties (shape, hydropathy, electrostatic patches etc) of a protein structure, protein flexibility or motion, and protein architecture (spatial arrangement of secondary structure).</rdfs:comment>
         <oboInOwl:hasExactSynonym>Protein property (structural)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>Annotation about, or structural information derived from, one or more specific protein 3D structure(s) or structural domains.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Protein report (structure)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein structure report (domain)</oboInOwl:hasExactSynonym>
@@ -10221,11 +10224,11 @@
     <!-- http://edamontology.org/data_1542 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1542">
-        <rdfs:label>Protein solvent accessibility report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1537"/>
-        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.  It is primarily intended to help navigation of EDAM and would not typically be used for annotation. This concept covers definitions of the protein surface, interior and interfaces, accessible and buried residues, surface accessible pockets, interior inaccessible cavities etc.</rdfs:comment>
+        <rdfs:label>Protein solvent accessibility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0897"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data on the solvent accessible or buried surface area of a protein structure.</oboInOwl:hasDefinition>
+        <rdfs:comment>This concept covers definitions of the protein surface, interior and interfaces, accessible and buried residues, surface accessible pockets, interior inaccessible cavities etc.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -10546,7 +10549,13 @@
         <oboInOwl:hasExactSynonym>Nucleic acid stability profile</oboInOwl:hasExactSynonym>
         <rdfs:comment>A melting (stability) profile calculated the free energy required to unwind and separate the nucleic acid strands, plotted for sliding windows over a sequence.</rdfs:comment>
         <oboInOwl:hasDefinition>Data on the dissociation characteristics of a double-stranded nucleic acid molecule (DNA or a DNA/RNA hybrid) during heating.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Melting map</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>Nucleic acid temperature profile: a temperature profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Plots melting temperature versus base position.</oboInOwl:comment>
+        <oboInOwl:comment>Nucleic acid melting curve: a melting curve of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Shows the proportion of nucleic acid which are double-stranded versus temperature.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid melting curve</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>Nucleic acid stitch profile: stitch profile of hybridised or double stranded nucleic acid (DNA or RNA/DNA). A stitch profile diagram shows partly melted DNA conformations (with probabilities) at a range of temperatures. For example, a stitch profile might show possible loop openings with their location, size, probability and fluctuations at a given temperature.</oboInOwl:comment>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:comment>Nucleic acid probability profile: a probability profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Shows the probability of a base pair not being melted (i.e. remaining as double-stranded DNA) at a specified temperature</oboInOwl:comment>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -10598,12 +10607,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1587">
         <rdfs:label>Nucleic acid stitch profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1583"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.21</obsolete_since>
         <oboInOwl:hasDefinition>Stitch profile of hybridised or double stranded nucleic acid (DNA or RNA/DNA).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>A stitch profile diagram shows partly melted DNA conformations (with probabilities) at a range of temperatures. For example, a stitch profile might show possible loop openings with their location, size, probability and fluctuations at a given temperature.</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oldParent rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -10727,11 +10738,11 @@
     <owl:Class rdf:about="http://edamontology.org/data_1596">
         <rdfs:label>Nucleic acid folding report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
+        <oboInOwl:hasDefinition>A human-readable collection of information about RNA/DNA folding, minimum folding energies for DNA or RNA sequences, energy landscape of RNA mutants etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid report (folding)</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Nucleic acid report (folding model)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>RNA secondary structure folding probablities</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>A report on an analysis of RNA/DNA folding, minimum folding energies for DNA or RNA sequences, energy landscape of RNA mutants etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>RNA secondary structure folding classification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -10837,7 +10848,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0920"/>
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>The report might correlate gene expression or single-nucleotide polymorphisms with drug efficacy or toxicity.</rdfs:comment>
-        <oboInOwl:hasDefinition>Data on the influence of genotype on drug response.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about the influence of genotype on drug response.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -10855,9 +10866,9 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0634"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>An informative report on a specific disease.</oboInOwl:hasDefinition>
         <rdfs:comment>For example, an informative report on a specific tumor including nature and origin of the sample, anatomic site, organ or tissue, tumor type, including morphology and/or histologic type, and so on.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific disease.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -11034,11 +11045,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1662">
         <rdfs:label>Drug structure relationship map</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1696"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>A report typically including a map (diagram) of drug structure relationships.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <obsolete_since>1.21</obsolete_since>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1696"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1696"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -11517,7 +11531,9 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0154"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasDefinition>An informative report on a specific drug.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>A drug structure relationship map is report (typically a map diagram) of drug structure relationships.</oboInOwl:comment>
+        <oboInOwl:hasNarrowSynonym>Drug structure relationship map</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific drug.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Drug annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -11613,7 +11629,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1713">
         <rdfs:label>Fate map</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2530"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2968"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -12784,13 +12799,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1864">
         <rdfs:label>Map set data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2019"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Data describing a set of multiple genetic or physical maps, typically sharing a common set of features which are mapped.</oboInOwl:hasDefinition>
-        <oboInOwl:hasDbXref>Moby:GCP_CorrelatedLinkageMapSet</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>Moby:GCP_CorrelatedMapSet</oboInOwl:hasDbXref>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.21</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_2019"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2019"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -13517,9 +13533,9 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2012">
         <rdfs:label>Sequence coordinates</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1016"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1017"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2019"/>
         <oboInOwl:hasExactSynonym>Map position</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDbXref>Moby:Position</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>Locus</oboInOwl:hasExactSynonym>
@@ -13582,10 +13598,10 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0102"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:hasExactSynonym>Map attribute</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>A molecular map (genetic or physical), an attribute of such a map, or data extracted from or derived from the analysis of such a map.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.  It is primarily intended to help navigation of EDAM and would not typically be used for annotation. It includes concepts that are best described as scientific text or closely concerned with or derived from text.</rdfs:comment>
+        <oboInOwl:hasDefinition>Data describing a molecular map (genetic or physical) or a set of such maps, including various attributes of, data extracted from or derived from the analysis of them, but exluding the map(s) themselves. This  includes metadata for map sets that share a common set of features which are mapped.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Map set data</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Map attribute</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -13936,7 +13952,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_2084">
         <rdfs:label>Nucleic acid report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>An informative human-readable report about one or more specific nucleic acid molecules, derived from analysis of primary (sequence or structural) data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more specific nucleic acid molecules.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -13949,9 +13965,9 @@
     <owl:Class rdf:about="http://edamontology.org/data_2085">
         <rdfs:label>Structure report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>An informative report on general information, properties or features of one or more molecular tertiary (3D) structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Structure-derived report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more molecular tertiary (3D) structures.  It might include annotation on the structure, a computer-generated report of analysis of structural data, and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -13962,14 +13978,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2086">
         <rdfs:label>Nucleic acid structure data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0912"/>
-        <oboInOwl:hasExactSynonym>Nucleic acid property (structural)</oboInOwl:hasExactSynonym>
-        <rdfs:comment>This includes reports on the stiffness, curvature, twist/roll data or other conformational parameters or properties.</rdfs:comment>
-        <oboInOwl:hasExactSynonym>Nucleic acid structural property</oboInOwl:hasExactSynonym>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.21</obsolete_since>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>A report on nucleic acid structure-derived data, describing structural properties of a DNA molecule, or any other annotation or information about specific nucleic acid 3D structure(s).</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_0912"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_3128"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -13993,7 +14009,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2088">
         <rdfs:label>DNA base structural data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2086"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0912"/>
         <oboInOwl:hasDefinition>Structural data for DNA base pairs or runs of bases, such as energy or angle data.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -15858,8 +15874,8 @@
     <owl:Class rdf:about="http://edamontology.org/data_2313">
         <rdfs:label>Carbohydrate report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2085"/>
-        <oboInOwl:hasDefinition>Annotation on or information derived from one or more specific carbohydrate 3D structure(s).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more specific carbohydrate 3D structure(s).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -16278,8 +16294,8 @@
         <rdfs:label>RNA family report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3148"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>An informative report on a specific RNA family or other group of classified RNA sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>RNA family annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific RNA family or other group of classified RNA sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -17089,9 +17105,9 @@
     <owl:Class rdf:about="http://edamontology.org/data_2530">
         <rdfs:label>Organism report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>An informative report on a specific organism.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasExactSynonym>Organism annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a specific organism.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -17106,7 +17122,7 @@
         <oboInOwl:hasNarrowSynonym>Experiment metadata</oboInOwl:hasNarrowSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasNarrowSynonym>Experiment annotation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasDefinition>Annotation on a wet lab experiment, such as experimental conditions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a wet lab experiment, such as experimental conditions.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -19254,7 +19270,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_2711">
         <rdfs:label>Genome report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2530"/>
-        <oboInOwl:hasDefinition>An informative report of general information concerning a genome as a whole.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A human-readable collection of information concerning a genome as a whole.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -21010,8 +21026,8 @@
     <owl:Class rdf:about="http://edamontology.org/data_2879">
         <rdfs:label>Lipid report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2085"/>
+        <oboInOwl:hasDefinition>A human-readable collection of information about one or more specific lipid 3D structure(s).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Annotation on or information derived from one or more specific lipid 3D structure(s).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -21653,9 +21669,9 @@
     <!-- http://edamontology.org/data_2956 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2956">
-        <rdfs:label>Protein secondary structure report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1537"/>
-        <oboInOwl:hasDefinition>An informative report about the properties or features of one or more protein secondary structures.</oboInOwl:hasDefinition>
+        <rdfs:label>Protein secondary structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0897"/>
+        <oboInOwl:hasDefinition>Data concerning the properties or features of one or more protein secondary structures.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -21681,13 +21697,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2958">
         <rdfs:label>Nucleic acid melting curve</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1583"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2884"/>
-        <rdfs:comment>Shows the proportion of nucleic acid which are double-stranded versus temperature.</rdfs:comment>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
+        <obsolete_since>1.21</obsolete_since>
         <oboInOwl:hasDefinition>A melting curve of a double-stranded nucleic acid molecule (DNA or DNA/RNA).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1583"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -21696,12 +21713,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2959">
         <rdfs:label>Nucleic acid probability profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1583"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>A probability profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA).</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
-        <rdfs:comment>Shows the probability of a base pair not being melted (i.e. remaining as double-stranded DNA) at a specified temperature</rdfs:comment>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.21</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -21710,13 +21729,14 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2960">
         <rdfs:label>Nucleic acid temperature profile</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1583"/>
+        <rdfs:subClassOf rdf:resource="&owl;DeprecatedClass"/>
         <oboInOwl:hasDefinition>A temperature profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA).</oboInOwl:hasDefinition>
-        <rdfs:comment>Plots melting temperature versus base position.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasExactSynonym>Melting map</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
-        <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
+        <owl:deprecated>true</owl:deprecated>
+        <obsolete_since>1.21</obsolete_since>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1583"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1583"/>
+        <oboInOwl:inSubset rdf:resource="&oboOther;edam#obsolete"/>
     </owl:Class>
     
 
@@ -22040,7 +22060,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2984">
         <rdfs:label>Pathway or network report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3753"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -22121,8 +22141,8 @@
     <!-- http://edamontology.org/data_2991 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2991">
-        <rdfs:label>Protein geometry report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1537"/>
+        <rdfs:label>Protein geometry data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0897"/>
         <oboInOwl:hasExactSynonym>Torsion angle data</oboInOwl:hasExactSynonym>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Geometry data for a protein structure, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc.</oboInOwl:hasDefinition>
@@ -22762,12 +22782,13 @@
         <rdfs:label>Nucleic acid structure report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2085"/>
-        <oboInOwl:hasDefinition>A report on regions within a nucleic acid sequence which form secondary or tertiary (3D) structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Stem loop (report)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about regions within a nucleic acid sequence which form secondary or tertiary (3D) structures.</oboInOwl:hasDefinition>
+        <created_in>beta13</created_in>
         <oboInOwl:hasNarrowSynonym>d-loop (report)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:comment>The report may be based on analysis of nucleic acid sequence or structural data, or any annotation or information about specific nucleic acid 3D structure(s) or such structures in general.</oboInOwl:comment>
         <oboInOwl:hasExactSynonym>Nucleic acid features (structure)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Quadruplexes (report)</oboInOwl:hasNarrowSynonym>
-        <created_in>beta13</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -22855,7 +22876,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_3134">
         <rdfs:label>Gene transcript report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0916"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1276"/>
         <oboInOwl:hasDefinition>An informative report on features of a messenger RNA (mRNA) molecules including precursor RNA, primary (unprocessed) transcript and fully processed molecules. This includes reports on a specific gene transcript, clone or EST.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes 5&apos;untranslated region (5&apos;UTR), coding sequences (CDS), exons, intervening sequences (intron) and 3&apos;untranslated regions (3&apos;UTR).</rdfs:comment>
         <oboInOwl:hasExactSynonym>Nucleic acid features (mRNA features)</oboInOwl:hasExactSynonym>
@@ -23057,12 +23078,12 @@
     <owl:Class rdf:about="http://edamontology.org/data_3148">
         <rdfs:label>Gene family report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2084"/>
-        <oboInOwl:hasDefinition>An informative report on a particular family of genes, typically a set of genes with similar sequence that originate from duplication of a common ancestor gene, or any other classification of nucleic acid sequences or structures that reflects gene structure.</oboInOwl:hasDefinition>
         <rdfs:comment>This includes reports on on gene homologues between species.</rdfs:comment>
         <created_in>beta13</created_in>
         <oboInOwl:hasExactSynonym>Gene annotation (homology information)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Homology information</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene annotation (homology)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about a particular family of genes, typically a set of genes with similar sequence that originate from duplication of a common ancestor gene, or any other classification of nucleic acid sequences or structures that reflects gene structure.</oboInOwl:hasDefinition>
         <oboInOwl:hasBroadSynonym>Nucleic acid classification</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym>Gene family annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene homology (report)</oboInOwl:hasExactSynonym>
@@ -23774,8 +23795,8 @@
         <rdfs:label>Clinical trial report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
         <oboInOwl:hasExactSynonym>Clinical trial information</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>A report concerning a clinical trial.</oboInOwl:hasDefinition>
         <created_in>1.9</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information concerning a clinical trial.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -23896,13 +23917,13 @@
     <!-- http://edamontology.org/data_3707 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3707">
-        <rdfs:label>Biodiversity report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <rdfs:label>Biodiversity data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3736"/>
         <created_in>1.14</created_in>
         <oboInOwl:hasNarrowSynonym>OTU table</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Biodiversity information</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>A report about biodiversity data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Machine-readable biodiversity data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -23914,9 +23935,9 @@
     <owl:Class rdf:about="http://edamontology.org/data_3716">
         <rdfs:label>Biosafety report</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>A report about biosafety data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biosafety information</oboInOwl:hasExactSynonym>
         <created_in>1.14</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information concerning biosafety data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -24165,10 +24186,10 @@
     <!-- http://edamontology.org/data_3753 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3753">
-        <rdfs:label>Over-representation report</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
-        <oboInOwl:hasDefinition>An informative report containing a ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data.</oboInOwl:hasDefinition>
+        <rdfs:label>Over-representation data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <created_in>1.16</created_in>
+        <oboInOwl:hasDefinition>A ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Functional enrichment report</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasExactSynonym>Enrichment report</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
@@ -24180,7 +24201,7 @@
     <!-- http://edamontology.org/data_3754 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3754">
-        <rdfs:label>GO-term enrichment report</rdfs:label>
+        <rdfs:label>GO-term enrichment data</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3753"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -24189,7 +24210,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Gene ontology concept over-representation report</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>An informative report containing a ranked list of Gene Ontology concepts, each associated with a p-value, concerning or derived from the analysis of e.g. a set of genes or proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A ranked list of Gene Ontology concepts, each associated with a p-value, concerning or derived from the analysis of e.g. a set of genes or proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene ontology enrichment report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene ontology term enrichment report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasBroadSynonym>GO-term report</oboInOwl:hasBroadSynonym>
@@ -24418,8 +24439,8 @@
         <oboInOwl:hasExactSynonym>EHR</oboInOwl:hasExactSynonym>
         <created_in>1.21</created_in>
         <oboInOwl:hasExactSynonym>Electronic medical record</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>A human-readable systematic collection of patient (or population) health information in a digital format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>EMR</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasDefinition>A systematic collection of patient (or population) health information in a digital format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#data"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
@@ -32719,7 +32740,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3606">
         <rdfs:label>Sequence quality report format (text)</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -32741,6 +32761,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3607">
         <rdfs:label>qual</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2182"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3606"/>
         <documentation>http://en.wikipedia.org/wiki/Phred_quality_score</documentation>
         <created_in>1.11</created_in>
