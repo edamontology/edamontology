@@ -44,10 +44,10 @@
         <oboOther:date>21.02.2018 10:10 GMT</oboOther:date>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+        <next_id>3864</next_id>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
-        <next_id>3864</next_id>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
@@ -557,14 +557,14 @@
         <rdfs:range rdf:resource="http://edamontology.org/operation_0004"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:bearer_of&apos; is narrower in the sense that it only relates ontological categories (concepts) that are an &apos;independent_continuant&apos; (snap:IndependentContinuant) with ontological categories that are a &apos;specifically_dependent_continuant&apos; (snap:SpecificallyDependentContinuant), and broader in the sense that it relates with any borne objects not just functions of the subject.</rdfs:comment>
         <owl:annotatedTarget>OBO_REL:bearer_of</owl:annotatedTarget>
+        <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:bearer_of&apos; is narrower in the sense that it only relates ontological categories (concepts) that are an &apos;independent_continuant&apos; (snap:IndependentContinuant) with ontological categories that are a &apos;specifically_dependent_continuant&apos; (snap:SpecificallyDependentContinuant), and broader in the sense that it relates with any borne objects not just functions of the subject.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_function"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_function"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
     </owl:Axiom>
@@ -616,8 +616,8 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_input"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
     </owl:Axiom>
@@ -644,16 +644,16 @@
         <rdfs:domain rdf:resource="http://edamontology.org/operation_0004"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <rdfs:comment>&apos;OBO_REL:has_participant&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;process&apos; (span:Process) with ontological categories that are a &apos;continuant&apos; (snap:Continuant), and broader in the sense that it relates with any participating objects not just outputs or output arguments of the subject. It is also not clear whether an output (result) actually participates in the process that generates it.</rdfs:comment>
-        <owl:annotatedTarget>OBO_REL:has_participant</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/has_output"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
         <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_output"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:comment>&apos;OBO_REL:has_participant&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;process&apos; (span:Process) with ontological categories that are a &apos;continuant&apos; (snap:Continuant), and broader in the sense that it relates with any participating objects not just outputs or output arguments of the subject. It is also not clear whether an output (result) actually participates in the process that generates it.</rdfs:comment>
+        <owl:annotatedTarget>OBO_REL:has_participant</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/has_output"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -686,8 +686,8 @@
         </rdfs:domain>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_topic"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
     </owl:Axiom>
@@ -749,16 +749,16 @@
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
-        <rdfs:comment>In very unusual cases.</rdfs:comment>
-        <owl:annotatedTarget>true</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/is_function_of"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget>OBO_REL:inheres_in</owl:annotatedTarget>
         <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:inheres_in&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;specifically_dependent_continuant&apos; (snap:SpecificallyDependentContinuant) with ontological categories that are an &apos;independent_continuant&apos; (snap:IndependentContinuant), and broader in the sense that it relates any borne subjects not just functions.</rdfs:comment>
+        <owl:annotatedTarget>OBO_REL:inheres_in</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_function_of"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
+        <rdfs:comment>In very unusual cases.</rdfs:comment>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_function_of"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
     </owl:Axiom>
     
 
@@ -804,16 +804,16 @@
         <rdfs:range rdf:resource="http://edamontology.org/operation_0004"/>
     </owl:ObjectProperty>
     <owl:Axiom>
-        <owl:annotatedTarget>true</owl:annotatedTarget>
-        <rdfs:comment>In very unusual cases.</rdfs:comment>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/is_input_of"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget>OBO_REL:participates_in</owl:annotatedTarget>
         <rdfs:comment>&apos;OBO_REL:participates_in&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;continuant&apos; (snap:Continuant) with ontological categories that are a &apos;process&apos; (span:Process), and broader in the sense that it relates any participating subjects not just inputs or input arguments.</rdfs:comment>
+        <owl:annotatedTarget>OBO_REL:participates_in</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_input_of"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:comment>In very unusual cases.</rdfs:comment>
+        <owl:annotatedTarget>true</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_input_of"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
     </owl:Axiom>
     
 
@@ -839,16 +839,16 @@
         <rdfs:range rdf:resource="http://edamontology.org/operation_0004"/>
     </owl:ObjectProperty>
     <owl:Axiom>
+        <rdfs:comment>&apos;OBO_REL:participates_in&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;continuant&apos; (snap:Continuant) with ontological categories that are a &apos;process&apos; (span:Process), and broader in the sense that it relates any participating subjects not just outputs or output arguments. It is also not clear whether an output (result) actually participates in the process that generates it.</rdfs:comment>
+        <owl:annotatedTarget>OBO_REL:participates_in</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_output_of"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <owl:annotatedTarget>true</owl:annotatedTarget>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_output_of"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget>OBO_REL:participates_in</owl:annotatedTarget>
-        <rdfs:comment>&apos;OBO_REL:participates_in&apos; is narrower in the sense that it only relates ontological categories (concepts) that are a &apos;continuant&apos; (snap:Continuant) with ontological categories that are a &apos;process&apos; (span:Process), and broader in the sense that it relates any participating subjects not just outputs or output arguments. It is also not clear whether an output (result) actually participates in the process that generates it.</rdfs:comment>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/is_output_of"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -880,16 +880,16 @@
         </rdfs:range>
     </owl:ObjectProperty>
     <owl:Axiom>
+        <owl:annotatedTarget>OBO_REL:quality_of</owl:annotatedTarget>
+        <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:quality_of&apos; might be seen narrower in the sense that it only relates subjects that are a &apos;quality&apos; (snap:Quality) with objects that are an &apos;independent_continuant&apos; (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object.</rdfs:comment>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
         <rdfs:comment>In very unusual cases.</rdfs:comment>
         <owl:annotatedTarget>true</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;isCyclic"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <rdfs:comment>Is defined anywhere? Not in the &apos;unknown&apos; version of RO. &apos;OBO_REL:quality_of&apos; might be seen narrower in the sense that it only relates subjects that are a &apos;quality&apos; (snap:Quality) with objects that are an &apos;independent_continuant&apos; (snap:IndependentContinuant), and is broader in the sense that it relates any qualities of the object.</rdfs:comment>
-        <owl:annotatedTarget>OBO_REL:quality_of</owl:annotatedTarget>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasRelatedSynonym"/>
     </owl:Axiom>
     
 
@@ -967,22 +967,22 @@
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
     </owl:Class>
     <owl:Axiom>
-        <rdfs:comment>EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set).</rdfs:comment>
         <owl:annotatedTarget>Datum</owl:annotatedTarget>
+        <rdfs:comment>EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set).</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <rdfs:comment>EDAM does not distinguish a data record (a tool-understandable information artefact) from data or datum (its content, the tool-understandable encoding of an information).</rdfs:comment>
+        <owl:annotatedTarget>Data record</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedTarget>Data set</owl:annotatedTarget>
         <rdfs:comment>EDAM does not distinguish the multiplicity of data, such as one data item (datum) versus a collection of data (data set).</rdfs:comment>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasNarrowSynonym"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedTarget>Data record</owl:annotatedTarget>
-        <rdfs:comment>EDAM does not distinguish a data record (a tool-understandable information artefact) from data or datum (its content, the tool-understandable encoding of an information).</rdfs:comment>
-        <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
-        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
     
 
@@ -4708,13 +4708,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1598"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1597"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1597"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1598"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Unique name of a codon usage table.</oboInOwl:hasDefinition>
@@ -9269,13 +9269,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0152"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0152"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -20620,13 +20620,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2850"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2879"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_identifier_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2879"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2850"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Identifier of a lipid.</oboInOwl:hasDefinition>
@@ -23642,7 +23642,6 @@
         <owl:deprecated>true</owl:deprecated>
         <rdfs:comment>Chemical structure sketches are used for presentational purposes but also as inputs to various analysis software.</rdfs:comment>
         <created_in>1.8</created_in>
-        <oboInOwl:hasExactSynonym>Small molecule sketch</oboInOwl:hasExactSynonym>
         <oboInOwl:hasDefinition>A sketch of a small molecule made with some specialised drawing package.</oboInOwl:hasDefinition>
         <oldParent rdf:resource="http://edamontology.org/data_1712"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1712"/>
@@ -29982,13 +29981,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -30006,7 +29999,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
@@ -33928,19 +33927,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1772"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -33953,6 +33946,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>BioXSD+JSON</oboInOwl:hasExactSynonym>
@@ -33993,18 +33992,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -34017,7 +34004,19 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3108"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>BioXSD BioYAML</oboInOwl:hasExactSynonym>
@@ -34150,13 +34149,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3567"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2530"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2530"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3567"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>The FAO/Bioversity/IPGRI Multi-Crop Passport Descriptors (MCPD) is an international standard format for exchange of germplasm information.</oboInOwl:hasDefinition>
@@ -35078,6 +35077,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://www.jcamp-dx.org/drafts/JCAMP6_2b%20Draft.pdf"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mass_spectrometry_data_format#cite_note-3"/>
     </owl:Class>
+    
 
 
     <!-- http://edamontology.org/format_3862 -->
@@ -35093,16 +35093,17 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
-        <!-- http://edamontology.org/format_3863 -->
+    <!-- http://edamontology.org/format_3863 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3863">
         <rdfs:label>NLP corpus format</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3841"/>
-        <created_in>1.21</created_in>
         <oboInOwl:hasDefinition>NLP format used by a specific type of corpus (collection of texts).</oboInOwl:hasDefinition>
+        <created_in>1.21</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#formats"/>
     </owl:Class>
+    
 
 
     <!-- http://edamontology.org/operation_0004 -->
@@ -35149,8 +35150,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#operations"/>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>Function</owl:annotatedTarget>
         <rdfs:comment>Operation is a function that is computational. It typically has input(s) and output(s), which are always data.</rdfs:comment>
+        <owl:annotatedTarget>Function</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://edamontology.org/operation_0004"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasBroadSynonym"/>
     </owl:Axiom>
@@ -35218,14 +35219,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0582"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0089"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0089"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0582"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Annotate an entity (typically a biological or biomedical database entity) with terms from a controlled vocabulary.</oboInOwl:hasDefinition>
@@ -35382,14 +35383,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0236"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1260"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0157"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0157"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1260"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Calculate sequence ambiguity, for example identity regions in protein or nucleotide sequences with many ambiguity codes.</oboInOwl:hasDefinition>
@@ -35454,14 +35455,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2404"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0858"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0858"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Motifs and patterns might be conserved or over-represented (occur with improbable frequency).</rdfs:comment>
@@ -35482,14 +35483,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2404"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0858"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0858"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -35736,14 +35737,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0804"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1534"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1534"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0804"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Immunogenicity prediction</oboInOwl:hasExactSynonym>
@@ -35767,14 +35768,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Sequence feature prediction</oboInOwl:hasExactSynonym>
@@ -35828,6 +35829,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2424"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
@@ -35836,12 +35843,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0849"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1270"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -36171,14 +36172,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2984"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2984"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -36381,7 +36382,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0914"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1597"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36393,13 +36400,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0914"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1597"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -36427,14 +36428,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0564"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0114"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1263"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1263"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0114"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Identify and plot third base position variability in a nucleotide sequence.</oboInOwl:hasDefinition>
@@ -36624,12 +36625,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1354"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0863"/>
             </owl:Restriction>
@@ -36638,6 +36633,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Sequence profile construction</oboInOwl:hasExactSynonym>
@@ -36658,7 +36659,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0886"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -36670,7 +36671,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0886"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Structural profile generation</oboInOwl:hasExactSynonym>
@@ -36728,14 +36729,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1354"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Sequence-profile alignment</oboInOwl:hasNarrowSynonym>
@@ -36774,14 +36775,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0303"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1460"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0893"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0893"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1460"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Sequence-to-3D-profile alignment</oboInOwl:hasNarrowSynonym>
@@ -36869,14 +36870,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0218"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0972"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0972"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0218"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Process and analyse text (typically scientific literature) to extract information from it.</oboInOwl:hasDefinition>
@@ -36920,14 +36921,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0632"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0632"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>This includes predicting primers based on gene structure, promoters, exon-exon junctions, predicting primers that are conserved across multiple genomes or species, primers for for gene transcription profiling,  for genotyping polymorphisms, for example single nucleotide polymorphisms (SNPs),  for large scale sequencing, or for methylation PCRs.</rdfs:comment>
@@ -36955,8 +36956,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2717"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -36967,14 +36968,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0203"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2717"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Predict and/or optimize oligonucleotide probes for DNA microarrays, for example for transcription profiling of genes, or for genomes and gene families.</oboInOwl:hasDefinition>
@@ -37179,14 +37180,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1460"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1317"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1460"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Assign a protein tertiary structure (3D coordinates), or other aspects of protein structure, from raw experimental data.</oboInOwl:hasDefinition>
@@ -37207,14 +37208,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2428"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1539"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2275"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2275"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDbXref>WHATIF: UseResidueDB</oboInOwl:hasDbXref>
@@ -37257,14 +37258,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0872"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0080"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0080"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0872"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Phylogenetic trees are usually constructed from a set of sequences from which an alignment (or data matrix) is calculated.</rdfs:comment>
@@ -37412,13 +37413,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0199"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0130"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0130"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Protein SNP mapping</oboInOwl:hasNarrowSynonym>
@@ -37534,14 +37535,14 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0092"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2968"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2968"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
@@ -38011,14 +38012,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2514"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1238"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1238"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Cleave a protein sequence into peptide fragments (corresponding to enzymatic or chemical cleavage).</oboInOwl:hasDefinition>
@@ -39555,12 +39556,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0457">
         <rdfs:label>Nucleic acid stitch profile plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0456"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1587"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment>A stitch profile represents the alternative conformations that partly melted DNA can adopt in a temperature range.</rdfs:comment>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Calculate and plot a DNA or DNA/RNA stitch profile.</oboInOwl:hasDefinition>
@@ -39575,12 +39570,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0458">
         <rdfs:label>Nucleic acid melting curve plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0456"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2958"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Calculate and plot a DNA or DNA/RNA melting curve.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -39594,12 +39583,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0459">
         <rdfs:label>Nucleic acid probability profile plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0456"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2959"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Calculate and plot a DNA or DNA/RNA probability profile.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -39613,12 +39596,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0460">
         <rdfs:label>Nucleic acid temperature profile plotting</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0456"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2960"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Calculate and plot a DNA or DNA/RNA temperature profile.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:inSubset rdf:resource="&oboOther;edam#edam"/>
@@ -39897,13 +39874,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2877"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2877"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Model the structure of a protein in complex with a small molecule or another macromolecule.</oboInOwl:hasDefinition>
@@ -39966,14 +39943,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -40350,14 +40327,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0881"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0880"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0880"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0881"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>RNA secondary structure alignment generation</oboInOwl:hasExactSynonym>
@@ -41005,14 +40982,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0538"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0203"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2873"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2873"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Phylogenetic tree construction (from gene frequencies)</oboInOwl:hasExactSynonym>
@@ -42564,14 +42541,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1499"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0081"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0081"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1499"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -42917,14 +42894,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2406"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2814"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2956"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2956"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2814"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -43225,14 +43202,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3501"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1775"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3754"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3754"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1775"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>The Gene Ontology (GO) is typically used, the input is a set of Gene IDs, and the output of the analysis is typically a ranked list of GO concepts, each associated with a p-value.</rdfs:comment>
@@ -43509,14 +43486,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0916"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0114"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0114"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0916"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Gene calling</oboInOwl:hasExactSynonym>
@@ -43648,14 +43625,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Identify or predict protein-protein interactions, interfaces, binding sites etc.</oboInOwl:hasDefinition>
@@ -43841,7 +43818,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0082"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0176"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -43853,7 +43830,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0176"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0082"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Molecular dynamics simulation</oboInOwl:hasExactSynonym>
@@ -43873,14 +43850,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamohntology.org/topic_0077"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamohntology.org/topic_0077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Analyse a nucleic acid sequence (using methods that are only applicable to nucleic acid sequences).</oboInOwl:hasDefinition>
@@ -43948,14 +43925,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2480"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1459"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0097"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1459"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Analyse nucleic acid tertiary structural data.</oboInOwl:hasDefinition>
@@ -44142,14 +44119,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Predict the interactions of proteins with other molecules.</oboInOwl:hasDefinition>
@@ -44601,12 +44578,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1274"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0102"/>
             </owl:Restriction>
@@ -44615,6 +44586,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0196"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1274"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -44991,14 +44968,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2520"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1280"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0102"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0102"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1280"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -45464,12 +45441,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2479"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1277"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
             </owl:Restriction>
@@ -45478,6 +45449,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0078"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1277"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasNarrowSynonym>Protein site detection</oboInOwl:hasNarrowSynonym>
@@ -45563,8 +45540,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3181"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0925"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -45575,8 +45552,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0925"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym>Assembly quality evaluation</oboInOwl:hasExactSynonym>
@@ -46406,14 +46383,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0310"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0196"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0925"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0925"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Infer a transcriptome sequence by analysis of short sequence reads.</oboInOwl:hasDefinition>
@@ -46462,13 +46439,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3434"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2012"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -46643,13 +46620,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0123"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0166"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.4</created_in>
@@ -47726,14 +47703,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3438"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.12</created_in>
@@ -56154,7 +56131,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
 
     <owl:Class rdf:about="&owl;DeprecatedClass"/>
-    
 </rdf:RDF>
 
 
