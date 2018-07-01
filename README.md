@@ -19,17 +19,19 @@ The latest stable version is always at http://edamontology.org/EDAM.owl. For oth
 
 ## Documentation
 
-A comprehensive documentation is available via [readthedocs](http://edamontologydocs.readthedocs.io/en/latest/index.html) (maintained [here](http://edamontologydocs.readthedocs.io/en/latest/).
+Comprehensive documentation and guidelines are available via [readthedocs](http://edamontologydocs.readthedocs.io/en/latest/index.html) (maintained [here](http://edamontologydocs.readthedocs.io/en/latest/).
 
 A quick overview is at the http://edamontology.org home page.
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/master/EDAMrelations.png)
 
-## Roadmap
+## Roadmap & releases strategy
 *[No plan survives contact with the enemy.](https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder)*
 
 We attempt to resolve all user-requested releases in the next release or ASAP.  Beyond that, things in the roadmap are labelled in the [issue tracker](https://github.com/edamontology/edamontology/issues) as **High priority**.  See also the [edam documentation tracker](https://github.com/edamontology/edamontologyDocs/issues).
+
+We aspire to monthly releases but our current capactity means they've been quarterly - please help out by [getting involved](http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html)!
 
 
 ## Citing EDAM
