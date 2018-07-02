@@ -4,13 +4,13 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 
 ---
 
-When making a request, replace the text < between chevrons > after first reading the instructions.  Do not change any other text, and please try to complete as much information as you can (your request will get acted on sooner if you do).
+*Instructions:* When making a request, replace the text < between chevrons > after first reading the instructions.  Do not change any other text, and please try to complete as much information as you can (your request will get acted on sooner if you do).
 
 
 
 **Format name:**  < format_name >
 
-*Instructions:*  Name of format, *e.g.* "PNG".  This is the most commonly used term.  Do not prefix with "." unless the prefixed version *e.g.* ".nib" really is in prevalent use. 
+*Instructions:*  Name of format, *e.g.* "PNG".  This is the most commonly used term.  Do not prefix with "." unless (in exceptional cases only) the prefixed version *e.g.* ".nib" really is in prevalent use. 
 
 
 
@@ -31,10 +31,27 @@ When making a request, replace the text < between chevrons > after first reading
 *Instructions:* Exact synonym(s) delimited by pipe ('|') *e.g.* "png". Other commonly-used terms, acronyms *etc.* by which the concept is referred to.  This can also include capitalisation variations (as in above example) and use of "." prefix.
 
 
-**Specification/documentation:** < URL1 | URL2 |... >
+**Specification:** < URL1 | URL2 |... >
 
-*Instructions:* URL(s) to formal specification or documentation delimited by pipe ('|') *e.g.* http://www.w3.org/TR/PNG/. Please provide a link to the official specification of the format (if available) and / or to the most pertinent documentation.
+*Instructions:* URL(s) to formal specification of the format *e.g.* "http://www.w3.org/TR/PNG/". Provide a link to the official specification of the format (if available), either an XML schema (XSD), or other rigorous & comprehensive syntax specification.
 
+
+
+**Documentation:** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to format documentation delimited by pipe ('|') *e.g.* "http://www.w3.org/TR/PNG/". Provide link(s) to any general documentation of the format.
+
+
+
+**Wikipedia:** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to Wikipedia pages delimited by pipe ('|') *e.g.* "https://en.wikipedia.org/wiki/Portable_Network_Graphics". Provide link(s) to relevant Wikipedia pages, if any.
+
+
+
+**Publication:** < URL1 | URL2 |... >
+
+*Instructions:* Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  If a DOI is not available, a URL may be specified.
 
 
 
@@ -46,19 +63,13 @@ When making a request, replace the text < between chevrons > after first reading
 
 **File extension(s):** < Extension1 | Extension2 |... >
 
-*Instructions:* File extension(s) in common use delimited by pipe ('|') *e.g.* "png". Please specify all file name extensions that are commonly used.
+*Instructions:* File extension(s) in common use delimited by pipe ('|') *e.g.* "png". Please specify all file name extensions that are commonly used.  Do not include period (`.`) character.
 
 
 
 **Media type:** < media_type >
 
 *Instructions:* Media type *e.g.* "image/png". Specify the formal media type (if available) as per https://www.iana.org/assignments/media-types/media-types.xhtml.
-
-
-
-**DOI:** < doi >
-
-*Instructions:* Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  If a DOI is not available, a URL may be specified.
 
 
 
