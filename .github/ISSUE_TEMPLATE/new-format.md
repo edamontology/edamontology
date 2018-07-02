@@ -1,6 +1,6 @@
 ---
-name: EDAM Format concept request
-about: Request a new concept is added to the EDAM Format sub-ontology
+name: Request new EDAM Format concept
+about: Request a new concept is added to the EDAM Format sub-ontology.
 
 ---
 
