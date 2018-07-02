@@ -6,5 +6,5 @@ Templates for handling various types of suggestions (issues) for EDAM are provid
 
 Template (docs) | Description | Use it!
 --------------- | ----------- | -------
-[new-format.md](https://github.com/edamontology/edamontology/blob/master/.github/ISSUE_TEMPLATE/edam-format-concept-request.md) | Request a new concept is added to the EDAM Format sub-ontology. | [go!](https://github.com/edamontology/edamontology/issues/new?template=new-format.md)
+[new-format.md](https://github.com/edamontology/edamontology/blob/master/.github/ISSUE_TEMPLATE/new-format.md) | Request a new concept is added to the EDAM Format sub-ontology. | [go!](https://github.com/edamontology/edamontology/issues/new?template=new-format.md)
 
