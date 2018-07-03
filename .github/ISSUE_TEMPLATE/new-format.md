@@ -16,7 +16,7 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 
 **Short description:** < short_description >
 
-*Instructions:* Short description, *e.g.* "PNG is a file format for image compression." A sentence or two describing the format, notably what type of data is used for.  See http://edamontology.org/format_1915 for examples.
+*Instructions:* Short description, *e.g.* "PNG is a file format for image compression." A sentence or two describing the format, including what type of data the format is used for. Keep it concise, lucid and avoid jargon and acronyms. See http://edamontology.org/format_1915 for examples.
 
 
 
@@ -31,9 +31,9 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 *Instructions:* Exact synonym(s) delimited by pipe ('|') *e.g.* "png". Other commonly-used terms, acronyms *etc.* by which the concept is referred to.  This can also include capitalisation variations (as in above example) and use of "." prefix.
 
 
-**Specification:** < URL1 | URL2 |... >
+**Specification:** < URL1 >
 
-*Instructions:* URL(s) to formal specification of the format *e.g.* "http://www.w3.org/TR/PNG/". Provide a link to the official specification of the format (if available), either an XML schema (XSD), or other rigorous & comprehensive syntax specification.
+*Instructions:* URL to formal specification of the format *e.g.* "http://www.w3.org/TR/PNG/". Provide a link to the official specification of the format (if available), either an XML schema (XSD), or other rigorous & comprehensive syntax specification.
 
 
 
@@ -49,9 +49,9 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 
 
 
-**Publication:** < URL1 | URL2 |... >
+**Publication:** < DOI1 | DOI2 |... >
 
-*Instructions:* Citation DOI or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  If a DOI is not available, a URL may be specified.
+*Instructions:* Citation DOI *e.g.* "10.1038%2Fnbt1031" or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  Specify a A DOI (if available) otherwise a URL.
 
 
 
