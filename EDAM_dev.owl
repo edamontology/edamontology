@@ -31,7 +31,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>30.07.2018 21:22 GMT</oboOther:date>
+        <oboOther:date>30.07.2018 23:42 GMT</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -899,27 +899,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://edamohntology.org/topic_0077 -->
-
-    <owl:Class rdf:about="http://edamohntology.org/topic_0077">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
-        <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
-        <oboInOwl:hasDefinition>The processing and analysis of nucleic acid sequence, structural and other data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid bioinformatics</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Nucleic acid informatics</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasHumanReadableId>Nucleic_acids</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Nucleic acid physicochemistry</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Nucleic acid properties</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Nucleic acids</rdfs:label>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017422</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017423</rdfs:seeAlso>
-    </owl:Class>
     
 
 
@@ -44080,7 +44059,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamohntology.org/topic_0077"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
@@ -46328,7 +46307,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamohntology.org/topic_0077"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0077"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.1</created_in>
@@ -48898,6 +48877,27 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Category</rdfs:seeAlso>
         <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_0077 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_0077">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <created_in>beta12orEarlier</created_in>
+        <isdebtag>true</isdebtag>
+        <oboInOwl:hasDefinition>The processing and analysis of nucleic acid sequence, structural and other data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Nucleic acid bioinformatics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nucleic acid informatics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Nucleic_acids</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid physicochemistry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleic acid properties</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Nucleic acids</rdfs:label>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017422</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017423</rdfs:seeAlso>
     </owl:Class>
     
 
