@@ -31,7 +31,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>30.07.2018 10:10 GMT</oboOther:date>
+        <oboOther:date>30.07.2018 20:33 GMT</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -39,7 +39,7 @@
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3864</next_id>
+        <next_id>3866</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
     </owl:Ontology>
@@ -30170,6 +30170,7 @@
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
         <documentation rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
+		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/accession.xml"/>
         <example rdf:resource="http://bioxsd.org/exampleFeatureRecords.html"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml"/>
@@ -31369,7 +31370,9 @@
         <documentation rdf:resource="http://www.gtrack.no"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
+		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <example rdf:resource="https://hyperbrowser.uio.no/hb/u/hb-superuser/h/gtrack-examples-from-the-specification"/>
+		<example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gtrack/examples"/>
         <oboInOwl:comment>&apos;GTrack&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;GTrack&apos; is the tabular format for representing features of sequences and genomes.</oboInOwl:comment>
         <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="http://www.gtrack.no"/>
@@ -34113,6 +34116,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <created_in>1.16</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
+		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.json"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
         <oboInOwl:comment>Work in progress. &apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioJSON&apos; is the JSON format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
@@ -34178,6 +34182,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <created_in>1.16</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
+		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.yaml"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
         <oboInOwl:comment>Work in progress. &apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioYAML&apos; is the YAML format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
@@ -34250,6 +34255,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
+		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
+		<example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gsuite/examples"/>
         <oboInOwl:comment>&apos;GSuite&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;GSuite&apos; is the tabular format for an annotated collection of individual GTrack files.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
@@ -34278,6 +34285,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <oboInOwl:comment>&apos;BTrack&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;BTrack&apos; is the binary, optionally compressed HDF5-based version of the GTrack and GSuite formats.</oboInOwl:comment>
         <oboInOwl:hasDefinition>BTrack is an HDF5-based binary format for genome or sequence feature tracks and their collections, suitable for integrative multi-track analysis. BTrack is a binary, compressed alternative to the GTrack and GSuite formats.</oboInOwl:hasDefinition>
+		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:hasExactSynonym>BTrack (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BTrack format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack BTrack</oboInOwl:hasExactSynonym>
@@ -35199,9 +35207,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://www.commonwl.org/v1.0/CommandLineTool.html"/>
         <documentation rdf:resource="https://www.commonwl.org/v1.0/Workflow.html"/>
 		<documentation rdf:resource="https://www.commonwl.org/user_guide/"/>
+		<example rdf:resource="https://github.com/common-workflow-language/common-workflow-language/tree/master/v1.0/examples"/>
 		<citation rdf:resource="https://doi.org/10.6084/m9.figshare.3115156.v2"/>
 		<organisation rdf:resource="https://www.commonwl.org/"/>
 		<organisation rdf:resource="https://sfconservancy.org/"/>
+		<repository rdf:resource="https://github.com/common-workflow-language/common-workflow-language"/>
         <oboInOwl:hasDefinition>Common Workflow Language (CWL) format for description of command-line tools and workflows.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -35267,6 +35277,42 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>NLP corpus format</rdfs:label>
+    </owl:Class>
+
+
+
+	<!-- http://edamontology.org/format_3864 -->
+
+	<owl:Class rdf:about="http://edamontology.org/format_3864">
+		<rdfs:subClassOf rdf:resource="http://edamontology.org/format_1975"/>
+		<rdfs:subClassOf rdf:resource="http://edamontology.org/format_3864"/>
+		<created_in>1.21</created_in>
+		<documentation rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/definition.md"/>
+		<example rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/example.gff"/>
+		<repository rdf:resource="https://github.com/miRTop/mirGFF3"/>
+		<citation rdf:resource="https://doi.org/10.7490/f1000research.1115724.1"/>
+		<oboInOwl:hasDefinition>mirGFF3 is a common format for microRNA data resulting from small-RNA RNA-Seq workflows.</oboInOwl:hasDefinition>
+		<rdfs:comment>mirGFF3 is a specialisation of GFF3; produced by small-RNA-Seq analysis workflows, usable and convertible with the miRTop API (https://mirtop.readthedocs.io/en/latest/), and consumable by tools for downstream analysis.</rdfs:comment>
+		<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+		<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+		<rdfs:label>mirGFF3</rdfs:label>
+		<oboInOwl:hasExactSynonym>miRTop format</oboInOwl:hasExactSynonym>
+	</owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3865 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3865">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <created_in>1.21</created_in>
+        <oboInOwl:hasDefinition>A "placeholder" concept for formats of annotated RNA data, including e.g. microRNA and RNA-Seq data.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>RNA annotation format</rdfs:label>
+		<oboInOwl:hasNarrowSynonym>microRNA data format</oboInOwl:hasNarrowSynonym>
+		<oboInOwl:hasNarrowSynonym>miRNA data format</oboInOwl:hasNarrowSynonym>
+		<oboInOwl:hasBroadSynonym>RNA data format</oboInOwl:hasBroadSynonym>
     </owl:Class>
     
 
