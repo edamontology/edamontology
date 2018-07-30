@@ -31,7 +31,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>21.02.2018 10:10 GMT</oboOther:date>
+        <oboOther:date>30.07.2018 09:55 GMT</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -35194,12 +35194,18 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_3857">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3750"/>
         <created_in>1.21</created_in>
-        <oboInOwl:hasDefinition rdf:resource="https://www.commonwl.org/v1.0/CommandLineTool.html"/>
+        <documentation rdf:resource="https://www.commonwl.org/v1.0/CommandLineTool.html"/>
+        <documentation rdf:resource="https://www.commonwl.org/v1.0/Workflow.html"/>
+		<documentation rdf:resource="https://www.commonwl.org/user_guide/"/>
+		<citation rdf:resource="https://doi.org/10.6084/m9.figshare.3115156.v2"/>
+		<organisation rdf:resource="https://www.commonwl.org/"/>
+		<organisation rdf:resource="https://sfconservancy.org/"/>
         <oboInOwl:hasDefinition>Common Workflow Language (CWL) format for description of command-line tools and workflows.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <file_extension>cwl</file_extension>
         <rdfs:label>CWL</rdfs:label>
     </owl:Class>
     
