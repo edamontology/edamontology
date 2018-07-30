@@ -31,7 +31,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>30.07.2018 20:55 GMT</oboOther:date>
+        <oboOther:date>30.07.2018 21:22 GMT</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -259,7 +259,20 @@
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>Regular expression</rdfs:label>
     </owl:AnnotationProperty>
-    
+
+
+
+	<!-- http://edamontology.org/repository -->
+
+	<owl:AnnotationProperty rdf:about="http://edamontology.org/repository">
+		<oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+		<oboInOwl:hasDefinition>&apos;Repository&apos; trailing modifier (qualifier, &apos;repository&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to the public source-code repository where the given data format is developed or maintained.</oboInOwl:hasDefinition>
+		<oboInOwl:hasExactSynonym>Source-code repository</oboInOwl:hasExactSynonym>
+		<oboInOwl:hasExactSynonym>Public repository</oboInOwl:hasExactSynonym>
+		<oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+		<rdfs:label>Repository</rdfs:label>
+	</owl:AnnotationProperty>
+
 
 
     <!-- http://edamontology.org/thematic_editor -->
