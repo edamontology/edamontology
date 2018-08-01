@@ -9,7 +9,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for 
 ### Summary of changes
 * 20 formats added (listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-121))
 * Structural clean-up of various areas of the Data sub-ontology, especially around _Identifier_ and _Report_
-* Major clean-up of the hierarchy of _Accession_s
+* Major clean-up of the hierarchy of _Accessions_
 * Clean-up of some Operations (_e.g._ around Plotting _i.e._ Visualisation)
 * Major improvements of the [EDAM documentation](https://github.com/edamontology/edamontologyDocs)
 * Improved [edam2json](https://github.com/edamontology/edam2json/commits/master) generator
