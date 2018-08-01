@@ -7,9 +7,11 @@
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for the detailed list of semantic changes in the EDAM ontology.
 
 ### Summary of changes
-* 
-* 
-* 
+* 20 formats added (listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-121))
+* Structural clean-up of various areas of the Data sub-ontology, especially around _Identifier_ and _Report_
+* Major clean-up of the hierarchy of _Accession_s
+* Clean-up of some Operations (_e.g._ around Plotting _i.e._ Visualisation)
+* Major improvements of the [EDAM documentation](https://github.com/edamontology/edamontologyDocs)
 * Improved [edam2json](https://github.com/edamontology/edam2json/commits/master) generator
 
 
@@ -19,7 +21,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for 
 * 315 concepts have changed relations|hierarchy (297 Data, of which 282 Identifier; 9 Format, 9 Operation)
 
 ### Fixed issues
-- 23 issues fixed and closed (#67, #190, #206, #233, #244, #271, #288, #338, #339, #340, #341, #342, #343, #344, #345, #347, #348, #349, #364, edamontology/edamontologyDocs#1, edamontology/edamontologyDocs#18, edamontology/edam2json#1, edamontology/edam2json#2)
+- 24 issues fixed and closed (#67, #190, #206, #233, #244, #271, #288, #338, #339, #340, #341, #342, #343, #344, #345, #347, #348, #349, #351, #364, edamontology/edamontologyDocs#1, edamontology/edamontologyDocs#18, edamontology/edam2json#1, edamontology/edam2json#2)
 - 4 issues partially fixed but left open for further improvements (#15, #237, #293, #295)
 
 ### Other closed issues
