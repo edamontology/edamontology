@@ -1,6 +1,7 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
+  - [EDAM_1.21.owl](#edam_121owl)
   - [EDAM_1.20.owl](#edam_120owl)
   - [EDAM_1.19.owl](#edam_119owl)
   - [EDAM_1.18.owl](#edam_118owl)
@@ -10,6 +11,2746 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.14.owl](#edam_114owl)
   - [EDAM_1.13.owl](#edam_113owl)
   - [EDAM_1.12.owl](#edam_112owl)
+
+# EDAM_1.21.owl
+
+  - [New concepts](#new-concepts-121) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-121)
+  - [All semantic changes](#all-semantic-changes-121)
+
+## New concepts (1.21):
+
+_**Note**: More details about the new concepts are listed in [All semantic changes](#all-semantic-changes-121)._
+
+Class: http://edamontology.org/topic_3855 
+Label: Environmental science 
++   (+) 'Environmental science' SubClassOf 'Biology' 
+  
+Class: http://edamontology.org/data_3856 
+Label: RNA central ID 
++   (+) 'RNA central ID' SubClassOf 'Accession' 
++   (+) 'RNA central ID' SubClassOf 'Sequence accession (nucleic acid)' 
+  
+Class: http://edamontology.org/data_3842 
+Label: Molecular simulation data 
++   (+) 'Molecular simulation data' SubClassOf 'has topic' some 'Structure analysis' 
++   (+) 'Molecular simulation data' SubClassOf 'Data' 
+  
+Class: http://edamontology.org/data_3861 
+Label: Electronic health record 
++   (+) 'Electronic health record' SubClassOf 'Report' 
+  
+Class: http://edamontology.org/operation_3840 
+Label: Multilocus sequence typing 
++   (+) 'Multilocus sequence typing' SubClassOf 'Genotyping' 
+  
+Class: http://edamontology.org/operation_3860 
+Label: Spectrum calculation 
++   (+) 'Spectrum calculation' SubClassOf 'Protein property calculation' 
++   (+) 'Spectrum calculation' SubClassOf 'has input' some 'Mass spectrometry spectra' 
++   (+) 'Spectrum calculation' SubClassOf 'Spectral analysis' 
+  
+Class: http://edamontology.org/format_3849 
+Label: MSAML 
++   (+) 'MSAML' SubClassOf 'Binary format' 
++   (+) 'MSAML' SubClassOf 'Alignment format' 
+  
+Class: http://edamontology.org/format_3843 
+Label: BEAST 
++   (+) 'BEAST' SubClassOf 'Sequence record format (XML)' 
++   (+) 'BEAST' SubClassOf 'XML' 
+  
+Class: http://edamontology.org/format_3844 
+Label: Chado-XML 
++   (+) 'Chado-XML' SubClassOf 'XML' 
++   (+) 'Chado-XML' SubClassOf 'Sequence record format (XML)' 
+  
+Class: http://edamontology.org/format_3841 
+Label: NLP format 
++   (+) 'NLP format' SubClassOf 'Format (by type of data)' 
+  
+Class: http://edamontology.org/format_3847 
+Label: KGML 
++   (+) 'KGML' SubClassOf 'XML' 
++   (+) 'KGML' SubClassOf 'Biological pathway or network format' 
+  
+Class: http://edamontology.org/format_3848 
+Label: PubMed XML 
++   (+) 'PubMed XML' SubClassOf 'Bibliographic reference format' 
++   (+) 'PubMed XML' SubClassOf 'XML' 
+  
+Class: http://edamontology.org/format_3845 
+Label: HSAML 
++   (+) 'HSAML' SubClassOf 'XML' 
++   (+) 'HSAML' SubClassOf 'Alignment format (XML)' 
+  
+Class: http://edamontology.org/format_3846 
+Label: InterProScan XML 
++   (+) 'InterProScan XML' SubClassOf 'Protein domain classification format' 
++   (+) 'InterProScan XML' SubClassOf 'XML' 
+  
+Class: http://edamontology.org/format_3865 
+Label: RNA annotation format 
++   (+) 'RNA annotation format' SubClassOf 'Format (by type of data)' 
+  
+Class: http://edamontology.org/format_3863 
+Label: NLP corpus format 
++   (+) 'NLP corpus format' SubClassOf 'NLP annotation format' 
+  
+Class: http://edamontology.org/format_3864 
+Label: mirGFF3 
++   (+) 'mirGFF3' SubClassOf 'RNA annotation format' 
++   (+) 'mirGFF3' SubClassOf 'GFF3' 
+  
+Class: http://edamontology.org/format_3862 
+Label: NLP annotation format 
++   (+) 'NLP annotation format' SubClassOf 'NLP format' 
+  
+Class: http://edamontology.org/format_3857 
+Label: CWL 
++   (+) 'CWL' SubClassOf 'YAML' 
++   (+) 'CWL' SubClassOf 'Workflow format' 
+  
+Class: http://edamontology.org/format_3858 
+Label: Waters RAW 
++   (+) 'Waters RAW' SubClassOf 'Binary format' 
++   (+) 'Waters RAW' SubClassOf 'Mass spectrometry data format' 
+  
+Class: http://edamontology.org/format_3859 
+Label: JCAMP-DX 
++   (+) 'JCAMP-DX' SubClassOf 'Textual format' 
++   (+) 'JCAMP-DX' SubClassOf 'Mass spectrometry data format' 
+  
+Class: http://edamontology.org/format_3852 
+Label: SeqXML 
++   (+) 'SeqXML' SubClassOf 'Sequence record format (XML)' 
++   (+) 'SeqXML' SubClassOf 'XML' 
+  
+Class: http://edamontology.org/format_3853 
+Label: UniParc XML 
++   (+) 'UniParc XML' SubClassOf 'XML' 
++   (+) 'UniParc XML' SubClassOf 'Sequence feature annotation format' 
+  
+Class: http://edamontology.org/format_3854 
+Label: UniRef XML 
++   (+) 'UniRef XML' SubClassOf 'Sequence feature annotation format' 
++   (+) 'UniRef XML' SubClassOf 'XML' 
+  
+Class: http://edamontology.org/format_3850 
+Label: OrthoXML 
++   (+) 'OrthoXML' SubClassOf 'Gene annotation format' 
++   (+) 'OrthoXML' SubClassOf 'XML' 
++   (+) 'OrthoXML' SubClassOf 'Sequence record format (XML)' 
+  
+Class: http://edamontology.org/format_3851 
+Label: PSDML 
++   (+) 'PSDML' SubClassOf 'Sequence feature annotation format' 
++   (+) 'PSDML' SubClassOf 'XML' 
+
+
+## Changed relations between concepts (1.21):
+
+_**Note**: These include concept deprecations ("SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass")._
+
+Class: http://edamontology.org/data_1587 
+Label: Nucleic acid stitch profile 
+-   (-) 'Nucleic acid stitch profile' SubClassOf 'Nucleic acid melting profile' 
++   (+) 'Nucleic acid stitch profile' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2343 
+Label: Pathway ID (KEGG) 
++   (+) 'Pathway ID (KEGG)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2346 
+Label: Sequence cluster ID (UniRef) 
++   (+) 'Sequence cluster ID (UniRef)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2345 
+Label: Pathway ID (ConsensusPathDB) 
++   (+) 'Pathway ID (ConsensusPathDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2344 
+Label: Pathway ID (NCI-Nature) 
++   (+) 'Pathway ID (NCI-Nature)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2367 
+Label: ASTD ID 
++   (+) 'ASTD ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2365 
+Label: Pathway or network accession 
+-   (-) 'Pathway or network accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3490 
+Label: Chemical structure sketch 
+-   (-) 'Chemical structure sketch' SubClassOf 'Chemical structure image' 
++   (+) 'Chemical structure sketch' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2302 
+Label: STRING ID 
++   (+) 'STRING ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2309 
+Label: Reaction ID (SABIO-RK) 
++   (+) 'Reaction ID (SABIO-RK)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/format_3606 
+Label: Sequence quality report format (text) 
+-   (-) 'Sequence quality report format (text)' SubClassOf 'Textual format' 
+  
+Class: http://edamontology.org/format_3607 
+Label: qual 
++   (+) 'qual' SubClassOf 'Textual format' 
+  
+Class: http://edamontology.org/data_2325 
+Label: REBASE enzyme number 
++   (+) 'REBASE enzyme number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2326 
+Label: DrugBank ID 
++   (+) 'DrugBank ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2314 
+Label: GI number 
++   (+) 'GI number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/format_3624 
+Label: snpeffdb 
++   (+) 'snpeffdb' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/data_2315 
+Label: NCBI version 
++   (+) 'NCBI version' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1542 
+Label: Protein solvent accessibility report 
+-   (-) 'Protein solvent accessibility report' SubClassOf 'Protein structure report' 
++   (+) 'Protein solvent accessibility report' SubClassOf 'Protein property' 
+  
+Class: http://edamontology.org/data_2383 
+Label: EGA accession 
++   (+) 'EGA accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2382 
+Label: Genotype experiment ID 
+-   (-) 'Genotype experiment ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2384 
+Label: IPI protein ID 
++   (+) 'IPI protein ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2386 
+Label: EPD ID 
++   (+) 'EPD ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2389 
+Label: UniSTS accession 
++   (+) 'UniSTS accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2375 
+Label: Spot ID (HSC-2DPAGE) 
++   (+) 'Spot ID (HSC-2DPAGE)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2373 
+Label: Spot ID 
+-   (-) 'Spot ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2374 
+Label: Spot serial number 
++   (+) 'Spot serial number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2393 
+Label: mFLJ/mKIAA number 
++   (+) 'mFLJ/mKIAA number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2392 
+Label: UniParc accession 
++   (+) 'UniParc accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2391 
+Label: UTR accession 
++   (+) 'UTR accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2390 
+Label: UNITE accession 
++   (+) 'UNITE accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2398 
+Label: Ensembl protein ID 
++   (+) 'Ensembl protein ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/format_3700 
+Label: Tabix index file format 
++   (+) 'Tabix index file format' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/format_3491 
+Label: ebwtl 
++   (+) 'ebwtl' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/format_3484 
+Label: ebwt 
++   (+) 'ebwt' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/data_2908 
+Label: Organism accession 
+-   (-) 'Organism accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2108 
+Label: Reaction ID 
+-   (-) 'Reaction ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2911 
+Label: Transcription factor accession 
+-   (-) 'Transcription factor accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2107 
+Label: Enzyme ID (BioCyc) 
++   (+) 'Enzyme ID (BioCyc)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2910 
+Label: Protein family accession 
+-   (-) 'Protein family accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2106 
+Label: Reaction ID (BioCyc) 
+-   (-) 'Reaction ID (BioCyc)' SubClassOf 'has topic' some 'Small molecules' 
++   (+) 'Reaction ID (BioCyc)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2915 
+Label: Gramene identifier 
++   (+) 'Gramene identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2105 
+Label: Compound ID (BioCyc) 
++   (+) 'Compound ID (BioCyc)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2903 
+Label: Genome accession 
+-   (-) 'Genome accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2902 
+Label: Data resource definition accession 
+-   (-) 'Data resource definition accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2904 
+Label: Map accession 
+-   (-) 'Map accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2901 
+Label: Molecule accession 
+-   (-) 'Molecule accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2114 
+Label: WormBase wormpep ID 
++   (+) 'WormBase wormpep ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2956 
+Label: Protein secondary structure report 
+-   (-) 'Protein secondary structure report' SubClassOf 'Protein structure report' 
++   (+) 'Protein secondary structure report' SubClassOf 'Protein property' 
+  
+Class: http://edamontology.org/data_2958 
+Label: Nucleic acid melting curve 
+-   (-) 'Nucleic acid melting curve' SubClassOf 'Nucleic acid melting profile' 
+-   (-) 'Nucleic acid melting curve' SubClassOf 'Plot' 
++   (+) 'Nucleic acid melting curve' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2959 
+Label: Nucleic acid probability profile 
+-   (-) 'Nucleic acid probability profile' SubClassOf 'Nucleic acid melting profile' 
++   (+) 'Nucleic acid probability profile' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2960 
+Label: Nucleic acid temperature profile 
+-   (-) 'Nucleic acid temperature profile' SubClassOf 'Nucleic acid melting profile' 
++   (+) 'Nucleic acid temperature profile' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_3667 
+Label: Disease identifier 
+-   (-) 'Disease identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2991 
+Label: Protein geometry report 
+-   (-) 'Protein geometry report' SubClassOf 'Protein structure report' 
++   (+) 'Protein geometry report' SubClassOf 'Protein property' 
+  
+Class: http://edamontology.org/data_2984 
+Label: Pathway or network report 
+-   (-) 'Pathway or network report' SubClassOf 'Over-representation report' 
++   (+) 'Pathway or network report' SubClassOf 'Report' 
+  
+Class: http://edamontology.org/data_3707 
+Label: Biodiversity report 
+-   (-) 'Biodiversity report' SubClassOf 'Report' 
++   (+) 'Biodiversity report' SubClassOf 'Data' 
+  
+Class: http://edamontology.org/data_1274 
+Label: Map 
+-   (-) 'Map' SubClassOf 'Map data' 
++   (+) 'Map' SubClassOf 'Data' 
+  
+Class: http://edamontology.org/data_1276 
+Label: Nucleic acid features 
+-   (-) 'Nucleic acid features' SubClassOf 'Nucleic acid report' 
+  
+Class: http://edamontology.org/data_0991 
+Label: Chemical registry number 
++   (+) 'Chemical registry number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_0906 
+Label: Protein interaction report 
+-   (-) 'Protein interaction report' SubClassOf 'Protein structure report' 
++   (+) 'Protein interaction report' SubClassOf 'Protein property' 
+  
+Class: http://edamontology.org/data_0916 
+Label: Gene report 
+-   (-) 'Gene report' SubClassOf 'Nucleic acid features' 
++   (+) 'Gene report' SubClassOf 'Nucleic acid report' 
+  
+Class: http://edamontology.org/operation_3187 
+Label: Sequence contamination filtering 
+-   (-) 'Sequence contamination filtering' SubClassOf 'has topic' some 'Nucleic acids' 
+  
+Class: http://edamontology.org/operation_3232 
+Label: Gene expression QTL analysis 
+-   (-) 'Gene expression QTL analysis' SubClassOf 'Gene expression profiling' 
++   (+) 'Gene expression QTL analysis' SubClassOf 'Gene expression analysis' 
+  
+Class: http://edamontology.org/data_2220 
+Label: Sequence cluster ID (SYSTERS) 
++   (+) 'Sequence cluster ID (SYSTERS)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_3224 
+Label: Gene set testing 
+-   (-) 'Gene set testing' SubClassOf 'Gene expression analysis' 
++   (+) 'Gene set testing' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2285 
+Label: Gene ID (MIPS) 
++   (+) 'Gene ID (MIPS)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3769 
+Label: BRENDA ontology concept ID 
++   (+) 'BRENDA ontology concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3753 
+Label: Over-representation report 
+-   (-) 'Over-representation report' SubClassOf 'Report' 
++   (+) 'Over-representation report' SubClassOf 'Data' 
+  
+Class: http://edamontology.org/data_3757 
+Label: Unimod ID 
++   (+) 'Unimod ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2298 
+Label: Gene ID (HGNC) 
++   (+) 'Gene ID (HGNC)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2294 
+Label: Sequence variation ID 
+-   (-) 'Sequence variation ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_0315 
+Label: Gene expression comparison 
+-   (-) 'Gene expression comparison' SubClassOf 'has output' some 'Processed microarray data' 
+-   (-) 'Gene expression comparison' SubClassOf 'Nucleic acid comparison' 
+  
+Class: http://edamontology.org/operation_0314 
+Label: Gene expression profiling 
+-   (-) 'Gene expression profiling' SubClassOf 'has output' some 'Gene expression profile' 
+-   (-) 'Gene expression profiling' SubClassOf 'Generation' 
+-   (-) 'Gene expression profiling' SubClassOf 'Gene expression analysis' 
++   (+) 'Gene expression profiling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2744 
+Label: Locus ID (PseudoCAP) 
++   (+) 'Locus ID (PseudoCAP)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2745 
+Label: Locus ID (UTR) 
++   (+) 'Locus ID (UTR)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2746 
+Label: MonosaccharideDB ID 
++   (+) 'MonosaccharideDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_0307 
+Label: Virtual PCR 
+-   (-) 'Virtual PCR' SubClassOf 'has topic' some 'Nucleic acids' 
+  
+Class: http://edamontology.org/data_2741 
+Label: ABS ID 
++   (+) 'ABS ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2742 
+Label: AraC-XylS ID 
++   (+) 'AraC-XylS ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2012 
+Label: Sequence coordinates 
+-   (-) 'Sequence coordinates' SubClassOf 'Map data' 
++   (+) 'Sequence coordinates' SubClassOf 'Data' 
+  
+Class: http://edamontology.org/data_2739 
+Label: Gene ID (Genolist) 
++   (+) 'Gene ID (Genolist)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2737 
+Label: FIG ID 
++   (+) 'FIG ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2738 
+Label: Gene ID (Xenbase) 
++   (+) 'Gene ID (Xenbase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2736 
+Label: Sequence feature ID (SwissRegulon) 
++   (+) 'Sequence feature ID (SwissRegulon)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2731 
+Label: Protein family ID (GeneFarm) 
++   (+) 'Protein family ID (GeneFarm)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2730 
+Label: COGEME unisequence ID 
++   (+) 'COGEME unisequence ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2766 
+Label: HAMAP ID 
++   (+) 'HAMAP ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2758 
+Label: Pfam clan ID 
++   (+) 'Pfam clan ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2756 
+Label: TCID 
++   (+) 'TCID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2759 
+Label: Gene ID (VectorBase) 
++   (+) 'Gene ID (VectorBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2751 
+Label: GenomeReviews ID 
++   (+) 'GenomeReviews ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2752 
+Label: GlycoMap ID 
++   (+) 'GlycoMap ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1167 
+Label: Taverna workflow ID 
++   (+) 'Taverna workflow ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1164 
+Label: MIRIAM URI 
++   (+) 'MIRIAM URI' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2704 
+Label: Clone ID (IMAGE) 
++   (+) 'Clone ID (IMAGE)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1160 
+Label: Pathway ID (CPDB) 
++   (+) 'Pathway ID (CPDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1161 
+Label: Pathway ID (Panther) 
++   (+) 'Pathway ID (Panther)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1162 
+Label: MIRIAM identifier 
++   (+) 'MIRIAM identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2700 
+Label: CATH identifier 
++   (+) 'CATH identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2702 
+Label: Enzyme ID (CAZy) 
++   (+) 'Enzyme ID (CAZy)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1179 
+Label: NCBI taxonomy ID 
++   (+) 'NCBI taxonomy ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1178 
+Label: HGNC concept ID 
++   (+) 'HGNC concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1177 
+Label: MeSH concept ID 
++   (+) 'MeSH concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1176 
+Label: GO concept ID 
++   (+) 'GO concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1175 
+Label: BioPax concept ID 
++   (+) 'BioPax concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1174 
+Label: ChEBI ID 
++   (+) 'ChEBI ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1173 
+Label: ChemSpider ID 
++   (+) 'ChemSpider ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1171 
+Label: BioModel ID 
++   (+) 'BioModel ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2719 
+Label: dbProbe ID 
++   (+) 'dbProbe ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1186 
+Label: myGrid concept ID 
++   (+) 'myGrid concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1185 
+Label: MGED concept ID 
++   (+) 'MGED concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1188 
+Label: DOI 
++   (+) 'DOI' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1187 
+Label: PubMed ID 
++   (+) 'PubMed ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1189 
+Label: Medline UI 
++   (+) 'Medline UI' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2721 
+Label: DiProDB ID 
++   (+) 'DiProDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2723 
+Label: Protein ID (DisProt) 
++   (+) 'Protein ID (DisProt)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2725 
+Label: Ensembl transcript ID 
++   (+) 'Ensembl transcript ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1180 
+Label: Plant Ontology concept ID 
++   (+) 'Plant Ontology concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2727 
+Label: Promoter ID 
+-   (-) 'Promoter ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1181 
+Label: UMLS concept ID 
++   (+) 'UMLS concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1182 
+Label: FMA concept ID 
++   (+) 'FMA concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2729 
+Label: COGEME EST ID 
++   (+) 'COGEME EST ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1183 
+Label: EMAP concept ID 
++   (+) 'EMAP concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1184 
+Label: ChEBI concept ID 
++   (+) 'ChEBI concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2709 
+Label: CleanEx entry name 
++   (+) 'CleanEx entry name' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2086 
+Label: Nucleic acid structure data 
+-   (-) 'Nucleic acid structure data' SubClassOf 'Nucleic acid property' 
++   (+) 'Nucleic acid structure data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2088 
+Label: DNA base structural data 
+-   (-) 'DNA base structural data' SubClassOf 'Nucleic acid structure data' 
++   (+) 'DNA base structural data' SubClassOf 'Nucleic acid property' 
+  
+Class: http://edamontology.org/data_2714 
+Label: CDD PSSM-ID 
++   (+) 'CDD PSSM-ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2713 
+Label: Protein ID (CORUM) 
++   (+) 'Protein ID (CORUM)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2716 
+Label: DBD ID 
++   (+) 'DBD ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2715 
+Label: Protein ID (CuticleDB) 
++   (+) 'Protein ID (CuticleDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1129 
+Label: BIND accession number 
++   (+) 'BIND accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1127 
+Label: PDB ID 
++   (+) 'PDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1128 
+Label: AAindex ID 
++   (+) 'AAindex ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1123 
+Label: TreeBASE study accession number 
++   (+) 'TreeBASE study accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1124 
+Label: TreeFam accession number 
++   (+) 'TreeFam accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1138 
+Label: Pfam accession number 
++   (+) 'Pfam accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1139 
+Label: SMART accession number 
++   (+) 'SMART accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1135 
+Label: Gene3D ID 
++   (+) 'Gene3D ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1136 
+Label: PIRSF ID 
++   (+) 'PIRSF ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1137 
+Label: PRINTS code 
++   (+) 'PRINTS code' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1130 
+Label: IntAct accession number 
++   (+) 'IntAct accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1133 
+Label: InterPro accession 
++   (+) 'InterPro accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1140 
+Label: Superfamily hidden Markov model number 
++   (+) 'Superfamily hidden Markov model number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1149 
+Label: EMAGE ID 
++   (+) 'EMAGE ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1143 
+Label: TRANSFAC accession number 
++   (+) 'TRANSFAC accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1141 
+Label: TIGRFam ID 
++   (+) 'TIGRFam ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1142 
+Label: ProDom accession number 
++   (+) 'ProDom accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1147 
+Label: GEO accession number 
++   (+) 'GEO accession number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1148 
+Label: GermOnline ID 
++   (+) 'GermOnline ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1146 
+Label: EMDB ID 
++   (+) 'EMDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1151 
+Label: HGVbase ID 
++   (+) 'HGVbase ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1150 
+Label: Disease ID 
+-   (-) 'Disease ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1153 
+Label: OMIM ID 
++   (+) 'OMIM ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1155 
+Label: Pathway ID (reactome) 
++   (+) 'Pathway ID (reactome)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1157 
+Label: Pathway ID (BioCyc) 
++   (+) 'Pathway ID (BioCyc)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1158 
+Label: Pathway ID (INOH) 
++   (+) 'Pathway ID (INOH)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1159 
+Label: Pathway ID (PATIKA) 
++   (+) 'Pathway ID (PATIKA)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3103 
+Label: ATC code 
++   (+) 'ATC code' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1907 
+Label: Gene ID (KOME) 
++   (+) 'Gene ID (KOME)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1908 
+Label: Locus ID (Tropgene) 
++   (+) 'Locus ID (Tropgene)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3102 
+Label: CAS number 
++   (+) 'CAS number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1905 
+Label: Locus ID (MaizeGDB) 
++   (+) 'Locus ID (MaizeGDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1902 
+Label: Locus ID (MMP) 
++   (+) 'Locus ID (MMP)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1901 
+Label: Locus ID (SGD) 
++   (+) 'Locus ID (SGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1904 
+Label: Locus ID (EntrezGene) 
++   (+) 'Locus ID (EntrezGene)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1903 
+Label: Locus ID (DictyBase) 
++   (+) 'Locus ID (DictyBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1900 
+Label: NCBI locus tag 
++   (+) 'NCBI locus tag' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1100 
+Label: PIR identifier 
+-   (-) 'PIR identifier' SubClassOf 'is identifier of' some 'Sequence record' 
++   (+) 'PIR identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1104 
+Label: Sequence cluster ID (UniGene) 
++   (+) 'Sequence cluster ID (UniGene)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1103 
+Label: EMBL/GenBank/DDBJ ID 
++   (+) 'EMBL/GenBank/DDBJ ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1106 
+Label: dbSNP ID 
++   (+) 'dbSNP ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1105 
+Label: dbEST accession 
++   (+) 'dbEST accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3134 
+Label: Gene transcript report 
+-   (-) 'Gene transcript report' SubClassOf 'Gene report' 
++   (+) 'Gene transcript report' SubClassOf 'Nucleic acid features' 
+  
+Class: http://edamontology.org/data_1113 
+Label: Sequence cluster ID (COG) 
++   (+) 'Sequence cluster ID (COG)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1115 
+Label: Sequence profile ID 
+-   (-) 'Sequence profile ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1119 
+Label: JASPAR profile ID 
++   (+) 'JASPAR profile ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1118 
+Label: HMMER hidden Markov model ID 
++   (+) 'HMMER hidden Markov model ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_2436 
+Label: Gene-set enrichment analysis 
+-   (-) 'Gene-set enrichment analysis' SubClassOf 'Gene set testing' 
++   (+) 'Gene-set enrichment analysis' SubClassOf 'Gene expression analysis' 
+  
+Class: http://edamontology.org/data_2770 
+Label: HIT ID 
++   (+) 'HIT ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2772 
+Label: HPA antibody id 
++   (+) 'HPA antibody id' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2771 
+Label: HIX ID 
++   (+) 'HIX ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2774 
+Label: Gene ID (JCVI) 
++   (+) 'Gene ID (JCVI)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2773 
+Label: IMGT/HLA ID 
++   (+) 'IMGT/HLA ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2778 
+Label: CCAP strain number 
++   (+) 'CCAP strain number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2779 
+Label: Stock number 
+-   (-) 'Stock number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2783 
+Label: Protein family ID (PANTHER) 
++   (+) 'Protein family ID (PANTHER)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2781 
+Label: REDIdb ID 
++   (+) 'REDIdb ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2780 
+Label: Stock number (TAIR) 
++   (+) 'Stock number (TAIR)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2787 
+Label: NCBI genome accession 
++   (+) 'NCBI genome accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2786 
+Label: NCBI Genome Project ID 
++   (+) 'NCBI Genome Project ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2784 
+Label: RNAVirusDB ID 
++   (+) 'RNAVirusDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2789 
+Label: Protein ID (TopDB) 
++   (+) 'Protein ID (TopDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2796 
+Label: Linucs ID 
++   (+) 'Linucs ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2798 
+Label: MaizeDB ID 
++   (+) 'MaizeDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2797 
+Label: Protein ID (LGICdb) 
++   (+) 'Protein ID (LGICdb)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2792 
+Label: Protein ID (PeroxiBase) 
++   (+) 'Protein ID (PeroxiBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2794 
+Label: ORF ID 
++   (+) 'ORF ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2793 
+Label: SISYPHUS ID 
++   (+) 'SISYPHUS ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2799 
+Label: Gene ID (MfunGD) 
++   (+) 'Gene ID (MfunGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1891 
+Label: iHOP symbol 
++   (+) 'iHOP symbol' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1893 
+Label: Locus ID 
+-   (-) 'Locus ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1895 
+Label: Locus ID (AGI) 
++   (+) 'Locus ID (AGI)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1896 
+Label: Locus ID (ASPGD) 
++   (+) 'Locus ID (ASPGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1897 
+Label: Locus ID (MGG) 
++   (+) 'Locus ID (MGG)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1898 
+Label: Locus ID (CGD) 
++   (+) 'Locus ID (CGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1899 
+Label: Locus ID (CMR) 
++   (+) 'Locus ID (CMR)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1885 
+Label: Gene ID (GeneFarm) 
++   (+) 'Gene ID (GeneFarm)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1886 
+Label: Blattner number 
++   (+) 'Blattner number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1087 
+Label: Ontology concept ID 
+-   (-) 'Ontology concept ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1088 
+Label: Article ID 
+-   (-) 'Article ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1083 
+Label: Workflow ID 
+-   (-) 'Workflow ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1081 
+Label: Genotype and phenotype annotation ID 
+-   (-) 'Genotype and phenotype annotation ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1080 
+Label: Gene expression report ID 
+-   (-) 'Gene expression report ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1098 
+Label: RefSeq accession 
++   (+) 'RefSeq accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1093 
+Label: Sequence accession 
+-   (-) 'Sequence accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1064 
+Label: Sequence set ID 
+-   (-) 'Sequence set ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1068 
+Label: Phylogenetic tree ID 
+-   (-) 'Phylogenetic tree ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1079 
+Label: Electron microscopy model ID 
+-   (-) 'Electron microscopy model ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2835 
+Label: Gene ID (VBASE2) 
++   (+) 'Gene ID (VBASE2)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1070 
+Label: Structure ID 
+-   (-) 'Structure ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1073 
+Label: Amino acid index ID 
+-   (-) 'Amino acid index ID' SubClassOf 'Accession' 
++   (+) 'Amino acid index ID' SubClassOf 'Identifier (typed)' 
+  
+Class: http://edamontology.org/data_1074 
+Label: Protein interaction ID 
+-   (-) 'Protein interaction ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2837 
+Label: Pathway ID (BioSystems) 
++   (+) 'Pathway ID (BioSystems)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1071 
+Label: Structural (3D) profile ID 
+-   (-) 'Structural (3D) profile ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2836 
+Label: DPVweb ID 
++   (+) 'DPVweb ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1072 
+Label: Structure alignment ID 
+-   (-) 'Structure alignment ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1873 
+Label: iHOP organism ID 
++   (+) 'iHOP organism ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1864 
+Label: Map set data 
+-   (-) 'Map set data' SubClassOf 'Map data' 
++   (+) 'Map set data' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2802 
+Label: Protein ID (EcID) 
++   (+) 'Protein ID (EcID)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2800 
+Label: Orpha number 
++   (+) 'Orpha number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2805 
+Label: GeneSNP ID 
++   (+) 'GeneSNP ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2804 
+Label: Protein ID (ConoServer) 
++   (+) 'Protein ID (ConoServer)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1027 
+Label: Gene ID (NCBI) 
++   (+) 'Gene ID (NCBI)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1031 
+Label: Gene ID (CGD) 
++   (+) 'Gene ID (CGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1032 
+Label: Gene ID (DictyBase) 
++   (+) 'Gene ID (DictyBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1033 
+Label: Ensembl gene ID 
++   (+) 'Ensembl gene ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1034 
+Label: Gene ID (SGD) 
++   (+) 'Gene ID (SGD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1035 
+Label: Gene ID (GeneDB) 
++   (+) 'Gene ID (GeneDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1036 
+Label: TIGR identifier 
++   (+) 'TIGR identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1038 
+Label: Protein domain ID 
+-   (-) 'Protein domain ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1039 
+Label: SCOP domain identifier 
++   (+) 'SCOP domain identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1802 
+Label: Gene ID (Gramene) 
++   (+) 'Gene ID (Gramene)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1803 
+Label: Gene ID (Virginia microbial) 
++   (+) 'Gene ID (Virginia microbial)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1804 
+Label: Gene ID (SGN) 
++   (+) 'Gene ID (SGN)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1805 
+Label: Gene ID (WormBase) 
++   (+) 'Gene ID (WormBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3029 
+Label: Protein ID (EMBL/GenBank/DDBJ) 
++   (+) 'Protein ID (EMBL/GenBank/DDBJ)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3021 
+Label: UniProt accession 
+-   (-) 'UniProt accession' SubClassOf 'is identifier of' some 'Sequence record' 
++   (+) 'UniProt accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1015 
+Label: Sequence feature ID 
+-   (-) 'Sequence feature ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1011 
+Label: EC number 
++   (+) 'EC number' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/format_3326 
+Label: Data index format 
+-   (-) 'Data index format' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/format_3327 
+Label: BAI 
++   (+) 'BAI' SubClassOf 'Binary format' 
+  
+Class: http://edamontology.org/operation_0457 
+Label: Nucleic acid stitch profile plotting 
+-   (-) 'Nucleic acid stitch profile plotting' SubClassOf 'has output' some 'Nucleic acid stitch profile' 
+  
+Class: http://edamontology.org/operation_0458 
+Label: Nucleic acid melting curve plotting 
+-   (-) 'Nucleic acid melting curve plotting' SubClassOf 'has output' some 'Nucleic acid melting curve' 
+  
+Class: http://edamontology.org/operation_0459 
+Label: Nucleic acid probability profile plotting 
+-   (-) 'Nucleic acid probability profile plotting' SubClassOf 'has output' some 'Nucleic acid probability profile' 
+  
+Class: http://edamontology.org/data_2898 
+Label: Monosaccharide accession 
+-   (-) 'Monosaccharide accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2891 
+Label: Biological model accession 
+-   (-) 'Biological model accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2893 
+Label: Cell type accession 
+-   (-) 'Cell type accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2895 
+Label: Drug accession 
+-   (-) 'Drug accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2897 
+Label: Toxin accession 
+-   (-) 'Toxin accession' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_0460 
+Label: Nucleic acid temperature profile plotting 
+-   (-) 'Nucleic acid temperature profile plotting' SubClassOf 'has output' some 'Nucleic acid temperature profile' 
+  
+Class: http://edamontology.org/data_1746 
+Label: Atomic z coordinate 
+-   (-) 'Atomic z coordinate' SubClassOf 'Atomic coordinate' 
++   (+) 'Atomic z coordinate' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_1745 
+Label: Atomic y coordinate 
+-   (-) 'Atomic y coordinate' SubClassOf 'Atomic coordinate' 
++   (+) 'Atomic y coordinate' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_1744 
+Label: Atomic x coordinate 
+-   (-) 'Atomic x coordinate' SubClassOf 'Atomic coordinate' 
++   (+) 'Atomic x coordinate' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_1794 
+Label: Gene ID (PlasmoDB) 
++   (+) 'Gene ID (PlasmoDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1795 
+Label: Gene ID (EcoGene) 
++   (+) 'Gene ID (EcoGene)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1796 
+Label: Gene ID (FlyBase) 
++   (+) 'Gene ID (FlyBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1713 
+Label: Fate map 
+-   (-) 'Fate map' SubClassOf 'Organism report' 
+  
+Class: http://edamontology.org/data_2578 
+Label: ArachnoServer ID 
++   (+) 'ArachnoServer ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2580 
+Label: BindingDB Monomer ID 
++   (+) 'BindingDB Monomer ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2588 
+Label: BlotBase blot ID 
++   (+) 'BlotBase blot ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2587 
+Label: Blot ID 
+-   (-) 'Blot ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2591 
+Label: Brite hierarchy ID 
++   (+) 'Brite hierarchy ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2593 
+Label: BRENDA organism ID 
++   (+) 'BRENDA organism ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2641 
+Label: Reaction ID (MACie) 
++   (+) 'Reaction ID (MACie)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2642 
+Label: Gene ID (miRBase) 
++   (+) 'Gene ID (miRBase)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2643 
+Label: Gene ID (ZFIN) 
++   (+) 'Gene ID (ZFIN)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2644 
+Label: Reaction ID (Rhea) 
++   (+) 'Reaction ID (Rhea)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2645 
+Label: Pathway ID (Unipathway) 
++   (+) 'Pathway ID (Unipathway)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2646 
+Label: Compound ID (ChEMBL) 
++   (+) 'Compound ID (ChEMBL)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2647 
+Label: LGICdb identifier 
++   (+) 'LGICdb identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2633 
+Label: Book ID 
+-   (-) 'Book ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2630 
+Label: Mobile genetic element ID 
+-   (-) 'Mobile genetic element ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2631 
+Label: ACLAME ID 
++   (+) 'ACLAME ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2636 
+Label: MatrixDB interaction ID 
++   (+) 'MatrixDB interaction ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2637 
+Label: cPath ID 
++   (+) 'cPath ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2634 
+Label: ISBN 
++   (+) 'ISBN' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2635 
+Label: Compound ID (3DMET) 
++   (+) 'Compound ID (3DMET)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2621 
+Label: TAIR accession (protein) 
+-   (-) 'TAIR accession (protein)' SubClassOf 'is identifier of' some 'Sequence record' 
+  
+Class: http://edamontology.org/data_2622 
+Label: Compound ID (HMDB) 
++   (+) 'Compound ID (HMDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2628 
+Label: BioGRID interaction ID 
++   (+) 'BioGRID interaction ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2629 
+Label: Enzyme ID (MEROPS) 
++   (+) 'Enzyme ID (MEROPS)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2625 
+Label: LIPID MAPS ID 
++   (+) 'LIPID MAPS ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2626 
+Label: PeptideAtlas ID 
++   (+) 'PeptideAtlas ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2611 
+Label: ICD identifier 
++   (+) 'ICD identifier' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2618 
+Label: Protein modification ID 
+-   (-) 'Protein modification ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2619 
+Label: RESID ID 
++   (+) 'RESID ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2616 
+Label: DIP ID 
++   (+) 'DIP ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2617 
+Label: Signaling Gateway protein ID 
++   (+) 'Signaling Gateway protein ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2614 
+Label: TCDB ID 
++   (+) 'TCDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2615 
+Label: MINT ID 
++   (+) 'MINT ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2612 
+Label: Sequence cluster ID (CluSTr) 
++   (+) 'Sequence cluster ID (CluSTr)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2613 
+Label: KEGG Glycan ID 
++   (+) 'KEGG Glycan ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_1662 
+Label: Drug structure relationship map 
+-   (-) 'Drug structure relationship map' SubClassOf 'Drug report' 
++   (+) 'Drug structure relationship map' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass 
+  
+Class: http://edamontology.org/data_2609 
+Label: Drug ID (KEGG) 
++   (+) 'Drug ID (KEGG)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3238 
+Label: Cell type ontology ID 
++   (+) 'Cell type ontology ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3264 
+Label: COSMIC ID 
++   (+) 'COSMIC ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3265 
+Label: HGMD ID 
++   (+) 'HGMD ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3273 
+Label: Sample ID 
+-   (-) 'Sample ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_3270 
+Label: Ensembl gene tree ID 
++   (+) 'Ensembl gene tree ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2670 
+Label: Pathway ID (DQCS) 
++   (+) 'Pathway ID (DQCS)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/format_3162 
+Label: MAGE-TAB 
+-   (-) 'MAGE-TAB' SubClassOf 'Textual format' 
++   (+) 'MAGE-TAB' SubClassOf 'TSV' 
+  
+Class: http://edamontology.org/data_2657 
+Label: NeuroMorpho ID 
++   (+) 'NeuroMorpho ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2656 
+Label: NeuronDB ID 
++   (+) 'NeuronDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2659 
+Label: Pathway ID (SMPDB) 
++   (+) 'Pathway ID (SMPDB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2658 
+Label: Compound ID (ChemIDplus) 
++   (+) 'Compound ID (ChemIDplus)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2651 
+Label: Disease ID (PharmGKB) 
++   (+) 'Disease ID (PharmGKB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2650 
+Label: Pathway ID (PharmGKB) 
++   (+) 'Pathway ID (PharmGKB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2653 
+Label: Drug ID (TTD) 
++   (+) 'Drug ID (TTD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2652 
+Label: Drug ID (PharmGKB) 
++   (+) 'Drug ID (PharmGKB)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2654 
+Label: Target ID (TTD) 
++   (+) 'Target ID (TTD)' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2669 
+Label: ModelDB ID 
++   (+) 'ModelDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2668 
+Label: iRefIndex ID 
++   (+) 'iRefIndex ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2667 
+Label: MMDB ID 
++   (+) 'MMDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2662 
+Label: T3DB ID 
++   (+) 'T3DB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2666 
+Label: CDD ID 
++   (+) 'CDD ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2665 
+Label: LipidBank ID 
++   (+) 'LipidBank ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/data_2664 
+Label: GlycomeDB ID 
++   (+) 'GlycomeDB ID' SubClassOf 'Accession' 
+  
+Class: http://edamontology.org/operation_3680 
+Label: RNA-Seq analysis 
++   (+) 'RNA-Seq analysis' SubClassOf 'Gene expression analysis' 
+
+
+## All semantic changes (1.21):
+```
+[+]AnnotationProperty: Repository
+[+]AnnotationProperty: hasHumanReadableId
+[+]AnnotationProperty: hasHumanReadableId
+[+]Class: 'Environmental science'
+[+]Class: 'Spectrum calculation'
+[+]Class: 'NLP format'
+[+]Class: BEAST
+[+]Class: HSAML
+[+]Class: Chado-XML
+[+]Class: KGML
+[+]Class: 'InterProScan XML'
+[+]Class: MSAML
+[+]Class: 'PubMed XML'
+[+]Class: OrthoXML
+[+]Class: 'UniParc XML'
+[+]Class: PSDML
+[+]Class: SeqXML
+[+]Class: 'UniRef XML'
+[+]Class: CWL
+[+]Class: JCAMP-DX
+[+]Class: 'Waters RAW'
+[+]Class: 'NLP annotation format'
+[+]Class: 'NLP corpus format'
+[+]Class: 'RNA annotation format'
+[+]Class: mirGFF3
+[+]Class: 'Multilocus sequence typing'
+[+]Class: 'RNA central ID'
+[+]Class: 'Electronic health record'
+[+]Class: 'Molecular simulation data'
+[+]'Secondary structure alignment (protein)' deprecation_candidate "true"
+[+]'Secondary structure alignment (RNA)' deprecation_candidate "true"
+[-]'Protein property' rdfs:comment "The report may be based on analysis of nucleic acid sequence or structural data. This is a broad data type and is used a placeholder for other, more specific types."
+[+]'Protein property' rdfs:comment "This is a broad data type and is used a placeholder for other, more specific types. Data may be based on analysis of nucleic acid sequence or structural data, for example reports on the surface properties (shape, hydropathy, electrostatic patches etc) of a protein structure, protein flexibility or motion, and protein architecture (spatial arrangement of secondary structure)."
+[-]'Protein interaction report' hasDefinition "An informative report on interactions (predicted or known) within or between a protein, structural domain or part of a protein. This includes intra- and inter-residue contacts and distances, as well as interactions with other proteins and non-protein entities such as nucleic acid, metal atoms, water, ions etc. "
+[+]'Protein interaction report' hasDefinition "Data concerning the interactions (predicted or known) within or between a protein, structural domain or part of a protein. This includes intra- and inter-residue contacts and distances, as well as interactions with other proteins and non-protein entities such as nucleic acid, metal atoms, water, ions etc. "
+[+]'Protein interaction report' rdfs:label "Protein interaction data"
+[-]'Protein interaction report' rdfs:label "Protein interaction report"
+[+]'Nucleic acid property' comment "Nucleic acid structural properties stiffness, curvature, twist/roll data or other conformational parameters or properties. "
+[+]'Nucleic acid property' hasNarrowSynonym "Nucleic acid property (structural)"
+[+]'Nucleic acid property' hasNarrowSynonym "Nucleic acid structural property"
+[-]'Nucleic acid property' rdfs:comment "The report may be based on analysis of nucleic acid sequence or structural data. This is a broad data type and is used a placeholder for other, more specific types."
+[+]'Nucleic acid property' rdfs:comment "This is a broad data type and is used a placeholder for other, more specific types. "
+[+]'Chromosome report' hasDefinition "A human-readable collection of information about a specific chromosome."
+[-]'Chromosome report' hasDefinition "An informative report on a specific chromosome."
+[+]'Genotype/phenotype report' hasDefinition "A human-readable collection of information about the set of genes (or allelic forms) present in an individual, organism or cell and associated with a specific physical characteristic, or a report concerning an organisms traits and phenotypes."
+[-]'Genotype/phenotype report' hasDefinition "An informative report on the set of genes (or allelic forms) present in an individual, organism or cell and associated with a specific physical characteristic, or a report concerning an organisms traits and phenotypes."
+[+]'Genetic linkage report' hasDefinition "A human-readable collection of information about the linkage of alleles."
+[-]'Genetic linkage report' hasDefinition "An informative report on the linkage of alleles."
+[+]'Data index report' hasDefinition "A human-readable collection of information concerning an analysis of an index of biological data."
+[-]'Data index report' hasDefinition "A report of an analysis of an index of biological data."
+[+]'Small molecule report' hasDefinition "A human-readable collection of information about a specific chemical compound."
+[-]'Small molecule report' hasDefinition "An informative report on a specific chemical compound."
+[+]'Cell line report' hasDefinition "A human-readable collection of information about a particular strain of organism cell line including plants, virus, fungi and bacteria. The data typically includes strain number, organism type, growth conditions, source and so on."
+[-]'Cell line report' hasDefinition "Report on a particular strain of organism cell line including plants, virus, fungi and bacteria. The data typically includes strain number, organism type, growth conditions, source and so on."
+[+]'Text mining report' hasDefinition "A human-readable collection of information resulting from text mining."
+[-]'Text mining report' hasDefinition "An abstract of the results of text mining."
+[+]'Identifier (typed)' rdfs:label "Identifier (by type of data)"
+[-]'Identifier (typed)' rdfs:label "Identifier (typed)"
+[+]'Nucleic acid features' hasDefinition "An informative report on intrinsic positional features of a nucleotide sequence, formatted to be machine-readable."
+[-]'Nucleic acid features' hasDefinition "An informative report on intrinsic positional features of a nucleotide sequence."
+[+]'Sequence alignment (pair)' deprecation_candidate "true"
+[+]'Sequence alignment (pair)' hasNarrowSynonym "Pair sequence alignment"
+[+]'Sequence alignment (nucleic acid)' hasExactSynonym "Nucleic acid sequence alignment"
+[+]'Sequence alignment (nucleic acid)' hasNarrowSynonym "DNA sequence alignment"
+[+]'Sequence alignment (nucleic acid)' hasNarrowSynonym "RNA sequence alignment"
+[+]'Sequence alignment (protein)' hasExactSynonym "Protein sequence alignment"
+[+]'Sequence alignment (hybrid)' hasExactSynonym "Hybrid sequence alignment"
+[+]'Comparison matrix (nucleotide)' hasExactSynonym "Nucleotide comparison matrix"
+[+]'Protein structure' hasDefinition "3D coordinate and associated data for a protein tertiary (3D) structure, or part of a structure, possibly in complex with other molecules."
+[-]'Protein structure' hasDefinition "3D coordinate and associated data for a protein tertiary (3D) structure."
+[+]'Protein structure report' hasDefinition "A human-readable collection of information about one or more specific protein 3D structure(s) or structural domains."
+[-]'Protein structure report' hasDefinition "Annotation about, or structural information derived from, one or more specific protein 3D structure(s) or structural domains."
+[-]'Protein structure report' rdfs:comment "This includes for example reports on the surface properties (shape, hydropathy, electrostatic patches etc) of a protein structure, protein flexibility or motion, and protein architecture (spatial arrangement of secondary structure)."
+[+]'Protein solvent accessibility report' rdfs:comment "This concept covers definitions of the protein surface, interior and interfaces, accessible and buried residues, surface accessible pockets, interior inaccessible cavities etc."
+[-]'Protein solvent accessibility report' rdfs:comment "This is a broad data type and is used a placeholder for other, more specific types. It is primarily intended to help navigation of EDAM and would not typically be used for annotation. This concept covers definitions of the protein surface, interior and interfaces, accessible and buried residues, surface accessible pockets, interior inaccessible cavities etc."
+[-]'Protein solvent accessibility report' rdfs:label "Protein solvent accessibility report"
+[+]'Protein solvent accessibility report' rdfs:label "Protein solvent accessibility"
+[+]'Nucleic acid melting profile' comment "Nucleic acid melting curve: a melting curve of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Shows the proportion of nucleic acid which are double-stranded versus temperature."
+[+]'Nucleic acid melting profile' comment "Nucleic acid probability profile: a probability profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Shows the probability of a base pair not being melted (i.e. remaining as double-stranded DNA) at a specified temperature"
+[+]'Nucleic acid melting profile' comment "Nucleic acid stitch profile: stitch profile of hybridised or double stranded nucleic acid (DNA or RNA/DNA). A stitch profile diagram shows partly melted DNA conformations (with probabilities) at a range of temperatures. For example, a stitch profile might show possible loop openings with their location, size, probability and fluctuations at a given temperature."
+[+]'Nucleic acid melting profile' comment "Nucleic acid temperature profile: a temperature profile of a double-stranded nucleic acid molecule (DNA or DNA/RNA). Plots melting temperature versus base position."
+[+]'Nucleic acid melting profile' hasNarrowSynonym "Melting map"
+[+]'Nucleic acid melting profile' hasNarrowSynonym "Nucleic acid melting curve"
+[-]'Nucleic acid stitch profile' inSubset data
+[-]'Nucleic acid stitch profile' inSubset edam
+[+]'Nucleic acid stitch profile' inSubset obsolete
+[+]'Nucleic acid stitch profile' 'Obsolete since' "1.21"
+[+]'Nucleic acid stitch profile' 'old parent' 'Nucleic acid melting profile'
+[+]'Nucleic acid stitch profile' owl:deprecated "true"
+[-]'Nucleic acid stitch profile' rdfs:comment "A stitch profile diagram shows partly melted DNA conformations (with probabilities) at a range of temperatures. For example, a stitch profile might show possible loop openings with their location, size, probability and fluctuations at a given temperature."
+[+]'Nucleic acid stitch profile' replacedBy 'Nucleic acid melting profile'
+[+]'Nucleic acid folding report' hasDefinition "A human-readable collection of information about RNA/DNA folding, minimum folding energies for DNA or RNA sequences, energy landscape of RNA mutants etc."
+[-]'Nucleic acid folding report' hasDefinition "A report on an analysis of RNA/DNA folding, minimum folding energies for DNA or RNA sequences, energy landscape of RNA mutants etc."
+[+]'Pharmacogenomic test report' hasDefinition "A human-readable collection of information about the influence of genotype on drug response."
+[-]'Pharmacogenomic test report' hasDefinition "Data on the influence of genotype on drug response."
+[+]'Disease report' hasDefinition "A human-readable collection of information about a specific disease."
+[-]'Disease report' hasDefinition "An informative report on a specific disease."
+[+]'Heat map' hasDefinition "A graphical 2D tabular representation of expression data, typically derived from an omics experiment. A heat map is a table where rows and columns correspond to different features and contexts (for example, cells or samples) and the cell colour represents the level of expression of a gene that context."
+[-]'Heat map' hasDefinition "A graphical 2D tabular representation of gene expression data, typically derived from a DNA microarray experiment."
+[-]'Heat map' rdfs:comment "A heat map is a table where rows and columns correspond to different genes and contexts (for example, cells or samples) and the cell color represents the level of expression of a gene that context."
+[-]'Drug structure relationship map' inSubset data
+[-]'Drug structure relationship map' inSubset edam
+[+]'Drug structure relationship map' inSubset obsolete
+[+]'Drug structure relationship map' 'Obsolete since' "1.21"
+[+]'Drug structure relationship map' 'old parent' 'Drug report'
+[+]'Drug structure relationship map' owl:deprecated "true"
+[+]'Drug structure relationship map' replacedBy 'Drug report'
+[+]'Drug report' comment "A drug structure relationship map is report (typically a map diagram) of drug structure relationships."
+[+]'Drug report' hasDefinition "A human-readable collection of information about a specific drug."
+[-]'Drug report' hasDefinition "An informative report on a specific drug."
+[+]'Drug report' hasNarrowSynonym "Drug structure relationship map"
+[+]'Chemical structure image' hasNarrowSynonym "Chemical structure sketch"
+[+]'Chemical structure image' hasNarrowSynonym "Small molecule sketch"
+[-]'Atomic x coordinate' inSubset data
+[-]'Atomic x coordinate' inSubset edam
+[+]'Atomic x coordinate' inSubset obsolete
+[+]'Atomic x coordinate' 'Obsolete since' "1.21"
+[+]'Atomic x coordinate' 'old parent' 'Atomic coordinate'
+[+]'Atomic x coordinate' owl:deprecated "true"
+[+]'Atomic x coordinate' replacedBy 'Atomic coordinate'
+[-]'Atomic y coordinate' inSubset data
+[-]'Atomic y coordinate' inSubset edam
+[+]'Atomic y coordinate' inSubset obsolete
+[+]'Atomic y coordinate' 'Obsolete since' "1.21"
+[+]'Atomic y coordinate' 'old parent' 'Atomic coordinate'
+[+]'Atomic y coordinate' owl:deprecated "true"
+[+]'Atomic y coordinate' replacedBy 'Atomic coordinate'
+[-]'Atomic z coordinate' inSubset data
+[-]'Atomic z coordinate' inSubset edam
+[+]'Atomic z coordinate' inSubset obsolete
+[+]'Atomic z coordinate' 'Obsolete since' "1.21"
+[+]'Atomic z coordinate' 'old parent' 'Atomic coordinate'
+[+]'Atomic z coordinate' owl:deprecated "true"
+[+]'Atomic z coordinate' replacedBy 'Atomic coordinate'
+[-]'Map set data' hasDbXref "Moby:GCP_CorrelatedLinkageMapSet"
+[-]'Map set data' hasDbXref "Moby:GCP_CorrelatedMapSet"
+[-]'Map set data' inSubset data
+[-]'Map set data' inSubset edam
+[+]'Map set data' inSubset obsolete
+[+]'Map set data' 'Obsolete since' "1.21"
+[+]'Map set data' 'old parent' 'Map data'
+[+]'Map set data' owl:deprecated "true"
+[+]'Map set data' replacedBy 'Map data'
+[-]'Map data' hasDefinition "A molecular map (genetic or physical), an attribute of such a map, or data extracted from or derived from the analysis of such a map."
+[+]'Map data' hasDefinition "Data describing a molecular map (genetic or physical) or a set of such maps, including various attributes of, data extracted from or derived from the analysis of them, but exluding the map(s) themselves. This includes metadata for map sets that share a common set of features which are mapped."
+[-]'Map data' hasExactSynonym "Map attribute"
+[+]'Map data' hasNarrowSynonym "Map attribute"
+[+]'Map data' hasNarrowSynonym "Map set data"
+[-]'Map data' rdfs:comment "This is a broad data type and is used a placeholder for other, more specific types. It is primarily intended to help navigation of EDAM and would not typically be used for annotation. It includes concepts that are best described as scientific text or closely concerned with or derived from text."
+[+]Report hasExactSynonym "Record"
+[+]'Nucleic acid report' hasDefinition "A human-readable collection of information about one or more specific nucleic acid molecules."
+[-]'Nucleic acid report' hasDefinition "An informative human-readable report about one or more specific nucleic acid molecules, derived from analysis of primary (sequence or structural) data."
+[+]'Structure report' hasDefinition "A human-readable collection of information about one or more molecular tertiary (3D) structures. It might include annotation on the structure, a computer-generated report of analysis of structural data, and metadata (data about primary data) or any other free (essentially unformatted) text, as distinct from the primary data itself."
+[-]'Structure report' hasDefinition "An informative report on general information, properties or features of one or more molecular tertiary (3D) structures."
+[+]'Nucleic acid structure data' consider 'Nucleic acid property'
+[+]'Nucleic acid structure data' consider 'Nucleic acid structure report'
+[-]'Nucleic acid structure data' hasExactSynonym "Nucleic acid property (structural)"
+[-]'Nucleic acid structure data' hasExactSynonym "Nucleic acid structural property"
+[-]'Nucleic acid structure data' inSubset data
+[-]'Nucleic acid structure data' inSubset edam
+[+]'Nucleic acid structure data' inSubset obsolete
+[+]'Nucleic acid structure data' 'Obsolete since' "1.21"
+[+]'Nucleic acid structure data' owl:deprecated "true"
+[-]'Nucleic acid structure data' rdfs:comment "This includes reports on the stiffness, curvature, twist/roll data or other conformational parameters or properties."
+[+]'Carbohydrate report' hasDefinition "A human-readable collection of information about one or more specific carbohydrate 3D structure(s)."
+[-]'Carbohydrate report' hasDefinition "Annotation on or information derived from one or more specific carbohydrate 3D structure(s)."
+[+]'RNA family report' hasDefinition "A human-readable collection of information about a specific RNA family or other group of classified RNA sequences."
+[-]'RNA family report' hasDefinition "An informative report on a specific RNA family or other group of classified RNA sequences."
+[+]'Organism report' hasDefinition "A human-readable collection of information about a specific organism."
+[-]'Organism report' hasDefinition "An informative report on a specific organism."
+[+]'Experiment report' hasDefinition "A human-readable collection of information about a wet lab experiment, such as experimental conditions."
+[-]'Experiment report' hasDefinition "Annotation on a wet lab experiment, such as experimental conditions."
+[+]'Gene expression data' hasDefinition " Image, hybridisation or some other data arising from a study of feature/molecule expression, typically profiling or quantification."
+[-]'Gene expression data' hasDefinition "Image, hybridisation or some other data arising from a study of gene expression, typically profiling or quantification."
+[+]'Gene expression data' hasNarrowSynonym "Gene expression data"
+[+]'Gene expression data' hasNarrowSynonym "Metabolite expression data"
+[+]'Gene expression data' hasNarrowSynonym "Protein expression data"
+[+]'Gene expression data' rdfs:label "Expression data"
+[-]'Gene expression data' rdfs:label "Gene expression data"
+[+]'Genome report' hasDefinition "A human-readable collection of information concerning a genome as a whole."
+[-]'Genome report' hasDefinition "An informative report of general information concerning a genome as a whole."
+[+]'Lipid report' hasDefinition "A human-readable collection of information about one or more specific lipid 3D structure(s)."
+[-]'Lipid report' hasDefinition "Annotation on or information derived from one or more specific lipid 3D structure(s)."
+[-]'Protein secondary structure report' hasDefinition "An informative report about the properties or features of one or more protein secondary structures."
+[+]'Protein secondary structure report' hasDefinition "Data concerning the properties or features of one or more protein secondary structures."
+[-]'Protein secondary structure report' rdfs:label "Protein secondary structure report"
+[+]'Protein secondary structure report' rdfs:label "Protein secondary structure"
+[-]'Nucleic acid melting curve' inSubset data
+[-]'Nucleic acid melting curve' inSubset edam
+[+]'Nucleic acid melting curve' inSubset obsolete
+[+]'Nucleic acid melting curve' 'Obsolete since' "1.21"
+[+]'Nucleic acid melting curve' 'old parent' 'Nucleic acid melting profile'
+[+]'Nucleic acid melting curve' owl:deprecated "true"
+[-]'Nucleic acid melting curve' rdfs:comment "Shows the proportion of nucleic acid which are double-stranded versus temperature."
+[+]'Nucleic acid melting curve' replacedBy 'Nucleic acid melting profile'
+[-]'Nucleic acid probability profile' inSubset data
+[-]'Nucleic acid probability profile' inSubset edam
+[+]'Nucleic acid probability profile' inSubset obsolete
+[+]'Nucleic acid probability profile' 'Obsolete since' "1.21"
+[+]'Nucleic acid probability profile' 'old parent' 'Nucleic acid melting profile'
+[+]'Nucleic acid probability profile' owl:deprecated "true"
+[-]'Nucleic acid probability profile' rdfs:comment "Shows the probability of a base pair not being melted (i.e. remaining as double-stranded DNA) at a specified temperature"
+[+]'Nucleic acid probability profile' replacedBy 'Nucleic acid melting profile'
+[-]'Nucleic acid temperature profile' hasExactSynonym "Melting map"
+[-]'Nucleic acid temperature profile' inSubset data
+[-]'Nucleic acid temperature profile' inSubset edam
+[+]'Nucleic acid temperature profile' inSubset obsolete
+[+]'Nucleic acid temperature profile' 'Obsolete since' "1.21"
+[+]'Nucleic acid temperature profile' 'old parent' 'Nucleic acid melting profile'
+[+]'Nucleic acid temperature profile' owl:deprecated "true"
+[-]'Nucleic acid temperature profile' rdfs:comment "Plots melting temperature versus base position."
+[+]'Nucleic acid temperature profile' replacedBy 'Nucleic acid melting profile'
+[-]Image hasDefinition "Biological or biomedical data has been rendered into an image, typically for display on screen."
+[+]Image hasDefinition "Data (typically biological or biomedical) that has been rendered into an image, typically for display on screen."
+[+]'Protein sequence (raw)' hasExactSynonym "Raw amino acid sequence"
+[+]'Protein sequence (raw)' hasExactSynonym "Raw amino acid sequences"
+[+]'Nucleic acid sequence (raw)' hasExactSynonym "Raw nucleic acid sequence"
+[+]'Protein sequence' Documentation https://en.wikipedia.org/wiki/Protein_primary_structure
+[+]'Protein sequence' hasExactSynonym "Amino acid sequence"
+[+]'Protein sequence' hasExactSynonym "Amino acid sequences"
+[+]'Protein geometry report' rdfs:label "Protein geometry data"
+[-]'Protein geometry report' rdfs:label "Protein geometry report"
+[+]'UniProt accession' Documentation https://www.uniprot.org/help/accession_numbers
+[+]'Nucleic acid structure report' comment "The report may be based on analysis of nucleic acid sequence or structural data, or any annotation or information about specific nucleic acid 3D structure(s) or such structures in general."
+[+]'Nucleic acid structure report' hasDefinition "A human-readable collection of information about regions within a nucleic acid sequence which form secondary or tertiary (3D) structures."
+[-]'Nucleic acid structure report' hasDefinition "A report on regions within a nucleic acid sequence which form secondary or tertiary (3D) structures."
+[+]'Gene family report' hasDefinition "A human-readable collection of information about a particular family of genes, typically a set of genes with similar sequence that originate from duplication of a common ancestor gene, or any other classification of nucleic acid sequences or structures that reflects gene structure."
+[-]'Gene family report' hasDefinition "An informative report on a particular family of genes, typically a set of genes with similar sequence that originate from duplication of a common ancestor gene, or any other classification of nucleic acid sequences or structures that reflects gene structure."
+[+]'NMR spectrum' inSubset data
+[-]'NMR spectrum' inSubset formats
+[-]'Chemical structure sketch' hasExactSynonym "Small molecule sketch"
+[-]'Chemical structure sketch' inSubset data
+[-]'Chemical structure sketch' inSubset edam
+[+]'Chemical structure sketch' inSubset obsolete
+[+]'Chemical structure sketch' 'Obsolete since' "1.21"
+[+]'Chemical structure sketch' 'old parent' 'Chemical structure image'
+[+]'Chemical structure sketch' owl:deprecated "true"
+[+]'Chemical structure sketch' replacedBy 'Chemical structure image'
+[+]'RNA sequence (raw)' hasExactSynonym "Raw RNA sequence"
+[+]'DNA sequence (raw)' hasExactSynonym "Raw DNA sequence"
+[+]'Clinical trial report' hasDefinition "A human-readable collection of information concerning a clinical trial."
+[-]'Clinical trial report' hasDefinition "A report concerning a clinical trial."
+[-]'Biodiversity report' hasDefinition "A report about biodiversity data."
+[+]'Biodiversity report' hasDefinition "Machine-readable biodiversity data."
+[+]'Biodiversity report' rdfs:label "Biodiversity data"
+[-]'Biodiversity report' rdfs:label "Biodiversity report"
+[+]'Biosafety report' hasDefinition "A human-readable collection of information concerning biosafety data."
+[-]'Biosafety report' hasDefinition "A report about biosafety data."
+[+]'Over-representation report' hasDefinition "A ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data."
+[-]'Over-representation report' hasDefinition "An informative report containing a ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data."
+[+]'Over-representation report' rdfs:label "Over-representation data"
+[-]'Over-representation report' rdfs:label "Over-representation report"
+[+]'GO-term enrichment report' hasDefinition "A ranked list of Gene Ontology concepts, each associated with a p-value, concerning or derived from the analysis of e.g. a set of genes or proteins."
+[-]'GO-term enrichment report' hasDefinition "An informative report containing a ranked list of Gene Ontology concepts, each associated with a p-value, concerning or derived from the analysis of e.g. a set of genes or proteins."
+[+]'GO-term enrichment report' rdfs:label "GO-term enrichment data"
+[-]'GO-term enrichment report' rdfs:label "GO-term enrichment report"
+[+]'Clustered gene expression profiles' hasDefinition "Groupings of expression profiles according to a clustering algorithm."
+[-]'Clustered gene expression profiles' hasDefinition "Groupings of gene expression profiles according to a clustering algorithm."
+[+]'Clustered gene expression profiles' hasNarrowSynonym "Clustered gene expression profiles"
+[+]'Clustered gene expression profiles' rdfs:label "Clustered expression profiles"
+[-]'Clustered gene expression profiles' rdfs:label "Clustered gene expression profiles"
+[+]'Molecular simulation data' 'Created in' "1.21"
+[+]'Molecular simulation data' hasDefinition "Data coming from molecular simulations, computer "experiments" on model molecules."
+[+]'Molecular simulation data' inSubset data
+[+]'Molecular simulation data' inSubset edam
+[+]'Molecular simulation data' rdfs:comment "Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic)."
+[+]'Molecular simulation data' rdfs:label "Molecular simulation data"
+[+]'RNA central ID' 'Created in' "1.21"
+[+]'RNA central ID' hasDefinition "Identifier of an entry from the RNA central database of annotated human miRNAs."
+[+]'RNA central ID' inSubset data
+[+]'RNA central ID' inSubset edam
+[+]'RNA central ID' inSubset identifiers
+[+]'RNA central ID' rdfs:comment "There are canonical and taxon-specific forms of RNAcentral ID. Canonical form e.g. urs_9or10digits identifies an RNA sequence (within the RNA central database) which may appear in multiple sequences. Taxon-specific form identifies a sequence in the specific taxon (e.g. urs_9or10digits_taxonID)."
+[+]'RNA central ID' rdfs:label "RNA central ID"
+[+]'Electronic health record' 'Created in' "1.21"
+[+]'Electronic health record' hasDefinition "A human-readable systematic collection of patient (or population) health information in a digital format."
+[+]'Electronic health record' hasExactSynonym "EHR"
+[+]'Electronic health record' hasExactSynonym "Electronic medical record"
+[+]'Electronic health record' hasExactSynonym "EMR"
+[+]'Electronic health record' inSubset data
+[+]'Electronic health record' inSubset edam
+[+]'Electronic health record' rdfs:label "Electronic health record"
+[-]'GCG MSF' hasExactSynonym "MSF"
+[+]'BioXSD (XML)' Repository https://github.com/bioxsd/bioxsd
+[+]GTrack Repository https://github.com/gtrack/gtrack
+[+]GTrack Example https://github.com/gtrack/gtrack/tree/master/gtrack/examples
+[+]TSV hasExactSynonym "Tab-delimited"
+[+]'BioJSON (BioXSD)' Repository https://github.com/bioxsd/bioxsd
+[+]BioYAML Repository https://github.com/bioxsd/bioxsd
+[+]GSuite Repository https://github.com/gtrack/gtrack
+[+]GSuite Example https://github.com/gtrack/gtrack/tree/master/gsuite/examples
+[+]BTrack Repository https://github.com/gtrack/gtrack
+[-]pptx 'Media type' https://www.iana.org/assignments/media-types/application/vnd.ms-powerpoint
+[+]pptx 'Media type' https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation
+[+]'NLP format' 'Created in' "1.21"
+[+]'NLP format' hasDefinition "Data format used in Natural Language Processing."
+[+]'NLP format' hasExactSynonym "Natural Language Processing format"
+[+]'NLP format' inSubset edam
+[+]'NLP format' inSubset formats
+[+]'NLP format' rdfs:label "NLP format"
+[+]BEAST 'Created in' "1.21"
+[+]BEAST Documentation http://beast.bio.ed.ac.uk/
+[+]BEAST hasDefinition "XML input file format for BEAST Software (Bayesian Evolutionary Analysis Sampling Trees)."
+[+]BEAST inSubset edam
+[+]BEAST inSubset formats
+[+]BEAST rdfs:label "BEAST"
+[+]Chado-XML 'Created in' "1.21"
+[+]Chado-XML Documentation http://gmod.org/wiki/Chado_XML
+[+]Chado-XML hasDefinition "Chado-XML format is a direct mapping of the Chado relational schema into XML."
+[+]Chado-XML inSubset edam
+[+]Chado-XML inSubset formats
+[+]Chado-XML rdfs:label "Chado-XML"
+[+]HSAML 'Created in' "1.21"
+[+]HSAML Documentation http://www.ebi.ac.uk/goldman-srv/hsaml/
+[+]HSAML hasDefinition "An alignment format generated by PRANK/PRANKSTER consisting of four elements: newick, nodes, selection and model."
+[+]HSAML inSubset edam
+[+]HSAML inSubset formats
+[+]HSAML rdfs:label "HSAML"
+[+]'InterProScan XML' 'Created in' "1.21"
+[+]'InterProScan XML' Documentation https://github.com/ebi-pf-team/interproscan/wiki/OutputFormats
+[+]'InterProScan XML' hasDefinition "Output xml file from the InterProScan sequence analysis application."
+[+]'InterProScan XML' inSubset edam
+[+]'InterProScan XML' inSubset formats
+[+]'InterProScan XML' rdfs:label "InterProScan XML"
+[+]KGML 'Created in' "1.21"
+[+]KGML hasDbXref http://www.genome.jp/kegg/xml/
+[+]KGML hasDefinition "The KEGG Markup Language (KGML) is an exchange format of the KEGG pathway maps, which is converted from internally used KGML+ (KGML+SVG) format."
+[+]KGML hasExactSynonym "KEGG Markup Language"
+[+]KGML inSubset edam
+[+]KGML inSubset formats
+[+]KGML rdfs:label "KGML"
+[+]'PubMed XML' 'Created in' "1.21"
+[+]'PubMed XML' hasDefinition "XML format for collected entries from biobliographic databases MEDLINE and PubMed."
+[+]'PubMed XML' hasExactSynonym "MEDLINE XML"
+[+]'PubMed XML' inSubset edam
+[+]'PubMed XML' inSubset formats
+[+]'PubMed XML' rdfs:label "PubMed XML"
+[+]MSAML 'Created in' "1.21"
+[+]MSAML Documentation http://xml.coverpages.org/msaml-desc-dec.html
+[+]MSAML hasDefinition "A set of XML compliant markup components for describing multiple sequence alignments."
+[+]MSAML inSubset edam
+[+]MSAML inSubset formats
+[+]MSAML rdfs:label "MSAML"
+[+]OrthoXML 'Created in' "1.21"
+[+]OrthoXML Documentation http://orthoxml.org/xml/Documentation.html
+[+]OrthoXML hasDefinition "OrthoXML is designed broadly to allow the storage and comparison of orthology data from any ortholog database. It establishes a structure for describing orthology relationships while still allowing flexibility for database-specific information to be encapsulated in the same format."
+[+]OrthoXML inSubset edam
+[+]OrthoXML inSubset formats
+[+]OrthoXML rdfs:label "OrthoXML"
+[+]PSDML 'Created in' "1.21"
+[+]PSDML Documentation http://matra.sourceforge.net/dtdtree/bio/psdml_dtdtree.php
+[+]PSDML hasDefinition "Tree structure of Protein Sequence Database Markup Language generated using Matra software."
+[+]PSDML inSubset edam
+[+]PSDML inSubset formats
+[+]PSDML rdfs:label "PSDML"
+[+]SeqXML 'Created in' "1.21"
+[+]SeqXML Documentation http://orthoxml.org/xml/Documentation.html
+[+]SeqXML hasDefinition "SeqXML is an XML Schema to describe biological sequences, developed by the Stockholm Bioinformatics Centre."
+[+]SeqXML inSubset edam
+[+]SeqXML inSubset formats
+[+]SeqXML rdfs:label "SeqXML"
+[+]'UniParc XML' 'Created in' "1.21"
+[+]'UniParc XML' Documentation http://www.uniprot.org/uniparc/
+[+]'UniParc XML' hasDefinition "XML format for the UniParc database."
+[+]'UniParc XML' inSubset edam
+[+]'UniParc XML' inSubset formats
+[+]'UniParc XML' rdfs:label "UniParc XML"
+[+]'UniRef XML' 'Created in' "1.21"
+[+]'UniRef XML' Documentation http://www.uniprot.org/uniref
+[+]'UniRef XML' hasDefinition "XML format for the UniRef reference clusters."
+[+]'UniRef XML' inSubset edam
+[+]'UniRef XML' inSubset formats
+[+]'UniRef XML' rdfs:label "UniRef XML"
+[+]CWL Repository https://github.com/common-workflow-language/common-workflow-language
+[+]CWL Citation https://doi.org/10.6084/m9.figshare.3115156.v2
+[+]CWL 'Created in' "1.21"
+[+]CWL Documentation https://www.commonwl.org/user_guide/
+[+]CWL Documentation https://www.commonwl.org/v1.0/CommandLineTool.html
+[+]CWL Documentation https://www.commonwl.org/v1.0/Workflow.html
+[+]CWL Example https://github.com/common-workflow-language/common-workflow-language/tree/master/v1.0/examples
+[+]CWL hasDefinition "Common Workflow Language (CWL) format for description of command-line tools and workflows."
+[+]CWL hasExactSynonym "Common Workflow Language"
+[+]CWL hasExactSynonym "CommonWL"
+[+]CWL inSubset edam
+[+]CWL inSubset formats
+[+]CWL 'Ontology used' "cwl"
+[+]CWL Organisation https://sfconservancy.org/
+[+]CWL Organisation https://www.commonwl.org/
+[+]CWL rdfs:label "CWL"
+[+]'Waters RAW' 'Created in' "1.21"
+[+]'Waters RAW' hasDefinition "Proprietary file format for mass spectrometry data from Waters."
+[+]'Waters RAW' inSubset edam
+[+]'Waters RAW' inSubset formats
+[+]'Waters RAW' rdfs:comment "Proprietary format for which documentation is not available, but used by multiple tools."
+[+]'Waters RAW' rdfs:label "Waters RAW"
+[+]JCAMP-DX 'Created in' "1.21"
+[+]JCAMP-DX Documentation http://www.jcamp-dx.org/drafts/JCAMP6_2b%20Draft.pdf
+[+]JCAMP-DX hasDefinition "A standardized file format for data exchange in mass spectrometry, initially developed for infrared spectrometry."
+[+]JCAMP-DX inSubset edam
+[+]JCAMP-DX inSubset formats
+[+]JCAMP-DX rdfs:comment " JCAMP-DX is an ASCII based format and therefore not very compact even though it includes standards for file compression."
+[+]JCAMP-DX rdfs:label "JCAMP-DX"
+[+]JCAMP-DX rdfs:seeAlso https://en.wikipedia.org/wiki/Mass_spectrometry_data_format#cite_note-3
+[+]'NLP annotation format' 'Created in' "1.21"
+[+]'NLP annotation format' hasDefinition "An NLP format used for annotated textual documents."
+[+]'NLP annotation format' inSubset edam
+[+]'NLP annotation format' inSubset formats
+[+]'NLP annotation format' rdfs:label "NLP annotation format"
+[+]'NLP corpus format' 'Created in' "1.21"
+[+]'NLP corpus format' hasDefinition "NLP format used by a specific type of corpus (collection of texts)."
+[+]'NLP corpus format' inSubset edam
+[+]'NLP corpus format' inSubset formats
+[+]'NLP corpus format' rdfs:label "NLP corpus format"
+[+]mirGFF3 Repository https://github.com/miRTop/mirGFF3
+[+]mirGFF3 Citation https://doi.org/10.7490/f1000research.1115724.1
+[+]mirGFF3 'Created in' "1.21"
+[+]mirGFF3 Documentation https://github.com/miRTop/mirGFF3/blob/master/definition.md
+[+]mirGFF3 Example https://github.com/miRTop/mirGFF3/blob/master/example.gff
+[+]mirGFF3 hasDefinition "mirGFF3 is a common format for microRNA data resulting from small-RNA RNA-Seq workflows."
+[+]mirGFF3 hasExactSynonym "miRTop format"
+[+]mirGFF3 inSubset edam
+[+]mirGFF3 inSubset formats
+[+]mirGFF3 rdfs:comment "mirGFF3 is a specialisation of GFF3; produced by small-RNA-Seq analysis workflows, usable and convertible with the miRTop API (https://mirtop.readthedocs.io/en/latest/), and consumable by tools for downstream analysis."
+[+]mirGFF3 rdfs:label "mirGFF3"
+[+]'RNA annotation format' 'Created in' "1.21"
+[+]'RNA annotation format' hasBroadSynonym "RNA data format"
+[+]'RNA annotation format' hasDefinition "A "placeholder" concept for formats of annotated RNA data, including e.g. microRNA and RNA-Seq data."
+[+]'RNA annotation format' hasNarrowSynonym "microRNA data format"
+[+]'RNA annotation format' hasNarrowSynonym "miRNA data format"
+[+]'RNA annotation format' inSubset edam
+[+]'RNA annotation format' inSubset formats
+[+]'RNA annotation format' rdfs:label "RNA annotation format"
+[+]'Gene expression clustering' hasDefinition "Perform cluster analysis of expression data to identify groups with similar expression profiles, for example by clustering."
+[-]'Gene expression clustering' hasDefinition "Perform cluster analysis of gene expression data to identify groups with similar gene-expression profiles, for example by clustering."
+[-]'Gene expression clustering' hasExactSynonym "Gene expression profile clustering"
+[+]'Gene expression clustering' hasNarrowSynonym "Gene expression clustering"
+[+]'Gene expression clustering' hasNarrowSynonym "Gene expression profile clustering"
+[+]'Gene expression clustering' rdfs:label "Expression profile clustering"
+[-]'Gene expression clustering' rdfs:label "Gene expression clustering"
+[-]'Gene expression profiling' hasBroadSynonym "Gene expression quantification"
+[-]'Gene expression profiling' hasExactSynonym "Gene expression profile construction"
+[-]'Gene expression profiling' hasExactSynonym "Gene expression profile generation"
+[-]'Gene expression profiling' hasNarrowSynonym "Gene transcription profiling"
+[-]'Gene expression profiling' hasNarrowSynonym "Metagenomic inference"
+[-]'Gene expression profiling' hasNarrowSynonym "mRNA profiling"
+[-]'Gene expression profiling' hasNarrowSynonym "Non-coding RNA profiling"
+[-]'Gene expression profiling' hasNarrowSynonym "RNA profiling"
+[-]'Gene expression profiling' hasRelatedSynonym "Functional profiling"
+[-]'Gene expression profiling' hasRelatedSynonym "Protein profiling"
+[-]'Gene expression profiling' inSubset edam
+[+]'Gene expression profiling' inSubset obsolete
+[-]'Gene expression profiling' inSubset operations
+[+]'Gene expression profiling' 'Obsolete since' "1.21"
+[+]'Gene expression profiling' 'old parent' 'Gene expression analysis'
+[+]'Gene expression profiling' owl:deprecated "true"
+[-]'Gene expression profiling' rdfs:comment "Gene expression profiling generates some sort of gene expression profile, for example from microarray data."
+[-]'Gene expression profiling' rdfs:comment "Metagenomic inference is the profiling of phylogenetic marker genes in order to predict metagenome function."
+[-]'Gene expression profiling' rdfs:seeAlso "https://en.wikipedia.org/wiki/Gene_expression_profiling"
+[+]'Gene expression profiling' replacedBy 'Gene expression analysis'
+[+]'Gene expression comparison' hasDefinition "Comparison of expression profiles."
+[-]'Gene expression comparison' hasDefinition "Comparison of gene expression profiles."
+[-]'Gene expression comparison' hasExactSynonym "Gene expression profile comparison"
+[+]'Gene expression comparison' hasNarrowSynonym "Gene expression comparison"
+[+]'Gene expression comparison' hasNarrowSynonym "Gene expression profile comparison"
+[+]'Gene expression comparison' rdfs:label "Expression profile comparison"
+[-]'Gene expression comparison' rdfs:label "Gene expression comparison"
+[-]'Gene to pathway mapping' hasDefinition "Map a gene expression profile to known biological pathways, for example, to identify or reconstruct a pathway."
+[+]'Gene to pathway mapping' hasDefinition "Map an expression profile to known biological pathways, for example, to identify or reconstruct a pathway."
+[-]'Gene to pathway mapping' hasExactSynonym "Gene expression profile pathway mapping"
+[-]'Gene to pathway mapping' hasExactSynonym "Gene-to-pathway mapping"
+[+]'Gene to pathway mapping' hasNarrowSynonym "Gene expression profile pathway mapping"
+[+]'Gene to pathway mapping' hasNarrowSynonym "Gene to pathway mapping"
+[+]'Gene to pathway mapping' hasNarrowSynonym "Gene-to-pathway mapping"
+[+]'Gene to pathway mapping' rdfs:label "Expression profile pathway mapping"
+[-]'Gene to pathway mapping' rdfs:label "Gene to pathway mapping"
+[+]Loading hasDefinition "Parse, prepare or load a user-specified data file so that it is available for use."
+[-]Loading hasDefinition "Prepare or load a user-specified data file so that it is available for use."
+[+]Loading hasExactSynonym "Loading"
+[-]Loading rdfs:label "Loading"
+[+]Loading rdfs:label "Parsing"
+[+]'Gene-set enrichment analysis' comment "Analyse gene expression patterns to identify sets of genes that are associated with a specific trait, condition, clinical outcome etc."
+[+]'Gene-set enrichment analysis' comment "Gene sets can be defined beforehand by biological function, chromosome locations and so on."
+[+]'Gene-set enrichment analysis' hasBroadSynonym "Gene set testing"
+[+]'Gene expression analysis' comment "Gene expression profiling generates some sort of gene expression profile, for example from microarray data."
+[+]'Gene expression analysis' comment "Metagenomic inference is the profiling of phylogenetic marker genes in order to predict metagenome function."
+[+]'Gene expression analysis' comment "The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function."
+[+]'Gene expression analysis' hasDefinition "Process (read and/or write) expression data from experiments measuring molecules (e.g. omics data), including analysis of one or more expression profiles, typically to interpret them in functional terms."
+[-]'Gene expression analysis' hasDefinition "The application of bioinformatics methods to the study of gene products, typically by processing gene expression data or profiles, interpreting them in functional terms."
+[+]'Gene expression analysis' hasExactSynonym "Expression data analysis"
+[+]'Gene expression analysis' hasExactSynonym "Feature expression analysis"
+[-]'Gene expression analysis' hasExactSynonym "Gene expression data analysis"
+[+]'Gene expression analysis' hasNarrowSynonym "Functional profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression analysis"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression data analysis"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression profile construction"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression profile generation"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene expression quantification"
+[+]'Gene expression analysis' hasNarrowSynonym "Gene transcription profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "Metabolite expression analysis"
+[+]'Gene expression analysis' hasNarrowSynonym "Metagenomic inference"
+[+]'Gene expression analysis' hasNarrowSynonym "mRNA profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "Non-coding RNA profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "Protein expression analysis"
+[+]'Gene expression analysis' hasNarrowSynonym "Protein profiling"
+[+]'Gene expression analysis' hasNarrowSynonym "RNA profiling"
+[-]'Gene expression analysis' hasNarrowSynonym "RNA-seq analysis"
+[+]'Gene expression analysis' rdfs:label "Expression analysis"
+[-]'Gene expression analysis' rdfs:label "Gene expression analysis"
+[+]'Gene expression analysis' rdfs:seeAlso https://en.wikipedia.org/wiki/Gene_expression_profiling
+[-]'Gene set testing' inSubset edam
+[+]'Gene set testing' inSubset obsolete
+[-]'Gene set testing' inSubset operations
+[+]'Gene set testing' 'Obsolete since' "1.21"
+[+]'Gene set testing' 'old parent' 'Gene expression analysis'
+[+]'Gene set testing' owl:deprecated "true"
+[-]'Gene set testing' rdfs:comment "Gene sets can be defined beforehand by biological function, chromosome locations and so on."
+[+]'Gene set testing' replacedBy 'Gene-set enrichment analysis'
+[+]'Gene expression correlation' hasDefinition "Analyse the correlation patterns among features/molecules across across a variety of experiments, samples etc."
+[-]'Gene expression correlation' hasDefinition "Analyse the correlation patterns among genes across across a variety of experiments, microarray samples etc."
+[+]'Gene expression correlation' hasExactSynonym "Co-expression analysis"
+[-]'Gene expression correlation' hasExactSynonym "Gene co-expression network analysis"
+[-]'Gene expression correlation' hasExactSynonym "Gene expression correlation analysis"
+[+]'Gene expression correlation' hasNarrowSynonym "Gene co-expression network analysis"
+[+]'Gene expression correlation' hasNarrowSynonym "Gene expression correlation analysis"
+[+]'Gene expression correlation' hasNarrowSynonym "Gene expression correlation"
+[-]'Gene expression correlation' inSubset data
+[+]'Gene expression correlation' inSubset edam
+[+]'Gene expression correlation' rdfs:label " Expression correlation analysis"
+[-]'Gene expression correlation' rdfs:label "Gene expression correlation"
+[+]'Multilocus sequence typing' 'Created in' "1.21"
+[+]'Multilocus sequence typing' hasDbXref http://purl.obolibrary.org/obo/OBI_0000435
+[+]'Multilocus sequence typing' hasDbXref http://purl.phyloviz.net/ontology/typon#MLST
+[+]'Multilocus sequence typing' hasDefinition "Genotyping of multiple loci, typically characterizing microbial species isolates using internal fragments of multiple housekeeping genes."
+[+]'Multilocus sequence typing' hasExactSynonym "MLST"
+[+]'Multilocus sequence typing' inSubset edam
+[+]'Multilocus sequence typing' inSubset operations
+[+]'Multilocus sequence typing' rdfs:label "Multilocus sequence typing"
+[+]'Multilocus sequence typing' rdfs:seeAlso https://en.wikipedia.org/wiki/Multilocus_sequence_typing
+[+]'Spectrum calculation' 'Created in' "1.21"
+[+]'Spectrum calculation' hasDefinition "Calculate a theoretical mass spectrometry spectra for given sequences."
+[+]'Spectrum calculation' hasExactSynonym "Spectrum prediction"
+[+]'Spectrum calculation' inSubset edam
+[+]'Spectrum calculation' inSubset operations
+[+]'Spectrum calculation' rdfs:label "Spectrum calculation"
+[+]Repository hasDefinition "'Repository' trailing modifier (qualifier, 'repository') of 'xref' links of 'Format' concepts. When 'true', the link is pointing to the public source-code repository where the given data format is developed or maintained."
+[+]Repository hasExactSynonym "Public repository"
+[+]Repository hasExactSynonym "Source-code repository"
+[+]Repository inSubset "concept_properties"
+[+]Repository is_metadata_tag "true"
+[+]Repository rdfs:label "Repository"
+[+]'Nucleic acids' hasHumanReadableId "Nucleic_acids"
+[+]Proteins hasHumanReadableId "Proteins"
+[+]'Sequence analysis' hasHumanReadableId "Sequence_analysis"
+[+]'Sequence analysis' hasNarrowSynonym "Biological sequences"
+[+]'Structure analysis' hasHumanReadableId "Structure_analysis"
+[+]'Structure analysis' hasNarrowSynonym "Molecular structure"
+[+]'Structure analysis' hasNarrowSynonym "Structures"
+[+]'Structure prediction' hasHumanReadableId "Structure_prediction"
+[+]Phylogeny hasHumanReadableId "Phylogeny"
+[+]'Functional genomics' hasHumanReadableId "Functional_genomics"
+[+]'Ontology and terminology' hasHumanReadableId "Ontology_and_terminology"
+[+]'Ontology and terminology' hasNarrowSynonym "Ontology relations"
+[+]'Ontology and terminology' hasNarrowSynonym "Upper ontology"
+[+]Bioinformatics hasHumanReadableId "Bioinformatics"
+[+]'Data visualisation' hasHumanReadableId "Data_visualisation"
+[+]'Nucleic acid structure analysis' hasHumanReadableId "Nucleic_acid_structure_analysis"
+[+]RNA hasHumanReadableId "RNA"
+[+]Mapping hasHumanReadableId "Mapping"
+[+]'Protein expression' hasHumanReadableId "Protein_expression"
+[+]'Gene structure' hasHumanReadableId "Gene_structure"
+[+]Proteomics hasHumanReadableId "Proteomics"
+[+]'Structural genomics' hasHumanReadableId "Structural_genomics"
+[+]'Protein properties' hasHumanReadableId "Protein_properties"
+[+]'Protein interactions' hasHumanReadableId "Protein_interactions"
+[+]'Protein folding, stability and design' hasHumanReadableId "Protein_folding_stability_and_design"
+[+]'Protein targeting and localisation' hasHumanReadableId "Protein_targeting_and_localisation"
+[+]Carbohydrates hasHumanReadableId "Carbohydrates"
+[+]Lipids hasHumanReadableId "Lipids"
+[+]'Small molecules' hasHumanReadableId "Small_molecules"
+[+]'Sequence composition, complexity and repeats' hasHumanReadableId "Sequence_composition_complexity_and_repeats"
+[+]'Sequence sites, features and motifs' hasHumanReadableId "Sequence_sites_features_and_motifs"
+[+]'Protein structural motifs and surfaces' hasHumanReadableId "Protein_structural_motifs_and_surfaces"
+[+]'Molecular dynamics' hasHumanReadableId "Molecular_dynamics"
+[+]Phylogenomics hasHumanReadableId "Phylogenomics"
+[+]'Sequence assembly' hasHumanReadableId "Sequence_assembly"
+[+]'Genetic variation' hasHumanReadableId "Genetic_variation"
+[+]Pharmacology hasHumanReadableId "Pharmacology"
+[+]'Gene expression' hasHumanReadableId "Gene_expression"
+[+]Pharmacogenomics hasHumanReadableId "Pharmacogenomics"
+[+]'Medicinal chemistry' hasHumanReadableId "Medicinal_chemistry"
+[+]'Natural language processing' hasHumanReadableId "Natural_language_processing"
+[+]'Data submission, annotation and curation' hasHumanReadableId "Data_submission_annotation_and_curation"
+[+]'Data submission, annotation and curation' hasNarrowSynonym "Data provenance"
+[+]NMR hasHumanReadableId "NMR"
+[+]'Protein modifications' hasHumanReadableId "Protein_modifications"
+[+]'Molecular interactions, pathways and networks' hasHumanReadableId "Molecular_interactions_pathways_and_networks"
+[+]Informatics hasHumanReadableId "Informatics"
+[+]'Laboratory information management' hasHumanReadableId "Laboratory_Information_management"
+[+]Ecology hasHumanReadableId "Ecology"
+[-]Ecology hasBroadSynonym "Environmental science"
+[+]'Electron microscopy' hasHumanReadableId "Electron_microscopy"
+[+]'Model organisms' hasHumanReadableId "Model_organisms"
+[+]Genomics hasHumanReadableId "Genomics"
+[+]'Gene and protein families' hasHumanReadableId "Gene_and protein_families"
+[+]'Genotype and phenotype' hasHumanReadableId "Genotype_and_phenotype"
+[+]'Genotype and phenotype' hasNarrowSynonym "Genotype"
+[+]'Genotype and phenotype' hasNarrowSynonym "Phenotype"
+[+]'Probes and primers' hasHumanReadableId "Probes_and_primers"
+[+]Pathology hasHumanReadableId "Pathology"
+[+]Taxonomy hasHumanReadableId "Taxonomy"
+[+]DNA hasHumanReadableId "DNA"
+[+]'Functional, regulatory and non-coding RNA' hasHumanReadableId "Functional_regulatory_and_non-coding_RNA"
+[+]'Protein folds and structural domains' hasHumanReadableId "Protein_folds_and_structural_domains"
+[+]'Transcription factors and regulatory sites' hasHumanReadableId "Transcription_factors_and_regulatory_sites"
+[+]Workflows hasHumanReadableId "Workflows"
+[+]'Plant biology' hasHumanReadableId "Plant_biology"
+[+]Virology hasHumanReadableId "Virology"
+[+]'Comparative genomics' hasHumanReadableId "Comparative_genomics"
+[+]'Mobile genetic elements' hasHumanReadableId "Mobile_genetic_elements"
+[+]Immunology hasHumanReadableId "Immunology"
+[+]'Membrane and lipoproteins' hasHumanReadableId "Membrane_and_lipoproteins"
+[+]Enzymes hasHumanReadableId "Enzymes"
+[+]'Structural biology' hasHumanReadableId "Structural_biology"
+[+]'Function analysis' hasHumanReadableId "Function_analysis"
+[+]'Cell biology' hasHumanReadableId "Cell_biology"
+[+]'Cell biology' hasNarrowSynonym "Cells"
+[+]Cheminformatics hasHumanReadableId "Cheminformatics"
+[+]'Systems biology' hasHumanReadableId "Systems_biology"
+[+]'Statistics and probability' hasHumanReadableId "Statistics_and_probability"
+[+]'Molecular modelling' hasHumanReadableId "Molecular_modelling"
+[+]'DNA mutation' hasHumanReadableId "DNA_mutation"
+[+]Oncology hasHumanReadableId "Oncology"
+[+]'Protein structure analysis' hasHumanReadableId "Protein_structure_analysis"
+[+]'Human biology' hasHumanReadableId "Human_biology"
+[+]'X-ray diffraction' hasHumanReadableId "X-ray_diffraction"
+[+]'Immunoproteins, genes and antigens' hasHumanReadableId "Immunoproteins_genes_and_antigens"
+[+]Toxicology hasHumanReadableId "Toxicology"
+[+]'DNA polymorphism' hasHumanReadableId "DNA_polymorphism"
+[+]'Molecular biology' hasHumanReadableId "Molecular_biology"
+[+]'Molecular biology' hasNarrowSynonym "Biological processes"
+[+]Biodiversity hasHumanReadableId "Biodiversity"
+[+]Genetics hasHumanReadableId "Genetics"
+[+]'Quantitative genetics' hasHumanReadableId "Quantitative_genetics"
+[+]'Population genetics' hasHumanReadableId "Population_genetics"
+[+]'Medical informatics' hasHumanReadableId "Medical_informatics"
+[-]'Medical informatics' hasBroadSynonym "Molecular medicine"
+[-]'Medical informatics' hasBroadSynonym "Translational medicine"
+[+]'Developmental biology' hasHumanReadableId "Developmental_biology"
+[+]'Developmental biology' hasNarrowSynonym "Development"
+[+]Embryology hasHumanReadableId "Embryology"
+[+]Anatomy hasHumanReadableId "Anatomy"
+[+]'Literature and language' hasHumanReadableId "Literature_and_language"
+[+]Biology hasHumanReadableId "Biology"
+[-]Biology hasDefinition "A particular biological science, especially observable traits such as aspects of biochemistry, physiology, morphology, anatomy, development and so on."
+[+]Biology hasDefinition "The study of life and living organisms, including their morphology, biochemistry, physiology, development, evolution, and so on."
+[+]'Data management' hasHumanReadableId "Data_management"
+[+]'Data acquisition' hasExactSynonym "Data collection"
+[+]'Protein variants' hasHumanReadableId "Protein_variants"
+[+]'DNA binding sites' hasHumanReadableId "DNA_binding_sites"
+[+]'DNA replication and recombination' hasHumanReadableId "DNA_replication_and_recombination"
+[+]Sequencing hasHumanReadableId "Sequencing"
+[+]ChIP-seq hasHumanReadableId "ChIP-seq"
+[+]RNA-Seq hasHumanReadableId "RNA-Seq"
+[+]Metabolomics hasHumanReadableId "Metabolomics"
+[+]Epigenomics hasHumanReadableId "Epigenomics"
+[+]Metagenomics hasHumanReadableId "Metagenomics"
+[+]'DNA structural variation' hasHumanReadableId "DNA_structural_variation"
+[+]'DNA packaging' hasHumanReadableId "DNA_packaging"
+[+]ChIP-on-chip hasHumanReadableId "ChIP-on-chip"
+[+]'Data security' hasHumanReadableId "Data_security"
+[+]'Sample collections' hasHumanReadableId "Sample_collections"
+[+]Biochemistry hasHumanReadableId "Biochemistry"
+[+]Phylogenetics hasHumanReadableId "Phylogenetics"
+[+]Epigenetics hasHumanReadableId "Epigenetics"
+[+]Biotechnology hasHumanReadableId "Biotechnology"
+[+]Phenomics hasHumanReadableId "Phenomics"
+[+]'Evolutionary biology' hasHumanReadableId "Evolutionary_biology"
+[+]Physiology hasHumanReadableId "Physiology"
+[+]Microbiology hasHumanReadableId "Microbiology"
+[+]Parasitology hasHumanReadableId "Parasitology"
+[+]Medicine hasHumanReadableId "Medicine"
+[+]Neurobiology hasHumanReadableId "Neurobiology"
+[+]'Public health and epidemiology' hasHumanReadableId "Public_health_and_epidemiology"
+[+]Biophysics hasHumanReadableId "Biophysics"
+[+]'Computational biology' hasHumanReadableId "Computational_biology"
+[+]Transcriptomics hasHumanReadableId "Transcriptomics"
+[+]Chemistry hasHumanReadableId "Chemistry"
+[+]Mathematics hasHumanReadableId "Mathematics"
+[+]'Computer science' hasHumanReadableId "Computer_science"
+[+]'Computer science' hasNarrowSynonym "Cloud computing"
+[+]'Computer science' hasNarrowSynonym "High performance computing"
+[+]'Computer science' hasNarrowSynonym "High-performance computing"
+[+]'Computer science' hasNarrowSynonym "HPC"
+[+]Physics hasHumanReadableId "Physics"
+[+]'RNA splicing' hasHumanReadableId "RNA_splicing"
+[+]'Molecular genetics' hasHumanReadableId "Molecular_genetics"
+[+]'Respiratory medicine' hasHumanReadableId "Respiratory_medicine"
+[+]'Infectious disease' hasHumanReadableId "Infectious_disease"
+[+]'Rare diseases' hasHumanReadableId "Rare_diseases"
+[+]'Computational chemistry' hasHumanReadableId "Computational_chemistry"
+[+]Neurology hasHumanReadableId "Neurology"
+[+]Cardiology hasHumanReadableId "Cardiology"
+[+]'Drug discovery' hasHumanReadableId "Drug_discovery"
+[+]Biobank hasHumanReadableId "Biobank"
+[+]'Mouse clinic' hasHumanReadableId "Mouse_clinic"
+[+]'Microbial collection' hasHumanReadableId "Microbial_collection"
+[+]'Cell culture collection' hasHumanReadableId "Cell_culture_collection"
+[+]'Clone library' hasHumanReadableId "Clone_library"
+[+]'Translational medicine' hasHumanReadableId "Translational_medicine"
+[+]'Compound libraries and screening' hasHumanReadableId "Compound_libraries_and_screening"
+[+]'Biomedical science' hasHumanReadableId "Biomedical_science"
+[+]'Data identity and mapping' hasHumanReadableId "Data_identity_and_mapping"
+[+]Biomarkers hasHumanReadableId "Biomarkers"
+[+]'Laboratory techniques' hasHumanReadableId "Laboratory_techniques"
+[+]'Laboratory techniques' hasNarrowSynonym "Experiments"
+[+]'Laboratory techniques' hasNarrowSynonym "Laboratory experiments"
+[+]'Data architecture, analysis and design' hasHumanReadableId "Data_architecture_analysis_and_design"
+[+]'Data integration and warehousing' hasHumanReadableId "Data_integration_and_warehousing"
+[+]Biomaterials hasHumanReadableId "Biomaterials"
+[+]'Chemical biology' hasHumanReadableId "Chemical_biology"
+[+]'Analytical chemistry' hasHumanReadableId "Analytical_chemistry"
+[+]'Synthetic chemistry' hasHumanReadableId "Synthetic_chemistry"
+[+]'Software engineering' hasHumanReadableId "Software_engineering"
+[+]'Drug development' hasHumanReadableId "Drug_development"
+[+]Biotherapeutics hasHumanReadableId "Biotherapeutics"
+[+]'Drug metabolism' hasHumanReadableId "Drug_metabolism"
+[+]'Medicines research and development' hasHumanReadableId "Medicines_research_and_development"
+[+]'Safety sciences' hasHumanReadableId "Safety_sciences"
+[+]Pharmacovigilence hasHumanReadableId "Pharmacovigilence"
+[+]'Preclinical and clinical studies' hasHumanReadableId "Preclinical_and_clinical_studies"
+[+]Imaging hasHumanReadableId "Imaging"
+[+]'Biological imaging' hasHumanReadableId "Biological_imaging"
+[+]'Medical imaging' hasHumanReadableId "Medical_imaging"
+[+]'Medical imaging' hasNarrowSynonym "Neuroimaging"
+[+]'Light microscopy' hasHumanReadableId "Light_microscopy"
+[+]'Laboratory animal science' hasHumanReadableId "Laboratory_animal_science"
+[+]'Marine biology' hasHumanReadableId "Marine_biology"
+[+]'Molecular medicine' hasHumanReadableId "Molecular_medicine"
+[+]'Nutritional science' hasHumanReadableId "Nutritional_science"
+[+]Omics hasHumanReadableId "Omics"
+[+]'Quality affairs' hasHumanReadableId "Quality_affairs"
+[+]'Regulatory affairs' hasHumanReadableId "Regulatory_affairs"
+[+]'Regenerative medicine' hasHumanReadableId "Regenerative_medicine"
+[+]'Systems medicine' hasHumanReadableId "Systems_medicine"
+[+]'Veterinary medicine' hasHumanReadableId "Veterinary_medicine"
+[+]Bioengineering hasHumanReadableId "Bioengineering"
+[+]'Geriatric medicine' hasHumanReadableId "Geriatric_medicine"
+[+]'Allergy, clinical immunology and immunotherapeutics' hasHumanReadableId "Allergy_clinical_immunology_and_immunotherapeutics"
+[+]'Pain medicine' hasHumanReadableId "Pain_medicine"
+[+]Anaesthesiology hasHumanReadableId "Anaesthesiology"
+[+]'Critical care medicine' hasHumanReadableId "Critical_care_medicine"
+[+]Dermatology hasHumanReadableId "Dermatology"
+[+]Dentistry hasHumanReadableId "Dentistry"
+[+]'Ear, nose and throat medicine' hasHumanReadableId "Ear_nose_and_throat_medicine"
+[+]'Endocrinology and metabolism' hasHumanReadableId "Endocrinology_and_metabolism"
+[+]Haematology hasHumanReadableId "Haematology"
+[+]Gastroenterology hasHumanReadableId "Gastroenterology"
+[+]'Gender medicine' hasHumanReadableId "Gender_medicine"
+[+]'Gynaecology and obstetrics' hasHumanReadableId "Gynaecology_and_obstetrics"
+[+]'Hepatic and biliary medicine' hasHumanReadableId "Hepatic_and_biliary_medicine"
+[+]'Trauma medicine' hasHumanReadableId "Trauma_medicine"
+[+]'Medical toxicology' hasHumanReadableId "Medical_toxicology"
+[+]'Musculoskeletal medicine' hasHumanReadableId "Musculoskeletal_medicine"
+[+]Opthalmology hasHumanReadableId "Opthalmology"
+[+]Paediatrics hasHumanReadableId "Paediatrics"
+[+]Psychiatry hasHumanReadableId "Psychiatry"
+[+]'Reproductive health' hasHumanReadableId "Reproductive_health"
+[+]Surgery hasHumanReadableId "Surgery"
+[+]'Urology and nephrology' hasHumanReadableId "Urology_and_nephrology"
+[+]'Complementary medicine' hasHumanReadableId "Complementary_medicine"
+[+]MRI hasHumanReadableId "MRI"
+[+]'Neutron diffraction' hasHumanReadableId "Neutron_diffraction"
+[+]Tomography hasHumanReadableId "Tomography"
+[+]'Data mining' hasHumanReadableId "Data_mining"
+[+]'Machine learning' hasHumanReadableId "Machine_learning"
+[+]'Database management' hasHumanReadableId "Database_management"
+[+]Zoology hasHumanReadableId "Zoology"
+[+]'Protein sites, features and motifs' hasHumanReadableId "Protein_sites_features_and_motifs"
+[+]'Nucleic acid sites, features and motifs' hasHumanReadableId "Nucleic_acid_sites_features_and_motifs"
+[+]'Gene transcripts' hasHumanReadableId "Gene_transcripts"
+[+]'Genotyping experiment' hasHumanReadableId "Genotyping_experiment"
+[+]'GWAS study' hasHumanReadableId "GWAS_study"
+[+]'Microarray experiment' hasHumanReadableId "Microarray_experiment"
+[-]'Microarray experiment' hasNarrowSynonym "ChIP-on-chip"
+[+]'PCR experiment' hasHumanReadableId "PCR_experiment"
+[+]'Proteomics experiment' hasHumanReadableId "Proteomics_experiment"
+[+]'Proteomics experiment' hasNarrowSynonym "Mass spectrometry experiments"
+[+]'Proteomics experiment' hasNarrowSynonym "MS experiments"
+[+]'RNAi experiment' hasHumanReadableId "RNAi_experiment"
+[+]'Simulation experiment' hasHumanReadableId "Simulation_experiment"
+[+]'Protein binding sites' hasHumanReadableId "Protein_binding_sites"
+[+]'Protein disordered structure' hasHumanReadableId "Protein_disordered_structure"
+[+]'Protein secondary structure' hasHumanReadableId "Protein_secondary_structure"
+[+]'Protein interaction experiment' hasHumanReadableId "Protein_interaction_experiment"
+[+]'Applied mathematics' hasHumanReadableId "Applied_mathematics"
+[+]'Pure mathematics' hasHumanReadableId "Pure_mathematics"
+[+]'Pure mathematics' hasNarrowSynonym "Linear algebra"
+[+]'Data governance' hasHumanReadableId "Data_governance"
+[+]'Data quality management' hasHumanReadableId "Data_quality_management"
+[+]'Data quality management' hasNarrowSynonym "Data cleaning"
+[+]'Freshwater biology' hasHumanReadableId "Freshwater_biology"
+[+]'Human genetics' hasHumanReadableId "Human_genetics"
+[+]'Tropical medicine' hasHumanReadableId "Tropical_medicine"
+[+]'Medical biotechnology' hasHumanReadableId "Medical_biotechnology"
+[+]'Personalised medicine' hasHumanReadableId "Personalised_medicine"
+[+]'Immunoprecipitation experiment' hasHumanReadableId "Immunoprecipitation_experiment"
+[+]'Whole genome sequencing' hasHumanReadableId "Whole_genome_sequencing"
+[+]'Methylated DNA immunoprecipitation' hasHumanReadableId "Methylated_DNA_immunoprecipitation"
+[+]'Exome sequencing' hasHumanReadableId "Exome_sequencing"
+[+]'Experimental design and studies' hasHumanReadableId "Experimental_design_and_studies"
+[+]'Animal study' hasHumanReadableId "Animal_study"
+[+]'Microbial ecology' hasHumanReadableId "Microbial_ecology"
+[+]'RNA immunoprecipitation' hasHumanReadableId "RNA_immunoprecipitation"
+[+]'Population genomics' hasHumanReadableId "Population_genomics"
+[+]'Agricultural science' hasHumanReadableId "Agricultural_science"
+[+]'Metagenomic sequencing' hasHumanReadableId "Metagenomic_sequencing"
+[+]'Environmental science' hasHumanReadableId "Environmental_science"
+[+]'Environmental science' 'Created in' "1.21"
+[+]'Environmental science' hasDefinition "Study of the environment, the interactions between its physical, chemical, and biological components and it's effect on life. Also how humans impact upon the environment, and how we can manage and utilise natural resources."
+[+]'Environmental science' hasExactSynonym "Environment"
+[+]'Environmental science' inSubset edam
+[+]'Environmental science' inSubset topics
+[+]'Environmental science' rdfs:label "Environmental science"
+[+]'Environmental science' rdfs:seeAlso https://en.wikipedia.org/wiki/Environmental_science
+[+]hasHumanReadableId rdfs:label "hasHumanReadableId"
+[+]'NLP annotation format' SubClassOf 'NLP format'
+[+]mirGFF3 SubClassOf 'RNA annotation format'
+[+]'NLP corpus format' SubClassOf 'NLP annotation format'
+[+]'RNA central ID' SubClassOf Accession
+[+]MSAML SubClassOf 'Alignment format'
+[+]HSAML SubClassOf 'Alignment format (XML)'
+[+]'PubMed XML' SubClassOf 'Bibliographic reference format'
+[+]'Waters RAW' SubClassOf 'Binary format'
+[+]MSAML SubClassOf 'Binary format'
+[+]KGML SubClassOf 'Biological pathway or network format'
+[+]'Environmental science' SubClassOf Biology
+[+]'Molecular simulation data' SubClassOf Data
+[+]'RNA annotation format' SubClassOf 'Format (by type of data)'
+[+]'NLP format' SubClassOf 'Format (by type of data)'
+[+]OrthoXML SubClassOf 'Gene annotation format'
+[+]'Multilocus sequence typing' SubClassOf Genotyping
+[+]mirGFF3 SubClassOf GFF3
+[+]'Spectrum calculation' SubClassOf 'has input' some 'Mass spectrometry spectra'
+[+]'Molecular simulation data' SubClassOf 'has topic' some 'Structure analysis'
+[+]'Waters RAW' SubClassOf 'Mass spectrometry data format'
+[+]JCAMP-DX SubClassOf 'Mass spectrometry data format'
+[+]'InterProScan XML' SubClassOf 'Protein domain classification format'
+[+]'Spectrum calculation' SubClassOf 'Protein property calculation'
+[+]'Electronic health record' SubClassOf Report
+[+]'RNA central ID' SubClassOf 'Sequence accession (nucleic acid)'
+[+]PSDML SubClassOf 'Sequence feature annotation format'
+[+]'UniRef XML' SubClassOf 'Sequence feature annotation format'
+[+]'UniParc XML' SubClassOf 'Sequence feature annotation format'
+[+]OrthoXML SubClassOf 'Sequence record format (XML)'
+[+]SeqXML SubClassOf 'Sequence record format (XML)'
+[+]BEAST SubClassOf 'Sequence record format (XML)'
+[+]Chado-XML SubClassOf 'Sequence record format (XML)'
+[+]'Spectrum calculation' SubClassOf 'Spectral analysis'
+[+]JCAMP-DX SubClassOf 'Textual format'
+[+]CWL SubClassOf 'Workflow format'
+[+]OrthoXML SubClassOf XML
+[+]'UniParc XML' SubClassOf XML
+[+]'UniRef XML' SubClassOf XML
+[+]PSDML SubClassOf XML
+[+]SeqXML SubClassOf XML
+[+]HSAML SubClassOf XML
+[+]'InterProScan XML' SubClassOf XML
+[+]BEAST SubClassOf XML
+[+]Chado-XML SubClassOf XML
+[+]KGML SubClassOf XML
+[+]'PubMed XML' SubClassOf XML
+[+]CWL SubClassOf YAML
+[+]hasHumanReadableId SubPropertyOf hasAlternativeId
+[+]'AAindex ID' SubClassOf Accession
+[+]'ABS ID' SubClassOf Accession
+[+]'ACLAME ID' SubClassOf Accession
+[-]'Amino acid index ID' SubClassOf Accession
+[+]'Amino acid index ID' SubClassOf 'Identifier (typed)'
+[+]'AraC-XylS ID' SubClassOf Accession
+[+]'ArachnoServer ID' SubClassOf Accession
+[-]'Article ID' SubClassOf Accession
+[+]'ASTD ID' SubClassOf Accession
+[+]'ATC code' SubClassOf Accession
+[-]'Atomic x coordinate' SubClassOf 'Atomic coordinate'
+[+]'Atomic x coordinate' SubClassOf DeprecatedClass
+[-]'Atomic y coordinate' SubClassOf 'Atomic coordinate'
+[+]'Atomic y coordinate' SubClassOf DeprecatedClass
+[-]'Atomic z coordinate' SubClassOf 'Atomic coordinate'
+[+]'Atomic z coordinate' SubClassOf DeprecatedClass
+[+]BAI SubClassOf 'Binary format'
+[+]'BIND accession number' SubClassOf Accession
+[+]'BindingDB Monomer ID' SubClassOf Accession
+[+]'Biodiversity report' SubClassOf Data
+[-]'Biodiversity report' SubClassOf Report
+[+]'BioGRID interaction ID' SubClassOf Accession
+[-]'Biological model accession' SubClassOf Accession
+[+]'BioModel ID' SubClassOf Accession
+[+]'BioPax concept ID' SubClassOf Accession
+[+]'Blattner number' SubClassOf Accession
+[-]'Blot ID' SubClassOf Accession
+[+]'BlotBase blot ID' SubClassOf Accession
+[-]'Book ID' SubClassOf Accession
+[+]'BRENDA ontology concept ID' SubClassOf Accession
+[+]'BRENDA organism ID' SubClassOf Accession
+[+]'Brite hierarchy ID' SubClassOf Accession
+[+]'CAS number' SubClassOf Accession
+[+]'CATH identifier' SubClassOf Accession
+[+]'CCAP strain number' SubClassOf Accession
+[+]'CDD ID' SubClassOf Accession
+[+]'CDD PSSM-ID' SubClassOf Accession
+[-]'Cell type accession' SubClassOf Accession
+[+]'Cell type ontology ID' SubClassOf Accession
+[+]'ChEBI concept ID' SubClassOf Accession
+[+]'ChEBI ID' SubClassOf Accession
+[+]'Chemical registry number' SubClassOf Accession
+[-]'Chemical structure sketch' SubClassOf 'Chemical structure image'
+[+]'Chemical structure sketch' SubClassOf DeprecatedClass
+[+]'ChemSpider ID' SubClassOf Accession
+[+]'CleanEx entry name' SubClassOf Accession
+[+]'Clone ID (IMAGE)' SubClassOf Accession
+[+]'COGEME EST ID' SubClassOf Accession
+[+]'COGEME unisequence ID' SubClassOf Accession
+[+]'Compound ID (3DMET)' SubClassOf Accession
+[+]'Compound ID (BioCyc)' SubClassOf Accession
+[+]'Compound ID (ChEMBL)' SubClassOf Accession
+[+]'Compound ID (ChemIDplus)' SubClassOf Accession
+[+]'Compound ID (HMDB)' SubClassOf Accession
+[+]'COSMIC ID' SubClassOf Accession
+[+]'cPath ID' SubClassOf Accession
+[-]'Data index format' SubClassOf 'Binary format'
+[-]'Data resource definition accession' SubClassOf Accession
+[+]'DBD ID' SubClassOf Accession
+[+]'dbEST accession' SubClassOf Accession
+[+]'dbProbe ID' SubClassOf Accession
+[+]'dbSNP ID' SubClassOf Accession
+[+]'DIP ID' SubClassOf Accession
+[+]'DiProDB ID' SubClassOf Accession
+[-]'Disease ID' SubClassOf Accession
+[+]'Disease ID (PharmGKB)' SubClassOf Accession
+[-]'Disease identifier' SubClassOf Accession
+[+]'DNA base structural data' SubClassOf 'Nucleic acid property'
+[-]'DNA base structural data' SubClassOf 'Nucleic acid structure data'
+[+]DOI SubClassOf Accession
+[+]'DPVweb ID' SubClassOf Accession
+[-]'Drug accession' SubClassOf Accession
+[+]'Drug ID (KEGG)' SubClassOf Accession
+[+]'Drug ID (PharmGKB)' SubClassOf Accession
+[+]'Drug ID (TTD)' SubClassOf Accession
+[+]'Drug structure relationship map' SubClassOf DeprecatedClass
+[-]'Drug structure relationship map' SubClassOf 'Drug report'
+[+]'DrugBank ID' SubClassOf Accession
+[+]ebwt SubClassOf 'Binary format'
+[+]ebwtl SubClassOf 'Binary format'
+[+]'EC number' SubClassOf Accession
+[+]'EGA accession' SubClassOf Accession
+[-]'Electron microscopy model ID' SubClassOf Accession
+[+]'EMAGE ID' SubClassOf Accession
+[+]'EMAP concept ID' SubClassOf Accession
+[+]'EMBL/GenBank/DDBJ ID' SubClassOf Accession
+[+]'EMDB ID' SubClassOf Accession
+[+]'Ensembl gene ID' SubClassOf Accession
+[+]'Ensembl gene tree ID' SubClassOf Accession
+[+]'Ensembl protein ID' SubClassOf Accession
+[+]'Ensembl transcript ID' SubClassOf Accession
+[+]'Enzyme ID (BioCyc)' SubClassOf Accession
+[+]'Enzyme ID (CAZy)' SubClassOf Accession
+[+]'Enzyme ID (MEROPS)' SubClassOf Accession
+[+]'EPD ID' SubClassOf Accession
+[-]'Fate map' SubClassOf 'Organism report'
+[+]'FIG ID' SubClassOf Accession
+[+]'FMA concept ID' SubClassOf Accession
+[-]'Gene expression comparison' SubClassOf 'has output' some 'Processed microarray data'
+[-]'Gene expression comparison' SubClassOf 'Nucleic acid comparison'
+[+]'Gene expression profiling' SubClassOf DeprecatedClass
+[-]'Gene expression profiling' SubClassOf 'Gene expression analysis'
+[-]'Gene expression profiling' SubClassOf Generation
+[-]'Gene expression profiling' SubClassOf 'has output' some 'Gene expression profile'
+[+]'Gene expression QTL analysis' SubClassOf 'Gene expression analysis'
+[-]'Gene expression QTL analysis' SubClassOf 'Gene expression profiling'
+[-]'Gene expression report ID' SubClassOf Accession
+[+]'Gene ID (CGD)' SubClassOf Accession
+[+]'Gene ID (DictyBase)' SubClassOf Accession
+[+]'Gene ID (EcoGene)' SubClassOf Accession
+[+]'Gene ID (FlyBase)' SubClassOf Accession
+[+]'Gene ID (GeneDB)' SubClassOf Accession
+[+]'Gene ID (GeneFarm)' SubClassOf Accession
+[+]'Gene ID (Genolist)' SubClassOf Accession
+[+]'Gene ID (Gramene)' SubClassOf Accession
+[+]'Gene ID (HGNC)' SubClassOf Accession
+[+]'Gene ID (JCVI)' SubClassOf Accession
+[+]'Gene ID (KOME)' SubClassOf Accession
+[+]'Gene ID (MfunGD)' SubClassOf Accession
+[+]'Gene ID (MIPS)' SubClassOf Accession
+[+]'Gene ID (miRBase)' SubClassOf Accession
+[+]'Gene ID (NCBI)' SubClassOf Accession
+[+]'Gene ID (PlasmoDB)' SubClassOf Accession
+[+]'Gene ID (SGD)' SubClassOf Accession
+[+]'Gene ID (SGN)' SubClassOf Accession
+[+]'Gene ID (VBASE2)' SubClassOf Accession
+[+]'Gene ID (VectorBase)' SubClassOf Accession
+[+]'Gene ID (Virginia microbial)' SubClassOf Accession
+[+]'Gene ID (WormBase)' SubClassOf Accession
+[+]'Gene ID (Xenbase)' SubClassOf Accession
+[+]'Gene ID (ZFIN)' SubClassOf Accession
+[-]'Gene report' SubClassOf 'Nucleic acid features'
+[+]'Gene report' SubClassOf 'Nucleic acid report'
+[+]'Gene set testing' SubClassOf DeprecatedClass
+[-]'Gene set testing' SubClassOf 'Gene expression analysis'
+[-]'Gene transcript report' SubClassOf 'Gene report'
+[+]'Gene transcript report' SubClassOf 'Nucleic acid features'
+[+]'Gene-set enrichment analysis' SubClassOf 'Gene expression analysis'
+[-]'Gene-set enrichment analysis' SubClassOf 'Gene set testing'
+[+]'Gene3D ID' SubClassOf Accession
+[+]'GeneSNP ID' SubClassOf Accession
+[-]'Genome accession' SubClassOf Accession
+[+]'GenomeReviews ID' SubClassOf Accession
+[-]'Genotype and phenotype annotation ID' SubClassOf Accession
+[-]'Genotype experiment ID' SubClassOf Accession
+[+]'GEO accession number' SubClassOf Accession
+[+]'GermOnline ID' SubClassOf Accession
+[+]'GI number' SubClassOf Accession
+[+]'GlycoMap ID' SubClassOf Accession
+[+]'GlycomeDB ID' SubClassOf Accession
+[+]'GO concept ID' SubClassOf Accession
+[+]'Gramene identifier' SubClassOf Accession
+[+]'HAMAP ID' SubClassOf Accession
+[+]'HGMD ID' SubClassOf Accession
+[+]'HGNC concept ID' SubClassOf Accession
+[+]'HGVbase ID' SubClassOf Accession
+[+]'HIT ID' SubClassOf Accession
+[+]'HIX ID' SubClassOf Accession
+[+]'HMMER hidden Markov model ID' SubClassOf Accession
+[+]'HPA antibody id' SubClassOf Accession
+[+]'ICD identifier' SubClassOf Accession
+[+]'iHOP organism ID' SubClassOf Accession
+[+]'iHOP symbol' SubClassOf Accession
+[+]'IMGT/HLA ID' SubClassOf Accession
+[+]'IntAct accession number' SubClassOf Accession
+[+]'InterPro accession' SubClassOf Accession
+[+]'IPI protein ID' SubClassOf Accession
+[+]'iRefIndex ID' SubClassOf Accession
+[+]ISBN SubClassOf Accession
+[+]'JASPAR profile ID' SubClassOf Accession
+[+]'KEGG Glycan ID' SubClassOf Accession
+[+]'LGICdb identifier' SubClassOf Accession
+[+]'Linucs ID' SubClassOf Accession
+[+]'LIPID MAPS ID' SubClassOf Accession
+[+]'LipidBank ID' SubClassOf Accession
+[-]'Locus ID' SubClassOf Accession
+[+]'Locus ID (AGI)' SubClassOf Accession
+[+]'Locus ID (ASPGD)' SubClassOf Accession
+[+]'Locus ID (CGD)' SubClassOf Accession
+[+]'Locus ID (CMR)' SubClassOf Accession
+[+]'Locus ID (DictyBase)' SubClassOf Accession
+[+]'Locus ID (EntrezGene)' SubClassOf Accession
+[+]'Locus ID (MaizeGDB)' SubClassOf Accession
+[+]'Locus ID (MGG)' SubClassOf Accession
+[+]'Locus ID (MMP)' SubClassOf Accession
+[+]'Locus ID (PseudoCAP)' SubClassOf Accession
+[+]'Locus ID (SGD)' SubClassOf Accession
+[+]'Locus ID (Tropgene)' SubClassOf Accession
+[+]'Locus ID (UTR)' SubClassOf Accession
+[-]MAGE-TAB SubClassOf 'Textual format'
+[+]MAGE-TAB SubClassOf TSV
+[+]'MaizeDB ID' SubClassOf Accession
+[+]Map SubClassOf Data
+[-]Map SubClassOf 'Map data'
+[-]'Map accession' SubClassOf Accession
+[+]'Map set data' SubClassOf DeprecatedClass
+[-]'Map set data' SubClassOf 'Map data'
+[+]'MatrixDB interaction ID' SubClassOf Accession
+[+]'Medline UI' SubClassOf Accession
+[+]'MeSH concept ID' SubClassOf Accession
+[+]'mFLJ/mKIAA number' SubClassOf Accession
+[+]'MGED concept ID' SubClassOf Accession
+[+]'MINT ID' SubClassOf Accession
+[+]'MIRIAM identifier' SubClassOf Accession
+[+]'MIRIAM URI' SubClassOf Accession
+[+]'MMDB ID' SubClassOf Accession
+[-]'Mobile genetic element ID' SubClassOf Accession
+[+]'ModelDB ID' SubClassOf Accession
+[-]'Molecule accession' SubClassOf Accession
+[-]'Monosaccharide accession' SubClassOf Accession
+[+]'MonosaccharideDB ID' SubClassOf Accession
+[+]'myGrid concept ID' SubClassOf Accession
+[+]'NCBI genome accession' SubClassOf Accession
+[+]'NCBI Genome Project ID' SubClassOf Accession
+[+]'NCBI locus tag' SubClassOf Accession
+[+]'NCBI taxonomy ID' SubClassOf Accession
+[+]'NCBI version' SubClassOf Accession
+[+]'NeuroMorpho ID' SubClassOf Accession
+[+]'NeuronDB ID' SubClassOf Accession
+[-]'Nucleic acid features' SubClassOf 'Nucleic acid report'
+[+]'Nucleic acid melting curve' SubClassOf DeprecatedClass
+[-]'Nucleic acid melting curve' SubClassOf 'Nucleic acid melting profile'
+[-]'Nucleic acid melting curve' SubClassOf Plot
+[-]'Nucleic acid melting curve plotting' SubClassOf 'has output' some 'Nucleic acid melting curve'
+[+]'Nucleic acid probability profile' SubClassOf DeprecatedClass
+[-]'Nucleic acid probability profile' SubClassOf 'Nucleic acid melting profile'
+[-]'Nucleic acid probability profile plotting' SubClassOf 'has output' some 'Nucleic acid probability profile'
+[+]'Nucleic acid stitch profile' SubClassOf DeprecatedClass
+[-]'Nucleic acid stitch profile' SubClassOf 'Nucleic acid melting profile'
+[-]'Nucleic acid stitch profile plotting' SubClassOf 'has output' some 'Nucleic acid stitch profile'
+[+]'Nucleic acid structure data' SubClassOf DeprecatedClass
+[-]'Nucleic acid structure data' SubClassOf 'Nucleic acid property'
+[+]'Nucleic acid temperature profile' SubClassOf DeprecatedClass
+[-]'Nucleic acid temperature profile' SubClassOf 'Nucleic acid melting profile'
+[-]'Nucleic acid temperature profile plotting' SubClassOf 'has output' some 'Nucleic acid temperature profile'
+[+]'OMIM ID' SubClassOf Accession
+[-]'Ontology concept ID' SubClassOf Accession
+[-]'Ontology used' hasDefinition "'Ontology used' concept property ('ontology_used' metadata tag) of format concepts links to a domain ontology that is used inside the given data format, or contains a note about ontology use within the format."
+[-]'Ontology used' rdfs:label "Ontology used"
+[+]ontology_used hasDefinition "'Ontology used' concept property ('ontology_used' metadata tag) of format concepts links to a domain ontology that is used inside the given data format, or contains a note about ontology use within the format."
+[+]ontology_used inSubset "concept_properties"
+[+]ontology_used is_metadata_tag "true"
+[+]ontology_used rdfs:label "Ontology used"
+[+]'ORF ID' SubClassOf Accession
+[-]'Organism accession' SubClassOf Accession
+[+]'Orpha number' SubClassOf Accession
+[+]'Over-representation report' SubClassOf Data
+[-]'Over-representation report' SubClassOf Report
+[+]'Pathway ID (BioCyc)' SubClassOf Accession
+[+]'Pathway ID (BioSystems)' SubClassOf Accession
+[+]'Pathway ID (ConsensusPathDB)' SubClassOf Accession
+[+]'Pathway ID (CPDB)' SubClassOf Accession
+[+]'Pathway ID (DQCS)' SubClassOf Accession
+[+]'Pathway ID (INOH)' SubClassOf Accession
+[+]'Pathway ID (KEGG)' SubClassOf Accession
+[+]'Pathway ID (NCI-Nature)' SubClassOf Accession
+[+]'Pathway ID (Panther)' SubClassOf Accession
+[+]'Pathway ID (PATIKA)' SubClassOf Accession
+[+]'Pathway ID (PharmGKB)' SubClassOf Accession
+[+]'Pathway ID (reactome)' SubClassOf Accession
+[+]'Pathway ID (SMPDB)' SubClassOf Accession
+[+]'Pathway ID (Unipathway)' SubClassOf Accession
+[-]'Pathway or network accession' SubClassOf Accession
+[-]'Pathway or network report' SubClassOf 'Over-representation report'
+[+]'Pathway or network report' SubClassOf Report
+[+]'PDB ID' SubClassOf Accession
+[+]'PeptideAtlas ID' SubClassOf Accession
+[+]'Pfam accession number' SubClassOf Accession
+[+]'Pfam clan ID' SubClassOf Accession
+[-]'Phylogenetic tree ID' SubClassOf Accession
+[+]'PIR identifier' SubClassOf Accession
+[-]'PIR identifier' SubClassOf 'is identifier of' some 'Sequence record'
+[+]'PIRSF ID' SubClassOf Accession
+[+]'Plant Ontology concept ID' SubClassOf Accession
+[+]'PRINTS code' SubClassOf Accession
+[+]'ProDom accession number' SubClassOf Accession
+[-]'Promoter ID' SubClassOf Accession
+[-]'Protein domain ID' SubClassOf Accession
+[-]'Protein family accession' SubClassOf Accession
+[+]'Protein family ID (GeneFarm)' SubClassOf Accession
+[+]'Protein family ID (PANTHER)' SubClassOf Accession
+[+]'Protein geometry report' SubClassOf 'Protein property'
+[-]'Protein geometry report' SubClassOf 'Protein structure report'
+[+]'Protein ID (ConoServer)' SubClassOf Accession
+[+]'Protein ID (CORUM)' SubClassOf Accession
+[+]'Protein ID (CuticleDB)' SubClassOf Accession
+[+]'Protein ID (DisProt)' SubClassOf Accession
+[+]'Protein ID (EcID)' SubClassOf Accession
+[+]'Protein ID (EMBL/GenBank/DDBJ)' SubClassOf Accession
+[+]'Protein ID (LGICdb)' SubClassOf Accession
+[+]'Protein ID (PeroxiBase)' SubClassOf Accession
+[+]'Protein ID (TopDB)' SubClassOf Accession
+[-]'Protein interaction ID' SubClassOf Accession
+[+]'Protein interaction report' SubClassOf 'Protein property'
+[-]'Protein interaction report' SubClassOf 'Protein structure report'
+[-]'Protein modification ID' SubClassOf Accession
+[+]'Protein secondary structure report' SubClassOf 'Protein property'
+[-]'Protein secondary structure report' SubClassOf 'Protein structure report'
+[+]'Protein solvent accessibility report' SubClassOf 'Protein property'
+[-]'Protein solvent accessibility report' SubClassOf 'Protein structure report'
+[+]'PubMed ID' SubClassOf Accession
+[+]qual SubClassOf 'Textual format'
+[-]'Reaction ID' SubClassOf Accession
+[+]'Reaction ID (BioCyc)' SubClassOf Accession
+[-]'Reaction ID (BioCyc)' SubClassOf 'has topic' some 'Small molecules'
+[+]'Reaction ID (MACie)' SubClassOf Accession
+[+]'Reaction ID (Rhea)' SubClassOf Accession
+[+]'Reaction ID (SABIO-RK)' SubClassOf Accession
+[+]'REBASE enzyme number' SubClassOf Accession
+[+]'REDIdb ID' SubClassOf Accession
+[+]'RefSeq accession' SubClassOf Accession
+[+]'RESID ID' SubClassOf Accession
+[+]'RNA-Seq analysis' SubClassOf 'Gene expression analysis'
+[+]'RNAVirusDB ID' SubClassOf Accession
+[-]'Sample ID' SubClassOf Accession
+[+]'SCOP domain identifier' SubClassOf Accession
+[-]'Sequence accession' SubClassOf Accession
+[+]'Sequence cluster ID (CluSTr)' SubClassOf Accession
+[+]'Sequence cluster ID (COG)' SubClassOf Accession
+[+]'Sequence cluster ID (SYSTERS)' SubClassOf Accession
+[+]'Sequence cluster ID (UniGene)' SubClassOf Accession
+[+]'Sequence cluster ID (UniRef)' SubClassOf Accession
+[-]'Sequence contamination filtering' SubClassOf 'has topic' some 'Nucleic acids'
+[+]'Sequence coordinates' SubClassOf Data
+[-]'Sequence coordinates' SubClassOf 'Map data'
+[-]'Sequence feature ID' SubClassOf Accession
+[+]'Sequence feature ID (SwissRegulon)' SubClassOf Accession
+[-]'Sequence profile ID' SubClassOf Accession
+[-]'Sequence quality report format (text)' SubClassOf 'Textual format'
+[-]'Sequence set ID' SubClassOf Accession
+[-]'Sequence variation ID' SubClassOf Accession
+[+]'Signaling Gateway protein ID' SubClassOf Accession
+[+]'SISYPHUS ID' SubClassOf Accession
+[+]'SMART accession number' SubClassOf Accession
+[+]snpeffdb SubClassOf 'Binary format'
+[-]'Spot ID' SubClassOf Accession
+[+]'Spot ID (HSC-2DPAGE)' SubClassOf Accession
+[+]'Spot serial number' SubClassOf Accession
+[-]'Stock number' SubClassOf Accession
+[+]'Stock number (TAIR)' SubClassOf Accession
+[+]'STRING ID' SubClassOf Accession
+[-]'Structural (3D) profile ID' SubClassOf Accession
+[-]'Structure alignment ID' SubClassOf Accession
+[-]'Structure ID' SubClassOf Accession
+[+]'Superfamily hidden Markov model number' SubClassOf Accession
+[+]'T3DB ID' SubClassOf Accession
+[+]'Tabix index file format' SubClassOf 'Binary format'
+[-]'TAIR accession (protein)' SubClassOf 'is identifier of' some 'Sequence record'
+[+]'Target ID (TTD)' SubClassOf Accession
+[+]'Taverna workflow ID' SubClassOf Accession
+[+]'TCDB ID' SubClassOf Accession
+[+]TCID SubClassOf Accession
+[+]'TIGR identifier' SubClassOf Accession
+[+]'TIGRFam ID' SubClassOf Accession
+[-]'Toxin accession' SubClassOf Accession
+[-]'Transcription factor accession' SubClassOf Accession
+[+]'TRANSFAC accession number' SubClassOf Accession
+[+]'TreeBASE study accession number' SubClassOf Accession
+[+]'TreeFam accession number' SubClassOf Accession
+[+]'UMLS concept ID' SubClassOf Accession
+[+]'Unimod ID' SubClassOf Accession
+[+]'UniParc accession' SubClassOf Accession
+[+]'UniProt accession' SubClassOf Accession
+[-]'UniProt accession' SubClassOf 'is identifier of' some 'Sequence record'
+[+]'UniSTS accession' SubClassOf Accession
+[+]'UNITE accession' SubClassOf Accession
+[+]'UTR accession' SubClassOf Accession
+[-]'Virtual PCR' SubClassOf 'has topic' some 'Nucleic acids'
+[-]'Workflow ID' SubClassOf Accession
+[+]'WormBase wormpep ID' SubClassOf Accession
+```
+
+
+
 
 # EDAM_1.20.owl
 
