@@ -2,6 +2,35 @@
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM 1.21
+
+See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for the detailed list of semantic changes in the EDAM ontology.
+
+### Summary of changes
+* 
+* 
+* 
+* Improved [edam2json](https://github.com/edamontology/edam2json/commits/master) generator
+
+
+### Changes in hierarchy
+* 26 concepts added  (3 Data, 20 Format, 2 Operation, 1 Topic)
+* 13 concepts deprecated (11 Data, 2 Operation)
+* 315 concepts have changed relations|hierarchy (297 Data, of which 282 Identifier; 9 Format, 9 Operation)
+
+### Fixed issues
+- 23 issues fixed and closed (#67, #190, #206, #233, #244, #271, #288, #338, #339, #340, #341, #342, #343, #344, #345, #347, #348, #349, #364, edamontology/edamontologyDocs#1, edamontology/edamontologyDocs#18, edamontology/edam2json#1, edamontology/edam2json#2)
+- 4 issues partially fixed but left open for further improvements (#15, #237, #293, #295)
+
+### Other closed issues
+- 0 invalid issues closed ()
+- 5 issues closed, wrong project (#174, #299, #334, #354, #355)
+- 0 issues closed, won't fix ()
+- 2 issues closed, duplicate (#291, #322)
+
+
+
+
 # EDAM 1.20 [![DOI: 10.5281/zenodo.1134395](https://zenodo.org/badge/DOI/10.5281/zenodo.1134395.svg)](https://doi.org/10.5281/zenodo.1134395)
 
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for the detailed list of semantic changes in the EDAM ontology.
