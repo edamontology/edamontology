@@ -2,7 +2,7 @@
 
 **_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
-# EDAM 1.21
+# EDAM 1.21 [![DOI: 10.5281/zenodo.1325952](https://zenodo.org/badge/DOI/10.5281/zenodo.1325952.svg)](https://doi.org/10.5281/zenodo.1325952)
 
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for the detailed list of semantic changes in the EDAM ontology.
 
