@@ -8,6 +8,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for 
 
 ### Summary of changes
 * 20 formats added (listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-121))
+* Added `repository` attribute for Formats
 * Structural clean-up of various areas of the Data sub-ontology, especially around _Identifier_ and _Report_
 * Major clean-up of the hierarchy of _Accessions_
 * Clean-up of some Operations (_e.g._ around Plotting _i.e._ Visualisation)
