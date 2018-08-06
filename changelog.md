@@ -1,10 +1,10 @@
 # Changelog for EDAM
 
-**_N.B._:** For a version of these notes with clickable _issues_ with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
+**_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
 # EDAM 1.21 [![DOI: 10.5281/zenodo.1325952](https://zenodo.org/badge/DOI/10.5281/zenodo.1325952.svg)](https://doi.org/10.5281/zenodo.1325952)
 
-See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for the detailed list of semantic changes in the EDAM ontology.
+See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for a detailed list of semantic changes in the EDAM ontology.
 
 ### Summary of changes
 * 20 formats added (listed in [changelog-detailed.md](changelog-detailed.md#new-concepts-121))
