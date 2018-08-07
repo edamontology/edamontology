@@ -22,7 +22,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for 
 * 315 concepts have changed relations|hierarchy (297 Data, of which 282 Identifier; 9 Format, 9 Operation)
 
 ### Fixed issues
-- 24 issues fixed and closed (#67, #190, #206, #233, #244, #271, #288, #338, #339, #340, #341, #342, #343, #344, #345, #347, #348, #349, #351, #364, edamontology/edamontologyDocs#1, edamontology/edamontologyDocs#18, edamontology/edam2json#1, edamontology/edam2json#2)
+- 25 issues fixed and closed (#67, #190, #206, #233, #244, #253, #271, #288, #338, #339, #340, #341, #342, #343, #344, #345, #347, #348, #349, #351, #364, edamontology/edamontologyDocs#1, edamontology/edamontologyDocs#18, edamontology/edam2json#1, edamontology/edam2json#2)
 - 4 issues partially fixed but left open for further improvements (#15, #237, #293, #295)
 
 ### Other closed issues
