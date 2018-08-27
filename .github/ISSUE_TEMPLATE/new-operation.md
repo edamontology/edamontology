@@ -4,7 +4,7 @@ about: Request a new concept is added to the EDAM Operation sub-ontology.
 
 ---
 
-*Instructions:* When making a request, replace the text < between chevrons > after first reading the instructions.  Do not change any other text, and please try to complete as much information as you can (your request will get acted on sooner if you do).
+*Instructions:* When making a request, replace the text < between chevrons > after first reading the instructions.  The instructions can be removed. Do not change any other text, and please try to complete as much information as you can (your request will get acted on sooner if you do).
 
 
 
