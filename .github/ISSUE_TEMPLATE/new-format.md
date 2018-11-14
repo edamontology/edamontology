@@ -51,7 +51,7 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 
 **Publication:** < DOI1 | DOI2 |... >
 
-*Instructions:* Citation DOI *e.g.* "10.1038%2Fnbt1031" or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  Specify a A DOI (if available) otherwise a URL.
+*Instructions:* Citation DOI *e.g.* "10.1038%2Fnbt1031" or URL *e.g.* "https://www.iso.org/standard/29581.html". Specify a DOI of an article (if available) that describes the format, and should be used to cite mentions or usage of the format.  Specify a DOI (if available) otherwise a URL.
 
 
 
@@ -64,6 +64,30 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 **File extension(s):** < Extension1 | Extension2 |... >
 
 *Instructions:* File extension(s) in common use delimited by pipe ('|') *e.g.* "png". Please specify all file name extensions that are commonly used.  Do not include period (`.`) character.
+
+
+
+**Example(s):** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to examples of the file format delimited by pipe ('|') *e.g.* "http://prodata.swmed.edu/mummals/info/fasta_format_file_example.htm".  Do not give links to Wikipedia.
+
+
+
+**Information standard(s):** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to relevant information standard which the format supports, delimited by pipe ('|') *e.g.* "http://www.psidev.info/miape". Give link(s) to the information standard homepage(s).
+
+
+
+**Ontologies used:** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to ontologies used by this format, delimited by pipe ('|') *e.g.* "http://edamontology.org/".  Give link(s) to the ontology homepage(s).
+
+
+
+**Governing organisation(s):** < URL1 | URL2 |... >
+
+*Instructions:* URL(s) to organisation(s) that formally governs the format, delimited by pipe ('|') *e.g.* "http://www.psidev.info/".  Give link(s) to the organisation homepage(s).  
 
 
 
