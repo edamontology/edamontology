@@ -20,6 +20,7 @@
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
+        <oboOther:date>02.08.2018 00:47 GMT</oboOther:date>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <doap:Version>1.22_dev</doap:Version>
@@ -31,15 +32,14 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>02.08.2018 00:47 GMT</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3867</next_id>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3866</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
     </owl:Ontology>
@@ -259,20 +259,20 @@
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>Regular expression</rdfs:label>
     </owl:AnnotationProperty>
+    
 
 
+    <!-- http://edamontology.org/repository -->
 
-	<!-- http://edamontology.org/repository -->
-
-	<owl:AnnotationProperty rdf:about="http://edamontology.org/repository">
-		<oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
-		<oboInOwl:hasDefinition>&apos;Repository&apos; trailing modifier (qualifier, &apos;repository&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to the public source-code repository where the given data format is developed or maintained.</oboInOwl:hasDefinition>
-		<oboInOwl:hasExactSynonym>Source-code repository</oboInOwl:hasExactSynonym>
-		<oboInOwl:hasExactSynonym>Public repository</oboInOwl:hasExactSynonym>
-		<oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
-		<rdfs:label>Repository</rdfs:label>
-	</owl:AnnotationProperty>
-
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/repository">
+        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
+        <oboInOwl:hasDefinition>&apos;Repository&apos; trailing modifier (qualifier, &apos;repository&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to the public source-code repository where the given data format is developed or maintained.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Public repository</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Source-code repository</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <rdfs:label>Repository</rdfs:label>
+    </owl:AnnotationProperty>
+    
 
 
     <!-- http://edamontology.org/thematic_editor -->
@@ -30162,12 +30162,12 @@
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
         <documentation rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
-		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/accession.xml"/>
         <example rdf:resource="http://bioxsd.org/exampleFeatureRecords.html"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
         <ontology_used>Any ontology allowed, none mandatory. Preferrably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
+        <repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <oboInOwl:comment>&apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioXSD in XML&apos; is the XML format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
         <oboInOwl:hasBroadSynonym>BioXSD</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
@@ -31362,9 +31362,9 @@
         <documentation rdf:resource="http://www.gtrack.no"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
-		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
+        <example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gtrack/examples"/>
         <example rdf:resource="https://hyperbrowser.uio.no/hb/u/hb-superuser/h/gtrack-examples-from-the-specification"/>
-		<example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gtrack/examples"/>
+        <repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:comment>&apos;GTrack&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;GTrack&apos; is the tabular format for representing features of sequences and genomes.</oboInOwl:comment>
         <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="http://www.gtrack.no"/>
@@ -32636,15 +32636,17 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3590">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <created_in>1.11</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
         <documentation rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
-        <oboInOwl:hasDefinition>HDF5 is a generic hierarchical data file format used to store and organize large amounts of data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>h5</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>An HDF5 file appears to the user as a directed graph. The nodes of this graph are the higher-level HDF5 objects that are exposed by the HDF5 APIs: Groups, Datasets, Named datatypes.</rdfs:comment>
-        <rdfs:label>hdf5</rdfs:label>
+        <rdfs:comment>An HDF5 file appears to the user as a directed graph. The nodes of this graph are the higher-level HDF5 objects that are exposed by the HDF5 APIs: Groups, Datasets, Named datatypes. Currently supported by the Python MDTraj package.</rdfs:comment>
+        <rdfs:comment>HDF5 is the new version, according to the HDF group, a completely different technology (https://support.hdfgroup.org/products/hdf4/ compared to HDF.</rdfs:comment>
+        <rdfs:label>HDF5</rdfs:label>
     </owl:Class>
     
 
@@ -33207,10 +33209,13 @@
     <!-- http://edamontology.org/format_3650 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3650">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
         <created_in>1.12</created_in>
         <documentation rdf:resource="http://www.astm.org/Standards/E1947.htm"/>
-        <oboInOwl:hasDefinition>Format used by netCDF software  library for writing and reading chromatography-MS data files.</oboInOwl:hasDefinition>
+        <oboInOwl:comment>Network Common Data Form (NetCDF) library is supported by AMBER MD package from version 9.</oboInOwl:comment>
+        <oboInOwl:hasDefinition>Format used by netCDF software  library for writing and reading chromatography-MS data files.  Also used to store trajectory atom coordinates information, such as the ones obtained by Molecular Dynamics simulations.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>ANDI-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -34108,9 +34113,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <created_in>1.16</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
-		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.json"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <oboInOwl:comment>Work in progress. &apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioJSON&apos; is the JSON format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDefinition>BioJSON is a BioXSD-schema-based JSON format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web applications and APIs, and object-oriented programming.</oboInOwl:hasDefinition>
@@ -34174,9 +34179,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="http://doi.org/10.7490/f1000research.1113048.1"/>
         <created_in>1.16</created_in>
         <documentation rdf:resource="http://bioxsd.org"/>
-		<repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.yaml"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
+        <repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <oboInOwl:comment>Work in progress. &apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioYAML&apos; is the YAML format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDefinition>BioYAML is a BioXSD-schema-based YAML format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, web APIs, human readability and editting, and object-oriented programming.</oboInOwl:hasDefinition>
@@ -34247,8 +34252,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.16</created_in>
         <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
         <documentation rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
-		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
-		<example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gsuite/examples"/>
+        <example rdf:resource="https://github.com/gtrack/gtrack/tree/master/gsuite/examples"/>
+        <repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:comment>&apos;GSuite&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;GSuite&apos; is the tabular format for an annotated collection of individual GTrack files.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/gsuite/static/hyperbrowser/gsuite/GSuite_specification.txt"/>
@@ -34275,9 +34280,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2548"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>1.16</created_in>
+        <repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:comment>&apos;BTrack&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;BTrack&apos; is the binary, optionally compressed HDF5-based version of the GTrack and GSuite formats.</oboInOwl:comment>
         <oboInOwl:hasDefinition>BTrack is an HDF5-based binary format for genome or sequence feature tracks and their collections, suitable for integrative multi-track analysis. BTrack is a binary, compressed alternative to the GTrack and GSuite formats.</oboInOwl:hasDefinition>
-		<repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:hasExactSynonym>BTrack (GTrack ecosystem of formats)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BTrack format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack BTrack</oboInOwl:hasExactSynonym>
@@ -35195,22 +35200,22 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3857">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3750"/>
+        <citation rdf:resource="https://doi.org/10.6084/m9.figshare.3115156.v2"/>
         <created_in>1.21</created_in>
+        <documentation rdf:resource="https://www.commonwl.org/user_guide/"/>
         <documentation rdf:resource="https://www.commonwl.org/v1.0/CommandLineTool.html"/>
         <documentation rdf:resource="https://www.commonwl.org/v1.0/Workflow.html"/>
-		<documentation rdf:resource="https://www.commonwl.org/user_guide/"/>
-		<example rdf:resource="https://github.com/common-workflow-language/common-workflow-language/tree/master/v1.0/examples"/>
-		<citation rdf:resource="https://doi.org/10.6084/m9.figshare.3115156.v2"/>
-		<organisation rdf:resource="https://www.commonwl.org/"/>
-		<organisation rdf:resource="https://sfconservancy.org/"/>
-		<repository rdf:resource="https://github.com/common-workflow-language/common-workflow-language"/>
+        <example rdf:resource="https://github.com/common-workflow-language/common-workflow-language/tree/master/v1.0/examples"/>
+        <file_extension>cwl</file_extension>
+        <organisation rdf:resource="https://sfconservancy.org/"/>
+        <organisation rdf:resource="https://www.commonwl.org/"/>
+        <repository rdf:resource="https://github.com/common-workflow-language/common-workflow-language"/>
         <oboInOwl:hasDefinition>Common Workflow Language (CWL) format for description of command-line tools and workflows.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Common Workflow Language</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CommonWL</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <file_extension>cwl</file_extension>
         <rdfs:label>CWL</rdfs:label>
-		<oboInOwl:hasExactSynonym>Common Workflow Language</oboInOwl:hasExactSynonym>
-		<oboInOwl:hasExactSynonym>CommonWL</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -35270,26 +35275,26 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>NLP corpus format</rdfs:label>
     </owl:Class>
+    
 
 
+    <!-- http://edamontology.org/format_3864 -->
 
-	<!-- http://edamontology.org/format_3864 -->
-
-	<owl:Class rdf:about="http://edamontology.org/format_3864">
-		<rdfs:subClassOf rdf:resource="http://edamontology.org/format_1975"/>
-		<rdfs:subClassOf rdf:resource="http://edamontology.org/format_3865"/>
-		<created_in>1.21</created_in>
-		<documentation rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/definition.md"/>
-		<example rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/example.gff"/>
-		<repository rdf:resource="https://github.com/miRTop/mirGFF3"/>
-		<citation rdf:resource="https://doi.org/10.7490/f1000research.1115724.1"/>
-		<oboInOwl:hasDefinition>mirGFF3 is a common format for microRNA data resulting from small-RNA RNA-Seq workflows.</oboInOwl:hasDefinition>
-		<rdfs:comment>mirGFF3 is a specialisation of GFF3; produced by small-RNA-Seq analysis workflows, usable and convertible with the miRTop API (https://mirtop.readthedocs.io/en/latest/), and consumable by tools for downstream analysis.</rdfs:comment>
-		<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-		<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-		<rdfs:label>mirGFF3</rdfs:label>
-		<oboInOwl:hasExactSynonym>miRTop format</oboInOwl:hasExactSynonym>
-	</owl:Class>
+    <owl:Class rdf:about="http://edamontology.org/format_3864">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1975"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3865"/>
+        <citation rdf:resource="https://doi.org/10.7490/f1000research.1115724.1"/>
+        <created_in>1.21</created_in>
+        <documentation rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/definition.md"/>
+        <example rdf:resource="https://github.com/miRTop/mirGFF3/blob/master/example.gff"/>
+        <repository rdf:resource="https://github.com/miRTop/mirGFF3"/>
+        <oboInOwl:hasDefinition>mirGFF3 is a common format for microRNA data resulting from small-RNA RNA-Seq workflows.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>miRTop format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>mirGFF3 is a specialisation of GFF3; produced by small-RNA-Seq analysis workflows, usable and convertible with the miRTop API (https://mirtop.readthedocs.io/en/latest/), and consumable by tools for downstream analysis.</rdfs:comment>
+        <rdfs:label>mirGFF3</rdfs:label>
+    </owl:Class>
     
 
 
@@ -35298,13 +35303,66 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3865">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <created_in>1.21</created_in>
-        <oboInOwl:hasDefinition>A "placeholder" concept for formats of annotated RNA data, including e.g. microRNA and RNA-Seq data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>RNA data format</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>A &quot;placeholder&quot; concept for formats of annotated RNA data, including e.g. microRNA and RNA-Seq data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>miRNA data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>microRNA data format</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>RNA annotation format</rdfs:label>
-		<oboInOwl:hasNarrowSynonym>microRNA data format</oboInOwl:hasNarrowSynonym>
-		<oboInOwl:hasNarrowSynonym>miRNA data format</oboInOwl:hasNarrowSynonym>
-		<oboInOwl:hasBroadSynonym>RNA data format</oboInOwl:hasBroadSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3866 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3866">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.edamontology.org/data_3870"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>File format to store trajectory information for a 3D structure .</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>CG trajectory formats</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MD trajectory formats</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NA trajectory formats</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein trajectory formats</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>Formats differ on what they are able to store (coordinates, velocities, topologies) and how they are storing it (raw, compressed, textual, binary).</rdfs:comment>
+        <rdfs:label>Trajectory format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3867 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3867">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3866"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>Binary file format to store trajectory information for a 3D structure .</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>Trajectory format (binary)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3868 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3868">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3866"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>Textual file format to store trajectory information for a 3D structure .</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>Trajectory format (text)</rdfs:label>
     </owl:Class>
     
 
@@ -35794,12 +35852,18 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0250"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse flexibility and motion in protein structure.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein flexibility prediction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Protein motion prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>CG analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MD analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein Dynamics Analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Trajectory analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleic Acid Dynamics Analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein flexibility and motion analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein flexibility prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein motion prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Use this concept for analysis of flexible and rigid residues, local chain deformability, regions undergoing conformational change, molecular vibrations or fluctuational dynamics, domain motions or other large-scale structural transitions in a protein structure.</rdfs:comment>
-        <rdfs:label>Protein flexibility and motion analysis</rdfs:label>
+        <rdfs:label>Simulation analysis</rdfs:label>
     </owl:Class>
     
 
@@ -37752,9 +37816,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Visualise, plot or render (graphically) biomolecular data such as molecular sequences or structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data visualisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Molecular visualisation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>This includes methods to render and visualise molecules.</rdfs:comment>
         <rdfs:label>Visualisation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_data_visualization"/>
     </owl:Class>
@@ -41678,12 +41744,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Visualise or render molecular structure, for example a high-quality static picture or animation.  This includes secondary structure such as knots, pseudoknots etc. as well as tertiary and quaternary structure.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Visualise or render molecular 3D structure, for example a high-quality static picture or animation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein secondary structure visualisation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>RNA secondary structure visualisation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>This includes visualisation of protein secondary structure such as knots, pseudoknots etc. as well as tertiary and quaternary structure.</rdfs:comment>
         <rdfs:label>Structure visualisation</rdfs:label>
     </owl:Class>
     
@@ -44036,8 +44103,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Simulate molecular (typically protein) conformation using a computational model of physical forces and computer simulation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The simulation of molecular (typically protein) conformation using a computational model of physical forces and computer simulation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Molecular dynamics simulation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein dynamics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Molecular dynamics</rdfs:label>
@@ -45086,13 +45154,19 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0337"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:comment>Examples for visualization are the distribution of variance over the components, loading and score plots.</oboInOwl:comment>
-        <oboInOwl:hasDefinition>Visualize the results of a principal component analysis (orthogonal data transformation).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Visualize the results of a principal component analysis (orthogonal data transformation).  For example, visualization of the principal components (essential subspace) coming from a Principal Component Analysis (PCA) on the trajectory atomistic coordinates of a molecular structure.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PCA plotting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Principal component plotting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>ED visualization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Essential Dynamics visualization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray principal component plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray principal component rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>PCA visualization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Principal modes visualization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Principal component plotting</rdfs:label>
+        <rdfs:comment>The use of Principal Component Analysis (PCA), a multivariate statistical analysis to obtain collective variables on the atomic positional fluctuations, helps to separate the configurational space in two subspaces: an “essential” subspace containing relevant motions, and another one containing irrelevant local fluctuations.</rdfs:comment>
+        <rdfs:label>Principal component visualisation</rdfs:label>
     </owl:Class>
     
 
@@ -49924,6 +49998,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/topic_0176">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0082"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/topic_3892"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasBroadSynonym>Molecular flexibility</oboInOwl:hasBroadSynonym>
@@ -49933,7 +50008,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Protein dynamics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>This includes resources concerning flexibility and motion in protein and other molecular structures.</rdfs:comment>
+        <rdfs:comment>This includes methods such as Molecular Dynamics, Coarse-grained dynamics, metadynamics, Quantum Mechanics, QM/MM, Markov State Models, etc. This includes resources concerning flexibility and motion in protein and other molecular structures.</rdfs:comment>
         <rdfs:label>Molecular dynamics</rdfs:label>
     </owl:Class>
     
@@ -52046,6 +52121,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDefinition>The construction, analysis, evaluation, refinement etc. of models of a molecules properties or behaviour, including the modelling the structure of proteins in complex with small molecules or other macromolecules (docking).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_modelling</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Comparative modelling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Docking</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Homology modeling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Homology modelling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Molecular docking</oboInOwl:hasNarrowSynonym>
@@ -52537,14 +52613,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/topic_2844 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_2844">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3432"/>
         <created_in>beta12orEarlier</created_in>
-        <obsolete_since>1.7</obsolete_since>
-        <oboInOwl:hasDefinition>The comparison and grouping together of molecular structures on the basis of similarity; generate, process or analyse structural clusters.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0081"/>
-        <rdfs:label>Structural clustering</rdfs:label>
-        <owl:deprecated>true</owl:deprecated>
+        <oboInOwl:hasDefinition>Build clusters of similar structures, typically using scores from structural alignment methods.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Structural clustering</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Structure clustering</rdfs:label>
     </owl:Class>
     
 
@@ -56334,6 +56409,442 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Environmental science</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_science"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/data_3869 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/data_3869">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Data coming from molecular simulations, computer &quot;experiments&quot; on model molecules. Tipically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Simulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/data_3870 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/data_3870">
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/data_3869"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Dynamic information of a structure molecular system coming from a molecular simulation: XYZ 3D coordinates (sometimes with their associated velocities) for every atom along time.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Trajectory data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/data_3871 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/data_3871">
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/data_3869"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Force field parameters: charges, masses, radii, bond lengths, bond dihedrals, etc. define the structural molecular system, and are essential for the proper description and simulation of a molecular system.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Forcefield parameters</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/data_3872 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/data_3872">
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/data_3869"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Static information of a structure molecular system that is needed for a molecular simulation: the list of atoms, their non-bonded parameters for Van der Waals and electrostatic interactions, and the complete connectivity in terms of bonds, angles and dihedrals.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Topology data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3873 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3873">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>HDF is the name of a set of file formats and libraries designed to store and organize large amounts of numerical data, originally developed at the National Center for Supercomputing Applications at the University of Illinois.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>HDF is currently supported by many commercial and non-commercial software platforms such as Java, MATLAB/Scilab, Octave, Python and R.</rdfs:comment>
+        <rdfs:label>HDF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3874 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3874">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>PCAZip format is a binary compressed file to store atom coordinates based on Essential Dynamics (ED) and Principal Component Analysis (PCA).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>The compression is made projecting the Cartesian snapshots collected along the trajectory into an orthogonal space defined by the most relevant eigenvectors obtained by diagonalization of the covariance matrix (PCA). In the compression/decompression process, part of the original information is lost, depending on the final number of eigenvectors chosen. However, with a reasonable choice of the set of eigenvectors the compression typically reduces the trajectory file to less than one tenth of their original size with very acceptable loss of information. Compression with PCAZip can only be applied to unsolvated structures.</rdfs:comment>
+        <rdfs:label>PCAzip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3875 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3875">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Portable binary format for trajectories produced by GROMACS package.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>XTC uses the External Data Representation (xdr) routines for writing and reading data which were created for the Unix Network File System (NFS). XTC files use a reduced precision (lossy) algorithm which works multiplying the coordinates by a scaling factor (typically 1000), so converting them to pm (GROMACS standard distance unit is nm). This allows an integer rounding of the values. Several other tricks are performed, such as making use of atom proximity information: atoms close in sequence are usually close in space (e.g. water molecules). That makes XTC format the most efficient in terms of disk usage, in most cases reducing by a factor of 2 the size of any other binary trajectory format.</rdfs:comment>
+        <rdfs:label>XTC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3876 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3876">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Trajectory Next Generation (TNG) is a format for storage of molecular simulation data. It is designed and implemented by the GROMACS development group, and it is called to be the substitute of the XTC format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Trajectory Next Generation format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:inSubset>TNG</oboInOwl:inSubset>
+        <rdfs:comment>Fully architecture-independent format, regarding both endianness and the ability to mix single/double precision trajectories and I/O libraries. Self-sufficient, it should not require any other files for reading, and all the data should be contained in a single file for easy transport. Temporal compression of data, improving the compression rate of the previous XTC format. Possibility to store meta-data with information about the simulation. Direct access to a particular frame. Efficient parallel I/O.</rdfs:comment>
+        <rdfs:label>TNG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3877 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3877">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3868"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>The XYZ chemical file format is widely supported by many programs, although many slightly different XYZ file formats coexist (Tinker XYZ, UniChem XYZ, etc.). Basic information stored for each atom in the system are x, y and z coordinates and atom element/atomic number.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>XYZ files are structured in this way:  First line contains the number of atoms in the file.  Second line contains a title, comment, or filename. Remaining lines contain atom information. Each line starts with the element symbol, followed by x, y and z coordinates in angstroms separated by whitespace. Multiple molecules or frames can be contained within one file, so it supports trajectory storage. XYZ files can be directly represented by a molecular viewer, as they contain all the basic information needed to build the 3D model.</rdfs:comment>
+        <rdfs:label>XYZ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3878 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3878">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3868"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://ambermd.org/formats.html#trajectory"/>
+        <oboInOwl:hasDefinition>AMBER trajectory (also called mdcrd), with 10 coordinates per line and format F8.3 (fixed point notation with field width 8 and 3 decimal places).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>AMBER trajectory format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>inpcrd</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>mdcrd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3879 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3879">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.edamontology.org/data_3872"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>Format of topology files; containing the static information of a structure molecular system that is needed for a molecular simulation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>CG topology format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MD topology format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NA topology format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein topology format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>Many different file formats exist describing structural molecular topology. Tipically, each MD package or simulation software works with their own implementation (e.g. GROMACS top, CHARMM psf, AMBER prmtop).</rdfs:comment>
+        <rdfs:label>Topology format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3880 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3880">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3879"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://manual.gromacs.org/documentation/2018/user-guide/file-formats.html#top"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>GROMACS MD package top textual files define an entire structure system topology, either directly, or by including itp files.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>There is currently no tool available for conversion between GROMACS topology format and other formats, due to the internal differences in both approaches. There is, however, a method to convert small molecules parameterized with AMBER force-field into GROMACS format, allowing simulations of these systems with GROMACS MD package.</rdfs:comment>
+        <rdfs:label>GROMACS top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3881 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3881">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3879"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://ambermd.org/formats.html#topology"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>AMBER Prmtop file (version 7) is a structure topology text file divided in several sections designed to be parsed easily using simple Fortran code. Each section contains particular topology information, such as atom name, charge, mass, angles, dihedrals, etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>AMBER Parm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AMBER Parm7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Parm7</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prmtop</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Prmtop7</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>It can be modified manually, but as the size of the system increases, the hand-editing becomes increasingly complex. AMBER Parameter-Topology file format is used extensively by the AMBER software suite and is referred to as the Prmtop file for short.</rdfs:comment>
+        <rdfs:comment>version 7 is written to distinguish it from old versions of AMBER Prmtop. Similarly to HDF5, it is a completely different format, according to AMBER group: a drastic change to the file format occurred with the 2004 release of Amber 7 (http://ambermd.org/prmtop.pdf)</rdfs:comment>
+        <rdfs:label>AMBER top</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3882 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3882">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3879"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://www.ks.uiuc.edu/Training/TutorialsOverview/namd/namd-tutorial-unix-html/node23.html"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>X-Plor Protein Structure Files (PSF) are structure topology files used by NAMD and CHARMM molecular simulations programs. PSF files contain six main sections of interest: atoms, bonds, angles, dihedrals, improper dihedrals (force terms used to maintain planarity) and cross-terms.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>The high similarity in the functional form of the two potential energy functions used by AMBER and CHARMM force-fields gives rise to the possible use of one force-field within the other MD engine. Therefore, the conversion of PSF files to AMBER Prmtop format is possible with the use of AMBER chamber (CHARMM - AMBER) program.</rdfs:comment>
+        <rdfs:label>PSF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3883 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3883">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3879"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3884"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://manual.gromacs.org/documentation/2018/user-guide/file-formats.html#itp"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>GROMACS itp files (include topology) contain structure topology information, and are tipically included in GROMACS topology files (GROMACS top). Itp files are used to define individual (or multiple) components of a topology as a separate file. This is particularly useful if there is a molecule that is used frequently, and also reduces the size of the system topology file, splitting it in different parts.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>GROMACS itp files are used also to define position restrictions on the molecule, or to define the force field parameters for a particular ligand.</rdfs:comment>
+        <rdfs:label>GROMACS itp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3884 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3884">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.edamontology.org/data_3872"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>Format of force field parameter files, which store the set of parameters (charges, masses, radii, bond lengths, bond dihedrals, etc.) that are essential for the proper description and simulation of a molecular system.</oboInOwl:hasDefinition>
+        <rdfs:comment>Many different file formats exist describing force field parameters. Tipically, each MD package or simulation software works with their own implementation (e.g. GROMACS itp, CHARMM rtf, AMBER off / frcmod).</rdfs:comment>
+        <rdfs:label>FF parameter format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3885 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3885">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Scripps Research Institute BinPos format is a binary formatted file to store atom coordinates.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Scripps Research Institute BinPos</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>It is basically a translation of the ASCII atom coordinate format to binary code. The only additional information stored is a magic number that identifies the BinPos format and the number of atoms per snapshot. The remainder is the chain of coordinates binary encoded. A drawback of this format is its architecture dependency. Integers and floats codification depends on the architecture, thus it needs to be converted if working in different platforms (little endian, big endian).</rdfs:comment>
+        <rdfs:label>BinPos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3886 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3886">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3868"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://ambermd.org/formats.html#restart"/>
+        <oboInOwl:hasDefinition>AMBER coordinate/restart file with 6 coordinates per line and decimal format F12.7 (fixed point notation with field width 12 and 7 decimal places)</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>inpcrd</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>restrt</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>rst7</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>RST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3887 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3887">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3879"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>Format of CHARMM Residue Topology Files (RTF), which define groups by including the atoms, the properties of the group, and bond and charge information.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>There is currently no tool available for conversion between GROMACS topology format and other formats, due to the internal differences in both approaches. There is, however, a method to convert small molecules parameterized with AMBER force-field into GROMACS format, allowing simulations of these systems with GROMACS MD package.</rdfs:comment>
+        <rdfs:label>CHARMM rtf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3888 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3888">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3884"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://ambermd.org/formats.html#frcmod"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>AMBER frcmod (Force field Modification) is a file format to store any modification to the standard force field needed for a particular molecule to be properly represented in the simulation.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>AMBER frcmod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3889 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3889">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/format_3884"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://ambermd.org/doc/OFF_file_format.txt"/>
+        <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
+        <oboInOwl:hasDefinition>AMBER Object File Format library files (OFF library files) store residue libraries (forcefield residue parameters).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>AMBER Object File Format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>AMBER lib</oboInOwl:hasExactSynonym>
+        <rdfs:label>AMBER off</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3890 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3890">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0570"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2162"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>3D visualization of a molecular trajectory.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Trajectory visualization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3891 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3891">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0244"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2481"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Compute Essential Dynamics (ED) on a simulation trajectory: an analysis of molecule dynamics using PCA (Principal Component Analysis) applied to the atomic positional fluctuations.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ED</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PCA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Principal modes</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Principal Component Analysis (PCA) is a multivariate statistical analysis to obtain collective variables and reduce the dimensionality of the system.</rdfs:comment>
+        <rdfs:label>Essential dynamics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3893 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3893">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1439"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Obtain force field parameters (charge, bonds, dihedrals, etc.) from a molecule, to be used in molecular simulations</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Ligand parameterization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Molecule parameterization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence alignment analysis (phylogenetic modelling)</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Forcefield parameterisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/topic_3892 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/topic_3892">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2480"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>The study and simulation of molecular conformations using a computational model and computer simulations.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This includes methods such as Molecular Dynamics, Coarse-grained dynamics, metadynamics, Quantum Mechanics, QM/MM, Markov State Models, etc.</rdfs:comment>
+        <rdfs:label>Biomolecular simulation</rdfs:label>
     </owl:Class>
     
 
