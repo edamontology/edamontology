@@ -2080,6 +2080,7 @@
 </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein interaction record</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein report (interaction)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-protein interaction data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Atom interaction data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein non-covalent interactions report</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Residue interaction data</oboInOwl:hasNarrowSynonym>
@@ -35559,6 +35560,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Generate a molecular sequence by some means.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Sequence generation (nucleic acid)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Sequence generation (protein)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Sequence generation</rdfs:label>
@@ -37076,12 +37079,15 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Recognize (predict and identify) known protein structural domains or folds in protein sequence(s) which (typically) are not accompanied by any significant sequence similarity to know structures.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Domain prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Fold prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein domain prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein fold prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein fold recognition</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods use some type of mapping between sequence and fold, for example secondary structure prediction and alignment, profile comparison, sequence properties, homologous sequence search, kernel machines etc. Domains and folds might be taken from SCOP or CATH.</rdfs:comment>
-        <rdfs:label>Protein fold recognition</rdfs:label>
+        <rdfs:label>Fold recognition</rdfs:label>
     </owl:Class>
     
 
@@ -37200,17 +37206,20 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Design or predict oligonucleotide primers for PCR and DNA amplification etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PCR primer prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Primer design</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (based on gene structure)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (for conserved primers)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (for gene transcription profiling)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (for genotyping polymorphisms)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (for large scale sequencing)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PCR primer design (for methylation PCRs)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Primer quality estimation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Primer design involves predicting or selecting primers that are specific to a provided PCR template. Primers can be designed with certain properties such as size of product desired, primer size etc. The output might be a minimal or overlapping primer set.</rdfs:comment>
         <rdfs:comment>This includes predicting primers based on gene structure, promoters, exon-exon junctions, predicting primers that are conserved across multiple genomes or species, primers for for gene transcription profiling,  for genotyping polymorphisms, for example single nucleotide polymorphisms (SNPs),  for large scale sequencing, or for methylation PCRs.</rdfs:comment>
         <rdfs:label>PCR primer design</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Primer_(molecular_biology)#PCR_primer_design"/>
     </owl:Class>
     
 
@@ -37489,14 +37498,15 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDbXref>WHATIF: UseFileDB</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WHATIF: UseResidueDB</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Evaluate the quality or correctness a protein three-dimensional model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein structure validation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein model validation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Residue validation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Model validation might involve checks for atomic packing, steric clashes (bumps), volume irregularities, agreement with electron density maps, number of amino acid residues, percentage of residues with missing or bad atoms, irregular Ramachandran Z-scores, irregular Chi-1 / Chi-2 normality scores, RMS-Z score on bonds and angles etc.</rdfs:comment>
         <rdfs:comment>The PDB file format has had difficulties, inconsistencies and errors. Corrections can include identifying a meaningful sequence, removal of alternate atoms, correction of nomenclature problems, removal of incomplete residues and spurious waters, addition or removal of water, modelling of missing side chains, optimisation of cysteine bonds, regularisation of bond lengths, bond angles and planarities etc.</rdfs:comment>
         <rdfs:comment>This includes methods that calculate poor quality residues. The scoring function to identify poor quality residues may consider residues with bad atoms or atoms with high B-factor, residues in the N- or C-terminal position, adjacent to an unstructured residue, non-canonical residues, glycine and proline (or adjacent to these such residues).</rdfs:comment>
-        <rdfs:label>Protein model validation</rdfs:label>
+        <rdfs:label>Protein structure validation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structure_validation"/>
     </owl:Class>
     
 
@@ -38231,12 +38241,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0363 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0363">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2513"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Generate the reverse and / or complement of a nucleotide sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Nucleic acid sequence reverse and complement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Reverse / complement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Reverse and complement</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Nucleic acid sequence reverse and complement</rdfs:label>
+        <rdfs:label>Reverse complement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Complementarity_(molecular_biology)"/>
     </owl:Class>
     
 
@@ -38257,8 +38271,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0365 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0365">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0262"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2513"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -38267,9 +38281,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Generate digest fragments for a nucleotide sequence containing restriction sites.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Nucleic acid restriction digest</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Nucleic acid restriction digest</rdfs:label>
+        <rdfs:label>Restriction digest</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Restriction_digest"/>
     </owl:Class>
     
 
@@ -38277,7 +38293,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0366 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0366">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2514"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -38712,24 +38728,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0397 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0397">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1844"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1544"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1539"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_1844"/>
         <oboInOwl:hasDefinition>Validate a Ramachandran plot of a protein structure.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_1844"/>
         <rdfs:label>Ramachandran plot validation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -41959,11 +41966,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict general functional properties of a protein.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict general functional properties, such as the biological or biochemical role of a protein.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>For functional properties that can be mapped to a sequence, use &apos;Sequence feature detection (protein)&apos; instead.</rdfs:comment>
         <rdfs:label>Protein function prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_function_prediction"/>
     </owl:Class>
     
 
@@ -42496,10 +42504,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref>WHATIF: ImproperQualityMax</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WHATIF: ImproperQualitySum</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>Validate protein geometry, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Validate protein geometry, for example bond lengths, bond angles, torsion angles, chiralities, planaraties etc.  An example is validation of a Ramachandran plot of a protein structure.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Ramachandran plot validation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein geometry validation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ramachandran_plot"/>
     </owl:Class>
     
 
@@ -44310,6 +44320,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might identify structural neighbors, find structural similarities or define a structural core.</rdfs:comment>
         <rdfs:label>Protein structure comparison</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_structure_comparison"/>
     </owl:Class>
     
 
@@ -44343,11 +44354,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict the subcellular localisation of a protein sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein subcellular localisation prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein targeting prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>The prediction might include subcellular localisation (nuclear, cytoplasmic, mitochondrial, chloroplast, plastid, membrane etc) or export (extracellular proteins) of a protein.</rdfs:comment>
-        <rdfs:label>Protein subcellular localisation prediction</rdfs:label>
+        <rdfs:label>Subcellular localisation prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Subcellular_localization"/>
     </owl:Class>
     
 
@@ -44755,12 +44768,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2513 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2513">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_0230"/>
         <oboInOwl:hasDefinition>Generate a nucleic acid sequence by some means.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:label>Sequence generation (nucleic acid)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -44768,12 +44784,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2514 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2514">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_0230"/>
         <oboInOwl:hasDefinition>Generate a protein sequence by some means.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:label>Sequence generation (protein)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -45424,7 +45443,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Calculate codon usage bias.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Calculate codon usage bias, e.g. generate a codon usage bias plot.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Codon usage bias plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Codon usage bias calculation</rdfs:label>
@@ -45435,18 +45455,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2963 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2963">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0564"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2962"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1600"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2962"/>
         <oboInOwl:hasDefinition>Generate a codon usage bias plot.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2962"/>
         <rdfs:label>Codon usage bias plotting</rdfs:label>
     </owl:Class>
     
@@ -45789,6 +45804,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <created_in>beta13</created_in>
         <oboInOwl:hasDefinition>Design (or predict) nucleic acid sequences with specific chemical or physical properties.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Nucleic acid design</rdfs:label>
@@ -45892,7 +45908,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_3185 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3185">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2513"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -48145,7 +48161,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3644 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3644">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2514"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>Analytical process that derives a peptide’s amino acid sequence from its tandem mass spectrum (MS/MS) without the assistance of a sequence database.</oboInOwl:hasDefinition>
@@ -49476,6 +49492,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDefinition>Protein-protein, protein-DNA/RNA and protein-ligand interactions, including analysis of known interactions and prediction of putative interactions.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_interactions</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Protein interaction networks</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein interactome</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-DNA interaction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-RNA interaction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-ligand interactions</oboInOwl:hasNarrowSynonym>
@@ -50956,6 +50973,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Probes_and_primers</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Primer quality</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Primers</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Probes</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -53394,6 +53412,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Next generation sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Primer walking</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Resequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Sanger sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Small RNA sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -53723,6 +53742,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Phenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Phenomics"/>
     </owl:Class>
     
 
@@ -55639,10 +55659,15 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>PCR experiments, e.g. quantitative real-time PCR.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Polymerase chain reaction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>PCR_experiment</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Quantitative PCR</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RT-qPCR</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Real Time Quantitative PCR</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>PCR experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Polymerase_chain_reaction"/>
     </owl:Class>
     
 
@@ -56834,6 +56859,20 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     
 
 
+    <!-- http://www.edamontology.org/operation_3894 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3894">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Analyse DNA sequences in order to determine an individual&apos;s DNA characteristics, for example in criminal forensics, parentage testing and so on.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DNA fingerprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>DNA barcoding</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>DNA profiling</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_profiling"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.edamontology.org/topic_3892 -->
 
     <owl:Class rdf:about="http://www.edamontology.org/topic_3892">
@@ -56845,6 +56884,40 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes methods such as Molecular Dynamics, Coarse-grained dynamics, metadynamics, Quantum Mechanics, QM/MM, Markov State Models, etc.</rdfs:comment>
         <rdfs:label>Biomolecular simulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/topic_3894 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/topic_3894">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>The application of biotechnology to directly manipulate an organism&apos;s genes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Genetic manipulation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Genetic modification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Genetic_engineering</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Genome editing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Genome engineering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Genetic engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/topic_3895 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/topic_3895">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>The application of multi-disciplinary science and technology for the construction of artificial biological systems for diverse applications.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Synthetic biology</rdfs:label>
     </owl:Class>
     
 
