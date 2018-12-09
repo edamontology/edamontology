@@ -36003,7 +36003,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0252">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0250"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -38580,7 +38580,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0389 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0389">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38588,10 +38588,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Analyse RNA or DNA-binding sites in protein structure.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Analyse the interaction of protein with nucleic acids, e.g. RNA or DNA-binding sites, interfaces etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-nucleic acid binding site analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-DNA interaction analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-RNA interaction analysis</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein-nucleic acid binding site analysis</rdfs:label>
+        <rdfs:label>Protein-nucleic acid interaction analysis</rdfs:label>
     </owl:Class>
     
 
@@ -39188,7 +39191,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0418 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0418">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2489"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -39226,12 +39229,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0420">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict RNA and DNA-binding binding sites in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict or detect RNA and DNA-binding binding sites in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-nucleic acid binding detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-nucleic acid binding prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-nucleic acid binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-nucleic acid binding site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Zinc finger prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes methods that predict and optimise zinc finger protein domains for DNA/RNA binding (for example for transcription factors and nucleases).</rdfs:comment>
-        <rdfs:label>Protein-nucleic acid binding prediction</rdfs:label>
+        <rdfs:label>Nucleic acids-binding site prediction</rdfs:label>
     </owl:Class>
     
 
@@ -40144,8 +40151,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0478 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0478">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2480"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -40161,11 +40168,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model the structure of a protein in complex with a small molecule or another macromolecule.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Docking simulation</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Protein docking</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Macromolecular docking</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes protein-protein interactions, protein-nucleic acid, protein-ligand binding etc. Methods might predict whether the molecules are likely to bind in vivo, their conformation when bound, the strength of the interaction, possible mutations to achieve bonding and so on.</rdfs:comment>
         <rdfs:label>Molecular docking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Macromolecular_docking"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Docking_(molecular)"/>
     </owl:Class>
     
@@ -41957,8 +41965,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_1777 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_1777">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2414"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -41966,7 +41974,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict general functional properties, such as the biological or biochemical role of a protein.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict the biological or biochemical role of a protein, or other aspects of a protein function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein function analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein functional analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>For functional properties that can be mapped to a sequence, use &apos;Sequence feature detection (protein)&apos; instead.</rdfs:comment>
@@ -41979,7 +41989,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_1778 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_1778">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2414"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2997"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -43115,25 +43125,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2414 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2414">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0896"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2945"/>
         <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Analyse protein function, typically by processing protein sequence and/or structural data, and generate an informative report.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:label>Protein function analysis</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -43901,7 +43902,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2464 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2464">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -43915,10 +43916,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Identify or predict protein-protein interactions, interfaces, binding sites etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Identify or predict protein-protein binding sites.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-protein binding site detection</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein-protein interaction prediction</rdfs:label>
+        <rdfs:label>Protein-protein binding site prediction</rdfs:label>
     </owl:Class>
     
 
@@ -44398,7 +44400,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2492 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2492">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -44413,7 +44414,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict the interactions of proteins with other molecules.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict the interactions of proteins with other proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-protein interaction detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-protein binding prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-protein interaction prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein interaction prediction</rdfs:label>
@@ -44936,7 +44940,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2575 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2575">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2492"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -44946,13 +44950,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify or predict catalytic residues, active sites or other ligand-binding sites in protein sequences or structures.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Binding site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein binding site detection</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym> Active site prediction</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Ligand-binding site prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Protein binding site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein binding site prediction</rdfs:label>
+        <rdfs:label>Binding site prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Binding_site"/>
     </owl:Class>
     
 
@@ -45347,7 +45350,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2949 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2949">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2414"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_1777"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -45362,11 +45365,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:comment>Includes analysis of raw experimental protein-protein interaction data from for example yeast two-hybrid analysis, protein microarrays, immunoaffinity chromatography followed by mass spectrometry, phage display etc.</oboInOwl:comment>
-        <oboInOwl:hasDefinition>Analyse known protein-protein, protein-DNA/RNA or protein-ligand interactions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Analyse the interactions of proteins with other proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein interaction analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein interaction raw data analysis</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein interaction simulation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein interaction analysis</rdfs:label>
+        <rdfs:label>Protein-protein interaction analysis</rdfs:label>
     </owl:Class>
     
 
@@ -56870,6 +56875,162 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>DNA barcoding</oboInOwl:hasNarrowSynonym>
         <rdfs:label>DNA profiling</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_profiling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3896 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3896">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict or detect active sites in proteins; the region of an enzyme which binds a substrate bind and catalyses a reaction.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Active site detection</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Active site prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Active_site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3897 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3897">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict or detect ligand-binding sites in proteins; a region of a protein which reversibly binds a ligand for some biochemical purpose, such as transport or regulation of protein function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Ligand-binding site detection</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Ligand-binding site prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ligand_(biochemistry)"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3898 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3898">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2575"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict or detect metal ion-binding sites in proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Metal-binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Metal-binding site prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metalloprotein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3899 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3899">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Model or simulate protein-protein binding using comparative modelling or other techniques.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein docking</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Protein-protein docking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3900 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3900">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0389"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict DNA-binding proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DNA-binding protein detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>DNA-binding protein prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3901 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3901">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0389"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0906"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict DNA-binding proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>RNA-binding protein detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>RNA-binding protein prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3902 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3902">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Predict or detect RNA-binding sites in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-RNA binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-RNA binding site prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RNA binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>RNA binding site prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3903 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3903">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <edam:edam></edam:edam>
+        <oboInOwl:hasDefinition>Predict or detect DNA-binding sites in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-DNA binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-DNA binding site prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>DNA binding site detection</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>DNA binding site prediction</rdfs:label>
     </owl:Class>
     
 
