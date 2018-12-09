@@ -25610,6 +25610,12 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://www.edamontology.org/data_3870"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Format of an entry (or part of an entry) from the PDB database.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PDB entry format</oboInOwl:hasExactSynonym>
@@ -34780,12 +34786,15 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.20</created_in>
         <usageGuideline>Not recommended for annotation in bio.tools.</usageGuideline>
         <oboInOwl:hasDefinition>Data format for raw data from a nuclear magnetic resonance (NMR) spectroscopy experiment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>NMR data format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>NMR raw data format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nuclear magnetic resonance spectroscopy data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>NMR peak assignment data</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NMR processed data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NMR raw data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Processed NMR data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Raw NMR data format</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>Raw NMR data format</rdfs:label>
+        <rdfs:label>NMR data format</rdfs:label>
     </owl:Class>
     
 
@@ -56503,6 +56512,21 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     
 
 
+    <!-- http://www.edamontology.org/data_3905 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/data_3905">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2884"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Visualization of distribution of quantitative data, e.g. expression data, by histograms, violin plots and density plots.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Density plot</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence conservation report</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Histogram</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.edamontology.org/format_3873 -->
 
     <owl:Class rdf:about="http://www.edamontology.org/format_3873">
@@ -56802,6 +56826,22 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasExactSynonym>AMBER Object File Format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>AMBER lib</oboInOwl:hasExactSynonym>
         <rdfs:label>AMBER off</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3906 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3906">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3824"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>MReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features.  The NMR-extracted data (or “NMReDATA”) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>NMReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or “NMReDATA”) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc. Find more in the paper at D. Jeannerat, Magn. Reson. in Chem., 2017, 55, 7-14.</rdfs:comment>
+        <rdfs:label>NMReDATA</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://nmredata.org/"/>
     </owl:Class>
     
 
