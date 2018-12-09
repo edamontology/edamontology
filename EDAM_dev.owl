@@ -40639,6 +40639,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Align (superimpose) exactly two molecular tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (pairwise)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Pairwise protein structure alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Pairwise structure alignment</rdfs:label>
@@ -40653,6 +40654,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Align (superimpose) more than two molecular tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (multiple)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Multiple protein structure alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes methods that use an existing alignment.</rdfs:comment>
@@ -40732,6 +40734,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Locally align (superimpose) two or more molecular tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (local)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Local protein structure alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Local alignment methods identify regions of local similarity, common substructures etc.</rdfs:comment>
@@ -40747,6 +40750,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Globally align (superimpose) two or more molecular tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (global)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Global protein structure alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Global alignment methods identify similarity across the entire structures.</rdfs:comment>
@@ -49058,6 +49062,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The curation, processing and analysis of the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biomolecular structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Structural bioinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Structure_analysis</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Computational structural biology</oboInOwl:hasNarrowSynonym>
@@ -49500,7 +49505,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Protein interaction networks</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein interactome</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-DNA interaction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-DNA interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-RNA interaction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein-RNA interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-ligand interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-nucleic acid interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-protein interactions</oboInOwl:hasNarrowSynonym>
@@ -56969,6 +56976,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
         <oboInOwl:hasDefinition>Predict DNA-binding proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DNA-binding protein detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>DNA-protein interaction prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein-DNA interaction prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>DNA-binding protein prediction</rdfs:label>
@@ -56994,7 +57003,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
         <oboInOwl:hasDefinition>Predict DNA-binding proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein-RNA interaction prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RNA-binding protein detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RNA-protein interaction prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>RNA-binding protein prediction</rdfs:label>
@@ -57031,6 +57042,28 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>DNA binding site prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3904 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3904">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Identify or predict intrinsically disordered regions in proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Protein disorder prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Intrinsically_disordered_proteins"/>
     </owl:Class>
     
 
