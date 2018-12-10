@@ -16,7 +16,6 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
         <dc:contributor>Veit Schwämmle</dc:contributor>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3895</next_id>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
@@ -24,6 +23,7 @@
         <oboOther:date>02.08.2018 00:47 GMT</oboOther:date>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3909</next_id>
         <doap:Version>1.22_dev</doap:Version>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -36516,10 +36516,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict contacts, non-covalent interactions and distance (constraints) between amino acids in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Residue interaction prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Contact map prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein contact map prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods usually involve multiple sequence alignment analysis.</rdfs:comment>
-        <rdfs:label>Residue interaction prediction</rdfs:label>
+        <rdfs:label>Residue contact prediction</rdfs:label>
     </owl:Class>
     
 
@@ -37836,6 +37839,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of strucural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Variant functional prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein SNP mapping</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein mutation modelling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein stability change prediction</oboInOwl:hasNarrowSynonym>
@@ -38779,9 +38783,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Calculate a residue contact map (typically all-versus-all inter-residue contacts) for a protein structure.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein contact map calculation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein contact map calculation</rdfs:label>
+        <rdfs:label>Contact map calculation</rdfs:label>
     </owl:Class>
     
 
@@ -40049,10 +40054,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0443"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify or predict microRNA sequences (miRNA) and precursors or microRNA targets / binding sites in a DNA sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>miRNA prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>microRNA detection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>microRNA target detection</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>microRNA detection</rdfs:label>
+        <rdfs:label>miRNA target prediction</rdfs:label>
     </owl:Class>
     
 
@@ -43416,6 +43423,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_2422">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0224"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/operation_3908"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
@@ -43423,7 +43431,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasBroadSynonym>Information retrieval</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Retrieve an entry (or part of an entry) from a data resource that matches a supplied query. This might include some primary data and annotation. The query is a data identifier or other indexed term. For example, retrieve a sequence record with the specified accession number, or matching supplied keywords.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Retrieval</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Data retrieval (metadata)</oboInOwl:hasNarrowSynonym>
@@ -43642,13 +43649,17 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:comment>Analyse gene expression patterns to identify sets of genes that are associated with a specific trait, condition, clinical outcome etc.</oboInOwl:comment>
         <oboInOwl:comment>Gene sets can be defined beforehand by biological function, chromosome locations and so on.</oboInOwl:comment>
         <oboInOwl:hasBroadSynonym>Gene set testing</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDefinition>Analysis of a set of genes, corresponding e.g. to a gene expression profile, annotated with Gene Ontology (GO) concepts, where eventual over-/under-representation of certain GO concept within the studied set of genes is revealed.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Identify classes of genes or proteins that are over or under-represented in a large set of genes or proteins.  For example analysis of a set of genes corresponding to a gene expression profile, annotated with Gene Ontology (GO) concepts, where eventual over-/under-representation of certain GO concept within the studied set of genes is revealed.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Functional enrichment analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GSEA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene-set over-represenation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene set analysis</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>GO-term enrichment</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Gene Ontology concept enrichment</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>Gene Ontology term enrichment</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>&quot;Gene set analysis&quot; (often used interchangeably or in an overlapping sense with &quot;gene-set enrichment analysis&quot;) refers to the functional analysis (term enrichment) of a differentially expressed set of genes, rather than all genes analysed.</rdfs:comment>
         <rdfs:comment>The Gene Ontology (GO) is typically used, the input is a set of Gene IDs, and the output of the analysis is typically a ranked list of GO concepts, each associated with a p-value.</rdfs:comment>
         <rdfs:label>Gene-set enrichment analysis</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_Ontology_Term_Enrichment"/>
@@ -46932,14 +46943,16 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3280 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3280">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
+        <rdfs:subClassOf rdf:resource="http://www.edamontology.org/operation_3907"/>
         <created_in>1.3</created_in>
+        <oboInOwl:hasBroadSynonym>Information extraction</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Recognise named entities, ontology concepts, tags, events, and dictionary terms within documents.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Concept mining</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Entity chunking</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Entity extraction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Entity identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Event extraction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NER</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Named-entity recognition</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -53741,6 +53754,14 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The systematic study of metabolites, the chemical processes they are involved, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metabolomics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Exometabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>LC-MS-based metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MS-based metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mass spectrometry-based metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolites</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolome</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabonomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>NMR-based metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -57317,6 +57338,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
         <oboInOwl:hasDefinition>Predict or detect metal ion-binding sites in proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Metal-binding site detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein metal-binding site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Metal-binding site prediction</rdfs:label>
@@ -57458,6 +57480,35 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein disorder prediction</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Intrinsically_disordered_proteins"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3907 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3907">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Extract structured information from unstructured (&quot;free&quot;) or semi-structured textual documents.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>IE</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Information extraction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_extraction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/operation_3908 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/operation_3908">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <oboInOwl:hasDefinition>Retrieve resources from information systems matching a specific information need.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>IE</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Information retrieval</rdfs:label>
     </owl:Class>
     
 
