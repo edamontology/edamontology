@@ -49130,6 +49130,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Nucleic acids</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nucleic_acid"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017422</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017423</rdfs:seeAlso>
     </owl:Class>
@@ -49150,6 +49151,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Proteins</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D020539</rdfs:seeAlso>
     </owl:Class>
     
@@ -49185,6 +49187,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Sequence analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_analysis"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D017421</rdfs:seeAlso>
     </owl:Class>
     
@@ -49234,6 +49237,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes the recognition (prediction and assignment) of known protein structural domains or folds in protein sequence(s), for example by threading, or the alignment of molecular sequences to structures, structural (3D) profiles or templates (representing a structure or structure alignment).</rdfs:comment>
         <rdfs:label>Structure prediction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nucleic_acid_structure_prediction"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_structure_prediction"/>
     </owl:Class>
     
 
@@ -49273,6 +49278,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes diverse phylogenetic methods, including phylogenetic tree construction, typically from molecular sequence or morphological data, methods that simulate DNA sequence evolution, a phylogenetic tree or the underlying data, or which estimate or use molecular clock and stratigraphic (age) data, methods for studying gene evolution etc.</rdfs:comment>
         <rdfs:label>Phylogeny</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Phylogenetic_tree"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D010802</rdfs:seeAlso>
     </owl:Class>
     
@@ -49291,6 +49297,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Functional genomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Functional_genomics"/>
     </owl:Class>
     
 
@@ -49313,6 +49320,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Ontology and terminology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ontology_(information_science)"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D002965</rdfs:seeAlso>
     </owl:Class>
     
@@ -49347,6 +49355,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes data  processing in general, including basic handling of files and databases, datatypes, workflows and annotation.</rdfs:comment>
         <rdfs:label>Bioinformatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bioinformatics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016247</rdfs:seeAlso>
     </owl:Class>
     
@@ -49366,6 +49375,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data visualisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_visualization"/>
     </owl:Class>
     
 
@@ -49405,6 +49415,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Includes secondary and tertiary nucleic acid structural data, nucleic acid thermodynamic, thermal and conformational properties including DNA or DNA/RNA denaturation (melting) etc.</rdfs:comment>
         <rdfs:label>Nucleic acid structure analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nucleic_acid_structure"/>
     </owl:Class>
     
 
@@ -49420,6 +49431,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>RNA</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA"/>
     </owl:Class>
     
 
@@ -49454,6 +49466,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes resources that aim to identify, map or analyse genetic markers in DNA sequences, for example to produce a genetic (linkage) map of a chromosome or genome or to analyse genetic linkage and synteny. It also includes resources for physical (sequence) maps of a DNA sequence showing the physical distance (base pairs) between features or landmarks such as restriction sites, cloned DNA fragments, genes and other genetic markers.  It also covers for example the alignment of sequences of (typically millions) of short reads to a reference genome.  </rdfs:comment>
         <rdfs:label>Mapping</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_mapping"/>
     </owl:Class>
     
 
@@ -49485,6 +49498,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Protein expression</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_expression"/>
     </owl:Class>
     
 
@@ -49565,6 +49579,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>This includes the study of promoters, coding regions etc.</rdfs:comment>
         <rdfs:comment>This incudes operons (operators, promoters and genes) from a bacterial genome.  For example the operon leader and trailer gene, gene composition of the operon and associated information.</rdfs:comment>
         <rdfs:label>Gene structure</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_structure"/>
     </owl:Class>
     
 
@@ -49588,6 +49603,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>Includes metaproteomics: proteomics analysis of an environmental sample.</rdfs:comment>
         <rdfs:comment>Proteomics includes any methods (especially high-throughput) that separate, characterize and identify expressed proteins such as mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
         <rdfs:label>Proteomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D040901</rdfs:seeAlso>
     </owl:Class>
     
@@ -49606,6 +49622,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Structural genomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structural_genomics"/>
     </owl:Class>
     
 
@@ -49650,6 +49667,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes experimental (e.g. yeast two-hybrid) and computational analysis techniques.</rdfs:comment>
         <rdfs:label>Protein interactions</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein%E2%80%93protein_interaction"/>
     </owl:Class>
     
 
@@ -49670,6 +49688,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Protein folding, stability and design</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_design"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_folding"/>
     </owl:Class>
     
 
@@ -49747,6 +49767,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Protein targeting and localisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_targeting"/>
     </owl:Class>
     
 
@@ -49883,6 +49904,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Carbohydrates</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Carbohydrate"/>
     </owl:Class>
     
 
@@ -49899,6 +49921,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Lipids</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Lipid"/>
     </owl:Class>
     
 
@@ -50175,6 +50198,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes methods such as Molecular Dynamics, Coarse-grained dynamics, metadynamics, Quantum Mechanics, QM/MM, Markov State Models, etc. This includes resources concerning flexibility and motion in protein and other molecular structures.</rdfs:comment>
         <rdfs:label>Molecular dynamics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_dynamics"/>
     </owl:Class>
     
 
@@ -50332,6 +50356,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Phylogenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Phylogenomics"/>
     </owl:Class>
     
 
@@ -50364,6 +50389,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Assembly has two broad types, de-novo and re-sequencing. Re-sequencing is a specialised case of assembly, where an assembled (typically de-novo assembled) reference genome is available and is about 95% identical to the re-sequenced genome. All other cases of assembly are &apos;de-novo&apos;.</rdfs:comment>
         <rdfs:label>Sequence assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly"/>
     </owl:Class>
     
 
@@ -50384,6 +50410,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genetic variation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_variation"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D014644</rdfs:seeAlso>
     </owl:Class>
     
@@ -50420,6 +50447,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Pharmacology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pharmacology"/>
     </owl:Class>
     
 
@@ -50460,6 +50488,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Gene regulation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Regulation_of_gene_expression"/>
     </owl:Class>
     
 
@@ -50478,6 +50507,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Pharmacogenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pharmacogenomics"/>
     </owl:Class>
     
 
@@ -50498,6 +50528,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes methods that search compound collections, generate or analyse drug 3D conformations, identify drug targets with structural docking etc.</rdfs:comment>
         <rdfs:label>Medicinal chemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medicinal_chemistry"/>
     </owl:Class>
     
 
@@ -50690,6 +50721,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>NMR</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance_spectroscopy"/>
     </owl:Class>
     
 
@@ -50759,6 +50791,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>EDAM does not describe all possible protein modifications. For fine-grained annotation of protein modification use the Gene Ontology (children of concept GO:0006464) and/or the Protein Modifications ontology (children of concept MOD:00000)</rdfs:comment>
         <rdfs:label>Protein modifications</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Post-translational_modification"/>
     </owl:Class>
     
 
@@ -50781,6 +50814,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>Gene regulatory networks</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Genetic information processing pathways</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Interactions</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Interactome</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic pathways</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Molecular interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Networks</oboInOwl:hasNarrowSynonym>
@@ -50791,6 +50825,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular interactions, pathways and networks</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Interactome"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolic_pathway"/>
     </owl:Class>
     
 
@@ -50813,6 +50849,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasHumanReadableId>Informatics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Informatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Informatics"/>
     </owl:Class>
     
 
@@ -50845,6 +50882,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Laboratory information management</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Laboratory_information_management_system"/>
     </owl:Class>
     
 
@@ -50880,6 +50918,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Ecology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ecology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D004777</rdfs:seeAlso>
     </owl:Class>
     
@@ -50904,6 +50943,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Electron microscopy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electron_microscope"/>
     </owl:Class>
     
 
@@ -51012,6 +51052,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This may include information on the genome (including molecular sequences and map, genes and annotation), proteome, as well as more general information about an organism.</rdfs:comment>
         <rdfs:label>Model organisms</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Model_organism"/>
     </owl:Class>
     
 
@@ -51031,6 +51072,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D023281</rdfs:seeAlso>
     </owl:Class>
     
@@ -51056,6 +51098,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>A protein families database might include the classifier (e.g. a sequence profile) used to build the classification.</rdfs:comment>
         <rdfs:label>Gene and protein families</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_family"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_family"/>
     </owl:Class>
     
 
@@ -51094,6 +51138,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genotype and phenotype</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genotype%E2%80%93phenotype_distinction"/>
     </owl:Class>
     
 
@@ -51141,6 +51186,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.6 Pathology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Diseases, including diseases in general and the genes, gene variations and proteins involved in one or more specific diseases.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Pathology"/>
         <oboInOwl:hasExactSynonym>Disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Pathology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -51179,6 +51225,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Taxonomy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Taxonomy_(biology)"/>
     </owl:Class>
     
 
@@ -51272,6 +51319,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>The DNA sequences might be coding or non-coding sequences.</rdfs:comment>
         <rdfs:label>DNA</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA"/>
     </owl:Class>
     
 
@@ -51323,6 +51371,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Non-coding RNA includes  piwi-interacting RNA (piRNA), small nuclear RNA (snRNA) and small nucleolar RNA (snoRNA).  Regulatory RNA includes microRNA (miRNA) - short single stranded RNA molecules that regulate gene expression, and small interfering RNA (siRNA).</rdfs:comment>
         <rdfs:label>Functional, regulatory and non-coding RNA</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Non-coding_RNA"/>
     </owl:Class>
     
 
@@ -51553,6 +51602,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>This includes promoters, CAAT signals, TATA signals, -35 signals, -10 signals, GC signals, primer binding sites for initiation of transcription or reverse transcription, enhancer, attenuator, terminators and ribosome binding sites.</rdfs:comment>
         <rdfs:comment>Transcription factor proteins either promote (as an activator) or block (as a repressor) the binding to DNA of RNA polymerase.  Regulatory sites including transcription factor binding site as well as promoters, enhancers, silencers and boundary elements / insulators.</rdfs:comment>
         <rdfs:label>Transcription factors and regulatory sites</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Transcription_factor"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Transcriptional_regulation"/>
     </owl:Class>
     
 
@@ -51628,6 +51679,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasHumanReadableId>Workflows</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Workflows</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Workflow"/>
     </owl:Class>
     
 
@@ -51695,6 +51747,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>The resource may be specific to a plant, a group of plants or all plants.</rdfs:comment>
         <rdfs:label>Plant biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Botany"/>
     </owl:Class>
     
 
@@ -51710,6 +51763,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Virology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Virology"/>
     </owl:Class>
     
 
@@ -51809,6 +51863,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Comparative genomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Comparative_genomics"/>
     </owl:Class>
     
 
@@ -51824,6 +51879,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Mobile genetic elements</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mobile_genetic_elements"/>
     </owl:Class>
     
 
@@ -51858,6 +51914,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Immunology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D007120</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D007125</rdfs:seeAlso>
     </owl:Class>
@@ -51878,6 +51935,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Membrane and lipoproteins</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Lipoprotein"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Membrane_protein"/>
     </owl:Class>
     
 
@@ -51894,6 +51953,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Enzymes</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Enzyme"/>
     </owl:Class>
     
 
@@ -52036,6 +52096,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes experimental methods for biomolecular structure determination, such as X-ray crystallography, nuclear magnetic resonance (NMR), circular dichroism (CD) spectroscopy, microscopy etc., including the assignment or modelling of molecular structure from such data.</rdfs:comment>
         <rdfs:label>Structural biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structural_biology"/>
     </owl:Class>
     
 
@@ -52154,6 +52215,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cell biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cell_biology"/>
     </owl:Class>
     
 
@@ -52217,6 +52279,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cheminformatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cheminformatics"/>
     </owl:Class>
     
 
@@ -52260,6 +52323,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Statistics and probability</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Probability"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Statistics"/>
         <rdfs:seeAlso>http://en.wikipedia.org/wiki/Biostatistics</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D056808</rdfs:seeAlso>
     </owl:Class>
@@ -52298,6 +52363,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular modelling</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_modelling"/>
     </owl:Class>
     
 
@@ -52406,6 +52472,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>DNA mutation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mutation"/>
     </owl:Class>
     
 
@@ -52418,6 +52485,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.16 Oncology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of cancer, for example, genes and proteins implicated in cancer.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Oncology"/>
         <oboInOwl:hasExactSynonym>Cancer biology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Oncology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Cancer</oboInOwl:hasNarrowSynonym>
@@ -52536,6 +52604,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Protein structure analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_structure"/>
     </owl:Class>
     
 
@@ -52551,6 +52620,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Human biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Human_biology"/>
     </owl:Class>
     
 
@@ -52687,6 +52757,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>X-ray diffraction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/X-ray_diffraction"/>
     </owl:Class>
     
 
@@ -52724,6 +52795,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes T cell receptors (TR), major histocompatibility complex (MHC), immunoglobulin superfamily (IgSF) / antibodies, major histocompatibility complex superfamily (MhcSF), etc.&quot;</rdfs:comment>
         <rdfs:label>Immunoproteins, genes and antigens</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antigen"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunoproteins"/>
     </owl:Class>
     
 
@@ -52760,6 +52833,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Toxicology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Toxicology"/>
     </owl:Class>
     
 
@@ -52894,6 +52968,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>Includes single nucleotide polymorphisms (SNP) and associated data, for example, the discovery and annotation of SNPs.  A SNP is a DNA sequence variation where a single nucleotide differs between members of a species or paired chromosomes in an individual.</rdfs:comment>
         <rdfs:comment>Includes variable number of tandem repeat (VNTR) polymorphism in a DNA sequence.  VNTRs occur in non-coding regions of DNA and consists sub-sequence that is repeated a multiple (and varied) number of times.</rdfs:comment>
         <rdfs:label>DNA polymorphism</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-nucleotide_polymorphism"/>
     </owl:Class>
     
 
@@ -53032,6 +53107,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_biology"/>
     </owl:Class>
     
 
@@ -53064,6 +53140,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biodiversity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biodiversity"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D044822</rdfs:seeAlso>
     </owl:Class>
     
@@ -53098,6 +53175,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D005823</rdfs:seeAlso>
     </owl:Class>
     
@@ -53114,6 +53192,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Quantitative genetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Quantitative_genetics"/>
     </owl:Class>
     
 
@@ -53130,6 +53209,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Population genetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Population_genetics"/>
     </owl:Class>
     
 
@@ -53196,6 +53276,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Medical informatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Health_informatics"/>
     </owl:Class>
     
 
@@ -53214,6 +53295,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Developmental biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Developmental_biology"/>
     </owl:Class>
     
 
@@ -53230,6 +53312,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Embryology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Embryology"/>
     </owl:Class>
     
 
@@ -53247,6 +53330,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Anatomy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anatomy"/>
     </owl:Class>
     
 
@@ -53301,6 +53385,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biology"/>
     </owl:Class>
     
 
@@ -53318,6 +53403,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data management</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D030541</rdfs:seeAlso>
     </owl:Class>
     
@@ -53394,6 +53480,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data acquisition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_acquisition"/>
     </owl:Class>
     
 
@@ -53479,6 +53566,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>This includes ribosome binding sites (Shine-Dalgarno sequence in prokaryotes), restriction enzyme recognition sites (restriction sites) etc.</rdfs:comment>
         <rdfs:comment>This includes sites involved with DNA replication and recombination.  This includes binding sites for initiation of replication (origin of replication), regions where transfer is initiated during the conjugation or mobilisation (origin of transfer), starting sites for DNA duplication (origin of replication) and regions which are eliminated through any of kind of recombination.  Also nucleosome exclusion regions, i.e. specific patterns or regions which exclude nucleosomes (the basic structural units of eukaryotic chromatin which play a significant role in regulating gene expression).</rdfs:comment>
         <rdfs:label>DNA binding sites</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_binding_site"/>
     </owl:Class>
     
 
@@ -53510,6 +53598,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>DNA replication and recombination</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_recombination"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_replication"/>
     </owl:Class>
     
 
@@ -53571,6 +53661,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Amplicon sequencing is the ultra-deep sequencing of PCR products (amplicons), usually for the purpose of efficient genetic variant identification and characterisation in specific genomic regions. </rdfs:comment>
         <rdfs:label>Sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequencing"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D059014</rdfs:seeAlso>
     </owl:Class>
     
@@ -53590,6 +53681,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>ChIP-exo</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>ChIP-seq</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-sequencing"/>
     </owl:Class>
     
 
@@ -53614,6 +53706,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes small RNA profiling (small RNA-Seq), for example to find novel small RNAs, characterize mutations and analyze expression of small RNAs.</rdfs:comment>
         <rdfs:label>RNA-Seq</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA-Seq"/>
     </owl:Class>
     
 
@@ -53665,6 +53758,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Epigenetics concerns the heritable changes in gene expression owing to mechanisms other than DNA sequence variation.</rdfs:comment>
         <rdfs:label>Epigenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Epigenomics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D057890</rdfs:seeAlso>
     </owl:Class>
     
@@ -53691,6 +53785,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Metagenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metagenomics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D056186</rdfs:seeAlso>
     </owl:Class>
     
@@ -53709,6 +53804,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>DNA structural variation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structural_variation"/>
     </owl:Class>
     
 
@@ -53724,6 +53820,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>DNA packaging</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chromosome#DNA_packaging"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D042003</rdfs:seeAlso>
     </owl:Class>
     
@@ -53771,6 +53868,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>ChiP</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>ChIP-on-chip</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-on-chip"/>
     </owl:Class>
     
 
@@ -53786,6 +53884,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data security</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
     </owl:Class>
     
 
@@ -53823,6 +53922,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biochemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biochemistry"/>
     </owl:Class>
     
 
@@ -53839,6 +53939,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Phylogenetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Phylogenetics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D010802</rdfs:seeAlso>
     </owl:Class>
     
@@ -53859,6 +53960,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes sub-topics such as histone modification and DNA methylation (methylation sites and analysis, for example of patterns and profiles of DNA methylation in a population, tissue etc.)</rdfs:comment>
         <rdfs:label>Epigenetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Epigenetics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D019175</rdfs:seeAlso>
     </owl:Class>
     
@@ -53876,6 +53978,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biotechnology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biotechnology"/>
     </owl:Class>
     
 
@@ -53912,6 +54015,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Evolutionary biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Evolutionary_biology"/>
     </owl:Class>
     
 
@@ -53924,6 +54028,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.8 Physiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The functions of living organisms and their constituent parts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Physiology"/>
         <oboInOwl:hasHumanReadableId>Physiology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -53949,6 +54054,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Microbiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microbiology"/>
     </owl:Class>
     
 
@@ -53965,6 +54071,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Parasitology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Parasitology"/>
     </owl:Class>
     
 
@@ -53989,6 +54096,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medicine"/>
     </owl:Class>
     
 
@@ -54007,6 +54115,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Neurobiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neuroscience"/>
     </owl:Class>
     
 
@@ -54019,6 +54128,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.3.1 Epidemiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Topic concerning the the patterns, cause, and effect of disease within populations.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Epidemiology"/>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Public_health"/>
         <oboInOwl:hasHumanReadableId>Public_health_and_epidemiology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Epidemiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Public health</oboInOwl:hasNarrowSynonym>
@@ -54044,6 +54155,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biophysics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biophysics"/>
     </owl:Class>
     
 
@@ -54067,6 +54179,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).</rdfs:comment>
         <rdfs:label>Computational biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
     </owl:Class>
     
 
@@ -54087,6 +54200,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Transcriptomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Transcriptomics_technologies"/>
     </owl:Class>
     
 
@@ -54118,6 +54232,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Chemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemistry"/>
     </owl:Class>
     
 
@@ -54138,6 +54253,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Mathematics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mathematics"/>
     </owl:Class>
     
 
@@ -54159,6 +54275,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Computer science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_science"/>
     </owl:Class>
     
 
@@ -54174,6 +54291,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Physics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Physics"/>
     </owl:Class>
     
 
@@ -54193,6 +54311,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes the study of splice sites, splicing patterns, alternative splicing events and variants, isoforms, etc..</rdfs:comment>
         <rdfs:label>RNA splicing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_splicing"/>
     </owl:Class>
     
 
@@ -54210,6 +54329,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular genetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_genetics"/>
     </owl:Class>
     
 
@@ -54222,6 +54342,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.25 Respiratory systems</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of respiratory system.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Pulmonology"/>
         <oboInOwl:hasExactSynonym>Pulmonary medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pulmonology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Respiratory_medicine</oboInOwl:hasHumanReadableId>
@@ -54274,6 +54395,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0634"/>
         <created_in>1.3</created_in>
         <oboInOwl:hasDefinition>The study of rare diseases.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Rare_disease"/>
         <oboInOwl:hasHumanReadableId>Rare_diseases</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -54297,6 +54419,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Computational chemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_chemistry"/>
     </owl:Class>
     
 
@@ -54308,6 +54431,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.3</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the anatomy, functions and disorders of the nervous system.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Neurology"/>
         <oboInOwl:hasHumanReadableId>Neurology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Neurological disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -54335,6 +54459,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cardiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cardiology"/>
     </owl:Class>
     
 
@@ -54353,6 +54478,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes methods that search compound collections, generate or analyse drug 3D conformations, identify drug targets with structural docking etc.</rdfs:comment>
         <rdfs:label>Drug discovery</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Drug_discovery"/>
     </owl:Class>
     
 
@@ -54371,6 +54497,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biobank</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biobank"/>
     </owl:Class>
     
 
@@ -54431,6 +54558,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Clone library</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Library_(biology)"/>
     </owl:Class>
     
 
@@ -54442,6 +54570,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.3</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>&apos;translating&apos; the output of basic and biomedical research into better diagnostic tools, medicines, medical procedures, policies and advice.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Translational_medicine"/>
         <oboInOwl:hasHumanReadableId>Translational_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -54466,6 +54595,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Compound libraries and screening</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_library"/>
     </owl:Class>
     
 
@@ -54485,6 +54615,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biomedical science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biomedical_sciences"/>
     </owl:Class>
     
 
@@ -54532,6 +54663,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biomarkers</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biomarker"/>
     </owl:Class>
     
 
@@ -54568,6 +54700,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data architecture, analysis and design</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_architecture"/>
     </owl:Class>
     
 
@@ -54585,6 +54718,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data integration and warehousing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_integration"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_warehouse"/>
     </owl:Class>
     
 
@@ -54600,6 +54735,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biomaterials</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biomaterial"/>
     </owl:Class>
     
 
@@ -54617,6 +54753,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Chemical biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_biology"/>
     </owl:Class>
     
 
@@ -54633,6 +54770,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Analytical chemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Analytical_chemistry"/>
     </owl:Class>
     
 
@@ -54674,6 +54812,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Software engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Software_engineering"/>
     </owl:Class>
     
 
@@ -54693,6 +54832,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Drug development</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Drug_development"/>
     </owl:Class>
     
 
@@ -54734,6 +54874,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Drug metabolism</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Drug_metabolism"/>
     </owl:Class>
     
 
@@ -54783,7 +54924,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Pharmacovigilence concerns safety once a drug has gone to market.</rdfs:comment>
-        <rdfs:label>Pharmacovigilence</rdfs:label>
+        <rdfs:label>Pharmacovigilance</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pharmacovigilance"/>
     </owl:Class>
     
 
@@ -54798,6 +54940,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasHumanReadableId>Preclinical_and_clinical_studies</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Clinical studies</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Clinical study</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Clinical trial</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Drug trials</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Preclinical studies</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Preclinical study</oboInOwl:hasNarrowSynonym>
@@ -54805,6 +54948,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Preclinical and clinical studies</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Clinical_trial"/>
     </owl:Class>
     
 
@@ -54840,6 +54984,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Biological imaging</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_imaging"/>
     </owl:Class>
     
 
@@ -54861,6 +55006,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Medical imaging</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Medical_imaging"/>
     </owl:Class>
     
 
@@ -54876,6 +55022,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Light microscopy</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microscopy#Optical_microscopy"/>
     </owl:Class>
     
 
@@ -54886,11 +55033,16 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The use of animals and alternatives in experimental research.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Animal experimentation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Animal research</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Animal testing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>In vivo testing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Laboratory_animal_science</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Laboratory animal science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Animal_testing"/>
     </owl:Class>
     
 
@@ -54908,6 +55060,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Marine biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Marine_biology"/>
     </owl:Class>
     
 
@@ -54935,6 +55088,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.3.7 Nutrition and Dietetics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of the effects of food components on the metabolism, health, performance and disease resistance of humans and animals.  It also includes the study of human behaviours related to food choices.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Nutrition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nutrition science</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Nutritional_science</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Dietetics</oboInOwl:hasNarrowSynonym>
@@ -54942,6 +55096,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Nutritional science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nutrition"/>
     </owl:Class>
     
 
@@ -54958,6 +55113,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Omics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Omics"/>
     </owl:Class>
     
 
@@ -54987,11 +55143,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The protection of public health by controlling the safety and efficacy of products in areas including pharmaceuticals, veterinary medicine, medical devices, pesticides, agrochemicals, cosmetics, and complementary medicines.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Healthcare RA</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Regulatory_affairs</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Regulatory affairs</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Regulatory_affairs#Healthcare_RA"/>
     </owl:Class>
     
 
@@ -55009,6 +55167,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Regenerative medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Regenerative_medicine"/>
     </owl:Class>
     
 
@@ -55020,6 +55179,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrted whole, incoporating biochemical, physiological, and environmental interactions that sustain life.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Systems_medicine"/>
         <oboInOwl:hasHumanReadableId>Systems_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -55040,6 +55200,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Veterinary medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Veterinary_medicine"/>
     </owl:Class>
     
 
@@ -55050,11 +55211,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The application of biological concepts and methods to the analytical and synthetic methodologies of engineering.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biological engineering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Bioengineering</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Bioengineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biological_engineering"/>
     </owl:Class>
     
 
@@ -55070,6 +55233,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasBroadSynonym>Gerontology</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 3.2.10 Geriatrics and gerontology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine dealing with the diagnosis, treatment and prevention of disease in older people, and the problems specific to aging.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Geriatrics"/>
         <oboInOwl:hasExactSynonym>Geriatrics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Geriatric_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55098,6 +55262,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Allergy, clinical immunology and immunotherapeutics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Allergy"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunotherapy"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunology#Clinical_immunology"/>
     </owl:Class>
     
 
@@ -55109,6 +55276,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The prevention of pain and the evaluation, treatment and rehabilitation of persons in pain.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Pain_management"/>
         <oboInOwl:hasExactSynonym>Algiatry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Pain_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55132,6 +55300,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Anaesthesiology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anesthesiology"/>
     </owl:Class>
     
 
@@ -55145,11 +55314,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDefinition>The multidisciplinary that cares for patients with acute, life-threatening illness or injury.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Acute medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Emergency medicine</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Intensive care medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Critical_care_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Critical care medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Intensive_care_medicine"/>
     </owl:Class>
     
 
@@ -55161,6 +55332,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.2.7 Dermatology and venereal diseases</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with prevention, diagnosis and treatment of disorders of the skin, scalp, hair and nails.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Dermatology"/>
         <oboInOwl:hasHumanReadableId>Dermatology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Dermatological disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55177,6 +55349,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The study, diagnosis, prevention and treatments of disorders of the oral cavity, maxillofacial area and adjacent structures.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Dentistry"/>
         <oboInOwl:hasHumanReadableId>Dentistry</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -55193,6 +55366,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.2.20 Otorhinolaryngology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the prevention, diagnosis, and treatment of disorders of the ear, nose and throat.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Otorhinolaryngology"/>
         <oboInOwl:hasExactSynonym>Audiovestibular medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Otolaryngology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Otorhinolaryngology</oboInOwl:hasExactSynonym>
@@ -55213,6 +55387,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine dealing with diseases of endocrine organs, hormone systems, their target organs, and disorders of the pathways of glucose and lipid metabolism.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Endocrinology"/>
         <oboInOwl:hasHumanReadableId>Endocrinology_and_metabolism</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Endocrine disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Endocrinology</oboInOwl:hasNarrowSynonym>
@@ -55234,6 +55409,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.11 Hematology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the blood, blood-forming organs and blood diseases.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Hematology"/>
         <oboInOwl:hasHumanReadableId>Haematology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Blood disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Haematological disorders</oboInOwl:hasNarrowSynonym>
@@ -55253,6 +55429,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.8 Gastroenterology and hepatology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with disorders of the oesophagus, stomach, duodenum, jejenum, ileum, large intestine, sigmoid colon and rectum.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Gastroenterology"/>
         <oboInOwl:hasHumanReadableId>Gastroenterology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Gastrointestinal disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55269,6 +55446,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The study of the biological and physiological differences between males and females and how they effect differences in disease presentation and management.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Sex_differences_in_medicine"/>
         <oboInOwl:hasHumanReadableId>Gender_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -55286,6 +55464,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.15 Obstetrics and gynaecology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the health of the female reproductive system, pregnancy and birth.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Gynaecology"/>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Obstetrics"/>
         <oboInOwl:hasHumanReadableId>Gynaecology_and_obstetrics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Gynaecological disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gynaecology</oboInOwl:hasNarrowSynonym>
@@ -55337,6 +55517,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The branch of medicine that treats body wounds or shock produced by sudden physical injury, as from violence or accident.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Traumatology"/>
+        <oboInOwl:hasExactSynonym>Traumatology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Trauma_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -55353,6 +55535,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the diagnosis, management and prevention of poisoning and other adverse health effects caused by medications, occupational and environmental toxins, and biological agents.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Medical_toxicology"/>
         <oboInOwl:hasHumanReadableId>Medical_toxicology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -55391,6 +55574,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasDbXref>VT 3.2.17 Ophthalmology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.2.18 Optometry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with disorders of the eye, including eyelid, optic nerve/visual pathways and occular muscles.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Ophthalmology"/>
         <oboInOwl:hasHumanReadableId>Opthalmology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Eye disoders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55408,6 +55592,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.2.21 Paediatrics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the medical care of infants, children and adolescents.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Pediatrics"/>
         <oboInOwl:hasExactSynonym>Child health</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Paediatrics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55426,6 +55611,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasBroadSynonym>Mental health</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 3.2.23 Psychiatry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the mangement of mental illness, emotional disturbance and abnormal behaviour.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Psychiatry"/>
         <oboInOwl:hasHumanReadableId>Psychiatry</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Psychiatric disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55443,6 +55629,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.2.3 Andrology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The health of the reproductive processes, functions and systems at all stages of life.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Reproductive_health"/>
         <oboInOwl:hasHumanReadableId>Reproductive_health</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Andrology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Family planning</oboInOwl:hasNarrowSynonym>
@@ -55463,6 +55650,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>VT 3.2.28 Transplantation</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The use of operative, manual and instrumental techniques on a patient to investigate and/or treat a pathological condition or help improve bodily function or appearance.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Surgery"/>
         <oboInOwl:hasHumanReadableId>Surgery</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Transplantation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55489,6 +55677,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Urology and nephrology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nephrology"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Urology"/>
     </owl:Class>
     
 
@@ -55508,6 +55698,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Complementary medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Alternative_medicine"/>
     </owl:Class>
     
 
@@ -55527,6 +55718,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>MRI</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"/>
     </owl:Class>
     
 
@@ -55545,6 +55737,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Neutron diffraction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Neutron_diffraction"/>
     </owl:Class>
     
 
@@ -55561,6 +55754,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Tomography</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tomography"/>
     </owl:Class>
     
 
@@ -55580,6 +55774,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data mining</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_mining"/>
     </owl:Class>
     
 
@@ -55605,6 +55800,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Machine learning</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Machine_learning"/>
     </owl:Class>
     
 
@@ -55629,6 +55825,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes databases for the results of scientific experiments, the application of high-throughput technology, computational analysis and the scientific literature.  It covers the management and manipulation of digital documents, including database records, files and reports.</rdfs:comment>
         <rdfs:label>Database management</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Database"/>
     </owl:Class>
     
 
@@ -55649,6 +55846,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>The study of the animal kingdom.</rdfs:comment>
         <rdfs:label>Zoology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Zoology"/>
     </owl:Class>
     
 
@@ -55764,6 +55962,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genotyping experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genotyping"/>
     </owl:Class>
     
 
@@ -55812,6 +56011,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This might specify which raw data file relates to which sample and information on hybridisations, e.g. which are technical and which are biological replicates.</rdfs:comment>
         <rdfs:label>Microarray experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microarray"/>
     </owl:Class>
     
 
@@ -56171,6 +56371,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>Super-secondary structures include leucine zippers, coiled coils, Helix-Turn-Helix etc.</rdfs:comment>
         <rdfs:comment>The location and size of the secondary structure elements and intervening loop regions is typically given.  The report can include disulphide bonds and post-translationally formed peptide bonds (crosslinks).</rdfs:comment>
         <rdfs:label>Protein secondary structure</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_secondary_structure"/>
     </owl:Class>
     
 
@@ -56234,6 +56435,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Applied mathematics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Applied_mathematics"/>
     </owl:Class>
     
 
@@ -56250,6 +56452,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Pure mathematics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pure_mathematics"/>
     </owl:Class>
     
 
@@ -56265,6 +56468,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data governance</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_governance"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D030541</rdfs:seeAlso>
     </owl:Class>
     
@@ -56284,6 +56488,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data quality management</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_quality"/>
     </owl:Class>
     
 
@@ -56300,6 +56505,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Freshwater biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Freshwater_biology"/>
     </owl:Class>
     
 
@@ -56317,6 +56523,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Human genetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Human_genetics"/>
     </owl:Class>
     
 
@@ -56333,6 +56540,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Tropical medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tropical_medicine"/>
     </owl:Class>
     
 
@@ -56366,6 +56574,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.4.5 Molecular diagnostics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Personalized_medicine"/>
         <oboInOwl:hasExactSynonym>Precision medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Personalised_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Molecular diagnostics</oboInOwl:hasNarrowSynonym>
@@ -56389,6 +56598,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Immunoprecipitation experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunoprecipitation"/>
     </owl:Class>
     
 
@@ -56432,6 +56642,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>methyl-seq</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Methylated DNA immunoprecipitation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Methylated_DNA_immunoprecipitation"/>
     </owl:Class>
     
 
@@ -56509,6 +56720,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Microbial ecology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microbial_ecology"/>
     </owl:Class>
     
 
@@ -56528,6 +56740,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>iCLIP</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>RNA immunoprecipitation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunoprecipitation#RNA_immunoprecipitation_(RIP)"/>
     </owl:Class>
     
 
@@ -56543,6 +56756,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Population genomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Population_genomics"/>
     </owl:Class>
     
 
@@ -57286,6 +57500,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Synthetic biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Synthetic_biology"/>
     </owl:Class>
     
 
