@@ -37821,7 +37821,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0331 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0331">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0477"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -37836,13 +37836,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of strucural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein mutation modelling</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein SNP mapping</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Rotamer likelihood prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein mutation modelling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein stability change prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>This includes 1) rotamer likelihood prediction: the prediction of rotamer likelihoods for all 20 amino acid types at each position in a protein structure, where output typically includes, for each residue position, the likelihoods for the 20 amino acid types with estimated reliability of the 20 likelihoods.  2) Protein SNP mapping, which maps and modesl the effects of single nucleotide polymorphisms (SNPs) on protein structure(s).  Methods might predict silent or pathological mutations.</rdfs:comment>
-        <rdfs:label>Protein modelling (mutation)</rdfs:label>
+        <rdfs:comment>Protein SNP mapping maps and modesl the effects of single nucleotide polymorphisms (SNPs) on protein structure(s).  Methods might predict silent or pathological mutations.</rdfs:comment>
+        <rdfs:label>Variant effect prediction</rdfs:label>
     </owl:Class>
     
 
@@ -40321,10 +40321,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0477"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model protein backbone conformation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein modelling (backbone)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might require a preliminary C(alpha) trace.</rdfs:comment>
-        <rdfs:label>Protein modelling (backbone)</rdfs:label>
+        <rdfs:label>Backbone modelling</rdfs:label>
     </owl:Class>
     
 
@@ -40335,10 +40336,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0477"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model, analyse or edit amino acid side chain conformation in protein structure, optimize side-chain packing, hydrogen bonding etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein modelling (side chains)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Rotamer likelihood prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might use a residue rotamer library.</rdfs:comment>
-        <rdfs:label>Protein modelling (side chains)</rdfs:label>
+        <rdfs:comment>This includes rotamer likelihood prediction: the prediction of rotamer likelihoods for all 20 amino acid types at each position in a protein structure, where output typically includes, for each residue position, the likelihoods for the 20 amino acid types with estimated reliability of the 20 likelihoods.</rdfs:comment>
+        <rdfs:label>Side chain modelling</rdfs:label>
     </owl:Class>
     
 
@@ -40349,9 +40353,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0477"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model loop conformation in protein structures.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Protein loop modelling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein modelling (loops)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Protein modelling (loops)</rdfs:label>
+        <rdfs:label>Loop modelling</rdfs:label>
+        <rdfs:label>Protein loop modelling</rdfs:label>
     </owl:Class>
     
 
