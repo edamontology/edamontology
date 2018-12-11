@@ -2091,6 +2091,7 @@
  
 </oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein interaction record</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein interaction report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein report (interaction)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein-protein interaction data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Atom interaction data</oboInOwl:hasNarrowSynonym>
@@ -3066,6 +3067,7 @@
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>An identifier that identifies a particular type of data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Indentifier (typed)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -24463,6 +24465,7 @@
         <created_in>1.16</created_in>
         <oboInOwl:hasDefinition>A ranked list of categories (usually ontology concepts), each associated with a statistical metric of over-/under-representation within the studied data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Enrichment report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Over-representation report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Functional enrichment report</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -24484,6 +24487,7 @@
         <created_in>1.16</created_in>
         <oboInOwl:hasBroadSynonym>GO-term report</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>A ranked list of Gene Ontology concepts, each associated with a p-value, concerning or derived from the analysis of e.g. a set of genes or proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>GO-term enrichment report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene ontology concept over-representation report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene ontology enrichment report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene ontology term enrichment report</oboInOwl:hasExactSynonym>
@@ -39499,6 +39503,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Detect polyA signals in nucleotide sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>PolyA detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PolyA prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PolyA signal prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Polyadenylation signal detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Polyadenylation signal prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>PolyA signal detection</rdfs:label>
