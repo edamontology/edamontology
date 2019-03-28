@@ -23,7 +23,7 @@
         <oboOther:date>02.08.2018 00:47 GMT</oboOther:date>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3909</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3911</next_id>
         <doap:Version>1.22_dev</doap:Version>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -2288,7 +2288,6 @@
         <rdfs:label>Genotype/phenotype report</rdfs:label>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_0923 -->
@@ -7602,8 +7601,6 @@
     
 
 
-
-
     <!-- http://edamontology.org/data_1303 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1303">
@@ -7619,9 +7616,6 @@
     
 
 
-
-
-
     <!-- http://edamontology.org/data_1306 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_1306">
@@ -7635,7 +7629,6 @@
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_1309 -->
@@ -7666,7 +7659,6 @@
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_1313 -->
@@ -9163,7 +9155,6 @@
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_1459 -->
@@ -16899,7 +16890,6 @@
     
 
 
-
     <!-- http://edamontology.org/data_2398 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2398">
@@ -16916,7 +16906,6 @@
         <rdfs:label>Ensembl protein ID</rdfs:label>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_2400 -->
@@ -17123,7 +17112,6 @@
         <rdfs:label>Experiment report</rdfs:label>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_2534 -->
@@ -19925,7 +19913,6 @@
     
 
 
-
     <!-- http://edamontology.org/data_2755 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2755">
@@ -20959,8 +20946,6 @@
     
 
 
-
-
     <!-- http://edamontology.org/data_2870 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2870">
@@ -21143,8 +21128,6 @@
         <rdfs:label>Plot</rdfs:label>
     </owl:Class>
     
-
-
 
 
     <!-- http://edamontology.org/data_2886 -->
@@ -22707,7 +22690,6 @@
     
 
 
-
     <!-- http://edamontology.org/data_3119 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3119">
@@ -22736,8 +22718,6 @@
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
-
 
 
     <!-- http://edamontology.org/data_3128 -->
@@ -22856,7 +22836,6 @@
     
 
 
-
     <!-- http://edamontology.org/data_3137 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3137">
@@ -22886,7 +22865,6 @@
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
 
 
     <!-- http://edamontology.org/data_3140 -->
@@ -35178,6 +35156,31 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
+    <!-- http://edamontology.org/format_3909 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3909">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2035"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1255"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="https://arxiv.org/abs/1903.10042"/>
+        <documentation rdf:resource="https://raw.githubusercontent.com/KarrLab/bpforms/master/bpforms/grammar.lark"/>
+        <ontology_used rdf:resource="http://edamontology.org/data_2301"/>
+        <organisation rdf:resource="https://www.karrlab.org"/>
+        <oboInOwl:hasDefinition>BpForms is a string format for concretely representing the primary structures of biopolymers, including DNA, RNA, and proteins that include non-canonical nucleic and amino acids. See https://www.bpforms.org for more information.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>BpForms</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -45142,11 +45145,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2946">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_2928"/>
         <oboInOwl:hasDefinition>Process or analyse an alignment of molecular sequences or structures.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Alignment analysis</rdfs:label>
-        <owl:deprecated>1.8</owl:deprecated>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
@@ -48736,6 +48739,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.17</created_in>
         <oboInOwl:hasBroadSynonym>Metabolite identification</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Mass spectra identification of compounds that are produced by living systems. Including polyketides, terpenoids, phenylpropanoids, alkaloids and antibiotics.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Fragmenation tree generation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Natural product identification</rdfs:label>
@@ -53068,6 +53072,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <isdebtag>true</isdebtag>
+        <oboInOwl:hasBroadSynonym>Life science</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Life sciences</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.5 Biological sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.1 Aerobiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.13 Cryobiology</oboInOwl:hasDbXref>
@@ -53442,10 +53448,10 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:hasNarrowSynonym>LC-MS-based metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MS-based metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Mass spectrometry-based metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolome</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabonomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>NMR-based metabolomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Metabolites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -56901,6 +56907,21 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:comment>NMReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or “NMReDATA”) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc. Find more in the paper at D. Jeannerat, Magn. Reson. in Chem., 2017, 55, 7-14.</rdfs:comment>
         <rdfs:label>NMReDATA</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://nmredata.org/"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.edamontology.org/format_3910 -->
+
+    <owl:Class rdf:about="http://www.edamontology.org/format_3910">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2033"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3868"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="http://manual.gromacs.org/online/trr.html"/>
+        <oboInOwl:comment>The first 4 bytes of any trr file containing 1993. See https://github.com/galaxyproject/galaxy/pull/6597/files#diff-409951594551183dbf886e24de6cb129R760</oboInOwl:comment>
+        <oboInOwl:hasDefinition>Format of trr files that contain the trajectory of a simulation experiment used by GROMACS.</oboInOwl:hasDefinition>
+        <rdfs:label>trr</rdfs:label>
     </owl:Class>
     
 
