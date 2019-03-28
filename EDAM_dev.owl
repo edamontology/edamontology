@@ -23,7 +23,7 @@
         <oboOther:date>02.08.2018 00:47 GMT</oboOther:date>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3911</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3912</next_id>
         <doap:Version>1.22_dev</doap:Version>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -35177,6 +35177,38 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BpForms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3911 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3911">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2190"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.22</created_in>
+        <documentation rdf:resource="https://doi.org/10.1186/s13059-016-0997-x"/>
+        <documentation rdf:resource="https://en.wikipedia.org/wiki/MinHash"/>
+        <documentation rdf:resource="https://mash.readthedocs.io/en/latest/sketches.html"/>
+        <documentation rdf:resource="https://raw.githubusercontent.com/marbl/Mash/master/src/mash/capnp/MinHash.capnp"/>
+        <example rdf:resource="https://mash.readthedocs.io/en/latest/tutorials.html#querying-read-sets-against-an-existing-refseq-sketch"/>
+        <file_extension>msh</file_extension>
+        <information_standard rdf:resource="https://capnproto.org/cxx.html"/>
+        <organisation rdf:resource="http://bnbi.org"/>
+        <organisation rdf:resource="https://www.genome.gov/27562809/phillippy-group/"/>
+        <oboInOwl:hasDefinition>BpForms is a string format for concretely representing the primary structures of biopolymers, including DNA, RNA, and proteins that include non-canonical nucleic and amino acids. See https://www.bpforms.org for more information.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Mash sketch is a format for sequence / sequence checksum information. To make a sketch, each k-mer in a sequence is hashed, which creates a pseudo-random identifier. By sorting these hashes, a small subset from the top of the sorted list can represent the entire sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Mash sketch</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>min-hash sketch</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>msh</rdfs:label>
     </owl:Class>
     
 
