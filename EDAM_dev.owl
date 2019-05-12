@@ -30,7 +30,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>12.05.2019 23:29 UTC</oboOther:date>
+        <oboOther:date>12.05.2019 23:44 UTC</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -301,17 +301,6 @@
         <oboInOwl:hasDefinition>Name of thematic editor (http://biotools.readthedocs.io/en/latest/governance.html#registry-editors) responsible for this concept and its children.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>thematic_editor</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://edamontology.org/usageGuideline -->
-
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/usageGuideline">
-        <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
-        <oboInOwl:hasDefinition>A usage guideline for terms associated with the concept, e.g. within https://bio.tools registration interface.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
-        <rdfs:label>Usage guideline</rdfs:label>
     </owl:AnnotationProperty>
     
 
