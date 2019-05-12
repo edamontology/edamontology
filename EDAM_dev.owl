@@ -30,7 +30,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>12.05.2019 22:52 UTC</oboOther:date>
+        <oboOther:date>12.05.2019 23:05 UTC</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -38,7 +38,7 @@
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3912</next_id>
+        <next_id>3913</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
     </owl:Ontology>
@@ -14854,7 +14854,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2884"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>A plot of sequence similarities identified from word-matching or character comparison.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence conservation report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Sequence conservation report</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Use this concept for calculated substitution rates, relative site variability, data on sites with biased properties, highly conserved or very poorly conserved sites, regions, blocks etc.</rdfs:comment>
@@ -24428,7 +24428,6 @@
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>Visualization of distribution of quantitative data, e.g. expression data, by histograms, violin plots and density plots.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Density plot</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Sequence conservation report</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Histogram</rdfs:label>
@@ -35461,7 +35460,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.22</created_in>
         <documentation rdf:resource="http://ambermd.org/formats.html#restart"/>
         <oboInOwl:hasDefinition>AMBER coordinate/restart file with 6 coordinates per line and decimal format F12.7 (fixed point notation with field width 12 and 7 decimal places)</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>inpcrd</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>restrt</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>rst7</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -47051,7 +47049,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3280">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3907"/>
         <created_in>1.3</created_in>
-        <oboInOwl:hasBroadSynonym>Information extraction</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Recognise named entities, ontology concepts, tags, events, and dictionary terms within documents.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Concept mining</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Entity chunking</oboInOwl:hasNarrowSynonym>
@@ -49502,7 +49499,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0306"/>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>Retrieve resources from information systems matching a specific information need.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>IE</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Information retrieval</rdfs:label>
@@ -57259,9 +57255,24 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     
 
 
-    <!-- http://edamontology.org/topic_3894 -->
+    <!-- http://edamontology.org/topic_3895 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_3894">
+    <owl:Class rdf:about="http://edamontology.org/topic_3895">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <created_in>1.22</created_in>
+        <oboInOwl:hasDefinition>The application of multi-disciplinary science and technology for the construction of artificial biological systems for diverse applications.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Synthetic biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Synthetic_biology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3912 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3912">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <created_in>1.22</created_in>
@@ -57275,21 +57286,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genetic engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_engineering"/>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/topic_3895 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_3895">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
-        <created_in>1.22</created_in>
-        <oboInOwl:hasDefinition>The application of multi-disciplinary science and technology for the construction of artificial biological systems for diverse applications.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Synthetic biology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Synthetic_biology"/>
     </owl:Class>
     
 
