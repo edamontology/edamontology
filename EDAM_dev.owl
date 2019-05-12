@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://edamontology.org/"
      xml:base="http://edamontology.org/"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
-     xmlns:mirrors="https://mirrors.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -31,7 +30,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>12.05.2019 22:39 UTC</oboOther:date>
+        <oboOther:date>12.05.2019 22:52 UTC</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -132,6 +131,15 @@
         <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferrably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://edamontology.org/hasHumanReadableId -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/hasHumanReadableId">
+        <rdfs:label>hasHumanReadableId</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;hasAlternativeId"/>
     </owl:AnnotationProperty>
     
 
@@ -501,15 +509,6 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#replacedBy -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#replacedBy"/>
-    
-
-
-    <!-- https://mirrors.org/ID_0888 -->
-
-    <owl:AnnotationProperty rdf:about="https://mirrors.org/ID_0888">
-        <rdfs:label>hasHumanReadableId</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
-    </owl:AnnotationProperty>
     
 
 
