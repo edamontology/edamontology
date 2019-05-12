@@ -30,7 +30,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>12.05.2019 23:05 UTC</oboOther:date>
+        <oboOther:date>12.05.2019 23:29 UTC</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -139,7 +139,7 @@
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/hasHumanReadableId">
         <rdfs:label>hasHumanReadableId</rdfs:label>
-        <rdfs:subPropertyOf rdf:resource="&oboInOwl;hasAlternativeId"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
     </owl:AnnotationProperty>
     
 
@@ -2171,8 +2171,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_0912">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2087"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:comment>Nucleic acid structural properties stiffness, curvature, twist/roll data or other conformational parameters or properties.
-</oboInOwl:comment>
+        <oboInOwl:comment>Nucleic acid structural properties stiffness, curvature, twist/roll data or other conformational parameters or properties.</oboInOwl:comment>
         <oboInOwl:hasDefinition>A report of primarily non-positional data describing intrinsic physical, chemical or other properties of a nucleic acid molecule.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid physicochemical property</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>GC-content</oboInOwl:hasNarrowSynonym>
@@ -2180,8 +2179,7 @@
         <oboInOwl:hasNarrowSynonym>Nucleic acid structural property</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.
-</rdfs:comment>
+        <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types.</rdfs:comment>
         <rdfs:label>Nucleic acid property</rdfs:label>
     </owl:Class>
     
@@ -13954,6 +13952,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_0912"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0912"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_3128"/>
         <oboInOwl:hasDefinition>A report on nucleic acid structure-derived data, describing structural properties of a DNA molecule, or any other annotation or information about specific nucleic acid 3D structure(s).</oboInOwl:hasDefinition>
@@ -21716,6 +21715,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_1583"/>
+        <oldParent rdf:resource="http://edamontology.org/data_2884"/>
         <oboInOwl:hasDefinition>A melting curve of a double-stranded nucleic acid molecule (DNA or DNA/RNA).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1583"/>
@@ -37588,6 +37588,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2495"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3429"/>
+        <has_output rdf:resource="http://edamontology.org/data_0928"/>
         <oboInOwl:hasDefinition>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2495"/>
@@ -53994,7 +53996,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/topic_3126">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
-        <obsolete_since>1,13</obsolete_since>
+        <obsolete_since>1.13</obsolete_since>
         <oboInOwl:hasDefinition>Repetitive elements within a nucleic acid sequence.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0157"/>
