@@ -17104,12 +17104,13 @@
     <owl:Class rdf:about="http://edamontology.org/data_2531">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>A human-readable collection of information about a wet lab experiment, such as experimental conditions.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Experiment annotation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Experiment metadata</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>A human-readable collection of information about about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Experiment annotation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Experiment metadata</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Experiment report</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Experiment report</rdfs:label>
+        <rdfs:label>Protocol</rdfs:label>
     </owl:Class>
     
 
