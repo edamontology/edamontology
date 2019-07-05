@@ -30,7 +30,7 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3917</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3918</next_id>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
@@ -24485,6 +24485,20 @@
         <oboInOwl:hasExactSynonym>QC report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Quality control metrics</oboInOwl:hasExactSynonym>
         <rdfs:label>Quality control report</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3917 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3917">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2082"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</created_in>
+        <oboInOwl:hasDefinition>A table of unnormalized values representing summarised read counts per genomic region (e.g. gene, transcript, peak).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Read count matrix</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Count matrix</rdfs:label>
     </owl:Class>
     
 
