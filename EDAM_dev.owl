@@ -22,7 +22,6 @@
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <doap:Version>1.22_dev</doap:Version>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3914</next_id>
         <oboOther:date>13.05.2019 00:11 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -30,6 +29,7 @@
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3915</next_id>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
@@ -24469,6 +24469,20 @@
         <oboInOwl:hasDefinition>The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Affymetrix probe raw data format</oboInOwl:hasExactSynonym>
         <rdfs:label>Loom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3914 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3914">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2048"/>
+        <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasDefinition>A human-readable collection of information about about how a scientific experiment or analysis was carried out that results in a specific set of data or results used for further analysis or to test a specific hypothesis.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>QC metrics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>QC report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Quality control metrics</oboInOwl:hasExactSynonym>
+        <rdfs:label>Quality control report</rdfs:label>
     </owl:Class>
     
 
