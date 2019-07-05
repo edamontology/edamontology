@@ -28,8 +28,8 @@
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3916</next_id>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3915</next_id>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
@@ -35645,6 +35645,34 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>msh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3915 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3915">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2535"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</created_in>
+        <documentation rdf:resource="https://pangeo.io/data.html"/>
+        <documentation rdf:resource="https://zarr.readthedocs.io/en/stable/spec.html"/>
+        <example rdf:resource="https://zarr.readthedocs.io/en/stable/spec/v2.html#examples"/>
+        <oboInOwl:hasDefinition>The Zarr format is an implementation of chunked, compressed, N-dimensional arrays for storing data.</oboInOwl:hasDefinition>
+        <rdfs:label>Zarr</rdfs:label>
     </owl:Class>
     
 
