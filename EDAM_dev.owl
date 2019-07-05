@@ -2,14 +2,14 @@
 <rdf:RDF xmlns="http://edamontology.org/"
      xml:base="http://edamontology.org/"
      xmlns:edam="http://purl.obolibrary.org/obo/edam#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboOther="http://purl.obolibrary.org/obo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:oboOther="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
@@ -21,7 +21,9 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <next_id>3913</next_id>
         <doap:Version>1.22_dev</doap:Version>
+        <oboOther:date>13.05.2019 00:11 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -30,7 +32,6 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:date>13.05.2019 00:11 UTC</oboOther:date>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
@@ -38,7 +39,6 @@
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id>3913</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
     </owl:Ontology>
@@ -229,7 +229,7 @@
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/oldParent">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
-        <oboInOwl:hasDefinition>EDAM concept URI of the erstwhile "parent" of a now deprecated concept.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>EDAM concept URI of the erstwhile &quot;parent&quot; of a now deprecated concept.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>Old parent</rdfs:label>
     </owl:AnnotationProperty>
@@ -53760,6 +53760,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>beta13</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The scientific literature, language processing, reference information, and documentation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Language</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Literature</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Literature_and_language</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Bibliography</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Citations</oboInOwl:hasNarrowSynonym>
