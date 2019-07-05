@@ -1224,10 +1224,12 @@
     <owl:Class rdf:about="http://edamontology.org/data_0850">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>A collection of multiple molecular sequences and associated metadata that do not (typically) correspond to molecular sequence database records or entries and which (typically) are derived from some analytical method.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A collection of one or typically multiple molecular sequences (which can include derived data or metadata) that do not (typically) correspond to molecular sequence database records or entries and which (typically) are derived from some analytical method.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Alignment reference</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>SO:0001260</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:comment>An example is an alignment reference; one or a set of reference molecular sequences, structures, or profiles used for alignment of genomic, transcriptomic, or proteomic experimental data.</rdfs:comment>
         <rdfs:comment>This concept may be used for arbitrary sequence sets and associated data arising from processing.</rdfs:comment>
         <rdfs:label>Sequence set</rdfs:label>
     </owl:Class>
