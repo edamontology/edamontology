@@ -1189,13 +1189,17 @@
     <!-- http://edamontology.org/data_0848 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_0848">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2044"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <deprecation_comment>Deprecated because this is bloat / confusing &amp; better handled as an EDAM Format concept - &quot;raw&quot; sequences just imply a particular format (i.e. one with a vanilla string, possible in a particular alphabet, with no metadata).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_2044"/>
         <oboInOwl:hasDefinition>A raw molecular sequence (string of characters) which might include ambiguity, unknown positions and non-sequence characters.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2044"/>
         <rdfs:comment>Non-sequence characters may be used for example for gaps and translation stop.</rdfs:comment>
         <rdfs:label>Raw sequence</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21907,17 +21911,20 @@
     <!-- http://edamontology.org/data_2974 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2974">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0848"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2976"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <deprecation_comment>Deprecated because this is bloat / confusing &amp; better handled as an EDAM Format concept - &quot;raw&quot; sequences just imply a particular format (i.e. one with a vanilla string, possible in a particular alphabet, with no metadata).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_0848"/>
         <oboInOwl:hasDefinition>A raw protein sequence (string of characters).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Raw amino acid sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw amino acid sequences</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw protein sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw sequence (protein)</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2976"/>
         <rdfs:label>Protein sequence (raw)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -21925,17 +21932,20 @@
     <!-- http://edamontology.org/data_2975 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2975">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0848"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2977"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <deprecation_comment>Deprecated because this is bloat / confusing &amp; better handled as an EDAM Format concept - &quot;raw&quot; sequences just imply a particular format (i.e. one with a vanilla string, possible in a particular alphabet, with no metadata).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_0848"/>
         <oboInOwl:hasDefinition>A raw nucleic acid sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid raw sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleotide sequence (raw)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw nucleic acid sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw sequence (nucleic acid)</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2977"/>
         <rdfs:label>Nucleic acid sequence (raw)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23604,16 +23614,19 @@
     <!-- http://edamontology.org/data_3496 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3496">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2975"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3495"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.8</created_in>
+        <deprecation_comment>Deprecated because this is bloat / confusing &amp; better handled as an EDAM Format concept - &quot;raw&quot; sequences just imply a particular format (i.e. one with a vanilla string, possible in a particular alphabet, with no metadata).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_2975"/>
         <oboInOwl:hasDefinition>A raw RNA sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>RNA raw sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw RNA sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw sequence (RNA)</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_3495"/>
         <rdfs:label>RNA sequence (raw)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -23621,16 +23634,19 @@
     <!-- http://edamontology.org/data_3497 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3497">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2975"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3494"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.8</created_in>
+        <deprecation_comment>Deprecated because this is bloat / confusing &amp; better handled as an EDAM Format concept - &quot;raw&quot; sequences just imply a particular format (i.e. one with a vanilla string, possible in a particular alphabet, with no metadata).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_2975"/>
         <oboInOwl:hasDefinition>A raw DNA sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DNA raw sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw DNA sequence</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Raw sequence (DNA)</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_3494"/>
         <rdfs:label>DNA sequence (raw)</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -30418,7 +30434,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0848"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
