@@ -3297,7 +3297,6 @@
     <!-- http://edamontology.org/data_0991 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_0991">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2894"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Unique registry number of a chemical compound.</oboInOwl:hasDefinition>
@@ -3477,13 +3476,16 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1002">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0991"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2895"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>CAS registry number of a chemical compound.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>CAS registry number of a chemical compound; a unique numerical identifier of chemicals in the scientific literature, as assigned by the Chemical Abstracts Service.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>CAS chemical registry number</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chemical registry number (CAS)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <rdfs:label>Chemical registry number (CAS)</rdfs:label>
+        <rdfs:label>CAS number</rdfs:label>
     </owl:Class>
     
 
@@ -3492,6 +3494,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1003">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0991"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Beilstein registry number of a chemical compound.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Beilstein chemical registry number</oboInOwl:hasExactSynonym>
@@ -3507,6 +3510,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1004">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0991"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Gmelin registry number of a chemical compound.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gmelin chemical registry number</oboInOwl:hasExactSynonym>
@@ -13693,7 +13697,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_2042">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Typically a statement about some data or results, including evidence or the source of a statement, which may include computational prediction, laboratory experiment, literature reference etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Typically a human-readable summary of body of facts or information indicating why a statement is true or valid. This may include a computational prediction, laboratory experiment, literature reference etc.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Evidence</rdfs:label>
@@ -22481,15 +22485,16 @@
     <!-- http://edamontology.org/data_3102 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3102">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2895"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
+        <deprecation_comment>Duplicates http://edamontology.org/data_1002, hence deprecated.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.23</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/data_2895"/>
         <oboInOwl:hasDefinition>Unique numerical identifier of chemicals in the scientific literature, as assigned by the Chemical Abstracts Service.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>CAS registry number</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1002"/>
         <rdfs:label>CAS number</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
