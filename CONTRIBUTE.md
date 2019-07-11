@@ -1,0 +1,1 @@
+Please see [readthedocs](https://edamontologydocs.readthedocs.io/en/latest/) to learn about EDAM and how you can [get involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html).
