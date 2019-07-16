@@ -5,7 +5,7 @@
 # EDAM 1.23
 
 ### Summary of changes
-See the improved [changelog-detailed.md](changelog-detailed.md#edam_123owl) for a detailed list of semantic changes in the EDAM ontology.
+See the changelog-detailed.md](changelog-detailed.md#edam_123owl) for a detailed list of semantic changes in the EDAM ontology.
 
 * Various new concepts and other changes to support the requirements of the Human Cell Atlas
 * Various minor clean-ups and bug fixes.
