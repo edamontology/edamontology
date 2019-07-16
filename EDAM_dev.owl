@@ -22,7 +22,7 @@
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <doap:Version>1.23</doap:Version>
-        <oboOther:date>16.07.2019 19:10 UTC</oboOther:date>
+        <oboOther:date>16.07.2019 19:35 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -24451,35 +24451,6 @@
     
 
 
-    <!-- http://edamontology.org/data_3913 -->
-
-    <owl:Class rdf:about="http://edamontology.org/data_3913">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3590"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2535"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3112"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <created_in>1.23</created_in>
-        <documentation rdf:resource="https://linnarssonlab.org/loompy/format/index.html"/>
-        <documentation rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
-        <example rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
-        <file_extension>loom</file_extension>
-        <oboInOwl:hasDefinition>The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Affymetrix probe raw data format</oboInOwl:hasExactSynonym>
-        <rdfs:label>Loom</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/data_3914 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3914">
@@ -35668,6 +35639,35 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>msh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3913 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3913">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3590"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2535"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.23</created_in>
+        <documentation rdf:resource="https://linnarssonlab.org/loompy/format/index.html"/>
+        <documentation rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
+        <example rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
+        <file_extension>loom</file_extension>
+        <oboInOwl:hasDefinition>The Loom file format is based on HDF5, a standard for storing large numerical datasets. The Loom format is designed to efficiently hold large omics datasets. Typically, such data takes the form of a large matrix of numbers, along with metadata for the rows and columns.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Affymetrix probe raw data format</oboInOwl:hasExactSynonym>
+        <rdfs:label>Loom</rdfs:label>
     </owl:Class>
     
 
