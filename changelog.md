@@ -2,6 +2,39 @@
 
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM 1.23
+
+### Summary of changes
+See the improved [changelog-detailed.md](changelog-detailed.md#edam_123owl) for a detailed list of semantic changes in the EDAM ontology.
+
+* Various new concepts and other changes to support the requirements of the Human Cell Atlas
+* Various minor clean-ups and bug fixes.
+
+### Changes in hierarchy
+*  5 concepts added  (3 Data, 2 Format)
+*  6 concepts deprecated (6 Data)
+*  11 concepts have changed relations|hierarchy (10 Data, 1 Format)
+
+### Fixed issues
+-  18 issues fixed and closed (#417, #416, #415, #413, #412, #411, #409, #408, #407, #406, #405, #404, #403, #402, #401, #400, #397, #130)
+
+
+# EDAM 1.22
+
+### Summary of changes
+* Extension of Format subontology (24 concepts added)
+* Simplication of Data subontology (24 concepts deprecated)
+* Terms for machine learning and statistical methods added as narrow synonyms of *Machine learning*, *Statistics and probability* or *Mathematics* (following alignment of EDAM with the DSEO ontology)
+* Various clean-ups and minor bug fixes	
+
+### Changes in hierarchy
+* 47 concepts added (5 Data, 24 Format, 15 Operation, 3 topic) 
+* 55 concepts have changed relations|hierarchy (26 Data, 24 Operation, 3 Format, 2 Topic)
+* 30 conceps deprecated (24 Data, 5 Operation, 1 Topic)
+
+### Fixed issues
+- 11 issues fixed and closed (#391, #390, #387, #383, #389, #380, #374, #371, #360, #359, #346)
+
 # EDAM 1.21 [![DOI: 10.5281/zenodo.1325952](https://zenodo.org/badge/DOI/10.5281/zenodo.1325952.svg)](https://doi.org/10.5281/zenodo.1325952)
 
 See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for a detailed list of semantic changes in the EDAM ontology.
