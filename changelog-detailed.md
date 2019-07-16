@@ -1,6 +1,8 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
+  - [EDAM_1.23.owl](#edam_121owl)
+  - [EDAM_1.22.owl](#edam_121owl)
   - [EDAM_1.21.owl](#edam_121owl)
   - [EDAM_1.20.owl](#edam_120owl)
   - [EDAM_1.19.owl](#edam_119owl)
@@ -12,11 +14,601 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.13.owl](#edam_113owl)
   - [EDAM_1.12.owl](#edam_112owl)
 
-# EDAM_1.21.owl
+# EDAM_1.23.owl
+
+  - [New concepts](#new-concepts-123) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-123)
+
+
+## New concepts (1.23):
+
+Class: http://edamontology.org/format_3916
+Label: MTX
++   'MTX' SubClassOf 'is format of' some 'Sequence tag profile'
++   'MTX' SubClassOf 'Textual format'
++   'MTX' SubClassOf 'is format of' some 'Gene expression matrix'
++   'MTX' SubClassOf 'Gene expression report format'
++   'MTX' SubClassOf 'Matrix format'
+ 
+Class: http://edamontology.org/format_3915
+Label: Zarr
++   'Zarr' SubClassOf 'Gene expression report format'
++   'Zarr' SubClassOf 'Matrix format'
++   'Zarr' SubClassOf 'Binary format'
++   'Zarr' SubClassOf 'is format of' some 'Sequence tag profile'
++   'Zarr' SubClassOf 'is format of' some 'Gene expression matrix'
+ 
+Class: http://edamontology.org/data_3914
+Label: Quality control report
++   'Quality control report' SubClassOf 'Report'
+ 
+Class: http://edamontology.org/data_3917
+Label: Count matrix
++   'Count matrix' SubClassOf 'Matrix'
+ 
+Class: http://edamontology.org/data_3913
+Label: Loom
++   'Loom' SubClassOf 'HDF5'
++   'Loom' SubClassOf 'Gene expression report format'
++   'Loom' SubClassOf 'is format of' some 'Sequence tag profile'
++   'Loom' SubClassOf 'is format of' some 'Gene expression matrix'
+
+## Changed relations between concepts (1.23):
+
+Class: http://edamontology.org/data_1004
+Label: Chemical registry number (Gmelin)
++   'Chemical registry number (Gmelin)' SubClassOf 'Accession'
+ 
+Class: http://edamontology.org/data_1003
+Label: Chemical registry number (Beilstein)
++   'Chemical registry number (Beilstein)' SubClassOf 'Accession'
+ 
+Class: http://edamontology.org/data_1002
+Label: Chemical registry number (CAS)
++   'Chemical registry number (CAS)' SubClassOf 'Drug accession'
++   'Chemical registry number (CAS)' SubClassOf 'Accession'
+ 
+Class: http://edamontology.org/format_2571
+Label: Raw sequence format
+-   'Raw sequence format' SubClassOf 'is format of' some 'Raw sequence'
++   'Raw sequence format' SubClassOf 'is format of' some 'Sequence'
+ 
+Class: http://edamontology.org/data_3496
+Label: RNA sequence (raw)
+-   'RNA sequence (raw)' SubClassOf 'Nucleic acid sequence (raw)'
+-   'RNA sequence (raw)' SubClassOf 'RNA sequence'
++   'RNA sequence (raw)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3497
+Label: DNA sequence (raw)
+-   'DNA sequence (raw)' SubClassOf 'DNA sequence'
+-   'DNA sequence (raw)' SubClassOf 'Nucleic acid sequence (raw)'
++   'DNA sequence (raw)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2975
+Label: Nucleic acid sequence (raw)
+-   'Nucleic acid sequence (raw)' SubClassOf 'Nucleic acid sequence'
+-   'Nucleic acid sequence (raw)' SubClassOf 'Raw sequence'
++   'Nucleic acid sequence (raw)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2974
+Label: Protein sequence (raw)
+-   'Protein sequence (raw)' SubClassOf 'Protein sequence'
+-   'Protein sequence (raw)' SubClassOf 'Raw sequence'
++   'Protein sequence (raw)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0991
+Label: Chemical registry number
+-   'Chemical registry number' SubClassOf 'Accession'
+ 
+Class: http://edamontology.org/data_3102
+Label: CAS number
+-   'CAS number' SubClassOf 'Drug accession'
+-   'CAS number' SubClassOf 'Accession'
++   'CAS number' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0848
+Label: Raw sequence
+-   'Raw sequence' SubClassOf 'Sequence'
++   'Raw sequence' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+
+# EDAM_1.22.owl
 
   - [New concepts](#new-concepts-121) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-121)
-  - [All semantic changes](#all-semantic-changes-121)
+
+
+## New concepts (1.22):
+ 
+Class: http://edamontology.org/format_3909
+Label: BpForms
++   'BpForms' SubClassOf 'Raw sequence format'
++   'BpForms' SubClassOf 'is format of' some 'Sequence features'
++   'BpForms' SubClassOf 'Chemical formula format'
++   'BpForms' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3906
+Label: NMReDATA
++   'NMReDATA' SubClassOf 'NMR data format'
++   'NMReDATA' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3911
+Label: msh
++   'msh' SubClassOf 'Raw sequence format'
++   'msh' SubClassOf 'is format of' some 'Sequence checksum'
++   'msh' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3910
+Label: trr
++   'trr' SubClassOf 'Textual format'
++   'trr' SubClassOf 'Tertiary structure format'
++   'trr' SubClassOf 'Trajectory format (text)'
+ 
+Class: http://edamontology.org/format_3882
+Label: PSF
++   'PSF' SubClassOf 'Topology format'
++   'PSF' SubClassOf 'Tertiary structure format'
++   'PSF' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3881
+Label: AMBER top
++   'AMBER top' SubClassOf 'Topology format'
++   'AMBER top' SubClassOf 'Tertiary structure format'
++   'AMBER top' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3884
+Label: FF parameter format
++   'FF parameter format' SubClassOf 'is format of' some 'Topology data'
++   'FF parameter format' SubClassOf 'Format (by type of data)'
+ 
+Class: http://edamontology.org/format_3883
+Label: GROMACS itp
++   'GROMACS itp' SubClassOf 'Tertiary structure format'
++   'GROMACS itp' SubClassOf 'Textual format'
++   'GROMACS itp' SubClassOf 'Topology format'
++   'GROMACS itp' SubClassOf 'FF parameter format'
+ 
+Class: http://edamontology.org/format_3880
+Label: GROMACS top
++   'GROMACS top' SubClassOf 'Textual format'
++   'GROMACS top' SubClassOf 'Tertiary structure format'
++   'GROMACS top' SubClassOf 'Topology format'
+ 
+Class: http://edamontology.org/format_3889
+Label: AMBER off
++   'AMBER off' SubClassOf 'Textual format'
++   'AMBER off' SubClassOf 'FF parameter format'
+ 
+Class: http://edamontology.org/format_3886
+Label: RST
++   'RST' SubClassOf 'Textual format'
++   'RST' SubClassOf 'Tertiary structure format'
++   'RST' SubClassOf 'Trajectory format (text)'
+ 
+Class: http://edamontology.org/format_3885
+Label: BinPos
++   'BinPos' SubClassOf 'Trajectory format (binary)'
++   'BinPos' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3888
+Label: AMBER frcmod
++   'AMBER frcmod' SubClassOf 'FF parameter format'
++   'AMBER frcmod' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3887
+Label: CHARMM rtf
++   'CHARMM rtf' SubClassOf 'Textual format'
++   'CHARMM rtf' SubClassOf 'Tertiary structure format'
++   'CHARMM rtf' SubClassOf 'Topology format'
+ 
+Class: http://edamontology.org/format_3873
+Label: HDF
++   'HDF' SubClassOf 'Binary format'
++   'HDF' SubClassOf 'Trajectory format (binary)'
+ 
+Class: http://edamontology.org/format_3879
+Label: Topology format
++   'Topology format' SubClassOf 'Format (by type of data)'
++   'Topology format' SubClassOf 'is format of' some 'Topology data'
+ 
+Class: http://edamontology.org/format_3878
+Label: mdcrd
++   'mdcrd' SubClassOf 'Textual format'
++   'mdcrd' SubClassOf 'Tertiary structure format'
++   'mdcrd' SubClassOf 'Trajectory format (text)'
+ 
+Class: http://edamontology.org/format_3875
+Label: XTC
++   'XTC' SubClassOf 'Binary format'
++   'XTC' SubClassOf 'Trajectory format (binary)'
+ 
+Class: http://edamontology.org/format_3874
+Label: PCAzip
++   'PCAzip' SubClassOf 'Trajectory format (binary)'
++   'PCAzip' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3877
+Label: XYZ
++   'XYZ' SubClassOf 'Tertiary structure format'
++   'XYZ' SubClassOf 'Textual format'
++   'XYZ' SubClassOf 'Trajectory format (text)'
+ 
+Class: http://edamontology.org/format_3876
+Label: TNG
++   'TNG' SubClassOf 'Trajectory format (binary)'
++   'TNG' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3868
+Label: Trajectory format (text)
++   'Trajectory format (text)' SubClassOf 'Trajectory format'
+ 
+Class: http://edamontology.org/format_3867
+Label: Trajectory format (binary)
++   'Trajectory format (binary)' SubClassOf 'Trajectory format'
+ 
+Class: http://edamontology.org/format_3866
+Label: Trajectory format
++   'Trajectory format' SubClassOf 'is format of' some 'Trajectory data'
++   'Trajectory format' SubClassOf 'Format (by type of data)'
+ 
+Class: http://edamontology.org/topic_3912
+Label: Genetic engineering
++   'Genetic engineering' SubClassOf 'Genetics'
++   'Genetic engineering' SubClassOf 'Biotechnology'
+ 
+Class: http://edamontology.org/topic_3895
+Label: Synthetic biology
++   'Synthetic biology' SubClassOf 'Biotechnology'
++   'Synthetic biology' SubClassOf 'Biology'
+ 
+Class: http://edamontology.org/topic_3892
+Label: Biomolecular simulation
++   'Biomolecular simulation' SubClassOf 'Computational biology'
+ 
+Class: http://edamontology.org/operation_3899
+Label: Protein-protein docking
++   'Protein-protein docking' SubClassOf 'has output' some 'Protein-ligand complex'
++   'Protein-protein docking' SubClassOf 'has topic' some 'Protein interactions'
++   'Protein-protein docking' SubClassOf 'Molecular docking'
+ 
+Class: http://edamontology.org/operation_3898
+Label: Metal-binding site prediction
++   'Metal-binding site prediction' SubClassOf 'Binding site prediction'
+ 
+Class: http://edamontology.org/operation_3897
+Label: Ligand-binding site prediction
++   'Ligand-binding site prediction' SubClassOf 'Binding site prediction'
+ 
+Class: http://edamontology.org/operation_3896
+Label: Active site prediction
++   'Active site prediction' SubClassOf 'Binding site prediction'
+ 
+Class: http://edamontology.org/operation_3891
+Label: Essential dynamics
++   'Essential dynamics' SubClassOf 'Simulation analysis'
++   'Essential dynamics' SubClassOf 'Nucleic acid structure analysis'
+ 
+Class: http://edamontology.org/operation_3890
+Label: Trajectory visualization
++   'Trajectory visualization' SubClassOf 'Structure visualisation'
++   'Trajectory visualization' SubClassOf 'has output' some 'Helical wheel'
+ 
+Class: http://edamontology.org/operation_3894
+Label: DNA profiling
++   'DNA profiling' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3893
+Label: Forcefield parameterisation
++   'Forcefield parameterisation' SubClassOf 'Modelling and simulation'
++   'Forcefield parameterisation' SubClassOf 'has output' some 'DNA substitution model'
++   'Forcefield parameterisation' SubClassOf 'has topic' some 'Phylogeny'
+ 
+Class: http://edamontology.org/operation_3903
+Label: DNA binding site prediction
++   'DNA binding site prediction' SubClassOf 'Nucleic acids-binding site prediction'
+ 
+Class: http://edamontology.org/operation_3902
+Label: RNA binding site prediction
++   'RNA binding site prediction' SubClassOf 'Nucleic acids-binding site prediction'
+ 
+Class: http://edamontology.org/operation_3901
+Label: RNA-binding protein prediction
++   'RNA-binding protein prediction' SubClassOf 'Protein-nucleic acid interaction analysis'
++   'RNA-binding protein prediction' SubClassOf 'has topic' some 'Protein interactions'
++   'RNA-binding protein prediction' SubClassOf 'has output' some 'Protein interaction data'
+ 
+Class: http://edamontology.org/operation_3900
+Label: DNA-binding protein prediction
++   'DNA-binding protein prediction' SubClassOf 'Protein-nucleic acid interaction analysis'
++   'DNA-binding protein prediction' SubClassOf 'has topic' some 'Protein interactions'
++   'DNA-binding protein prediction' SubClassOf 'has output' some 'Protein interaction data'
+ 
+Class: http://edamontology.org/operation_3907
+Label: Information extraction
++   'Information extraction' SubClassOf 'Text mining'
+ 
+Class: http://edamontology.org/operation_3904
+Label: Protein disorder prediction
++   'Protein disorder prediction' SubClassOf 'has topic' some 'Microbiology'
++   'Protein disorder prediction' SubClassOf 'Prediction and recognition'
++   'Protein disorder prediction' SubClassOf 'Protein feature detection'
+ 
+Class: http://edamontology.org/operation_3908
+Label: Information retrieval
++   'Information retrieval' SubClassOf 'Text mining'
+ 
+Class: http://edamontology.org/data_3869
+Label: Simulation
++   'Simulation' SubClassOf 'Data'
+ 
+Class: http://edamontology.org/data_3870
+Label: Trajectory data
++   'Trajectory data' SubClassOf 'Simulation'
+ 
+Class: http://edamontology.org/data_3871
+Label: Forcefield parameters
++   'Forcefield parameters' SubClassOf 'Simulation'
+ 
+Class: http://edamontology.org/data_3872
+Label: Topology data
++   'Topology data' SubClassOf 'Simulation'
+ 
+Class: http://edamontology.org/data_3905
+Label: Histogram
++   'Histogram' SubClassOf 'Plot'
+
+## Changed relations between concepts (1.22):
+
+Class: http://edamontology.org/operation_0331
+Label: Protein modelling (mutation)
+-   'Protein modelling (mutation)' SubClassOf 'Protein modelling'
++   'Protein modelling (mutation)' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_0389
+Label: Protein-nucleic acid binding site analysis
+-   'Protein-nucleic acid binding site analysis' SubClassOf 'Protein interaction analysis'
++   'Protein-nucleic acid binding site analysis' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_0397
+Label: Ramachandran plot validation
+-   'Ramachandran plot validation' SubClassOf 'Protein geometry validation'
+-   'Ramachandran plot validation' SubClassOf 'has input' some 'Ramachandran plot'
+-   'Ramachandran plot validation' SubClassOf 'has output' some 'Protein structural quality report'
++   'Ramachandran plot validation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0365
+Label: Nucleic acid restriction digest
+-   'Nucleic acid restriction digest' SubClassOf 'Sequence generation (nucleic acid)'
++   'Nucleic acid restriction digest' SubClassOf 'Sequence generation'
+ 
+Class: http://edamontology.org/operation_0366
+Label: Protein sequence cleavage
+-   'Protein sequence cleavage' SubClassOf 'Sequence generation (protein)'
++   'Protein sequence cleavage' SubClassOf 'Sequence generation'
+ 
+Class: http://edamontology.org/operation_0363
+Label: Nucleic acid sequence reverse and complement
+-   'Nucleic acid sequence reverse and complement' SubClassOf 'Sequence generation (nucleic acid)'
++   'Nucleic acid sequence reverse and complement' SubClassOf 'Sequence generation'
+ 
+Class: http://edamontology.org/data_2399
+Label: Gene transcriptional features report
+-   'Gene transcriptional features report' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2397
+Label: Gene features report (exon)
+-   'Gene features report (exon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2963
+Label: Codon usage bias plotting
+-   'Codon usage bias plotting' SubClassOf 'Sequence visualisation'
+-   'Codon usage bias plotting' SubClassOf 'has output' some 'Codon usage bias plot'
+-   'Codon usage bias plotting' SubClassOf 'Codon usage bias calculation'
++   'Codon usage bias plotting' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2949
+Label: Protein interaction analysis
+-   'Protein interaction analysis' SubClassOf 'Protein function analysis'
++   'Protein interaction analysis' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_0478
+Label: Molecular docking
+-   'Molecular docking' SubClassOf 'Protein interaction prediction'
++   'Molecular docking' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_1778
+Label: Protein function comparison
+-   'Protein function comparison' SubClassOf 'Protein function analysis'
++   'Protein function comparison' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_1777
+Label: Protein function prediction
+-   'Protein function prediction' SubClassOf 'Protein function analysis'
++   'Protein function prediction' SubClassOf 'Analysis'
+ 
+Class: http://edamontology.org/topic_2844
+Label: Structural clustering
+-   'Structural clustering' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
++   'Structural clustering' SubClassOf 'Clustering'
+ 
+Class: http://edamontology.org/topic_0176
+Label: Molecular dynamics
++   'Molecular dynamics' SubClassOf http://edamontology.org/topic_3892
+ 
+Class: http://edamontology.org/operation_0418
+Label: Protein signal peptide detection
+-   'Protein signal peptide detection' SubClassOf 'Protein subcellular localisation prediction'
++   'Protein signal peptide detection' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/operation_3185
+Label: Base-calling
+-   'Base-calling' SubClassOf 'Sequence generation (nucleic acid)'
++   'Base-calling' SubClassOf 'Sequence generation'
+ 
+Class: http://edamontology.org/operation_0252
+Label: Peptide immunogenicity prediction
+-   'Peptide immunogenicity prediction' SubClassOf 'Protein interaction prediction'
++   'Peptide immunogenicity prediction' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/format_1475
+Label: PDB database entry format
++   'PDB database entry format' SubClassOf 'is format of' some http://edamontology.org/data_3870
+ 
+Class: http://edamontology.org/operation_3280
+Label: Named-entity and concept recognition
+-   'Named-entity and concept recognition' SubClassOf 'Text mining'
++   'Named-entity and concept recognition' SubClassOf http://edamontology.org/operation_3907
+ 
+Class: http://edamontology.org/data_1456
+Label: Protein features report (membrane regions)
+-   'Protein features report (membrane regions)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/format_3590
+Label: hdf5
++   'hdf5' SubClassOf http://edamontology.org/format_3867
+ 
+Class: http://edamontology.org/operation_2513
+Label: Sequence generation (nucleic acid)
+-   'Sequence generation (nucleic acid)' SubClassOf 'Sequence generation'
++   'Sequence generation (nucleic acid)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2514
+Label: Sequence generation (protein)
+-   'Sequence generation (protein)' SubClassOf 'Sequence generation'
++   'Sequence generation (protein)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2575
+Label: Protein binding site prediction
+-   'Protein binding site prediction' SubClassOf 'Protein interaction prediction'
++   'Protein binding site prediction' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/data_3275
+Label: Phenotype name
+-   'Phenotype name' SubClassOf 'Identifier (by type of data)'
+ 
+Class: http://edamontology.org/data_0922
+Label: Nucleic acid features report (primers)
+-   'Nucleic acid features report (primers)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2754
+Label: Gene features report (intron)
+-   'Gene features report (intron)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2869
+Label: Nucleic acid features report (RFLP)
+-   'Nucleic acid features report (RFLP)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2867
+Label: Nucleic acid features report (VNTR)
+-   'Nucleic acid features report (VNTR)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2868
+Label: Nucleic acid features report (microsatellite)
+-   'Nucleic acid features report (microsatellite)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2885
+Label: Nucleic acid features report (polymorphism)
+-   'Nucleic acid features report (polymorphism)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_2533
+Label: Nucleic acid features report (mutation)
+-   'Nucleic acid features report (mutation)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3644
+Label: de Novo sequencing
+-   'de Novo sequencing' SubClassOf 'Sequence generation (protein)'
++   'de Novo sequencing' SubClassOf 'Sequence generation'
+ 
+Class: http://edamontology.org/data_3022
+Label: NCBI genetic code ID
+-   'NCBI genetic code ID' SubClassOf 'Identifier (by type of data)'
++   'NCBI genetic code ID' SubClassOf 'Genetic code identifier'
+ 
+Class: http://edamontology.org/operation_2414
+Label: Protein function analysis
+-   'Protein function analysis' SubClassOf 'Analysis'
+-   'Protein function analysis' SubClassOf 'has output' some 'Protein report'
+-   'Protein function analysis' SubClassOf 'has topic' some 'Proteins'
++   'Protein function analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2422
+Label: Data retrieval
++   'Data retrieval' SubClassOf http://edamontology.org/operation_3908
+ 
+Class: http://edamontology.org/format_3650
+Label: netCDF
++   'netCDF' SubClassOf http://edamontology.org/format_3867
++   'netCDF' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/operation_2499
+Label: Splicing model analysis
+-   'Splicing model analysis' SubClassOf 'Sequence analysis'
++   'Splicing model analysis' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/data_3118
+Label: Protein features report (topological domains)
+-   'Protein features report (topological domains)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2492
+Label: Protein interaction prediction
+-   'Protein interaction prediction' SubClassOf 'Protein function prediction'
+ 
+Class: http://edamontology.org/data_3125
+Label: Nucleic acid features report (binding)
+-   'Nucleic acid features report (binding)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3126
+Label: Nucleic acid repeats (report)
+-   'Nucleic acid repeats (report)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3127
+Label: Nucleic acid features report (replication and recombination)
+-   'Nucleic acid features report (replication and recombination)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2464
+Label: Protein-protein interaction prediction
+-   'Protein-protein interaction prediction' SubClassOf 'Protein interaction prediction'
++   'Protein-protein interaction prediction' SubClassOf 'Protein binding site prediction'
+ 
+Class: http://edamontology.org/data_3123
+Label: Nucleic acid features report (expression signal)
+-   'Nucleic acid features report (expression signal)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3139
+Label: Nucleic acid features report (STS)
+-   'Nucleic acid features report (STS)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_3135
+Label: Nucleic acid features report (signal or transit peptide)
+-   'Nucleic acid features report (signal or transit peptide)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1305
+Label: Nucleic acid features report (restriction sites)
+-   'Nucleic acid features report (restriction sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1304
+Label: Nucleic acid features report (CpG island and isochore)
+-   'Nucleic acid features report (CpG island and isochore)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1308
+Label: Nucleic acid features report (matrix/scaffold attachment sites)
+-   'Nucleic acid features report (matrix/scaffold attachment sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1307
+Label: Nucleic acid features report (splice sites)
+-   'Nucleic acid features report (splice sites)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1302
+Label: Nucleic acid features report (PolyA signal or site)
+-   'Nucleic acid features report (PolyA signal or site)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1312
+Label: Nucleic acid features report (promoters)
+-   'Nucleic acid features report (promoters)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_1311
+Label: Gene features report (operon)
+-   'Gene features report (operon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
 
 ## New concepts (1.21):
 
