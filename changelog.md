@@ -22,6 +22,8 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_123owl) for 
 # EDAM 1.22
 
 ### Summary of changes
+See the [changelog-detailed.md](changelog-detailed.md#edam_122owl) for a detailed list of semantic changes in the EDAM ontology.
+
 * Extension of Format subontology (24 concepts added)
 * Simplication of Data subontology (24 concepts deprecated)
 * Terms for machine learning and statistical methods added as narrow synonyms of *Machine learning*, *Statistics and probability* or *Mathematics* (following alignment of EDAM with the DSEO ontology)
