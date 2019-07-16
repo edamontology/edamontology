@@ -11,7 +11,7 @@ See the [changelog-detailed.md](changelog-detailed.md#edam_123owl) for a detaile
 * Various minor clean-ups and bug fixes.
 
 ### Changes in hierarchy
-*  5 concepts added  (3 Data, 2 Format)
+*  5 concepts added  (2 Data, 3 Format)
 *  6 concepts deprecated (6 Data)
 *  11 concepts have changed relations|hierarchy (10 Data, 1 Format)
 
