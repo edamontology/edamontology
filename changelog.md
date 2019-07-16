@@ -27,10 +27,10 @@ See the [changelog-detailed.md](changelog-detailed.md#edam_122owl) for a detaile
 * Extension of Format subontology (24 concepts added)
 * Simplication of Data subontology (24 concepts deprecated)
 * Terms for machine learning and statistical methods added as narrow synonyms of *Machine learning*, *Statistics and probability* or *Mathematics* (following alignment of EDAM with the DSEO ontology)
-* Various clean-ups and minor bug fixes	
+* Various clean-ups, and minor bug fixes
 
 ### Changes in hierarchy
-* 47 concepts added (5 Data, 24 Format, 15 Operation, 3 topic) 
+* 47 concepts added (5 Data, 24 Format, 15 Operation, 3 topic)
 * 55 concepts have changed relations|hierarchy (26 Data, 24 Operation, 3 Format, 2 Topic)
 * 30 conceps deprecated (24 Data, 5 Operation, 1 Topic)
 
