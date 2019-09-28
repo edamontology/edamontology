@@ -31594,7 +31594,7 @@
         <rdfs:comment>N-Triples should not be confused with Notation 3 which is a superset of Turtle.</rdfs:comment>
         <rdfs:label>N-Triples</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://edamontology.org/format_3257 -->
@@ -35727,7 +35727,22 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>The Matrix Market matrix (MTX) format stores numerical or pattern matrices in a dense (array format) or sparse (coordinate format) representation.</oboInOwl:hasDefinition>
         <rdfs:label>MTX</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- http://edamontology.org/format_3917 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3917">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
+        <created_in>1.23</created_in>
+        <oboInOwl:hasDefinition>N-Quads is a line-based, plain text format for encoding an RDF dataset. It includes information about the graph each triple belongs to.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment>N-Quads should not be confused with N-Triples which does not contain graph information.</rdfs:comment>
+        <rdfs:label>N-Quads</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
