@@ -31593,6 +31593,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>N-Triples should not be confused with Notation 3 which is a superset of Turtle.</rdfs:comment>
         <rdfs:label>N-Triples</rdfs:label>
+        <file_extension>nt</file_extension>
     </owl:Class>
 
 
@@ -31608,6 +31609,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Notation3</rdfs:label>
+        <file_extension>n3</file_extension>
     </owl:Class>
     
 
@@ -31624,6 +31626,7 @@
         <rdfs:comment>RDF/XML is a serialisation syntax for OWL DL, but not for OWL Full.</rdfs:comment>
         <rdfs:label>RDF/XML</rdfs:label>
         <rdfs:seeAlso>http://www.ebi.ac.uk/SWO/data/SWO_3000006</rdfs:seeAlso>
+        <file_extension>rdf</file_extension>
     </owl:Class>
     
 
@@ -35741,6 +35744,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>N-Quads should not be confused with N-Triples which does not contain graph information.</rdfs:comment>
         <rdfs:label>N-Quads</rdfs:label>
+        <documentation rdf:resource="https://www.w3.org/TR/n-quads/"/>
+        <file_extension>nq</file_extension>
     </owl:Class>
 
 
