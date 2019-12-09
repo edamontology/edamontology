@@ -36596,9 +36596,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict splicing alternatives or transcript isoforms from analysis of sequence data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Alternative splicing analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Alternative splicing detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Differential splicing analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Splice transcript prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Splice transcript prediction</rdfs:label>
+        <rdfs:label>Alternative splicing prediction</rdfs:label>
     </owl:Class>
     
 
@@ -36607,7 +36611,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/operation_0265">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3195"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3202"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3227"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -36924,8 +36928,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0282 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0282">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0283"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2520"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -37045,7 +37049,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Process (read and / or write) codon usage data, e.g. analyse codon usage tables or codon usage in molecular sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Analyse codon usage in molecular sequences or process codon usage data (e.g. a codon usage table).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Codon usage data analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Codon usage table analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -37190,6 +37194,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Sequence alignment (constrained)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>See also &quot;Read mapping&quot;</rdfs:comment>
         <rdfs:label>Sequence alignment</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_alignment"/>
     </owl:Class>
@@ -37631,7 +37636,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0310 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0310">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37913,6 +37917,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic reconstruction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Phylogenetic tree construction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -37934,8 +37939,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Phylogenetic modelling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</rdfs:comment>
         <rdfs:label>Phylogenetic tree analysis</rdfs:label>
     </owl:Class>
     
@@ -39463,6 +39470,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods typically involve scanning for known motifs, patterns and regular expressions.</rdfs:comment>
+        <rdfs:comment>This is placeholder but does not comprehensively include all child concepts - please inspect other concepts under &quot;Nucleic acid sequence analysis&quot; for example &quot;Gene prediction&quot;, for other feature detection operations.</rdfs:comment>
         <rdfs:label>Nucleic acid feature detection</rdfs:label>
     </owl:Class>
     
@@ -39811,9 +39819,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify or predict nucleosome exclusion sequences (nucleosome free regions) in DNA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Nucleosome exclusion sequence prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Nucleosome formation sequence prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Nucleosome formation or exclusion sequence prediction</rdfs:label>
+        <rdfs:label>Nucleosome position prediction</rdfs:label>
     </owl:Class>
     
 
@@ -39821,7 +39831,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0433 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0433">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2454"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2499"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -39830,6 +39840,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify, predict or analyse splice sites in nucleotide sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Splice prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might require a pre-mRNA or genomic DNA sequence.</rdfs:comment>
@@ -40128,7 +40139,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0451 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0451">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3920"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Detect recombination (hotspots and coldspots) and identify recombination breakpoints in a sequence alignment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequence alignment analysis (recombination detection)</oboInOwl:hasExactSynonym>
@@ -40143,7 +40154,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0452 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0452">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3202"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3227"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify insertion, deletion and duplication events from a sequence alignment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Indel discovery</oboInOwl:hasExactSynonym>
@@ -40647,10 +40658,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Predict or optimise RNA sequences (sequence pools) with likely secondary and tertiary structure for in vitro selection.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid folding family identification</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>RNA inverse folding</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structured RNA prediction and optimisation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Structured RNA prediction and optimisation</rdfs:label>
+        <rdfs:label>RNA inverse folding</rdfs:label>
     </owl:Class>
     
 
@@ -40658,7 +40669,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0484 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0484">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3202"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3227"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Find single nucleotide polymorphisms (SNPs) - single nucleotide change in base positions - between sequences. Typically done for sequences from a high-throughput sequencing experiment that differ from a reference genome and which might, especially by reference to population frequency or functional data, indicate a polymorphism.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>SNP calling</oboInOwl:hasExactSynonym>
@@ -40711,7 +40722,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0487">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0282"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0283"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -41786,8 +41796,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0550 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0550">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0286"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -41802,7 +41812,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Identify a plausible model of DNA substitution that explains a molecular (DNA or protein) sequence alignment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence alignment analysis (phylogenetic modelling)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Nucleotide substitution modelling</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>DNA substitution modelling</rdfs:label>
@@ -44157,7 +44167,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2454 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2454">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -44932,7 +44942,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2499">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2454"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -44940,11 +44950,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Analyse, characterize and model alternative splicing events, typically by comparing multiple nucleic acid sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Splicing analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>Predict, analyse, characterize or model splice sites, splicing events and so on, typically by comparing multiple nucleic acid sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Splicing model analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Splicing model analysis</rdfs:label>
+        <rdfs:label>Splicing analysis</rdfs:label>
     </owl:Class>
     
 
@@ -46208,6 +46218,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Nucleic acid design</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nucleic_acid_design"/>
     </owl:Class>
     
 
@@ -46229,7 +46240,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_3180">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2428"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3218"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
@@ -46332,9 +46343,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_3186">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2944"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3809"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
         <created_in>1.1</created_in>
-        <oboInOwl:hasDefinition>The mapping of methylation sites in a DNA (genome) sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The mapping of methylation sites in a DNA (genome) sequence.  Typically, the mapping of high-throughput bisulfite reads to the reference genome.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Bisulfite read mapping</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Bisulfite sequence alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Bisulfite sequence mapping</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -46348,7 +46360,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_3187 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3187">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3218"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Identify and filter a (typically large) sequence data set to remove sequences from contaminants in the sample that was sequenced.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -46503,8 +46515,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3198 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3198">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0292"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2944"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Align short oligonucleotide sequences (reads) to a larger (genomic) sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Oligonucleotide alignment</oboInOwl:hasExactSynonym>
@@ -46544,11 +46556,12 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Analyse DNA sequences in order to identify a DNA &apos;barcode&apos;; marker genes or any short fragment(s) of DNA that are useful to diagnose the taxa of biological organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Community profiling</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sample barcoding</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>DNA barcoding</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Community profiling</rdfs:label>
+        <rdfs:label>DNA barcoding</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_barcoding"/>
     </owl:Class>
     
 
@@ -46572,15 +46585,17 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3202 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3202">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3197"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.1</created_in>
+        <deprecation_comment>&quot;Polymorphism detection&quot; and &quot;Variant calling&quot; are essentially the same thing - keeping the later as a more prevalent term nowadays.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2478"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3197"/>
         <oboInOwl:hasDefinition>Detect mutations in multiple DNA sequences, for example, from the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Mutation detection</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>de novo mutation detection</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3227"/>
         <rdfs:label>Polymorphism detection</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -46604,9 +46619,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3204">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <created_in>1.1</created_in>
-        <oboInOwl:comment>&quot;Methylation calling&quot; refers to determination of cytosine methylation status of specific positions in a nucleic acid sequences.</oboInOwl:comment>
-        <oboInOwl:hasDefinition>Determine cytosine methylation states in nucleic acid sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Methylation calling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Analyse cytosine methylation states in nucleic acid sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Methylation analysis</rdfs:label>
@@ -46853,6 +46866,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3219">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3218"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Pre-process sequence reads to ensure (or improve) quality and reliability.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequence read pre-processing</oboInOwl:hasExactSynonym>
@@ -46963,15 +46977,18 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3227 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3227">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3202"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3197"/>
         <created_in>1.1</created_in>
-        <oboInOwl:hasDefinition>Identify and map genomic alterations, including single nucleotide polymorphisms, short indels and structural variants, in a genome sequence.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Detect, identify and map mutations, such as single nucleotide polymorphisms, short indels and structural variants, in multiple DNA sequences. Typically the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware, to study genomic alterations.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Variant mapping</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Allele calling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Exome variant detection</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Genome variant detection</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Germ line variant calling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mutation detection</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Somatic variant calling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>de novo mutation detection</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods often utilise a database of aligned reads.</rdfs:comment>
@@ -47014,7 +47031,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3230 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3230">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Analyse mapping density (read depth) of (typically) short reads from sequencing platforms, for example, to detect deletions and duplications.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -47049,7 +47066,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3233 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3233">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3920"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Estimate the number of copies of loci of particular gene(s) in DNA sequences typically from gene-expression profiling technology based on microarray hybridisation-based experiments. For example, estimate copy number (or marker dosage) of a dominant marker in samples from polyploid plant cells or tissues, or chromosomal gains and losses in tumors.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Transcript copy number estimation</oboInOwl:hasExactSynonym>
@@ -48803,9 +48820,9 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3677 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3677">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
         <created_in>1.12</created_in>
-        <oboInOwl:hasDefinition>Differential binding analysis identifies binding sites in nucleic acid sequences that are statistically significantly differentially bound between sample groups.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Identify binding sites in nucleic acid sequences that are statistically significantly differentially bound between sample groups.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Differential binding analysis</rdfs:label>
@@ -48816,8 +48833,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3680 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3680">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.13</created_in>
         <oboInOwl:hasDefinition>Analyze data from RNA-seq experiments.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -49176,7 +49193,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3793 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3793">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.17</created_in>
         <oboInOwl:hasDefinition>Counting and summarising the number of short sequence reads that map to genomic features.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -49217,7 +49234,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3798 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3798">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
         <created_in>1.17</created_in>
         <oboInOwl:hasBroadSynonym>Binning</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>An operation which groups reads or contigs and assigns them to operational taxonomic units.</oboInOwl:hasDefinition>
@@ -49313,9 +49330,10 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
         <created_in>1.19</created_in>
         <oboInOwl:hasDefinition>Identify and assess specific genes or regulatory regions of interest that are differentially methylated.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Differentially-methylated region identification</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Differentially-methylated region identification</rdfs:label>
+        <rdfs:label>DMR identification</rdfs:label>
     </owl:Class>
     
 
@@ -49649,7 +49667,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3918 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3918">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -49659,6 +49677,53 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
         <oboInOwl:hasDefinition>Detects chimeric sequences (chimeras) from a sequence alignment.</oboInOwl:hasDefinition>
         <rdfs:label>Genome analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3919 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3919">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The determination of cytosine methylation status of specific positions in a nucleic acid sequences (usually reads from a bisulfite sequencing experiment).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Methylation calling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3920 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3920">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The identification of changes in DNA sequence or chromosome structure, usually in the context of diagnostic tests for disease, or to study ancestry or phylogeny.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Genetic testing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>This can include indirect methods which reveal the results of genetic changes, such as RNA analysis to indicate gene expression, or biochemical analysis to identify expressed proteins.</rdfs:comment>
+        <rdfs:label>DNA testing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3921 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3921">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The processing of reads from high-throughput sequencing machines.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Sequence read processing</rdfs:label>
     </owl:Class>
     
 
