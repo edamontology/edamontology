@@ -22,7 +22,6 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id>3918</next_id>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -31,6 +30,7 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3919</next_id>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
@@ -38596,6 +38596,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0362">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Annotate a genome sequence with terms from a controlled vocabulary.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Metagenome annotation</oboInOwl:hasNarrowSynonym>
@@ -41370,6 +41371,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_0525">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0310"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such thay they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genomic assembly</oboInOwl:hasExactSynonym>
@@ -46263,6 +46265,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
 
     <owl:Class rdf:about="http://edamontology.org/operation_3182">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0292"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Align two or more (tpyically huge) molecular sequences that represent genomes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome alignment construction</oboInOwl:hasExactSynonym>
@@ -46434,6 +46437,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3194">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0256"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Compare the features of two genome sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -46630,8 +46634,10 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3206">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Measure the overall level of methyl cytosines in a genome from analysis of experimental data, typically from chromatographic methods and methyl accepting capacity assay.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Genome methylation analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Global methylation analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Methylation level analysis (global)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -46660,6 +46666,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3208">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0564"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Visualise, format or render a nucleic acid sequence that is part of (and in context of) a complete genome sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome browser</oboInOwl:hasExactSynonym>
@@ -46677,6 +46684,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3209">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2451"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Compare the sequence or features of two or more genomes, for example, to find matching regions.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genomic region matching</oboInOwl:hasExactSynonym>
@@ -46691,6 +46699,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3211">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0227"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -49633,6 +49642,23 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Information retrieval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3918 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3918">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0622"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Detects chimeric sequences (chimeras) from a sequence alignment.</oboInOwl:hasDefinition>
+        <rdfs:label>Genome analysis</rdfs:label>
     </owl:Class>
     
 
