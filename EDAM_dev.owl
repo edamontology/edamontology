@@ -14,6 +14,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
+        <doap:Version>1.23</doap:Version>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
@@ -21,7 +22,7 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <doap:Version>1.23</doap:Version>
+        <next_id>3918</next_id>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
@@ -30,7 +31,6 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
-        <next_id>3918</next_id>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
@@ -39503,7 +39503,9 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasExactSynonym>PTM analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PTM prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>PTM site analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>PTM site prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Post-translation modification site prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Post-translational modification analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Post-translational modification site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein post-translation modification site prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Acetylation prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Acetylation site prediction</oboInOwl:hasNarrowSynonym>
@@ -39552,7 +39554,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might predict sites of methylation, N-terminal myristoylation, N-terminal acetylation, sumoylation, palmitoylation, phosphorylation, sulfation, glycosylation, glycosylphosphatidylinositol (GPI) modification sites (GPI lipid anchor signals) etc.</rdfs:comment>
-        <rdfs:label>Post-translation modification site prediction</rdfs:label>
+        <rdfs:label>PTM site prediction</rdfs:label>
     </owl:Class>
     
 
@@ -51326,6 +51328,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>Protein chemical modifications, e.g. post-translational modifications.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>PTMs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein post-translational modification</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Protein_modifications</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Post-translation modifications</oboInOwl:hasNarrowSynonym>
