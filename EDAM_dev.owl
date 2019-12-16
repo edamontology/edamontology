@@ -14,15 +14,15 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <dc:contributor>Veit Schwämmle</dc:contributor>
+        <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
+        <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
-        <dc:creator>Hervé Ménager</dc:creator>
+        <dc:creator>HervÃ© MÃ©nager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
-        <dc:creator>Matúš Kalaš</dc:creator>
+        <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3923</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -40,7 +40,7 @@
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
-        <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
     </owl:Ontology>
     
 
@@ -24065,7 +24065,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
         <created_in>1.15</created_in>
         <oboInOwl:hasDefinition>The mean species diversity in sites or habitats at a local scale.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>α-diversity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Î±-diversity</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Alpha diversity data</rdfs:label>
@@ -24080,7 +24080,7 @@
         <created_in>1.15</created_in>
         <oboInOwl:hasDefinition>The ratio between regional and local species diversity.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>True beta diversity</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>β-diversity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Î²-diversity</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Beta diversity data</rdfs:label>
@@ -24094,7 +24094,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3707"/>
         <created_in>1.15</created_in>
         <oboInOwl:hasDefinition>The total species diversity in a landscape. </oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>γ-diversity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Î³-diversity</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Gamma diversity data</rdfs:label>
@@ -32647,7 +32647,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://www.fileformat.info/format/psd/egff.htm"/>
-        <oboInOwl:hasDefinition>PSD (Photoshop Document) is a proprietary file that allows the user to work with the images’ individual layers even after the file has been saved.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>PSD (Photoshop Document) is a proprietary file that allows the user to work with the imagesâ individual layers even after the file has been saved.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>psd</rdfs:label>
@@ -33711,7 +33711,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Image file format used by the Open Microscopy Environment (OME).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>An OME-TIFF dataset consists of one or more files in standard TIFF or BigTIFF format, with the file extension .ome.tif or .ome.tiff, and an identical (or in the case of multiple files, nearly identical) string of OME-XML metadata embedded in the ImageDescription tag of each file’s first IFD (Image File Directory). BigTIFF file extensions are also permitted, with the file extension .ome.tf2, .ome.tf8 or .ome.btf, but note these file extensions are an addition to the original specification, and software using an older version of the specification may not be able to handle these file extensions.</rdfs:comment>
+        <rdfs:comment>An OME-TIFF dataset consists of one or more files in standard TIFF or BigTIFF format, with the file extension .ome.tif or .ome.tiff, and an identical (or in the case of multiple files, nearly identical) string of OME-XML metadata embedded in the ImageDescription tag of each fileâs first IFD (Image File Directory). BigTIFF file extensions are also permitted, with the file extension .ome.tf2, .ome.tf8 or .ome.btf, but note these file extensions are an addition to the original specification, and software using an older version of the specification may not be able to handle these file extensions.</rdfs:comment>
         <rdfs:comment>OME develops open-source software and data format standards for the storage and manipulation of biological microscopy data. It is a joint project between universities, research establishments, industry and the software development community.</rdfs:comment>
         <rdfs:label>OME-TIFF</rdfs:label>
     </owl:Class>
@@ -34652,7 +34652,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>FASTG assembly graph format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>It is called FASTG, like FASTA, but the G stands for ‘graph’.</rdfs:comment>
+        <rdfs:comment>It is called FASTG, like FASTA, but the G stands for âgraphâ.</rdfs:comment>
         <rdfs:label>FASTG</rdfs:label>
     </owl:Class>
     
@@ -35562,10 +35562,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3824"/>
         <created_in>1.22</created_in>
-        <oboInOwl:hasDefinition>MReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features.  The NMR-extracted data (or “NMReDATA”) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>MReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features.  The NMR-extracted data (or âNMReDATAâ) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>NMReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or “NMReDATA”) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc. Find more in the paper at D. Jeannerat, Magn. Reson. in Chem., 2017, 55, 7-14.</rdfs:comment>
+        <rdfs:comment>NMReData is a text based data standard for processed NMR data. It is relying on SDF molecule data and allows to store assignments of NMR peaks to molecule features. The NMR-extracted data (or âNMReDATAâ) includes: Chemical shift,scalar coupling, 2D correlation, assignment, etc. Find more in the paper at D. Jeannerat, Magn. Reson. in Chem., 2017, 55, 7-14.</rdfs:comment>
         <rdfs:label>NMReDATA</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://nmredata.org/"/>
     </owl:Class>
@@ -45592,7 +45592,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasNarrowSynonym>Principal modes visualization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>The use of Principal Component Analysis (PCA), a multivariate statistical analysis to obtain collective variables on the atomic positional fluctuations, helps to separate the configurational space in two subspaces: an “essential” subspace containing relevant motions, and another one containing irrelevant local fluctuations.</rdfs:comment>
+        <rdfs:comment>The use of Principal Component Analysis (PCA), a multivariate statistical analysis to obtain collective variables on the atomic positional fluctuations, helps to separate the configurational space in two subspaces: an âessentialâ subspace containing relevant motions, and another one containing irrelevant local fluctuations.</rdfs:comment>
         <rdfs:label>Principal component visualisation</rdfs:label>
     </owl:Class>
     
@@ -48589,7 +48589,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0230"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3631"/>
         <created_in>1.12</created_in>
-        <oboInOwl:hasDefinition>Analytical process that derives a peptide’s amino acid sequence from its tandem mass spectrum (MS/MS) without the assistance of a sequence database.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Analytical process that derives a peptideâs amino acid sequence from its tandem mass spectrum (MS/MS) without the assistance of a sequence database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>de Novo sequencing</rdfs:label>
