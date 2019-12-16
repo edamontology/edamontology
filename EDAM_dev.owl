@@ -14,19 +14,19 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+        <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
-        <dc:creator>HervÃ© MÃ©nager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
+        <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3923</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
+        <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
+        <dc:creator>HervÃ© MÃ©nager</dc:creator>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -40,7 +40,7 @@
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
-        <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
+        <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
     
 
@@ -51421,6 +51421,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>Protein chemical modifications, e.g. post-translational modifications.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PTMs</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Post-translational modifications</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein post-translational modification</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Protein_modifications</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Post-translation modifications</oboInOwl:hasNarrowSynonym>
