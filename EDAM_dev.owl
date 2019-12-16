@@ -21,8 +21,8 @@
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
-        <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3924</next_id>
+        <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
@@ -51744,6 +51744,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>Exomes</rdfs:comment>
+        <rdfs:comment>Genomes</rdfs:comment>
         <rdfs:label>Genomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D023281</rdfs:seeAlso>
