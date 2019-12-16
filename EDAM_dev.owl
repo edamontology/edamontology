@@ -14,7 +14,6 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <doap:Version>1.23</doap:Version>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
@@ -25,15 +24,16 @@
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3923</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3922</next_id>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
+        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
@@ -57512,6 +57512,21 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Genetic engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3922 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3922">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A field of biological research focused on the discovery and identification of peptides, typically by comparing mass spectra against a protein database.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Proteogenomics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Proteogenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteogenomics"/>
     </owl:Class>
     
 
