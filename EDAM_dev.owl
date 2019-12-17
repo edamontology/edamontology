@@ -15,14 +15,14 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
+        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3924</next_id>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3925</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
@@ -1665,9 +1665,10 @@
         <created_in>beta12orEarlier</created_in>
         <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:hasDefinition>Alignment of the (1D representations of) secondary structure of two or more proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Secondary structure alignment (protein)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Secondary structure alignment (protein)</rdfs:label>
+        <rdfs:label>Protein secondary structure alignment</rdfs:label>
     </owl:Class>
     
 
@@ -1717,9 +1718,10 @@
         <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:hasDbXref>Moby:RNAStructAlignmentML</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Alignment of the (1D representations of) secondary structure of two or more RNA molecules.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Secondary structure alignment (RNA)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Secondary structure alignment (RNA)</rdfs:label>
+        <rdfs:label>RNA secondary structure alignment</rdfs:label>
     </owl:Class>
     
 
@@ -8382,12 +8384,12 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0863"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment of multiple nucleotide sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid sequence alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence alignment (nucleic acid)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>DNA sequence alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>RNA sequence alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Sequence alignment (nucleic acid)</rdfs:label>
+        <rdfs:label>Nucleic acid sequence alignment</rdfs:label>
     </owl:Class>
     
 
@@ -8399,10 +8401,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3154"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment of multiple protein sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein sequence alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence alignment (protein)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Sequence alignment (protein)</rdfs:label>
+        <rdfs:label>Protein sequence alignment</rdfs:label>
     </owl:Class>
     
 
@@ -8413,11 +8415,11 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0863"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment of multiple molecular sequences of different types.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Hybrid sequence alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence alignment (hybrid)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Hybrid sequence alignments include for example genomic DNA to EST, cDNA or mRNA.</rdfs:comment>
-        <rdfs:label>Sequence alignment (hybrid)</rdfs:label>
+        <rdfs:label>Hybrid sequence alignment</rdfs:label>
     </owl:Class>
     
 
@@ -9466,10 +9468,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3154"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment (superimposition) of protein tertiary (3D) structures.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein structure alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structure alignment (protein)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Structure alignment (protein)</rdfs:label>
+        <rdfs:label>Protein structure alignment</rdfs:label>
     </owl:Class>
     
 
@@ -9480,10 +9482,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0886"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment (superimposition) of nucleic acid tertiary (3D) structures.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid structure alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structure alignment (nucleic acid)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Structure alignment (nucleic acid)</rdfs:label>
+        <rdfs:label>Nucleic acid structure alignment</rdfs:label>
     </owl:Class>
     
 
@@ -9649,10 +9651,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1482"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment (superimposition) of RNA tertiary (3D) structures.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>RNA structure alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Structure alignment (RNA)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Structure alignment (RNA)</rdfs:label>
+        <rdfs:label>RNA structure alignment</rdfs:label>
     </owl:Class>
     
 
@@ -24475,6 +24477,20 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Count matrix</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3924 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3924">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1482"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Alignment (superimposition) of DNA tertiary (3D) structures.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Structure alignment (DNA)</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>DNA structure alignment</rdfs:label>
     </owl:Class>
     
 
