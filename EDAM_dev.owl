@@ -22,12 +22,12 @@
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3925</next_id>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
         <dc:creator>HervÃ© MÃ©nager</dc:creator>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3929</next_id>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
@@ -13476,6 +13476,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_1916">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <created_in>beta12orEarlier</created_in>
+        <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>An alignment of molecular sequences, structures or profiles derived from them.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36838,8 +36839,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0276 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0276">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -36854,6 +36855,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse a network of protein interactions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein interaction network comparison</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein interaction network analysis</rdfs:label>
@@ -36864,16 +36866,17 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0277 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0277">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
         <oboInOwl:hasDefinition>Compare two or more biological pathways or networks.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Gene regulatory network comparison</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Network comparison</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Pathway comparison</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein interaction network comparison</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network comparison</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -41548,7 +41551,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0533">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2429"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3928"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -42238,7 +42241,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oldParent rdf:resource="http://edamontology.org/operation_3083"/>
         <oboInOwl:hasDefinition>Identify and analyse networks of protein interactions.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3083"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3925"/>
         <rdfs:label>Protein interaction network visualisation</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
@@ -42459,7 +42462,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_1781 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_1781">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -42468,6 +42472,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse a known network of gene regulation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Gene regulatory network comparison</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Gene regulatory network analysis</rdfs:label>
@@ -43953,15 +43958,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2437 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2437">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
         <created_in>beta12orEarlier</created_in>
-        <obsolete_since>1.19</obsolete_since>
-        <oldParent rdf:resource="http://edamontology.org/operation_3439"/>
         <oboInOwl:hasDefinition>Predict a network of gene regulation.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3439"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Gene regulatory network prediction</rdfs:label>
-        <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
 
@@ -43972,9 +43976,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.12</obsolete_since>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
         <oboInOwl:hasDefinition>Generate, analyse or handle a biological pathway or network.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2497"/>
         <rdfs:label>Pathway or network processing</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
@@ -44939,20 +44944,16 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_2497 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_2497">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0602"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
         <oboInOwl:hasDefinition>Generate, process or analyse a biological pathway or network.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Network analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Pathway analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network analysis</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -46081,24 +46082,17 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_3083 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3083">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0337"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
+        <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3925"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3926"/>
         <oboInOwl:hasDefinition>Render (visualise) a biological pathway or network.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Pathway or network rendering</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>Network visualisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Pathway visualisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein interaction network rendering</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein interaction network visualisation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network visualisation</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -46229,15 +46223,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_3094 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3094">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2949"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
         <created_in>beta13</created_in>
-        <obsolete_since>1.19</obsolete_since>
-        <oldParent rdf:resource="http://edamontology.org/operation_3439"/>
         <oboInOwl:hasDefinition>Predict a network of protein interactions.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_3439"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein interaction network prediction</rdfs:label>
-        <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
 
@@ -47630,17 +47622,18 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3439 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3439">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.6</created_in>
+        <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_2437"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3094"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3929"/>
         <oboInOwl:hasDefinition>Predict a molecular pathway or network.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Network prediction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Pathway prediction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene regulatory network prediction</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein interaction network prediction</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network prediction</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -49124,7 +49117,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3766 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3766">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2497"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -49786,6 +49779,110 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:comment>Amplicon sequencing is the ultra-deep sequencing of PCR products (amplicons), usually for the purpose of efficient genetic variant identification and characterisation in specific genomic regions.</rdfs:comment>
         <rdfs:comment>Ultra-deep sequencing</rdfs:comment>
         <rdfs:label>Genome resequencing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3925 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3925">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0337"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3927"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Render (visualise) a network - typically a biological network of some sort.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Network rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein interaction network rendering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein interaction network visualisation</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Network visualisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3926 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3926">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0337"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3928"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Render (visualise) a biological pathway.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Pathway rendering</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Pathway visualisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3927 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3927">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0602"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Generate, process or analyse a biological network.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biological network analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Biological network prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Network comparison</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Network prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Network analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Network_theory#Biological_network_analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3928 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3928">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0602"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Generate, process or analyse a biological pathway.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biological pathway analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Biological pathway prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pathway comparison</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pathway prediction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Pathway analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pathway_analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3929 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3929">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3928"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Predict a metabolic pathway.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Metabolic pathway prediction</rdfs:label>
     </owl:Class>
     
 
