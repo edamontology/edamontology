@@ -2355,10 +2355,11 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3108"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Radiation hybrid scores (RH) scores for one or more markers.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Radiation Hybrid (RH) scores</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Radiation Hybrid (RH) scores are used in Radiation Hybrid mapping.</rdfs:comment>
-        <rdfs:label>Radiation Hybrid (RH) scores</rdfs:label>
+        <rdfs:label>RH scores</rdfs:label>
     </owl:Class>
     
 
@@ -2488,10 +2489,11 @@
     <owl:Class rdf:about="http://edamontology.org/data_0937">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2537"/>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasBroadSynonym>Protein X-ray crystallographic data</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>X-ray crystallography data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Protein X-ray crystallographic data</rdfs:label>
+        <rdfs:label>Electron density map</rdfs:label>
     </owl:Class>
     
 
@@ -2501,10 +2503,11 @@
     <owl:Class rdf:about="http://edamontology.org/data_0938">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2537"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Protein nuclear magnetic resonance (NMR) raw data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Nuclear magnetic resonance (NMR) raw data, typically for a protein.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein NMR data</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Protein NMR data</rdfs:label>
+        <rdfs:label>Raw NMR data</rdfs:label>
     </owl:Class>
     
 
@@ -2515,9 +2518,11 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2537"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Protein secondary structure from protein coordinate or circular dichroism (CD) spectroscopic data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>CD spectrum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein circular dichroism (CD) spectroscopic data</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Protein circular dichroism (CD) spectroscopic data</rdfs:label>
+        <rdfs:label>CD spectra</rdfs:label>
     </owl:Class>
     
 
@@ -2534,10 +2539,12 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Volume map data from electron microscopy.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>3D volume map</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>EM volume map</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Electron microscopy volume map</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Electron microscopy volume map</rdfs:label>
+        <rdfs:label>Volume map</rdfs:label>
     </owl:Class>
     
 
@@ -2589,9 +2596,10 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Spectra from mass spectrometry.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Mass spectrometry spectra</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <rdfs:label>Mass spectrometry spectra</rdfs:label>
+        <rdfs:label>Mass spectrum</rdfs:label>
     </owl:Class>
     
 
