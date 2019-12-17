@@ -47073,12 +47073,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3232">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2984"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Combine classical quantitative trait loci (QTL) analysis with gene expression profiling, for example, to describe describe cis- and trans-controlling elements for the expression of phenotype associated genes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene expression QTL profiling</oboInOwl:hasExactSynonym>
