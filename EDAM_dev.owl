@@ -37,7 +37,7 @@
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3931</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3932</next_id>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
@@ -49901,6 +49901,22 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Metabolic pathway prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3931 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3931">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2258"/>
+        <created_in>1.24</created_in>
+
+        <oboInOwl:hasDefinition>Interdisciplinary science focused on extracting information from chemical systems by data analytical approaches, for example multivariate statistics, applied mathematics, and computer science.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Chemometrics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Chemometrics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemometrics"/>
     </owl:Class>
     
 
