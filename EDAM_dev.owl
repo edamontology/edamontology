@@ -38,7 +38,7 @@
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3934</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3935</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
@@ -57781,6 +57781,24 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:comment>This involves the study of often complex genetic traits underlying diseases involving defects in the immune system. For example, identifying target genes for therapeutic approaches, or genetic variations involved in immunological pathology.</rdfs:comment>
         <rdfs:label>Immunogenetics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunogenetics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3934 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3934">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Cytometry is the measurement of the characteristics of cells.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Cytometry</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Flow cytometry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Image cytometry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Mass cytometry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Cytometry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cytometry"/>
     </owl:Class>
     
 
