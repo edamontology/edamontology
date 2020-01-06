@@ -37,8 +37,8 @@
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3932</next_id>
         <dc:creator>Jon Ison</dc:creator>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3933</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
@@ -24508,6 +24508,25 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>DNA structure alignment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3932 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3932">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0951"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A score derived from the P-value to ensure correction for multiple tests. The Q-value provides an estimate of the positive False Discovery Rate (pFDR), i.e. the rate of false positives among all the cases reported positive: pFDR = FP / (FP + TP).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Adjusted P-value</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FDR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Padj</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pFDR</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:comment>Q-values are widely used in high-throughput data analysis (e.g. detection of differentially expressed genes from transcriptome data).</rdfs:comment>
+        <rdfs:label>Q-value</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Q-value_(statistics) "/>
     </owl:Class>
     
 
@@ -49910,7 +49929,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/operation_3931">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2258"/>
         <created_in>1.24</created_in>
-
         <oboInOwl:hasDefinition>Interdisciplinary science focused on extracting information from chemical systems by data analytical approaches, for example multivariate statistics, applied mathematics, and computer science.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Chemometrics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
