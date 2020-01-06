@@ -27,7 +27,6 @@
         <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
         <dc:creator>HervÃ© MÃ©nager</dc:creator>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3929</next_id>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
@@ -38,6 +37,7 @@
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3931</next_id>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
@@ -48732,8 +48732,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>Model a metabolic network.  This can include 1) reconstruction to break down a metabolic pathways into reactions, enzymes, and other relevant information, and compilation of this into a mathematical model and 2) simulations of metabolism based on the model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="Metabolic pathway modelling"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="Metabolic pathway reconstruction"/>
+        <oboInOwl:hasExactSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20modelling"/>
+        <oboInOwl:hasNarrowSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20reconstruction"/>
         <oboInOwl:hasNarrowSynonym>Metabolic network reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic network simulation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic pathway simulation</oboInOwl:hasNarrowSynonym>
@@ -53609,10 +53609,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0623"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0804"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Immunity-related genes, proteins and their ligands.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Immunoproteins_genes_and_antigens</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasDefinition>Immunity-related proteins and their ligands.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Immunoproteins_and_antigens</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Antigens</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Immunogenes</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Immunopeptides</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Immunoproteins</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Therapeutic antibodies</oboInOwl:hasNarrowSynonym>
@@ -53620,7 +53619,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes T cell receptors (TR), major histocompatibility complex (MHC), immunoglobulin superfamily (IgSF) / antibodies, major histocompatibility complex superfamily (MhcSF), etc.&quot;</rdfs:comment>
-        <rdfs:label>Immunoproteins, genes and antigens</rdfs:label>
+        <rdfs:label>Immunoproteins and antigens</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antigen"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunoproteins"/>
     </owl:Class>
@@ -57713,6 +57712,27 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Proteogenomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteogenomics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3930 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3930">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0804"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
+        <created_in>1.24</created_in>
+        <oboInOwl:hasDefinition>A biomedical field that bridges immunology and genetics, to study the genetic basis of the immune system.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Immune system genetics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Immungenetics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Immunology and genetics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Immunogenetics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Immunogenes</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This involves the study of often complex genetic traits underlying diseases involving defects in the immune system. For example, identifying target genes for therapeutic approaches, or genetic variations involved in immunological pathology.</rdfs:comment>
+        <rdfs:label>Immunogenetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunogenetics"/>
     </owl:Class>
     
 
