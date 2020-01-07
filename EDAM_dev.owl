@@ -32,8 +32,8 @@
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3940</next_id>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3941</next_id>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
@@ -57951,6 +57951,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cytometry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cytometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3940 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3940">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Molecular biology methods used to analyze the spatial organization of chromatin in a cell.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>3C technologies</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>3C-based methods</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chromosome conformation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Chromosome conformation capture</oboInOwl:hasExactSynonym>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chromosome_conformation_capture"/>
     </owl:Class>
     
 
