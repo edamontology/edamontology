@@ -32,7 +32,7 @@
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3939</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3940</next_id>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -50072,6 +50072,20 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Virtual screening is widely used for lead identification, lead optimization, and scaffold hopping during drug design and discovery. There are two broad categories of virtual screening techniques: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
         <rdfs:label>Virtual screening</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3939 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3939">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Biotechnology approach that seeks to optimize cellular genetic and regulatory processes in order to increase the cells&apos; production of a certain substance.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Metabolic engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolic_engineering"/>
     </owl:Class>
     
 
