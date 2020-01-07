@@ -35,7 +35,7 @@
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3943</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3944</next_id>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
@@ -58006,6 +58006,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:comment>Metatranscriptomics methods can be used for whole gene expression profiling of complex microbial communities.</rdfs:comment>
         <rdfs:label>Metatranscriptomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metatranscriptomics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3943 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3943">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The reconstruction and analysis of genomic information in extinct species.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Paleogenomics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Ancestral genomes</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Paleogenetics</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Paleogenomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Paleogenomics"/>
     </owl:Class>
     
 
