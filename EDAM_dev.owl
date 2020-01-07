@@ -32,6 +32,7 @@
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3939</next_id>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
@@ -39,7 +40,6 @@
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3938</next_id>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
     
@@ -40695,14 +40695,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasDefinition>Model protein-ligand (for example protein-peptide) binding using comparative modelling or other techniques.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Ligand-binding simulation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein-peptide docking</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Structure-based screening</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Structured-based virtual screening</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Virtual ligand screening</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Virtual screening</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods aim to predict the position and orientation of a ligand bound to a protein receptor or enzyme.</rdfs:comment>
+        <rdfs:comment>Virtual screening is used in drug discovery to search libraries of small molecules in order to identify those molecules which are most likely to bind to a drug target (typically a protein receptor or enzyme).</rdfs:comment>
         <rdfs:label>Protein-ligand docking</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Virtual_screening"/>
     </owl:Class>
     
 
@@ -50041,6 +50039,39 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Feature extraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3938 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3938">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0482"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1461"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Virtual screening is used in drug discovery to search libraries of small molecules in order to identify those molecules which are most likely to bind to a drug target (typically a protein receptor or enzyme).</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Ligand-based screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Ligand-based virtual screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure-based drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure-based screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structured-based virtual screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Virtual ligand screening</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Virtual screening is widely used for lead identification, lead optimization, and scaffold hopping during drug design and discovery. There are two broad categories of virtual screening techniques: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
+        <rdfs:label>Virtual screening</rdfs:label>
     </owl:Class>
     
 
