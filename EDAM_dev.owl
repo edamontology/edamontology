@@ -38,8 +38,8 @@
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3935</next_id>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3938</next_id>
         <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
     
@@ -49950,6 +49950,88 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>NGS sequence runs are often performed with multiple samples pooled together.  In such cases, an index tag (or &quot;barcode&quot;) - a unique sequence of between 6 and 12bp - is ligated to each sample&apos;s genetic material so that the sequence reads from different samples can be identified. The process of demultiplexing (dividing sequence reads into separate files for each index tag/sample) may be performed automatically by the sequencing hardware. Alternatively the reads may be lumped together in one file with barcodes still attached, requiring you to do the splitting using software. In such cases, a &quot;mapping” file is used which indicates which barcodes correspond to which samples.</rdfs:comment>
         <rdfs:label>Demultiplexing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3935 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3935">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3438"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A process used in statistics, machine learning, and information theory that reduces the number of random variables by obtaining a set of principal variables.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Dimension reduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Dimensionality reduction</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Dimensionality_reduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3936 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3936">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A dimensionality reduction process that selects a subset of relevant features (variables, predictors) for use in model construction.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Attribute selection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Variable selection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Variable subset selection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Feature selection</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Feature_selection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3937 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3937">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3935"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0943"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A dimensionality reduction process which builds (ideally) informative and non-redundant values (features) from an initial set of measured data, to aid subsequent generalization, learning or interpretation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Feature projection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Feature extraction</rdfs:label>
     </owl:Class>
     
 
