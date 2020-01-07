@@ -35,8 +35,8 @@
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3944</next_id>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3945</next_id>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -58021,6 +58021,22 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Paleogenetics</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Paleogenomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Paleogenomics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3944 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3944">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0084"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The biological classification of organisms by categorizing them in groups (&quot;clades&quot;) based on their most recent common ancestor.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Tree of life</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Cladistics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cladistics"/>
     </owl:Class>
     
 
