@@ -33,9 +33,9 @@
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
         <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3942</next_id>
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3943</next_id>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
@@ -50098,6 +50098,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Metabolic engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolic_engineering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3942 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3942">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0324"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The application of phylogenetic and other methods to estimate paleogeographical events such as speciation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Biogeographic dating</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Speciation dating</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Species tree dating</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Tree-dating</oboInOwl:hasExactSynonym>
+        <rdfs:label>Tree dating</rdfs:label>
     </owl:Class>
     
 
