@@ -36,7 +36,7 @@
         <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3945</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3946</next_id>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
@@ -50112,6 +50112,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>Speciation dating</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Species tree dating</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tree-dating</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Tree dating</rdfs:label>
     </owl:Class>
     
@@ -55061,6 +55063,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.16 Evolutionary biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The evolutionary processes, from the genetic to environmental scale, that produced life in all its diversity.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Evolution</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Evolutionary_biology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -58037,6 +58040,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cladistics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cladistics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3945 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3945">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0625"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>The study of the process and mechanism of change of biomolecules such as DNA, RNA, and proteins across generations.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Molecular evolution</rdfs:label>
     </owl:Class>
     
 
