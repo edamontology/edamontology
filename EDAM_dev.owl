@@ -15,9 +15,9 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3948</next_id>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3950</next_id>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
@@ -8164,7 +8164,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1364">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0950"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1354"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>A statistical Markov model of a system which is assumed to be a Markov process with unobserved (hidden) states.  For example, a hidden Markov model representation of a set or alignment of sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>HMM</oboInOwl:hasExactSynonym>
@@ -24531,6 +24530,21 @@
         <rdfs:comment>Q-values are widely used in high-throughput data analysis (e.g. detection of differentially expressed genes from transcriptome data).</rdfs:comment>
         <rdfs:label>Q-value</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Q-value_(statistics)%20"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3949 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3949">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1354"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1364"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A profile HMM is a variant of a Hidden Markov model that is derived specifically from a set of (aligned) biological sequences. Profile HMMs provide the basis for a position-specific scoring system, which can be used to align sequences and search databases for related sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Profile HMM</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/HMMER#Profile_HMMs"/>
     </owl:Class>
     
 
@@ -53013,8 +53027,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 3.1.3 Immunology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The application of information technology to immunology such as immunological processes, immunological genes, proteins and peptide ligands, antigens and so on.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Immunology</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Computational immunology</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Immunoinformatics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -58064,6 +58076,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>3C technologies</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>3C-based methods</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chromosome conformation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Chromosome_conformation_capture</oboInOwl:hasHumanReadableId>
         <rdfs:label>Chromosome conformation capture</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chromosome_conformation_capture"/>
     </owl:Class>
@@ -58077,6 +58090,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
         <oboInOwl:hasDefinition>The study of microbe gene expression within natural environments (i.e. the metatranscriptome).</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Metatranscriptomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>Metatranscriptomics methods can be used for whole gene expression profiling of complex microbial communities.</rdfs:comment>
@@ -58108,6 +58122,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0084"/>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
         <oboInOwl:hasDefinition>The biological classification of organisms by categorizing them in groups (&quot;clades&quot;) based on their most recent common ancestor.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Cladistics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Tree of life</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -58125,10 +58140,27 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
         <oboInOwl:hasDefinition>The study of the process and mechanism of change of biomolecules such as DNA, RNA, and proteins across generations.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Molecular_evolution</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular evolution</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_evolution"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3948 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3948">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0804"/>
+        <created_in>1.24</created_in>
+        <oboInOwl:hasDefinition>Immunoinformatics is the field of computational biology that deals with the study of immunoloogical questions. Immunoinformatics is at the interface between immunology and computer science. It takes advantage of computational, statistical, mathematical approaches and enhances the understanding of immunological knowledge.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Computational immunology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Immunoinformatics</oboInOwl:hasHumanReadableId>
+        <rdfs:comment>This involves the study of often complex genetic traits underlying diseases involving defects in the immune system. For example, identifying target genes for therapeutic approaches, or genetic variations involved in immunological pathology.</rdfs:comment>
+        <rdfs:label>Immunoinformatics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_immunology"/>
     </owl:Class>
     
 
