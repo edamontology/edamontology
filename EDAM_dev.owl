@@ -15,7 +15,7 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
         <oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3947</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3948</next_id>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
@@ -37974,11 +37974,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Phylogenetic reconstruction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Phylogenetic trees are usually constructed from a set of sequences from which an alignment (or data matrix) is calculated.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction</rdfs:label>
     </owl:Class>
     
 
@@ -37995,11 +37995,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse an existing phylogenetic tree or trees, typically to detect features or make predictions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Phylogenetic modelling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Phylgenetic modelling is the modelling of trait evolution and prediction of trait values using phylogeny as a basis.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree analysis</rdfs:label>
+        <rdfs:label>Phylogenetic analysis</rdfs:label>
     </owl:Class>
     
 
@@ -38048,7 +38049,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0327 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0327">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0540"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
@@ -38056,11 +38057,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Infer a phylogenetic tree by comparing orthologous sequences in different species, particularly many closely related species (phylogenetic shadowing).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Comparison of a DNA sequence to orthologous sequences in different species and inference of a phylogenetic tree, in order to identify regulatory elements such as transcription factor binding sites (TFBS).</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Phylogenetic shadowing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>A phylogenetic &apos;shadow&apos; represents the additive differences between individual sequences. By masking or &apos;shadowing&apos; variable positions a conserved sequence is produced with few or none of the variations, which is then compared to the sequences of interest to identify significant regions of conservation.</rdfs:comment>
-        <rdfs:label>Phylogenetic footprinting / shadowing</rdfs:label>
+        <rdfs:comment>Phylogenetic shadowing is a type of footprinting where many closely related species are used.  A phylogenetic &apos;shadow&apos; represents the additive differences between individual sequences. By masking or &apos;shadowing&apos; variable positions a conserved sequence is produced with few or none of the variations, which is then compared to the sequences of interest to identify significant regions of conservation.</rdfs:comment>
+        <rdfs:label>Phylogenetic footprinting</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Phylogenetic_footprinting"/>
     </owl:Class>
     
 
@@ -41661,11 +41664,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0538">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
         <created_in>beta12orEarlier</created_in>
+        <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree from a specific type of data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (data centric)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (data centric)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (data centric)</rdfs:label>
+        <rdfs:comment>Subconcepts of this concept reflect different types of data used to generate a tree, and provide an alternate axis for curation.</rdfs:comment>
+        <rdfs:label>Phylogenetic tree construction (data centric)</rdfs:label>
     </owl:Class>
     
 
@@ -41675,11 +41680,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_0539">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
         <created_in>beta12orEarlier</created_in>
+        <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree using a specific method.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (method centric)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (method centric)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (method centric)</rdfs:label>
+        <rdfs:comment>Subconcepts of this concept reflect different computational methods used to generate a tree, and provide an alternate axis for curation.</rdfs:comment>
+        <rdfs:label>Phylogenetic tree construction (method centric)</rdfs:label>
     </owl:Class>
     
 
@@ -41691,11 +41698,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2403"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Phylogenetic tree construction from molecular sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (from molecular sequences)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (from molecular sequences)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods typically compare multiple molecular sequence and estimate evolutionary distances and relationships to infer gene families or make functional predictions.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation (from molecular sequences)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (from molecular sequences)</rdfs:label>
     </owl:Class>
     
 
@@ -41712,10 +41719,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Phylogenetic tree construction from continuous quantitative character data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (from continuous quantitative characters)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (from continuous quantitative characters)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (from continuous quantitative characters)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (from continuous quantitative characters)</rdfs:label>
     </owl:Class>
     
 
@@ -41738,10 +41745,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Phylogenetic tree construction from gene frequency data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (from gene frequencies)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (from gene frequencies)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (from gene frequencies)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (from gene frequencies)</rdfs:label>
     </owl:Class>
     
 
@@ -41758,10 +41765,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Phylogenetic tree construction from polymorphism data including microsatellites, RFLP (restriction fragment length polymorphisms), RAPD (random-amplified polymorphic DNA) and AFLP (amplified fragment length polymorphisms) data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (from polymorphism data)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (from polymorphism data)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (from polymorphism data)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (from polymorphism data)</rdfs:label>
     </owl:Class>
     
 
@@ -41769,13 +41776,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0544 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0544">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0540"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic species tree, for example, from a genome-wide sequence comparison.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic species tree construction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Phylogenetic species tree generation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic species tree construction</rdfs:label>
+        <rdfs:label>Species tree construction</rdfs:label>
     </owl:Class>
     
 
@@ -41786,11 +41794,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree by computing a sequence alignment and searching for the tree with the fewest number of character-state changes from the alignment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (parsimony methods)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (parsimony methods)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes evolutionary parsimony (invariants) methods.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation (parsimony methods)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (parsimony methods)</rdfs:label>
     </owl:Class>
     
 
@@ -41801,11 +41809,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree by computing (or using precomputed) distances between sequences and searching for the tree with minimal discrepancies between pairwise distances.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (minimum distance methods)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (minimum distance methods)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes neighbor joining (NJ) clustering method.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation (minimum distance methods)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (minimum distance methods)</rdfs:label>
     </owl:Class>
     
 
@@ -41816,11 +41824,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree by relating sequence data to a hypothetical tree topology using a model of sequence evolution.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (maximum likelihood and Bayesian methods)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (maximum likelihood and Bayesian methods)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Maximum likelihood methods search for a tree that maximizes a likelihood function, i.e. that is most likely given the data and model. Bayesian analysis estimate the probability of tree for branch lengths and topology, typically using a Monte Carlo algorithm.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation (maximum likelihood and Bayesian methods)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (maximum likelihood and Bayesian methods)</rdfs:label>
     </owl:Class>
     
 
@@ -41831,10 +41839,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree by computing four-taxon trees (4-trees) and searching for the phylogeny that matches most closely.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (quartet methods)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (quartet methods)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (quartet methods)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (quartet methods)</rdfs:label>
     </owl:Class>
     
 
@@ -41845,10 +41853,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0539"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree by using artificial-intelligence methods, for example genetic algorithms.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree construction (AI methods)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (AI methods)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree generation (AI methods)</rdfs:label>
+        <rdfs:label>Phylogenetic tree construction (AI methods)</rdfs:label>
     </owl:Class>
     
 
@@ -41886,10 +41894,10 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0324"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse the shape (topology) of a phylogenetic tree.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogenetic tree topology analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree analysis (shape)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree analysis (shape)</rdfs:label>
+        <rdfs:label>Phylogenetic tree topology analysis</rdfs:label>
     </owl:Class>
     
 
@@ -41911,7 +41919,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0553 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0553">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0324"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0323"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -41925,10 +41933,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict families of genes and gene function based on their position in a phylogenetic tree.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Construct a &quot;gene tree&quot; which represents the evolutionary history of the genes included in the study.  This can be used to predict families of genes and gene function based on their position in a phylogenetic tree.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree analysis (gene family prediction)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic tree analysis (gene family prediction)</rdfs:label>
+        <rdfs:comment>Gene trees can provide evidence for gene duplication events, as well as speciation events. Where sequences from different homologs are included in a gene tree, subsequent clustering of the orthologs can demonstrate evolutionary history of the orthologs.</rdfs:comment>
+        <rdfs:label>Gene tree construction</rdfs:label>
     </owl:Class>
     
 
@@ -41939,10 +41949,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0324"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Analyse a phylogenetic tree to identify allele frequency distribution and change that is subject to evolutionary pressures (natural selection, genetic drift, mutation and gene flow). Identify type of natural selection (such as stabilizing, balancing or disruptive).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree analysis (natural selection)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Stabilizing/purifying (directional) selection favors a single phenotype and tends to decrease genetic diversity as a population stabilizes on a particular trait, selecting out trait extremes or deleterious mutations. In contrast, balancing selection maintain genetic polymorphisms (or multiple alleles), whereas disruptive (or diversifying) selection favors individuals at both extremes of a trait.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree analysis (natural selection)</rdfs:label>
+        <rdfs:label>Allele frequency distribution analysis</rdfs:label>
     </owl:Class>
     
 
@@ -41955,10 +41966,11 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Compare two or more phylogenetic trees to produce a consensus tree.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Phylogenetic tree construction (consensus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree generation (consensus)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods typically test for topological similarity between trees using for example a congruence index.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree generation (consensus)</rdfs:label>
+        <rdfs:label>Consensus tree construction</rdfs:label>
     </owl:Class>
     
 
@@ -41969,9 +41981,12 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0325"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Compare two or more phylogenetic trees to detect subtrees or supertrees.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic sub/super tree detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Subtree construction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Supertree construction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Phylogenetic sub/super tree detection</rdfs:label>
+        <rdfs:label>Phylogenetic sub/super tree construction</rdfs:label>
     </owl:Class>
     
 
@@ -48046,10 +48061,13 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Reconstructing the inner node labels of a phylogenetic tree from its leafes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Phylogenetic tree reconstruction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Gene tree reconstruction</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Species tree reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Note that this is somewhat different from simply analysing an existing tree or constructing a completely new one.</rdfs:comment>
-        <rdfs:label>Phylogenetic tree reconstruction</rdfs:label>
+        <rdfs:label>Phylogenetic reconstruction</rdfs:label>
     </owl:Class>
     
 
@@ -50141,6 +50159,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Ecological modelling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3947 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3947">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0325"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>Mapping between gene tree nodes and species tree nodes or branches, to analyse and account for possible differences between gene histories and species histories, explaining this in terms of gene-scale events such as duplication, loss, transfer etc.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Gene tree / species tree reconciliation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Methods typically test for topological similarity between trees using for example a congruence index.</rdfs:comment>
+        <rdfs:label>Phylogenetic tree reconciliation</rdfs:label>
     </owl:Class>
     
 
