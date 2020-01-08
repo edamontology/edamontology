@@ -18,7 +18,7 @@
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3952</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3953</next_id>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
@@ -24545,6 +24545,25 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Profile HMM</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/HMMER#Profile_HMMs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3952 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3952">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2109"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2365"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <documentation rdf:resource="https://www.wikipathways.org"/>
+        <regex>WP[0-9]+</regex>
+        <oboInOwl:hasDefinition>Identifier of a pathway from the WikiPathways pathway database.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>WikiPathways ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>WikiPathways pathway ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>Pathway ID (WikiPathways)</rdfs:label>
     </owl:Class>
     
 
