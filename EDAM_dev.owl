@@ -23056,12 +23056,17 @@
     <!-- http://edamontology.org/data_3154 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_3154">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1916"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/operation_2928"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_0878"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_1384"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_1481"/>
         <oboInOwl:hasDefinition>An alignment of protein sequences and/or structures.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Protein alignment</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
