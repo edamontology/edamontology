@@ -18,7 +18,7 @@
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3953</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3954</next_id>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
@@ -24564,6 +24564,30 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <rdfs:label>Pathway ID (WikiPathways)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_3953 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_3953">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3753"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1775"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <oboInOwl:hasDefinition>A ranked list of pathways, each associated with z-score, p-value or similar, concerning or derived from the analysis of e.g. a set of genes or proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Pathway analysis results</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pathway enrichment report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pathway over-representation report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pathway report</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pathway term enrichment report</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <rdfs:label>Pathway overrepresentation data</rdfs:label>
     </owl:Class>
     
 
