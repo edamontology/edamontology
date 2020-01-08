@@ -50252,7 +50252,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasDefinition>The curation, processing and analysis of the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The curation, processing, analysis and prediction of data about the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biomolecular structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Structural bioinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Structure_analysis</oboInOwl:hasHumanReadableId>
@@ -50266,6 +50266,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes related concepts such as structural properties, alignments and structural motifs.</rdfs:comment>
         <rdfs:label>Structure analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Structural_bioinformatics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D015394</rdfs:seeAlso>
     </owl:Class>
     
@@ -54239,6 +54240,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The study of genes, genetic variation and heredity in living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Genetics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Genes</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Heredity</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
