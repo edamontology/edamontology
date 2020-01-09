@@ -1454,6 +1454,8 @@
 <rdf:Description rdf:about="http://edamontology.org/data_0863">
 	<created_in>beta12orEarlier</created_in>
 	<oboInOwl:hasDefinition>Alignment of multiple molecular sequences.</oboInOwl:hasDefinition>
+	<oboInOwl:hasExactSynonym>Multiple sequence aligment</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasExactSynonym>msa</oboInOwl:hasExactSynonym>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
 	<rdfs:label>Sequence alignment</rdfs:label>
@@ -8210,10 +8212,10 @@
 	<created_in>beta12orEarlier</created_in>
 	<is_deprecation_candidate>true</is_deprecation_candidate>
 	<oboInOwl:hasDefinition>Alignment of exactly two molecular sequences.</oboInOwl:hasDefinition>
-	<oboInOwl:hasNarrowSynonym>Pair sequence alignment</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasExactSynonym>Sequence alignment (pair)</oboInOwl:hasExactSynonym>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-	<rdfs:label>Sequence alignment (pair)</rdfs:label>
+	<rdfs:label>Pair sequence alignment</rdfs:label>
 	<rdfs:seeAlso>http://semanticscience.org/resource/SIO_010068</rdfs:seeAlso>
 </rdf:Description>
 <!--  -->
