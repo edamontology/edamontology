@@ -15,8 +15,8 @@
 
 <rdf:Description rdf:about="http://edamontology.org">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3956</next_id>
 	<dc:format>application/rdf+xml</dc:format>
-	<next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3955</next_id>
 	<oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
 	<dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
 	<oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
@@ -54063,7 +54063,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 	<oboInOwl:hasDefinition>The systematic study of metabolites, the chemical processes they are involved, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.</oboInOwl:hasDefinition>
 	<oboInOwl:hasHumanReadableId>Metabolomics</oboInOwl:hasHumanReadableId>
 	<oboInOwl:hasNarrowSynonym>Exometabolomics</oboInOwl:hasNarrowSynonym>
-	<oboInOwl:hasNarrowSynonym>Fluxomics</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:hasNarrowSynonym>LC-MS-based metabolomics</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:hasNarrowSynonym>MS-based metabolomics</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:hasNarrowSynonym>Mass spectrometry-based metabolomics</oboInOwl:hasNarrowSynonym>
@@ -57217,6 +57216,18 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
 	<rdfs:label>Echography</rdfs:label>
 	<rdfs:label>Standardized echography</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://edamontology.org/topic_3955 -->
+
+<rdf:Description rdf:about="http://edamontology.org/topic_3955">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
+	<created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+	<oboInOwl:hasDefinition>Experimental approaches to determine the rates of metabolic reactions - the metabolic fluxes - within a biological entity.</oboInOwl:hasDefinition>
+	<oboInOwl:hasHumanReadableId>Fluxomics</oboInOwl:hasHumanReadableId>
+	<rdfs:comment>The "fluxome" is the complete set of metabolic fluxes in a cell, and is a dynamic aspect of phenotype.</rdfs:comment>
+	<rdfs:label>Fluxomics</rdfs:label>
 </rdf:Description>
 <!--  -->
 <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
