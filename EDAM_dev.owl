@@ -16,33 +16,32 @@
 <rdf:Description rdf:about="http://edamontology.org">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
 	<next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3956</next_id>
-	<dc:format>application/rdf+xml</dc:format>
-	<oboOther:default-relationship-id-prefix>EDAM</oboOther:default-relationship-id-prefix>
-	<dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
-	<oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
-	<oboInOwl:hasSubset>relations "EDAM relations"</oboInOwl:hasSubset>
-	<oboInOwl:hasSubset>concept_properties "EDAM concept properties"</oboInOwl:hasSubset>
-	<dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
 	<oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
-	<dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-	<oboInOwl:hasSubset>data "EDAM types of data"</oboInOwl:hasSubset>
-	<oboOther:idspace>EDAM_format http://edamontology.org/format_ "EDAM data formats"</oboOther:idspace>
-	<oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
-	<dc:creator>HervÃ© MÃ©nager</dc:creator>
-	<oboOther:idspace>EDAM_topic http://edamontology.org/topic_ "EDAM topics"</oboOther:idspace>
-	<rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
-	<oboInOwl:hasSubset>formats "EDAM data formats"</oboInOwl:hasSubset>
 	<oboOther:idspace>EDAM http://edamontology.org/ "EDAM relations and concept properties"</oboOther:idspace>
-	<oboOther:idspace>EDAM_operation http://edamontology.org/operation_ "EDAM operations"</oboOther:idspace>
-	<oboInOwl:hasSubset>edam "EDAM"</oboInOwl:hasSubset>
-	<doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
-	<oboInOwl:hasSubset>operations "EDAM operations"</oboInOwl:hasSubset>
-	<oboInOwl:hasSubset>topics "EDAM topics"</oboInOwl:hasSubset>
-	<oboInOwl:hasSubset>identifiers "EDAM types of identifiers"</oboInOwl:hasSubset>
 	<oboOther:idspace>EDAM_data http://edamontology.org/data_ "EDAM types of data"</oboOther:idspace>
-	<dc:creator>Jon Ison</dc:creator>
-	<foaf:page rdf:resource="http://edamontology.org/page"/>
+	<oboOther:idspace>EDAM_format http://edamontology.org/format_ "EDAM data formats"</oboOther:idspace>
+	<oboOther:idspace>EDAM_operation http://edamontology.org/operation_ "EDAM operations"</oboOther:idspace>
+	<oboOther:idspace>EDAM_topic http://edamontology.org/topic_ "EDAM topics"</oboOther:idspace>
 	<oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
+	<oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+	<dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
+	<dc:creator>HervÃ© MÃ©nager</dc:creator>
+	<dc:creator>Jon Ison</dc:creator>
+	<dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
+	<dc:format>application/rdf+xml</dc:format>
+	<dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+	<doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</doap:Version>
+	<oboInOwl:hasSubset>concept_properties "EDAM concept properties"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>data "EDAM types of data"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>edam "EDAM"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>formats "EDAM data formats"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>identifiers "EDAM types of identifiers"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>operations "EDAM operations"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>relations "EDAM relations"</oboInOwl:hasSubset>
+	<oboInOwl:hasSubset>topics "EDAM topics"</oboInOwl:hasSubset>
+	<oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
+	<rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
+	<foaf:page rdf:resource="http://edamontology.org/page"/>
 </rdf:Description>
 <!--  -->
 <!--  -->
@@ -188,6 +187,12 @@
 	<rdfs:label>Media type</rdfs:label>
 </rdf:Description>
 <!--  -->
+<!-- http://edamontology.org/next_id -->
+
+<rdf:Description rdf:about="http://edamontology.org/next_id">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
 <!-- http://edamontology.org/notRecommendedForAnnotation -->
 
 <rdf:Description rdf:about="http://edamontology.org/notRecommendedForAnnotation">
@@ -291,6 +296,18 @@
 	<rdfs:label>thematic_editor</rdfs:label>
 </rdf:Description>
 <!--  -->
+<!-- http://purl.obolibrary.org/obo/date -->
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/date">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.obolibrary.org/obo/idspace -->
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/idspace">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
 <!-- http://purl.obolibrary.org/obo/is_anti_symmetric -->
 
 <rdf:Description rdf:about="http://purl.obolibrary.org/obo/is_anti_symmetric">
@@ -318,6 +335,12 @@
 <!-- http://purl.obolibrary.org/obo/namespace -->
 
 <rdf:Description rdf:about="http://purl.obolibrary.org/obo/namespace">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.obolibrary.org/obo/remark -->
+
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/remark">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
 </rdf:Description>
 <!--  -->
@@ -388,6 +411,36 @@
 <rdf:Description rdf:about="http://purl.obolibrary.org/obo/edam#topics">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
 	<rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.org/dc/elements/1.1/contributor -->
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/contributor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.org/dc/elements/1.1/creator -->
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/creator">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.org/dc/elements/1.1/format -->
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/format">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://purl.org/dc/elements/1.1/title -->
+
+<rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://usefulinc.com/ns/doap#Version -->
+
+<rdf:Description rdf:about="http://usefulinc.com/ns/doap#Version">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
 </rdf:Description>
 <!--  -->
 <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
@@ -483,6 +536,18 @@
 <!-- http://www.geneontology.org/formats/oboInOwl#replacedBy -->
 
 <rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#replacedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://www.geneontology.org/formats/oboInOwl#savedBy -->
+
+<rdf:Description rdf:about="http://www.geneontology.org/formats/oboInOwl#savedBy">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+</rdf:Description>
+<!--  -->
+<!-- http://xmlns.com/foaf/0.1/page -->
+
+<rdf:Description rdf:about="http://xmlns.com/foaf/0.1/page">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
 </rdf:Description>
 <!--  -->
@@ -1361,15 +1426,23 @@
 <rdf:Description rdf:about="http://edamontology.org/data_0858">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/data_0860"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/data_1916"/>
 	<created_in>beta12orEarlier</created_in>
-	<oboInOwl:hasDefinition>Report on the location of matches in one or more sequences to profiles, motifs (conserved or functional patterns) or other signatures.</oboInOwl:hasDefinition>
-	<oboInOwl:hasExactSynonym>Sequence motif matches</oboInOwl:hasExactSynonym>
-	<oboInOwl:hasExactSynonym>Sequence profile matches</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasDefinition>Report on the location of matches ("hits") between sequences, sequence profiles, motifs (conserved or functional patterns) and other types of sequence signatures.</oboInOwl:hasDefinition>
+	<oboInOwl:hasNarrowSynonym>Profile-profile alignment</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:hasNarrowSynonym>Protein secondary database search results</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:hasNarrowSynonym>Search results (protein secondary database)</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence motif hits</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence motif matches</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence profile alignment</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence profile hits</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence profile matches</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Sequence-profile alignment</oboInOwl:hasNarrowSynonym>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-	<rdfs:comment>This ncluding reports of hits from a search of a protein secondary or domain database.</rdfs:comment>
+	<rdfs:comment>A "profile-profile alignment" is an alignment of two sequence profiles, each profile typically representing a sequence alignment.</rdfs:comment>
+	<rdfs:comment>A "sequence-profile alignment" is an alignment of one or more molecular sequence(s) to one or more sequence profile(s) (each profile typically representing a sequence alignment).</rdfs:comment>
+	<rdfs:comment>This includes reports of hits from a search of a protein secondary or domain database. Data associated with the search or alignment might also be included, e.g. ranked list of best-scoring sequences, a graphical representation of scores etc.</rdfs:comment>
 	<rdfs:label>Sequence signature matches</rdfs:label>
 </rdf:Description>
 <!--  -->
@@ -1522,26 +1595,31 @@
 
 <rdf:Description rdf:about="http://edamontology.org/data_0868">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://edamontology.org/data_1916"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
 	<created_in>beta12orEarlier</created_in>
+	<deprecation_comment>"Sequence-profile alignment" and "Profile-profile alignment" are synonymous with "Sequence signature matches" which was already stated as including matches (alignment) and other data.</deprecation_comment>
+	<oldParent rdf:resource="http://edamontology.org/data_1916"/>
 	<oboInOwl:hasDefinition>A profile-profile alignment (each profile typically representing a sequence alignment).</oboInOwl:hasDefinition>
-	<oboInOwl:hasExactSynonym>Sequence profile alignment</oboInOwl:hasExactSynonym>
-	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+	<oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_0858"/>
 	<rdfs:label>Profile-profile alignment</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 <!--  -->
 <!-- http://edamontology.org/data_0869 -->
 
 <rdf:Description rdf:about="http://edamontology.org/data_0869">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-	<rdfs:subClassOf rdf:resource="http://edamontology.org/data_1916"/>
+	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
 	<created_in>beta12orEarlier</created_in>
+	<deprecation_comment>"Sequence-profile alignment" and "Profile-profile alignment" are synonymous with "Sequence signature matches" which was already stated as including matches (alignment) and other data.</deprecation_comment>
+	<obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+	<oldParent rdf:resource="http://edamontology.org/data_1916"/>
 	<oboInOwl:hasDefinition>Alignment of one or more molecular sequence(s) to one or more sequence profile(s) (each profile typically representing a sequence alignment).</oboInOwl:hasDefinition>
-	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-	<rdfs:comment>Data associated with the alignment might also be included, e.g. ranked list of best-scoring sequences and a graphical representation of scores.</rdfs:comment>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+	<oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_0858"/>
 	<rdfs:label>Sequence-profile alignment</rdfs:label>
+	<owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
 </rdf:Description>
 <!--  -->
 <!-- http://edamontology.org/data_0870 -->
@@ -8658,7 +8736,7 @@
 	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
 	<created_in>beta12orEarlier</created_in>
 	<obsolete_since>beta12orEarlier</obsolete_since>
-	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0869"/>
+	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0858"/>
 	<oboInOwl:hasDefinition>Alignment of molecular sequences to a Domainatrix signature (representing a sequence alignment).</oboInOwl:hasDefinition>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
 	<rdfs:label>Sequence-profile alignment (Domainatrix signature)</rdfs:label>
@@ -8672,7 +8750,7 @@
 	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
 	<created_in>beta12orEarlier</created_in>
 	<obsolete_since>1.5</obsolete_since>
-	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0869"/>
+	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0858"/>
 	<oboInOwl:hasDefinition>Alignment of molecular sequence(s) to a hidden Markov model(s).</oboInOwl:hasDefinition>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
 	<rdfs:label>Sequence-profile alignment (HMM)</rdfs:label>
@@ -8686,7 +8764,7 @@
 	<rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
 	<created_in>beta12orEarlier</created_in>
 	<obsolete_since>1.5</obsolete_since>
-	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0869"/>
+	<oboInOwl:consider rdf:resource="http://edamontology.org/data_0858"/>
 	<oboInOwl:hasDefinition>Alignment of molecular sequences to a protein fingerprint from the PRINTS database.</oboInOwl:hasDefinition>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
 	<rdfs:label>Sequence-profile alignment (fingerprint)</rdfs:label>
@@ -27419,7 +27497,7 @@
 <rdf:Description rdf:nodeID="genid176">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
 	<owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-	<owl:someValuesFrom rdf:resource="http://edamontology.org/data_0869"/>
+	<owl:someValuesFrom rdf:resource="http://edamontology.org/data_0858"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://edamontology.org/format_2014">
@@ -57249,6 +57327,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
 </rdf:Description>
 <!--  -->
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
 </rdf:RDF>
