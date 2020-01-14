@@ -15,7 +15,7 @@
 
 <rdf:Description rdf:about="http://edamontology.org">
 	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
-	<next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3956</next_id>
+	<next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3957</next_id>
 	<oboOther:date>16.07.2019 19:43 UTC</oboOther:date>
 	<oboOther:idspace>EDAM http://edamontology.org/ "EDAM relations and concept properties"</oboOther:idspace>
 	<oboOther:idspace>EDAM_data http://edamontology.org/data_ "EDAM types of data"</oboOther:idspace>
@@ -30659,6 +30659,7 @@
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
 	<created_in>1.2</created_in>
+	<file_extension>nt</file_extension>
 	<oboInOwl:hasDefinition>A plain text serialisation format for RDF (Resource Description Framework) graphs, and a subset of the Turtle (Terse RDF Triple Language) format.</oboInOwl:hasDefinition>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -30673,6 +30674,7 @@
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
 	<created_in>1.2</created_in>
+	<file_extension>n3</file_extension>
 	<oboInOwl:hasDefinition>A shorthand non-XML serialisation of Resource Description Framework model, designed with human-readability in mind.</oboInOwl:hasDefinition>
 	<oboInOwl:hasExactSynonym>N3</oboInOwl:hasExactSynonym>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -30687,6 +30689,7 @@
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
 	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
 	<created_in>1.2</created_in>
+	<file_extension>rdf</file_extension>
 	<oboInOwl:hasDefinition>Resource Description Framework (RDF) XML format.</oboInOwl:hasDefinition>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
 	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -34744,6 +34747,22 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 	<oboInOwl:hasDefinition>BcForms is a format for abstractly describing the molecular structure (atoms and bonds) of macromolecular complexes as a collection of subunits and crosslinks. Each subunit can be described with BpForms (http://edamontology.org/format_3909) or SMILES (http://edamontology.org/data_2301). BcForms uses an ontology of crosslinks to abstract the chemical details of crosslinks from the descriptions of complexes (see https://bpforms.org/crosslink.html).</oboInOwl:hasDefinition>
 	<rdfs:comment>BcForms is related to http://edamontology.org/format_3909. (BcForms uses BpForms to describe subunits which are DNA, RNA, or protein polymers.) However, that format isn't the parent of BcForms. BcForms is similarly related to SMILES (http://edamontology.org/data_2301).</rdfs:comment>
 	<rdfs:label>BcForms</rdfs:label>
+</rdf:Description>
+<!--  -->
+<!-- http://edamontology.org/format_3956 -->
+
+<rdf:Description rdf:about="http://edamontology.org/format_3956">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
+	<created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+	<documentation rdf:resource="https://www.w3.org/TR/n-quads"/>
+	<file_extension>nq</file_extension>
+	<oboInOwl:hasDefinition>N-Quads is a line-based, plain text format for encoding an RDF dataset. It includes information about the graph each triple belongs to.</oboInOwl:hasDefinition>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+	<rdfs:comment>N-Quads should not be confused with N-Triples which does not contain graph information.</rdfs:comment>
+	<rdfs:label>N-Quads</rdfs:label>
 </rdf:Description>
 <!--  -->
 <!-- http://edamontology.org/operation_0004 -->
