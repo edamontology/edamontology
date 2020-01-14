@@ -2,6 +2,28 @@
 
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM 1.24
+
+### Summary of changes
+See the [changelog-detailed.md](changelog-detailed.md#edam_124owl) for a detailed list of semantic changes in the EDAM ontology.
+
+* revisions following mapping and gap analysis of EDAM to keywords used by [IFB](https://www.france-bioinformatique.fr/en) for tagging their resources, including [IFB tools](https://www.france-bioinformatique.fr/en/services/tools)
+* revision of existing synonyms and addition of new ones
+* revision of concept preferred labels (which now better reflect the vernacular)
+* consolidation of some overlapping concepts
+* cleaned-up mixed notions of "pathway" and "network" (now neatly organised under [Network analysis](http://edamontology.org/operation_3927) and [Pathway analysis](http://edamontology.org/operation_3928)
+
+### Changes in hierarchy
+*  39 concepts added
+*  8 concepts deprecated
+
+### Fixed issues
+-  95 "concept or term request" issues fixed and closed (#419, #422 - #426, #429 - #449, #451 - #465, #466 - #501, #503 - #509, #511 - #517)
+-  1 issue partially fixed (#502)
+-  2 issues won't fix (#450, #466)
+-  6 bugs fixed (#427, #428, #434, 506, #508, 518)
+
+
 # EDAM 1.23
 
 ### Summary of changes

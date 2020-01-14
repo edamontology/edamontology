@@ -1,6 +1,7 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
+  - [EDAM_1.24.owl](#edam_124owl)
   - [EDAM_1.23.owl](#edam_123owl)
   - [EDAM_1.22.owl](#edam_122owl)
   - [EDAM_1.21.owl](#edam_121owl)
@@ -13,6 +14,21 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.14.owl](#edam_114owl)
   - [EDAM_1.13.owl](#edam_113owl)
   - [EDAM_1.12.owl](#edam_112owl)
+
+
+# EDAM_1.24.owl
+
+  - [New concepts](#new-concepts-124) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-124)
+
+## New concepts (1.24):
+
+detailed changelog is tbd (technical issues!)
+
+## Changed relations between concepts (1.24):
+
+detailed changelog is tbd (technical issues!)
+
 
 # EDAM_1.23.owl
 
