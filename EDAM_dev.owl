@@ -1614,7 +1614,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <deprecation_comment>&quot;Sequence-profile alignment&quot; and &quot;Profile-profile alignment&quot; are synonymous with &quot;Sequence signature matches&quot; which was already stated as including matches (alignment) and other data.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_1916"/>
         <oboInOwl:hasDefinition>Alignment of one or more molecular sequence(s) to one or more sequence profile(s) (each profile typically representing a sequence alignment).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -23131,7 +23131,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_3154">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2928"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0878"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1384"/>
@@ -24579,7 +24579,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_3924">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1482"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Alignment (superimposition) of DNA tertiary (3D) structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (DNA)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
@@ -24593,7 +24593,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_3932">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0951"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A score derived from the P-value to ensure correction for multiple tests. The Q-value provides an estimate of the positive False Discovery Rate (pFDR), i.e. the rate of false positives among all the cases reported positive: pFDR = FP / (FP + TP).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Adjusted P-value</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FDR</oboInOwl:hasExactSynonym>
@@ -24613,7 +24613,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_3949">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1354"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1364"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A profile HMM is a variant of a Hidden Markov model that is derived specifically from a set of (aligned) biological sequences. Profile HMMs provide the basis for a position-specific scoring system, which can be used to align sequences and search databases for related sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -24629,7 +24629,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2109"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2365"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <documentation rdf:resource="https://www.wikipathways.org"/>
         <regex>WP[0-9]+</regex>
         <oboInOwl:hasDefinition>Identifier of a pathway from the WikiPathways pathway database.</oboInOwl:hasDefinition>
@@ -24652,7 +24652,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_1775"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A ranked list of pathways, each associated with z-score, p-value or similar, concerning or derived from the analysis of e.g. a set of genes or proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Pathway analysis results</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pathway enrichment report</oboInOwl:hasExactSynonym>
@@ -35926,7 +35926,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2062"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <documentation rdf:resource="https://bcforms.org"/>
 	<documentation rdf:resource="http://docs.karrlab.org/bcforms"/>
 	<documentation rdf:resource="http://sandbox.karrlab.org/tree/bcforms"/>	
@@ -35947,7 +35947,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3956">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2376"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <documentation rdf:resource="https://www.w3.org/TR/n-quads"/>
         <file_extension>nq</file_extension>
         <oboInOwl:hasDefinition>N-Quads is a line-based, plain text format for encoding an RDF dataset. It includes information about the graph each triple belongs to.</oboInOwl:hasDefinition>
@@ -37067,7 +37067,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
@@ -45163,7 +45163,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
         <oboInOwl:hasDefinition>Generate, process or analyse a biological pathway or network.</oboInOwl:hasDefinition>
@@ -46310,14 +46310,14 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta13</created_in>
         <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3925"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3926"/>
         <oboInOwl:hasDefinition>Render (visualise) a biological pathway or network.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network visualisation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
 
@@ -46841,7 +46841,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.1</created_in>
         <deprecation_comment>&quot;Polymorphism detection&quot; and &quot;Variant calling&quot; are essentially the same thing - keeping the later as a more prevalent term nowadays.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2478"/>
         <oldParent rdf:resource="http://edamontology.org/operation_3197"/>
         <oboInOwl:hasDefinition>Detect mutations in multiple DNA sequences, for example, from the alignment and comparison of the fluorescent traces produced by DNA sequencing hardware.</oboInOwl:hasDefinition>
@@ -47845,7 +47845,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.6</created_in>
         <deprecation_comment>Notions of pathway and network were mixed up, EDAM 1.24 disentangles them.</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2497"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_2437"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3094"/>
@@ -48480,7 +48480,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3562">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.9</created_in>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</obsolete_since>
+        <obsolete_since>1.24</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/operation_2426"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3927"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3928"/>
@@ -49940,7 +49940,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Detects chimeric sequences (chimeras) from a sequence alignment.</oboInOwl:hasDefinition>
         <rdfs:label>Genome analysis</rdfs:label>
     </owl:Class>
@@ -49951,7 +49951,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3919">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The determination of cytosine methylation status of specific positions in a nucleic acid sequences (usually reads from a bisulfite sequencing experiment).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -49970,7 +49970,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0622"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The identification of changes in DNA sequence or chromosome structure, usually in the context of diagnostic tests for disease, or to study ancestry or phylogeny.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genetic testing</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -49985,7 +49985,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3921">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The processing of reads from high-throughput sequencing machines.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -49998,7 +49998,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
 
     <owl:Class rdf:about="http://edamontology.org/operation_3923">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals).
 
 WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).
@@ -50031,7 +50031,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Render (visualise) a network - typically a biological network of some sort.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Network rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein interaction network rendering</oboInOwl:hasNarrowSynonym>
@@ -50052,7 +50052,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Render (visualise) a biological pathway.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Pathway rendering</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -50078,7 +50078,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2259"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Generate, process or analyse a biological network.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biological network analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Biological network modelling</oboInOwl:hasNarrowSynonym>
@@ -50112,7 +50112,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2259"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Generate, process or analyse a biological pathway.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biological pathway analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Biological pathway modelling</oboInOwl:hasNarrowSynonym>
@@ -50135,7 +50135,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/operation_3929">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2423"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3928"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Predict a metabolic pathway.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -50163,7 +50163,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3933">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3921"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Assigning sequence reads to separate groups / files based on their index tag (sample origin).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequence demultiplexing</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -50190,7 +50190,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A process used in statistics, machine learning, and information theory that reduces the number of random variables by obtaining a set of principal variables.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Dimension reduction</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -50217,7 +50217,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A dimensionality reduction process that selects a subset of relevant features (variables, predictors) for use in model construction.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Attribute selection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Variable selection</oboInOwl:hasExactSynonym>
@@ -50246,7 +50246,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A dimensionality reduction process which builds (ideally) informative and non-redundant values (features) from an initial set of measured data, to aid subsequent generalization, learning or interpretation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Feature projection</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -50272,7 +50272,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Virtual screening is used in drug discovery to search libraries of small molecules in order to identify those molecules which are most likely to bind to a drug target (typically a protein receptor or enzyme).</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ligand-based screening</oboInOwl:hasNarrowSynonym>
@@ -50293,7 +50293,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3939">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Biotechnology approach that seeks to optimize cellular genetic and regulatory processes in order to increase the cells&apos; production of a certain substance.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -50307,7 +50307,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3942">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0324"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The application of phylogenetic and other methods to estimate paleogeographical events such as speciation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biogeographic dating</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Speciation dating</oboInOwl:hasExactSynonym>
@@ -50337,7 +50337,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The development and use of mathematical models and systems analysis for the description of ecological processes, and applications such as the sustainable management of resources.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -50350,7 +50350,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3947">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0325"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Mapping between gene tree nodes and species tree nodes or branches, to analyse and account for possible differences between gene histories and species histories, explaining this in terms of gene-scale events such as duplication, loss, transfer etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene tree / species tree reconciliation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -50365,7 +50365,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3950">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The detection of genetic selection, or (the end result of) the process by which certain traits become more prevalent in a species than other traits.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -58180,7 +58180,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3922">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A field of biological research focused on the discovery and identification of peptides, typically by comparing mass spectra against a protein database.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteogenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58216,7 +58216,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3934">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Cytometry is the measurement of the characteristics of cells.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Cytometry</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Flow cytometry</oboInOwl:hasNarrowSynonym>
@@ -58234,7 +58234,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3940">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Molecular biology methods used to analyze the spatial organization of chromatin in a cell.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>3C technologies</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>3C-based methods</oboInOwl:hasExactSynonym>
@@ -58253,7 +58253,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3941">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0203"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The study of microbe gene expression within natural environments (i.e. the metatranscriptome).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metatranscriptomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58269,7 +58269,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3943">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The reconstruction and analysis of genomic information in extinct species.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Paleogenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Ancestral genomes</oboInOwl:hasNarrowSynonym>
@@ -58285,7 +58285,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3944">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0084"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The biological classification of organisms by categorizing them in groups (&quot;clades&quot;) based on their most recent common ancestor.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Cladistics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Tree of life</oboInOwl:hasNarrowSynonym>
@@ -58303,7 +58303,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0625"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>The study of the process and mechanism of change of biomolecules such as DNA, RNA, and proteins across generations.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_evolution</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58334,7 +58334,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3954">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>A diagnostic imaging technique based on the application of ultrasound.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Standardized echography</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Ultrasound imaging</oboInOwl:hasExactSynonym>
@@ -58354,7 +58354,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_3955">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
+        <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Experimental approaches to determine the rates of metabolic reactions - the metabolic fluxes - within a biological entity.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Fluxomics</oboInOwl:hasHumanReadableId>
         <rdfs:comment>The &quot;fluxome&quot; is the complete set of metabolic fluxes in a cell, and is a dynamic aspect of phenotype.</rdfs:comment>
