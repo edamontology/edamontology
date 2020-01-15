@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3957</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3958</next_id>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -1748,7 +1748,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_0878">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2366"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3154"/>
         <created_in>beta12orEarlier</created_in>
         <is_deprecation_candidate>true</is_deprecation_candidate>
         <oboInOwl:hasDefinition>Alignment of the (1D representations of) secondary structure of two or more proteins.</oboInOwl:hasDefinition>
@@ -8489,7 +8488,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1384">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0863"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3154"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment of multiple protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequence alignment (protein)</oboInOwl:hasExactSynonym>
@@ -9556,7 +9554,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_1481">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0886"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_3154"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment (superimposition) of protein tertiary (3D) structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Structure alignment (protein)</oboInOwl:hasExactSynonym>
@@ -45663,12 +45660,6 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <owl:Class rdf:about="http://edamontology.org/operation_2928">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1916"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>Compare two or more entities, typically the sequence or structure (or derivatives) of macromolecules, to identify equivalent subunits.</oboInOwl:hasDefinition>
@@ -57748,24 +57739,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/topic_3557 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_3557">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
-        <created_in>1.12</created_in>
-        <oboInOwl:hasDefinition>An experiment for studying protein-protein interactions.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Protein_interaction_experiment</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Co-immunoprecipitation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Phage display</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Yeast one-hybrid</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Yeast two-hybrid</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Protein interaction experiment</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/topic_3569 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3569">
@@ -58367,6 +58340,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.24</created_in>
         <oboInOwl:hasDefinition>A diagnostic imaging technique based on the application of ultrasound.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Standardized echography</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Ultrasound imaging</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Echography</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Diagnostic sonography</oboInOwl:hasNarrowSynonym>
@@ -58376,7 +58350,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Echography</rdfs:label>
-        <rdfs:label>Standardized echography</rdfs:label>
     </owl:Class>
     
 
@@ -58390,6 +58363,25 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasHumanReadableId>Fluxomics</oboInOwl:hasHumanReadableId>
         <rdfs:comment>The &quot;fluxome&quot; is the complete set of metabolic fluxes in a cell, and is a dynamic aspect of phenotype.</rdfs:comment>
         <rdfs:label>Fluxomics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3957 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3957">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <created_in>1.12</created_in>
+        <oboInOwl:hasDefinition>An experiment for studying protein-protein interactions.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Protein_interaction_experiment</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Co-immunoprecipitation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Phage display</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Yeast one-hybrid</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Yeast two-hybrid</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>This used to have the ID http://edamontology.org/topic_3557 but the numerical part (owing to an error) duplicated http://edamontology.org/operation_3557 (&apos;Imputation&apos;).  ID of this concept set to http://edamontology.org/topic_3957 in EDAM 1.24.</rdfs:comment>
+        <rdfs:label>Protein interaction experiment</rdfs:label>
     </owl:Class>
     
 
