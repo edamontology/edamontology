@@ -23,11 +23,502 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 
 ## New concepts (1.24):
 
-detailed changelog is tbd (technical issues!)
+Class: http://edamontology.org/format_3956
+Label: N-Quads
++   'N-Quads' SubClassOf 'RDF format'
++   'N-Quads' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3951
+Label: BcForms
++   'BcForms' SubClassOf 'Chemical data format'
++   'BcForms' SubClassOf 'Textual format'
++   'BcForms' SubClassOf 'Protein report format'
+ 
+Class: http://edamontology.org/topic_3922
+Label: Proteogenomics
++   'Proteogenomics' SubClassOf 'Genomics'
+ 
+Class: http://edamontology.org/topic_3930
+Label: Immunogenetics
++   'Immunogenetics' SubClassOf 'Genetics'
++   'Immunogenetics' SubClassOf 'Immunology'
+ 
+Class: http://edamontology.org/topic_3934
+Label: Cytometry
++   'Cytometry' SubClassOf 'Laboratory techniques'
+ 
+Class: http://edamontology.org/topic_3948
+Label: Immunoinformatics
++   'Immunoinformatics' SubClassOf 'Informatics'
++   'Immunoinformatics' SubClassOf 'Immunology'
+ 
+Class: http://edamontology.org/topic_3943
+Label: Paleogenomics
++   'Paleogenomics' SubClassOf 'Genomics'
+ 
+Class: http://edamontology.org/topic_3941
+Label: Metatranscriptomics
++   'Metatranscriptomics' SubClassOf 'Gene expression'
++   'Metatranscriptomics' SubClassOf 'Transcriptomics'
+ 
+Class: http://edamontology.org/topic_3940
+Label: Chromosome conformation capture
++   'Chromosome conformation capture' SubClassOf 'Laboratory techniques'
+ 
+Class: http://edamontology.org/topic_3945
+Label: Molecular evolution
++   'Molecular evolution' SubClassOf 'Genotype and phenotype'
++   'Molecular evolution' SubClassOf 'Omics'
++   'Molecular evolution' SubClassOf 'Evolutionary biology'
+ 
+Class: http://edamontology.org/topic_3944
+Label: Cladistics
++   'Cladistics' SubClassOf 'Phylogeny'
++   'Cladistics' SubClassOf 'Sequence analysis'
+ 
+Class: http://edamontology.org/topic_3954
+Label: Echography
++   'Echography' SubClassOf 'Imaging'
+ 
+Class: http://edamontology.org/topic_3957
+Label: Protein interaction experiment
++   'Protein interaction experiment' SubClassOf 'Laboratory techniques'
+ 
+Class: http://edamontology.org/topic_3955
+Label: Fluxomics
++   'Fluxomics' SubClassOf 'Omics'
+ 
+Class: http://edamontology.org/operation_2844
+Label: Structure clustering
++   'Structure clustering' SubClassOf 'Clustering'
+ 
+Class: http://edamontology.org/operation_3950
+Label: Selection detection
++   'Selection detection' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3931
+Label: Chemometrics
++   'Chemometrics' SubClassOf 'Cheminformatics'
+ 
+Class: http://edamontology.org/operation_3936
+Label: Feature selection
++   'Feature selection' SubClassOf 'has input' some 'Mass spectrum'
++   'Feature selection' SubClassOf 'Dimensionality reduction'
++   'Feature selection' SubClassOf 'has topic' some 'Proteomics'
+ 
+Class: http://edamontology.org/operation_3935
+Label: Dimensionality reduction
++   'Dimensionality reduction' SubClassOf 'Calculation'
++   'Dimensionality reduction' SubClassOf 'has topic' some 'Proteomics'
++   'Dimensionality reduction' SubClassOf 'has input' some 'Mass spectrum'
+ 
+Class: http://edamontology.org/operation_3933
+Label: Demultiplexing
++   'Demultiplexing' SubClassOf 'Sequence read processing'
+ 
+Class: http://edamontology.org/operation_3929
+Label: Metabolic pathway prediction
++   'Metabolic pathway prediction' SubClassOf 'Pathway analysis'
++   'Metabolic pathway prediction' SubClassOf 'Prediction and recognition'
+ 
+Class: http://edamontology.org/operation_3928
+Label: Pathway analysis
++   'Pathway analysis' SubClassOf 'Analysis'
++   'Pathway analysis' SubClassOf 'has topic' some 'Systems biology'
++   'Pathway analysis' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+ 
+Class: http://edamontology.org/operation_3927
+Label: Network analysis
++   'Network analysis' SubClassOf 'Analysis'
++   'Network analysis' SubClassOf 'has topic' some 'Systems biology'
++   'Network analysis' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+ 
+Class: http://edamontology.org/operation_3926
+Label: Pathway visualisation
++   'Pathway visualisation' SubClassOf 'Pathway analysis'
++   'Pathway visualisation' SubClassOf 'has input' some 'Pathway or network'
++   'Pathway visualisation' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_3942
+Label: Tree dating
++   'Tree dating' SubClassOf 'Phylogenetic analysis'
+ 
+Class: http://edamontology.org/operation_3947
+Label: Phylogenetic tree reconciliation
++   'Phylogenetic tree reconciliation' SubClassOf 'Phylogenetic tree comparison'
+ 
+Class: http://edamontology.org/operation_3946
+Label: Ecological modelling
++   'Ecological modelling' SubClassOf 'Codon usage analysis'
++   'Ecological modelling' SubClassOf 'has output' some 'DNA substitution model'
++   'Ecological modelling' SubClassOf 'has topic' some 'Phylogeny'
++   'Ecological modelling' SubClassOf 'Modelling and simulation'
+ 
+Class: http://edamontology.org/operation_3939
+Label: Metabolic engineering
++   'Metabolic engineering' SubClassOf 'Biotechnology'
+ 
+Class: http://edamontology.org/operation_3938
+Label: Virtual screening
++   'Virtual screening' SubClassOf 'has output' some 'Protein-ligand complex'
++   'Virtual screening' SubClassOf 'has topic' some 'Protein interactions'
++   'Virtual screening' SubClassOf 'Protein-ligand docking'
+ 
+Class: http://edamontology.org/operation_3937
+Label: Feature extraction
++   'Feature extraction' SubClassOf 'Dimensionality reduction'
++   'Feature extraction' SubClassOf 'has topic' some 'Proteomics'
++   'Feature extraction' SubClassOf 'has input' some 'Mass spectrum'
+ 
+Class: http://edamontology.org/operation_3921
+Label: Sequence read processing
++   'Sequence read processing' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3920
+Label: DNA testing
++   'DNA testing' SubClassOf 'has topic' some 'Genomics'
++   'DNA testing' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3925
+Label: Network visualisation
++   'Network visualisation' SubClassOf 'Network analysis'
++   'Network visualisation' SubClassOf 'has input' some 'Pathway or network'
++   'Network visualisation' SubClassOf 'Visualisation'
+ 
+Class: http://edamontology.org/operation_3923
+Label: Genome resequencing
++   'Genome resequencing' SubClassOf 'Sequencing'
+ 
+Class: http://edamontology.org/operation_3918
+Label: Genome analysis
++   'Genome analysis' SubClassOf 'has topic' some 'Genomics'
++   'Genome analysis' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3919
+Label: Methylation calling
++   'Methylation calling' SubClassOf 'Methylation analysis'
+ 
+Class: http://edamontology.org/data_3924
+Label: DNA structure alignment
++   'DNA structure alignment' SubClassOf 'Nucleic acid structure alignment'
+ 
+Class: http://edamontology.org/data_3932
+Label: Q-value
++   'Q-value' SubClassOf 'Statistical estimate score'
+ 
+Class: http://edamontology.org/data_3949
+Label: Profile HMM
++   'Profile HMM' SubClassOf 'Hidden Markov model'
++   'Profile HMM' SubClassOf 'Sequence profile'
+ 
+Class: http://edamontology.org/data_3952
+Label: Pathway ID (WikiPathways)
++   'Pathway ID (WikiPathways)' SubClassOf 'Pathway or network accession'
++   'Pathway ID (WikiPathways)' SubClassOf 'Identifier (hybrid)'
++   'Pathway ID (WikiPathways)' SubClassOf 'Accession'
+ 
+Class: http://edamontology.org/data_3953
+Label: Pathway overrepresentation data
++   'Pathway overrepresentation data' SubClassOf 'Over-representation data'
++   'Pathway overrepresentation data' SubClassOf 'has topic' some 'Function analysis'
 
 ## Changed relations between concepts (1.24):
 
-detailed changelog is tbd (technical issues!)
+Class: http://edamontology.org/operation_0327
+Label: Phylogenetic footprinting / shadowing
+-   'Phylogenetic footprinting / shadowing' SubClassOf 'Phylogenetic tree generation (from molecular sequences)'
++   'Phylogenetic footprinting / shadowing' SubClassOf 'Phylogenetic tree generation'
+ 
+Class: http://edamontology.org/operation_0362
+Label: Genome annotation
++   'Genome annotation' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3439
+Label: Pathway or network prediction
+-   'Pathway or network prediction' SubClassOf 'Prediction and recognition'
+-   'Pathway or network prediction' SubClassOf 'Pathway or network analysis'
++   'Pathway or network prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_2928
+Label: Alignment
+-   'Alignment' SubClassOf 'has output' some 'Alignment'
+ 
+Class: http://edamontology.org/operation_0300
+Label: Sequence profile alignment
+-   'Sequence profile alignment' SubClassOf 'has output' some 'Sequence-profile alignment'
+ 
+Class: http://edamontology.org/operation_0310
+Label: Sequence assembly
+-   'Sequence assembly' SubClassOf 'Sequence analysis'
+ 
+Class: http://edamontology.org/operation_0451
+Label: Recombination detection
+-   'Recombination detection' SubClassOf 'Nucleic acid sequence analysis'
++   'Recombination detection' SubClassOf http://edamontology.org/operation_3920
+ 
+Class: http://edamontology.org/operation_0452
+Label: Indel detection
+-   'Indel detection' SubClassOf 'Polymorphism detection'
++   'Indel detection' SubClassOf 'Variant calling'
+ 
+Class: http://edamontology.org/operation_1781
+Label: Gene regulatory network analysis
+-   'Gene regulatory network analysis' SubClassOf 'Pathway or network analysis'
++   'Gene regulatory network analysis' SubClassOf 'Expression analysis'
++   'Gene regulatory network analysis' SubClassOf http://edamontology.org/operation_3927
+ 
+Class: http://edamontology.org/operation_0487
+Label: Haplotype mapping
+-   'Haplotype mapping' SubClassOf 'Linkage analysis'
+ 
+Class: http://edamontology.org/operation_0484
+Label: SNP detection
+-   'SNP detection' SubClassOf 'Polymorphism detection'
++   'SNP detection' SubClassOf 'Variant calling'
+ 
+Class: http://edamontology.org/topic_2844
+Label: Structure clustering
+-   'Structure clustering' SubClassOf 'Clustering'
+ 
+Class: http://edamontology.org/operation_3562
+Label: Network simulation
+-   'Network simulation' SubClassOf 'has topic' some 'Systems biology'
+-   'Network simulation' SubClassOf 'Modelling and simulation'
++   'Network simulation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0433
+Label: Splice site prediction
+-   'Splice site prediction' SubClassOf 'Gene prediction'
++   'Splice site prediction' SubClassOf 'Splicing model analysis'
+ 
+Class: http://edamontology.org/format_2014
+Label: Sequence-profile alignment format
+-   'Sequence-profile alignment format' SubClassOf 'is format of' some 'Sequence-profile alignment'
++   'Sequence-profile alignment format' SubClassOf 'is format of' some 'Sequence signature matches'
+ 
+Class: http://edamontology.org/operation_3219
+Label: Read pre-processing
++   'Read pre-processing' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/operation_3211
+Label: Genome indexing
++   'Genome indexing' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3227
+Label: Variant calling
+-   'Variant calling' SubClassOf 'Polymorphism detection'
++   'Variant calling' SubClassOf 'Genetic variation analysis'
++   'Variant calling' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3206
+Label: Whole genome methylation analysis
++   'Whole genome methylation analysis' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3209
+Label: Genome comparison
++   'Genome comparison' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3208
+Label: Genome visualisation
++   'Genome visualisation' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3202
+Label: Polymorphism detection
+-   'Polymorphism detection' SubClassOf 'Nucleic acid feature detection'
+-   'Polymorphism detection' SubClassOf 'Genetic variation analysis'
++   'Polymorphism detection' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3230
+Label: Read depth analysis
+-   'Read depth analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'Read depth analysis' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/operation_3233
+Label: Copy number estimation
+-   'Copy number estimation' SubClassOf 'Nucleic acid sequence analysis'
++   'Copy number estimation' SubClassOf http://edamontology.org/operation_3920
+ 
+Class: http://edamontology.org/operation_3232
+Label: Gene expression QTL analysis
+-   'Gene expression QTL analysis' SubClassOf 'has output' some 'Pathway or network report'
+ 
+Class: http://edamontology.org/operation_3187
+Label: Sequence contamination filtering
+-   'Sequence contamination filtering' SubClassOf 'Nucleic acid sequence analysis'
++   'Sequence contamination filtering' SubClassOf 'Sequencing quality control'
+ 
+Class: http://edamontology.org/operation_3186
+Label: Bisulfite mapping
+-   'Bisulfite mapping' SubClassOf 'Differentially-methylated region identification'
++   'Bisulfite mapping' SubClassOf 'Methylation analysis'
+ 
+Class: http://edamontology.org/operation_3182
+Label: Genome alignment
++   'Genome alignment' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_3180
+Label: Sequence assembly validation
+-   'Sequence assembly validation' SubClassOf 'Nucleic acid sequence analysis'
++   'Sequence assembly validation' SubClassOf 'Sequencing quality control'
+ 
+Class: http://edamontology.org/operation_3198
+Label: Read mapping
+-   'Read mapping' SubClassOf 'Sequence alignment'
++   'Read mapping' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/operation_3194
+Label: Genome feature comparison
++   'Genome feature comparison' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_0265
+Label: Frameshift detection
+-   'Frameshift detection' SubClassOf 'Polymorphism detection'
++   'Frameshift detection' SubClassOf 'Variant calling'
+ 
+Class: http://edamontology.org/operation_0277
+Label: Pathway or network comparison
+-   'Pathway or network comparison' SubClassOf 'Pathway or network analysis'
++   'Pathway or network comparison' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_0276
+Label: Protein interaction network analysis
+-   'Protein interaction network analysis' SubClassOf 'Pathway or network analysis'
++   'Protein interaction network analysis' SubClassOf http://edamontology.org/operation_3927
+ 
+Class: http://edamontology.org/operation_0282
+Label: Genetic mapping
+-   'Genetic mapping' SubClassOf 'Generation'
++   'Genetic mapping' SubClassOf 'Linkage analysis'
+ 
+Class: http://edamontology.org/data_1481
+Label: Structure alignment (protein)
+-   'Structure alignment (protein)' SubClassOf 'Protein alignment'
+ 
+Class: http://edamontology.org/operation_3094
+Label: Protein interaction network prediction
+-   'Protein interaction network prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
++   'Protein interaction network prediction' SubClassOf 'Protein-protein interaction analysis'
++   'Protein interaction network prediction' SubClassOf http://edamontology.org/operation_3927
+ 
+Class: http://edamontology.org/operation_3083
+Label: Pathway or network visualisation
+-   'Pathway or network visualisation' SubClassOf 'has input' some 'Pathway or network'
+-   'Pathway or network visualisation' SubClassOf 'Visualisation'
+-   'Pathway or network visualisation' SubClassOf 'Pathway or network analysis'
++   'Pathway or network visualisation' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3660
+Label: Metabolic network modelling
+-   'Metabolic network modelling' SubClassOf 'Network simulation'
++   'Metabolic network modelling' SubClassOf http://edamontology.org/operation_3927
++   'Metabolic network modelling' SubClassOf http://edamontology.org/operation_3928
+ 
+Class: http://edamontology.org/operation_3677
+Label: Differential binding analysis
+-   'Differential binding analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'Differential binding analysis' SubClassOf 'Nucleic acid feature detection'
+ 
+Class: http://edamontology.org/operation_3680
+Label: RNA-Seq analysis
+-   'RNA-Seq analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'RNA-Seq analysis' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/topic_3557
+Label: Protein interaction experiment
+-   'Protein interaction experiment' SubClassOf 'Laboratory techniques'
+ 
+Class: http://edamontology.org/operation_0544
+Label: Phylogenetic species tree construction
+-   'Phylogenetic species tree construction' SubClassOf 'Phylogenetic tree generation (from molecular sequences)'
++   'Phylogenetic species tree construction' SubClassOf 'Phylogenetic tree generation'
+ 
+Class: http://edamontology.org/operation_0553
+Label: Phylogenetic tree analysis (gene family prediction)
+-   'Phylogenetic tree analysis (gene family prediction)' SubClassOf 'Phylogenetic tree analysis'
++   'Phylogenetic tree analysis (gene family prediction)' SubClassOf 'Phylogenetic tree generation'
+ 
+Class: http://edamontology.org/operation_0550
+Label: DNA substitution modelling
+-   'DNA substitution modelling' SubClassOf 'Nucleic acid sequence analysis'
++   'DNA substitution modelling' SubClassOf 'Codon usage analysis'
+ 
+Class: http://edamontology.org/operation_0525
+Label: Genome assembly
++   'Genome assembly' SubClassOf http://edamontology.org/operation_3918
+ 
+Class: http://edamontology.org/operation_0533
+Label: Expression profile pathway mapping
+-   'Expression profile pathway mapping' SubClassOf 'Pathway or network analysis'
++   'Expression profile pathway mapping' SubClassOf http://edamontology.org/operation_3928
+ 
+Class: http://edamontology.org/data_1364
+Label: Hidden Markov model
+-   'Hidden Markov model' SubClassOf 'Sequence profile'
+ 
+Class: http://edamontology.org/operation_2454
+Label: Gene prediction
+-   'Gene prediction' SubClassOf 'Nucleic acid feature detection'
++   'Gene prediction' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/data_1384
+Label: Sequence alignment (protein)
+-   'Sequence alignment (protein)' SubClassOf 'Protein alignment'
+ 
+Class: http://edamontology.org/operation_3766
+Label: Weighted correlation network analysis
+-   'Weighted correlation network analysis' SubClassOf 'Pathway or network analysis'
++   'Weighted correlation network analysis' SubClassOf http://edamontology.org/operation_3927
+ 
+Class: http://edamontology.org/operation_2437
+Label: Gene regulatory network prediction
+-   'Gene regulatory network prediction' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
++   'Gene regulatory network prediction' SubClassOf 'Prediction and recognition'
++   'Gene regulatory network prediction' SubClassOf 'Expression analysis'
++   'Gene regulatory network prediction' SubClassOf http://edamontology.org/operation_3927
+ 
+Class: http://edamontology.org/operation_2499
+Label: Splicing model analysis
+-   'Splicing model analysis' SubClassOf 'Nucleic acid sequence analysis'
++   'Splicing model analysis' SubClassOf 'Gene prediction'
+ 
+Class: http://edamontology.org/operation_2497
+Label: Pathway or network analysis
+-   'Pathway or network analysis' SubClassOf 'has topic' some 'Molecular interactions, pathways and networks'
+-   'Pathway or network analysis' SubClassOf 'Analysis'
++   'Pathway or network analysis' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/operation_3798
+Label: Read binning
+-   'Read binning' SubClassOf 'Nucleic acid sequence analysis'
++   'Read binning' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/operation_3793
+Label: Read summarisation
+-   'Read summarisation' SubClassOf 'Nucleic acid sequence analysis'
++   'Read summarisation' SubClassOf http://edamontology.org/operation_3921
+ 
+Class: http://edamontology.org/data_3154
+Label: Protein alignment
+-   'Protein alignment' SubClassOf 'Alignment'
++   'Protein alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0858
+Label: Sequence signature matches
++   'Sequence signature matches' SubClassOf 'Alignment'
+ 
+Class: http://edamontology.org/data_0869
+Label: Sequence-profile alignment
+-   'Sequence-profile alignment' SubClassOf 'Alignment'
++   'Sequence-profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0868
+Label: Profile-profile alignment
+-   'Profile-profile alignment' SubClassOf 'Alignment'
++   'Profile-profile alignment' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+ 
+Class: http://edamontology.org/data_0878
+Label: Secondary structure alignment (protein)
+-   'Secondary structure alignment (protein)' SubClassOf 'Protein alignment'
 
 
 # EDAM_1.23.owl

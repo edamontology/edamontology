@@ -14,8 +14,9 @@ See the [changelog-detailed.md](changelog-detailed.md#edam_124owl) for a detaile
 * cleaned-up mixed notions of "pathway" and "network" (now neatly organised under [Network analysis](http://edamontology.org/operation_3927) and [Pathway analysis](http://edamontology.org/operation_3928)
 
 ### Changes in hierarchy
-*  39 concepts added
-*  8 concepts deprecated
+*  41 concepts added (12 Topic, 22 Operation, 5 Data, 2 Format)
+*  61 concepts changed (2 Topic, 50 Operation, 8 Data, 1 Format)
+*  8 concepts deprecated (6 Operation, 2 Data)
 
 ### Fixed issues
 -  95 "concept or term request" issues fixed and closed (#419, #422 - #426, #429 - #449, #451 - #465, #466 - #501, #503 - #509, #511 - #517)
