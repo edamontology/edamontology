@@ -30,7 +30,7 @@ A quick overview is at the http://edamontology.org home page.
 
 We attempt to resolve all user requests in the next release or ASAP.  Beyond that, things in the roadmap are labelled in the [issue tracker](https://github.com/edamontology/edamontology/issues) as **High priority**.  See also the [EDAM documentation tracker](https://github.com/edamontology/edamontologyDocs/issues).
 
-Please help out by [getting involved](http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html)!
+Please help out by [getting involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html)!
 
 
 ## Citing EDAM
