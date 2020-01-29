@@ -4,6 +4,8 @@ __DOI of the latest stable EDAM version 1.21__: [![10.5281/zenodo.1325952](https
 
 __Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
+__Latest documentation__: [![Documentation Status](https://readthedocs.org/projects/deeptools/badge/)](http://deeptools.readthedocs.org/)
+
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
 ## What is EDAM?
@@ -30,7 +32,7 @@ A quick overview is at the http://edamontology.org home page.
 
 We attempt to resolve all user requests in the next release or ASAP.  Beyond that, things in the roadmap are labelled in the [issue tracker](https://github.com/edamontology/edamontology/issues) as **High priority**.  See also the [EDAM documentation tracker](https://github.com/edamontology/edamontologyDocs/issues).
 
-Please help out by [getting involved](http://edamontologydocs.readthedocs.io/en/latest/contributors_guide.html)!
+Please help out by [getting involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html)!
 
 
 ## Citing EDAM
