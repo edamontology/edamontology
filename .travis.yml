@@ -8,7 +8,7 @@ script:
   - wget https://github.com/ontodev/robot/releases/download/v1.5.0/robot.jar
   - curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
   - sudo chmod u+x robot
-  - ./robot report --input ../edamontology/EDAM_dev.owl
+  - ./robot report --profile validation-profile.txt --input ../edamontology/EDAM_dev.owl
 notifications:
   email:
   - herve.menager@pasteur.fr
