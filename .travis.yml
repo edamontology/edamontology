@@ -1,16 +1,14 @@
-language: python
+language: java
 dist: trusty
-python:
-  - "2.7"
-# command to install dependencies
-install: "pip install git+https://github.com/edamontology/edamxpathvalidator.git"
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
-# install dependencies for owltools checker
-before_script:
-  - sudo update-java-alternatives -s java-8-oracle
-  - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
-# command to run tests
-script: "edamxpathvalidator EDAM_dev.owl && java -jar HermiT.jar -U EDAM_dev.owl  | diff .hermit_ok -" 
+jdk:
+- oraclejdk8
+env:
+  - ROBOT_JAVA_ARGS=-Xmx8g
+script:
+  - wget https://github.com/ontodev/robot/releases/download/v1.5.0/robot.jar
+  - curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > robot
+  - sudo chmod u+x robot
+  - ./robot report --input ../edamontology/EDAM_dev.owl
+notifications:
+  email:
+  - herve.menager@pasteur.fr
