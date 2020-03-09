@@ -1,6 +1,6 @@
 __DOI representing all stable versions, resolving to the latest__: [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690)
 
-<!--__DOI of the latest stable EDAM version 1.21__: [![10.5281/zenodo.1325952](https://zenodo.org/badge/DOI/10.5281/zenodo.1325952.svg)](https://doi.org/10.5281/zenodo.1325952)-->
+__DOI of the latest stable EDAM version 1.24__: [![10.5281/zenodo.3608238](https://zenodo.org/badge/DOI/10.5281/zenodo.3608238.svg)](https://doi.org/10.5281/zenodo.3608238)
 
 __Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
