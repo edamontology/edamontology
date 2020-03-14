@@ -1,45 +1,45 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://edamontology.org/"
      xml:base="http://edamontology.org/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:doap="http://usefulinc.com/ns/doap#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:oboOther="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:oboOther="http://purl.obolibrary.org/obo/">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3958</next_id>
-        <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
-        <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
-        <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
-        <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
-        <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
-        <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
-        <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
-        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
-        <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
-        <dc:creator>HervÃ© MÃ©nager</dc:creator>
-        <dc:creator>Jon Ison</dc:creator>
-        <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
-        <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</doap:Version>
-        <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3958</next_id>
+        <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
+        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+        <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
-        <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
+        <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
+        <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+        <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
+        <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboInOwl:savedBy>Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager</oboInOwl:savedBy>
+        <dc:creator>HervÃ© MÃ©nager</dc:creator>
+        <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
+        <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
+        <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
+        <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
+        <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
+        <doap:Version rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</doap:Version>
+        <oboInOwl:hasSubset>operations &quot;EDAM operations&quot;</oboInOwl:hasSubset>
+        <oboInOwl:hasSubset>topics &quot;EDAM topics&quot;</oboInOwl:hasSubset>
+        <oboInOwl:hasSubset>identifiers &quot;EDAM types of identifiers&quot;</oboInOwl:hasSubset>
+        <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
+        <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
+        <oboOther:remark>EDAM editors: Jon Ison, MatÃºÅ¡ KalaÅ¡, HervÃ© MÃ©nager, and Veit SchwÃ¤mmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
     </owl:Ontology>
     
 
@@ -35927,9 +35927,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2062"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.24</created_in>
+        <documentation rdf:resource="http://docs.karrlab.org/bcforms"/>
+        <documentation rdf:resource="http://sandbox.karrlab.org/tree/bcforms"/>
         <documentation rdf:resource="https://bcforms.org"/>
-	<documentation rdf:resource="http://docs.karrlab.org/bcforms"/>
-	<documentation rdf:resource="http://sandbox.karrlab.org/tree/bcforms"/>	
         <documentation rdf:resource="https://raw.githubusercontent.com/KarrLab/bcforms/master/bcforms/grammar.lark"/>
         <example rdf:resource="https://bcforms.org"/>
         <media_type>text/plain</media_type>
@@ -52206,6 +52206,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Computational ecology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ecoinformatics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ecological informatics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Ecosystem science</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -53038,14 +53039,20 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 1.5.10 Botany</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.22 Plant science</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Plants, e.g. information on a specific plant genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Botany</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Plant</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Plant science</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Plants</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Plant_biology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Plant anatomy</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant cell biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant ecology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant genetics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant nutrition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant physiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>The resource may be specific to a plant, a group of plants or all plants.</rdfs:comment>
+        <rdfs:label>Botany</rdfs:label>
         <rdfs:label>Plant biology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Botany"/>
     </owl:Class>
@@ -55222,6 +55229,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>Chemical substances and physico-chemical processes and that occur within living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biological chemistry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Biochemistry</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Glycomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pathobiochemistry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Phytochemistry</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -55279,6 +55289,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The exploitation of biological process, structure and function for industrial purposes, for example the genetic manipulation of microorganisms for the antibody production.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biotechnology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Applied microbiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -55336,6 +55347,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>The functions of living organisms and their constituent parts.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Physiology"/>
         <oboInOwl:hasHumanReadableId>Physiology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Electrophysiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -55354,8 +55366,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>The biology of microorganisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Microbiology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Antimicrobial stewardship</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Medical microbiology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microbial genetics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Microbial physiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microbial surveillance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microbiological surveillance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Molecular infection biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Molecular microbiology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -55417,6 +55434,9 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 3.1.5 Neuroscience</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of the nervous system and brain; its anatomy, physiology and function.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Neurobiology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Molecular neuroscience</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Neurophysiology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Systemetic neuroscience</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -55457,6 +55477,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDbXref>VT 1.5.9 Biophysics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The use of physics to study biological system.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biophysics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Medical physics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -56515,6 +56536,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>Topic concerning the branch of medicine that deals with the prevention, diagnosis, and treatment of disease, disorder and injury in animals.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Veterinary_medicine</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Clinical veterinary medicine</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
@@ -57164,6 +57186,10 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>Animals</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Metazoa</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Zoology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Animal genetics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Animal physiology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Behavioural biology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Entomology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>The study of the animal kingdom.</rdfs:comment>
@@ -57809,6 +57835,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3573">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.10</created_in>
+        <oboInOwl:hasBroadSynonym>Freshwater science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.5.18 Marine and Freshwater biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of organisms in freshwater ecosystems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Freshwater_biology</oboInOwl:hasHumanReadableId>
@@ -58079,13 +58106,24 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.20</created_in>
         <oboInOwl:hasBroadSynonym>Agriculture</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Agroecology</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Agronomy</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Multidisciplinary study, research and development within the field of agriculture.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Agricultural_science</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Agricultural biotechnology</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Agricultural economics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Animal breeding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Animal husbandry</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Animal nutrition</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Farming systems research</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Food process engineering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Food security</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Horticulture</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Phytomedicine</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Plant breeding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant cultivation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Plant nutrition</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Plant pathology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Soil science</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58148,6 +58186,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>The application of multi-disciplinary science and technology for the construction of artificial biological systems for diverse applications.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Biomimeic chemistry</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Synthetic biology</rdfs:label>
@@ -58403,5 +58442,5 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
