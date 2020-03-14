@@ -2,6 +2,9 @@
 
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM 1.25 (coming soon)
+Dozens of new synonyms in the EDAM Topic subontology.
+
 # EDAM 1.24
 
 ### Summary of changes
