@@ -4,7 +4,7 @@
 
 # EDAM 1.25 (coming soon)
 Dozens of new synonyms in the EDAM Topic subontology.
-Undeprecated *Gene expression profiling" (now child of *Expression analysis*) with clean-up of syonyms, clarifying both concepts.
+Clean-up of "Expression analysis" including Undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
 
 # EDAM 1.24
 
