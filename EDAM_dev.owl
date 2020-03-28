@@ -14,7 +14,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3959</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3960</next_id>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
@@ -58440,6 +58440,20 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Copy number variant</oboInOwl:hasNarrowSynonym>
         <rdfs:label>Copy number variation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Copy-number_variation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3959 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3959">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>The branch of genetics concerned with the relationships between chromosomes and cellular behaviour, especially during mitosis and meiosis.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Cytogenetics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cytogenetics"/>
     </owl:Class>
     
 
