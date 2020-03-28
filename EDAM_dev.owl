@@ -14,7 +14,7 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3960</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3961</next_id>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
@@ -45851,7 +45851,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasNarrowSynonym>Principal modes visualization</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>The use of Principal Component Analysis (PCA), a multivariate statistical analysis to obtain collective variables on the atomic positional fluctuations, helps to separate the configurational space in two subspaces: an âessentialâ subspace containing relevant motions, and another one containing irrelevant local fluctuations.</rdfs:comment>
+        <rdfs:comment>The use of Principal Component Analysis (PCA), a multivariate statistical analysis to obtain collective variables on the atomic positional fluctuations, helps to separate the configurational space in two subspaces: an essential subspace containing relevant motions, and another one containing irrelevant local fluctuations.</rdfs:comment>
         <rdfs:label>Principal component visualisation</rdfs:label>
     </owl:Class>
     
@@ -50370,6 +50370,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Selection detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3960 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3960">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2238"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>A statistical procedure that uses an orthogonal transformation to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables called principal components.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Data imputation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Principal component analysis</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Principal_component_analysis"/>
     </owl:Class>
     
 
