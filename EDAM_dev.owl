@@ -37944,17 +37944,24 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/operation_0314 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0314">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2495"/>
         <created_in>beta12orEarlier</created_in>
-        <obsolete_since>1.21</obsolete_since>
-        <oldParent rdf:resource="http://edamontology.org/operation_2495"/>
-        <oldParent rdf:resource="http://edamontology.org/operation_3429"/>
-        <oldRelated rdf:resource="http://edamontology.org/data_0928"/>
-        <oboInOwl:hasDefinition>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_2495"/>
+        <oboInOwl:hasDefinition>The measurement of the activity (expression) of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Feature expression analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Functional profiling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene expression profile construction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene expression profile generation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene expression quantification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene transcription profiling</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Non-coding RNA profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Protein profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RNA profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>mRNA profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Gene expression profiling generates some sort of gene expression profile, for example from microarray data.</rdfs:comment>
         <rdfs:label>Gene expression profiling</rdfs:label>
-        <owl:deprecated>true</owl:deprecated>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_expression_profiling"/>
     </owl:Class>
     
 
@@ -45110,29 +45117,15 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:comment>Gene expression profiling generates some sort of gene expression profile, for example from microarray data.</oboInOwl:comment>
         <oboInOwl:comment>Metagenomic inference is the profiling of phylogenetic marker genes in order to predict metagenome function.</oboInOwl:comment>
-        <oboInOwl:comment>The measurement of the gene expression of multiple genes in a cell, tissue, sample etc., in order to get an impression of biological function.</oboInOwl:comment>
         <oboInOwl:hasDefinition>Process (read and/or write) expression data from experiments measuring molecules (e.g. omics data), including analysis of one or more expression profiles, typically to interpret them in functional terms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Expression data analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Feature expression analysis</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>Functional profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene expression analysis</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene expression data analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene expression profile construction</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene expression profile generation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene expression profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene expression quantification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Gene expression regulation analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Gene transcription profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Metabolite expression analysis</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metagenomic inference</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Microarray data analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Non-coding RNA profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein expression analysis</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>RNA profiling</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>mRNA profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Expression analysis</rdfs:label>
