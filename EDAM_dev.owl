@@ -14,13 +14,13 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3961</next_id>
         <dc:contributor>Veit SchwÃ¤mmle</dc:contributor>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3966</next_id>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -2725,6 +2725,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Protein or peptide identifications with evidence supporting the identifications, for example from comparing a peptide mass fingerprint (from mass spectrometry) to a sequence database, or  the set of typical spectra one obtains when running a protein through a mass spectrometer.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>&apos;Protein identification&apos;</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Peptide spectrum match</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Peptide identification</rdfs:label>
@@ -40380,7 +40381,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
     <!-- http://edamontology.org/operation_0451 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0451">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3920"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2478"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Detect recombination (hotspots and coldspots) and identify recombination breakpoints in a sequence alignment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequence alignment analysis (recombination detection)</oboInOwl:hasExactSynonym>
@@ -47310,7 +47311,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <!-- http://edamontology.org/operation_3233 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3233">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3920"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3961"/>
         <created_in>1.1</created_in>
         <oboInOwl:hasDefinition>Estimate the number of copies of loci of particular gene(s) in DNA sequences typically from gene-expression profiling technology based on microarray hybridisation-based experiments. For example, estimate copy number (or marker dosage) of a dominant marker in samples from polyploid plant cells or tissues, or chromosomal gains and losses in tumors.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Transcript copy number estimation</oboInOwl:hasExactSynonym>
@@ -49974,6 +49975,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This can include indirect methods which reveal the results of genetic changes, such as RNA analysis to indicate gene expression, or biochemical analysis to identify expressed proteins.</rdfs:comment>
         <rdfs:label>DNA testing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genetic_testing"/>
     </owl:Class>
     
 
@@ -50382,6 +50384,72 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Principal component analysis</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Principal_component_analysis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3961 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3961">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3228"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Identify where sections of the genome are repeated and the number of repeats in the genome varies between individuals.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>CNV detection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Copy number variation detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3962 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3962">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3961"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Identify deletion events causing the number of repeats in the genome to vary between individuals.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Deletion detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3963 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3963">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3961"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Identify duplication events causing the number of repeats in the genome to vary between individuals.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Duplication detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3964 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3964">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3961"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Identify copy number variations which are complex, e.g. multi-allelic variations that have many structural alleles and have rearranged multiple times in the ancestral genomes.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Complex CNV detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3965 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3965">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3961"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Identify amplification events causing the number of repeats in the genome to vary between individuals.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Amplification detection</rdfs:label>
     </owl:Class>
     
 
