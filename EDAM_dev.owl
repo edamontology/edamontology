@@ -36611,6 +36611,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
+        <oboInOwl:hasBroadSynonym>Immunogen design</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Predict antigenicity, allergenicity / immunogenicity, allergic cross-reactivity etc of peptides and proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Immunogenicity prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Hopp and Woods plotting</oboInOwl:hasNarrowSynonym>
@@ -37886,6 +37887,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>For example, assemble overlapping reads from paired-end sequencers into contigs (a contiguous sequence corresponding to read overlaps). Or assemble contigs, for example ESTs and genomic DNA fragments, depending on the detected fragment overlaps.</rdfs:comment>
         <rdfs:label>Sequence assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly"/>
     </owl:Class>
     
 
@@ -41603,6 +41605,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>The final sequence will resemble the backbone sequence. Mapping assemblers are usually much faster and less memory intensive than de-novo assemblers.</rdfs:comment>
         <rdfs:label>Mapping assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly#De-novo_vs._mapping_assembly"/>
     </owl:Class>
     
 
@@ -41619,6 +41622,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>De-novo assemblers are much slower and more memory intensive than mapping assemblers.</rdfs:comment>
         <rdfs:label>De-novo assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly#De-novo_vs._mapping_assembly"/>
     </owl:Class>
     
 
@@ -41636,6 +41640,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Genome assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly#Genome_assemblers"/>
     </owl:Class>
     
 
@@ -41651,6 +41656,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Assemblers must handle (or be complicated by) alternative splicing, trans-splicing, single-nucleotide polymorphism (SNP), recoding, and post-transcriptional modification.</rdfs:comment>
         <rdfs:label>EST assembly</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly#EST_assemblers"/>
     </owl:Class>
     
 
@@ -49514,6 +49520,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.17</created_in>
         <oboInOwl:hasDefinition>An operation which groups reads or contigs and assigns them to operational taxonomic units.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Binning</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Binning shotgun reads</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Binning methods use one or a combination of compositional features or sequence similarity.</rdfs:comment>
@@ -50970,6 +50977,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasHumanReadableId>Proteomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Bottom-up proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Discovery proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MS-based targeted proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MS-based untargeted proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metaproteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein and peptide identification</oboInOwl:hasNarrowSynonym>
@@ -55094,6 +55103,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>RNA-Seq analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Small RNA sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Small RNA-Seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Small-Seq</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Transcriptome profiling</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>WTSS</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Whole transcriptome shotgun sequencing</oboInOwl:hasExactSynonym>
@@ -55104,6 +55114,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:comment>This includes small RNA profiling (small RNA-Seq), for example to find novel small RNAs, characterize mutations and analyze expression of small RNAs.</rdfs:comment>
         <rdfs:label>RNA-Seq</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA-Seq"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Small_RNA_sequencing"/>
     </owl:Class>
     
 
@@ -55134,6 +55145,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Exometabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>LC-MS-based metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MS-based metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MS-based targeted metabolomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>MS-based untargeted metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Mass spectrometry-based metabolomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolites</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolome</oboInOwl:hasNarrowSynonym>
