@@ -3,8 +3,9 @@
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
 # EDAM 1.25 (coming soon)
-Dozens of new synonyms in the EDAM Topic subontology.
-Clean-up of "Expression analysis" including Undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
+* Dozens of new synonyms in the EDAM Topic subontology.
+* Clean-up of "Expression analysis" including Undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
+* Addition of new concepts, and other improvements (synonyms, hierarchy) for human copy number variation analysis.
 
 # EDAM 1.24
 
