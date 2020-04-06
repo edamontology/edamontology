@@ -40822,9 +40822,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model protein backbone conformation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein modelling (backbone)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Design optimization</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Epitope grafting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Scaffold search</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Methods might require a preliminary C(alpha) trace.</rdfs:comment>
+        <rdfs:comment>Scaffold search, epitope grafting and design optimization are stages of backbone modelling done during rational vaccine design.</rdfs:comment>
         <rdfs:label>Backbone modelling</rdfs:label>
     </owl:Class>
     
