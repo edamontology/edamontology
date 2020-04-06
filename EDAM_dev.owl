@@ -40837,9 +40837,13 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Model, analyse or edit amino acid side chain conformation in protein structure, optimize side-chain packing, hydrogen bonding etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein modelling (side chains)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Antibody optimisation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Antigen optimisation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Antigen resurfacing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Rotamer likelihood prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Antibody optimisation is to optimize the antibody-interacting surface of the antigen (epitope).  Antigen optimisation is to optimize the antigen-interacting surface of the antibody (paratope). Antigen resurfacing is to resurface the antigen by varying the sequence of non-epitope regions.</rdfs:comment>
         <rdfs:comment>Methods might use a residue rotamer library.</rdfs:comment>
         <rdfs:comment>This includes rotamer likelihood prediction: the prediction of rotamer likelihoods for all 20 amino acid types at each position in a protein structure, where output typically includes, for each residue position, the likelihoods for the 20 amino acid types with estimated reliability of the 20 likelihoods.</rdfs:comment>
         <rdfs:label>Side chain modelling</rdfs:label>
