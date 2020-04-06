@@ -36615,10 +36615,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Predict antigenicity, allergenicity / immunogenicity, allergic cross-reactivity etc of peptides and proteins.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Antigenicity prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Immunogenicity prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>B cell peptide immunogenicity prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Hopp and Woods plotting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>MHC peptide immunogenicity prediction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:comment>Immunological system are cellular or humoral. In vaccine design to induces a cellular immune response, methods must search for antigens that can be recognized by the major histocompatibility complex (MHC) molecules present in T lymphocytes.  If a humoral response is required, antigens for B cells must be identified.</rdfs:comment>
         <rdfs:comment>This includes methods that generate a graphical rendering of antigenicity of a protein, such as a Hopp and Woods plot.</rdfs:comment>
         <rdfs:comment>This is usually done in the development of peptide-specific antibodies or multi-epitope vaccines. Methods might use sequence data (for example motifs) and / or structural data.</rdfs:comment>
         <rdfs:label>Peptide immunogenicity prediction</rdfs:label>
