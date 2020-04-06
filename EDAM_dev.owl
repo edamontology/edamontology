@@ -20,7 +20,7 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <dc:creator>MatÃºÅ¡ KalaÅ¡</dc:creator>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3968</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3969</next_id>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -50491,6 +50491,28 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Amplification detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_3968 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_3968">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2429"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3092"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0804"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Predict adhesins in protein sequences.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Antibody epitope prediction</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>An adhesin is a cell-surface component that facilitate the adherence of a microorganism to a cell or surface. They are important virulence factors during establishment of infection and thus are targetted during vaccine development approaches that seek to block adhesin function and prevent adherence to host cell.</rdfs:comment>
+        <rdfs:label>Adhesin prediction</rdfs:label>
     </owl:Class>
     
 
