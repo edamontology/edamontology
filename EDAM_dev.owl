@@ -21,7 +21,7 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3975</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3977</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -36071,6 +36071,42 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Docker image format</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3975 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3975">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2561"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <documentation rdf:resource="http://gfa-spec.github.io/GFA-spec/"/>
+        <example rdf:resource="https://raw.githubusercontent.com/sjackman/gfalint/master/examples/big1.gfa"/>
+        <file_extension>gfa</file_extension>
+        <organisation rdf:resource="https://github.com/GFA-spec"/>
+        <oboInOwl:hasDefinition>Graphical Fragment Assembly captures sequence graphs as the product of an assembly, a representation of variation in genomes, splice graphs in genes, or even overlap between reads from long-read sequencing technology.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>GFA 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3976 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3976">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2561"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <documentation rdf:resource="http://gfa-spec.github.io/GFA-spec/"/>
+        <example rdf:resource="https://raw.githubusercontent.com/sjackman/gfalint/master/examples/big2.gfa"/>
+        <file_extension>gfa</file_extension>
+        <organisation rdf:resource="https://github.com/GFA-spec"/>
+        <oboInOwl:hasDefinition>Graphical Fragment Assembly captures sequence graphs as the product of an assembly, a representation of variation in genomes, splice graphs in genes, or even overlap between reads from long-read sequencing technology.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>GFA 2</rdfs:label>
     </owl:Class>
     
 
