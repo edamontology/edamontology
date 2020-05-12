@@ -15,17 +15,17 @@
     <owl:Ontology rdf:about="http://edamontology.org">
         <dc:format>application/rdf+xml</dc:format>
         <dc:contributor>Veit Schwämmle</dc:contributor>
+        <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
+        <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3970</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3969</next_id>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
-        <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
-        <dc:creator>Hervé Ménager</dc:creator>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <oboInOwl:hasSubset>formats &quot;EDAM data formats&quot;</oboInOwl:hasSubset>
@@ -39,7 +39,7 @@
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <dc:creator>Jon Ison</dc:creator>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
-        <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
+        <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
     </owl:Ontology>
     
 
@@ -35956,6 +35956,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>N-Quads should not be confused with N-Triples which does not contain graph information.</rdfs:comment>
         <rdfs:label>N-Quads</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3969 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3969">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <documentation rdf:resource="https://vega.github.io/vega/docs/"/>
+        <documentation rdf:resource="https://vega.github.io/vega/docs/#specification"/>
+        <documentation rdf:resource="https:doi.org/10.1145/2642918.2647360"/>
+        <example rdf:resource="https://vega.github.io/vega/examples/"/>
+        <file_extension>json</file_extension>
+        <media_type>application/json</media_type>
+        <organisation rdf:resource="http://idl.cs.washington.edu/"/>
+        <oboInOwl:hasDefinition>Vega is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>vega</rdfs:label>
     </owl:Class>
     
 
