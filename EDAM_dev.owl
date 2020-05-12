@@ -21,7 +21,7 @@
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3977</next_id>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3978</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -36107,6 +36107,30 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>GFA 2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3977 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3977">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3620"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <documentation rdf:resource="https://www.objtables.org/docs"/>
+        <example rdf:resource="https://www.objtables.org/docs#examples"/>
+        <file_extension>xlsx</file_extension>
+        <media_type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</media_type>
+        <organisation rdf:resource="https://www.karrlab.org"/>
+        <oboInOwl:hasDefinition>ObjTables is a toolkit for creating re-usable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>ObjTables</rdfs:label>
     </owl:Class>
     
 
