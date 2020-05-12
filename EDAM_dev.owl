@@ -20,8 +20,8 @@
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14.01.2020 13:23 UTC</oboOther:date>
         <oboInOwl:hasSubset>relations &quot;EDAM relations&quot;</oboInOwl:hasSubset>
         <dc:creator>Hervé Ménager</dc:creator>
+        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3971</next_id>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
-        <next_id rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3970</next_id>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
@@ -35977,6 +35977,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>vega</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/format_3970 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_3970">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <documentation rdf:resource="https://doi.org/10.1109/TVCG.2016.2599030"/>
+        <documentation rdf:resource="https://vega.github.io/vega-lite/docs/"/>
+        <documentation rdf:resource="https://vega.github.io/vega-lite/docs/#spec"/>
+        <example rdf:resource="https://vega.github.io/vega-lite/examples/"/>
+        <file_extension>json</file_extension>
+        <media_type>application/json</media_type>
+        <organisation rdf:resource="http://idl.cs.washington.edu/"/>
+        <oboInOwl:hasDefinition>Vega-Lite is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>Vega-lite</rdfs:label>
     </owl:Class>
     
 
