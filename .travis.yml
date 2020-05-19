@@ -24,9 +24,9 @@ install:
 
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION rdflib requests parameterized jupyter nose2 -c conda-forge
   - conda activate test-environment
-  - pip install -r ci_test/requirements.txt
   - git clone https://github.com/edamontology/edamverify.git
   - cd edamverify
+  - pip install -r ci_test/requirements.txt
   - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
 
 script:
