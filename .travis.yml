@@ -1,16 +1,35 @@
 language: python
-dist: trusty
+
 python:
-  - "2.7"
-# command to install dependencies
-install: "pip install git+https://github.com/edamontology/edamxpathvalidator.git"
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
-# install dependencies for owltools checker
-before_script:
-  - sudo update-java-alternatives -s java-8-oracle
-  - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
-# command to run tests
-script: "edamxpathvalidator EDAM_dev.owl && java -jar HermiT.jar -U EDAM_dev.owl  | diff .hermit_ok -" 
+  #- "3.5"
+  - "3.8"
+
+install:
+  - sudo apt-get update
+  # We do this conditionally because it saves us some downloading if the
+  # version is the same.
+  - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+      wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -O miniconda.sh;
+    else
+      wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh;
+    fi
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - source "$HOME/miniconda/etc/profile.d/conda.sh"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda update -q conda
+  # Useful for debugging any issues with conda
+  - conda info -a
+
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION rdflib requests parameterized jupyter nose2 -c conda-forge
+  - conda activate test-environment
+
+script:
+  - git clone https://github.com/edamontology/edamverify.git
+  - cd edamverify
+  - nose2 --with-coverage --verbose
+
+notifications:
+  email:
+    - alban.gaignard@univ-nantes.fr
+    - herve.menager@pasteur.fr
