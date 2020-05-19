@@ -28,8 +28,12 @@ install:
   - cd edamverify
   - pip install -r ci_test/requirements.txt
   - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
+  - pwd
+  - ls
 
 script:
+  - pwd
+  - ls
   - cd edamverify
   - nose2 --with-coverage --verbose
 
