@@ -28,12 +28,9 @@ install:
   - cd edamverify
   - pip install -r ci_test/requirements.txt
   - wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
-  - pwd
-  - ls
 
 script:
-  - pwd
-  - ls
+  - export EDAM_PATH=/home/travis/build/edamontology/edamontology/EDAM_dev.owl
   - cd edamverify
   - nose2 --with-coverage --verbose
 
