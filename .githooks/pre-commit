@@ -1,9 +1,12 @@
 #!/bin/bash
 
 #check where this script is running from
+where git
+git --version
 echo INFO: Pre-commit hook running from $PWD
 
 #check that the EDAM source file is in the right format (RDF/XML)
 grep -c 'owl:Class' EDAM_dev.owl
 owlclassfound=$?
+#owlclassfound=0 is success
 exit $owlclassfound
