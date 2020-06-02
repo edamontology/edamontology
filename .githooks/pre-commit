@@ -1,5 +1,9 @@
 #!/bin/bash
-#check that the EDAM file is actually in the right format
+
+#check where this script is running from
+echo INFO: Pre-commit hook running from $PWD
+
+#check that the EDAM source file is in the right format (RDF/XML)
 grep -c 'owl:Class' EDAM_dev.owl
 owlclassfound=$?
 exit $owlclassfound
