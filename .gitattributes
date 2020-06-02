@@ -1,4 +1,7 @@
-# Set the following file types, so that line endings are NEVER changed. The "binary" option does it. N.B. that here we need it also for tabular files, not only truly binary files!
+# Set the following file types, so that line endings are NEVER changed. The "binary" option does it.
+# N.B. that git hooks do not work in GitHub Desktop (on Win), as a paradox, if they are with the CRLF endings.
+pre-commit binary
+# N.B. that here we need it also for tabular files, not only truly binary files! There in the current versions, we have CRLF as EOL and possbily LF inside single cells (in CSV).
 *.csv binary
 *.tsv binary
 *.xlsx binary
