@@ -1,5 +1,6 @@
 #!/bin/bash
 #check that the EDAM file is actually in the right format
+echo $PWD
 grep -c 'owl:Class' EDAM_dev.owl
 owlclassfound=$?
 exit $owlclassfound
