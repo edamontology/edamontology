@@ -31,13 +31,13 @@ Please make sure to have set up the correct path to the hooks directory, globall
 
 If you want to continue using an older version of __git__ than __2.9.0__, please run the pre-commit script manually:
 
-Inside the _edamontology_ repo, run: `bash .githooks/pre-commit`
+Inside the _edamontology_ repo, run: `sh .githooks/pre-commit`
 
-If the pre-commit script returns 0, the source code is invalid. (_i.e._ not containing any _owl:Class_)
+If the pre-commit script fails (_i.e._ non-zero exit code), the source code is invalid. (_i.e._ not containing any _owl:Class_ string)
 
 
 ## Other contributions
 
-__Not wanting to edit an OWL file yourself? Your ideas and issues are appreciated!__
+__Not wanting to edit an OWL file yourself? Your ideas and issues are highly appreciated!__
 
 Please see [Getting involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html) for more ways to contribute to EDAM.
