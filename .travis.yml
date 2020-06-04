@@ -32,7 +32,8 @@ install:
 script:
   - export EDAM_PATH=/home/travis/build/edamontology/edamontology/EDAM_dev.owl
   - cd edamverify
-  - nose2 --with-coverage --verbose
+  - nose2 --with-coverage --verbose ci_test/test_edamxpathvalidator.py
+  - nose2 --with-coverage --verbose ci_test/test_hermit.py
 
 notifications:
   email:
