@@ -34,8 +34,8 @@ script:
   - cd edamverify
   - pwd
   - ls ci_test/*
-  - nose2 --with-coverage --verbose ci_test/test_edamxpathvalidator.py
-  - nose2 --with-coverage --verbose ci_test/test_hermit.py
+  - nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
+  - nose2 --with-coverage --verbose ci_test.test_hermit
 
 notifications:
   email:
