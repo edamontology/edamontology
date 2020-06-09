@@ -4,7 +4,7 @@ __DOI of the latest stable EDAM version 1.24__: [![10.5281/zenodo.3608238](https
 
 __Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
-__Latest documentation__: [![Documentation Status](https://readthedocs.org/projects/deeptools/badge/)](http://deeptools.readthedocs.org/)
+__Latest documentation__: [![Documentation Status](https://readthedocs.org/projects/edamontologydocs/badge/)](http://edamontologydocs.readthedocs.org/)
 
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
