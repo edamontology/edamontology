@@ -7,7 +7,7 @@
 * Addition of new format concepts in support of GigaScience database, [GigaDB](https://gigascience.biomedcentral.com/articles/10.1186/2047-217X-1-11).
 * Addition of misc. new concepts requested via the tracker
 * Dozens of new synonyms in the EDAM Topic subontology mostly.
-* Clean-up of *Expression analysis* including undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
+* Clean-up of *Expression analysis* including undeprecation of *Gene expression profiling* (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
 * Addition of links to Wikipedia
 
 ### Changes in hierarchy
