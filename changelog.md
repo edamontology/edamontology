@@ -3,6 +3,10 @@
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
 # EDAM 1.25
+
+### Summary of changes
+See the [changelog-detailed.md](changelog-detailed.md#edam_124owl) for a detailed list of semantic changes in the EDAM ontology.
+
 * Addition of new concepts, and other improvements (synonyms, hierarchy) for human copy number variation analysis.
 * Addition of new format concepts in support of GigaScience database, [GigaDB](https://gigascience.biomedcentral.com/articles/10.1186/2047-217X-1-11).
 * Addition of misc. new concepts requested via the tracker
