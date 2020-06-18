@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4008</next_id>
+        <next_id>4010</next_id>
         <oboOther:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">02.06.2020 16:05 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -28,7 +28,7 @@
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
-        <doap:Version >1.25</doap:Version>
+        <doap:Version>1.25</doap:Version>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
@@ -51016,6 +51016,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/operation_3938">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0482"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_4009"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
@@ -51029,17 +51030,15 @@ ows re-sequencing of complete genomes of any given organism with high resolution
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Virtual screening is used in drug discovery to search libraries of small molecules in order to identify those molecules which are most likely to bind to a drug target (typically a protein receptor or enzyme).</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDefinition>Virtual screening is used in drug discovery to identify potential drug compounds.  It involves searching libraries of small molecules in order to identify those molecules which are most likely to bind to a drug target (typically a protein receptor or enzyme).</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Ligand-based screening</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ligand-based virtual screening</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Structure-based drug design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Structure-based screening</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Structured-based virtual screening</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Virtual ligand screening</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>Virtual screening is widely used for lead identification, lead optimization, and scaffold hopping during drug design and discovery. There are two broad categories of virtual screening techniques: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
+        <rdfs:comment>Virtual screening is widely used for lead identification, lead optimization, and scaffold hopping during drug design and discovery.</rdfs:comment>
         <rdfs:label>Virtual screening</rdfs:label>
     </owl:Class>
     
@@ -51227,6 +51226,40 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>An adhesin is a cell-surface component that facilitate the adherence of a microorganism to a cell or surface. They are important virulence factors during establishment of infection and thus are targetted during vaccine development approaches that seek to block adhesin function and prevent adherence to host cell.</rdfs:comment>
         <rdfs:label>Adhesin prediction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_4008 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4008">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>Design new protein molecules with specific structural or functional properties.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Protein redesign</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Rational protein design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>de novo protein design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <rdfs:label>Protein design</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_design"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_4009 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4009">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <oboInOwl:hasDefinition>The design of small molecules with specific biological activity, such as inhibitors or modulators for proteins that are of therapeutic interest.  This can involve the modification of individual atoms, the addition or removal of molecular fragments, and the use reaction-based design to explore tractable synthesis options for the small molecule.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure-based drug design</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Structure-based small molecule design</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment>Small molecule design can involve assessment of target druggability and flexibility, molecular docking, in silico fragment screening, molecular dynamics, and homology modeling.</rdfs:comment>
+        <rdfs:comment>There are two broad categories of small molecule design techniques when applied to the design of drugs: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
+        <rdfs:label>Small molecule design</rdfs:label>
     </owl:Class>
     
 

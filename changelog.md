@@ -4,6 +4,7 @@
 
 # EDAM 1.25 (coming soon)
 * Dozens of new synonyms in the EDAM Topic subontology mostly.
+* Addition of new format concepts in support of GigaScience database, [GigaDB](https://gigascience.biomedcentral.com/articles/10.1186/2047-217X-1-11).
 * Clean-up of "Expression analysis" including Undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
 * Addition of new concepts, and other improvements (synonyms, hierarchy) for human copy number variation analysis.
 * Links to Wikipedia
