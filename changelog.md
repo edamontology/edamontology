@@ -17,8 +17,8 @@
 
 ### Fixed issues
 -  30 "concept or term request" issues fixed and closed (see [milestone 1.25](https://github.com/edamontology/edamontology/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.25))
--  2 enhacements ([525](https://github.com/edamontology/edamontology/issues/525), [527](https://github.com/edamontology/edamontology/issues/527))
--  1 bug fixed ([524](https://github.com/edamontology/edamontology/issues/524))
+-  2 enhacements (#525, #527)
+-  1 bug fixed (#524)
 
 # EDAM 1.24
 
