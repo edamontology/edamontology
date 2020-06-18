@@ -7,7 +7,7 @@
 * Addition of new format concepts in support of GigaScience database, [GigaDB](https://gigascience.biomedcentral.com/articles/10.1186/2047-217X-1-11).
 * Addition of misc. new concepts requested via the tracker
 * Dozens of new synonyms in the EDAM Topic subontology mostly.
-* Clean-up of "Expression analysis" including Undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
+* Clean-up of *Expression analysis* including undeprecation of *Gene expression profiling" (now child of *Expression analysis*), clean-up of synonyms, hiearchy improvements etc. clarifying the concepts.
 * Addition of links to Wikipedia
 
 ### Changes in hierarchy
@@ -15,7 +15,10 @@
 *  7 concept relations changed (0 Topic, 6 Operation, 0 Data, 1 Format, 1 undeprecated)
 *  0 concepts deprecated
 
-
+### Fixed issues
+-  30 "concept or term request" issues fixed and closed (see [milestone 1.25](https://github.com/edamontology/edamontology/issues?q=is%3Aopen+is%3Aissue+milestone%3A1.25))
+-  2 enhacements ([525](https://github.com/edamontology/edamontology/issues/525), [527](https://github.com/edamontology/edamontology/issues/527))
+-  1 bug fixed ([524](https://github.com/edamontology/edamontology/issues/524))
 
 # EDAM 1.24
 
