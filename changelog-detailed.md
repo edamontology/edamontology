@@ -19,8 +19,8 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 
 # EDAM_1.25.owl
 
-  - [New concepts](#new-concepts-124) with relations
-  - [Changed relations between concepts](#changed-relations-between-concepts-124)
+  - [New concepts](#new-concepts-125) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-125)
 
 ## New concepts (1.25):
 
@@ -276,7 +276,7 @@ Label: Small molecule design
 +   'Small molecule design' SubClassOf 'Design'
 
 
-## Changed relations between concepts (1.24):
+## Changed relations between concepts (1.25):
 
 Class: http://edamontology.org/operation_0314
 Label: Gene expression profiling
