@@ -1,6 +1,7 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
+  - [EDAM_1.25.owl](#edam_125owl)
   - [EDAM_1.24.owl](#edam_124owl)
   - [EDAM_1.23.owl](#edam_123owl)
   - [EDAM_1.22.owl](#edam_122owl)
@@ -14,6 +15,301 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.14.owl](#edam_114owl)
   - [EDAM_1.13.owl](#edam_113owl)
   - [EDAM_1.12.owl](#edam_112owl)
+
+
+# EDAM_1.25.owl
+
+  - [New concepts](#new-concepts-124) with relations
+  - [Changed relations between concepts](#changed-relations-between-concepts-124)
+
+## New concepts (1.25):
+
+Class: http://edamontology.org/format_3992
+Label: CIGAR format
++   'CIGAR format' SubClassOf 'Alignment format (pair only)'
++   'CIGAR format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3991
+Label: TrackDB
++   'TrackDB' SubClassOf 'Binary format'
++   'TrackDB' SubClassOf 'Sequence annotation track format'
+ 
+Class: http://edamontology.org/format_3994
+Label: U3D
++   'U3D' SubClassOf 'Binary format'
++   'U3D' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3993
+Label: Stereolithography format
++   'Stereolithography format' SubClassOf 'Binary format'
++   'Stereolithography format' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3990
+Label: AVI
++   'AVI' SubClassOf 'Binary format'
++   'AVI' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3999
+Label: R script
++   'R script' SubClassOf 'Textual format'
++   'R script' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/format_3996
+Label: Python script
++   'Python script' SubClassOf 'Textual format'
++   'Python script' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/format_3995
+Label: Texture file format
++   'Texture file format' SubClassOf 'Image format'
++   'Texture file format' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3998
+Label: Perl script
++   'Perl script' SubClassOf 'Textual format'
++   'Perl script' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/format_3997
+Label: MPEG-4
++   'MPEG-4' SubClassOf 'Binary format'
++   'MPEG-4' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3969
+Label: Vega
++   'Vega' SubClassOf 'JSON'
++   'Vega' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3981
+Label: TAR format
++   'TAR format' SubClassOf 'Binary format'
++   'TAR format' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_3980
+Label: RPKM
++   'RPKM' SubClassOf 'Gene expression report format'
++   'RPKM' SubClassOf 'TSV'
+ 
+Class: http://edamontology.org/format_3983
+Label: NET
++   'NET' SubClassOf 'Textual format'
++   'NET' SubClassOf 'Sequence feature annotation format'
+ 
+Class: http://edamontology.org/format_3982
+Label: CHAIN
++   'CHAIN' SubClassOf 'Textual format'
++   'CHAIN' SubClassOf 'Alignment format (pair only)'
+ 
+Class: http://edamontology.org/format_3989
+Label: GZIP format
++   'GZIP format' SubClassOf 'is format of' some 'Data'
++   'GZIP format' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3988
+Label: LSM
++   'LSM' SubClassOf 'Image format'
++   'LSM' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3985
+Label: gxformat2
++   'gxformat2' SubClassOf 'Textual format'
++   'gxformat2' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/format_3984
+Label: QMAP
++   'QMAP' SubClassOf 'Sequence feature annotation format'
++   'QMAP' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3987
+Label: ZIP format
++   'ZIP format' SubClassOf 'Binary format'
++   'ZIP format' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_3986
+Label: WMV
++   'WMV' SubClassOf 'Image format'
++   'WMV' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3970
+Label: Vega-lite
++   'Vega-lite' SubClassOf 'JSON'
++   'Vega-lite' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_3972
+Label: BNGL
++   'BNGL' SubClassOf 'is format of' some 'Kinetic model'
++   'BNGL' SubClassOf 'Textual format'
++   'BNGL' SubClassOf 'Biological pathway or network format'
+ 
+Class: http://edamontology.org/format_3971
+Label: NeuroML
++   'NeuroML' SubClassOf 'Biological pathway or network format'
++   'NeuroML' SubClassOf 'is format of' some 'Kinetic model'
++   'NeuroML' SubClassOf 'XML'
+ 
+Class: http://edamontology.org/format_3978
+Label: CONTIG
++   'CONTIG' SubClassOf 'Textual format'
++   'CONTIG' SubClassOf 'Sequence record format (text)'
+ 
+Class: http://edamontology.org/format_3977
+Label: ObjTables
++   'ObjTables' SubClassOf 'is format of' some 'Data'
++   'ObjTables' SubClassOf 'xlsx'
+ 
+Class: http://edamontology.org/format_3979
+Label: WEGO
++   'WEGO' SubClassOf 'TSV'
++   'WEGO' SubClassOf 'Gene annotation format'
+ 
+Class: http://edamontology.org/format_3973
+Label: Docker image format
++   'Docker image format' SubClassOf 'Raw sequence format'
++   'Docker image format' SubClassOf 'Binary format'
+ 
+Class: http://edamontology.org/format_3976
+Label: GFA 2
++   'GFA 2' SubClassOf 'Sequence assembly format (text)'
++   'GFA 2' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_3975
+Label: GFA 1
++   'GFA 1' SubClassOf 'Sequence assembly format (text)'
++   'GFA 1' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/topic_3959
+Label: Cytogenetics
++   'Cytogenetics' SubClassOf 'Molecular genetics'
+ 
+Class: http://edamontology.org/topic_3958
+Label: Copy number variation
++   'Copy number variation' SubClassOf 'Structural variation'
+ 
+Class: http://edamontology.org/topic_3967
+Label: Immunomics
++   'Immunomics' SubClassOf 'Omics'
+ 
+Class: http://edamontology.org/topic_3966
+Label: Vaccinology
++   'Vaccinology' SubClassOf 'Medicines research and development'
+ 
+Class: http://edamontology.org/topic_3974
+Label: Epistasis
++   'Epistasis' SubClassOf 'Genomics'
++   'Epistasis' SubClassOf 'Epigenetics'
+ 
+Class: http://edamontology.org/format_4004
+Label: SimTools repertoire file format
++   'SimTools repertoire file format' SubClassOf 'Binary format'
++   'SimTools repertoire file format' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_4005
+Label: Configuration file format
++   'Configuration file format' SubClassOf 'is format of' some 'Data'
++   'Configuration file format' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_4002
+Label: pickle
++   'pickle' SubClassOf 'Binary format'
++   'pickle' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_4003
+Label: NumPy format
++   'NumPy format' SubClassOf 'Binary format'
++   'NumPy format' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_4000
+Label: R markdown
++   'R markdown' SubClassOf 'Workflow format'
++   'R markdown' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/format_4001
+Label: NIFTI format
++   'NIFTI format' SubClassOf 'Binary format'
++   'NIFTI format' SubClassOf 'Image format'
+ 
+Class: http://edamontology.org/format_4006
+Label: Zstandard format
++   'Zstandard format' SubClassOf 'Binary format'
++   'Zstandard format' SubClassOf 'is format of' some 'Data'
+ 
+Class: http://edamontology.org/format_4007
+Label: MATLAB script
++   'MATLAB script' SubClassOf 'Textual format'
++   'MATLAB script' SubClassOf 'Workflow format'
+ 
+Class: http://edamontology.org/operation_3965
+Label: Amplification detection
++   'Amplification detection' SubClassOf 'Copy number variation detection'
+ 
+Class: http://edamontology.org/operation_3964
+Label: Complex CNV detection
++   'Complex CNV detection' SubClassOf 'Copy number variation detection'
+ 
+Class: http://edamontology.org/operation_3963
+Label: Duplication detection
++   'Duplication detection' SubClassOf 'Copy number variation detection'
+ 
+Class: http://edamontology.org/operation_3962
+Label: Deletion detection
++   'Deletion detection' SubClassOf 'Copy number variation detection'
+ 
+Class: http://edamontology.org/operation_3968
+Label: Adhesin prediction
++   'Adhesin prediction' SubClassOf 'Mapping'
++   'Adhesin prediction' SubClassOf 'Protein feature detection'
++   'Adhesin prediction' SubClassOf 'has topic' some 'Immunology'
+ 
+Class: http://edamontology.org/operation_3961
+Label: Copy number variation detection
++   'Copy number variation detection' SubClassOf 'Structural variation detection'
+ 
+Class: http://edamontology.org/operation_3960
+Label: Principal component analysis
++   'Principal component analysis' SubClassOf 'Statistical calculation'
+ 
+Class: http://edamontology.org/operation_4008
+Label: Protein design
++   'Protein design' SubClassOf 'Design'
+ 
+Class: http://edamontology.org/operation_4009
+Label: Small molecule design
++   'Small molecule design' SubClassOf 'Design'
+
+
+## Changed relations between concepts (1.24):
+
+Class: http://edamontology.org/operation_0314
+Label: Gene expression profiling
+-   'Gene expression profiling' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
++   'Gene expression profiling' SubClassOf 'Expression analysis'
+ 
+Class: http://edamontology.org/operation_0451
+Label: Recombination detection
+-   'Recombination detection' SubClassOf 'DNA testing'
++   'Recombination detection' SubClassOf 'Nucleic acid sequence analysis'
+ 
+Class: http://edamontology.org/operation_3223
+Label: Differential gene expression analysis
+-   'Differential gene expression analysis' SubClassOf 'Nucleic acid comparison'
++   'Differential gene expression analysis' SubClassOf 'Gene expression profiling'
+ 
+Class: http://edamontology.org/operation_3233
+Label: Copy number estimation
+-   'Copy number estimation' SubClassOf 'DNA testing'
++   'Copy number estimation' SubClassOf http://edamontology.org/operation_3961
+ 
+Class: http://edamontology.org/operation_3938
+Label: Virtual screening
++   'Virtual screening' SubClassOf http://edamontology.org/operation_4009
+ 
+Class: http://edamontology.org/format_1923
+Label: acedb
++   'acedb' SubClassOf 'Textual format'
+ 
+Class: http://edamontology.org/operation_3741
+Label: Differential protein expression analysis
+-   'Differential protein expression analysis' SubClassOf 'Differential gene expression analysis'
++   'Differential protein expression analysis' SubClassOf 'Gene expression profiling'
 
 
 # EDAM_1.24.owl
