@@ -46722,7 +46722,8 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasDefinition>Generate, process or analyse a biological pathway or network.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway or network analysis</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <owl:deprecated>true</owl:deprecated>
+	<oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:Class>
     
 
