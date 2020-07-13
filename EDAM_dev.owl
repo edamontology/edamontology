@@ -25114,12 +25114,12 @@
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
         <documentation rdf:resource="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.daylight.com/dayhtml/doc/theory/theory.smiles.html"/>
         <oboInOwl:hasDefinition>Chemical structure specified in Simplified Molecular Input Line Entry System (SMILES) line notation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>SMILES</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
     </owl:Class>
     
 
@@ -28483,11 +28483,11 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
-        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
         <oboInOwl:hasDefinition>Stockholm multiple sequence alignment format (used by Pfam and Rfam).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Stockholm format</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
     </owl:Class>
     
 
@@ -30835,7 +30835,6 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2195"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3748"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Resource_Description_Framework"/>
         <oboInOwl:hasDefinition>A serialisation format conforming to the Resource Description Framework (RDF) model.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Resource Description Framework format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>RDF</oboInOwl:hasRelatedSynonym>
@@ -30843,6 +30842,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>RDF format</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Resource_Description_Framework"/>
     </owl:Class>
     
 
@@ -32694,12 +32694,12 @@
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
         <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/JSON"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/JSON"/>
         <oboInOwl:hasDefinition>JavaScript Object Notation format; a lightweight, text-based format to represent tree-structured data using key-value pairs.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>JavaScript Object Notation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>JSON</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/JSON"/>
     </owl:Class>
     
 
@@ -33067,7 +33067,6 @@
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
         <oboInOwl:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons incuded in EDAM as a specialisation of &apos;HTML&apos;.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/MHTML"/>
         <oboInOwl:hasDbXref rdf:resource="https://tools.ietf.org/html/rfc2557"/>
         <oboInOwl:hasDefinition>MIME  HTML format for Web pages, which can include external resources, including images, Flash animations and so on.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>HTML email format</oboInOwl:hasExactSynonym>
@@ -33085,6 +33084,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>MHTML</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MHTML"/>
     </owl:Class>
     
 
@@ -34564,12 +34564,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="https://www.w3.org/DesignIssues/LinkedData.html"/>
         <created_in>1.15</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Linked_data"/>
         <oboInOwl:hasDefinition>A linked data format enables publishing structured data as linked data (Linked Data), so that the data can be interlinked and become more useful through semantic queries.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Semantic Web format</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Linked data format</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linked_data"/>
     </owl:Class>
     
 
@@ -34585,13 +34585,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>jsonld</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/ld+json"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/ld+json"/>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/JSON-LD"/>
         <oboInOwl:hasDefinition>JSON-LD, or JavaScript Object Notation for Linked Data, is a method of encoding Linked Data using JSON.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>JavaScript Object Notation for Linked Data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>jsonld</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>JSON-LD</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/JSON-LD"/>
     </owl:Class>
     
 
@@ -34605,7 +34605,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>yaml</file_extension>
         <file_extension>yml</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/YML"/>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/YAML"/>
         <oboInOwl:hasDefinition>YAML (YAML Ain&apos;t Markup Language) is a human-readable tree-structured data serialisation language.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>YAML Ain&apos;t Markup Language</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>yml</oboInOwl:hasExactSynonym>
@@ -34614,6 +34613,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:comment>Data in YAML format can be serialised into text, or binary format.</rdfs:comment>
         <rdfs:comment>YAML version 1.2 is a superset of JSON; prior versions were &quot;not strictly compatible&quot;.</rdfs:comment>
         <rdfs:label>YAML</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/YAML"/>
     </owl:Class>
     
 
@@ -34623,13 +34623,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3751">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Delimiter-separated_values"/>
         <oboInOwl:hasDefinition>Tabular data represented as values in a text file delimited by some character.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Delimiter-separated values</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tabular format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>DSV</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Delimiter-separated_values"/>
     </owl:Class>
     
 
@@ -54519,7 +54519,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>Protein tertiary structural domains and folds in a protein or polypeptide chain.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Protein_superfamily"/>
         <oboInOwl:hasHumanReadableId>Protein_folds_and_structural_domains</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Intramembrane regions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein domains</oboInOwl:hasNarrowSynonym>
@@ -54534,6 +54533,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:comment>This includes topological domains such as cytoplasmic regions in a protein.</rdfs:comment>
         <rdfs:comment>This includes trans- or intra-membrane regions of a protein, typically describing physicochemical properties of the secondary structure elements.  For example, the location and size of the membrane spanning segments and intervening loop regions, transmembrane region IN/OUT orientation relative to the membrane, plus the following data for each amino acid: A Z-coordinate (the distance to the membrane center), the free energy of membrane insertion (calculated in a sliding window over the sequence) and a reliability score. The z-coordinate implies information about re-entrant helices, interfacial helices, the tilt of a transmembrane helix and loop lengths.</rdfs:comment>
         <rdfs:label>Protein folds and structural domains</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Protein_superfamily"/>
     </owl:Class>
     
 
@@ -57946,13 +57946,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDefinition>The use of chemistry to create new compounds.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Chemical_synthesis"/>
         <oboInOwl:hasHumanReadableId>Synthetic_chemistry</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Synthetic organic chemistry</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Synthetic chemistry</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_synthesis"/>
     </owl:Class>
     
 
@@ -58247,12 +58247,12 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The identification of molecular and genetic causes of disease and the development of interventions to correct them.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Molecular_medicine"/>
         <oboInOwl:hasHumanReadableId>Molecular_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Molecular medicine</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_medicine"/>
     </owl:Class>
     
 
@@ -58453,7 +58453,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>1.4</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDefinition>The prevention of pain and the evaluation, treatment and rehabilitation of persons in pain.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="https://en.wikipedia.org/wiki/Pain_management"/>
         <oboInOwl:hasExactSynonym>Algiatry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pain management</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Pain_medicine</oboInOwl:hasHumanReadableId>
