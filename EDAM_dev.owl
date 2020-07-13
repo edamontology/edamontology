@@ -25157,6 +25157,7 @@
         <oboInOwl:hasDefinition>Identifier of a pathway from the WikiPathways pathway database.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>WikiPathways ID</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>WikiPathways pathway ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <rdfs:label>Pathway ID (WikiPathways)</rdfs:label>
@@ -36098,7 +36099,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>HDF is the name of a set of file formats and libraries designed to store and organize large amounts of numerical data, originally developed at the National Center for Supercomputing Applications at the University of Illinois.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>HDF is currently supported by many commercial and non-commercial software platforms such as Java, MATLAB/Scilab, Octave, Python and R.</rdfs:comment>
         <rdfs:label>HDF</rdfs:label>
@@ -36146,7 +36147,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Trajectory Next Generation format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <oboInOwl:inSubset>TNG</oboInOwl:inSubset>
         <rdfs:comment>Fully architecture-independent format, regarding both endianness and the ability to mix single/double precision trajectories and I/O libraries. Self-sufficient, it should not require any other files for reading, and all the data should be contained in a single file for easy transport. Temporal compression of data, improving the compression rate of the previous XTC format. Possibility to store meta-data with information about the simulation. Direct access to a particular frame. Efficient parallel I/O.</rdfs:comment>
         <rdfs:label>TNG</rdfs:label>
     </owl:Class>
@@ -49581,7 +49581,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3445"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Phase a macromolecular crystal structure, for example by using molecular replacement or experimental phasing methods.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Phasing</rdfs:label>
     </owl:Class>
@@ -49594,7 +49594,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0322"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>A technique used to construct an atomic model of an unknown structure from diffraction data, based upon an atomic model of a known structure, either a related protein or the same protein from a different crystal form.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>The technique solves the phase problem, i.e. retrieve information concern phases of the structure.</rdfs:comment>
         <rdfs:label>Molecular replacement</rdfs:label>
@@ -49608,7 +49608,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0322"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>A method used to refine a structure by moving the whole molecule or parts of it as a rigid unit, rather than moving individual atoms.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Rigid body refinement usually follows molecular replacement in the assignment of a structure from diffraction data.</rdfs:comment>
         <rdfs:label>Rigid body refinement</rdfs:label>
@@ -49704,7 +49704,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>The prediction of the degree of pathogenicity of a microorganism from analysis of molecular sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Pathogenicity prediction</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Virulence prediction</rdfs:label>
     </owl:Class>
@@ -49807,8 +49807,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0236"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Count k-mers (substrings of length k) in DNA sequence data.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>k-mer counting is used in genome and transcriptome assembly, metagenomic sequencing, and for error correction of sequence reads.</rdfs:comment>
         <rdfs:label>k-mer counting</rdfs:label>
     </owl:Class>
@@ -49878,8 +49878,8 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         </rdfs:subClassOf>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Identify or predict causes for antibiotic resistance from molecular sequence analysis.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Antimicrobial resistance prediction</rdfs:label>
     </owl:Class>
     
@@ -52057,7 +52057,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>1.25</created_in>
         <oboInOwl:hasDefinition>Predict adhesins in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>An adhesin is a cell-surface component that facilitate the adherence of a microorganism to a cell or surface. They are important virulence factors during establishment of infection and thus are targetted during vaccine development approaches that seek to block adhesin function and prevent adherence to host cell.</rdfs:comment>
         <rdfs:label>Adhesin prediction</rdfs:label>
     </owl:Class>
@@ -56656,7 +56656,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>beta13</created_in>
         <oboInOwl:hasDefinition>The acquisition of data, typically measurements of physical systems using any type of sampling system, or by another other means.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data collection</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data acquisition</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_acquisition"/>
