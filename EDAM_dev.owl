@@ -1503,7 +1503,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0863"/>
         <oboInOwl:hasDefinition>Alignment of exact matches between subsequences (words) within two or more molecular sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence word alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Sequence alignment (words)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -1995,7 +1994,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0893"/>
         <oboInOwl:hasDefinition>An alignment of a sequence to a 3D profile (representing structures or a structure alignment).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence-structural profile alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Sequence-3D profile alignment</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -3344,7 +3342,6 @@
     <owl:Class rdf:about="http://edamontology.org/data_0985">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <example>Protein|DNA|RNA</example>
         <obsolete_since>1.5</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0842"/>
@@ -4097,7 +4094,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>[0-9]+</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1027"/>
         <oboInOwl:hasDefinition>An Entrez unique identifier of a gene.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -5299,10 +5295,8 @@
     <owl:Class rdf:about="http://edamontology.org/data_1099">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <example>Q7M1G0|P43353-2|P01012.107</example>
         <obsolete_since>1.0</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]|[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]|[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9].[0-9]+|[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9].[0-9]+|[A-NR-Z][0-9][A-Z][A-Z0-9][A-Z0-9][0-9]-[0-9]+|[OPQ][0-9][A-Z0-9][A-Z0-9][A-Z0-9][0-9]-[0-9]+</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_3021"/>
         <oboInOwl:hasDefinition>Accession number of a UniProt (protein sequence) database entry. May contain version or isoform number.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -5643,7 +5637,6 @@
     <owl:Class rdf:about="http://edamontology.org/data_1122">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <example>nj|upgmp</example>
         <obsolete_since>1.5</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0842"/>
@@ -5691,7 +5684,6 @@
     <owl:Class rdf:about="http://edamontology.org/data_1125">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <example>blosum|pam|gonnet|id</example>
         <obsolete_since>1.5</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0842"/>
@@ -6211,7 +6203,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1082"/>
         <oboInOwl:hasDefinition>Identifier of an entry from the aMAZE database.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>aMAZE ID</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Pathway ID (aMAZE)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -9373,7 +9364,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1448"/>
         <oboInOwl:hasDefinition>Matrix of integer numbers for nucleotide comparison.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleotide substitution matrix (integers)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Nucleotide comparison matrix (integers)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -9390,7 +9380,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1448"/>
         <oboInOwl:hasDefinition>Matrix of floating point numbers for nucleotide comparison.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleotide substitution matrix (floats)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Nucleotide comparison matrix (floats)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -10356,7 +10345,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0896"/>
         <oboInOwl:hasDefinition>An informative report on protein subcellular localisation (nuclear, cytoplasmic, mitochondrial, chloroplast, plastid, membrane etc) or destination (exported / extracellular proteins).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Protein report (subcellular localisation)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Protein subcellular localisation</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -12318,10 +12306,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_1743"/>
-        <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_x in PDBML</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_x</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cartesian x coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Cartesian x coordinate</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
         <rdfs:label>Atomic x coordinate</rdfs:label>
@@ -12337,10 +12322,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_1743"/>
-        <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_y in PDBML</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_y</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cartesian y coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Cartesian y coordinate</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
         <rdfs:label>Atomic y coordinate</rdfs:label>
@@ -12356,10 +12338,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.21</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_1743"/>
-        <oboInOwl:hasDbXref>PDBML:_atom_site.Cartn_z</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>WHATIF: PDBx_Cartn_z</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cartesian z coordinate of an atom (in a molecular structure).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Cartesian z coordinate</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1743"/>
         <rdfs:label>Atomic z coordinate</rdfs:label>
@@ -12598,7 +12577,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:ASPGD_LOCUS</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from Aspergillus Genome Database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (ASPGD)</rdfs:label>
@@ -12615,7 +12593,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:CGD_LOCUS</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from Candida Genome Database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (CGD)</rdfs:label>
@@ -12632,7 +12609,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:dictyBase</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from dictyBase database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (dictyBase)</rdfs:label>
@@ -12649,9 +12625,7 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:ECOGENE_G</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Primary name of a gene from EcoGene Database.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>EcoGene primary gene name</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (EcoGene primary)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -12667,7 +12641,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:MaizeGDB_Locus</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from MaizeGDB (maize genes) database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (MaizeGDB)</rdfs:label>
@@ -12684,7 +12657,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:SGD_LOCUS</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from Saccharomyces Genome Database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (SGD)</rdfs:label>
@@ -12701,7 +12673,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs:TGD_LOCUS</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of a gene from Tetrahymena Genome Database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (TGD)</rdfs:label>
@@ -12718,7 +12689,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs: CGSC</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Symbol of a gene from E.coli Genetic Stock Center.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (CGSC)</rdfs:label>
@@ -12734,9 +12704,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>HGNC:[0-9]{1,5}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs: HGNC_gene</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Symbol of a gene approved by the HUGO Gene Nomenclature Committee.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (HGNC)</rdfs:label>
@@ -12752,9 +12720,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>MGI:[0-9]+</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs: MGD</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Symbol of a gene from the Mouse Genome Database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (MGD)</rdfs:label>
@@ -12771,7 +12737,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>http://www.geneontology.org/doc/GO.xrf_abbs: SUBTILISTG</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Symbol of a gene from Bacillus subtilis Genome Sequence Project.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (Bacillus subtilis)</rdfs:label>
@@ -13530,7 +13495,6 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>Moby_namespace:DragonDB_Gene</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The name of an Antirrhinum Gene from the DragonDB database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (DragonDB)</rdfs:label>
@@ -13582,7 +13546,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
         <oboInOwl:hasDefinition>Name of a gene from the GeneFarm database.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>GeneFarm gene ID</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (GeneFarm)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -14177,7 +14140,6 @@
         <obsolete_since>1.8</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>A protein sequence and minimal metadata, typically an identifier of the sequence and/or a comment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence record lite (protein)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_0849"/>
         <rdfs:label>Protein sequence record (lite)</rdfs:label>
@@ -14574,9 +14536,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>[a-zA-Z_0-9]+:[a-zA-Z_0-9\.-]*</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
-        <oboInOwl:hasDbXref>Moby_namespace:GeneId</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Name of an entry (gene) from the KEGG GENES database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (KEGG GENES)</rdfs:label>
@@ -16256,7 +16216,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
         <oboInOwl:hasDefinition>Name of an entry (gene) from the NCBI genes database.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>NCBI gene name</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (NCBI)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -19220,7 +19179,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENS([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (Homo sapiens division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19237,7 +19195,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSBTA([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Bos taurus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19254,7 +19211,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSCAF([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Canis familiaris&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19271,7 +19227,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSCPO([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Cavia porcellus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19288,7 +19243,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSCIN([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Ciona intestinalis&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19305,7 +19259,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSCSAV([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Ciona savignyi&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19322,7 +19275,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSDAR([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Danio rerio&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19339,7 +19291,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSDNO([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Dasypus novemcinctus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19356,7 +19307,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSETE([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Echinops telfairi&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19373,7 +19323,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSEEU([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Erinaceus europaeus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19390,7 +19339,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSFCA([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Felis catus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19407,7 +19355,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSGAL([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Gallus gallus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19424,7 +19371,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSGAC([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Gasterosteus aculeatus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19441,7 +19387,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSHUM([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Homo sapiens&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19458,7 +19403,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSLAF([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Loxodonta africana&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19475,7 +19419,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSMMU([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Macaca mulatta&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19492,7 +19435,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSMOD([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Monodelphis domestica&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19509,7 +19451,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSMUS([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Mus musculus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19526,7 +19467,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSMLU([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Myotis lucifugus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19543,7 +19483,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSOAN([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Ornithorhynchus anatinus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19560,7 +19499,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSOCU([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Oryctolagus cuniculus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19577,7 +19515,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSORL([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Oryzias latipes&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19594,7 +19531,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSSAR([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Otolemur garnettii&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19611,7 +19547,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSPTR([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Pan troglodytes&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19628,7 +19563,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSRNO([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Rattus norvegicus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19645,7 +19579,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSSTO([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Spermophilus tridecemlineatus&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19662,7 +19595,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSFRU([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Takifugu rubripes&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19679,7 +19611,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSTBE([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Tupaia belangeri&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -19696,7 +19627,6 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <regex>ENSXET([EGTP])[0-9]{11}</regex>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_2610"/>
         <oboInOwl:hasDefinition>Identifier of an entry (exon, gene, transcript or protein) from the Ensembl &apos;core&apos; database (&apos;Xenopus tropicalis&apos; division).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
@@ -20273,7 +20203,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1026"/>
         <oboInOwl:hasDefinition>Name of an entry (gene) from the Genolist genes database.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Genolist gene name</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene name (Genolist)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -20585,7 +20514,6 @@
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_0916"/>
         <oboInOwl:hasDefinition>An informative report on a particular locus.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Locus report</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Locus annotation</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -22496,10 +22424,6 @@
         <obsolete_since>1.23</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_0848"/>
         <oboInOwl:hasDefinition>A raw protein sequence (string of characters).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Raw amino acid sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw amino acid sequences</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw protein sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw sequence (protein)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2976"/>
         <rdfs:label>Protein sequence (raw)</rdfs:label>
@@ -22517,10 +22441,6 @@
         <obsolete_since>1.23</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_0848"/>
         <oboInOwl:hasDefinition>A raw nucleic acid sequence.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid raw sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Nucleotide sequence (raw)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw nucleic acid sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw sequence (nucleic acid)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2977"/>
         <rdfs:label>Nucleic acid sequence (raw)</rdfs:label>
@@ -24249,9 +24169,6 @@
         <obsolete_since>1.23</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_2975"/>
         <oboInOwl:hasDefinition>A raw RNA sequence.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>RNA raw sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw RNA sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw sequence (RNA)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_3495"/>
         <rdfs:label>RNA sequence (raw)</rdfs:label>
@@ -24269,9 +24186,6 @@
         <obsolete_since>1.23</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/data_2975"/>
         <oboInOwl:hasDefinition>A raw DNA sequence.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>DNA raw sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw DNA sequence</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Raw sequence (DNA)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_3494"/>
         <rdfs:label>DNA sequence (raw)</rdfs:label>
@@ -48974,7 +48888,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/operation_0524"/>
         <oboInOwl:hasDefinition>Infer a transcriptome sequence without the aid of a reference genome, i.e. by comparing short sequences (reads) to each other.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>de novo transcriptome assembly</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Transcriptome assembly (de novo)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -53035,7 +52948,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>Conserved patterns (motifs) in molecular sequences, that (typically) describe functional or other key sites.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Motifs</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Sequence motifs</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -54284,7 +54196,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0623"/>
         <oboInOwl:hasDefinition>A particular protein, protein family or other group of proteins.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Specific protein</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Specific protein resources</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -54891,9 +54802,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <obsolete_since>1.17</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/topic_2818"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
-        <oboInOwl:hasDbXref>VT 1.5.21 Mycology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Fungi and molds, e.g. information on a specific fungal genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Yeast</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:comment>The resource may be specific to a fungus, a group of fungi or all fungi.</rdfs:comment>
         <rdfs:label>Fungi</rdfs:label>
@@ -55286,8 +55195,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <obsolete_since>1.17</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/topic_0621"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0621"/>
-        <oboInOwl:hasBroadSynonym>Bacteriology</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref>VT 1.5.2 Bacteriology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Specific bacteria or archaea, e.g. information on a specific prokaryote genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:comment>The resource may be specific to a prokaryote, a group of prokaryotes or all prokaryotes.</rdfs:comment>
@@ -56002,7 +55909,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3168"/>
         <oboInOwl:hasDefinition>Parallelised sequencing processes that are capable of sequencing many thousands of sequences simultaneously.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Next-generation sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>High-throughput sequencing</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
@@ -57872,7 +57778,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <obsolete_since>1.12</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>The search and retrieval from a database on the basis of molecular sequence similarity.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence database search</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:label>Sequence search</rdfs:label>
@@ -59190,7 +59095,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <obsolete_since>1.13</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>Protein-ligand (small molecule) interaction(s).</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Protein-drug interactions</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0128"/>
         <rdfs:label>Protein-ligand interactions</rdfs:label>
