@@ -23949,6 +23949,7 @@
         <oboInOwl:hasDefinition>A HMM transition matrix contains the probabilities of switching from one HMM state to another.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>HMM transition matrix</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Consider for example an HMM with two states (AT-rich and GC-rich).  The transition matrix will hold the probabilities of switching from the AT-rich to the GC-rich state, and vica versa.</rdfs:comment>
         <rdfs:label>Transition matrix</rdfs:label>
     </owl:Class>
@@ -23963,6 +23964,7 @@
         <oboInOwl:hasDefinition>A HMM emission matrix holds the probabilities of choosing the four nucleotides (A, C, G and T) in each of the states of a HMM.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>HMM emission matrix</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Consider for example an HMM with two states (AT-rich and GC-rich).  The emission matrix holds the probabilities of choosing each of the four nucleotides (A, C, G and T) in the AT-rich state and in the GC-rich state.</rdfs:comment>
         <rdfs:label>Emission matrix</rdfs:label>
     </owl:Class>
@@ -23993,6 +23995,7 @@
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>An identifier of a data format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Format identifier</rdfs:label>
     </owl:Class>
     
@@ -52447,6 +52450,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Linkage</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Linkage mapping</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Synteny</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes resources that aim to identify, map or analyse genetic markers in DNA sequences, for example to produce a genetic (linkage) map of a chromosome or genome or to analyse genetic linkage and synteny. It also includes resources for physical (sequence) maps of a DNA sequence showing the physical distance (base pairs) between features or landmarks such as restriction sites, cloned DNA fragments, genes and other genetic markers.  It also covers for example the alignment of sequences of (typically millions) of short reads to a reference genome.</rdfs:comment>
         <rdfs:label>Mapping</rdfs:label>
@@ -53890,6 +53894,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>Information science</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Knowledge management</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Informatics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Informatics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Informatics"/>
@@ -54761,6 +54766,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Software integration</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Tool integration</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Tool interoperability</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Workflows</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Workflow"/>
@@ -56836,6 +56842,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>Chip-sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>ChIP-seq</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>ChIP-exo</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>ChIP-seq</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-sequencing"/>
@@ -56860,6 +56867,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasHumanReadableId>RNA-Seq</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>MicroRNA sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>miRNA-seq</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes small RNA profiling (small RNA-Seq), for example to find novel small RNAs, characterize mutations and analyze expression of small RNAs.</rdfs:comment>
         <rdfs:label>RNA-Seq</rdfs:label>
@@ -57041,6 +57049,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>ChIP-chip</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>ChIP-on-chip</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>ChiP</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>ChIP-on-chip</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-on-chip"/>
@@ -59839,6 +59848,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasHumanReadableId>Whole_genome_sequencing</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>De novo genome sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Whole genome resequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Whole genome sequencing</rdfs:label>
     </owl:Class>
@@ -59865,6 +59875,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>Whole-genome bisulfite sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>methy-seq</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>methyl-seq</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Methylated DNA immunoprecipitation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Methylated_DNA_immunoprecipitation"/>
@@ -59963,6 +59974,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>HITS-CLIP</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>PAR-CLIP</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>iCLIP</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>RNA immunoprecipitation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Immunoprecipitation#RNA_immunoprecipitation_(RIP)"/>
@@ -60029,6 +60041,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>Approach which samples, in parallel, all genes in all organisms present in a given sample, e.g. to provide insight into biodiversity and function.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Shotgun metagenomic sequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Metagenomic_sequencing</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Metagenomic sequencing</rdfs:label>
     </owl:Class>
