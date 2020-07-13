@@ -27882,11 +27882,11 @@
         <owl:disjointWith rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
-        <oboInOwl:hasBroadSynonym>Data model</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>A defined way or layout of representing and structuring data in a computer file, blob, string, message, or elsewhere.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data model</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Exchange format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>File format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>File format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>The main focus in EDAM lies on formats as means of structuring data exchanged between different tools or resources. The serialisation, compression, or encoding of concrete data formats/models is not in scope of EDAM. Format &apos;is format of&apos; Data.</rdfs:comment>
@@ -27908,13 +27908,13 @@
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Data model</owl:annotatedTarget>
         <rdfs:comment>A defined data format has its implicit or explicit data model, and EDAM does not distinguish the two. Some data models however do not have any standard way of serialisation into an exchange format, and those are thus not considered formats in EDAM. (Remark: even broader - or closely related - term to &apos;Data model&apos; would be an &apos;Information model&apos;.)</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>File format</owl:annotatedTarget>
         <rdfs:comment>File format denotes only formats of a computer file, but the same formats apply also to data blobs or exchanged messages.</rdfs:comment>
     </owl:Axiom>
@@ -29421,9 +29421,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
-        <oboInOwl:hasBroadSynonym>Programming language</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>Script format</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Format of a workflow.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Programming language</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Script format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Workflow format</rdfs:label>
@@ -29661,8 +29661,8 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
-        <oboInOwl:hasBroadSynonym>Molecular interaction format</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Format for molecular interaction data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Molecular interaction format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Protein interaction format</rdfs:label>
@@ -30715,8 +30715,8 @@
         <owl:disjointWith rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Textual format.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>Plain text format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>txt</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Plain text format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>txt</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>Data in text format can be compressed into binary format, or can be a value of an XML element or attribute. Markup formats are not considered textual (or more precisely, not plain-textual).</rdfs:comment>
@@ -30884,20 +30884,21 @@
         <ontology_used>Any ontology allowed, none mandatory. Preferrably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
         <repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <oboInOwl:comment>&apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioXSD in XML&apos; is the XML format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</oboInOwl:comment>
-        <oboInOwl:hasBroadSynonym>BioXSD</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD data model</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD format</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD/GTrack</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|BioJSON|BioYAML</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>BioXSD|GTrack</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org/BioXSD-1.1.xsd"/>
         <oboInOwl:hasDefinition>BioXSD-schema-based XML format of sequence-based data and some other common data - sequence records, alignments, feature records, references to resources, and more - optimised for integrative bioinformatics, Web services, and object-oriented programming.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>BioJSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD XML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD XML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD data model</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in XML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD in XML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD+XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD/GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioXSD|GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BioYAML</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioXSD (XML)</rdfs:label>
@@ -32084,13 +32085,13 @@
         <example rdf:resource="https://hyperbrowser.uio.no/hb/u/hb-superuser/h/gtrack-examples-from-the-specification"/>
         <repository rdf:resource="https://github.com/gtrack/gtrack"/>
         <oboInOwl:comment>&apos;GTrack&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats, and particular to its subset, the &apos;GTrack ecosystem&apos; (GTrack, GSuite, BTrack). &apos;GTrack&apos; is the tabular format for representing features of sequences and genomes.</oboInOwl:comment>
-        <oboInOwl:hasBroadSynonym>GTrack ecosystem of formats</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="http://www.gtrack.no"/>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://hyperbrowser.uio.no/test/static/hyperbrowser/gtrack/GTrack_specification.txt"/>
         <oboInOwl:hasDefinition>GTrack is a generic and optimised tabular format for genome or sequence feature tracks. GTrack unifies the power of other track formats (e.g. GFF3, BED, WIG), and while optimised in size, adds more flexibility, customisation, and automation (&quot;machine understandability&quot;).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack GTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|GTrack GTrack</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>GTrack ecosystem of formats</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GTrack format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GTrack|BTrack|GSuite GTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GTrack|GSuite|BTrack GTrack</oboInOwl:hasExactSynonym>
@@ -32465,7 +32466,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <created_in>1.2</created_in>
         <oboInOwl:hasDefinition>OWL ontology XML serialisation format.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>OWL</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>OWL</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>OWL/XML</rdfs:label>
@@ -34680,10 +34681,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3751">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasBroadSynonym>Tabular format</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/Delimiter-separated_values"/>
         <oboInOwl:hasDefinition>Tabular data represented as values in a text file delimited by some character.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Delimiter-separated values</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Tabular format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>DSV</rdfs:label>
@@ -34781,11 +34782,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>UniProtKB RDF sequence features format is an RDF format available for downloading UniProt entries (in RDF/XML).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>UniProt RDF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>UniProt RDF format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF/XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProt RDF/XML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>UniProtKB RDF format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>UniProt RDF/XML format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>UniProtKB RDF/XML format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>UniProtKB RDF/XML format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>UniProtKB RDF</rdfs:label>
@@ -35055,12 +35056,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>The FAO/Bioversity/IPGRI Multi-Crop Passport Descriptors (MCPD) is an international standard format for exchange of germplasm information.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Bioversity MCPD</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FAO MCPD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>IPGRI MCPD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MCPD V.1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MCPD V.2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MCPD format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Multi-Crop Passport Descriptors</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Multi-Crop Passport Descriptors format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>IPGRI MCPD</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MCPD V.1</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MCPD V.2</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>MCPD</rdfs:label>
@@ -35501,12 +35502,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.20</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>Data format for raw data from a nuclear magnetic resonance (NMR) spectroscopy experiment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>NMR peak assignment data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NMR processed data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NMR raw data format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nuclear magnetic resonance spectroscopy data format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>NMR peak assignment data</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>NMR processed data format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>NMR raw data format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Processed NMR data format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Raw NMR data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Processed NMR data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Raw NMR data format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>NMR data format</rdfs:label>
@@ -36028,10 +36029,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3865">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
         <created_in>1.21</created_in>
-        <oboInOwl:hasBroadSynonym>RNA data format</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>A &quot;placeholder&quot; concept for formats of annotated RNA data, including e.g. microRNA and RNA-Seq data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>miRNA data format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>microRNA data format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>RNA data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>miRNA data format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>microRNA data format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>RNA annotation format</rdfs:label>
@@ -36052,10 +36053,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.22</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>File format to store trajectory information for a 3D structure .</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>CG trajectory formats</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MD trajectory formats</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>NA trajectory formats</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein trajectory formats</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>CG trajectory formats</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MD trajectory formats</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NA trajectory formats</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein trajectory formats</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>Formats differ on what they are able to store (coordinates, velocities, topologies) and how they are storing it (raw, compressed, textual, binary).</rdfs:comment>
@@ -36200,10 +36201,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.22</created_in>
         <notRecommendedForAnnotation>true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>Format of topology files; containing the static information of a structure molecular system that is needed for a molecular simulation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasNarrowSynonym>CG topology format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MD topology format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>NA topology format</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein topology format</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>CG topology format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>MD topology format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NA topology format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein topology format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>Many different file formats exist describing structural molecular topology. Tipically, each MD package or simulation software works with their own implementation (e.g. GROMACS top, CHARMM psf, AMBER prmtop).</rdfs:comment>
