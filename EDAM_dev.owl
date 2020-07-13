@@ -51734,21 +51734,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
-    <!-- http://edamontology.org/operation_3931 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_3931">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2258"/>
-        <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Interdisciplinary science focused on extracting information from chemical systems by data analytical approaches, for example multivariate statistics, applied mathematics, and computer science.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Chemometrics</oboInOwl:hasHumanReadableId>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Chemometrics</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemometrics"/>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/operation_3933 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3933">
@@ -51874,20 +51859,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Virtual screening is widely used for lead identification, lead optimization, and scaffold hopping during drug design and discovery.</rdfs:comment>
         <rdfs:label>Virtual screening</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://edamontology.org/operation_3939 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_3939">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
-        <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Biotechnology approach that seeks to optimize cellular genetic and regulatory processes in order to increase the cells&apos; production of a certain substance.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Metabolic engineering</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolic_engineering"/>
     </owl:Class>
     
 
@@ -60165,6 +60136,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     
 
 
+    <!-- http://edamontology.org/topic_3931 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3931">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2258"/>
+        <created_in>1.24</created_in>
+        <oboInOwl:hasDefinition>Interdisciplinary science focused on extracting information from chemical systems by data analytical approaches, for example multivariate statistics, applied mathematics, and computer science.</oboInOwl:hasDefinition>
+        <oboInOwl:hasHumanReadableId>Chemometrics</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Chemometrics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemometrics"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/topic_3934 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3934">
@@ -60179,6 +60165,20 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Cytometry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cytometry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_3939 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3939">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <created_in>1.24</created_in>
+        <oboInOwl:hasDefinition>Biotechnology approach that seeks to optimize cellular genetic and regulatory processes in order to increase the cells&apos; production of a certain substance.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Metabolic engineering</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabolic_engineering"/>
     </owl:Class>
     
 
