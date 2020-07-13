@@ -32750,13 +32750,15 @@
     <owl:Class rdf:about="http://edamontology.org/format_3475">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3751"/>
         <created_in>1.7</created_in>
-        <file_extension>tsv|tab</file_extension>
+        <file_extension>tab</file_extension>
+        <file_extension>tsv</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
         <oboInOwl:hasDbXRef rdf:resource="http://filext.com/file-extension/TSV"/>
         <oboInOwl:hasDbXRef rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
         <oboInOwl:hasDefinition>Tabular data represented as tab-separated values in a text file.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Tab-delimited</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tab-separated values</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tab</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>TSV</rdfs:label>
@@ -32985,7 +32987,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.9</created_in>
         <documentation rdf:resource="http://nifti.nimh.nih.gov/nifti-1"/>
-        <oboInOwl:hasDefinition>Medical image and metadata format of the Neuroimaging Informatics Technology Initiative.</oboInOwl:hasDefinition>
+        <file_extension>nii</file_extension>
+        <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>NIFTI format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>NIfTI-1 format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -33057,7 +33061,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2331"/>
         <created_in>1.9</created_in>
         <documentation rdf:resource="https://tools.ietf.org/html/rfc2557"/>
-        <file_extension>mhtml|mht|eml</file_extension>
+        <file_extension>eml</file_extension>
+        <file_extension>mht</file_extension>
+        <file_extension>mhtml</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
         <oboInOwl:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons incuded in EDAM as a specialisation of &apos;HTML&apos;.</oboInOwl:comment>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
@@ -33071,6 +33077,7 @@
         <oboInOwl:hasExactSynonym>MHTML format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MIME  HTML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>MIME  HTML format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>eml</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>MIME multipart</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>MIME multipart format</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym>MIME multipart message</oboInOwl:hasRelatedSynonym>
@@ -34521,6 +34528,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>biom</file_extension>
         <oboInOwl:hasDefinition>The BIological Observation Matrix (BIOM) is a format for representing biological sample by observation contingency tables in broad areas of comparative omics. The primary use of this format is to represent OTU tables and metagenome tables.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BIological Observation Matrix format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>biom</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>BIOM is a recognised standard for the Earth Microbiome Project, and is a project supported by Genomics Standards Consortium. Supported in QIIME, Mothur, MEGAN, etc.</rdfs:comment>
@@ -34580,6 +34588,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/JSON-LD"/>
         <oboInOwl:hasDefinition>JSON-LD, or JavaScript Object Notation for Linked Data, is a method of encoding Linked Data using JSON.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>JavaScript Object Notation for Linked Data</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>jsonld</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>JSON-LD</rdfs:label>
@@ -34593,11 +34602,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
         <created_in>1.15</created_in>
         <documentation rdf:resource="http://yaml.org"/>
-        <file_extension>yaml|yml</file_extension>
+        <file_extension>yaml</file_extension>
+        <file_extension>yml</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/YML"/>
         <oboInOwl:hasDbXref rdf:resource="https://en.wikipedia.org/wiki/YAML"/>
         <oboInOwl:hasDefinition>YAML (YAML Ain&apos;t Markup Language) is a human-readable tree-structured data serialisation language.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>YAML Ain&apos;t Markup Language</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>yml</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>Data in YAML format can be serialised into text, or binary format.</rdfs:comment>
@@ -35166,10 +35177,15 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.16</created_in>
         <documentation rdf:resource="https://www.w3.org/XML/Query/"/>
-        <file_extension>xq|xqy|xquery</file_extension>
+        <file_extension>xq</file_extension>
+        <file_extension>xquery</file_extension>
+        <file_extension>xqy</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://www.w3.org/XML/Query/"/>
         <oboInOwl:hasDefinition>XQuery (XML Query) is a query language (format of queries) for querying and manipulating structured and unstructured data, usually in the form of XML, text, and with vendor-specific extensions for other data formats (JSON, binary, etc.).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>XML Query</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>xq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>xquery</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>xqy</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>XQuery</rdfs:label>
@@ -36769,6 +36785,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>TAR archive file format generated by the Unix-based utility tar.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>TAR</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tarball</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tar</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>For example a 1kb transcript with 1000 alignments in a sample of 10 million reads (out of which 8 million reads can be mapped) will have RPKM = 1000/(1 * 8) = 125</rdfs:comment>
@@ -36835,6 +36852,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>An emerging format for high-level Galaxy workflow description.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Galaxy workflow format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>GalaxyWF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ga</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>gxformat2</rdfs:label>
@@ -36915,6 +36933,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>gzip</file_extension>
         <oboInOwl:hasDefinition>GNU zip compressed file format common to Unix-based operating systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>GNU Zip</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gz</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>gzip</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>GZIP format</rdfs:label>
@@ -37031,6 +37051,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Format for scripts writtenin Python - a widely used high-level programming language for general-purpose programming.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Python</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Python program</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>py</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Python script</rdfs:label>
@@ -37065,6 +37086,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Format for scripts written in Perl - a family of high-level, general-purpose, interpreted, dynamic programming languages.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Perl</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Perl program</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>pl</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Perl script</rdfs:label>
@@ -37108,15 +37130,16 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_4001 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4001">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.25</created_in>
-        <file_extension>nii</file_extension>
+        <deprecation_comment>This duplicates an existing concept (http://edamontology.org/format_3549).</deprecation_comment>
+        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/format_3547"/>
         <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>NIFTI</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3549"/>
         <rdfs:label>NIFTI format</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -37156,6 +37179,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>npy</file_extension>
         <oboInOwl:hasDefinition>The standard binary file format used by NumPy - a fundamental package for scientific computing with Python - for persisting a single arbitrary NumPy array on disk. The format stores all of the shape and dtype information necessary to reconstruct the array correctly.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NumPy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>npy</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>NumPy format</rdfs:label>
@@ -37219,6 +37243,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasDefinition>Format used by the Zstandard real-time compression algorith.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Zstandard compression format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Zstandard-compressed file format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>zst</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>Zstandard format</rdfs:label>
@@ -37236,6 +37261,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>m</file_extension>
         <oboInOwl:hasDefinition>The file format for MATLAB scripts or functions.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>MATLAB</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>m</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>MATLAB script</rdfs:label>
