@@ -9,7 +9,7 @@ __Latest documentation__: [![Documentation Status](https://readthedocs.org/proje
 Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2Fedamontology%2Fedamontology&region=follow_link&screen_name=edamontology&tw_p=followbutton)).
 
 ## What is EDAM?
-EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within bioinformatics and computational biology, including types of data and data identifiers, data formats, operations and topics. EDAM provides a set of concepts with preferred terms and synonyms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use (see figure).
+EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within computational biology, bioinformatics, and [bioimage informatics](https://github.com/edamontology/edam-bioimaging). EDAM includes types of data and data identifiers, data formats, operations, and topics related to data analysis in life sciences. EDAM provides a set of concepts with preferred terms and synonyms, related terms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use (see figure).
 
 
 ## Viewing and download
