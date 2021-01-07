@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4010</next_id>
-        <oboOther:date>18.06.2020 09:15 UTC</oboOther:date>
+        <oboOther:date>01.01.2021 01:32 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -22,7 +22,7 @@
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
         <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources.  EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
-        <dc:contributor>Veit Schwämmle</dc:contributor>
+        <dc:contributor>Veit Schwämmle et al.</dc:contributor>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
@@ -32988,12 +32988,14 @@
         <created_in>1.9</created_in>
         <documentation rdf:resource="http://nifti.nimh.nih.gov/nifti-1"/>
         <file_extension>nii</file_extension>
-        <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>NIFTI format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>NIfTI-1 format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods. Version 1.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>nii</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>NIfTI-1.1</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym>ANALYZE 7.5 format</oboInOwl:hasBroadSynonym>
+		<rdfs:comment>Non-NIfTI-aware software that uses the ANALYZE 7.5 format should still be compatible with NIfTI-1, as NIfTI-1 uses the "empty space" in the ANALYZE 7.5 header to add several new features.</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>nii</rdfs:label>
+        <rdfs:label>NIfTI-1 format</rdfs:label>
     </owl:Class>
     
 
@@ -37130,16 +37132,16 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <!-- http://edamontology.org/format_4001 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4001">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.25</created_in>
-        <deprecation_comment>This duplicates an existing concept (http://edamontology.org/format_3549).</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</obsolete_since>
-        <oldParent rdf:resource="http://edamontology.org/format_3547"/>
-        <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3549"/>
-        <rdfs:label>NIFTI format</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods, version 2.</oboInOwl:hasDefinition>
+		<documentation>https://nifti.nimh.nih.gov/pub/dist/doc/nifti2.h</documentation>
+        <rdfs:seeAlso>https://brainder.org/2015/04/03/the-nifti-2-file-format/</rdfs:seeAlso>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>NIfTI-2 format</rdfs:label>
+        <oboInOwl:hasExactSynonym>NIFTI2</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
