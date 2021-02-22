@@ -1,6 +1,6 @@
 __DOI representing all stable versions, resolving to the latest__: [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690)
 
-__DOI of the latest stable EDAM version 1.24__: [![10.5281/zenodo.3608238](https://zenodo.org/badge/DOI/10.5281/zenodo.3608238.svg)](https://doi.org/10.5281/zenodo.3608238)
+__DOI of the latest stable EDAM version 1.25__: [![10.5281/zenodo.3899895](https://zenodo.org/badge/DOI/10.5281/zenodo.3899895.svg)](https://doi.org/10.5281/zenodo.3899895)
 
 __Current status of the 'master' development file__: [![Build status](https://travis-ci.org/edamontology/edamontology.svg?branch=master)](https://travis-ci.org/edamontology/edamontology)
 
@@ -10,6 +10,8 @@ Twitter: [@edamontology](http://twitter.com/edamontology) ([follow](https://twit
 
 ## What is EDAM?
 EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within computational biology, bioinformatics, and [bioimage informatics](https://github.com/edamontology/edam-bioimaging). EDAM includes types of data and data identifiers, data formats, operations, and topics related to data analysis in life sciences. EDAM provides a set of concepts with preferred terms and synonyms, related terms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use (see figure).
+
+EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to bioscientific data analysis: _e.g._ tools, workflows, or training materials. EDAM is also useful in data management, for recording provenance metadata of processed bioscientific data.
 
 
 ## Viewing and download
@@ -28,11 +30,11 @@ Comprehensive documentation and guidelines are available via [readthedocs](http:
 
 A quick overview is at the http://edamontology.org home page.
 
-## Roadmap & releases strategy
+<!--## Roadmap & releases strategy
 
 We attempt to resolve all user requests in the next release or ASAP. Beyond that, things in the roadmap are labelled in the [issue tracker](https://github.com/edamontology/edamontology/issues) as **High priority**.  See also the [EDAM documentation tracker](https://github.com/edamontology/edamontologyDocs/issues).
 
-Please help out by [getting involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html)!
+Please help out by [getting involved](https://edamontologydocs.readthedocs.io/en/latest/getting_involved.html)!-->
 
 
 ## Citing EDAM
