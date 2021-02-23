@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4011</next_id>
-        <oboOther:date>11.11.2020 10:15 UTC</oboOther:date>
+        <next_id>4013</next_id>
+        <oboOther:date>23.02.2021 09:31 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60417,12 +60417,41 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_4010">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
-        <documentation rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
-        <oboInOwl:hasDefinition>Guidelines for good data management practice that aim at making data FAIR: Findable, Accessible, Interoperable, and Reusable</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_science"/>
+        <oboInOwl:hasDefinition>Open science encompasses the practices of making scientific research transparent and participatory, and its outputs publicly accessible.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>The study of the phenomena whereby the effects of one locus mask the allelic effects of another, such as how dominant alleles mask the effects of the recessive alleles at the same locus.</rdfs:comment>
-        <rdfs:label>FAIR</rdfs:label>
+        <rdfs:label>Open science</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4011 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4011">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
+        <oboInOwl:hasDefinition>Data management includes the principles and practices of taking care of data (other than analysing it).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Data management</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4012 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4012">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4011"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
+        <oboInOwl:hasDefinition>FAIR data is data that meets the FAIR Guiding Principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>Open data</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>FAIR data</rdfs:label>
     </owl:Class>
 
 
