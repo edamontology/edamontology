@@ -11,4 +11,4 @@ This code of conduct outlines our expectations for the EDAM community. It is bas
 - **Wise:** We are not infallible; we will make mistakes and change our viewpoints: admit and learn from mistakes and allow others to do the same.
 
 ## Conflict resolution
-If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting any member of the CoC committee (currently [Matúš Kalaš](mailto:matus.kalas@uib.no) and [Hervé Ménager](mailto:herve.menager@pasteur.fr)). All reports will be handled with discretion.
+If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting any member of the CoC committee, currently [Matúš Kalaš (apapronominal)](mailto:matus.kalas@uib.no) and [Hervé Ménager (he/him)](mailto:herve.menager@pasteur.fr). All reports will be handled with discretion.
