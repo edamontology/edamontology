@@ -20,7 +20,7 @@ EDAM can be browsed online at the [NCBO BioPortal](https://bioportal.bioontology
 
 The all-newest _unstable_ version can be browsed and commented at the [NCBO BioPortal](https://bioportal.bioontology.org/ontologies/EDAM/) and [WebProtégé](https://webprotege.stanford.edu/#projects/4befad5f-f27b-430c-a07d-fcf635093169/edit/Classes) (free registration required).
 
-The latest _stable_ version is always downloable from http://edamontology.org/EDAM.owl | [tsv](http://edamontology.org/EDAM.tsv) | [csv](http://edamontology.org/EDAM.csv). For older versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/master/releases).
+The latest _stable_ version is always downloable from http://edamontology.org/EDAM.owl | [tsv](http://edamontology.org/EDAM.tsv) | [csv](http://edamontology.org/EDAM.csv). For older versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/main/releases).
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/main/EDAMrelations.png)
@@ -40,4 +40,4 @@ If you refer to EDAM or its part in a scholarly publication, please cite:
 Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
 [![10.1093/bioinformatics/btt113](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btt113.svg)](https://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348) _Open access_
 
-EDAM releases are citable with DOIs too, for cases when that is needed. [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. <!--For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/master/releases).-->
+EDAM releases are citable with DOIs too, for cases when that is needed. [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. <!--For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/main/releases).-->
