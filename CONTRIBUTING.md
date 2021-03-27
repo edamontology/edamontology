@@ -5,7 +5,7 @@ __Your issues and pull requests are welcome!__
 
 ## Source code
 
-The source code of EDAM is in the file `EDAM_dev.owl` (see [master](https://github.com/edamontology/edamontology/blob/master/EDAM_dev.owl)). The format of the source file is RDF/XML.
+The source code of EDAM is in the file `EDAM_dev.owl` (see [main](https://github.com/edamontology/edamontology/blob/main/EDAM_dev.owl)). The format of the source file is RDF/XML.
 
 
 ### Git setup
