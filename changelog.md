@@ -93,7 +93,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_121owl) for 
 * Major clean-up of the hierarchy of _Accessions_
 * Clean-up of some Operations (_e.g._ around Plotting _i.e._ Visualisation)
 * Major improvements of the [EDAM documentation](https://github.com/edamontology/edamontologyDocs)
-* Improved [edam2json](https://github.com/edamontology/edam2json/commits/master) generator
+* Improved [edam2json](https://github.com/edamontology/edam2json/commits/main) generator
 
 
 ### Changes in hierarchy
@@ -161,7 +161,7 @@ See the improved [changelog-detailed.md](changelog-detailed.md#edam_120owl) for 
 * 28 concepts deprecated (1 Data, 27 Operation)
 * 71 concepts have changed relations|hierarchy (1 Data, 70 Operation)
 
-See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
+See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for the list of additions, deprecations, and changes in relations between concepts.
 
 ### Fixed issues
 - 22 issues fixed and closed (#266, #267, #277, #300, #301, #303, #304, #307, #308, #309, #310, #311, #312, #313, #314, #315, #316, #317, #318, #320, #323, #324)
@@ -176,7 +176,7 @@ See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/ma
 
 
 # EDAM\_1.18.owl  [![DOI: 10.5281/zenodo.822691](https://zenodo.org/badge/DOI/10.5281/zenodo.822691.svg)](https://doi.org/10.5281/zenodo.822691)
-See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
+See [changelog-detailed.md](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
 EDAM\_1.18 includes:
 
@@ -214,7 +214,7 @@ EDAM\_1.18 includes:
 - 0 issues reopened ()
 
 # EDAM\_1.17.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for additions, deprecations, and changes in relations between concepts.
 
 EDAM\_1.17 includes:
 * addition of concepts for sequencing terms from SEQWiki
@@ -250,7 +250,7 @@ EDAM\_1.17 includes:
 
 
 # EDAM\_1.16.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for exact details of changes.
 
 EDAM\_1.16 includes:
 * concept and term updates and additions, as requested by EDAM users (mostly Bio.Tools registrants), including ones for text mining and natural language processing (BioNLP), and gene expression
@@ -281,7 +281,7 @@ EDAM\_1.16 includes:
 
 
 # EDAM\_1.15.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for exact details of changes.
 
 EDAM\_1.15 includes:
 * new concepts and terms requested by the community, including ones for environmental omics and biodiversity
@@ -311,7 +311,7 @@ EDAM\_1.15 includes:
 
 	
 # EDAM\_1.14.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for exact details of changes.
 
 EDAM\_14 includes:
 * many new terms or changes requested by the community (directly on GitHub, or during the last hackathons).
@@ -329,7 +329,7 @@ EDAM\_14 includes:
 
 
 # EDAM\_1.13.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for exact details of changes.
 
 The main focus of EDAM\_1.13.owl is:
 * a Topic branch simplification in response to requests for a smaller, more usable and thus also more sustainable set of topics
@@ -360,7 +360,7 @@ The main focus of EDAM\_1.13.owl is:
 
 
 # EDAM\_1.12.owl
-See the [detailed change log](https://github.com/edamontology/edamontology/blob/master/changelog-detailed.md) for exact details of changes.
+See the [detailed change log](https://github.com/edamontology/edamontology/blob/main/changelog-detailed.md) for exact details of changes.
 
 56 new concepts were added and 190 concepts changed.
 
