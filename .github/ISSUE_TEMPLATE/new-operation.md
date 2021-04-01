@@ -26,6 +26,18 @@ about: Request a new concept is added to the EDAM Operation sub-ontology.
 
 
 
+**Has Input:** < EDAM Data URI1 | EDAM Data URI2 |... >
+
+
+
+**Has Output:** < EDAM Data URI1 | EDAM Data URI2 |... >
+
+
+
+**Has Topic:** < EDAM Topic URI1 | EDAM TopicURI2 |... >
+
+
+
 **exactSynonym(s):** < synonym1 | synonym2 |... >
 
 *Instructions:* Exact synonym(s) delimited by pipe ('|') *e.g.* "Sequence alignment generation". Other commonly-used terms, acronyms *etc.* by which the concept is referred to.  
