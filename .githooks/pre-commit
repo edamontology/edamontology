@@ -1,13 +1,16 @@
 #!/bin/bash
 
 # Check where this script is running from
-where git
-git --version
 echo INFO: Pre-commit hook running from $PWD
 
-# Check that the EDAM source file is in the right format (RDF/XML)
-#grep -c 'owl:Class' EDAM_dev.owl
+# Check which Git is running
+which git
+git --version
+where git
+
+# Validate EDAM source file
+echo INFO: Validating EDAM source file. Exit code:
 sh validate.sh
-owlclassfound=$?
-# owlclassfound>0 is success
-exit $owlclassfound
+valid=$?
+# valid>0 is success
+exit $valid
