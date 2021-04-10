@@ -26,6 +26,10 @@ about: Request a new concept is added to the EDAM Data->Identifier sub-ontology.
 
 
 
+**Is Identifier Of:** <EDAM Data URI1 | EDAM Data URI2 |...>
+
+
+
 **exactSynonym(s):** < synonym1 | synonym2 |... >
 
 *Instructions:* Exact synonym(s) delimited by pipe ('|') *e.g.* "UniProtKB accession number|UniProt accession number". Other commonly-used terms, acronyms *etc.* by which the concept is referred to.

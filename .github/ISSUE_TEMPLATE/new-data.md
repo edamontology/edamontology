@@ -26,6 +26,10 @@ about: Request a new concept is added to the EDAM Data sub-ontology.
 
 
 
+**Has Topic(s):** < EDAM Topic1 | EDAM Topic2 >
+
+
+
 **exactSynonym(s):** < synonym1 | synonym2 |... >
 
 *Instructions:* Exact synonym(s) delimited by pipe ('|') *e.g.* "Protein sequences". Other commonly-used terms, acronyms *etc.* by which the concept is referred to.
