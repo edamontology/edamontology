@@ -25,8 +25,14 @@ about: Request a new concept is added to the EDAM Data->Identifier sub-ontology.
 *Instructions:* URI(s) of suggested EDAM Identifier parent(s) delimited by pipe ('|') *e.g.* "http://edamontology.org/data_2091|http://edamontology.org/data_1096". Identifier concepts normally have two parents: 1) either "Accession" (http://edamontology.org/data_2091) or "Name" (http://edamontology.org/data_2099) and 2) indicating the type of identifier *e.g.* "Sequence accession (protein)", *i.e.* a concept descended from "Identifier (typed)" (http://edamontology.org/data_0976).  In exceptional cases (where an identifier is re-used for data objects of fundamentally different types, typically served from a single database) the parent of "Identifier (hybrid)" (http://edamontology.org/data_2109) may also be given.
 
 
+**Has Topic:** < Topic >
 
-**Is Identifier Of:** <EDAM Data URI1 | EDAM Data URI2 |...>
+*Instructions:* A category denoting a rather broad domain or field of interest, of study, application, work, data or technology.*e.g.*"Phylogenetic treehas topicPhylogenetics" Topics have no clearly defined borders between each other. 
+
+
+**Is Identifier Of:** <Is_idetifier_of>
+
+*Instructions:* A text token, number or something else that identifies an entity,*e.g.* "InterPro accessionis identifier ofProtein signature", but which may not be persistent (stable) or unique (the same identifier may identify multiple things) 
 
 
 
