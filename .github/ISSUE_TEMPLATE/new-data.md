@@ -26,7 +26,10 @@ about: Request a new concept is added to the EDAM Data sub-ontology.
 
 
 
-**Has Topic(s):** < EDAM Topic1 | EDAM Topic2 >
+**Has Topic(s):** < Topic >
+
+*Instructions:* A category denoting a rather broad domain or field of interest, of study, application, work, data or technology *e.g.* "Phylogenetic treehas topicPhylogenetics ".Topics have no clearly defined borders between each other  .
+
 
 
 
