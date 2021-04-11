@@ -20,7 +20,7 @@ EDAM can be browsed online at the [NCBO BioPortal](https://bioportal.bioontology
 
 The all-newest _unstable_ version can be browsed and commented at the [NCBO BioPortal](https://bioportal.bioontology.org/ontologies/EDAM/) and [WebProtégé](https://webprotege.stanford.edu/#projects/4befad5f-f27b-430c-a07d-fcf635093169/edit/Classes) (free registration required).
 
-The latest _stable_ version is always downloable from http://edamontology.org/EDAM.owl | [tsv](http://edamontology.org/EDAM.tsv) | [csv](http://edamontology.org/EDAM.csv). For older versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/main/releases).
+The latest _stable_ version is always downloadable from [Here](http://edamontology.org/EDAM.owl) | [tsv](http://edamontology.org/EDAM.tsv) | [csv](http://edamontology.org/EDAM.csv). For older versions, see http://edamontology.org/page#Download or [/releases](https://github.com/edamontology/edamontology/tree/main/releases).
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/main/EDAMrelations.png)
