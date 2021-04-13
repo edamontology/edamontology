@@ -28,7 +28,7 @@ about: Request a new concept is added to the EDAM Format sub-ontology.
 
 **Is Format Of:** < EDAM Data URI1 | EDAM Data URI2 |... >
 
-*Instructions:* Format,*e.g.* "CHPis format ofProcessed microarray data ". A defined way or layout of representing and structuring data in a computer file, blob, string, message or elsewhere. 
+*Instructions:* Format*e.g.* "CHPis format ofProcessed microarray data ". A defined way or layout of representing and structuring data in a computer file, blob, string, message or elsewhere. 
 
 
 **exactSynonym(s):** < synonym1 | synonym2 |... >
