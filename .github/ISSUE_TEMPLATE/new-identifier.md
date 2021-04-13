@@ -10,7 +10,7 @@ about: Request a new concept is added to the EDAM Data->Identifier sub-ontology.
 
 **Identifier name:**  < identifier_name >
 
-*Instructions:*  Name of data identifier, *e.g.* "UniProt accession".  This is the most commonly used term.
+*Instructions:*  Name of data identifier , *e.g.* "UniProt accession".  This is the most commonly used term.
 
 
 
