@@ -39,7 +39,7 @@ about: Request a new concept is added to the EDAM Operation sub-ontology.
 
 **Has Output:** < EDAM Output >
 
-*Instructions:* Operation has output Data *e.g.* "RNA structure predictionhas outputRNA structure record". 
+*Instructions:* Operation has output Data, *e.g.* "RNA structure predictionhas outputRNA structure record". 
 
 
 
