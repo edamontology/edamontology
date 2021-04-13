@@ -25,6 +25,23 @@ about: Request a new concept is added to the EDAM Operation sub-ontology.
 *Instructions:* URI(s) of suggested EDAM Operation parent(s) delimited by pipe ('|') *e.g.* "http://edamontology.org/operation_2928".  Pick the single, most relevant operation. In some (exceptional) cases, a broad operation type (top-level operation) *e.g.* "Comparison", "Calculation" *etc.* (see http://edamontology.org/operation_0004) may also be specified.
 
 
+**Has Topic:** < Topic >
+
+*Instructions:* A category denoting a rather broad domain or field of interest, of study, application, work, data or technology *e.g.* "Phylogenetic treehas topicPhylogenetics ". Topics have no clearly defined borders between each other.
+
+
+
+**Has Input:** < EDAM Input >
+
+*Instructions:* Operation has input Data *e.g.* "Sequence annotationhas inputSequence record". 
+
+
+
+**Has Output:** < EDAM Output >
+
+*Instructions:* Operation has output Data, *e.g.* "RNA structure predictionhas outputRNA structure record". 
+
+
 
 **exactSynonym(s):** < synonym1 | synonym2 |... >
 
