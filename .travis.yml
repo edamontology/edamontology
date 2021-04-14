@@ -1,12 +1,7 @@
-language: python
+language: java
 
 python:
   - "3.8"
-
-addons:
-  apt:
-    packages:
-      - oracle-java8-installer
 
 install:
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
