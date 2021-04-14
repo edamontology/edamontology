@@ -4,7 +4,19 @@
 echo INFO: Pre-commit hook running from $PWD
 git version
 
+#count number of occurrences of owl:Class in the source file
+num_owl_class=$(grep -c 'owl:Class' EDAM_dev.owl)
+
 #check that the EDAM source file is in the right format (RDF/XML)
-grep -c 'owl:Class' EDAM_dev.owl
-owlclassfound=$?
-exit $owlclassfound
+owl_class_found=$?
+# $? returns operation successful (0) or unsuccessful (1)
+
+#check if owl:Class was found in the source file and print # of occurrences
+if [ $owl_class_found -eq 0 ]
+then
+  echo INFO: owl:Class found $num_owl_class times.
+else
+  echo ERROR: no owl:Class found.
+fi
+
+exit $?
