@@ -50,8 +50,9 @@ or better, **copy the files from the `.githooks` folder** in your _edamontology_
 
 #### Test that it's set up correctly:
 
-1. Make a dummy change in `EDAM_dev.owl` using a text editor (best if you create an experimental Git branch for that), and try to commit it. The commit should work, and you should see the output `Yay! Your commit to EDAM Ontology was successful.`.
+1. Make a dummy change in `EDAM_dev.owl` using a text editor, and try to commit it to a **new, experimental Git branch** (see above if you need to learn or refresh Git: commits, branches). The commit should work, and you should see the output `Yay! Your commit to EDAM Ontology was successful.`.
 2. Now replace all `owl:Class` in the `EDAM_dev.owl` file with for example `wol:Class` 🦉, and try to commit that change. The commit should fail now (returning `0`), not allowing you to commit.
+3. (If you haven't done this in a new, experimental branch, reset the HEAD of your current branch (_e.g._ `main`) back to the last "proper" commit. If you have done it in an experimental branch, please make sure that you don't continue doing your next, "real" changes into this branch.😉)
 
 
 ### Using Gitpod
