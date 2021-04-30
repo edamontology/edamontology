@@ -1542,7 +1542,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Sequence alignment</rdfs:label>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Sequence_alignment</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_alignment"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016415</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_010066</rdfs:seeAlso>
     </owl:Class>
@@ -2458,7 +2458,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>Typically, an assembly is a collection of contigs (for example ESTs and genomic DNA fragments) that are ordered, aligned and merged. Annotation of the assembled sequence might be included.</rdfs:comment>
         <rdfs:label>Sequence assembly</rdfs:label>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Sequence_assembly</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_assembly"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0925"/>
@@ -27815,8 +27815,8 @@
         <rdfs:label>Format</rdfs:label>
         <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000098&quot;</rdfs:seeAlso>
         <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/format&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/File_format</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/List_of_file_formats</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/File_format"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/List_of_file_formats"/>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#MachineLanguage</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000612</rdfs:seeAlso>
@@ -36792,7 +36792,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>For example a 1kb transcript with 1000 alignments in a sample of 10 million reads (out of which 8 million reads can be mapped) will have RPKM = 1000/(1 * 8) = 125</rdfs:comment>
         <rdfs:label>TAR format</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Tar_(computing)</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tar_(computing)"/>
     </owl:Class>
     
 
@@ -36876,7 +36876,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>WMV</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Windows_Media_Video</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Windows_Media_Video"/>
     </owl:Class>
     
 
@@ -36899,7 +36899,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>A ZIP file may contain one or more files or directories that may have been compressed.</rdfs:comment>
         <rdfs:label>ZIP format</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Zip_(file_format)</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Zip_(file_format)"/>
     </owl:Class>
     
 
@@ -36940,7 +36940,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>GZIP format</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Gzip</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gzip"/>
     </owl:Class>
     
 
@@ -36957,7 +36957,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>AVI</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Audio_Video_Interleave</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Audio_Video_Interleave"/>
     </owl:Class>
     
 
@@ -37073,7 +37073,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>MPEG-4</rdfs:label>
-        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group"/>
     </owl:Class>
     
 
@@ -37295,9 +37295,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>Special cases are: a) An operation that consumes no input (has no input arguments). Such operation is either a constant function, or an operation depending only on the underlying state. b) An operation that may modify the underlying state but has no output. c) The singular-case operation with no input or output, that still may modify the underlying state.</rdfs:comment>
         <rdfs:label>Operation</rdfs:label>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Function_(computer_science)</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Function_(mathematics)</rdfs:seeAlso>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Subroutine</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(computer_science)"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(mathematics)"/>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Subroutine"/>
         <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
         <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Function</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000017</rdfs:seeAlso>
@@ -55396,7 +55396,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:label>Statistics and probability</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Probability"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Statistics"/>
-        <rdfs:seeAlso>http://en.wikipedia.org/wiki/Biostatistics</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Biostatistics"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D056808</rdfs:seeAlso>
     </owl:Class>
     
