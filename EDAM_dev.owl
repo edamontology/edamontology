@@ -57,7 +57,7 @@
 
     <!-- http://edamontology.org/citation -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/citation">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/citation">
         <created_in>1.13</created_in>
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasBroadSynonym>Publication reference</oboInOwl:hasBroadSynonym>
@@ -71,13 +71,13 @@
 
     <!-- http://edamontology.org/comment_handle -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/comment_handle"/>
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/comment_handle"/>
     
 
 
     <!-- http://edamontology.org/created_in -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/created_in">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>Version in which a concept was created.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
@@ -88,7 +88,7 @@
 
     <!-- http://edamontology.org/deprecation_comment -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/deprecation_comment">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/deprecation_comment">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>A comment explaining why the comment should be or was deprecated, including name of person commenting (jison, mkalas etc.)</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
@@ -99,7 +99,7 @@
 
     <!-- http://edamontology.org/documentation -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/documentation">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/documentation">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Documentation&apos; trailing modifier (qualifier, &apos;documentation&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to a page with explanation, description, documentation, or specification of the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Specification</oboInOwl:hasRelatedSynonym>
@@ -111,7 +111,7 @@
 
     <!-- http://edamontology.org/example -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/example">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/example">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadata tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
@@ -123,7 +123,7 @@
 
     <!-- http://edamontology.org/file_extension -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/file_extension">
         <oboOther:is_metadata_tag>true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
@@ -136,7 +136,7 @@
 
     <!-- http://edamontology.org/hasHumanReadableId -->
 
-    <owl:AnnotationProperty rdf:about="http://edamontology.org/hasHumanReadableId">
+    <owl:AnnotationProperty rdf:resource="http://edamontology.org/hasHumanReadableId">
         <rdfs:label>hasHumanReadableId</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
     </owl:AnnotationProperty>
