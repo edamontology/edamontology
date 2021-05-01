@@ -58481,7 +58481,24 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:label>Anaesthesiology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anesthesiology"/>
     </owl:Class>
+   
     
+
+    <!-- http://edamontology.org/topic_4013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4013">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
+        <created_in>1.4</created_in>
+        <oboInOwl:hasDefinition>The carbon cycle describes the process in which carbon atoms continually travel from the atmosphere to the Earth and then back into the atmosphere.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>carbon-nitrogen cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Carbon_cycle</oboInOwl:hasHumanReadableId>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Carbon cycle</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://oceanservice.noaa.gov"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/topic_3403 -->
@@ -58489,7 +58506,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3403">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <oboInOwl:hasDbXref>VT 3.2.5 Critical care/Emergency medicine</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The multidisciplinary that cares for patients with acute, life-threatening illness or injury.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Acute medicine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Emergency medicine</oboInOwl:hasExactSynonym>
