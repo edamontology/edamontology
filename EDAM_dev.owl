@@ -60468,6 +60468,22 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:label>Obsolete concept (EDAM)</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
+
+    <!-- http://edamontology.org/topic_3301 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3301">
+        <created_in> 1.26 </created_in>
+        <rdfs:label> Antimicrobial Resistance </rdfs:label>
+        <oboInOwl:hasExactSynonym> AMR </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym> AR </oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym> Antibiotic resistance </oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym> ABR </oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antimicrobial_resistance"/>
+    </owl:Class>
     
 
 
