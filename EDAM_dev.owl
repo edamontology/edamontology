@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4013</next_id>
+        <next_id>4014</next_id>
         <oboOther:date>23.02.2021 09:31 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -60469,9 +60469,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
 
-    <!-- http://edamontology.org/topic_3301 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_3301">
+
+    <!-- http://edamontology.org/topic_4013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4013">
         <created_in>1.26</created_in>
         <rdfs:label>Antimicrobial Resistance</rdfs:label>
         <oboInOwl:hasExactSynonym>AMR</oboInOwl:hasExactSynonym>
@@ -60487,7 +60489,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <oboInOwl:hasDefinition>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4013"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3324"/>
         <rdfs:label>Antimicrobial resistance</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antimicrobial_resistance"/>
     </owl:Class>
