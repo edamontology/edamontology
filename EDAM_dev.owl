@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4013</next_id>
-        <oboOther:date>23.02.2021 09:31 UTC</oboOther:date>
+        <next_id>4014</next_id>
+        <oboOther:date>06.05.2021 20:00 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60453,6 +60453,31 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>FAIR data</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4013 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4013">
+        <created_in>1.26</created_in>
+        <rdfs:label>Antimicrobial Resistance</rdfs:label>
+        <oboInOwl:hasExactSynonym>AMR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Antifungal resistance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Antiviral resistance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Antiprotozoal resistance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Multiple drug resistance (MDR)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Multidrug resistance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Multiresistance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Extensive drug resistance (XDR)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Pandrug resistance (PDR)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Total drug resistance (TDR)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Microbial mechanisms for protecting microorganisms against antimicrobial agents.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3324"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antimicrobial_resistance"/>
     </owl:Class>
 
 
