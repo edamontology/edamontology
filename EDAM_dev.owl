@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4014</next_id>
-        <oboOther:date>06.05.2021 20:00 UTC</oboOther:date>
+        <oboOther:date>08.05.2021 11:36 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60478,6 +60478,22 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3324"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Antimicrobial_resistance"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4014 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4014">
+        <created_in>1.26</created_in>
+        <rdfs:label>Electroencephalography</rdfs:label>
+        <oboInOwl:hasExactSynonym>EEG</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>The monitoring method for measuring electrical activity in the brain.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3300"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electroencephalography"/>
     </owl:Class>
 
 
