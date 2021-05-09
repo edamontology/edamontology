@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4015</next_id>
-        <oboOther:date>08.05.2021 11:36 UTC</oboOther:date>
+        <next_id>4016</next_id>
+        <oboOther:date>09.05.2021 06:07 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37266,7 +37266,30 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>MATLAB script</rdfs:label>
     </owl:Class>
-    
+
+
+
+     <!-- http://edamontology.org/format_4015 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4015">
+        <created_in>1.26</created_in>
+        <rdfs:label>PETab</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>A data format for specifying parameter estimation problems in systems biology.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://petab.readthedocs.io/en/stable/documentation_data_format.html"/>
+        <rdfs:seeAlso rdf:resource="https://petab.readthedocs.io/en/stable/"/>
+        <example rdf:resource="https://petab.readthedocs.io/en/stable/example.html"/>
+        <citation rdf:resource="http://doi.org/10.1371/journal.pcbi.1008646"/>
+        <repository rdf:resource="https://github.com/PEtab-dev/PEtab"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
