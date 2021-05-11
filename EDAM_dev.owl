@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4017</next_id>
-        <oboOther:date>09.05.2021 05:08 UTC</oboOther:date>
+        <next_id>4016</next_id>
+        <oboOther:date>09.05.2021 06:07 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37268,7 +37268,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     </owl:Class>
 
 
-    
+
     <!-- http://edamontology.org/format_4015 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4015">
@@ -37289,7 +37289,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="http://doi.org/10.1371/journal.pcbi.1008646"/>
         <repository rdf:resource="https://github.com/PEtab-dev/PEtab"/>
     </owl:Class>
-    
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
@@ -60517,23 +60517,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3300"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electroencephalography"/>
-    </owl:Class>
-
-
-
-    <!-- http://edamontology.org/topic_4016 -->
-
-    <owl:Class rdf:about="http://edamontology.org/topic_4016">
-        <created_in>1.26</created_in>
-        <rdfs:label>Electrocardiography</rdfs:label>
-        <oboInOwl:hasExactSynonym>EKG</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>ECG</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <oboInOwl:hasDefinition>The monitoring method for measuring electrical activity in the heart.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3300"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electrocardiography"/>
     </owl:Class>
 
 
