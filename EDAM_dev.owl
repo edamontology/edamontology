@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4018</next_id>
-        <oboOther:date>09.05.2021 06:07 UTC</oboOther:date>
+        <next_id>4019</next_id>
+        <oboOther:date>11.05.2021 16:51 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37290,6 +37290,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <example rdf:resource="https://petab.readthedocs.io/en/stable/example.html"/>
         <citation rdf:resource="http://doi.org/10.1371/journal.pcbi.1008646"/>
         <repository rdf:resource="https://github.com/PEtab-dev/PEtab"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4018 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4018">
+        <created_in>1.26</created_in>
+        <rdfs:label>PyTables</rdfs:label>
+        <media_type>application/x-hdf</media_type>
+        <media_type>application/x-hdf5</media_type>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>PyTables is a dialect of HDF5 which stores hierarchically organized numerical data, as well as indices into this data for rapid searching and retrieval. The PyTables format is supported by the PyTables Python software package.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3590"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+        <documentation rdf:resource="https://www.pytables.org/usersguide/file_format.html"/>
+        <rdfs:seeAlso rdf:resource="https://www.pytables.org/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hierarchical_Data_Format"/>
+        <example rdf:resource="https://github.com/PyTables/PyTables/tree/master/examples"/>
+        <repository rdf:resource="https://github.com/PyTables/PyTables"/>
     </owl:Class>
 
 
