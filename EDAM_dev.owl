@@ -37269,6 +37269,29 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     
 
 
+    <!-- http://edamontology.org/format_4015 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4015">
+        <created_in>1.26</created_in>
+        <rdfs:label>PEtab</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>A data format for specifying parameter estimation problems in systems biology.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://petab.readthedocs.io/en/stable/documentation_data_format.html"/>
+        <rdfs:seeAlso rdf:resource="https://petab.readthedocs.io/en/stable/"/>
+        <example rdf:resource="https://petab.readthedocs.io/en/stable/example.html"/>
+        <citation rdf:resource="http://doi.org/10.1371/journal.pcbi.1008646"/>
+        <repository rdf:resource="https://github.com/PEtab-dev/PEtab"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
