@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4018</next_id>
-        <oboOther:date>09.05.2021 06:07 UTC</oboOther:date>
+        <next_id>4019</next_id>
+        <oboOther:date>16.05.2021 11:52 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -31685,9 +31685,12 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2921"/>
         <created_in>beta12orEarlier</created_in>
-        <documentation rdf:resource="http://vcftools.sourceforge.net/specs.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://vcftools.sourceforge.net/specs.html"/>
-        <oboInOwl:hasDefinition>Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://samtools.github.io/hts-specs/VCFv4.3.pdf"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Variant_Call_Format"/>
+        <oboInOwl:hasDefinition>Variant Call Format (VCF) is tabular format for storing genomic sequence variations.</oboInOwl:hasDefinition>
+		<rdfs:comment>1000 Genomes Project has its own specification for encoding structural variations in VCF (https://www.internationalgenome.org/wiki/Analysis/Variant%20Call%20Format/VCF%20(Variant%20Call%20Format)%20version%204.0/encoding-structural-variants). This is based on VCF version 4.0 and not directly compatible with VCF version 4.3.</rdfs:comment>
+        <file_extension>vcf</file_extension>
+        <file_extension>vcf.gz</file_extension>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>VCF</rdfs:label>
@@ -37294,24 +37297,18 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
-    <!-- http://edamontology.org/format_XXXX -->
+    <!-- http://edamontology.org/format_4018 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_XXXX">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2921"/>
+    <owl:Class rdf:about="http://edamontology.org/format_4018">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3016"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3498"/>
-        <created_in>1.25</created_in>
-        <documentation rdf:resource="https://sites.google.com/site/gvcftools/home/about-gvcf"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://sites.google.com/site/gvcftools/home/about-gvcf"/>
+        <documentation rdf:resource="https://sites.google.com/site/gvcftools/home/about-gvcf/gvcf-conventions"/>
         <documentation rdf:resource="https://gatk.broadinstitute.org/hc/en-us/articles/360035531812-GVCF-Genomic-Variant-Call-Format"/>
-        <documentation rdf:resource="https://en.wikipedia.org/wiki/Variant_Call_Format"/>
         <file_extension>g.vcf</file_extension>
         <file_extension>g.vcf.gz</file_extension>
-        <example rdf:resource="https://gatk.broadinstitute.org/hc/en-us/articles/360035531812-GVCF-Genomic-Variant-Call-Format"/>
-        <organisation rdf:resource="https://www.ga4gh.org/#/fileformats-team"/>
-        <oboInOwl:hasDefinition>genomic Variant Call Format (gVCF) is a version of VCF that includes not only the positions that are variant when compared to a reference genome, but also the non-variant positions as ranges, including metrics of confidence that the positions in the range are actually non-variant e.g. minimum read-depth and genotype quality</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Genomic Variant Call Format (gVCF) is a version of VCF that includes not only the positions that are variant when compared to a reference genome, but also the non-variant positions as ranges, including metrics of confidence that the positions in the range are actually non-variant e.g. minimum read-depth and genotype quality.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>GVCF</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>g.vcf</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>g.vcf.gz</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
