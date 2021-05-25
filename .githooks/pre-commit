@@ -16,7 +16,7 @@ if [ $owl_class_found -eq 0 ]
 then
   echo INFO: owl:Class found $num_owl_class times.
 else
-  echo ERROR: no owl:Class found.
+  echo ERROR: no owl:Class found. $owl_class_found
 fi
 
 exit $?
