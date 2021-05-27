@@ -22,4 +22,5 @@ jobs:
           pip install git+https://github.com/edamontology/edam2json.git
       - name: Test conversion
         run: |
-          edam2json EDAM.owl biotools --extended > edam_extended.biotools.json
+          ls -lah
+          edam2json EDAM_dev.owl biotools --extended > edam_extended.biotools.json
