@@ -10,14 +10,27 @@ jobs:
   pre-release:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
+    strategy:
+      matrix:
+        python-version: [3.8]
 
     steps:
       - uses: actions/checkout@v2
-      - name: "Build & test"
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }
+      - name: Install edam2json
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/edamontology/edam2json.git
+      - name: Conversion
+        run: |
+          ls -lah
+          edam2json EDAM_dev.owl -o EDAM_dev.min.json biotools --minified --extended
+      - name: "Fixing paths"
         run: |
           cp LICENSE LICENSE.md
-          echo "done!"
-
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -29,5 +42,6 @@ jobs:
             changelog.md
             CONTRIBUTING.md
             EDAM_dev.owl
+            EDAM_dev.min.json
             LICENSE.md
             README.md
