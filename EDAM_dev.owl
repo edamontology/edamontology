@@ -40,7 +40,7 @@
         <oboInOwl:savedBy>Jon Ison, Matúš Kalaš, Hervé Ménager</oboInOwl:savedBy>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
-        <foaf:logo rdf:resource="https://github.com/edamontology/edamontology/blob/main/EDAM-logo-square.svg"/>
+        <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
         <edam:repository rdf:resource="https://github.com/edamontology/edamontology/"/>
     </owl:Ontology>
     
@@ -37285,6 +37285,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -42518,7 +42519,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This includes methods that use an existing alignment, for example to incorporate sequences into an alignment, or combine several multiple alignments into a single, improved alignment.</rdfs:comment>
         <rdfs:label>Multiple sequence alignment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_alignment#Multiple_sequence_alignment"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_sequence_alignment"/>
     </owl:Class>
     
 

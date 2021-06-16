@@ -1,0 +1,26 @@
+name: Test edam2json conversion of EDAM_dev.owl
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install edam2json
+        run: |
+          python -m pip install --upgrade pip
+          pip install git+https://github.com/edamontology/edam2json.git
+      - name: Test conversion
+        run: |
+          ls -lah
+          edam2json EDAM_dev.owl biotools --extended > edam_extended.biotools.json
