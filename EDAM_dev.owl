@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4020</next_id>
-        <oboOther:date>18.06.2021 16:02 UTC</oboOther:date>
+        <oboOther:date>18.06.2021 16:52 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37327,7 +37327,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Virtual Cell Markup Language</oboInOwl:hasExactSynonym>
         <file_extension>xml</file_extension>
         <file_extension>vcml</file_extension>
-        <media_type>application/vcml+xml</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vcml+xml"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>Format for models developed with the Virtual Cell biomodeling and simulation software suite.</oboInOwl:hasDefinition>
