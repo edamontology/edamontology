@@ -31753,7 +31753,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2921"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref rdf:resource="http://samtools.sourceforge.net/mpileup.shtml"/>
-        <oboInOwl:hasDefinition>BCF, the binary version of Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://samtools.github.io/hts-specs/VCFv4.3.pdf"/>
+        <file_extension>.bcf</file_extension>
+        <file_extension>.bcf.gz</file_extension>
+        <oboInOwl:hasDefinition>BCF is the binary version of Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BCF</rdfs:label>
