@@ -37322,6 +37322,31 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
+    <!-- http://edamontology.org/format_4019 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4019">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_Markup_Language"/>
+        <rdfs:seeAlso rdf:resource="http://www-pmr.ch.cam.ac.uk/wiki/Chemical_Markup_Language"/>
+        <rdfs:seeAlso rdf:resource="http://fileformats.archiveteam.org/wiki/CML"/>
+        <example rdf:resource="https://www.ch.ic.ac.uk/omf/cml/doc/examples/"/>
+        <citation rdf:resource="https://doi.org/10.1039/CS9972600001"/>
+        <citation rdf:resource="https://doi.org/10.1021/ci990052b"/>
+        <citation rdf:resource="https://doi.org/10.1186/1758-2946-3-44"/>
+        <documentation rdf:resource="http://cml.sourceforge.net/"/>
+        <organisation rdf:resource="http://www-pmr.ch.cam.ac.uk/wiki/Main_Page"/>
+        <file_extension>cml</file_extension>
+        <oboInOwl:hasDefinition>Chemical Markup Language (CML) is an XML-based format for encoding detailed information about a wide range of chemical concepts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ChemML</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>cml</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
