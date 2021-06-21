@@ -31754,8 +31754,8 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref rdf:resource="http://samtools.sourceforge.net/mpileup.shtml"/>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/VCFv4.3.pdf"/>
-        <file_extension>.bcf</file_extension>
-        <file_extension>.bcf.gz</file_extension>
+        <file_extension>bcf</file_extension>
+        <file_extension>bcf.gz</file_extension>
         <oboInOwl:hasDefinition>BCF is the binary version of Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -37343,6 +37343,35 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>cml</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4020 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4020">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://www.iucr.org/resources/cif/spec/version1.1"/>
+        <rdfs:seeAlso rdf:resource="https://www.iucr.org/resources/cif"/>
+        <rdfs:seeAlso rdf:resource="http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C133997"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Crystallographic_Information_File"/>
+        <example rdf:resource="https://iucrdata.iucr.org/x/services/examples.html"/>
+        <citation rdf:resource="https://doi.org/10.1107/S010876739101067X"/>
+        <documentation rdf:resource="https://www.iucr.org/resources/cif/documentation"/>
+        <organisation rdf:resource="https://www.iucr.org/"/>
+        <file_extension>cif</file_extension>
+        <oboInOwl:hasDefinition>Crystallographic Information File (CIF) is a data exchange standard file format for Crystallographic Information and related Structural Science data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ChemML</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>cif</rdfs:label>
     </owl:Class>
 
 
