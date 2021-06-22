@@ -37376,6 +37376,29 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
+    <!-- http://edamontology.org/format_4022 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4022">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://api.biosimulators.org/openapi.json"/>
+        <example rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+        <documentation rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+        <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
+        <ontology_used rdf:resource="http://edamontology.org/"/>
+        <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+        <ontology_used rdf:resource="http://co.mbine.org/standards/kisao"/>
+        <ontology_used rdf:resource="https://spdx.dev/"/>
+        <ontology_used rdf:resource="https://www.crossref.org/services/funder-registry/"/>
+        <ontology_used rdf:resource="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml"/>
+        <ontology_used rdf:resource="https://github.com/MaastrichtU-IDS/semanticscience"/>
+        <file_extension>json</file_extension>
+        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/json"/>
+        <oboInOwl:hasDefinition>Format for describing the capabilities of a biosimulation tool including the modeling frameworks, simulation algorithms, and modeling formats that it supports, as well as metadata such as a list of the interfaces, programming languages, and operating systems supported by the tool; a link to download the tool; a list of the authors of the tool; and the license to the tool.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>BioSimulators format for the specifications of biosimulation tools</rdfs:label>
+    </owl:Class>
 
 
 
