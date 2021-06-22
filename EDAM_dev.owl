@@ -37376,6 +37376,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -60633,6 +60636,26 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>A method for studying biomolecules and other structures at very low (cryogenic) temperature using electron microscopy.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0611"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cryogenic_electron_microscopy"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4021 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4021">
+        <created_in>1.26</created_in>
+        <rdfs:label>Ribosome Profiling</rdfs:label>
+        <oboInOwl:hasExactSynonym>RIBO-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribo-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RiboSeq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Ribo-Seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribosomal footprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>translation footprinting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>With ribosome profiling, ribosome-protected mRNA fragments are analyzed with RNA-seq techniques leading to a genome-wide measurement of the translation landscape. This technique has been getting more and more attention over the last few years.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
 
