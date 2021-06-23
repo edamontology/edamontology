@@ -25105,7 +25105,28 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Pathway overrepresentation data</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- http://edamontology.org/data_4024 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4024">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1881"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://orcid.org/"/>
+        <documentation rdf:resource="https://registry.identifiers.org/registry/orcid"/>
+        <regex>^\d{4}-\d{4}-\d{4}-\d{3}(\d|X)$</regex>
+        <oboInOwl:hasDefinition>Identifier of a researcher registered with the ORCID database. Used to identify author IDs.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:label>ORCID Identifier</rdfs:label>
+    </owl:Class>    
+
 
 
     <!-- http://edamontology.org/format_1196 -->
