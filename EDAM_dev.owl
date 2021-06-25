@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4033</next_id>
-        <oboOther:date>25.06.2021 18:13 UTC</oboOther:date>
+        <next_id>4035</next_id>
+        <oboOther:date>25.06.2021 18:27 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37812,6 +37812,65 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <example rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
         <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4033 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4032">
+        <created_in>1.26</created_in>
+        <rdfs:label>Singularity Image Format</rdfs:label>
+        <oboInOwl:hasExactSynonym>SIF</oboInOwl:hasExactSynonym>
+        <file_extension>sif</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>The Singularity image format is a format for virtual containers suitable for execution on high performance computing clusters. Singularity images are often built by conversion from Docker images.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <documentation rdf:resource="https://sylabs.io/singularity/"/>
+        <citation rdf:resource="http://doi.org/10.1371/journal.pone.0177459"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Singularity_(software)"/>
+        <example rdf:resource="https://cloud.sylabs.io/library"/>
+        <organisation rdf:resource="https://sylabs.io/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4034 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4034">
+        <created_in>1.26</created_in>
+        <rdfs:label>OMEX Metadata format</rdfs:label>
+        <oboInOwl:hasExactSynonym>OMEX Meta</oboInOwl:hasExactSynonym>
+        <file_extension>nt</file_extension>
+        <file_extension>nq</file_extension>
+        <file_extension>rdf</file_extension>
+        <file_extension>ttl</file_extension>
+        <file_extension>xml</file_extension>
+        <file_extension>xhtml</file_extension>
+        <media_type rdf:resource="application/n-quads"/>
+        <media_type rdf:resource="application/n-triples"/>
+        <media_type rdf:resource="application/rdf+xml"/>
+        <media_type rdf:resource="application/xhtml+xml"/>
+        <media_type rdf:resource="text/turtle"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Guidelines for using triples to describe metadata about mathematical models and simulations for serializing triples to several formats.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3255"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3256"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3261"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3956"/>
+        <documentation rdf:resource="https://sys-bio.github.io/libOmexMeta"/>
+        <citation rdf:resource="https://doi.org/10.1515/jib-2020-0020"/>
+        <information_standard rdf:resource="https://co.mbine.org/standards/miase"/>
+        <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+        <ontology_used rdf:resource="https://www.ncbi.nlm.nih.gov/taxonomy"/>
+        <ontology_used rdf:resource="http://geneontology.org/"/>
+        <ontology_used rdf:resource="http://orcid.org/"/>
+        <ontology_used rdf:resource="https://pubmed.ncbi.nlm.nih.gov/"/>
+        <organisation rdf:resource="http://co.mbine.org/"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
