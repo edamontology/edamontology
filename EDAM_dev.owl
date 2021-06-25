@@ -31279,6 +31279,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>sbml</file_extension>
+        <file_extension>xml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
         <documentation rdf:resource="http://sbml.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://sbml.org"/>
         <oboInOwl:hasDefinition>Systems Biology Markup Language (SBML), the standard XML format for models of biological processes such as for example metabolism, cell signaling, and gene regulation.</oboInOwl:hasDefinition>
@@ -32119,6 +32122,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <created_in>1.2</created_in>
         <documentation rdf:resource="http://www.cellml.org"/>
+        <file_extension>cellml</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/cellml+xml"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.cellml.org"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/application/cellml+xml"/>
@@ -32912,12 +32916,15 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
         <created_in>1.8</created_in>
+        <file_extension>docx</file_extension>
+        <media_type rdf:resource="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
         <oboInOwl:hasDefinition>Microsoft Word format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Microsoft Word format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>Office Open XML File Format</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasExactSynonym>doc</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>docx</rdfs:label>
+        <rdfs:label>docx</rdfs:label>        
     </owl:Class>
     
 
@@ -33300,6 +33307,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
         <created_in>1.11</created_in>
+        <file_extension>h5</file_extension>
+        <file_extension>hdf5</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-hdf"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-hdf5"/>
         <documentation rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
         <oboInOwl:hasDbXref rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
         <oboInOwl:hasDefinition>HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF).</oboInOwl:hasDefinition>
@@ -33778,10 +33789,13 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
         <created_in>1.11</created_in>
+        <file_extension>xlsx</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
         <oboInOwl:hasDefinition>MS Excel spreadsheet format consisting of a set of XML documents stored in a ZIP-compressed file.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>xlsx</rdfs:label>
+        <oboInOwl:hasExactSynonym>Office Open XML SpreadsheetML File Format</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -33858,6 +33872,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.12</created_in>
+        <file_extension>mat</file_extension>
         <documentation rdf:resource="http://uk.mathworks.com/help/matlab/import_export/mat-file-versions.html"/>
         <oboInOwl:hasDefinition>Binary format used by MATLAB files to store workspace variables.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>.mat file format</oboInOwl:hasExactSynonym>
@@ -34068,6 +34083,8 @@
     <owl:Class rdf:about="http://edamontology.org/format_3685">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <file_extension>sedml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
         <citation rdf:resource="http://doi.org/10.1007/978-3-540-88562-7_15"/>
         <citation rdf:resource="http://doi.org/10.1186/1752-0509-5-198"/>
         <created_in>1.13</created_in>
@@ -34087,11 +34104,13 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <file_extension>omex</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/zip"/>
         <citation rdf:resource="http://doi.org/10.1186/s12859-014-0369-z"/>
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://co.mbine.org/documents/archive"/>
         <oboInOwl:hasDbXref rdf:resource="http://co.mbine.org/documents/archive"/>
-        <oboInOwl:hasDefinition>Open Modeling EXchange format (OMEX) is a ZIPped format for encapsulating all information necessary for a modeling and simulation project in systems biology.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Open Modeling EXchange format (OMEX) is a zipped format for encapsulating all information necessary for a modeling and simulation project in systems biology.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>An OMEX file is a ZIP container that includes a manifest file, listing the content of the archive, an optional metadata file adding information about the archive and its content, and the files describing the model. OMEX is one of the standardised formats within COMBINE (Computational Modeling in Biology Network).</rdfs:comment>
@@ -34124,6 +34143,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3688">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <file_extension>tsv</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
         <citation rdf:resource="http://arxiv.org/abs/1502.01463"/>
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://sbtab.net"/>
@@ -36368,9 +36389,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.22</created_in>
-        <documentation rdf:resource="https://arxiv.org/abs/1903.10042"/>
+        <citation rdf:resource="https://doi.org/10.1186/s13059-020-02025-z"/>
+        <documentation rdf:resource="https://bpforms.org"/>
+        <documentation rdf:resource="http://sandbox.karrlab.org/tree/bpforms"/>
+        <documentation rdf:resource="https://docs.karrlab.org/bpforms"/>
         <documentation rdf:resource="https://raw.githubusercontent.com/KarrLab/bpforms/master/bpforms/grammar.lark"/>
         <ontology_used rdf:resource="http://edamontology.org/data_2301"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/plain"/>
         <organisation rdf:resource="https://www.karrlab.org"/>
         <oboInOwl:hasDefinition>BpForms is a string format for concretely representing the primary structures of biopolymers, including DNA, RNA, and proteins that include non-canonical nucleic and amino acids. See https://www.bpforms.org for more information.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36520,12 +36545,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2062"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.24</created_in>
+        <citation rdf:resource="https://doi.org/10.1186/s13059-020-02025-z"/>
         <documentation rdf:resource="http://docs.karrlab.org/bcforms"/>
         <documentation rdf:resource="http://sandbox.karrlab.org/tree/bcforms"/>
         <documentation rdf:resource="https://bcforms.org"/>
         <documentation rdf:resource="https://raw.githubusercontent.com/KarrLab/bcforms/master/bcforms/grammar.lark"/>
         <example rdf:resource="https://bcforms.org"/>
-        <media_type>text/plain</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/plain"/>
         <ontology_used rdf:resource="https://www.bpforms.org/crosslink"/>
         <organisation rdf:resource="https://www.karrlab.org"/>
         <oboInOwl:hasDefinition>BcForms is a format for abstractly describing the molecular structure (atoms and bonds) of macromolecular complexes as a collection of subunits and crosslinks. Each subunit can be described with BpForms (http://edamontology.org/format_3909) or SMILES (http://edamontology.org/data_2301). BcForms uses an ontology of crosslinks to abstract the chemical details of crosslinks from the descriptions of complexes (see https://bpforms.org/crosslink.html).</oboInOwl:hasDefinition>
@@ -36560,10 +36586,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <created_in>1.25</created_in>
         <documentation rdf:resource="https://vega.github.io/vega/docs/"/>
         <documentation rdf:resource="https://vega.github.io/vega/docs/#specification"/>
-        <documentation rdf:resource="https:doi.org/10.1145/2642918.2647360"/>
+        <citation rdf:resource="https:doi.org/10.1145/2642918.2647360"/>
         <example rdf:resource="https://vega.github.io/vega/examples/"/>
         <file_extension>json</file_extension>
-        <media_type>application/json</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
         <organisation rdf:resource="http://idl.cs.washington.edu/"/>
         <oboInOwl:hasDefinition>Vega is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36579,12 +36605,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.25</created_in>
-        <documentation rdf:resource="https://doi.org/10.1109/TVCG.2016.2599030"/>
+        <citation rdf:resource="https://doi.org/10.1109/TVCG.2016.2599030"/>
         <documentation rdf:resource="https://vega.github.io/vega-lite/docs/"/>
         <documentation rdf:resource="https://vega.github.io/vega-lite/docs/#spec"/>
         <example rdf:resource="https://vega.github.io/vega-lite/examples/"/>
         <file_extension>json</file_extension>
-        <media_type>application/json</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
         <organisation rdf:resource="http://idl.cs.washington.edu/"/>
         <oboInOwl:hasDefinition>Vega-Lite is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36606,11 +36632,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.25</created_in>
-        <documentation rdf:resource="https://doi.org/10.1371/journal.pcbi.1000815"/>
+        <citation rdf:resource="https://doi.org/10.1371/journal.pcbi.1000815"/>
         <documentation rdf:resource="https://neuroml.org/"/>
         <example rdf:resource="https://neuroml-db.org/"/>
         <example rdf:resource="https://neuroml.org/neuromlv2"/>
-        <media_type>application/xml</media_type>
+        <file_extension>nml</file_extension>
+        <file_extension>xml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
         <organisation rdf:resource="https://neuroml.org/editors"/>
         <oboInOwl:hasDefinition>A model description language for computational neuroscience.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36633,12 +36661,13 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         </rdfs:subClassOf>
         <created_in>1.25</created_in>
         <documentation rdf:resource="https://bionetgen.org/"/>
-        <documentation rdf:resource="https://doi.org/10.1007/978-1-59745-525-1_5"/>
-        <documentation rdf:resource="https://doi.org/10.1007/978-1-61779-833-7_9"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-1-59745-525-1_5"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-1-61779-833-7_9"/>
         <example rdf:resource="https://github.com/RuleWorld/BNGTutorial/blob/master/README.md"/>
         <file_extension>bngl</file_extension>
-        <media_type>application/xml</media_type>
-        <media_type>plain/text</media_type>
+        <file_extension>xml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/plain/text"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
         <organisation rdf:resource="https://www.csb.pitt.edu/Faculty/Faeder/"/>
         <oboInOwl:hasDefinition>BioNetGen is a format for the specification and simulation of rule-based models of biochemical systems, including signal transduction, metabolic, and genetic regulatory networks.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioNetGen Language</oboInOwl:hasExactSynonym>
@@ -36658,7 +36687,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://en.wikipedia.org/wiki/Docker_(software)"/>
         <documentation rdf:resource="https://github.com/moby/moby/blob/master/image/spec/v1.2.md"/>
         <example rdf:resource="https://dockerhub.com"/>
-        <file_extension>dockerfile</file_extension>
         <organisation rdf:resource="https://www.docker.com/"/>
         <oboInOwl:hasDefinition>A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container. An image is essentially built from the instructions for a complete and executable version of an application, which relies on the host OS kernel.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36715,10 +36743,17 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.25</created_in>
+        <citation rdf:resource="https://arxiv.org/abs/2005.05227"/>
         <documentation rdf:resource="https://www.objtables.org/docs"/>
         <example rdf:resource="https://www.objtables.org/docs#examples"/>
+        <file_extension>csv</file_extension>
+        <file_extension>tsv</file_extension>
         <file_extension>xlsx</file_extension>
-        <media_type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</media_type>
+        <file_extension>zip</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/csv"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/zip"/>
         <organisation rdf:resource="https://www.karrlab.org"/>
         <oboInOwl:hasDefinition>ObjTables is a toolkit for creating re-usable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -37279,6 +37314,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_4015">
         <created_in>1.26</created_in>
         <rdfs:label>PEtab</rdfs:label>
+        <file_extension>tsv</file_extension>
+        <file_extension>yaml</file_extension>
+        <file_extension>yml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-yaml"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>A data format for specifying parameter estimation problems in systems biology.</oboInOwl:hasDefinition>
