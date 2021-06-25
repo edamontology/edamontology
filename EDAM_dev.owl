@@ -37428,6 +37428,367 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     </owl:Class>
 
 
+ <!-- http://edamontology.org/format_4021 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4021">
+     <created_in>1.26</created_in>
+     <rdfs:label>PySB</rdfs:label>
+     <file_extension>py</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-python-code"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>PySB is a simple and intuitive domain specific language embedded within Python for describing mathematical rule-based models of biochemical systems.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3996"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3241"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://pysb.org/tutorials/|https://pysb.readthedocs.io/"/>
+     <example rdf:resource="https://github.com/pysb/pysb/tree/master/pysb/examples"/>
+     <citation rdf:resource="http://doi.org/10.1038/msb.2013.1"/>
+     <organisation rdf:resource="https://my.vanderbilt.edu/lopezlab/"/>
+     <organisation rdf:resource="https://sorger.med.harvard.edu/"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4022 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4022">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-qual</rdfs:label>
+     <oboInOwl:hasExactSynonym>qual</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>Qualitative Models</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-qual is an extension of SBML for representing logical models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/qual"/>
+     <example rdf:resource="http://www.colomoto.org/formats/sbml-qual.html"/>
+     <citation rdf:resource="http://doi.org/10.1186/1752-0509-7-135"/>
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4023 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4023">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-fbc</rdfs:label>
+     <oboInOwl:hasExactSynonym>fbc</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>flux balance constraints</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-fbc is an extension of SBML for representing flux balance models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/fbc"/>
+     <example rdf:resource="https://github.com/opencobra/cobrapy/tree/devel/src/cobra/test/data"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2017-0082"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2015-269"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4024 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4024">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-spatial</rdfs:label>
+     <oboInOwl:hasExactSynonym>spatial</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-spatial is an extension of SBML for representing spatially-resolved models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/spatial"/>
+     <example rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/comp"/>
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4025 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4025">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-distrib</rdfs:label>
+     <oboInOwl:hasExactSynonym>distrib</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>Distributions</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-distrib is an extension of SBML for representing models that involve probabilistic distributions.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/distrib"/>
+     <example rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/distrib"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2020-0018"/>
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4026 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4026">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-comp</rdfs:label>
+     <oboInOwl:hasExactSynonym>comp</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>Hierarchical Model Composition</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-comp is an extension of SBML for representing composite models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/comp"/>
+     <example rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/comp"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2015-268"/>
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4027 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4027">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-multi</rdfs:label>
+     <oboInOwl:hasExactSynonym>multi</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>Multistate and Multicomponent Species</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-multi is an extension of SBML for representing multi-state/multi-species, or rule-based models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>\
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/multi"/>
+     <example rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/multi"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2017-0077"/>]
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4028 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4028">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-groups</rdfs:label>
+     <oboInOwl:hasExactSynonym>groups</oboInOwl:hasExactSynonym>
+     <oboInOwl:hasExactSynonym>Groups</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-groups is an extension of SBML for using groups to abstract the representation of complex models.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2585"/>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <rdfs:subClassOf>
+         <owl:Restriction>
+             <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+             <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/groups"/>
+     <example rdf:resource="http://sbml.org/Documents/Specifications/SBML_Level_3/Packages/groups"/>
+     <citation rdf:resource="http://doi.org/10.1515/jib-2016-290"/>
+     <information_standard rdf:resource="https://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="http://sbml.org"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4029 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4029">
+     <created_in>1.26</created_in>
+     <rdfs:label>SBML-DFBA</rdfs:label>
+     <oboInOwl:hasExactSynonym>spatial</oboInOwl:hasExactSynonym>
+     <file_extension>xml</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/sbml+xml"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>SBML-DFBA is a schema for encoding dynamic flux balance analysis models into SBML, SBML-comp, and SBML-fbc.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_format_2585"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="https://github.com/matthiaskoenig/dfba/tree/master/docs/"/>
+     <example rdf:resource="https://github.com/matthiaskoenig/dfba/tree/master/models"/>
+     <citation rdf:resource="http://doi.org/10.1101/245076"/>
+     <information_standard rdf:resource="http://co.mbine.org/standards/miriam"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <organisation rdf:resource="https://livermetabolism.com/"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4030 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4030">
+     <created_in>1.26</created_in>
+     <rdfs:label>Dockerfile</rdfs:label>
+     <file_extension>Dockerfile</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-dockerfile"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>Format for describing the steps required to build a Docker image. The format can also capture metadata about images.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="https://docs.docker.com/engine/reference/builder/"/>
+     <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Docker_(software)"/>
+     <organisation rdf:resource="https://www.docker.com/"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4031 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4031">
+     <created_in>1.26</created_in>
+     <rdfs:label>BioSimulators format for the specifications of biosimulation tools</rdfs:label>
+     <file_extension>json</file_extension>
+     <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>Format for describing the capabilities of a biosimulation tool including the modeling frameworks, simulation algorithms, and modeling formats that it supports, as well as metadata such as a list of the interfaces, programming languages, and operating systems supported by the tool; a link to download the tool; a list of the authors of the tool; and the license to the tool.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+     <example rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+     <ontology_used rdf:resource="http://edamontology.org/"/>
+     <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+     <ontology_used rdf:resource="http://co.mbine.org/standards/kisao"/>
+     <ontology_used rdf:resource="https://spdx.dev/"/>
+     <ontology_used rdf:resource="https://www.crossref.org/services/funder-registry/"/>
+     <ontology_used rdf:resource="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml"/>
+     <ontology_used rdf:resource="https://github.com/MaastrichtU-IDS/semanticscience"/>
+     <organisation rdf:resource="https://reproduciblebiomodels.org8/"/>
+ </owl:Class>
+
+
+ <!-- http://edamontology.org/format_4032 -->
+
+ <owl:Class rdf:about="http://edamontology.org/format_4032">
+     <created_in>1.26</created_in>
+     <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
+     <file_extension>xml</file_extension>
+     <file_extension>vcml</file_extension>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+     <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+     <oboInOwl:hasDefinition>Outlines the syntax and semantics of the input and output arguments for command-line interfaces for biosimulation tools.</oboInOwl:hasDefinition>
+     <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+         </owl:Restriction>
+     </rdfs:subClassOf>
+     <documentation rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
+     <example rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
+     <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
+ </owl:Class>
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
