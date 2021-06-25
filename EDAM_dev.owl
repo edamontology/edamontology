@@ -6352,7 +6352,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <example>urn:miriam:pubmed:16333295|urn:miriam:obo.go:GO%3A0045202</example>
+        <example>urn:miriam:pubmed:16333295</example>
+        <example>urn:miriam:obo.go:GO%3A0045202</example>
         <oboInOwl:hasDefinition>The URI (URL or URN) of a data entity from the MIRIAM database.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>identifiers.org synonym</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
@@ -6369,7 +6370,8 @@
     <owl:Class rdf:about="http://edamontology.org/data_1165">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1163"/>
         <created_in>beta12orEarlier</created_in>
-        <example>UniProt|Enzyme Nomenclature</example>
+        <example>UniProt</example>
+        <example>Enzyme Nomenclature</example>
         <oboInOwl:hasDefinition>The primary name of a data type from the MIRIAM database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -6380,7 +6382,8 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_1165"/>
         <owl:annotatedProperty rdf:resource="http://edamontology.org/example"/>
-        <owl:annotatedTarget>UniProt|Enzyme Nomenclature</owl:annotatedTarget>
+        <owl:annotatedTarget>UniProt</owl:annotatedTarget>
+        <owl:annotatedTarget>Enzyme Nomenclature</owl:annotatedTarget>
         <rdfs:comment>A protein entity has the MIRIAM data type &apos;UniProt&apos;, and an enzyme has the MIRIAM data type &apos;Enzyme Nomenclature&apos;.</rdfs:comment>
     </owl:Axiom>
     
@@ -6567,7 +6570,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2908"/>
         <created_in>beta12orEarlier</created_in>
-        <example>9662|3483|182682</example>
+        <example>9662</example>
+        <example>3483</example>
+        <example>182682</example>
         <regex>[1-9][0-9]{0,8}</regex>
         <oboInOwl:hasDefinition>A stable unique identifier for each taxon (for a species, a family, an order, or any other group in the NCBI taxonomy database.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NCBI tax ID</oboInOwl:hasExactSynonym>
@@ -22738,7 +22743,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://www.uniprot.org/help/accession_numbers"/>
-        <example>P43353|Q7M1G0|Q9C199|A5A6J6</example>
+        <example>P43353</example>
+        <example>Q7M1G0</example>
+        <example>Q9C199</example>
+        <example>A5A6J6</example>
         <regex>[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}</regex>
         <oboInOwl:hasDefinition>Accession number of a UniProt (protein sequence) database entry.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>UniProt accession number</oboInOwl:hasExactSynonym>
@@ -37458,7 +37466,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
              <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
          </owl:Restriction>
      </rdfs:subClassOf>
-     <documentation rdf:resource="http://pysb.org/tutorials/|https://pysb.readthedocs.io/"/>
+     <documentation rdf:resource="http://pysb.org/tutorials/"/>
+     <documentation rdf:resource="https://pysb.readthedocs.io/"/>
      <example rdf:resource="https://github.com/pysb/pysb/tree/master/pysb/examples"/>
      <citation rdf:resource="http://doi.org/10.1038/msb.2013.1"/>
      <organisation rdf:resource="https://my.vanderbilt.edu/lopezlab/"/>
