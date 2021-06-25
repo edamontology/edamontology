@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4035</next_id>
-        <oboOther:date>25.06.2021 18:27 UTC</oboOther:date>
+        <next_id>4036</next_id>
+        <oboOther:date>25.06.2021 18:51 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37869,6 +37869,27 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <ontology_used rdf:resource="http://orcid.org/"/>
         <ontology_used rdf:resource="https://pubmed.ncbi.nlm.nih.gov/"/>
         <organisation rdf:resource="http://co.mbine.org/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4035 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4035">
+        <created_in>1.26</created_in>
+        <rdfs:label>PyTables</rdfs:label>
+        <file_extension>h5</file_extension>
+        <file_extension>hdf</file_extension>
+        <file_extension>hdf5</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-hdf"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-hdf5"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>PyTables is a dialect of HDF5 which stores hierarchically organized numerical data, as well as indices into this data for rapid searching and retrieval. The PyTables format is supported by the PyTables Python software package.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3590"/>
+        <documentation rdf:resource="https://www.pytables.org/usersguide/file_format.html"/>
+        <documentation rdf:resource="https://www.pytables.org/"/>
+        <organisation rdf:resource="https://www.pytables.org/dev_team.html"/>
     </owl:Class>
 
 
