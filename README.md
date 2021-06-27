@@ -41,3 +41,14 @@ Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malon
 [![10.1093/bioinformatics/btt113](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btt113.svg)](https://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](http://www.ncbi.nlm.nih.gov/pubmed/23479348) _Open access_
 
 EDAM releases are citable with DOIs too, for cases when that is needed. [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. <!--For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/main/releases).-->
+
+### Research notice
+Please note that this repository is participating in a study into sustainability
+ of open source projects. Data will be gathered about this repository for
+ approximately the next 12 months, starting from [insert date here].
+
+Data collected will include number of contributors, number of PRs, time taken to
+ close/merge these PRs, and issues closed.
+
+For more information, please visit
+[our informational page](https://sustainable-open-science-and-software.github.io/) or download our [participant information sheet](https://sustainable-open-science-and-software.github.io/assets/PIS_sustainable_software.pdf).
