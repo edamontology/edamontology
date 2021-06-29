@@ -36653,17 +36653,15 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_3973">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2571"/>
         <created_in>1.25</created_in>
-        <documentation rdf:resource="https://en.wikipedia.org/wiki/Docker_(software)"/>
         <documentation rdf:resource="https://github.com/moby/moby/blob/master/image/spec/v1.2.md"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Docker_(software)"/>
         <example rdf:resource="https://dockerhub.com"/>
-        <file_extension>dockerfile</file_extension>
         <organisation rdf:resource="https://www.docker.com/"/>
         <oboInOwl:hasDefinition>A Docker image is a file, comprised of multiple layers, that is used to execute code in a Docker container. An image is essentially built from the instructions for a complete and executable version of an application, which relies on the host OS kernel.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:label>Docker image format</rdfs:label>
+        <rdfs:label>Docker image</rdfs:label>
     </owl:Class>
     
 
