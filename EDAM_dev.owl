@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4037</next_id>
+        <next_id>4039</next_id>
         <oboOther:date>25.06.2021 18:55 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -37909,6 +37909,82 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <information_standard rdf:resource="https://biocontainers-edu.readthedocs.io/en/latest/what_is_biocontainers.html#biocontainers-build-architecture"/>
         <ontology_used rdf:resource="https://spdx.dev/"/>
         <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4037 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4037">
+        <created_in>1.26</created_in>
+        <rdfs:label>GINML</rdfs:label>
+        <file_extension>ginml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/ginml+xml"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format used by the GINsim qualitative modeling tool to represent networks.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://ginsim.org"/>
+        <citation rdf:resource="https://doi.org/10.3389/fphys.2018.00646"/>
+        <citation rdf:resource="https://doi.org/10.1016/j.biosystems.2009.04.008"/>
+        <citation rdf:resource="https://doi.org/10.1016/j.biosystems.2005.10.003"/>
+        <example rdf:resource="http://ginsim.org/models_repository"/>
+        <information_standard rdf:resource="https://co.mbine.org/standards/miase"/>
+        <organisation rdf:resource="http://ginsim.org/contact"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4038 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4038">
+        <created_in>1.26</created_in>
+        <rdfs:label>ZGINML</rdfs:label>
+        <file_extension>zginml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/zginml+zip"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format used by the GINsim qualitative modeling tool to represent a simulation study.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3987"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://ginsim.org"/>
+        <citation rdf:resource="https://doi.org/10.3389/fphys.2018.00646"/>
+        <citation rdf:resource="https://doi.org/10.1016/j.biosystems.2009.04.008"/>
+        <citation rdf:resource="https://doi.org/10.1016/j.biosystems.2005.10.003"/>
+        <example rdf:resource="http://ginsim.org/models_repository"/>
+        <information_standard rdf:resource="https://co.mbine.org/standards/miase"/>
+        <organisation rdf:resource="http://ginsim.org/contact"/>
     </owl:Class>
 
 
