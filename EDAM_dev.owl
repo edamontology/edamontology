@@ -35919,14 +35919,16 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
     <owl:Class rdf:about="http://edamontology.org/format_3859">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3824"/>
         <created_in>1.21</created_in>
         <documentation rdf:resource="http://www.jcamp-dx.org/drafts/JCAMP6_2b%20Draft.pdf"/>
-        <oboInOwl:hasDefinition>A standardized file format for data exchange in mass spectrometry, initially developed for infrared spectrometry.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A standardized file format for data exchange in analytical chemistry for e.g. mass spectrometry, NMR or infrared spectrometry.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>JCAMP-DX is an ASCII based format and therefore not very compact even though it includes standards for file compression.</rdfs:comment>
         <rdfs:label>JCAMP-DX</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mass_spectrometry_data_format#cite_note-3"/>
+	<rdfs:seeAlso rdf:resource="https://de.wikipedia.org/wiki/JCAMP-DX#cite_note-5"/>
     </owl:Class>
     
 
