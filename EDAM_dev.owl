@@ -60507,8 +60507,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4011"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
-        <oboInOwl:hasDefinition>FAIR data is data that meets the FAIR Guiding Principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
+        <oboInOwl:hasDefinition>FAIR data is data that meets the principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Findable, accessible, interoperable, reusable data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Open data</oboInOwl:hasRelatedSynonym>
+        <related_term>FAIR data principles</related_term>
+        <related_term>FAIRification</related_term>
+        <rdfs:comment>A substantially overlapping term is 'open data', i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive personal data).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>FAIR data</rdfs:label>
