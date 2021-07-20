@@ -299,6 +299,17 @@
     
 
 
+    <!-- http://edamontology.org/related_term -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/related_term">
+        <rdfs:label>Related term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&oboInOwl;hasRelatedSynonym"/>
+        <oboInOwl:hasDefinition>&apos;Related term&apos; concept property (&apos;related_term&apos;; supposedly a synonym modifier in OBO format) states a related term - not necessarily closely semantically related - that users (also non-specialists) may use when searching.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://edamontology.org/repository -->
 
     <owl:AnnotationProperty rdf:about="http://edamontology.org/repository">
