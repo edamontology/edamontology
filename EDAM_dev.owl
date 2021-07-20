@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4019</next_id>
-        <oboOther:date>16.05.2021 11:52 UTC</oboOther:date>
+        <oboOther:date>20.07.2021 07:19 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -295,6 +295,17 @@
         <oboInOwl:hasDefinition>&apos;Regular expression&apos; concept property (&apos;regex&apos; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>Regular expression</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://edamontology.org/related_term -->
+
+    <owl:AnnotationProperty rdf:about="http://edamontology.org/related_term">
+        <rdfs:label>Related term</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <oboInOwl:hasDefinition>&apos;Related term&apos; concept property (&apos;related_term&apos;; supposedly a synonym modifier in OBO format) states a related term - not necessarily closely semantically related - that users (also non-specialists) may use when searching.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
     </owl:AnnotationProperty>
     
 
@@ -60481,10 +60492,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
-        <oboInOwl:hasDefinition>Data management includes the principles and practices of taking care of data (other than analysing it).</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
+        <oboInOwl:hasDefinition>Data management includes the practices and principles of taking care of data (other than analysing it). This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data management</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
+        <related_term>Data stewardship</related_term>
     </owl:Class>
 
 
@@ -60496,8 +60510,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4011"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
-        <oboInOwl:hasDefinition>FAIR data is data that meets the FAIR Guiding Principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
+        <oboInOwl:hasDefinition>FAIR data is data that meets the principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Findable, accessible, interoperable, reusable data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Open data</oboInOwl:hasRelatedSynonym>
+        <related_term>FAIR data principles</related_term>
+        <related_term>FAIRification</related_term>
+        <rdfs:comment>A substantially overlapping term is 'open data', i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive personal data).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>FAIR data</rdfs:label>
