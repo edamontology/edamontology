@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4019</next_id>
-        <oboOther:date>16.05.2021 11:52 UTC</oboOther:date>
+        <oboOther:date>20.07.2021 07:12 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60492,10 +60492,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
-        <oboInOwl:hasDefinition>Data management includes the principles and practices of taking care of data (other than analysing it).</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
+        <oboInOwl:hasDefinition>Data management includes the practices and principles of taking care of data (other than analysing it). This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Data management</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
+        <related_term>Data stewardship</related_term>
     </owl:Class>
 
 
