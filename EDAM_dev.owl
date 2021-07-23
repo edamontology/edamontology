@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4019</next_id>
-        <oboOther:date>20.07.2021 07:19 UTC</oboOther:date>
+        <oboOther:date>23.07.2021 09:50 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37402,12 +37402,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Search or query a data resource and retrieve entries and / or annotation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Database retrieval</oboInOwl:hasExactSynonym>
@@ -52332,7 +52326,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>The search and query of data sources (typically databases or ontologies) in order to retrieve entries or other information.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_3071"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3489"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3071"/>
         <rdfs:label>Information retrieval</rdfs:label>
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
@@ -53700,7 +53695,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Data submission, annotation and curation</rdfs:label>
+        <rdfs:label>Data submission, annotation, and curation</rdfs:label>
     </owl:Class>
     
 
@@ -56550,24 +56545,22 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3071 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3071">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <isdebtag>true</isdebtag>
-        <oboInOwl:hasBroadSynonym>Databases</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.3.1 Data management</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The development and use of architectures, policies, practices and procedures for management of data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Data management</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Databases and information systems</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Information systems</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasHumanReadableId>Biological_databases</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasDefinition>Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Biological databases</rdfs:label>
+        <rdfs:label>Data management</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
+        <related_term>Data stewardship</related_term>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D030541</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D000079803</rdfs:seeAlso>
     </owl:Class>
-    
+
 
 
     <!-- http://edamontology.org/topic_3072 -->
@@ -59057,20 +59050,20 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3489 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3489">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.8</created_in>
-        <oboInOwl:hasDefinition>The general handling of data stored in digital archives such as databanks, databases proper, web portals and other data resources.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Database administration</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>The general handling of data stored in digital archives such as databases, databanks, web portals, and other data resources.</oboInOwl:hasDefinition>
+        <related_term>Database administration</related_term>
         <oboInOwl:hasHumanReadableId>Database_management</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasBroadSynonym>Databases</oboInOwl:hasBroadSynonym>
+        <related_term>Information systems</related_term>
         <oboInOwl:hasNarrowSynonym>Content management</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Data maintenance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Document management</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Document, record and content management</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>File management</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Record management</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>This includes databases for the results of scientific experiments, the application of high-throughput technology, computational analysis and the scientific literature.  It covers the management and manipulation of digital documents, including database records, files and reports.</rdfs:comment>
+        <rdfs:comment>This includes databases for the results of scientific experiments, the application of high-throughput technology, computational analysis and the scientific literature.  It covers the management and manipulation of digital documents, including database records, files, and reports.</rdfs:comment>
         <rdfs:label>Database management</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Database"/>
     </owl:Class>
@@ -60489,16 +60482,13 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_4011 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4011">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
-        <oboInOwl:hasDefinition>Data management includes the practices and principles of taking care of data (other than analysing it). This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
+        <rdfs:label>Data rescue</rdfs:label>
+        <oboInOwl:hasDefinition>Data rescue denotes digitalisation, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_rescue"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Data management</rdfs:label>
-        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
-        <related_term>Data stewardship</related_term>
     </owl:Class>
 
 
@@ -60507,7 +60497,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
     <owl:Class rdf:about="http://edamontology.org/topic_4012">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4011"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
