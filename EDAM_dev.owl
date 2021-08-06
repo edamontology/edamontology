@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4039</next_id>
+        <next_id>4040</next_id>
         <oboOther:date>25.06.2021 18:55 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -37985,6 +37985,39 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <example rdf:resource="http://ginsim.org/models_repository"/>
         <information_standard rdf:resource="https://co.mbine.org/standards/miase"/>
         <organisation rdf:resource="http://ginsim.org/contact"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4039 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4039">
+        <created_in>1.26</created_in>
+        <rdfs:label>XPP</rdfs:label>
+        <file_extension>xpp</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-xpp"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format used by the XPP mathematical modeling tool to represent a set of equations.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3869"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://www.math.pitt.edu/~bard/xpp/xpp.html"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-94-007-3858-4_17"/>
+        <citation rdf:resource="https://doi.org/10.1137/1.9780898718195"/>
+        <example rdf:resource="http://www.math.pitt.edu/~bard/xpp/help/xppexample.html"/>
+        <organisation rdf:resource="https://sites.pitt.edu/~phase/"/>
     </owl:Class>
 
 
