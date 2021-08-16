@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4020</next_id>
-        <oboOther:date>16.08.2021 13:18 UTC</oboOther:date>
+        <oboOther:date>16.08.2021 13:44 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -53963,7 +53963,8 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_0610 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0610">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag>true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.15 Ecology</oboInOwl:hasDbXref>
