@@ -22,6 +22,6 @@ jobs:
  
       - name: Run scripts  
         run: |
-          export EDAM_PATH=/home/runner/work/edamontology/edamontology/EDAM_dev.owl
+          export EDAM_PATH=../edamontology/EDAM_dev.owl 
           nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
           nose2 --with-coverage --verbose ci_test.test_hermit
