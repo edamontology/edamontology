@@ -16,6 +16,7 @@ jobs:
         run: |
           git clone https://github.com/edamontology/edamverify.git
           cd edamverify
+          echo "nose2" >>  ci_test/requirements.txt
           pip install -r ci_test/requirements.txt
           wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
  
