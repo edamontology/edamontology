@@ -1,0 +1,28 @@
+name: CI
+
+on: [push, pull_request]
+
+  workflow_dispatch:
+
+jobs:
+  
+  build:
+    
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      
+      - uses: actions/checkout@v2
+      - name: Set up 
+        run: |
+          git clone https://github.com/edamontology/edamverify.git
+          cd edamverify
+          pip install -r ci_test/requirements.txt
+          wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
+ 
+      - name: Run scripts  
+        run: |
+          export EDAM_PATH=/home/runner/work/edamontology/edamontology/EDAM_dev.owl
+          nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
+          nose2 --with-coverage --verbose ci_test.test_hermit
