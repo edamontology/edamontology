@@ -14,15 +14,18 @@ jobs:
     steps:
       
       - uses: actions/checkout@v2
+     
       - name: Set up 
         run: |
           git clone https://github.com/edamontology/edamverify.git
           cd edamverify
+          echo "nose2" >>  ci_test/requirements.txt
           pip install -r ci_test/requirements.txt
           wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
  
       - name: Run scripts  
         run: |
-          export EDAM_PATH=/home/runner/work/edamontology/edamontology/EDAM_dev.owl
+          export EDAM_PATH=../EDAM_dev.owl
+          cd edamverify
           nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
           nose2 --with-coverage --verbose ci_test.test_hermit
