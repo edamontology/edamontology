@@ -40,5 +40,5 @@ jobs:
       - name: Run scripts  
         run: |
           export EDAM_PATH=../edamontology/EDAM_dev.owl 
-          nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
-          nose2 --with-coverage --verbose ci_test.test_hermit
+          nose2 --with-coverage --verbose test_edamxpathvalidator
+          nose2 --with-coverage --verbose test_hermit
