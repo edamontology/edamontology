@@ -42,4 +42,4 @@ jobs:
           export EDAM_PATH=../EDAM_dev.owl
           cd edamverify
           nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
-          nose2 --with-coverage --verbose ci-test.test_hermit
+          nose2 --with-coverage --verbose ci_test.test_hermit
