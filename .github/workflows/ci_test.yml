@@ -12,6 +12,24 @@ jobs:
     steps:
       
       - uses: actions/checkout@v2
+      - name: set up conda
+      - run : |
+	  if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
+	      wget https://repo.continuum.io/miniconda/Miniconda2latest-Linux-x86_64.sh -O miniconda.sh;
+	    else
+	      wget https://repo.continuum.io/miniconda/Miniconda3latest-Linux-x86_64.sh -O miniconda.sh;
+	    fi
+	  bash miniconda.sh -b -p $HOME/miniconda
+	  source "$HOME/miniconda/etc/profile.d/conda.sh"
+	  hash -r
+	  conda config --set always_yes yes --set changeps1 no
+	  conda update -q conda
+	  # Useful for debugging any issues with conda
+	  conda info -a
+	
+	  conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION rdflib requests parameterized jupyter nose2 -c conda-forge
+	  conda activate test-environment
+	
       - name: Set up 
         run: |
           git clone https://github.com/edamontology/edamverify.git
