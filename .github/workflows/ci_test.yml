@@ -18,7 +18,7 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       
       - name: set up conda
-      - run : |
+        run : |
           wget https://repo.continuum.io/miniconda/Miniconda3latest-Linux-x86_64.sh -O miniconda.sh
           bash miniconda.sh -b -p $HOME/miniconda
           source "$HOME/miniconda/etc/profile.d/conda.sh"
