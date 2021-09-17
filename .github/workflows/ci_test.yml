@@ -28,7 +28,7 @@ jobs:
           conda info -a
           conda create -q -n test-environment python="3.8" rdflib requests parameterized jupyter nose2 -c conda-forge
           conda activate test-environment
-	
+       
       - name: Set up 
         run: |
           git clone https://github.com/edamontology/edamverify.git
