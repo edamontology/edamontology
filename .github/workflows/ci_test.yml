@@ -2,8 +2,6 @@ name: CI
 
 on: [push, pull_request]
 
-  workflow_dispatch:
-
 jobs:
   
   build:
@@ -14,7 +12,7 @@ jobs:
     steps:
       
       - uses: actions/checkout@v2
-     
+
       - name: Set up 
         run: |
           git clone https://github.com/edamontology/edamverify.git
