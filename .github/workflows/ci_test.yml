@@ -13,32 +13,33 @@ jobs:
       
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-        with:
-          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
-      
-      - name: set up conda
-        run : |
-          wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
-          bash miniconda.sh -b -p $HOME/miniconda
-          source "$HOME/miniconda/etc/profile.d/conda.sh"
-          hash -r
-          conda config --set always_yes yes --set changeps1 no
-          conda update -q conda
-          conda info -a
-          conda create -q -n test-environment python="3.8" rdflib requests parameterized jupyter nose2 -c conda-forge
-          conda activate test-environment
-       
+#        with:
+#          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+#          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+#      
+#      - name: set up conda
+#        run : |
+#          wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+#          bash miniconda.sh -b -p $HOME/miniconda
+#          source "$HOME/miniconda/etc/profile.d/conda.sh"
+#          hash -r
+#          conda config --set always_yes yes --set changeps1 no
+#          conda update -q conda
+#          conda info -a
+#          conda create -q -n test-environment python="3.8" rdflib requests parameterized jupyter nose2 -c conda-forge
+#          conda activate test-environment
+#       
       - name: Set up 
         run: |
           git clone https://github.com/edamontology/edamverify.git
           cd edamverify
-          # echo "nose2" >>  ci_test/requirements.txt
+          echo "nose2" >>  ci_test/requirements.txt
           pip install -r ci_test/requirements.txt
           wget http://www.hermit-reasoner.com/download/current/HermiT.zip && unzip -o -d . HermiT.zip HermiT.jar
  
       - name: Run scripts  
         run: |
           export EDAM_PATH=../edamontology/EDAM_dev.owl
+          cd edamverify
           nose2 --with-coverage --verbose ci_test.test_edamxpathvalidator
           nose2 --with-coverage --verbose ci-test.test_hermit
