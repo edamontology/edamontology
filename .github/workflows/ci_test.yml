@@ -12,22 +12,20 @@ jobs:
     steps:
       
       - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - name: set up conda
       - run : |
-	  if [[ "$TRAVIS_PYTHON_VERSION" == "2.7" ]]; then
-	      wget https://repo.continuum.io/miniconda/Miniconda2latest-Linux-x86_64.sh -O miniconda.sh;
-	    else
-	      wget https://repo.continuum.io/miniconda/Miniconda3latest-Linux-x86_64.sh -O miniconda.sh;
-	    fi
+	  wget https://repo.continuum.io/miniconda/Miniconda3latest-Linux-x86_64.sh -O miniconda.sh;
 	  bash miniconda.sh -b -p $HOME/miniconda
 	  source "$HOME/miniconda/etc/profile.d/conda.sh"
 	  hash -r
 	  conda config --set always_yes yes --set changeps1 no
 	  conda update -q conda
-	  # Useful for debugging any issues with conda
 	  conda info -a
-	
-	  conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION rdflib requests parameterized jupyter nose2 -c conda-forge
+	  conda create -q -n test-environment python="3.8" rdflib requests parameterized jupyter nose2 -c conda-forge
 	  conda activate test-environment
 	
       - name: Set up 
