@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4032</next_id>
+        <next_id>4033</next_id>
         <oboOther:date>21.09.2021 14:49 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -60933,11 +60933,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <created_in>1.26</created_in>
         <rdfs:label>APNN</rdfs:label>
         <file_extension>apnn</file_extension>  
-        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-apnn"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-apnn"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>The Abstract Petri net notation (APNN) is a format for petri nets.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60967,7 +60967,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>The Integrated Net Analyzer (INA) is a format for petri nets.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -60983,6 +60983,35 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         </rdfs:subClassOf>
         <documentation rdf:resource="https://www2.informatik.hu-berlin.de/~starke/ina.html"/>
         <organisation rdf:resource="https://www2.informatik.hu-berlin.de/~starke/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4032 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4032">
+        <created_in>1.26</created_in>
+        <rdfs:label>BLIF</rdfs:label>
+        <file_extension>blif</file_extension>  
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-blif"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>The Berkeley Logic Interchange Format (APNN) is a format for Boolean networks.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.115.9222"/>
     </owl:Class>
 
 
