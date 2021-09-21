@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4020</next_id>
-        <oboOther:date>06.09.2021 08:04 UTC</oboOther:date>
+        <next_id>4032</next_id>
+        <oboOther:date>21.09.2021 14:49 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60596,6 +60596,395 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_life_sciences"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4020 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4020">
+        <created_in>1.26</created_in>
+        <rdfs:label>BoolNet</rdfs:label>
+        <file_extension>bnet</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-boolnet"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean regulatory networks used by BoolNet, pyBoolNet, bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://cran.r-project.org/web/packages/BoolNet/index.html"/>
+        <documentation rdf:resource="https://sysbio.uni-ulm.de/?Software:BoolNet"/>
+        <citation rdf:resource="https://doi.org/10.1093/bioinformatics/btq124"/>
+        <example rdf:resource="https://cran.r-project.org/web/packages/BoolNet/BoolNet.pdf"/>
+        <example rdf:resource="https://github.com/hklarner/pyboolnet/tree/master/tests/files_input"/>        
+        <organisation rdf:resource="https://sysbio.uni-ulm.de/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4021 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4021">
+        <created_in>1.26</created_in>
+        <rdfs:label>boolSim</rdfs:label>
+        <file_extension>net</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-boolsim"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean regulatory networks used by boolSim, GenYsis, SQUAD, bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://www.vital-it.ch/research/software/boolSim"/>
+        <citation rdf:resource="https://doi.org/10.1093/bioinformatics/btn336"/>
+        <example rdf:resource="https://www.vital-it.ch/research/software/boolSim"/>
+        <organisation rdf:resource="https://www.vital-it.ch/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4022 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4022">
+        <created_in>1.26</created_in>
+        <rdfs:label>BooleanNet</rdfs:label>
+        <file_extension>txt</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-booleannet"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean regulatory networks used by BooleanNet, bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://github.com/ialbert/booleannet"/>
+        <citation rdf:resource="https://doi.org/10.1186/1751-0473-3-16"/>
+        <example rdf:resource="https://github.com/ialbert/booleannet/tree/master/examples"/>
+        <organisation rdf:resource="https://www.ialbert.me/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4023 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4023">
+        <created_in>1.26</created_in>
+        <rdfs:label>CNET</rdfs:label>
+        <file_extension>cnet</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-cnet"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean regulatory networks used by Boolean Networks with Synchronous update (BNS), bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://people.kth.se/~dubrova/bns.html"/>
+        <citation rdf:resource="https://doi.org/10.1109/TCBB.2010.20"/>
+        <example rdf:resource="https://people.kth.se/~dubrova/bns.html"/>
+        <organisation rdf:resource="https://people.kth.se/~dubrova/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4024 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4024">
+        <created_in>1.26</created_in>
+        <rdfs:label>GNA</rdfs:label>
+        <file_extension>gna</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-gna"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean regulatory networks used by Genetic Network Analyzer (GNA), bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://ibis.inrialpes.fr/people/dejong/GNA/user/ch03.html"/>
+        <citation rdf:resource="https://doi.org/10.1093/bioinformatics/btf851"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-1-61779-361-5_22"/>
+        <example rdf:resource="http://colomoto.org/biolqm/doc/format-gna.html"/>
+        <organisation rdf:resource="https://team.inria.fr/ibis/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4025 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4025">
+        <created_in>1.26</created_in>
+        <rdfs:label>MaBoSS</rdfs:label>
+        <file_extension>bnd</file_extension>
+        <file_extension>cfg</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-bnd"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-cfg"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for continuous/discrete time Markov processes applied on Boolean networks used by MaBoSS, bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3241"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://maboss.curie.fr/"/>
+        <citation rdf:resource="https://doi.org/10.1186/1752-0509-6-116"/>
+        <citation rdf:resource="https://doi.org/10.1093/bioinformatics/btx123"/>
+        <example rdf:resource="https://maboss.curie.fr/"/>
+        <organisation rdf:resource="https://maboss.curie.fr/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4026 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4026">
+        <created_in>1.26</created_in>
+        <rdfs:label>Pint</rdfs:label>
+        <file_extension>an</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-an"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean networks used by Pint, bioLQM, and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://loicpauleve.name/pint/"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-3-319-67471-1_20"/>
+        <example rdf:resource="https://github.com/pauleve/pint/tree/master/tests/models"/>
+        <organisation rdf:resource="https://loicpauleve.name/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4027 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4027">
+        <created_in>1.26</created_in>
+        <rdfs:label>TruthTable</rdfs:label>
+        <file_extension>txt</file_extension>  
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-truthtable"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean networks used by bioLQM and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="http://colomoto.org/formats/truthtable.html"/>
+        <example rdf:resource="http://colomoto.org/formats/truthtable.html"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4028 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4028">
+        <created_in>1.26</created_in>
+        <rdfs:label>NuSMV</rdfs:label>
+        <file_extension>smv</file_extension>  
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-smv"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for Boolean networks used by NuSMV and other logical modeling tools.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://nusmv.fbk.eu/NuSMV/userman/index-v2.html"/>
+        <citation rdf:resource="https://doi.org/10.1007/3-540-48683-6_44"/>
+        <citation rdf:resource="https://doi.org/10.1007/3-540-45657-0_29"/>
+        <citation rdf:resource="https://doi.org/10.1007/s100090050046"/>
+        <example rdf:resource="https://nusmv.fbk.eu/examples/examples.html"/>
+        <organisation rdf:resource="https://nusmv.fbk.eu/NuSMV/project_members.html"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4029 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4029">
+        <created_in>1.26</created_in>
+        <rdfs:label>PNML</rdfs:label>
+        <file_extension>pnml</file_extension>  
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/pnml+xml"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>The Petri Net Markup Language (PNML) is a format for petri nets.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://www.pnml.org/"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-3-642-35179-2_3"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-3-642-13675-7_20"/>
+        <citation rdf:resource="https://doi.org/10.1007/3-540-44919-1_31"/>
+        <citation rdf:resource="https://doi.org/10.1007/978-3-540-40022-6_7"/>
+        <organisation rdf:resource="https://www.pnml.org/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4030 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4030">
+        <created_in>1.26</created_in>
+        <rdfs:label>APNN</rdfs:label>
+        <file_extension>apnn</file_extension>  
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-apnn"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>The Abstract Petri net notation (APNN) is a format for petri nets.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://ls4-www.cs.tu-dortmund.de/APNN-TOOLBOX/"/>
+        <citation rdf:resource="https://doi.org/10.1007/3-540-48683-6_41"/>
+        <example rdf:resource="https://ls4-www.cs.tu-dortmund.de/APNN-TOOLBOX/"/>
+        <organisation rdf:resource="https://ls4-www.cs.tu-dortmund.de/cms/de/ls4/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4031 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4031">
+        <created_in>1.26</created_in>
+        <rdfs:label>INA</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>The Integrated Net Analyzer (INA) is a format for petri nets.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://www2.informatik.hu-berlin.de/~starke/ina.html"/>
+        <organisation rdf:resource="https://www2.informatik.hu-berlin.de/~starke/"/>
+    </owl:Class>
+
 
 
 
