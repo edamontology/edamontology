@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4020</next_id>
-        <oboOther:date>06.09.2021 08:04 UTC</oboOther:date>
+        <next_id>4021</next_id>
+        <oboOther:date>01.10.2021 09:29 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -58530,7 +58530,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:label>Anaesthesiology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Anesthesiology"/>
     </owl:Class>
-    
+
 
 
     <!-- http://edamontology.org/topic_3403 -->
@@ -60595,6 +60595,26 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasDefinition>Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_life_sciences"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4020 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4020">
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>The carbon cycle is the biogeochemical pathway of carbon moving through the different parts of the Earth (such as ocean, atmosphere, soil), or eventually another planet.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>Biogeochemical cycle</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:label>Carbon cycle</rdfs:label>
+	<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Carbon_cycle"/>
+	<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biogeochemical_cycle"/>
+	<rdfs:comment>Note that the carbon-nitrogen-oxygen (CNO) cycle (https://en.wikipedia.org/wiki/CNO_cycle) is a completely different, thermonuclear reaction in stars.</rdfs:comment>
     </owl:Class>
 
 
