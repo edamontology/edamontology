@@ -60445,19 +60445,16 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <!-- http://edamontology.org/topic_3974 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3974">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <created_in>1.25</created_in>
-        <documentation rdf:resource="https://en.wikipedia.org/wiki/Epistasis"/>
-        <oboInOwl:hasDefinition>The study of the epigenetic modifications of a whole cell, tissue, organism etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Epistatic genetic interaction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Epistatic interactions</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>The study of the phenomena whereby the effects of one locus mask the allelic effects of another, such as how dominant alleles mask the effects of the recessive alleles at the same locus.</rdfs:comment>
+        <oboInOwl:hasDefinition>Epistasis is the phenomenon in which the expression of one gene interferes with (e.g. masks) the expression of another gene.</oboInOwl:hasDefinition>
         <rdfs:label>Epistasis</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Epistasis"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D057890</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D004843</rdfs:seeAlso>
     </owl:Class>
 
 
