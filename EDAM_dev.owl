@@ -60457,19 +60457,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
 
 
-    <!-- http://edamontology.org/topic_3391 -->
+    <!-- http://edamontology.org/topic_xxxx -->
 
-     <owl:Class rdf:about="http://edamontology.org/topic_3391">
+    <owl:Class rdf:about="http://edamontology.org/topic_xxx">
         <created_in>1.26</created_in>
         <rdfs:label>Multiomics</rdfs:label>
         <oboInOwl:hasExactSynonym>Panomics</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasRelatedSynonym>integrative omics</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasNarrowSynonym>multi-omics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym>Pan-omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Integrative omics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Multi-omics</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <oboInOwl:hasDefinition>A biological analysis approach which intergrate multiple omics types.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Multiomics concerns integration of data from multiple omics (e.g. transcriptomics, proteomics, epigenomics).</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
+        <rdfs:seeAlso rdf:resource="http://edamontology.org/topic_3366"/>
     </owl:Class>
 
 
