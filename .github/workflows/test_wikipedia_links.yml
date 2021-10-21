@@ -19,6 +19,14 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
+    
+    - name: checkout edamontology/edamverify
+      uses: actions/checkout@v2
+      with:
+        # Repository name with owner. For example, actions/checkout
+        # Default: ${{ github.repository }}
+        repository: 'edamontology/edamverify'
+        path: edamverify
 
     - name: Install dependencies
       run: |
@@ -29,5 +37,5 @@ jobs:
     #----------------------------------------------
     - name: Run tests
       run: |
-        cd ci_test
+        cd edamverify/ci_test
         python test_wikipedia_links.py
