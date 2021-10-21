@@ -37,5 +37,8 @@ jobs:
     #----------------------------------------------
     - name: Run tests
       run: |
+        ls 
+        ls edamverify
+        ls edamverify/ci_test
         cd edamverify/ci_test
         python test_wikipedia_links.py
