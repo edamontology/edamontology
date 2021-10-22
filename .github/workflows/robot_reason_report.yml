@@ -18,14 +18,13 @@ jobs:
     - name: Set up 
       run: |
         git clone https://github.com/edamontology/edamverify.git
-        PATH=/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
-        export PATH
-
 
     - name: run reason
       run: |
+        export PATH=/home/lamothe/work/robot:$PATH
         robot reason --reasoner ELK   --input EDAM_dev.owl  
 
     - name: run report 
       run: |
+        export PATH=/home/lamothe/work/robot:$PATH
         robot report --input EDAM_dev.owl --output edamverify/robot/report_profile.tsv --profile edamverify/robot/report_queries.txt
