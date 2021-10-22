@@ -1,0 +1,29 @@
+name: ROBOT
+
+on:
+  push:
+    branches: [ validation ]
+  pull_request:
+    branches: [ validation ]
+jobs:
+  
+  build:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      
+     - uses: actions/checkout@v2
+
+     - name: Set up 
+        run: |
+          git clone https://github.com/edamontology/edamverify.git
+
+          wget https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar -P /usr/local/bin
+          curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > /usr/local/bin/robot
+
+     - name: run reason
+          robot reason --reasoner ELK   --input EDAM_dev.owl  
+
+     - name: run report 
+          robot report --input EDAM_dev.owl --output edamverify/robot/report_profile.tsv --profile edamverify/robot/report_queries.txt
