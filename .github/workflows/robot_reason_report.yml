@@ -16,7 +16,7 @@ jobs:
      - uses: actions/checkout@v2
 
      - name: Set up 
-        run: |
+       run: |
           git clone https://github.com/edamontology/edamverify.git
 
           wget https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar -P /usr/local/bin
