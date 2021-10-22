@@ -18,9 +18,10 @@ jobs:
     - name: Set up 
       run: |
         git clone https://github.com/edamontology/edamverify.git
+        ls
+        PATH=./edamverify/robot:$PATH
+        export PATH
 
-        wget https://github.com/ontodev/robot/releases/download/v1.8.1/robot.jar -P /usr/local/bin
-        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > /usr/local/bin/robot
 
     - name: run reason
       run: |
