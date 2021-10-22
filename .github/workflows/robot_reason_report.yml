@@ -21,10 +21,10 @@ jobs:
 
     - name: run reason
       run: |
-        export PATH=/home/lamothe/work/robot:$PATH
+        export PATH=/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot reason --reasoner ELK   --input EDAM_dev.owl  
 
     - name: run report 
       run: |
-        export PATH=/home/lamothe/work/robot:$PATH
+        export PATH=:/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot report --input EDAM_dev.owl --output edamverify/robot/report_profile.tsv --profile edamverify/robot/report_queries.txt
