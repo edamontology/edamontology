@@ -18,8 +18,7 @@ jobs:
     - name: Set up 
       run: |
         git clone https://github.com/edamontology/edamverify.git
-        pwd
-        PATH=./edamverify/robot:$PATH
+        PATH=/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         export PATH
 
 
