@@ -18,7 +18,6 @@ jobs:
     - name: Set up 
       run: |
         git clone https://github.com/edamontology/edamverify.git
-        cd edamverify/robot/
 
     - name: run reason
       run: |
@@ -27,5 +26,6 @@ jobs:
 
     - name: run report 
       run: |
+        cd edamverify/robot/
         export PATH=:/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot report --input EDAM_dev.owl --output edamverify/robot/report_profile.tsv --profile edamverify/robot/report_queries.txt
