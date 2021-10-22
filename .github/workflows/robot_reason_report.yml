@@ -23,7 +23,9 @@ jobs:
         curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > /usr/local/bin/robot
 
     - name: run reason
+      run: |
         robot reason --reasoner ELK   --input EDAM_dev.owl  
 
     - name: run report 
+      run: |
         robot report --input EDAM_dev.owl --output edamverify/robot/report_profile.tsv --profile edamverify/robot/report_queries.txt
