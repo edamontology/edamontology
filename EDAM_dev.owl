@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4051</next_id>
+        <next_id>4052</next_id>
         <oboOther:date>03.11.2021 14:59 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -32138,7 +32138,7 @@
         <created_in>1.2</created_in>
         <documentation rdf:resource="http://www.copasi.org/tiki-index.php?page_ref_id=128"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.copasi.org/tiki-index.php?page_ref_id=128"/>
-        <oboInOwl:hasDefinition>CopasiML, the native format of COPASI.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The native format for mathematical models used by the COPASI modeling software.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>CopasiML</rdfs:label>
@@ -37782,7 +37782,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <media_type rdf:resource="text/turtle"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <oboInOwl:hasDefinition>Guidelines for using triples to describe metadata about mathematical models and simulations for serializing triples to several formats.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Format for using triples to describe metadata about mathematical models and simulations for serializing triples to several formats.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3255"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3256"/>
@@ -38062,7 +38062,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
     <owl:Class rdf:about="http://edamontology.org/format_4044">
         <created_in>1.26</created_in>
-        <rdfs:label>RBA model (TSV and XML)</rdfs:label>
+        <rdfs:label>Resource Balance Analysis XML format</rdfs:label>
         <file_extension>tsv</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/rba+xml"/>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/rba+tsv"/>
@@ -38230,6 +38230,24 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <documentation rdf:resource="https://www.mathworks.com/products/simbiology.html"/>
         <organisation rdf:resource="https://www.mathworks.com/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4051 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4051">
+        <created_in>1.26</created_in>
+        <rdfs:label>OMEX Manifest</rdfs:label>
+        <file_extension>xml</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/omex-manifest+xml"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>File format for describing the contents of COMBINE/OMEX archives.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <documentation rdf:resource="https://combinearchive.org/about/"/>
+        <example rdf:resource="https://combinearchive.org/resources/"/>
+        <organisation rdf:resource="http://co.mbine.org/"/>
     </owl:Class>
 
 
