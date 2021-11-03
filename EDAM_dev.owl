@@ -35661,7 +35661,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.20</created_in>
         <documentation rdf:resource="https://msdn.microsoft.com/en-us/library/dd926741(v=office.12).aspx"/>
-        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
         <oboInOwl:hasDefinition>Microsoft Powerpoint format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -36536,7 +36536,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://bcforms.org"/>
         <documentation rdf:resource="https://raw.githubusercontent.com/KarrLab/bcforms/master/bcforms/grammar.lark"/>
         <example rdf:resource="https://bcforms.org"/>
-        <media_type>text/plain</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/plain"/>
         <ontology_used rdf:resource="https://www.bpforms.org/crosslink"/>
         <organisation rdf:resource="https://www.karrlab.org"/>
         <oboInOwl:hasDefinition>BcForms is a format for abstractly describing the molecular structure (atoms and bonds) of macromolecular complexes as a collection of subunits and crosslinks. Each subunit can be described with BpForms (http://edamontology.org/format_3909) or SMILES (http://edamontology.org/data_2301). BcForms uses an ontology of crosslinks to abstract the chemical details of crosslinks from the descriptions of complexes (see https://bpforms.org/crosslink.html).</oboInOwl:hasDefinition>
@@ -36574,7 +36574,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https:doi.org/10.1145/2642918.2647360"/>
         <example rdf:resource="https://vega.github.io/vega/examples/"/>
         <file_extension>json</file_extension>
-        <media_type>application/json</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
         <organisation rdf:resource="http://idl.cs.washington.edu/"/>
         <oboInOwl:hasDefinition>Vega is a visualization grammar, a declarative language for creating, saving, and sharing interactive visualization designs. With Vega, you can describe the visual appearance and interactive behavior of a visualization in a JSON format, and generate web-based views using Canvas or SVG.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36595,7 +36595,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://vega.github.io/vega-lite/docs/#spec"/>
         <example rdf:resource="https://vega.github.io/vega-lite/examples/"/>
         <file_extension>json</file_extension>
-        <media_type>application/json</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/json"/>
         <organisation rdf:resource="http://idl.cs.washington.edu/"/>
         <oboInOwl:hasDefinition>Vega-Lite is a high-level grammar of interactive graphics. It provides a concise JSON syntax for rapidly generating visualizations to support analysis. Vega-Lite specifications can be compiled to Vega specifications.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36621,7 +36621,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://neuroml.org/"/>
         <example rdf:resource="https://neuroml-db.org/"/>
         <example rdf:resource="https://neuroml.org/neuromlv2"/>
-        <media_type>application/xml</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
         <organisation rdf:resource="https://neuroml.org/editors"/>
         <oboInOwl:hasDefinition>A model description language for computational neuroscience.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -36648,8 +36648,8 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://doi.org/10.1007/978-1-61779-833-7_9"/>
         <example rdf:resource="https://github.com/RuleWorld/BNGTutorial/blob/master/README.md"/>
         <file_extension>bngl</file_extension>
-        <media_type>application/xml</media_type>
-        <media_type>plain/text</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/xml"/>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/plain/text"/>
         <organisation rdf:resource="https://www.csb.pitt.edu/Faculty/Faeder/"/>
         <oboInOwl:hasDefinition>BioNetGen is a format for the specification and simulation of rule-based models of biochemical systems, including signal transduction, metabolic, and genetic regulatory networks.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>BioNetGen Language</oboInOwl:hasExactSynonym>
@@ -36727,7 +36727,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://www.objtables.org/docs"/>
         <example rdf:resource="https://www.objtables.org/docs#examples"/>
         <file_extension>xlsx</file_extension>
-        <media_type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</media_type>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
         <organisation rdf:resource="https://www.karrlab.org"/>
         <oboInOwl:hasDefinition>ObjTables is a toolkit for creating re-usable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
