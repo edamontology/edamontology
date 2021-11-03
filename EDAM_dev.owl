@@ -13,7 +13,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4052</next_id>
+        <next_id>4053</next_id>
         <oboOther:date>03.11.2021 14:59 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -38248,6 +38248,36 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <documentation rdf:resource="https://combinearchive.org/about/"/>
         <example rdf:resource="https://combinearchive.org/resources/"/>
         <organisation rdf:resource="http://co.mbine.org/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4052 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4052">
+        <created_in>1.26</created_in>
+        <rdfs:label>Kappa</rdfs:label>
+        <file_extension>ka</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/x-kappa"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>File format for the Kappa language for rule-based computational models.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0950"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2600"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://kappalanguage.org/documentation"/>
+        <organisation rdf:resource="https://kappalanguage.org/"/>
     </owl:Class>
 
 
