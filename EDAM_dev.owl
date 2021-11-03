@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4046</next_id>
-        <oboOther:date>28.08.2021 17:26 UTC</oboOther:date>
+        <next_id>4051</next_id>
+        <oboOther:date>03.11.2021 14:59 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -30724,6 +30724,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>Only specific native binary formats are listed under &apos;Binary format&apos; in EDAM. Generic binary formats - such as any data being zipped, or any XML data being serialised into the Efficient XML Interchange (EXI) format - are not modelled in EDAM. Refer to http://wsio.org/compression_004.</rdfs:comment>
         <rdfs:label>Binary format</rdfs:label>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/octet-stream"/>
     </owl:Class>
     
 
@@ -38130,6 +38131,105 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <citation rdf:resource="https://doi.org/10.1186/s12918-018-0607-5"/>
         <example rdf:resource="https://escher.github.io/#/"/>
         <organisation rdf:resource="https://systemsbiology.ucsd.edu/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4046 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4046">
+        <created_in>1.26</created_in>
+        <rdfs:label>WebP</rdfs:label>
+        <file_extension>webp</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/image/webp"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Format for lossy and lossless images.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2968"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://developers.google.com/speed/webp"/>
+        <example rdf:resource="https://developers.google.com/speed/webp/gallery"/>
+        <organisation rdf:resource="https://google.com/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/WebP"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4047 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4047">
+        <created_in>1.26</created_in>
+        <rdfs:label>Jupyter Notebook</rdfs:label>
+        <file_extension>ipynb</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-ipynb+json"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Browser-based REPL containing an ordered list of input/output cells which can contain code, text (using Markdown), mathematics, plots and rich media.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
+        <documentation rdf:resource="https://nbformat.readthedocs.io/"/>
+        <example rdf:resource="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/examples_index.html"/>
+        <organisation rdf:resource="https://jupyter.org/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Project_Jupyter"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4048">
+        <created_in>1.26</created_in>
+        <rdfs:label>RStudio project</rdfs:label>
+        <file_extension>Rproj</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-r-project"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Configuration for working with a collection of R source documents.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <example rdf:resource="https://github.com/r-lib/devtools/blob/main/devtools.Rproj"/>
+        <organisation rdf:resource="https://www.rstudio.com/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RStudio"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4049 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4049">
+        <created_in>1.26</created_in>
+        <rdfs:label>Scilab script</rdfs:label>
+        <file_extension>sci</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-scilab"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>File format used for scripts written in the Scilab programming language for execution within the Scilab software environment, typically for numerical computation.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <documentation rdf:resource="https://www.scilab.org/tutorials/getting-started"/>
+        <organisation rdf:resource="https://www.scilab.org/"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Scilab"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4050 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4050">
+        <created_in>1.26</created_in>
+        <rdfs:label>SimBiology project</rdfs:label>
+        <file_extension>sbproj</file_extension>
+        <media_type rdf:resource="http://www.iana.org/assignments/media-types/application/x-sbproj"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>File format used for computational models developed with SimBiology.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <documentation rdf:resource="https://www.mathworks.com/products/simbiology.html"/>
+        <organisation rdf:resource="https://www.mathworks.com/"/>
     </owl:Class>
 
 
