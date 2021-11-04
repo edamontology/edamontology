@@ -25108,13 +25108,9 @@
 
 
 
-    <!-- http://edamontology.org/data_4024 -->
+    <!-- http://edamontology.org/data_4022 -->
 
-    <owl:Class rdf:about="http://edamontology.org/data_4024">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
+    <owl:Class rdf:about="http://edamontology.org/data_4022">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1881"/>
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://orcid.org/"/>
@@ -25124,6 +25120,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:seeAlso rdf:ressource="https://en.wikipedia.org/wiki/ORCID"/>
         <rdfs:label>ORCID Identifier</rdfs:label>
     </owl:Class>    
 
@@ -37343,9 +37340,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
-    <!-- http://edamontology.org/format_4019 -->
+    <!-- http://edamontology.org/format_4023 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_4019">
+    <owl:Class rdf:about="http://edamontology.org/format_4023">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
         <created_in>1.26</created_in>
@@ -37368,9 +37365,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
-    <!-- http://edamontology.org/format_4020 -->
+    <!-- http://edamontology.org/format_4024 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_4020">
+    <owl:Class rdf:about="http://edamontology.org/format_4024">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -37389,7 +37386,6 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <organisation rdf:resource="https://www.iucr.org/"/>
         <file_extension>cif</file_extension>
         <oboInOwl:hasDefinition>Crystallographic Information File (CIF) is a data exchange standard file format for Crystallographic Information and related Structural Science data.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>ChemML</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>cif</rdfs:label>
@@ -37397,9 +37393,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
-    <!-- http://edamontology.org/format_4022 -->
+    <!-- http://edamontology.org/format_4025 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_4022">
+    <owl:Class rdf:about="http://edamontology.org/format_4025">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
         <created_in>1.26</created_in>
         <rdfs:seeAlso rdf:resource="https://api.biosimulators.org/openapi.json"/>
@@ -37423,9 +37419,9 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
 
 
 
-    <!-- http://edamontology.org/format_4023 -->
+    <!-- http://edamontology.org/format_4026 -->
 
-    <owl:Class rdf:about="http://edamontology.org/format_4023">
+    <owl:Class rdf:about="http://edamontology.org/format_4026">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.26</created_in>
         <example rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
@@ -60700,10 +60696,11 @@ ows re-sequencing of complete genomes of any given organism with high resolution
 
 
 
-    <!-- http://edamontology.org/topic_4021 -->
+    <!-- http://edamontology.org/topic_4027 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_4021">
+    <owl:Class rdf:about="http://edamontology.org/topic_4027">
         <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
         <rdfs:label>Ribosome Profiling</rdfs:label>
         <oboInOwl:hasExactSynonym>RIBO-seq</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>ribo-seq</oboInOwl:hasExactSynonym>
@@ -60713,8 +60710,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasNarrowSynonym>translation footprinting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <oboInOwl:hasDefinition>With ribosome profiling, ribosome-protected mRNA fragments are analyzed with RNA-seq techniques leading to a genome-wide measurement of the translation landscape. This technique has been getting more and more attention over the last few years.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
+        <oboInOwl:hasDefinition>With ribosome profiling, ribosome-protected mRNA fragments are analyzed with RNA-seq techniques leading to a genome-wide measurement of the translation landscape.</oboInOwl:hasDefinition>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
