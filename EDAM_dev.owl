@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4022</next_id>
-        <oboOther:date>07.10.2021 13:31 UTC</oboOther:date>
+        <next_id>4028</next_id>
+        <oboOther:date>04.11.2021 10:33 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -25116,7 +25116,25 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Pathway overrepresentation data</rdfs:label>
     </owl:Class>
-    
+
+
+
+    <!-- http://edamontology.org/data_4022 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4022">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1881"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://orcid.org/"/>
+        <documentation rdf:resource="https://registry.identifiers.org/registry/orcid"/>
+        <regex>^\d{4}-\d{4}-\d{4}-\d{3}(\d|X)$</regex>
+        <oboInOwl:hasDefinition>Identifier of a researcher registered with the ORCID database. Used to identify author IDs.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <rdfs:seeAlso rdf:ressource="https://en.wikipedia.org/wiki/ORCID"/>
+        <rdfs:label>ORCID Identifier</rdfs:label>
+    </owl:Class>    
+
 
 
     <!-- http://edamontology.org/format_1196 -->
@@ -31764,7 +31782,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2921"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDbXref rdf:resource="http://samtools.sourceforge.net/mpileup.shtml"/>
-        <oboInOwl:hasDefinition>BCF, the binary version of Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://samtools.github.io/hts-specs/VCFv4.3.pdf"/>
+        <file_extension>bcf</file_extension>
+        <file_extension>bcf.gz</file_extension>
+        <oboInOwl:hasDefinition>BCF is the binary version of Variant Call Format (VCF) for sequence variation (indels, polymorphisms, structural variation).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BCF</rdfs:label>
@@ -37324,6 +37345,101 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>gVCF</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4023 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4023">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_Markup_Language"/>
+        <rdfs:seeAlso rdf:resource="http://www-pmr.ch.cam.ac.uk/wiki/Chemical_Markup_Language"/>
+        <rdfs:seeAlso rdf:resource="http://fileformats.archiveteam.org/wiki/CML"/>
+        <example rdf:resource="https://www.ch.ic.ac.uk/omf/cml/doc/examples/"/>
+        <citation rdf:resource="https://doi.org/10.1039/CS9972600001"/>
+        <citation rdf:resource="https://doi.org/10.1021/ci990052b"/>
+        <citation rdf:resource="https://doi.org/10.1186/1758-2946-3-44"/>
+        <documentation rdf:resource="http://cml.sourceforge.net/"/>
+        <organisation rdf:resource="http://www-pmr.ch.cam.ac.uk/wiki/Main_Page"/>
+        <file_extension>cml</file_extension>
+        <oboInOwl:hasDefinition>Chemical Markup Language (CML) is an XML-based format for encoding detailed information about a wide range of chemical concepts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ChemML</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>cml</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4024 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4024">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://www.iucr.org/resources/cif/spec/version1.1"/>
+        <rdfs:seeAlso rdf:resource="https://www.iucr.org/resources/cif"/>
+        <rdfs:seeAlso rdf:resource="http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C133997"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Crystallographic_Information_File"/>
+        <example rdf:resource="https://iucrdata.iucr.org/x/services/examples.html"/>
+        <citation rdf:resource="https://doi.org/10.1107/S010876739101067X"/>
+        <documentation rdf:resource="https://www.iucr.org/resources/cif/documentation"/>
+        <organisation rdf:resource="https://www.iucr.org/"/>
+        <file_extension>cif</file_extension>
+        <oboInOwl:hasDefinition>Crystallographic Information File (CIF) is a data exchange standard file format for Crystallographic Information and related Structural Science data.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>cif</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4025 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4025">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <created_in>1.26</created_in>
+        <rdfs:seeAlso rdf:resource="https://api.biosimulators.org/openapi.json"/>
+        <example rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+        <documentation rdf:resource="https://biosimulators.org/conventions/simulator-specs"/>
+        <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
+        <ontology_used rdf:resource="http://edamontology.org/"/>
+        <ontology_used rdf:resource="http://www.ebi.ac.uk/sbo/"/>
+        <ontology_used rdf:resource="http://co.mbine.org/standards/kisao"/>
+        <ontology_used rdf:resource="https://spdx.dev/"/>
+        <ontology_used rdf:resource="https://www.crossref.org/services/funder-registry/"/>
+        <ontology_used rdf:resource="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml"/>
+        <ontology_used rdf:resource="https://github.com/MaastrichtU-IDS/semanticscience"/>
+        <file_extension>json</file_extension>
+        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/json"/>
+        <oboInOwl:hasDefinition>Format for describing the capabilities of a biosimulation tool including the modeling frameworks, simulation algorithms, and modeling formats that it supports, as well as metadata such as a list of the interfaces, programming languages, and operating systems supported by the tool; a link to download the tool; a list of the authors of the tool; and the license to the tool.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>BioSimulators format for the specifications of biosimulation tools</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4026 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4026">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <created_in>1.26</created_in>
+        <example rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
+        <documentation rdf:resource="https://biosimulators.org/conventions/simulator-interfaces"/>
+        <organisation rdf:resource="https://reproduciblebiomodels.org/"/>
+        <oboInOwl:hasDefinition>Outlines the syntax and semantics of the input and output arguments for command-line interfaces for biosimulation tools.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
     </owl:Class>
 
 
@@ -60633,6 +60749,26 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
         <rdfs:seeAlso rdf:resource="http://edamontology.org/topic_3366"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4027 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4027">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3308"/>
+        <rdfs:label>Ribosome Profiling</rdfs:label>
+        <oboInOwl:hasExactSynonym>RIBO-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribo-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RiboSeq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Ribo-Seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ribosomal footprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>translation footprinting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>With ribosome profiling, ribosome-protected mRNA fragments are analyzed with RNA-seq techniques leading to a genome-wide measurement of the translation landscape.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
 
