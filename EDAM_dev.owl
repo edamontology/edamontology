@@ -60776,7 +60776,31 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
-
+	   <!-- http://edamontology.org/topic_4028 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4028">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:label>Single-Cell Sequencing</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Single Cell Genomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-cell_analysis"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single_cell_sequencing"/>
+    </owl:Class>
+	
+    <!-- http://edamontology.org/topic_4029 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4029">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:label>Acoustics</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>The study of mechanical waves in liquids, solids, and gases.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
+    </owl:Class>
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
@@ -60791,8 +60815,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <owl:deprecated>true</owl:deprecated>
     </owl:Class>
     
-
-
     <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
 
     <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
