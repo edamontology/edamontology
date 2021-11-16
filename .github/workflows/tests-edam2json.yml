@@ -1,6 +1,6 @@
 name: Test edam2json conversion of EDAM_dev.owl
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
