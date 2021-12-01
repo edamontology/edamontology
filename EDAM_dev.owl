@@ -35268,11 +35268,12 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>1.20</created_in>
         <documentation rdf:resource="http://darlinglab.org/mauve/user-guide/files.html"/>
-        <oboInOwl:hasDefinition>The A2M format is used as the primary format for multiple alignments of protein or nucleic-acid sequences in the SAM suite of tools. It is a small modification of FASTA format for sequences and is compatible with most tools that read FASTA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>XMFA format stands for eXtended Multi-FastA format and is used to store collinear sub-alignments that constitutes a single genome alignment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>alignment format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>eXtended Multi-FastA format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:seeAlso rdf:ressource="http://darlinglab.org/mauve/user-guide/files.html#the-alignment-file-and-the-xmfa-file-format"/>
         <rdfs:label>XMFA</rdfs:label>
     </owl:Class>
     
