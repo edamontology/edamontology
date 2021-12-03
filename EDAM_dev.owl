@@ -20365,14 +20365,18 @@
     <!-- http://edamontology.org/data_2751 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2751">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2903"/>
+        <oldParent rdf:resource="http://edamontology.org/data_2091"/>
+        <oldParent rdf:resource="http://edamontology.org/data_2903"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>An identifier of a particular genome.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2749"/>
         <rdfs:label>GenomeReviews ID</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
