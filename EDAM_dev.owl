@@ -36712,8 +36712,10 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <file_extension>gfa</file_extension>
         <organisation rdf:resource="https://github.com/GFA-spec"/>
         <oboInOwl:hasDefinition>Graphical Fragment Assembly captures sequence graphs as the product of an assembly, a representation of variation in genomes, splice graphs in genes, or even overlap between reads from long-read sequencing technology.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Graphical Fragment Assembly (GFA) 1.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
         <rdfs:label>GFA 1</rdfs:label>
     </owl:Class>
     
@@ -36729,9 +36731,11 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <example rdf:resource="https://raw.githubusercontent.com/sjackman/gfalint/master/examples/big2.gfa"/>
         <file_extension>gfa</file_extension>
         <organisation rdf:resource="https://github.com/GFA-spec"/>
-        <oboInOwl:hasDefinition>Graphical Fragment Assembly captures sequence graphs as the product of an assembly, a representation of variation in genomes, splice graphs in genes, or even overlap between reads from long-read sequencing technology.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Graphical Fragment Assembly captures sequence graphs as the product of an assembly, a representation of variation in genomes, splice graphs in genes, or even overlap between reads from long-read sequencing technology. GFA2 is an update of GFA1 which is not compatible with GFA1.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Graphical Fragment Assembly (GFA) 2.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:comment rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
         <rdfs:label>GFA 2</rdfs:label>
     </owl:Class>
     
