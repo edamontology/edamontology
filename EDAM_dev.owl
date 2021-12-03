@@ -3219,7 +3219,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <rdfs:comment>This concept exists only to assist EDAM maintenance and navigation in graphical browsers. It does not add semantic information. This branch provides an alternative organisation of the concepts nested under &apos;Accession&apos; and &apos;Name&apos;. All concepts under here are already included under &apos;Accession&apos; or &apos;Name&apos;.</rdfs:comment>
-        <rdfs:label>Identifier (by type of data)</rdfs:label>
+        <rdfs:label>Identifier (by type of entity)</rdfs:label>
     </owl:Class>
     
 
@@ -20369,10 +20369,8 @@
         <oldParent rdf:resource="http://edamontology.org/data_2903"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since>1.26</obsolete_since>
         <oboInOwl:hasDefinition>An identifier of a particular genome.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2749"/>
         <rdfs:label>GenomeReviews ID</rdfs:label>
@@ -20866,15 +20864,15 @@
     <!-- http://edamontology.org/data_2785 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2785">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2908"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2913"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>An accession of annotation on a (group of) viruses (catalogued in a database).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <rdfs:label>Virus ID</rdfs:label>
+        <oboInOwl:hasExactSynonym>Virus ID</oboInOwl:hasExactSynonym>
+        <rdfs:label>Virus identifier</rdfs:label>
     </owl:Class>
     
 
@@ -22066,14 +22064,16 @@
     <!-- http://edamontology.org/data_2913 -->
 
     <owl:Class rdf:about="http://edamontology.org/data_2913">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1869"/>
+        <oldParent rdf:resource="http://edamontology.org/data_1869"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
+        <obsolete_since>1.26</osbolete_since>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
         <oboInOwl:hasDefinition>An accession of annotation on a (group of) viruses (catalogued in a database).</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_2785"/>
         <rdfs:label>Virus identifier</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
