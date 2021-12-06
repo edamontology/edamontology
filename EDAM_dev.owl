@@ -11720,7 +11720,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_1689">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2101"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>A username on a computer system.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A username on a computer system or a website.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -11734,7 +11734,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_1690">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2101"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>A password on a computer system.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A password on a computer system, or a website.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -14518,11 +14518,11 @@
     <owl:Class rdf:about="http://edamontology.org/data_2101">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>An identifier of a software end-user (typically a person).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Authentication data usually used to logg into an account in order to use a software or consult a website/data base.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <rdfs:label>User ID</rdfs:label>
+        <rdfs:label>Account authentication</rdfs:label>
     </owl:Class>
     
 
