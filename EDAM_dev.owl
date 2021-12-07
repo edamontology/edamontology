@@ -30249,9 +30249,11 @@
     <owl:Class rdf:about="http://edamontology.org/format_2185">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2204"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>XML format for EMBL entries using the International Nucleotide Sequence Database Collaboration consortium.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>INSDSeq provides the elements of a sequence as presented in the GenBank/EMBL/DDBJ-style flatfile formats, with a small amount of additional structure.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1093/nar/gkaa967"/>
+        <documentation rdf:resource="https://www.insdc.org/sites/insdc.org/files/documents/INSD_v1.5.dtd.docx"/>
         <rdfs:label>insdxml</rdfs:label>
     </owl:Class>
     
