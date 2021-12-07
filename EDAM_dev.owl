@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4028</next_id>
-        <oboOther:date>04.11.2021 10:33 UTC</oboOther:date>
+        <next_id>4031</next_id>
+        <oboOther:date>28.11.2021 14:24 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60776,6 +60776,50 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
+
+
+	   <!-- http://edamontology.org/topic_4028 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4028">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:label>Single-Cell Sequencing</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Single Cell Genomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-cell_analysis"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single_cell_sequencing"/>
+    </owl:Class>
+
+
+	
+    <!-- http://edamontology.org/topic_4029 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4029">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:label>Acoustics</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>The study of mechanical waves in liquids, solids, and gases.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
+    </owl:Class>
+
+	    <!-- http://edamontology.org/topic_4030 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4030">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3292"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:label>Microfluidics</rdfs:label>
+		<oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microfluidics"/>
+    </owl:Class>
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
