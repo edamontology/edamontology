@@ -30224,8 +30224,11 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2204"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>XML format for EMBL entries.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://ftp.ebi.ac.uk/pub/databases/ena/doc/xsd/sra_1_5/ENA.embl.xsd"/>
+        <seeAlso>https://fairsharing.org/bsg-s001452/</seeAlso>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <is_deprecation_candidate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_deprecation_candidate>
         <rdfs:label>EMBLXML</rdfs:label>
     </owl:Class>
     
@@ -30236,9 +30239,12 @@
     <owl:Class rdf:about="http://edamontology.org/format_2184">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2204"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>XML format for EMBL entries.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Specific XML format for EMBL entries (only uses certain sections).</oboInOwl:hasDefinition>
+        <documentation rdf:resource="http://ftp.ebi.ac.uk/pub/databases/ena/doc/xsd/sra_1_5/ENA.embl.xsd"/>
+        <seeAlso>https://fairsharing.org/bsg-s001452/</seeAlso>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <is_deprecation_candidate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_deprecation_candidate>
         <rdfs:label>cdsxml</rdfs:label>
     </owl:Class>
     
