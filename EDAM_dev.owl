@@ -49761,7 +49761,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2990"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3457"/>
         <created_in>1.7</created_in>
-        <is_refactor_candidate>true</is_refactor_candidate>
+        <is_refactor_candidate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_refactor_candidate>
         <refactor_comment>This is two related concepts.</refactor_comment>
         <oboInOwl:hasDefinition>Compare (align and classify) multiple particle images from a micrograph in order to produce a representative image of the particle.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
