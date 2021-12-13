@@ -1,6 +1,6 @@
 name: Test edam2json conversion of EDAM_dev.owl
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
@@ -22,5 +22,4 @@ jobs:
           pip install git+https://github.com/edamontology/edam2json.git
       - name: Test conversion
         run: |
-          ls -lah
           edam2json EDAM_dev.owl biotools --extended > edam_extended.biotools.json

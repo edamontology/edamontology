@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://edamontology.org/"
      xml:base="http://edamontology.org/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -13,22 +14,24 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4028</next_id>
-        <oboOther:date>04.11.2021 10:33 UTC</oboOther:date>
+        <next_id>4031</next_id>
+        <oboOther:date>28.11.2021 14:24 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboOther:idspace>
         <oboOther:remark>EDAM editors: Jon Ison, Matúš Kalaš, Hervé Ménager, and Veit Schwämmle. Contributors: see http://edamontologydocs.readthedocs.io/en/latest/contributors.html. License: see http://edamontologydocs.readthedocs.io/en/latest/license.html.</oboOther:remark>
-        <oboOther:remark>EDAM is an ontology of well established, familiar concepts that are prevalent within bioinformatics, including types of data and data identifiers, data formats, operations and topics. EDAM is a simple ontology - essentially a set of terms with synonyms and definitions - organised into an intuitive hierarchy for convenient use by curators, software developers and end-users. EDAM is suitable for large-scale semantic annotations and categorisation of diverse bioinformatics resources. EDAM is also suitable for diverse application including for example within workbenches and workflow-management systems, software distributions, and resource registries.</oboOther:remark>
+        <oboOther:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboOther:remark>
         <dc:contributor>Veit Schwämmle</dc:contributor>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
         <dc:title>Bioinformatics operations, data types, formats, identifiers and topics</dc:title>
+        <dc:description>EDAM is a comprehensive ontology of well-established, familiar concepts that are prevalent within bioscientific data analysis and data management (including computational biology, bioinformatics, and bioimage informatics). EDAM includes topics, operations, types of data and data identifiers, and data formats, relevant in data analysis and data management in life sciences. EDAM provides a set of concepts with preferred terms and synonyms, related terms, definitions, and other information - organised into a simple and intuitive hierarchy for convenient use. EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed bioscientific data.</dc:description>
         <doap:Version>1.26_dev</doap:Version>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <oboInOwl:hasSubset>concept_properties &quot;EDAM concept properties&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>data &quot;EDAM types of data&quot;</oboInOwl:hasSubset>
         <oboInOwl:hasSubset>edam &quot;EDAM&quot;</oboInOwl:hasSubset>
@@ -34141,8 +34144,7 @@
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://www.isa-tools.org/format/specification"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.isa-tools.org/format/specification"/>
-        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from
-experiments employing a combination of technologies.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>ISA-TAB is based on MAGE-TAB. Other than tabular, the ISA model can also be represented in RDF, and in JSON (compliable with a set of defined JSON Schemata).</rdfs:comment>
@@ -39968,8 +39970,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Search a sequence database by sequence comparison and retrieve similar sequences.
-sequences matching a given sequence motif or pattern, such as a Prosite pattern or regular expression.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Search a sequence database by sequence comparison and retrieve similar sequences. Sequences matching a given sequence motif or pattern, such as a Prosite pattern or regular expression.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This excludes direct retrieval methods (e.g. the dbfetch program).</rdfs:comment>
@@ -48385,17 +48386,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasNarrowSynonym>Trim vector</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>This includes
-
-ennd trimming
-Trim sequences (typically from an automated DNA sequencer) to remove misleading ends.
-For example trim polyA tails, introns and primer sequence flanking the sequence of amplified exons, or other unwanted sequence.
-
-trimming to a reference sequence,
-Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence.
-
-vector trimming
-Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.</rdfs:comment>
+        <rdfs:comment>This includes end trimming, -- Trim sequences (typically from an automated DNA sequencer) to remove misleading ends. For example trim polyA tails, introns and primer sequence flanking the sequence of amplified exons, or other unwanted sequence.-- trimming to a reference sequence, --Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence. -- vector trimming -- Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.</rdfs:comment>
         <rdfs:label>Sequence trimming</rdfs:label>
     </owl:Class>
     
@@ -51292,7 +51283,6 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3803">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
         <created_in>1.17</created_in>
-        <oboInOwl:hasBroadSynonym>Metabolite identification</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Mass spectra identification of compounds that are produced by living systems. Including polyketides, terpenoids, phenylpropanoids, alkaloids and antibiotics.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>De novo metabolite identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Fragmenation tree generation</oboInOwl:hasNarrowSynonym>
@@ -51715,11 +51705,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3923">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
         <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals).
-
-WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).
-
-ows re-sequencing of complete genomes of any given organism with high resolution and high accuracy.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Resequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Whole_genome_sequencing</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Amplicon panels</oboInOwl:hasNarrowSynonym>
@@ -52223,7 +52209,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0077">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The processing and analysis of nucleic acid sequence, structural and other data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Nucleic acid bioinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid informatics</oboInOwl:hasExactSynonym>
@@ -52245,7 +52231,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0078">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Archival, processing and analysis of protein data, typically molecular sequence and structural data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein bioinformatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein informatics</oboInOwl:hasExactSynonym>
@@ -52281,7 +52267,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0080">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The archival, processing and analysis of molecular sequences (monomer composition of polymers) including molecular sequence data resources, sequence sites, alignments, motifs and profiles.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Sequences</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Sequence_analysis</oboInOwl:hasHumanReadableId>
@@ -52302,7 +52288,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0081">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The curation, processing, analysis and prediction of data about the structure of biological molecules, typically proteins and nucleic acids and other macromolecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biomolecular structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Structural bioinformatics</oboInOwl:hasExactSynonym>
@@ -52328,7 +52314,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0082">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The prediction of molecular structure, including the prediction, modelling, recognition or design of protein secondary or tertiary structure or other structural features, and the folding of nucleic acid molecules and the prediction or design of nucleic acid (typically RNA) sequences with specific conformations.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Structure_prediction</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>DNA structure prediction</oboInOwl:hasNarrowSynonym>
@@ -52371,7 +52357,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of evolutionary relationships amongst organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Phylogeny</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Phylogenetic clocks</oboInOwl:hasNarrowSynonym>
@@ -52396,7 +52382,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_1775"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of gene or protein functions and their interactions in totality in a given organism, tissue, cell etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Functional_genomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -52413,7 +52399,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0089">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The conceptualisation, categorisation and nomenclature (naming) of entities or phenomena within biology or bioinformatics. This includes formal ontologies, controlled vocabularies, structured glossary, symbols and terminology or other related resource.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Ontology_and_terminology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Applied ontology</oboInOwl:hasNarrowSynonym>
@@ -52454,7 +52440,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0091">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.6 Bioinformatics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The archival, curation, processing and analysis of complex biological data.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Bioinformatics</oboInOwl:hasHumanReadableId>
@@ -52474,7 +52460,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0092">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Computer graphics</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.2.5 Computer graphics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Rendering (drawing on a computer screen) or visualisation of molecular sequences, structures or other biomolecular data.</oboInOwl:hasDefinition>
@@ -52566,7 +52552,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0102">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The mapping of complete (typically nucleotide) sequences. Mapping (in the sense of short read alignment, or more generally, just alignment) has application in RNA-Seq analysis (mapping of transcriptomics reads), variant discovery (e.g. mapping of exome capture), and re-sequencing (mapping of WGS reads).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Mapping</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Genetic linkage</oboInOwl:hasNarrowSynonym>
@@ -52685,7 +52671,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0114">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Gene structure, regions which make an RNA product and features such as promoters, coding regions, gene fusion, splice sites etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Gene features</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Gene_structure</oboInOwl:hasHumanReadableId>
@@ -52705,7 +52691,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0121">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Protein and peptide identification, especially in the study of whole proteomes of organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Bottom-up proteomics</oboInOwl:hasNarrowSynonym>
@@ -52736,7 +52722,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_1317"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The elucidation of the three dimensional structure for all (available) proteins in a given organism.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Structural_genomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -52753,7 +52739,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0123">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of the physical and biochemical properties of peptides and proteins, for example the hydrophobic, hydrophilic and charge properties of a protein.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein physicochemistry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Protein_properties</oboInOwl:hasHumanReadableId>
@@ -52771,7 +52757,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0602"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Protein-protein, protein-DNA/RNA and protein-ligand interactions, including analysis of known interactions and prediction of putative interactions.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_interactions</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Protein interaction map</oboInOwl:hasNarrowSynonym>
@@ -52798,7 +52784,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0130">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2814"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Protein stability, folding (in 3D space) and protein sequence-structure-function relationships. This includes for example study of inter-atomic or inter-residue interactions in protein (3D) structures, the effect of mutation, and the design of proteins with specific properties, typically by designing changes (via site-directed mutagenesis) to an existing protein.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_folding_stability_and_design</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Protein design</oboInOwl:hasNarrowSynonym>
@@ -53031,7 +53017,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0152">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Carbohydrates, typically including structural information.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Carbohydrates</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -53047,7 +53033,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0153">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Lipids and their structures.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Lipidomics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Lipids</oboInOwl:hasHumanReadableId>
@@ -53064,7 +53050,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0154">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Small molecules of biological significance, typically archival, curation, processing and analysis of structural information.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Small_molecules</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Amino acids</oboInOwl:hasNarrowSynonym>
@@ -53114,7 +53100,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0157">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The archival, processing and analysis of the basic character composition of molecular sequences, for example character or word frequency, ambiguity, complexity, particularly regions of low complexity, and repeats or the repetitive nature of molecular sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Sequence_composition_complexity_and_repeats</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Low complexity sequences</oboInOwl:hasNarrowSynonym>
@@ -53172,7 +53158,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0160">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The archival, detection, prediction and analysis of positional features such as functional and other key sites, in molecular sequences and the conserved patterns (motifs, profiles etc.) that may be used to describe them.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Sequence_sites_features_and_motifs</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Functional sites</oboInOwl:hasNarrowSynonym>
@@ -53227,7 +53213,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0166">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2814"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Structural features or common 3D motifs within protein structures, including the surface of a protein structure, such as biological interfaces with other molecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein 3D motifs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Protein_structural_motifs_and_surfaces</oboInOwl:hasHumanReadableId>
@@ -53330,7 +53316,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0082"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3892"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Molecular flexibility</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Molecular motions</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>The study and simulation of molecular (typically protein) conformation using a computational model of physical forces and computer simulation.</oboInOwl:hasDefinition>
@@ -53350,7 +53336,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0177">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <obsolete_since>1.12</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:hasDefinition>The modelling the structure of proteins in complex with small molecules or other macromolecules.</oboInOwl:hasDefinition>
@@ -53500,7 +53486,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The integrated study of evolutionary relationships and whole genome data, for example, in the analysis of species trees, horizontal gene transfer and evolutionary reconstruction.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Phylogenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -53533,7 +53519,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0196">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The assembly of fragments of a DNA sequence to reconstruct the original sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Sequence_assembly</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Assembly</oboInOwl:hasNarrowSynonym>
@@ -53552,7 +53538,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Stable, naturally occuring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DNA variation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Genetic_variation</oboInOwl:hasHumanReadableId>
@@ -53591,7 +53577,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0202">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.7 Pharmacology and pharmacy</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of drugs and their effects or responses in living systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Pharmacology</oboInOwl:hasHumanReadableId>
@@ -53611,7 +53597,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0203">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasAlternativeId>http://edamontology.org/topic_0197</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDefinition>The analysis of levels and patterns of synthesis of gene products (proteins and functional RNA) including interpretation in functional terms of gene expression data.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Expression</oboInOwl:hasExactSynonym>
@@ -53640,7 +53626,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0204">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0203"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The regulation of gene expression.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Regulatory genomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -53657,7 +53643,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0202"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The influence of genotype on drug response, for example by correlating gene expression or single-nucleotide polymorphisms with drug efficacy or toxicity.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Pharmacogenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Pharmacogenetics</oboInOwl:hasNarrowSynonym>
@@ -53676,7 +53662,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3336"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3371"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.4 Medicinal chemistry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The design and chemical synthesis of bioactive molecules, for example drugs or potential drug compounds, for medicinal purposes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Drug design</oboInOwl:hasExactSynonym>
@@ -53947,7 +53933,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0601">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0108"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Protein chemical modifications, e.g. post-translational modifications.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PTMs</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Post-translational modifications</oboInOwl:hasExactSynonym>
@@ -53972,7 +53958,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0602">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasAlternativeId>http://edamontology.org/topic_3076</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDefinition>Molecular interactions, biological pathways, networks and other models.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_interactions_pathways_and_networks</oboInOwl:hasHumanReadableId>
@@ -54007,7 +53993,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0605">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.3 Information sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.3 Information retrieval</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.3.4 Information management</oboInOwl:hasDbXref>
@@ -54047,7 +54033,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0607">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Laboratory management and resources, for example, catalogues of biological resources for use in the lab including cell lines, viruses, plasmids, phages, DNA probes and primers and so on.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Laboratory_Information_management</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Laboratory resources</oboInOwl:hasNarrowSynonym>
@@ -54082,7 +54068,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.15 Ecology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The ecological and environmental sciences and especially the application of information technology (ecoinformatics).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Ecology</oboInOwl:hasHumanReadableId>
@@ -54225,7 +54211,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0621">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>A specific organism, or group of organisms, used to study a particular aspect of biology.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Organisms</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Model_organisms</oboInOwl:hasHumanReadableId>
@@ -54244,7 +54230,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0622">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Whole genomes of one or more organisms, or genomes in general, such as meta-information on genomes, genome projects, gene names etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Genomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Exomes</oboInOwl:hasNarrowSynonym>
@@ -54270,7 +54256,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3321"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Particular gene(s), gene family or other gene group or system and their encoded proteins.Primarily the classification of proteins (from sequence or structural data) into clusters, groups, families etc., curation of a particular protein or protein family, or any other proteins that have been classified as members of a common group.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genes, gene family or system</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Gene_and protein_families</oboInOwl:hasHumanReadableId>
@@ -54311,7 +54297,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0625">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of genetic constitution of a living entity, such as an individual, and organism, a cell and so on, typically with respect to a particular observable phenotypic traits, or resources concerning such traits, which might be an aspect of biochemistry, physiology, morphology, anatomy, development and so on.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genotype and phenotype resources</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Genotype-phenotype</oboInOwl:hasExactSynonym>
@@ -54351,7 +54337,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0632">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Molecular probes (e.g. a peptide probe or DNA microarray probe) or PCR primers and hybridisation oligos in a nucleic acid sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Probes_and_primers</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Primer quality</oboInOwl:hasNarrowSynonym>
@@ -54371,7 +54357,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0634">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.6 Pathology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Diseases, including diseases in general and the genes, gene variations and proteins involved in one or more specific diseases.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Disease</oboInOwl:hasExactSynonym>
@@ -54406,7 +54392,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0637">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.25 Taxonomy</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Organism classification, identification and naming.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Taxonomy</oboInOwl:hasHumanReadableId>
@@ -54539,7 +54525,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0114"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Non-coding or functional RNA sequences, including regulatory RNA sequences, ribosomal RNA (rRNA) and transfer RNA (tRNA).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Functional_regulatory_and_non-coding_RNA</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Functional RNA</oboInOwl:hasNarrowSynonym>
@@ -54689,7 +54675,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0736">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_2814"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Protein tertiary structural domains and folds in a protein or polypeptide chain.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_folds_and_structural_domains</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Intramembrane regions</oboInOwl:hasNarrowSynonym>
@@ -54952,7 +54938,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0780">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasBroadSynonym>Plant science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.5.10 Botany</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.22 Plant science</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Plants, e.g. information on a specific plant genome including molecular sequences, genes and annotation.</oboInOwl:hasDefinition>
@@ -55080,7 +55065,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0797">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study (typically comparison) of the sequence, structure or function of multiple genomes.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Comparative_genomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -55129,7 +55114,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0804">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.3 Immunology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The application of information technology to immunology such as immunological processes, immunological genes, proteins and peptide ligands, antigens and so on.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Immunology</oboInOwl:hasHumanReadableId>
@@ -55149,7 +55134,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0820">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Lipoproteins (protein-lipid assemblies), and proteins or region of a protein that spans or are associated with a membrane.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Membrane_and_lipoproteins</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Lipoproteins</oboInOwl:hasNarrowSynonym>
@@ -55169,7 +55154,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_0821">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Proteins that catalyze chemical reaction, the kinetics of enzyme-catalysed reactions, enzyme nomenclature etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Enzymology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Enzymes</oboInOwl:hasHumanReadableId>
@@ -55315,7 +55300,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_1317">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.24 Structural biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The molecular structure of biological molecules, particularly macromolecules such as proteins and nucleic acids.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Structural_biology</oboInOwl:hasHumanReadableId>
@@ -55370,7 +55355,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_1775">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of gene and protein function including the prediction of functional properties of a protein.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Functional analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Function_analysis</oboInOwl:hasHumanReadableId>
@@ -55441,7 +55426,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2229">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.11 Cell biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Cells, such as key genes and proteins involved in the cell cycle.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Cell_biology</oboInOwl:hasHumanReadableId>
@@ -55509,7 +55494,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2258">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The application of information technology to chemistry in biological research environment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Chemical informatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Chemoinformatics</oboInOwl:hasExactSynonym>
@@ -55528,7 +55513,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2259">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The holistic modelling and analysis of complex biological systems and the interactions therein.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Systems_biology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Biological modelling</oboInOwl:hasNarrowSynonym>
@@ -55596,7 +55581,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2275">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0082"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The construction, analysis, evaluation, refinement etc. of models of a molecules properties or behaviour, including the modelling the structure of proteins in complex with small molecules or other macromolecules (docking).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_modelling</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Comparative modelling</oboInOwl:hasNarrowSynonym>
@@ -55732,7 +55717,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_2640">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.16 Oncology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of cancer, for example, genes and proteins implicated in cancer.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Cancer biology</oboInOwl:hasExactSynonym>
@@ -55851,7 +55836,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0078"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasAlternativeId>http://edamontology.org/topic_3040</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDefinition>Protein secondary or tertiary structural data and/or associated annotation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein structure</oboInOwl:hasExactSynonym>
@@ -56085,7 +56070,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.9 Toxicology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Toxins and the adverse effects of these chemical substances on living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Toxicology</oboInOwl:hasHumanReadableId>
@@ -56204,7 +56189,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0199"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0654"/>
         <created_in>beta12orEarlier</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>DNA polymorphism.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>DNA_polymorphism</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Microsatellites</oboInOwl:hasNarrowSynonym>
@@ -56359,7 +56344,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3047">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.4 Biochemistry and molecular biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The molecular basis of biological activity, particularly the macromolecules (e.g. proteins and nucleic acids) that are essential to life.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_biology</oboInOwl:hasHumanReadableId>
@@ -56394,7 +56379,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3050">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.5 Biodiversity conservation</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The degree of variation of life forms within a given ecosystem, biome or an entire planet.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biodiversity</oboInOwl:hasHumanReadableId>
@@ -56430,7 +56415,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3053">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of genes, genetic variation and heredity in living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Genetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Genes</oboInOwl:hasNarrowSynonym>
@@ -56450,7 +56435,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3055">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0625"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The genes and genetic mechanisms such as Mendelian inheritance that underly continuous phenotypic traits (such as height or weight).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Quantitative_genetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -56466,7 +56451,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3056">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The distribution of allele frequencies in a population of organisms and its change subject to evolutionary processes including natural selection, genetic drift, mutation and gene flow.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Population_genetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -56531,7 +56516,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3063">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The application of information technology to health, disease and biomedicine.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biomedical informatics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Clinical informatics</oboInOwl:hasExactSynonym>
@@ -56553,7 +56538,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3064">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.14 Developmental biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>How organisms grow and develop.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Developmental_biology</oboInOwl:hasHumanReadableId>
@@ -56572,7 +56557,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3065">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3064"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The development of organisms between the one-cell stage (typically the zygote) and the end of the embryonic stage.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Embryology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -56589,7 +56574,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3067">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.1 Anatomy and morphology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The form and function of the structures of living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Anatomy</oboInOwl:hasHumanReadableId>
@@ -56607,7 +56592,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3068">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The scientific literature, language processing, reference information, and documentation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Language</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Literature</oboInOwl:hasExactSynonym>
@@ -56632,7 +56617,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3070">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5 Biological sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.1 Aerobiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.13 Cryobiology</oboInOwl:hasDbXref>
@@ -56664,7 +56649,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3071">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.3.1 Data management</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -56797,7 +56782,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3120">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0108"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasAlternativeId rdf:resource="http://edamontology.org/data_3120"/>
         <oboInOwl:hasDefinition>Protein sequence variants produced e.g. from alternative splicing, alternative promoter usage, alternative initiation and ribosomal frameshifting.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_variants</oboInOwl:hasHumanReadableId>
@@ -56872,7 +56857,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3127">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0654"/>
         <created_in>beta13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>DNA replication or recombination.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>DNA_replication_and_recombination</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -56921,7 +56906,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3168">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
         <created_in>1.1</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DNA-Seq</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Sequencing</oboInOwl:hasHumanReadableId>
@@ -57017,7 +57002,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3172">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>1.1</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The systematic study of metabolites, the chemical processes they are involved, and the chemical fingerprints of specific cellular processes in a whole cell, tissue, organ or organism.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metabolomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Exometabolomics</oboInOwl:hasNarrowSynonym>
@@ -57046,7 +57031,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
         <created_in>1.1</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of the epigenetic modifications of a whole cell, tissue, organism etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Epigenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57066,7 +57051,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>1.1</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Biome sequencing</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Community genomics</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Ecogenomics</oboInOwl:hasBroadSynonym>
@@ -57075,7 +57060,6 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasBroadSynonym>Environmental sequencing</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>The study of genetic material recovered from environmental samples, and associated environmental data.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metagenomics</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Biome sequencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Shotgun metagenomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -57217,7 +57201,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.4 Biochemistry and molecular biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Chemical substances and physico-chemical processes and that occur within living organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biological chemistry</oboInOwl:hasExactSynonym>
@@ -57240,7 +57224,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0084"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of evolutionary relationships amongst organisms from analysis of genetic information (typically gene or protein sequences).</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Phylogenetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57257,7 +57241,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3295">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Topic concerning the study of heritable changes, for example in gene expression or phenotype, caused by mechanisms other than changes in the DNA sequence.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Epigenetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>DNA methylation</oboInOwl:hasNarrowSynonym>
@@ -57279,7 +57263,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3297">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The exploitation of biological process, structure and function for industrial purposes, for example the genetic manipulation of microorganisms for the antibody production.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biotechnology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Applied microbiology</oboInOwl:hasNarrowSynonym>
@@ -57299,7 +57283,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3299"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Phenomes, or the study of the change in phenotype (the physical and biochemical traits of organisms) in response to genetic and environmental factors.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Phenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57316,7 +57300,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3299">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.16 Evolutionary biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The evolutionary processes, from the genetic to environmental scale, that produced life in all its diversity.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Evolution</oboInOwl:hasExactSynonym>
@@ -57335,7 +57319,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3300">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.8 Physiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The functions of living organisms and their constituent parts.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Physiology</oboInOwl:hasHumanReadableId>
@@ -57354,7 +57338,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3301">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.20 Microbiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The biology of microorganisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Microbiology</oboInOwl:hasHumanReadableId>
@@ -57380,7 +57364,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3302">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The biology of parasites.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Parasitology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57397,7 +57381,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3303">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1 Basic medicine</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.2 Clinical medicine</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.2.9 General and internal medicine</oboInOwl:hasDbXref>
@@ -57422,7 +57406,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3304">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Neuroscience</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 3.1.5 Neuroscience</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of the nervous system and brain; its anatomy, physiology and function.</oboInOwl:hasDefinition>
@@ -57444,7 +57428,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3305">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.3.1 Epidemiology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Topic concerning the the patterns, cause, and effect of disease within populations.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Public_health_and_epidemiology</oboInOwl:hasHumanReadableId>
@@ -57466,7 +57450,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.9 Biophysics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The use of physics to study biological system.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Biophysics</oboInOwl:hasHumanReadableId>
@@ -57485,7 +57469,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3307">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.12 Computational biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.19 Mathematical biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.5.26 Theoretical biology</oboInOwl:hasDbXref>
@@ -57510,7 +57494,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0203"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The analysis of transcriptomes, or a set of all the RNA molecules in a specific cell, tissue etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Transcriptomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Comparative transcriptomics</oboInOwl:hasNarrowSynonym>
@@ -57625,7 +57609,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0099"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0203"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>RNA splicing; post-transcription RNA modification involving the removal of introns and joining of exons.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Alternative splicing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>RNA_splicing</oboInOwl:hasHumanReadableId>
@@ -57645,7 +57629,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3307"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The structure and function of genes at a molecular level.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_genetics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57662,7 +57646,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3322">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.25 Respiratory systems</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of respiratory system.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Pulmonary medicine</oboInOwl:hasExactSynonym>
@@ -57736,7 +57720,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Computational_chemistry</oboInOwl:hasHumanReadableId>
@@ -57754,7 +57738,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3334">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the anatomy, functions and disorders of the nervous system.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Neurology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Neurological disorders</oboInOwl:hasNarrowSynonym>
@@ -57772,7 +57756,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3335">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.22 Peripheral vascular disease</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.2.4 Cardiac and Cardiovascular systems</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The diseases and abnormalities of the heart and circulatory system.</oboInOwl:hasDefinition>
@@ -57795,7 +57779,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The discovery and design of drugs or potential drug compounds.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Drug_discovery</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57813,7 +57797,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3337">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3277"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Repositories of biological samples, typically human, for basic biological and clinical research.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Tissue collection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>biobanking</oboInOwl:hasExactSynonym>
@@ -57897,7 +57881,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3342">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>&apos;translating&apos; the output of basic and biomedical research into better diagnostic tools, medicines, medical procedures, policies and advice.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Translational_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -57936,7 +57920,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3344">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <created_in>1.3</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.3 Health sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Topic concerning biological science that is (typically) performed in the context of medicine.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Biomedical sciences</oboInOwl:hasExactSynonym>
@@ -57987,7 +57971,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3360">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Objective indicators of biological state often used to assess health, and determinate treatment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Diagnostic markers</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Biomarkers</oboInOwl:hasHumanReadableId>
@@ -58081,7 +58065,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3371"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The use of synthetic chemistry to study and manipulate biological systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Chemical_biology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58158,7 +58142,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3373">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The process of bringing a new drug to market once a lead compounds has been identified through drug discovery.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Drug development science</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Medicine development</oboInOwl:hasExactSynonym>
@@ -58196,7 +58180,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3375">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3376"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The study of how a drug interacts with the body.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Drug_metabolism</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>ADME</oboInOwl:hasNarrowSynonym>
@@ -58298,7 +58282,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3382">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The visual representation of an object.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Imaging</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Diffraction experiment</oboInOwl:hasNarrowSynonym>
@@ -58397,7 +58381,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3387">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3070"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.5.18 Marine and Freshwater biology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of organisms in the ocean or brackish waters.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Marine_biology</oboInOwl:hasHumanReadableId>
@@ -58415,7 +58399,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3388">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3342"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The identification of molecular and genetic causes of disease and the development of interventions to correct them.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Molecular_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58452,7 +58436,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3391">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4019"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The collective characterisation and quantification of pools of biological molecules that translate into the structure, function, and dynamics of an organism or organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Omics</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58505,7 +58489,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3395">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3344"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>Biomedical approaches to clinical interventions that involve the use of stem cells.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Stem cell research</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Regenerative_medicine</oboInOwl:hasHumanReadableId>
@@ -58523,7 +58507,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3396">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrted whole, incoporating biochemical, physiological, and environmental interactions that sustain life.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Systems_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -58574,7 +58558,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3399">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Ageing</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Aging</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Gerontology</oboInOwl:hasBroadSynonym>
@@ -58596,7 +58580,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3400">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.1 Allergy</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Health issues related to the immune system and their prevention, diagnosis and mangement.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Allergy_clinical_immunology_and_immunotherapeutics</oboInOwl:hasHumanReadableId>
@@ -58621,7 +58605,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3401">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The prevention of pain and the evaluation, treatment and rehabilitation of persons in pain.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Algiatry</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Pain management</oboInOwl:hasExactSynonym>
@@ -58733,7 +58717,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3407">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine dealing with diseases of endocrine organs, hormone systems, their target organs, and disorders of the pathways of glucose and lipid metabolism.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Endocrinology_and_metabolism</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Endocrine disorders</oboInOwl:hasNarrowSynonym>
@@ -58754,7 +58738,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3408">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.11 Hematology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the blood, blood-forming organs and blood diseases.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Haematology</oboInOwl:hasHumanReadableId>
@@ -58774,7 +58758,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3409">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.8 Gastroenterology and hepatology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with disorders of the oesophagus, stomach, duodenum, jejenum, ileum, large intestine, sigmoid colon and rectum.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Gastroenterology</oboInOwl:hasHumanReadableId>
@@ -58809,7 +58793,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3411">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.15 Obstetrics and gynaecology</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the health of the female reproductive system, pregnancy and birth.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Gynaecology_and_obstetrics</oboInOwl:hasHumanReadableId>
@@ -58831,7 +58815,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3412">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the liver, gallbladder, bile ducts and bile.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Hepatology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Hepatic_and_biliary_medicine</oboInOwl:hasHumanReadableId>
@@ -58884,7 +58868,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3415">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The branch of medicine that deals with the diagnosis, management and prevention of poisoning and other adverse health effects caused by medications, occupational and environmental toxins, and biological agents.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Medical_toxicology</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -59123,7 +59107,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3473">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
         <created_in>1.7</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>KDD</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Knowledge discovery in databases</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.3.2 Data mining</oboInOwl:hasDbXref>
@@ -59890,7 +59874,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3574">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3053"/>
         <created_in>1.10</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.1.2 Human genetics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The study of inheritance in human beings.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Human_genetics</oboInOwl:hasHumanReadableId>
@@ -59925,7 +59909,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3576">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <created_in>1.10</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.3.14 Tropical medicine</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.4 Medical biotechnology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.4.1 Biomedical devices</oboInOwl:hasDbXref>
@@ -59947,7 +59931,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
     <owl:Class rdf:about="http://edamontology.org/topic_3577">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.10</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.4.5 Molecular diagnostics</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>An approach to medicine whereby decisions, practices and are tailored to the individual patient based on their predicted response or risk of disease.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Precision medicine</oboInOwl:hasExactSynonym>
@@ -60054,7 +60038,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.12</created_in>
         <documentation rdf:resource="https://en.wikipedia.org/wiki/Design_of_experiments"/>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The design of an experiment intended to test a hypothesis, and describe or explain empirical data obtained under various experimental conditions.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Design of experiments</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Experimental design</oboInOwl:hasExactSynonym>
@@ -60091,7 +60075,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0610"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3301"/>
         <created_in>1.13</created_in>
-        <isdebtag>true</isdebtag>
+        <isdebtag>rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The ecology of microorganisms including their relationship with one another and their environment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Environmental microbiology</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Microbial_ecology</oboInOwl:hasHumanReadableId>
@@ -60776,6 +60760,50 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ribosome_profiling"/>
     </owl:Class>
 
+
+
+	   <!-- http://edamontology.org/topic_4028 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4028">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:label>Single-Cell Sequencing</rdfs:label>
+        <oboInOwl:hasNarrowSynonym>Single Cell Genomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-cell_analysis"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single_cell_sequencing"/>
+    </owl:Class>
+
+
+	
+    <!-- http://edamontology.org/topic_4029 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4029">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:label>Acoustics</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>The study of mechanical waves in liquids, solids, and gases.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
+    </owl:Class>
+
+	    <!-- http://edamontology.org/topic_4030 -->
+	
+	<owl:Class rdf:about="http://edamontology.org/topic_4030">
+        <created_in>1.26</created_in>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3292"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
+        <rdfs:label>Microfluidics</rdfs:label>
+		<oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microfluidics"/>
+    </owl:Class>
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
