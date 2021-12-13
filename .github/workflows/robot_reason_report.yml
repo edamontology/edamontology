@@ -1,11 +1,8 @@
 name: ROBOT
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [ validation ]
-  pull_request:
-    branches: [ validation ]
+  [push, pull_request, workflow_dispatch]
+
 jobs:
   
   build:
