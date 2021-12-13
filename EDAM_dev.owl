@@ -34144,8 +34144,7 @@
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://www.isa-tools.org/format/specification"/>
         <oboInOwl:hasDbXref rdf:resource="http://www.isa-tools.org/format/specification"/>
-        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from
-experiments employing a combination of technologies.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>ISA-TAB is based on MAGE-TAB. Other than tabular, the ISA model can also be represented in RDF, and in JSON (compliable with a set of defined JSON Schemata).</rdfs:comment>
@@ -39971,8 +39970,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Search a sequence database by sequence comparison and retrieve similar sequences.
-sequences matching a given sequence motif or pattern, such as a Prosite pattern or regular expression.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Search a sequence database by sequence comparison and retrieve similar sequences. Sequences matching a given sequence motif or pattern, such as a Prosite pattern or regular expression.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:comment>This excludes direct retrieval methods (e.g. the dbfetch program).</rdfs:comment>
@@ -48388,17 +48386,7 @@ sequences matching a given sequence motif or pattern, such as a Prosite pattern 
         <oboInOwl:hasNarrowSynonym>Trim vector</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>This includes
-
-ennd trimming
-Trim sequences (typically from an automated DNA sequencer) to remove misleading ends.
-For example trim polyA tails, introns and primer sequence flanking the sequence of amplified exons, or other unwanted sequence.
-
-trimming to a reference sequence,
-Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence.
-
-vector trimming
-Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.</rdfs:comment>
+        <rdfs:comment>This includes end trimming, -- Trim sequences (typically from an automated DNA sequencer) to remove misleading ends. For example trim polyA tails, introns and primer sequence flanking the sequence of amplified exons, or other unwanted sequence.-- trimming to a reference sequence, --Trim sequences (typically from an automated DNA sequencer) to remove the sequence ends that extend beyond an assembled reference sequence. -- vector trimming -- Trim sequences (typically from an automated DNA sequencer) to remove sequence-specific end regions, typically contamination from vector sequences.</rdfs:comment>
         <rdfs:label>Sequence trimming</rdfs:label>
     </owl:Class>
     
@@ -51717,11 +51705,7 @@ Trim sequences (typically from an automated DNA sequencer) to remove sequence-sp
     <owl:Class rdf:about="http://edamontology.org/operation_3923">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
         <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals).
-
-WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).
-
-ows re-sequencing of complete genomes of any given organism with high resolution and high accuracy.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Resequencing</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Whole_genome_sequencing</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Amplicon panels</oboInOwl:hasNarrowSynonym>
