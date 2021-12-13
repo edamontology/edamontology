@@ -1,7 +1,7 @@
 name: ROBOT
 
 on:
-  [workflow_dispatch]
+   [push, pull_request, workflow_dispatch]
 
 jobs:
   
