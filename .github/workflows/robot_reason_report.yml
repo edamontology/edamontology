@@ -29,6 +29,7 @@ jobs:
         robot report --input ../../EDAM_dev.owl --output report_profile.tsv --profile report_queries.txt
 
     - name: Print report output
+      if: always()
       run: |
         more edamverify/report_profile.tsv
 
