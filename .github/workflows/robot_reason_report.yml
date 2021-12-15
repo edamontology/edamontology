@@ -23,10 +23,12 @@ jobs:
         robot reason --reasoner ELK   --input EDAM_dev.owl -v 
 
     - name: run report 
-      run: |
+      if: always()
+       run: |
         cd edamverify/robot/
         export PATH=:/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot report --input ../../EDAM_dev.owl --output report_profile.tsv --profile report_queries.txt
+        more edamverify/robot/report_profile.tsv
 
     - name: Print report output
       if: always()
