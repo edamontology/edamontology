@@ -31,7 +31,7 @@ jobs:
     - name: Print report output
       if: always()
       run: |
-        more edamverify/report_profile.tsv
+        more edamverify/robot/report_profile.tsv
 
 
     - name: Archive Robot report tests
