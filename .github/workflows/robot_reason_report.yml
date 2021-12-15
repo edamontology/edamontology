@@ -1,7 +1,7 @@
 name: ROBOT
 
 on:
-   [push, pull_request, workflow_dispatch]
+  [push, pull_request, workflow_dispatch]
 
 jobs:
   
@@ -27,6 +27,7 @@ jobs:
         cd edamverify/robot/
         export PATH=:/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot report --input ../../EDAM_dev.owl --output report_profile.tsv --profile report_queries.txt
+        more report_profile.tsv
 
     - name: Archive Robot report tests
       if: always()
