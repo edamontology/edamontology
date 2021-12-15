@@ -24,7 +24,7 @@ jobs:
 
     - name: run report 
       if: always()
-       run: |
+      run: |
         cd edamverify/robot/
         export PATH=:/home/runner/work/edamontology/edamontology/edamverify/robot:$PATH
         robot report --input ../../EDAM_dev.owl --output report_profile.tsv --profile report_queries.txt
