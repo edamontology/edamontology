@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4031</next_id>
+        <next_id>4032</next_id>
         <oboOther:date>28.11.2021 14:24 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
@@ -37442,6 +37442,33 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_XXXX -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_XXXX">
+        <created_in>1.26</created_in>
+        <rdfs:label>mzTab-M</rdfs:label>
+        <file_extension>mztab</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>A flexible tab-delimited reporting data standard file format for sharing quantitative mass spectrometry metabolomics/lipodomics results. It contains the ability to represent “intermediate” or supporting data, including the evidence trail for identifications from software (scores or statistics), as well as the quantification values derived directly from MS: i.e., prior to any adduct grouping or summarization steps. It is an expansion/improvement of mzTab.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3681"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2536"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The exact version is mzTab-M 2.0. A reference implementation in JAVA is available at “https://github.com/lifs-tools/jmzTab-m”. </rdfs:comment>
+        <documentation rdf:resource="https://github.com/HUPO-PSI/mzTab/blob/master/specification_document-releases/2_0-Metabolomics-Release/mzTab_format_specification_2_0-M_release.adoc"/>
+        <example rdf:resource=" https://github.com/HUPO-PSI/mzTab/wiki/Examples"/>
+        <example rdf:resource=" https://apps.lifs.isas.de/mztabvalidator/"/>
+        <citation rdf:resource="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310"/>
+        <organisation rdf:resource="https://www.hupo.org/"/>
     </owl:Class>
 
 
