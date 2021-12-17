@@ -52210,7 +52210,7 @@
 		<rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3365"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2269"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
@@ -52268,6 +52268,8 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_4033">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3664"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2426"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
