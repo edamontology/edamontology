@@ -13,8 +13,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4022</next_id>
-        <oboOther:date>07.10.2021 13:31 UTC</oboOther:date>
+        <next_id>4032</next_id>
+		<oboOther:date>21.12.2021 10:18 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60451,7 +60451,7 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <oboInOwl:hasExactSynonym>Epistatic interactions</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <oboInOwl:hasDefinition>Epistasis is the phenomenon in which the expression of one gene interferes with (e.g. masks) the expression of another gene.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Epistasis can be defined as the ability of the genotype at one locus to supersede the phenotypic effect of a mutation at another locus. This interaction between genes can occur at different level: gene expression, protein levels, etc...</oboInOwl:hasDefinition>
         <rdfs:label>Epistasis</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Epistasis"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D004843</rdfs:seeAlso>
@@ -60630,6 +60630,21 @@ ows re-sequencing of complete genomes of any given organism with high resolution
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiomics"/>
         <rdfs:seeAlso rdf:resource="http://edamontology.org/topic_3366"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4031 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4031">
+        <created_in>1.26</created_in>
+        <rdfs:label>Genomic imprinting</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gene imprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Genomic imprinting is a gene regulation mechanism by which a subset of genes are expressed from one of the two parental chromosomes only. Imprinted genes are organized in clusters, their silencing/activation of the imprinted loci involves epigenetic marks (DNA methylation, etc) and so-called imprinting control regions (ICR). It has been described in mammals, but also plants and insects.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomic_imprinting"/>
     </owl:Class>
 
 
