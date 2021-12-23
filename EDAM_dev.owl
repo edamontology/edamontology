@@ -48586,16 +48586,21 @@
     <!-- http://edamontology.org/operation_3206 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3206">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3204"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3204"/>
+        <oldParent rdf:resource="http://edamontology.org/operation_3918"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.1</created_in>
+        <obsolete_since>1.26</obsolete_since>
         <oboInOwl:hasDefinition>Measure the overall level of methyl cytosines in a genome from analysis of experimental data, typically from chromatographic methods and methyl accepting capacity assay.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome methylation analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Global methylation analysis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Methylation level analysis (global)</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Whole genome methylation analysis</rdfs:label>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_4031"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3204"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/operation_3918"/>
     </owl:Class>
     
 
@@ -60781,20 +60786,37 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
     </owl:Class>
 
-	    <!-- http://edamontology.org/topic_4030 -->
-	
-	<owl:Class rdf:about="http://edamontology.org/topic_4030">
+    <!-- http://edamontology.org/topic_4030 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4030">
         <created_in>1.26</created_in>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3292"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <rdfs:label>Microfluidics</rdfs:label>
-		<oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microfluidics"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4031 -->
+
+        <owl:Class rdf:about="http://edamontology.org/topic_4031">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3173"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Measure the overall level of methylated cytosines in a genome from analysis of experimental data, typically from chromatographic methods and methyl accepting capacity assay.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Genome methylation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Global methylation analysis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Methylation level analysis (global)</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topic"/>
+        <rdfs:label>Whole genome methylation analysis</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
