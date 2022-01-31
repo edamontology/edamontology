@@ -21044,8 +21044,8 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <documentation rdf:resource="https://doi.org/10.1016/S0008-6215(01)00230-0"/>
-        <rdfs:label>LinucsID</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/S0008-6215(01)00230-0"/>
+        <rdfs:label>LINUCS ID</rdfs:label>
         <regex>[1-9][0-9]*</regex>
     </owl:Class>
     
@@ -22053,7 +22053,7 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>Accesion number of a strain of an organism variant, typically a plant, virus or bacterium.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Accession number of a strain of an organism variant, typically a plant, virus or bacterium.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -35289,7 +35289,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>eXtended Multi-FastA format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:seeAlso rdf:ressource="http://darlinglab.org/mauve/user-guide/files.html#the-alignment-file-and-the-xmfa-file-format"/>
+        <rdfs:seeAlso rdf:resource="http://darlinglab.org/mauve/user-guide/files.html#the-alignment-file-and-the-xmfa-file-format"/>
         <rdfs:label>XMFA</rdfs:label>
     </owl:Class>
     
@@ -36729,7 +36729,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Graphical Fragment Assembly (GFA) 1.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
+        <rdfs:seeAlso rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
         <rdfs:label>GFA 1</rdfs:label>
     </owl:Class>
     
@@ -36749,7 +36749,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Graphical Fragment Assembly (GFA) 2.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
+        <rdfs:seeAlso rdf:resource="https://gfa-spec.github.io/GFA-spec/GFA2.html#backward-compatibility-with-gfa-1"/>
         <rdfs:label>GFA 2</rdfs:label>
     </owl:Class>
     
