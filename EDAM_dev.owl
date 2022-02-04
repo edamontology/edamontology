@@ -1426,7 +1426,6 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2080"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>A report of sequence hits and associated data from searching a database of sequences (for example a BLAST search). This will typically include a list of scores (often with statistical evaluation) and a set of alignments for the hits.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Database hits (sequence)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sequence database hits</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sequence database search results</oboInOwl:hasExactSynonym>
@@ -51589,7 +51588,6 @@
         </rdfs:subClassOf>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>Identify or predict intrinsically disordered regions in proteins.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Protein disorder prediction</rdfs:label>
@@ -52260,7 +52258,6 @@
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The archival, processing and analysis of molecular sequences (monomer composition of polymers) including molecular sequence data resources, sequence sites, alignments, motifs and profiles.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequences</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Sequence_analysis</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Biological sequences</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Sequence databases</oboInOwl:hasNarrowSynonym>
@@ -59231,7 +59228,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0114"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Transcription of DNA into RNA and features of a messenger RNA (mRNA) molecules including precursor RNA, primary (unprocessed) transcript and fully processed molecules.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>mRNA features</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>mRNA features</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasHumanReadableId>Gene_transcripts</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Coding RNA</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>EST</oboInOwl:hasNarrowSynonym>
