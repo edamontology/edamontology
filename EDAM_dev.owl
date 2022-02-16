@@ -15,7 +15,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4037</next_id>
-        <oboOther:date>18.12.2021 15:27 UTC</oboOther:date>
+        <oboOther:date>16.02.2022 16:19 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37450,7 +37450,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.26</created_in>
-        <oboInOwl:hasDefinition>Data format derived from the standard PDB format, which enables user to incorporate parameters for charge and radius to the existing PDB data file. Note that the edited format still remains accessible to visualization using standard molecular visualization programs.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data format derived from the standard PDB format, which enables user to incorporate parameters for charge and radius to the existing PDB data file.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PQR</rdfs:label>
@@ -37462,7 +37462,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.26</created_in>
-        <oboInOwl:hasDefinition>Data format used in AutoDock 4 for storing atomic coordinates, partial atomic charges and AutoDock atom types for both receptors and ligands. Note that the Gasteiger PEOE partial charges and united-atom representation is additionally required. When consider a flexible ligand, one uses an idea of torsion tree, including one root and zero or more branches. ROOT record then corresponds to the rigid part of a molecule. Record ENDROOT defines the end of the rigid-atoms section and thus perform basis for possible BRANCHES. Each branch correlates with any rotatable bond. The internal structure of ROOT and BRANCHES resembles traditional PDB file format (as includes ATOM and HETATM records).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data format used in AutoDock 4 for storing atomic coordinates, partial atomic charges and AutoDock atom types for both receptors and ligands.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PDBQT</rdfs:label>
