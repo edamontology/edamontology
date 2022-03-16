@@ -6066,7 +6066,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
-        <regex>o^GDS[0-9]+</regex>
+        <regex>[GDS|GPL|GSE|GSM][0-9]+</regex>
         <oboInOwl:hasDefinition>Accession number of an entry from the GEO database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -6164,6 +6164,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <rdfs:label>OMIM ID</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Online_Mendelian_Inheritance_in_Man"/>
     </owl:Class>
     
 
@@ -25119,7 +25120,7 @@
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://orcid.org/"/>
         <documentation rdf:resource="https://registry.identifiers.org/registry/orcid"/>
-        <regex>^\d{4}-\d{4}-\d{4}-\d{3}(\d|X)$</regex>
+        <regex>\d{4}-\d{4}-\d{4}-\d{3}(\d|X)</regex>
         <oboInOwl:hasDefinition>Identifier of a researcher registered with the ORCID database. Used to identify author IDs.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
