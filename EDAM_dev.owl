@@ -15,7 +15,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4034</next_id>
-        <oboOther:date>28.11.2021 14:24 UTC</oboOther:date>
+        <oboOther:date>24.03.2022 09:04 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37437,7 +37437,7 @@
 
 
 
-   <!-- http://edamontology.org/format_4033 -->
+    <!-- http://edamontology.org/format_4033 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4033">
         <created_in>1.26</created_in>
@@ -37460,6 +37460,77 @@
         <example rdf:resource=" https://apps.lifs.isas.de/mztabvalidator/"/>
         <citation rdf:resource="https://pubs.acs.org/doi/10.1021/acs.analchem.8b04310"/>
         <organisation rdf:resource="https://www.hupo.org/"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4034 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4034">
+        <created_in>1.26</created_in>
+        <rdfs:label>FID</rdfs:label>
+        <file_extension>fid</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>FID (free induction decay) format is a raw data format and part of a NMR dataset. It consists of complex point pairs, real and imaginary. Please note that .fid is used as a file </oboInOwl:hasDefinition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0938"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <example rdf:resource="https://www.acornnmr.com/oldsite/sample_data_files/"/>
+        <example rdf:resource="https://nmrml.org/examples/ "/>
+        <citation rdf:resource="https://doi.org/10.1145/37499.37500"/>
+        <ontology_used rdf:resource="http://nmrML.org/nmrCV#NMR:1400119"/>
+        <ontology_used rdf:resource="https://www.ebi.ac.uk/ols/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1000767"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4035 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4035">
+        <created_in>1.26</created_in>
+        <rdfs:label>hkl</rdfs:label>
+        <file_extension>hkl</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>HKL Format Structure Factor Files is an ASCII file and defines the Miller indices h k l of the reflections data used for fitting up to a minimum d-spacing range. The format contains h, k, l , amplitude (F), sigma ((F)) data of the structure and every line represents a reflection. It is often embedded in the CIF file. </oboInOwl:hasDefinition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHMO_0000849"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/CHEMINF_000102"/>
+                <owl:someValuesFrom rdf:resource="http://semanticscience.org/resource/SIO_001100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <example rdf:resource="http://www.uoxray.uoregon.edu/tnt/manual/node101.html"/>
+        <example rdf:resource="http://xray.chem.ualberta.ca/xray/shelxl/example2.htm"/>
+        <example rdf:resource="http://profex.doebelin.org/wp-content/uploads/2016/09/Profex-BGMN-User-Manual-EN.pdf"/>
+        <organisation rdf:resource="https://www.interscape.io/index.html"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4036 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4036">
+        <created_in>1.26</created_in>
+        <rdfs:label>fcf</rdfs:label>
+        <file_extension>fcf</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>FCF (Final Draft Converter file) is an export file in plain text format with simple markup language (or lightweight markup language [LML], which is a machine-readable language limited only to ASCII punctuation and other non-letter symbols for tags, similar to HTML) created from scripts and/or documents. In chemistry, this file format is used as a structure factor file for experiments and refinement information and is embedded in the CIF format.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0883"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource=" https://manuals.finaldraft.com/articles/#!final-draft-12-user-guide-mac/export"/>
+        <example rdf:resource="https://manuals.finaldraft.com/articles/#!final-draft-12-user-guide-mac/open/q/fcf/qid/1217/qp/1"/>
+        <example rdf:resource="https://www.iucr.org/__data/assets/pdf_file/0019/22618/cifguide.pdf"/>
     </owl:Class>
 
 
