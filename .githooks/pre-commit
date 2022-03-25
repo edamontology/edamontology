@@ -5,7 +5,9 @@ echo INFO: Pre-commit hook running from $PWD
 git version
 
 # Stash any changes to the working tree that are not going to be committed
-git stash -q --keep-index
+# Solution found on website : https://www.darrenlester.com/blog/git-pre-commit-stash
+STASH_NAME=pre-commit-$(date +%s)
+git stash save -q --keep-index $STASH_NAME
 
 #count number of occurrences of owl:Class in the source file
 num_owl_class=$(grep -c 'owl:Class' EDAM_dev.owl)
@@ -21,7 +23,14 @@ else
   echo ERROR: no owl:Class found.
 fi
 
-# Unstash changes to the working tree that we had stashed
-git stash pop -q
+# Retrieve the stash entry number associated with the stash name.
+STASH_NUM=$(git stash list | grep $STASH_NAME | sed -re 's/stash@\{(.*)\}.*/\1/')
 
+#If the number exists then pop that stash entry.
+if [ -n "$STASH_NUM" ]
+    then
+    git stash pop -q stash@{$STASH_NUM}
+fi
+
+# Exit with status code depending on tests 
 exit $owl_class_found
