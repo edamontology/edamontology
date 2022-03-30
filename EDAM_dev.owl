@@ -37473,6 +37473,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>FID (free induction decay) format is a raw data format and part of a NMR dataset. It consists of complex point pairs, real and imaginary. Please note that .fid is used as a file </oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource=”http://edamontology.org/format_3824”/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
@@ -37497,6 +37498,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>HKL Format Structure Factor Files is an ASCII file and defines the Miller indices h k l of the reflections data used for fitting up to a minimum d-spacing range. The format contains h, k, l , amplitude (F), sigma ((F)) data of the structure and every line represents a reflection. It is often embedded in the CIF file. </oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource=”http://edamontology.org/format_2030”/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
@@ -37522,6 +37524,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <oboInOwl:hasDefinition>FCF (Final Draft Converter file) is an export file in plain text format with simple markup language (or lightweight markup language [LML], which is a machine-readable language limited only to ASCII punctuation and other non-letter symbols for tags, similar to HTML) created from scripts and/or documents. In chemistry, this file format is used as a structure factor file for experiments and refinement information and is embedded in the CIF format.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource=”http://edamontology.org/format_2030”/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
