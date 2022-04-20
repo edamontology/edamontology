@@ -51637,7 +51637,13 @@
     <!-- http://edamontology.org/operation_3923 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3923">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3209"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3923"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Resequencing</oboInOwl:hasExactSynonym>
