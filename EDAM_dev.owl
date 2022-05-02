@@ -514,12 +514,6 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXRef -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXRef"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -32783,8 +32777,8 @@
         <file_extension>tab</file_extension>
         <file_extension>tsv</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
-        <oboInOwl:hasDbXRef rdf:resource="http://filext.com/file-extension/TSV"/>
-        <oboInOwl:hasDbXRef rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
+        <oboInOwl:hasDbXref rdf:resource="http://filext.com/file-extension/TSV"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/text/tab-separated-values"/>
         <oboInOwl:hasDefinition>Tabular data represented as tab-separated values in a text file.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Tab-delimited</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Tab-separated values</oboInOwl:hasExactSynonym>
