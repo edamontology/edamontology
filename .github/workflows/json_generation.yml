@@ -1,0 +1,17 @@
+name: JSON GENERATION
+
+on: 
+   pull_request_target:
+    types:
+      - closed
+    paths:
+      - 'EDAM_dev.owl'
+
+   
+jobs:
+  if_merged:
+    if: github.event.pull_request_target.merged == true
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo The PR was merged
