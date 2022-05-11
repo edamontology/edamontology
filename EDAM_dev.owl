@@ -15,7 +15,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4037</next_id>
-        <oboOther:date>16.02.2022 16:19 UTC</oboOther:date>
+        <oboOther:date>11.05.2022 13:57 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -51629,28 +51629,6 @@
     
 
 
-    <!-- http://edamontology.org/operation_3923 -->
-
-    <owl:Class rdf:about="http://edamontology.org/operation_3923">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
-        <created_in>1.24</created_in>
-        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Resequencing</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasHumanReadableId>Whole_genome_sequencing</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Amplicon panels</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Amplicon sequencing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Amplicon-based sequencing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Highly targeted resequencing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>WGR</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>WGRS</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Whole genome resequencing</oboInOwl:hasNarrowSynonym>
-        <rdfs:comment>Amplicon sequencing is the ultra-deep sequencing of PCR products (amplicons), usually for the purpose of efficient genetic variant identification and characterisation in specific genomic regions.</rdfs:comment>
-        <rdfs:comment>Ultra-deep sequencing</rdfs:comment>
-        <rdfs:label>Genome resequencing</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://edamontology.org/operation_3925 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_3925">
@@ -60331,6 +60309,28 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Proteogenomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteogenomics"/>
+    </owl:Class>
+
+
+
+<!-- http://edamontology.org/topic_3923 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_3923">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.24</created_in>
+        <oboInOwl:hasDefinition>Laboratory experiment to identify the differences between a specific genome (of an individual) and a reference genome (developed typically from many thousands of individuals). WGS re-sequencing is used as golden standard to detect variations compared to a given reference genome, including small variants (SNP and InDels) as well as larger genome re-organisations (CNVs, translocations, etc.).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Resequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasHumanReadableId>Whole_genome_sequencing</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasNarrowSynonym>Amplicon panels</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Amplicon sequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Amplicon-based sequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Highly targeted resequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>WGR</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>WGRS</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Whole genome resequencing</oboInOwl:hasNarrowSynonym>
+        <rdfs:comment>Amplicon sequencing is the ultra-deep sequencing of PCR products (amplicons), usually for the purpose of efficient genetic variant identification and characterisation in specific genomic regions.</rdfs:comment>
+        <rdfs:comment>Ultra-deep sequencing</rdfs:comment>
+        <rdfs:label>Genome resequencing</rdfs:label>
     </owl:Class>
     
 
