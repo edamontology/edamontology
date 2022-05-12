@@ -14,7 +14,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4028</next_id>
-        <oboOther:date>04.11.2021 10:33 UTC</oboOther:date>
+        <oboOther:date>12.05.2022 14:14 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -14518,7 +14518,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_2101">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2118"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Authentication data usually used to logg into an account in order to use a software or consult a website/data base.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Authentication data usually used to log in into an account on an information system such as a web application or a database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -14798,7 +14798,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0976"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>An identifier of a software end-user, a website or a data base (typically a person or an entity).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An identifier of a software end-user on a website or a database (typically a person or an entity).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
@@ -30226,7 +30226,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>XML format for EMBL entries.</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://ftp.ebi.ac.uk/pub/databases/ena/doc/xsd/sra_1_5/ENA.embl.xsd"/>
-        <seeAlso>https://fairsharing.org/bsg-s001452/</seeAlso>
+        <rdfs:seeAlso>https://fairsharing.org/bsg-s001452/</rdfs:seeAlso>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <is_deprecation_candidate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_deprecation_candidate>
@@ -30242,7 +30242,7 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Specific XML format for EMBL entries (only uses certain sections).</oboInOwl:hasDefinition>
         <documentation rdf:resource="http://ftp.ebi.ac.uk/pub/databases/ena/doc/xsd/sra_1_5/ENA.embl.xsd"/>
-        <seeAlso>https://fairsharing.org/bsg-s001452/</seeAlso>
+        <rdfs:seeAlso>https://fairsharing.org/bsg-s001452/</rdfs:seeAlso>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <is_deprecation_candidate rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</is_deprecation_candidate>
@@ -35284,8 +35284,7 @@ experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>1.20</created_in>
         <documentation rdf:resource="http://darlinglab.org/mauve/user-guide/files.html"/>
-        <oboInOwl:hasDefinition>XMFA format stands for eXtended Multi-FastA format and is used to store collinear sub-alignments that constitutes a single genome alignment.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>alignment format</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDefinition>XMFA format stands for eXtended Multi-FastA format and is used to store collinear sub-alignments that constitute a single genome alignment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>eXtended Multi-FastA format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
