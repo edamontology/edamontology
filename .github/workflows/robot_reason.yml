@@ -15,7 +15,7 @@ jobs:
 
     - name: Set up 
       run: |
-        git clone git@github.com:edamontology/edam-validation.git
+        git clone https://github.com/edamontology/edam-validation.git
 
     - name: run reason
       run: |
