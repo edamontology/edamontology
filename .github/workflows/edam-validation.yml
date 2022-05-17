@@ -5,10 +5,10 @@ on: [push, workflow_dispatch]
 jobs:
   
   edamci:
-    uses: LucieLamothe/edamontology/.github/workflows/edamci.yml@workflows_edam-validation
+    uses: edamontology/edamontology/.github/workflows/edamci.yml@main
 
   report:
-    uses: LucieLamothe/edamontology/.github/workflows/robot_report.yml@workflows_edam-validation
+    uses: edamontology/edamontology/.github/workflows/robot_report.yml@main
 
   reason:
-    uses: LucieLamothe/edamontology/.github/workflows/robot_reason.yml@workflows_edam-validation
+    uses: edamontology/edamontology/.github/workflows/robot_reason.yml@main
