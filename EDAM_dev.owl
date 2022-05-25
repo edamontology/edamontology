@@ -52535,7 +52535,7 @@
     <!-- http://edamontology.org/topic_0092 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0092">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>Computer graphics</oboInOwl:hasBroadSynonym>
@@ -52545,7 +52545,7 @@
         <oboInOwl:hasHumanReadableId>Data_visualisation</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Data visualisation</rdfs:label>
+        <rdfs:label>Scientific visualisation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_visualization"/>
     </owl:Class>
     
@@ -53840,7 +53840,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_0218">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3068"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>The processing and analysis of natural language, such as scientific literature in English, in order to extract data and information, or to enable human-computer interaction.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NLP</oboInOwl:hasExactSynonym>
@@ -57562,9 +57562,6 @@
         <oboInOwl:hasNarrowSynonym>Biomathematics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Mathematical biology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Theoretical biology</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes the modeling and treatment of biological processes and systems in mathematical terms (theoretical biology).</rdfs:comment>
         <rdfs:label>Computational biology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_biology"/>
@@ -57652,7 +57649,12 @@
     <!-- http://edamontology.org/topic_3316 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3316">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <obsolete_since>1.26</obsolete_since>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0605"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <created_in>1.3</created_in>
         <oboInOwl:hasDbXref>VT 1.2 Computer sciences</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 1.2.99 Other</oboInOwl:hasDbXref>
@@ -57662,9 +57664,6 @@
         <oboInOwl:hasNarrowSynonym>HPC</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>High performance computing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>High-performance computing</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Computer science</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_science"/>
     </owl:Class>
@@ -57802,7 +57801,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_3332">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.3</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
@@ -58198,7 +58197,7 @@
     <!-- http://edamontology.org/topic_3372 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3372">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.4</created_in>
         <oboInOwl:hasDbXref>1.2.12 Programming languages</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Software engineering</oboInOwl:hasDbXref>
@@ -59189,7 +59188,7 @@
     <!-- http://edamontology.org/topic_3473 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3473">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.7</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasBroadSynonym>KDD</oboInOwl:hasBroadSynonym>
@@ -59209,7 +59208,7 @@
     <!-- http://edamontology.org/topic_3474 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3474">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3316"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasBroadSynonym>Artificial Intelligence</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.2.2 Artificial Intelligence (expert systems, machine learning, robotics)</oboInOwl:hasDbXref>
