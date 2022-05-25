@@ -55572,6 +55572,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_2258">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The application of information technology to chemistry in biological research environment.</oboInOwl:hasDefinition>
@@ -57800,16 +57801,18 @@
     <!-- http://edamontology.org/topic_3332 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3332">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3314"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_3314"/>
+        <oldParent rdf:resource="http://edamontology.org/topic_0605"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+        <obsolete_since>1.26</obsolete_since>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_2258"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <created_in>1.3</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 1.7.4 Computational chemistry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Topic concerning the development and application of theory, analytical methods, mathematical models and computational simulation of chemical systems.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Computational_chemistry</oboInOwl:hasHumanReadableId>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Computational chemistry</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computational_chemistry"/>
     </owl:Class>
