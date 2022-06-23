@@ -1,0 +1,14 @@
+name: EDAM-VALIDATION 
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  
+  edamci:
+    uses: edamontology/edamontology/.github/workflows/edamci.yml@main
+
+  report:
+    uses: edamontology/edamontology/.github/workflows/robot_report.yml@main
+
+  reason:
+    uses: edamontology/edamontology/.github/workflows/robot_reason.yml@main
