@@ -15,7 +15,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4037</next_id>
-        <oboOther:date>12.05.2022 14:14 UTC</oboOther:date>
+        <oboOther:date>31.05.2022 09:15 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37394,7 +37394,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/format_4035 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4035">
@@ -37405,9 +37407,12 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PQR</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
     </owl:Class>
+
+
 	
-		<!-- http://edamontology.org/format_4036 -->
+	<!-- http://edamontology.org/format_4036 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4036">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
@@ -37416,10 +37421,13 @@
         <oboInOwl:hasDefinition>Data format used in AutoDock 4 for storing atomic coordinates, partial atomic charges and AutoDock atom types for both receptors and ligands.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/2.0.0-dev0/formats/reference/pdbqt.html#pdbqt-specification"/>
         <rdfs:label>PDBQT</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
-
+	
+	
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -37483,7 +37491,7 @@
     </owl:Axiom>
     
 
-
+	
     <!-- http://edamontology.org/operation_0224 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0224">
@@ -52105,7 +52113,9 @@
         <rdfs:comment>There are two broad categories of small molecule design techniques when applied to the design of drugs: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
         <rdfs:label>Small molecule design</rdfs:label>
     </owl:Class>
-    
+   
+
+
 	<!-- http://edamontology.org/operation_4031 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4031">
@@ -52150,6 +52160,8 @@
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Power_of_a_test"/>
     </owl:Class>
 
+
+
 	<!-- http://edamontology.org/operation_4032 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4032">
@@ -52190,7 +52202,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>DNA modification prediction</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/operation_4033 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4033">
@@ -52221,7 +52235,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Disease transmission analysis</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/operation_4034 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4034">
@@ -52253,8 +52269,9 @@
         <rdfs:label>Multiple testing correction</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
     </owl:Class>
-	
-	
+
+
+
     <!-- http://edamontology.org/topic_0003 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0003">
