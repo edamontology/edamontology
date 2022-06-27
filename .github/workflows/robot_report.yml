@@ -1,0 +1,39 @@
+name: ROBOT report
+
+on:
+  [workflow_dispatch, workflow_call]
+
+jobs:
+  
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      
+    - uses: actions/checkout@v2
+
+    - name: Set up 
+      run: |
+        git clone https://github.com/edamontology/edam-validation.git
+
+    - name: run report 
+      if: always()
+      run: |
+        cd edam-validation/robot/
+        export PATH=:/home/runner/work/edamontology/edamontology/edam-validation/robot:$PATH
+        java -jar robot.jar report --input ../../EDAM_dev.owl --output report_profile.tsv --profile report_queries.txt
+        more report_profile.tsv
+
+    - name: Print report output
+      if: always()
+      run: |
+        more edam-validation/robot/report_profile.tsv
+
+
+    - name: Archive Robot report tests
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: robot_report_profile
+        path: edam-validation/robot/report_profile.tsv

@@ -37394,7 +37394,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/format_4035 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4035">
@@ -37405,9 +37407,12 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PQR</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
     </owl:Class>
+
+
 	
-		<!-- http://edamontology.org/format_4036 -->
+	<!-- http://edamontology.org/format_4036 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4036">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
@@ -37416,10 +37421,13 @@
         <oboInOwl:hasDefinition>Data format used in AutoDock 4 for storing atomic coordinates, partial atomic charges and AutoDock atom types for both receptors and ligands.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/2.0.0-dev0/formats/reference/pdbqt.html#pdbqt-specification"/>
         <rdfs:label>PDBQT</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
-
+	
+	
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -37483,7 +37491,7 @@
     </owl:Axiom>
     
 
-
+	
     <!-- http://edamontology.org/operation_0224 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0224">
@@ -51523,7 +51531,6 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3903">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
         <created_in>1.22</created_in>
-        <edam:edam></edam:edam>
         <oboInOwl:hasDefinition>Predict or detect DNA-binding sites in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site detection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site prediction</oboInOwl:hasExactSynonym>
@@ -52106,7 +52113,7 @@
         <rdfs:comment>There are two broad categories of small molecule design techniques when applied to the design of drugs: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
         <rdfs:label>Small molecule design</rdfs:label>
     </owl:Class>
-
+   
 
 
 	<!-- http://edamontology.org/operation_4031 -->
@@ -52224,8 +52231,6 @@
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <oboInOwl:hasDefinition>The analysis and simulation of disease transmission using, for example, statistical methods such as the SIR-model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Disease transmission analysis</rdfs:label>
@@ -52264,9 +52269,9 @@
         <rdfs:label>Multiple testing correction</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
     </owl:Class>
-	
 
-    
+
+
     <!-- http://edamontology.org/topic_0003 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0003">
@@ -60039,7 +60044,6 @@
         <oboInOwl:hasDefinition>Experimental techniques to purify a protein-DNA crosslinked complex. Usually sequencing follows e.g. in the techniques ChIP-chip, ChIP-seq and MeDIP-seq.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Chromatin immunoprecipitation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Immunoprecipitation_experiment</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Immunoprecipitation experiment</rdfs:label>
@@ -60222,7 +60226,6 @@
         <oboInOwl:hasBroadSynonym>Agronomy</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Multidisciplinary study, research and development within the field of agriculture.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Agricultural_science</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Agricultural biotechnology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Agricultural economics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Animal breeding</oboInOwl:hasNarrowSynonym>

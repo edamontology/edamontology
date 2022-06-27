@@ -24,6 +24,7 @@ The latest _stable_ version is always downloable from http://edamontology.org/ED
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/main/EDAMrelations.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology?ref=badge_shield)
 
 
 ## Documentation
@@ -52,3 +53,7 @@ Data collected will include number of contributors, number of PRs, time taken to
 
 For more information, please visit
 [our informational page](https://sustainable-open-science-and-software.github.io/) or download our [participant information sheet](https://sustainable-open-science-and-software.github.io/assets/PIS_sustainable_software.pdf).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology?ref=badge_large)
