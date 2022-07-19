@@ -1,4 +1,4 @@
-name: EDAMCI
+name: EDAM-CUSTOM
 
 on: [workflow_dispatch, workflow_call]
 
@@ -15,22 +15,22 @@ jobs:
     - name: Install requirements
       run: |
         git clone https://github.com/edamontology/edam-validation.git
-        cd edam-validation/edamci/
+        cd edam-validation/edam-custom/
         pip install -r requirements.txt
 
     - name: run 
       run: |
-        cd edam-validation/edamci/
-        EDAM_PATH=../../EDAM_dev.owl python3 edamci.py -e -E  # run only essential and error tests
+        cd edam-validation/edam-custom/
+        EDAM_PATH=../../EDAM_dev.owl python3 edam-custom.py -e -E  # run only essential and error tests
      
     # - name: Print output
     #   if: always()
     #   run: |
-    #     cat output_edamci.tsv 
+    #     cat output_edam-custom.tsv 
 
     - name: Archive tests output
       if: always()
       uses: actions/upload-artifact@v2
       with:
-        name: output_edamci
-        path: edam-validation/edamci/output_edamci.tsv
+        name: output_edam-custom
+        path: edam-validation/edam-custom/output_edam-custom.tsv

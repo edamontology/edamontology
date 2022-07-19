@@ -4,8 +4,8 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   
-  edamci:
-    uses: edamontology/edamontology/.github/workflows/edamci.yml@main
+  edam-custom:
+    uses: edamontology/edamontology/.github/workflows/edam-custom.yml@main
 
   report:
     uses: edamontology/edamontology/.github/workflows/robot_report.yml@main
