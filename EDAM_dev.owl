@@ -5,6 +5,7 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
@@ -15,7 +16,7 @@
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4037</next_id>
-        <oboOther:date>12.05.2022 14:14 UTC</oboOther:date>
+        <oboOther:date>13.07.2022 14:26 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -613,8 +614,8 @@
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) &apos;Data&apos;, or an input, output, input or output argument of an &apos;Operation&apos;. Object B can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. In EDAM, &apos;has_format&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_format_of&apos;.</rdfs:comment>
         <rdfs:label>has format</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000298&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality&quot;</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000298"/>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality"/>
     </owl:ObjectProperty>
     
 
@@ -635,9 +636,9 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is (or is in a role of) a function, or an entity outside of an ontology that is (or is in a role of) a function specification. In the scope of EDAM, &apos;has_function&apos; serves only for relating annotated entities outside of EDAM with &apos;Operation&apos; concepts.</rdfs:comment>
         <rdfs:label>has function</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000306&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/has_function</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality&quot;</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/has_function"/>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_function"/>
@@ -691,8 +692,8 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_input&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_input&apos; &apos;Data&apos;). The inverse, &apos;is_input_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has input</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000293&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/has_input</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/has_input"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_input"/>
@@ -726,8 +727,8 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_output&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_output&apos; &apos;Data&apos;). The inverse, &apos;is_output_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has output</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000299&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/has_output</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/has_output"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_output"/>
@@ -767,10 +768,10 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. In EDAM, only &apos;has_topic&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; or &apos;Data&apos; &apos;has_topic&apos; &apos;Topic&apos;). The inverse, &apos;is_topic_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has topic</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000136&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000298&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://annotation-ontology.googlecode.com/svn/trunk/annotation-core.owl#hasTopic</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#has-quality</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000298"/>
+        <skos:exactMatch rdf:resource="http://annotation-ontology.googlecode.com/svn/trunk/annotation-core.owl#hasTopic"/>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/has_topic"/>
@@ -797,7 +798,7 @@
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. Object B can be any concept or entity outside of an ontology that is (or is in a role of) &apos;Data&apos;, or an input, output, input or output argument of an &apos;Operation&apos;. In EDAM, only &apos;is_format_of&apos; is explicitly defined between EDAM concepts (&apos;Format&apos; &apos;is_format_of&apos; &apos;Data&apos;). The inverse, &apos;has_format&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>is format of</rdfs:label>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_format_of"/>
@@ -824,8 +825,8 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is (or is in a role of) a function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) a function specification. Object B can be any concept or entity. Within EDAM itself, &apos;is_function_of&apos; is not used.</rdfs:comment>
         <rdfs:label>is function of</rdfs:label>
-        <rdfs:seeAlso>http://wsio.org/is_function_of</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="http://wsio.org/is_function_of"/>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_function_of"/>
@@ -883,8 +884,8 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_input_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_input&apos;.</rdfs:comment>
         <rdfs:label>is input of</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000295&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/is_input_of</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000295"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/is_input_of"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_input_of"/>
@@ -917,8 +918,8 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_output_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_output&apos;.</rdfs:comment>
         <rdfs:label>is output of</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/OBI_0000312&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/is_output_of</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/is_output_of"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_output_of"/>
@@ -958,7 +959,7 @@
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, &apos;is_topic_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_topic&apos;.</rdfs:comment>
         <rdfs:label>is topic of</rdfs:label>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#inherent-in</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in"/>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/is_topic_of"/>
@@ -1018,14 +1019,14 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Data</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000027&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000030&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#DigitalEntity</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000069</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000088</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/data_002</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+        <skos:narrowMatch rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <skos:closeMatch rdf:resource="http://purl.org/biotop/biotop.owl#DigitalEntity"/>
+        <skos:closeMatch rdf:resource="http://semanticscience.org/resource/SIO_000069"/>
+        <skos:relatedMatch rdf:resource="http://semanticscience.org/resource/SIO_000088"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/data_002"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Perpetuant"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0006"/>
@@ -1183,15 +1184,15 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
         <rdfs:label>Identifier</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/identifier&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000115</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/data_005</rdfs:seeAlso>
+        <skos:narrowMatch rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <skos:exactMatch rdf:resource="http://semanticscience.org/resource/SIO_000115"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/data_005"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0842"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
-        <rdfs:comment>Almost exact but limited to identifying resources.</rdfs:comment>
+        <rdfs:comment>Almost exact but limited to identifying resources, and being unambiguous.</rdfs:comment>
     </owl:Axiom>
     
 
@@ -27837,26 +27838,26 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>The main focus in EDAM lies on formats as means of structuring data exchanged between different tools or resources. The serialisation, compression, or encoding of concrete data formats/models is not in scope of EDAM. Format &apos;is format of&apos; Data.</rdfs:comment>
         <rdfs:label>Format</rdfs:label>
-        <rdfs:seeAlso>&quot;http://purl.obolibrary.org/obo/IAO_0000098&quot;</rdfs:seeAlso>
-        <rdfs:seeAlso>&quot;http://purl.org/dc/elements/1.1/format&quot;</rdfs:seeAlso>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/IAO_0000098"/>
+        <skos:broadMatch rdf:resource="http://purl.org/dc/elements/1.1/format"/>
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/File_format"/>
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/List_of_file_formats"/>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#MachineLanguage</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000612</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000618</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/compression_004</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure</rdfs:seeAlso>
+        <skos:relatedMatch rdf:resource="http://purl.org/biotop/biotop.owl#MachineLanguage"/>
+        <skos:broadMatch rdf:resource="http://purl.org/biotop/biotop.owl#Quality"/>
+        <skos:broadMatch rdf:resource="http://semanticscience.org/resource/SIO_000612"/>
+        <skos:relatedMatch rdf:resource="http://semanticscience.org/resource/SIO_000618"/>
+        <skos:relatedMatch rdf:resource="http://wsio.org/compression_004"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <skos:relatedMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Perpetuant"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>Data model</owl:annotatedTarget>
-        <rdfs:comment>A defined data format has its implicit or explicit data model, and EDAM does not distinguish the two. Some data models however do not have any standard way of serialisation into an exchange format, and those are thus not considered formats in EDAM. (Remark: even broader - or closely related - term to &apos;Data model&apos; would be an &apos;Information model&apos;.)</rdfs:comment>
+        <rdfs:comment>A defined data format has its implicit or explicit data model, and EDAM does not distinguish the two. Some data models, however, do not have any standard way of serialisation into an exchange format, and those are thus not considered formats in EDAM. (Remark: even broader - or closely related - term to &apos;Data model&apos; would be an &apos;Information model&apos;.)</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/format_1915"/>
@@ -37394,7 +37395,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioSimulators standard for command-line interfaces for biosimulation tools</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/format_4035 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4035">
@@ -37405,9 +37408,12 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PQR</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
     </owl:Class>
+
+
 	
-		<!-- http://edamontology.org/format_4036 -->
+	<!-- http://edamontology.org/format_4036 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4036">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
@@ -37416,10 +37422,13 @@
         <oboInOwl:hasDefinition>Data format used in AutoDock 4 for storing atomic coordinates, partial atomic charges and AutoDock atom types for both receptors and ligands.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/2.0.0-dev0/formats/reference/pdbqt.html#pdbqt-specification"/>
         <rdfs:label>PDBQT</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
-
+	
+	
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -37447,21 +37456,21 @@
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(computer_science)"/>
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(mathematics)"/>
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Subroutine"/>
-        <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Function</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000017</rdfs:seeAlso>
-        <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000649</rdfs:seeAlso>
-        <rdfs:seeAlso>http://wsio.org/operation_001</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ebi.ac.uk/swo/SWO_0000003</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Function</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/span#Process</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#process</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Function</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Process</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method"/>
+        <skos:broadMatch rdf:resource="http://purl.org/biotop/biotop.owl#Function"/>
+        <skos:broadMatch rdf:resource="http://semanticscience.org/resource/SIO_000017"/>
+        <skos:closeMatch rdf:resource="http://semanticscience.org/resource/SIO_000649"/>
+        <skos:exactMatch rdf:resource="http://wsio.org/operation_001"/>
+        <skos:closeMatch rdf:resource="http://www.ebi.ac.uk/swo/SWO_0000003"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <skos:relatedMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process"/>
+        <skos:relatedMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Function"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Perpetuant"/>
+        <skos:relatedMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Process"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/operation_0004"/>
@@ -37483,7 +37492,7 @@
     </owl:Axiom>
     
 
-
+	
     <!-- http://edamontology.org/operation_0224 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0224">
@@ -51523,7 +51532,6 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3903">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0420"/>
         <created_in>1.22</created_in>
-        <edam:edam></edam:edam>
         <oboInOwl:hasDefinition>Predict or detect DNA-binding sites in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site detection</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Protein-DNA binding site prediction</oboInOwl:hasExactSynonym>
@@ -52106,7 +52114,9 @@
         <rdfs:comment>There are two broad categories of small molecule design techniques when applied to the design of drugs: ligand-based drug design (e.g. ligand similarity) and structure-based drug design (ligand docking) methods. Ligand similarity methods exploit structural similarities to known active ligands, whereas ligand docking methods use the 3D structure of a target protein to predict the binding modes and affinities of ligands to it.</rdfs:comment>
         <rdfs:label>Small molecule design</rdfs:label>
     </owl:Class>
-    
+   
+
+
 	<!-- http://edamontology.org/operation_4031 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4031">
@@ -52151,6 +52161,8 @@
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Power_of_a_test"/>
     </owl:Class>
 
+
+
 	<!-- http://edamontology.org/operation_4032 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4032">
@@ -52191,7 +52203,9 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>DNA modification prediction</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/operation_4033 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4033">
@@ -52218,13 +52232,13 @@
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <oboInOwl:hasDefinition>The analysis and simulation of disease transmission using, for example, statistical methods such as the SIR-model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym></oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Disease transmission analysis</rdfs:label>
     </owl:Class>
-	
+
+
+
 	<!-- http://edamontology.org/operation_4034 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4034">
@@ -52256,8 +52270,9 @@
         <rdfs:label>Multiple testing correction</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
     </owl:Class>
-	
-	
+
+
+
     <!-- http://edamontology.org/topic_0003 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_0003">
@@ -52269,14 +52284,14 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Topic</rdfs:label>
-        <rdfs:seeAlso>http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research</rdfs:seeAlso>
-        <rdfs:seeAlso>http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method</rdfs:seeAlso>
-        <rdfs:seeAlso>http://purl.org/biotop/biotop.owl#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Continuant</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.ifomis.org/bfo/1.1/snap#Quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#quality</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Category</rdfs:seeAlso>
-        <rdfs:seeAlso>http://www.onto-med.de/ontologies/gfo.owl#Perpetuant</rdfs:seeAlso>
+        <skos:closeMatch rdf:resource="http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research"/>
+        <skos:broadMatch rdf:resource="http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method"/>
+        <skos:relatedMatch rdf:resource="http://purl.org/biotop/biotop.owl#Quality"/>
+        <skos:broadMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <skos:relatedMatch rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <skos:relatedMatch rdf:resource="http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Category"/>
+        <skos:broadMatch rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Perpetuant"/>
     </owl:Class>
     
 
@@ -60030,7 +60045,6 @@
         <oboInOwl:hasDefinition>Experimental techniques to purify a protein-DNA crosslinked complex. Usually sequencing follows e.g. in the techniques ChIP-chip, ChIP-seq and MeDIP-seq.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Chromatin immunoprecipitation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Immunoprecipitation_experiment</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Immunoprecipitation experiment</rdfs:label>
@@ -60213,7 +60227,6 @@
         <oboInOwl:hasBroadSynonym>Agronomy</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Multidisciplinary study, research and development within the field of agriculture.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Agricultural_science</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym></oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Agricultural biotechnology</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Agricultural economics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Animal breeding</oboInOwl:hasNarrowSynonym>
@@ -60925,4 +60938,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
