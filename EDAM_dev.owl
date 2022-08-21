@@ -67,7 +67,7 @@
         <created_in>1.13</created_in>
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasBroadSynonym>Publication reference</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDefinition>&apos;Citation&apos; concept property (&apos;citation&apos; metadata tag) contains a dereferenceable URI, preferrably including a DOI, pointing to a citeable publication of the given data format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>&apos;Citation&apos; concept property (&apos;citation&apos; metadata tag) contains a dereferenceable URI, preferably including a DOI, pointing to a citeable publication of the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Publication</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:label>Citation</rdfs:label>
@@ -134,7 +134,7 @@
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
         <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
-        <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferrably not all capital characters.</rdfs:comment>
+        <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -1536,7 +1536,7 @@
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Alignment of multiple molecular sequences.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Multiple sequence aligment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Multiple sequence alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>msa</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -2376,7 +2376,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.8</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:hasDefinition>stable, naturally occuring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>stable, naturally occurring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1276"/>
         <rdfs:label>DNA variation</rdfs:label>
@@ -5733,7 +5733,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <rdfs:comment>A PDB identification code which consists of 4 characters, the first of which is a digit in the range 0 - 9; the remaining 3 are alpha-numeric, and letters are upper case only. (source: https://cdn.rcsb.org/wwpdb/docs/documentation/file-format/PDB_format_1996.pdf)</rdfs:comment>
+        <rdfs:comment>A PDB identification code which consists of 4 characters, the first of which is a digit in the range 0 - 9; the remaining 3 are alphanumeric, and letters are upper case only. (source: https://cdn.rcsb.org/wwpdb/docs/documentation/file-format/PDB_format_1996.pdf)</rdfs:comment>
         <rdfs:label>PDB ID</rdfs:label>
     </owl:Class>
     
@@ -10996,7 +10996,7 @@
         <oboInOwl:hasExactSynonym>Nucleic acid report (folding model)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid report (folding)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>RNA secondary structure folding classification</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>RNA secondary structure folding probablities</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RNA secondary structure folding probabilities</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Nucleic acid folding report</rdfs:label>
@@ -13898,7 +13898,7 @@
         <oboInOwl:hasDefinition>A position in a map (for example a genetic map), either a single position (point) or a region / interval.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Locus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Map position</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Sequence co-ordinates</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Sequence coordinates</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>This includes positions in genomes based on a reference sequence. A position may be specified for any mappable object, i.e. anything that may have positional information such as a physical position in a chromosome. Data might include sequence region name, strand, coordinate system name, assembly name, start position and end position.</rdfs:comment>
@@ -24934,7 +24934,7 @@
     <owl:Class rdf:about="http://edamontology.org/data_3869">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
         <created_in>1.22</created_in>
-        <oboInOwl:hasDefinition>Data coming from molecular simulations, computer &quot;experiments&quot; on model molecules. Tipically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data coming from molecular simulations, computer &quot;experiments&quot; on model molecules. Typically formed by two separated but indivisible pieces of information: topology data (static) and trajectory data (dynamic).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:label>Simulation</rdfs:label>
@@ -25127,7 +25127,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#identifiers"/>
-        <rdfs:seeAlso rdf:ressource="https://en.wikipedia.org/wiki/ORCID"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ORCID"/>
         <rdfs:label>ORCID Identifier</rdfs:label>
     </owl:Class>    
 
@@ -30839,7 +30839,7 @@
         <example rdf:resource="http://bioxsd.org/exampleFeatureRecords.html"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml"/>
         <example rdf:resource="http://bioxsd.org/sequenceRecord.xml+json+yaml.xml"/>
-        <ontology_used>Any ontology allowed, none mandatory. Preferrably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
+        <ontology_used>Any ontology allowed, none mandatory. Preferably with URIs but URIs are not mandatory. Non-ontology terms are also allowed as the last resort in case of a lack of suitable ontology.</ontology_used>
         <repository rdf:resource="https://github.com/bioxsd/bioxsd"/>
         <rdfs:comment>&apos;BioXSD&apos; belongs to the &apos;BioXSD|GTrack&apos; ecosystem of generic formats. &apos;BioXSD in XML&apos; is the XML format based on the common, unified &apos;BioXSD data model&apos;, a.k.a. &apos;BioXSD|BioJSON|BioYAML&apos;.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:resource="http://bioxsd.org"/>
@@ -32604,7 +32604,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>1.3</created_in>
         <documentation rdf:resource="http://www.compbio.dundee.ac.uk/manuals/amps/subsubsection3_18_2_5.html#SECTION00018250000000000000"/>
-        <oboInOwl:hasDefinition>A multiple alignment in vertical format, as used in the AMPS (Alignment of Multiple Protein Sequences) pacakge.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A multiple alignment in vertical format, as used in the AMPS (Alignment of Multiple Protein Sequences) package.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Block file format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
@@ -32688,7 +32688,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>1.3</created_in>
         <documentation rdf:resource="http://sourceforge.net/projects/poamsa/files/latest/download?source=files"/>
-        <oboInOwl:hasDefinition>PO is the output format of Partial Order Alignment programm (POA) performing Multipe Sequence Alignment (MSA).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>PO is the output format of Partial Order Alignment program (POA) performing Multiple Sequence Alignment (MSA).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>PO</rdfs:label>
@@ -33107,7 +33107,7 @@
         <file_extension>mht</file_extension>
         <file_extension>mhtml</file_extension>
         <media_type rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
-        <rdfs:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons incuded in EDAM as a specialisation of &apos;HTML&apos;.</rdfs:comment>
+        <rdfs:comment>MHTML is not strictly an HTML format, it is encoded as an HTML email message (although with multipart/related instead of multipart/alternative). It, however, contains the main HTML block as its core, and thus it is for practical reasons included in EDAM as a specialisation of &apos;HTML&apos;.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:resource="http://www.iana.org/assignments/media-types/multipart/related"/>
         <oboInOwl:hasDbXref rdf:resource="https://tools.ietf.org/html/rfc2557"/>
         <oboInOwl:hasDefinition>MIME HTML format for Web pages, which can include external resources, including images, Flash animations and so on.</oboInOwl:hasDefinition>
@@ -36196,7 +36196,7 @@
         <oboInOwl:hasExactSynonym>Protein topology format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>Many different file formats exist describing structural molecular topology. Tipically, each MD package or simulation software works with their own implementation (e.g. GROMACS top, CHARMM psf, AMBER prmtop).</rdfs:comment>
+        <rdfs:comment>Many different file formats exist describing structural molecular topology. Typically, each MD package or simulation software works with their own implementation (e.g. GROMACS top, CHARMM psf, AMBER prmtop).</rdfs:comment>
         <rdfs:label>Topology format</rdfs:label>
     </owl:Class>
     
@@ -36268,7 +36268,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3884"/>
         <created_in>1.22</created_in>
         <documentation rdf:resource="http://manual.gromacs.org/documentation/2018/user-guide/file-formats.html#itp"/>
-        <oboInOwl:hasDefinition>GROMACS itp files (include topology) contain structure topology information, and are tipically included in GROMACS topology files (GROMACS top). Itp files are used to define individual (or multiple) components of a topology as a separate file. This is particularly useful if there is a molecule that is used frequently, and also reduces the size of the system topology file, splitting it in different parts.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>GROMACS itp files (include topology) contain structure topology information, and are typically included in GROMACS topology files (GROMACS top). Itp files are used to define individual (or multiple) components of a topology as a separate file. This is particularly useful if there is a molecule that is used frequently, and also reduces the size of the system topology file, splitting it in different parts.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:comment>GROMACS itp files are used also to define position restrictions on the molecule, or to define the force field parameters for a particular ligand.</rdfs:comment>
@@ -36289,7 +36289,7 @@
         </rdfs:subClassOf>
         <created_in>1.22</created_in>
         <oboInOwl:hasDefinition>Format of force field parameter files, which store the set of parameters (charges, masses, radii, bond lengths, bond dihedrals, etc.) that are essential for the proper description and simulation of a molecular system.</oboInOwl:hasDefinition>
-        <rdfs:comment>Many different file formats exist describing force field parameters. Tipically, each MD package or simulation software works with their own implementation (e.g. GROMACS itp, CHARMM rtf, AMBER off / frcmod).</rdfs:comment>
+        <rdfs:comment>Many different file formats exist describing force field parameters. Typically, each MD package or simulation software works with their own implementation (e.g. GROMACS itp, CHARMM rtf, AMBER off / frcmod).</rdfs:comment>
         <rdfs:label>FF parameter format</rdfs:label>
     </owl:Class>
     
@@ -37054,7 +37054,7 @@
         <oboInOwl:hasDefinition>Bitmap image format used for storing textures.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <rdfs:comment>Texture files can create the appearance of different surfaces and can be applied to both 2D and 3D objects. Note the file extension .tex is also used for LaTex documents which are a completely different format and they are NOT interchangable.</rdfs:comment>
+        <rdfs:comment>Texture files can create the appearance of different surfaces and can be applied to both 2D and 3D objects. Note the file extension .tex is also used for LaTex documents which are a completely different format and they are NOT interchangeable.</rdfs:comment>
         <rdfs:label>Texture file format</rdfs:label>
     </owl:Class>
     
@@ -37229,7 +37229,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>1.25</created_in>
         <file_extension>zst</file_extension>
-        <oboInOwl:hasDefinition>Format used by the Zstandard real-time compression algorith.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Format used by the Zstandard real-time compression algorithm.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Zstandard compression format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Zstandard-compressed file format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>zst</oboInOwl:hasExactSynonym>
@@ -43173,7 +43173,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0310"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such thay they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such that they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genomic assembly</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Sequence assembly (genome assembly)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Breakend assembly</oboInOwl:hasNarrowSynonym>
@@ -48454,7 +48454,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3199">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3198"/>
         <created_in>1.1</created_in>
-        <oboInOwl:hasDefinition>A varient of oligonucleotide mapping where a read is mapped to two separate locations because of possible structural variation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A variant of oligonucleotide mapping where a read is mapped to two separate locations because of possible structural variation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Split-read mapping</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -48788,7 +48788,7 @@
         <oboInOwl:hasExactSynonym>Sequence read pre-processing</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>For example process paired end reads to trim low quality ends remove short sequences, identify sequence inserts, detect chimeric reads, or remove low quality sequnces including vector, adaptor, low complexity and contaminant sequences. Sequences might come from genomic DNA library, EST libraries, SSH library and so on.</rdfs:comment>
+        <rdfs:comment>For example process paired end reads to trim low quality ends remove short sequences, identify sequence inserts, detect chimeric reads, or remove low quality sequences including vector, adaptor, low complexity and contaminant sequences. Sequences might come from genomic DNA library, EST libraries, SSH library and so on.</rdfs:comment>
         <rdfs:label>Read pre-processing</rdfs:label>
     </owl:Class>
     
@@ -49525,7 +49525,7 @@
         <created_in>1.6</created_in>
         <obsolete_since>1.12</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such thay they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The process of assembling many short DNA sequences together such that they represent the original chromosomes from which the DNA originated.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/operation_0525"/>
         <rdfs:label>Genome assembly</rdfs:label>
@@ -49919,7 +49919,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3480">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3429"/>
         <created_in>1.7</created_in>
-        <oboInOwl:hasDefinition>Generate some data from a choosen probibalistic model, possibly to evaluate algorithms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Generate some data from a chosen probibalistic model, possibly to evaluate algorithms.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Probabilistic data generation</rdfs:label>
@@ -50116,7 +50116,7 @@
         <oboInOwl:hasDefinition>A method for making numerical assessments about the maximum percent of time that a conformer of a flexible macromolecule can exist and still be compatible with the experimental data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:label>Maximum occurence analysis</rdfs:label>
+        <rdfs:label>Maximum occurrence analysis</rdfs:label>
     </owl:Class>
     
 
@@ -50173,7 +50173,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3564">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2483"/>
         <created_in>1.9</created_in>
-        <oboInOwl:hasDefinition>Identify and remove redudancy from a set of small molecule structures.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Identify and remove redundancy from a set of small molecule structures.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Chemical redundancy removal</rdfs:label>
@@ -50992,7 +50992,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3762">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3760"/>
         <created_in>1.16</created_in>
-        <oboInOwl:hasDefinition>An operation supporting the aggregation of other services (at least two) into a funtional unit, for the automation of some task.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An operation supporting the aggregation of other services (at least two) into a functional unit, for the automation of some task.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
         <rdfs:label>Service composition</rdfs:label>
@@ -52077,7 +52077,7 @@
         <oboInOwl:hasDefinition>Predict adhesins in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
-        <rdfs:comment>An adhesin is a cell-surface component that facilitate the adherence of a microorganism to a cell or surface. They are important virulence factors during establishment of infection and thus are targetted during vaccine development approaches that seek to block adhesin function and prevent adherence to host cell.</rdfs:comment>
+        <rdfs:comment>An adhesin is a cell-surface component that facilitate the adherence of a microorganism to a cell or surface. They are important virulence factors during establishment of infection and thus are targeted during vaccine development approaches that seek to block adhesin function and prevent adherence to host cell.</rdfs:comment>
         <rdfs:label>Adhesin prediction</rdfs:label>
     </owl:Class>
     
@@ -52770,7 +52770,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:comment>This includes the study of promoters, coding regions etc.</rdfs:comment>
-        <rdfs:comment>This incudes operons (operators, promoters and genes) from a bacterial genome. For example the operon leader and trailer gene, gene composition of the operon and associated information.</rdfs:comment>
+        <rdfs:comment>This includes operons (operators, promoters and genes) from a bacterial genome. For example the operon leader and trailer gene, gene composition of the operon and associated information.</rdfs:comment>
         <rdfs:label>Gene structure</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene_structure"/>
     </owl:Class>
@@ -53630,7 +53630,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
-        <oboInOwl:hasDefinition>Stable, naturally occuring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Stable, naturally occurring mutations in a nucleotide sequence including alleles, naturally occurring mutations such as single base nucleotide substitutions, deletions and insertions, RFLPs and other polymorphisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DNA variation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Genetic_variation</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Genomic variation</oboInOwl:hasNarrowSynonym>
@@ -55966,7 +55966,7 @@
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_3053"/>
-        <oboInOwl:hasDefinition>Informatics resource (typically a database) primarily focussed on genes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Informatics resource (typically a database) primarily focused on genes.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#obsolete"/>
         <rdfs:label>Gene resources</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -57776,9 +57776,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0634"/>
         <created_in>1.3</created_in>
         <oboInOwl:hasDbXref>VT 3.3.4 Infectious diseases</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The branch of medicine that deals with the prevention, diagnosis and management of transmissable disease with clinically evident illness resulting from infection with pathogenic biological agents (viruses, bacteria, fungi, protozoa, parasites and prions).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The branch of medicine that deals with the prevention, diagnosis and management of transmissible disease with clinically evident illness resulting from infection with pathogenic biological agents (viruses, bacteria, fungi, protozoa, parasites and prions).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Communicable disease</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Transmissable disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Transmissible disease</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Infectious_disease</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -58333,7 +58333,7 @@
     <owl:Class rdf:about="http://edamontology.org/topic_3378">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3377"/>
         <created_in>1.4</created_in>
-        <oboInOwl:hasDefinition>The detection, assesment, understanding and prevention of adverse effects of medicines.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The detection, assessment, understanding and prevention of adverse effects of medicines.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Pharmacovigilence</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -58599,7 +58599,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3303"/>
         <created_in>1.4</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
-        <oboInOwl:hasDefinition>An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrted whole, incoporating biochemical, physiological, and environmental interactions that sustain life.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An interdisciplinary field of study that looks at the dynamic systems of the human body as part of an integrted whole, incorporating biochemical, physiological, and environmental interactions that sustain life.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Systems_medicine</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
@@ -58673,7 +58673,7 @@
         <created_in>1.4</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDbXref>VT 3.2.1 Allergy</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>Health issues related to the immune system and their prevention, diagnosis and mangement.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Health issues related to the immune system and their prevention, diagnosis and management.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Allergy_clinical_immunology_and_immunotherapeutics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Allergy</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Clinical immunology</oboInOwl:hasNarrowSynonym>
@@ -59003,12 +59003,12 @@
         <oboInOwl:hasDbXref>VT 3.2.17 Ophthalmology</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>VT 3.2.18 Optometry</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The branch of medicine that deals with disorders of the eye, including eyelid, optic nerve/visual pathways and occular muscles.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Opthalmology</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasHumanReadableId>Ophthalmology</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Eye disoders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#events"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:label>Opthalmology</rdfs:label>
+        <rdfs:label>Ophthalmology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Ophthalmology"/>
     </owl:Class>
     
@@ -59039,7 +59039,7 @@
         <created_in>1.4</created_in>
         <oboInOwl:hasBroadSynonym>Mental health</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 3.2.23 Psychiatry</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>The branch of medicine that deals with the mangement of mental illness, emotional disturbance and abnormal behaviour.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>The branch of medicine that deals with the management of mental illness, emotional disturbance and abnormal behaviour.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Psychiatry</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Psychiatric disorders</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -59220,7 +59220,7 @@
         <created_in>1.7</created_in>
         <oboInOwl:hasBroadSynonym>Artificial Intelligence</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref>VT 1.2.2 Artificial Intelligence (expert systems, machine learning, robotics)</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>A topic concerning the application of artificial intelligence methods to algorithms, in order to create methods that can learn from data in order to generate an ouput, rather than relying on explicitly encoded information only.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A topic concerning the application of artificial intelligence methods to algorithms, in order to create methods that can learn from data in order to generate an output, rather than relying on explicitly encoded information only.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Machine_learning</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Active learning</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ensembl learning</oboInOwl:hasNarrowSynonym>
