@@ -5,17 +5,18 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   
   caseologue:
-    uses: edamontology/edam-validation/.github/workflows/caseologue_python.yml@main
-    with: 
-      edam_path: 'EDAM_dev.owl'
-      caseologue_options: '-e -E'
+    - uses: actions/checkout@v2
+    - uses: edamontology/edam-validation/.github/workflows/caseologue_python.yml@call_from_main
+      with: 
+        edam_path: 'EDAM_dev.owl'
+        caseologue_options: '-e -E'
 
   report:
-    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_report.yml@main
+    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_report.yml@call_from_main
     with: 
       edam_path: 'EDAM_dev.owl'
 
   reason:
-    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_reason.yml@main
+    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_reason.yml@call_from_main
     with: 
       edam_path: 'EDAM_dev.owl'
