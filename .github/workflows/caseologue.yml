@@ -3,20 +3,32 @@ name: caselogue
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  
-  caseologue:
-    - uses: actions/checkout@v2
-    - uses: edamontology/edam-validation/.github/workflows/caseologue_python.yml@call_from_main
-      with: 
-        edam_path: 'EDAM_dev.owl'
-        caseologue_options: '-e -E'
 
-  report:
-    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_report.yml@call_from_main
-    with: 
-      edam_path: 'EDAM_dev.owl'
+  chekout_edam: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache edam
+        uses: actions/cache@v3
+        with:
+          path: ~/EDAM_dev.owl
+          key: edam
+  
+  # caseologue:
+  #   needs: chekout_edam
+  #   uses: edamontology/caseologue/.github/workflows/caseologue_python.yml@call_from_main
+  #     with: 
+  #       edam_path: 'EDAM_dev.owl'
+  #       caseologue_options: '-e -E'
+
+  # report:
+  #   needs: chekout_edam
+  #   uses: edamontology/caseologue/.github/workflows/caseologue_robot_report.yml@call_from_main
+  #   with: 
+  #     edam_path: 'EDAM_dev.owl'
 
   reason:
-    uses: edamontology/edam-validation/.github/workflows/caseologue_robot_reason.yml@call_from_main
+    needs: chekout_edam
+    uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@cmain
     with: 
       edam_path: 'EDAM_dev.owl'
