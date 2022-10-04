@@ -4,31 +4,31 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
 
-  # chekout_edam: 
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - uses: actions/checkout@v2
-  #   - name: upload edam
-  #     uses: actions/upload-artifact@v2
-  #     with:
-  #       name: EDAM_artifacts.owl
-  #       path: EDAM_dev.owl
+  chekout_edam: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: upload edam
+      uses: actions/upload-artifact@v2
+      with:
+        name: EDAM_artifacts.owl
+        path: EDAM_dev.owl
   
   caseologue:
-    # needs: chekout_edam
+    needs: chekout_edam
     uses: edamontology/caseologue/.github/workflows/caseologue_python.yml@call_from_main
     with: 
       edam_path: '../EDAM_dev.owl'
       caseologue_options: '-e -E'
 
   report:
-    # needs: chekout_edam
+    needs: chekout_edam
     uses: edamontology/caseologue/.github/workflows/caseologue_robot_report.yml@call_from_main
     with: 
       edam_path: '../EDAM_dev.owl'
 
   reason:
-    # needs: chekout_edam
+    needs: chekout_edam
     uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
     with: 
       edam_path: '../EDAM_dev.owl'
