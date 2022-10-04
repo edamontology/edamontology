@@ -29,14 +29,6 @@ jobs:
 
   reason:
     needs: chekout_edam
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions/download-artifact@v3
-      with:
-        name: EDAM_artifacts.owl
-    - name: Display structure of downloaded files
-      run: ls -R
-    - name: run reason'
-      uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
-      with: 
-        edam_path: 'EDAM_artifacts.owl'
+    uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
+    with: 
+      edam_path: 'EDAM_artifacts.owl'
