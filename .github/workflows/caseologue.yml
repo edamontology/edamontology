@@ -16,20 +16,19 @@ jobs:
   
   caseologue:
     needs: upload_edam
-    uses: edamontology/caseologue/.github/workflows/caseologue_python.yml@call_from_main
+    uses: edamontology/caseologue/.github/workflows/caseologue_python.yml@main
     with: 
       edam_path: '../EDAM_dev.owl'
       caseologue_options: '-e -E'
 
   report:
     needs: upload_edam
-    uses: edamontology/caseologue/.github/workflows/caseologue_robot_report.yml@call_from_main
+    uses: edamontology/caseologue/.github/workflows/caseologue_robot_report.yml@main
     with: 
       edam_path: '../EDAM_dev.owl'
 
   reason:
     needs: upload_edam
-    uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
+    uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@main
     with: 
       edam_path: '../EDAM_dev.owl'
-      
