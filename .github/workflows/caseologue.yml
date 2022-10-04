@@ -6,6 +6,7 @@ jobs:
 
   chekout_edam: 
     runs-on: ubuntu-latest
+    steps:
     - uses: actions/checkout@v2
     - name: upload edam
       uses: actions/upload-artifact@v2
