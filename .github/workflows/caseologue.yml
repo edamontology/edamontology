@@ -6,13 +6,12 @@ jobs:
 
   chekout_edam: 
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Cache edam
-        uses: actions/cache@v3
-        with:
-          path: ~/EDAM_dev.owl
-          key: edam
+    - uses: actions/checkout@v2
+    - name: upload edam
+      uses: actions/upload-artifact@v2
+      with:
+        name: EDAM_artifacts.owl
+        path: EDAM_dev.owl
   
   # caseologue:
   #   needs: chekout_edam
@@ -29,6 +28,14 @@ jobs:
 
   reason:
     needs: chekout_edam
-    uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
-    with: 
-      edam_path: 'EDAM_dev.owl'
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v3
+      with:
+        name: EDAM_artifacts.owl
+    - name: Display structure of downloaded files
+      run: ls -R
+    - name: run reason'
+      uses: edamontology/caseologue/.github/workflows/caseologue_robot_reason.yml@call_from_main
+      with: 
+        edam_path: 'EDAM_artifacts.owl'
