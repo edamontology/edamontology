@@ -11,7 +11,7 @@ jobs:
     - name: upload edam
       uses: actions/upload-artifact@v2
       with:
-        name: input_ontology.owl
+        name: input_ontology
         path: EDAM_dev.owl
   
   caseologue:
