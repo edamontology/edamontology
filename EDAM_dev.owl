@@ -15,8 +15,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4037</next_id>
-        <oboOther:date>13.07.2022 14:26 UTC</oboOther:date>
+        <next_id>4038</next_id>
+        <oboOther:date>06.10.2022 09:00 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -60659,19 +60659,16 @@
     <!-- http://edamontology.org/topic_3974 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3974">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0622"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0625"/>
         <created_in>1.25</created_in>
-        <documentation rdf:resource="https://en.wikipedia.org/wiki/Epistasis"/>
-        <oboInOwl:hasDefinition>The study of the epigenetic modifications of a whole cell, tissue, organism etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Epistatic genetic interaction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Epistatic interactions</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <rdfs:comment>The study of the phenomena whereby the effects of one locus mask the allelic effects of another, such as how dominant alleles mask the effects of the recessive alleles at the same locus.</rdfs:comment>
+        <oboInOwl:hasDefinition>Epistasis can be defined as the ability of the genotype at one locus to supersede the phenotypic effect of a mutation at another locus. This interaction between genes can occur at different level: gene expression, protein levels, etc...</oboInOwl:hasDefinition>
         <rdfs:label>Epistasis</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Epistasis"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D057890</rdfs:seeAlso>
+        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D004843</rdfs:seeAlso>
     </owl:Class>
 
 
@@ -60913,6 +60910,23 @@
         <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Microfluidics"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/topic_4037 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4037">
+        <created_in>1.26</created_in>
+        <rdfs:label>Genomic imprinting</rdfs:label>
+        <oboInOwl:hasExactSynonym>Gene imprinting</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <oboInOwl:hasDefinition>Genomic imprinting is a gene regulation mechanism by which a subset of genes are expressed from one of the two parental chromosomes only. Imprinted genes are organized in clusters, their silencing/activation of the imprinted loci involves epigenetic marks (DNA methylation, etc) and so-called imprinting control regions (ICR). It has been described in mammals, but also plants and insects.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomic_imprinting"/>
+    </owl:Class>
+
+
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
