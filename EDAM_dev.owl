@@ -69,7 +69,7 @@
         <oboInOwl:hasBroadSynonym>Publication reference</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>&apos;Citation&apos; concept property (&apos;citation&apos; metadata tag) contains a dereferenceable URI, preferably including a DOI, pointing to a citeable publication of the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Publication</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Citation</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -86,7 +86,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/created_in">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>Version in which a concept was created.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Created in</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -97,7 +97,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/deprecation_comment">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>A comment explaining why the comment should be or was deprecated, including name of person commenting (jison, mkalas etc.)</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>deprecation_comment</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -109,7 +109,7 @@
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Documentation&apos; trailing modifier (qualifier, &apos;documentation&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to a page with explanation, description, documentation, or specification of the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Specification</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Documentation</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -120,7 +120,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/example">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Example&apos; concept property (&apos;example&apos; metadata tag) lists examples of valid values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:comment>Separated by bar (&apos;|&apos;). For more complex data and data formats, it can be a link to a website with examples, instead.</rdfs:comment>
         <rdfs:label>Example</rdfs:label>
     </owl:AnnotationProperty>
@@ -132,7 +132,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/file_extension">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
@@ -148,7 +148,7 @@
         <oboInOwl:hasDefinition>&apos;Information standard&apos; trailing modifier (qualifier, &apos;information_standard&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an information standard supported by the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Minimum information checklist</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Minimum information standard</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Information standard</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -159,7 +159,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/is_deprecation_candidate">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed to be deprecated.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>deprecation_candidate</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -170,7 +170,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/is_refactor_candidate">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed to be refactored.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>refactor_candidate</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -181,7 +181,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/isdebtag">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>When &apos;true&apos;, the concept has been proposed or is supported within Debian as a tag.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>isdebtag</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -193,7 +193,7 @@
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Media type&apos; trailing modifier (qualifier, &apos;media_type&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to a page specifying a media type of the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>MIME type</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Media type</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -210,7 +210,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/notRecommendedForAnnotation">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>Whether terms associated with this concept are recommended for use in annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>notRecommendedForAnnotation</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -221,7 +221,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/obsolete_since">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>Version in which a concept was made obsolete.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Obsolete since</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -232,7 +232,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/oldParent">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>EDAM concept URI of the erstwhile &quot;parent&quot; of a now deprecated concept.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Old parent</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -243,7 +243,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/oldRelated">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>EDAM concept URI of an erstwhile related concept (by has_input, has_output, has_topic, is_format_of, etc.) of a now deprecated concept.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Old related</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -254,7 +254,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/ontology_used">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Ontology used&apos; concept property (&apos;ontology_used&apos; metadata tag) of format concepts links to a domain ontology that is used inside the given data format, or contains a note about ontology use within the format.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Ontology used</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -266,7 +266,7 @@
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Organisation&apos; trailing modifier (qualifier, &apos;organisation&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to an organisation that developed, standardised, and maintains the given data format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Organization</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Organisation</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -277,7 +277,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/refactor_comment">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>A comment explaining the proposed refactoring, including name of person commenting (jison, mkalas etc.)</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>refactor_comment</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -288,7 +288,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/regex">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;Regular expression&apos; concept property (&apos;regex&apos; metadata tag) specifies the allowed values of types of identifiers (accessions). Applicable to some other types of data, too.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Regular expression</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -300,7 +300,7 @@
         <rdfs:label>Related term</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <oboInOwl:hasDefinition>&apos;Related term&apos; concept property (&apos;related_term&apos;; supposedly a synonym modifier in OBO format) states a related term - not necessarily closely semantically related - that users (also non-specialists) may use when searching.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
     </owl:AnnotationProperty>
     
 
@@ -312,7 +312,7 @@
         <oboInOwl:hasDefinition>&apos;Repository&apos; trailing modifier (qualifier, &apos;repository&apos;) of &apos;xref&apos; links of &apos;Format&apos; concepts. When &apos;true&apos;, the link is pointing to the public source-code repository where the given data format is developed or maintained.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Public repository</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Source-code repository</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>Repository</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -323,7 +323,7 @@
     <owl:AnnotationProperty rdf:about="http://edamontology.org/thematic_editor">
         <oboOther:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboOther:is_metadata_tag>
         <oboInOwl:hasDefinition>Name of thematic editor (http://biotools.readthedocs.io/en/latest/governance.html#registry-editors) responsible for this concept and its children.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset>concept_properties</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#concept_properties"/>
         <rdfs:label>thematic_editor</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -624,7 +624,7 @@
         <oboOther:transitive_over>OBO_REL:is_a</oboOther:transitive_over>
         <oboInOwl:hasDefinition>&apos;A has_format B&apos; defines for the subject A, that it has the object B as its data format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) &apos;Data&apos;, or an input, output, input or output argument of an &apos;Operation&apos;. Object B can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. In EDAM, &apos;has_format&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_format_of&apos;.</rdfs:comment>
         <rdfs:label>has format</rdfs:label>
@@ -646,7 +646,7 @@
         <oboInOwl:hasDefinition>&apos;A has_function B&apos; defines for the subject A, that it has the object B as its function.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:bearer_of</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is (or is in a role of) a function, or an entity outside of an ontology that is (or is in a role of) a function specification. In the scope of EDAM, &apos;has_function&apos; serves only for relating annotated entities outside of EDAM with &apos;Operation&apos; concepts.</rdfs:comment>
         <rdfs:label>has function</rdfs:label>
@@ -681,7 +681,7 @@
         <oboOther:transitive_over>OBO_REL:is_a</oboOther:transitive_over>
         <oboInOwl:hasDefinition>&apos;A has_identifier B&apos; defines for the subject A, that it has the object B as its identifier.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. In EDAM, &apos;has_identifier&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;is_identifier_of&apos;.</rdfs:comment>
         <rdfs:label>has identifier</rdfs:label>
@@ -702,7 +702,7 @@
         <oboInOwl:hasDefinition>&apos;A has_input B&apos; defines for the subject A, that it has the object B as a necessary or actual input or input argument.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:has_participant</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_input&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_input&apos; &apos;Data&apos;). The inverse, &apos;is_input_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has input</rdfs:label>
@@ -737,7 +737,7 @@
         <oboInOwl:hasDefinition>&apos;A has_output B&apos; defines for the subject A, that it has the object B as a necessary or actual output or output argument.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:has_participant</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. Object B can be any concept or entity. In EDAM, only &apos;has_output&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; &apos;has_output&apos; &apos;Data&apos;). The inverse, &apos;is_output_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has output</rdfs:label>
@@ -778,7 +778,7 @@
         <oboOther:transitive_over>OBO_REL:is_a</oboOther:transitive_over>
         <oboInOwl:hasDefinition>&apos;A has_topic B&apos; defines for the subject A, that it has the object B as its topic (A is in the scope of a topic B).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. In EDAM, only &apos;has_topic&apos; is explicitly defined between EDAM concepts (&apos;Operation&apos; or &apos;Data&apos; &apos;has_topic&apos; &apos;Topic&apos;). The inverse, &apos;is_topic_of&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>has topic</rdfs:label>
@@ -808,7 +808,7 @@
         <oboInOwl:hasDefinition>&apos;A is_format_of B&apos; defines for the subject A, that it is a data format of the object B.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:quality_of</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be a concept that is a &apos;Format&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Format&apos; or is in the role of a &apos;Format&apos;. Object B can be any concept or entity outside of an ontology that is (or is in a role of) &apos;Data&apos;, or an input, output, input or output argument of an &apos;Operation&apos;. In EDAM, only &apos;is_format_of&apos; is explicitly defined between EDAM concepts (&apos;Format&apos; &apos;is_format_of&apos; &apos;Data&apos;). The inverse, &apos;has_format&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>is format of</rdfs:label>
@@ -835,7 +835,7 @@
         <oboInOwl:hasNarrowSynonym>OBO_REL:function_of</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>OBO_REL:inheres_in</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be concept that is (or is in a role of) a function, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is (or is in a role of) a function specification. Object B can be any concept or entity. Within EDAM itself, &apos;is_function_of&apos; is not used.</rdfs:comment>
         <rdfs:label>is function of</rdfs:label>
@@ -874,7 +874,7 @@
         <oboOther:transitive_over>OBO_REL:is_a</oboOther:transitive_over>
         <oboInOwl:hasDefinition>&apos;A is_identifier_of B&apos; defines for the subject A, that it is an identifier of the object B.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic>false</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be a concept that is an &apos;Identifier&apos;, or an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is an &apos;Identifier&apos; or is in the role of an &apos;Identifier&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, only &apos;is_identifier_of&apos; is explicitly defined between EDAM concepts (only &apos;Identifier&apos; &apos;is_identifier_of&apos; &apos;Data&apos;). The inverse, &apos;has_identifier&apos;, is not explicitly defined.</rdfs:comment>
         <rdfs:label>is identifier of</rdfs:label>
@@ -894,7 +894,7 @@
         <oboInOwl:hasDefinition>&apos;A is_input_of B&apos; defines for the subject A, that it as a necessary or actual input or input argument of the object B.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:participates_in</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_input_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_input&apos;.</rdfs:comment>
         <rdfs:label>is input of</rdfs:label>
@@ -928,7 +928,7 @@
         <oboInOwl:hasDefinition>&apos;A is_output_of B&apos; defines for the subject A, that it as a necessary or actual output or output argument of the object B.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:participates_in</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can be any concept or entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated). Object B can either be a concept that is or has an &apos;Operation&apos; function, or an entity outside of an ontology that has an &apos;Operation&apos; function or is an &apos;Operation&apos;. In EDAM, &apos;is_output_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_output&apos;.</rdfs:comment>
         <rdfs:label>is output of</rdfs:label>
@@ -969,7 +969,7 @@
         <oboInOwl:hasDefinition>&apos;A is_topic_of B&apos; defines for the subject A, that it is a topic of the object B (a topic A is the scope of B).</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>OBO_REL:quality_of</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset>relations</oboInOwl:inSubset>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#relations"/>
         <oboInOwl:isCyclic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:isCyclic>
         <rdfs:comment>Subject A can either be a concept that is a &apos;Topic&apos;, or in unexpected cases an entity outside of an ontology (or an ontology concept in a role of an entity being semantically annotated) that is a &apos;Topic&apos; or is in the role of a &apos;Topic&apos;. Object B can be any concept or entity outside of an ontology. In EDAM, &apos;is_topic_of&apos; is not explicitly defined between EDAM concepts, only the inverse &apos;has_topic&apos;.</rdfs:comment>
         <rdfs:label>is topic of</rdfs:label>
