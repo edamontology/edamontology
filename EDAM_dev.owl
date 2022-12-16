@@ -1688,7 +1688,6 @@
         <oboInOwl:hasDbXref>Moby:myTree</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>Moby:phylogenetic_tree</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>The raw data (not just an image) from which a phylogenetic tree is directly generated or plotted, such as topology, lengths (in time or in expected amounts of variance) and a confidence interval for each length.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Phylogeny</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>A phylogenetic tree is usually constructed from a set of sequences from which an alignment (or data matrix) is calculated. See also &apos;Phylogenetic tree image&apos;.</rdfs:comment>
@@ -13898,7 +13897,6 @@
         <oboInOwl:hasDefinition>A position in a map (for example a genetic map), either a single position (point) or a region / interval.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Locus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Map position</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Sequence coordinates</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#data"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <rdfs:comment>This includes positions in genomes based on a reference sequence. A position may be specified for any mappable object, i.e. anything that may have positional information such as a physical position in a chromosome. Data might include sequence region name, strand, coordinate system name, assembly name, start position and end position.</rdfs:comment>
@@ -27043,7 +27041,6 @@
         <documentation rdf:resource="http://media.affymetrix.com/support/developer/powertools/changelog/gcos-agcc/exp.html"/>
         <oboInOwl:hasDefinition>Sequence assembly project file EXP format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Affymetrix EXP format</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>EXP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>EXP</rdfs:label>
@@ -30856,7 +30853,6 @@
         <oboInOwl:hasExactSynonym>BioXSD+XML</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD/GTrack</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>BioXSD|GTrack</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>BioYAML</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
         <rdfs:label>BioXSD (XML)</rdfs:label>
@@ -39124,7 +39120,7 @@
         <created_in>beta12orEarlier</created_in>
         <rdfs:comment>This includes sequence-to-3D-profile alignment methods, which align molecular sequence(s) to structural (3D) profile(s) or template(s) (representing a structure or structure alignment) - methods might perform one-to-one, one-to-many or many-to-many comparisons.</rdfs:comment>
         <oboInOwl:hasDefinition>Align molecular sequence to structure in 3D space (threading).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Sequence-structure alignment</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Protein sequence-structure alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Sequence-3D profile alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Sequence-to-3D-profile alignment</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
@@ -39628,7 +39624,6 @@
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>Construct a phylogenetic tree.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Phlyogenetic tree construction</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Phylogenetic reconstruction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Phylogenetic tree generation</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#operations"/>
@@ -52588,7 +52583,6 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
         <created_in>beta12orEarlier</created_in>
         <oboInOwl:hasDefinition>The archival, curation, processing and analysis of nucleic acid structural information, such as whole structures, structural features and alignments, and associated annotation.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Nucleic acid structure</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Nucleic_acid_structure_analysis</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>DNA melting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>DNA structure</oboInOwl:hasNarrowSynonym>
@@ -59177,7 +59171,6 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3382"/>
         <created_in>1.7</created_in>
         <oboInOwl:hasDefinition>Imaging in sections (sectioning), through the use of a wave-generating device (tomograph) that generates an image (a tomogram).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>CT</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Computed tomography</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>TDM</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Tomography</oboInOwl:hasHumanReadableId>
