@@ -9,14 +9,13 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:doap="http://usefulinc.com/ns/doap#"
-     xmlns:edam="http://purl.obolibrary.org/obo/edam#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4038</next_id>
-        <oboOther:date>06.10.2022 09:00 UTC</oboOther:date>
+        <next_id>4039</next_id>
+        <oboOther:date>08.03.2023 17:20 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -45,7 +44,7 @@
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
-        <edam:repository rdf:resource="https://github.com/edamontology/edamontology/"/>
+        <repository rdf:resource="https://github.com/edamontology/edamontology/"/>
     </owl:Ontology>
     
 
@@ -57148,7 +57147,8 @@
         <oboInOwl:hasBroadSynonym>Ecogenomics</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Environmental genomics</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym>Environmental omics</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym>Environmental sequencing</oboInOwl:hasBroadSynonym>
+        <related_term>Environmental sequencing</related_term>
+        <related_term>Environmental DNA (eDNA)</related_term>
         <oboInOwl:hasDefinition>The study of genetic material recovered from environmental samples, and associated environmental data.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Metagenomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Shotgun metagenomics</oboInOwl:hasNarrowSynonym>
@@ -57157,7 +57157,7 @@
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
         <rdfs:label>Metagenomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metagenomics"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D056186</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/MSH/D056186"/>
     </owl:Class>
     
 
@@ -60924,6 +60924,35 @@
         <oboInOwl:hasDefinition>Genomic imprinting is a gene regulation mechanism by which a subset of genes are expressed from one of the two parental chromosomes only. Imprinted genes are organized in clusters, their silencing/activation of the imprinted loci involves epigenetic marks (DNA methylation, etc) and so-called imprinting control regions (ICR). It has been described in mammals, but also plants and insects.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3295"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Genomic_imprinting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4038 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4038">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
+        <created_in>1.26</created_in>
+        <related_term>Environmental DNA (eDNA)</related_term>
+        <related_term>Environmental RNA (eRNA)</related_term>
+        <related_term>Environmental sequencing</related_term>
+        <related_term>Taxonomic profiling</related_term>
+        <oboInOwl:hasDefinition>Metabarcoding is the barcoding of (environmental) DNA or RNA to identify multiple taxa from the same sample.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>DNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>RNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eDNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>eRNA metabarcoding</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
+        <rdfs:comment>Typically, high-throughput sequencing is performed and the resulting sequence reads are matched to DNA barcodes in a reference database.</rdfs:comment>
+        <rdfs:label>Metabarcoding</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_DNA"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabarcoding"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
+        <skos:related rdf:resource="http://edamontology.org/topic_3923"/>
     </owl:Class>
 
 
