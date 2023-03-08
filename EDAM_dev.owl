@@ -60933,6 +60933,12 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4038">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0080"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3697"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#related"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3923"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <related_term>Environmental DNA (eDNA)</related_term>
         <related_term>Environmental RNA (eRNA)</related_term>
@@ -60952,7 +60958,6 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metabarcoding"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
-        <skos:related rdf:resource="http://edamontology.org/topic_3923"/>
     </owl:Class>
 
 
