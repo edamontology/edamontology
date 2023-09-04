@@ -37387,6 +37387,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>PQR</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
+
     </owl:Class>
 
 
@@ -37405,7 +37406,36 @@
 		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
-	
+    <!-- http://edamontology.org/format_4037 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4037">
+        <created_in>1.26</created_in>
+        <rdfs:label>SDRF</rdfs:label>
+        <oboInOwl:hasExactSynonym>sdrf</oboInOwl:hasExactSynonym>
+        <file_extension>txt</file_extension>
+        <file_extension>tsv</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:hasDefinition>Sample and Data Relationship File for a proteomics experiment.</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <documentation rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/psi-document/SDRF_Proteomics_Specification_Final.pdf"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/sdrf-proteomics/README.adoc"/>
+        <example rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/tree/master/sdrf-specification-examples"/>
+        <citation rdf:resource="http://doi.org/10.1038/s41467-021-26111-3"/>
+        <repository rdf:resource=""/>
+        <ontology_used rdf:resource="https://www.ebi.ac.uk/ols/ontologies/ms"/>
+        <ontology_used>Mass Spectrometry Ontology</ontology_used>
+        <organisation rdf:resource="https://hupo.org/Proteomics-Standards-Initiative-(PSI)"/>
+    </owl:Class>
+
+    	
 	
     <!-- http://edamontology.org/operation_0004 -->
 
