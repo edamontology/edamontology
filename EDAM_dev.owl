@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4050</next_id>
-        <oboLegacy:date>03.01.2025 09:48 UTC</oboLegacy:date>
+        <next_id>4051</next_id>
+        <oboLegacy:date>16.01.2025 13:17 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -47,8 +47,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250103T0948Z-dev(1.26)"/>
-        <owl:versionInfo>1.25-20250103T0948Z-dev(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250116T1317Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20250116T1317Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -37420,6 +37420,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>PQR</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
+
     </owl:Class>
 
 
@@ -37438,6 +37439,7 @@
         <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
+
     <!-- http://edamontology.org/format_4039 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4039">
@@ -37453,7 +37455,6 @@
         <rdfs:comment>NIST Text file format for storing MS&#8725;MS spectra (m&#8725;z and intensity of mass peaks) along with additional annotations for each spectrum. A single MSP file can thus contain single or multiple spectra. This format is frequently used to share spectra libraries.</rdfs:comment>
         <rdfs:label>MSP</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- http://edamontology.org/format_4041 -->
@@ -37529,6 +37530,36 @@
         <rdfs:label>Snakemake</rdfs:label>
     </owl:Class>
 
+
+    <!-- http://edamontology.org/format_4050 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4050">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <citation rdf:resource="http://doi.org/10.1038/s41467-021-26111-3"/>
+        <created_by>veitveit</created_in>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/psi-document/SDRF_Proteomics_Specification_v1.0.0.pdf"/>
+        <example rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/tree/master/sdrf-specification-examples"/>
+        <file_extension>txt</file_extension>
+        <file_extension>tsv</file_extension>
+        <oboInOwl:hasDefinition>Sample and Data Relationship File for a proteomics experiment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>sdrf</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <oboInOwl:savedBy>rioualen</oboInOwl:savedBy>
+        <ontology_used rdf:resource="https://www.ebi.ac.uk/ols/ontologies/ms"/>
+        <ontology_used>Mass Spectrometry Ontology</ontology_used>
+        <organisation rdf:resource="https://hupo.org/Proteomics-Standards-Initiative-(PSI)"/>
+        <rdfs:label>SDRF</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/sdrf-proteomics/README.adoc"/>
+    </owl:Class>
 
 
     <!-- http://edamontology.org/operation_0004 -->
