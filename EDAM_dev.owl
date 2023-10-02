@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4039</next_id>
+        <next_id>4040</next_id>
         <oboLegacy:date>08.03.2023 23:42 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
@@ -60940,7 +60940,21 @@
     </owl:Class>
 
 
+    <!-- http://edamontology.org/format_4039 -->
 
+    <owl:Class rdf:about="http://edamontology.org/format_4039">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://chemdata.nist.gov/mass-spc/ms-search/docs/Ver20Man_11.pdf"/>
+        <documentation rdf:resource="https://bioconductor.org/packages/release/bioc/vignettes/MsBackendMsp/inst/doc/MsBackendMsp.html"/>
+        <file_extension>msp</file_extension>
+        <oboInOwl:hasDefinition>MSP is a data format for mass spectrometry data.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>NIST Text file format for storing MS&#8725;MS spectra (m&#8725;z and intensity of mass peaks) along with additional annotations for each spectrum. A single MSP file can thus contain single or multiple spectra. This format is frequently used to share spectra libraries.</rdfs:comment>
+        <rdfs:label>MSP</rdfs:label>
+    </owl:Class>
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
