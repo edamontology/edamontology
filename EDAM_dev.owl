@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4040</next_id>
+        <next_id>4041</next_id>
         <oboLegacy:date>03.10.2023 11:14 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
@@ -25114,6 +25114,27 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ORCID"/>
         <rdfs:label>ORCID Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_4040 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4040">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A document describing the operations that you will be performing to acquire, manage, document, store, share, and preserve your data. This includes budgeting for these operations when required.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DMP</oboInOwl:hasExactSynonym>
+        <rdfs:label>Data management plan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
     </owl:Class>
 
 
