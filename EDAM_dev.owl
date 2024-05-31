@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4040</next_id>
-        <oboLegacy:date>03.10.2023 11:14 UTC</oboLegacy:date>
+        <next_id>4042</next_id>
+        <oboLegacy:date>31.05.2024 12:13 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -23,6 +23,7 @@
         <oboLegacy:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboLegacy:idspace>
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
+        <dc:creator>Federico Bianchini</dc:creator>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
@@ -25115,6 +25116,31 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ORCID"/>
         <rdfs:label>ORCID Identifier</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/data_4040 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4040">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0006"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A document describing the operations that you will be performing to acquire, manage, document, store, share, and preserve your data. This includes budgeting for these operations when required.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DMP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>Data management plan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
+    </owl:Class>
 
 
 
@@ -37423,7 +37449,41 @@
         <rdfs:comment>NIST Text file format for storing MS&#8725;MS spectra (m&#8725;z and intensity of mass peaks) along with additional annotations for each spectrum. A single MSP file can thus contain single or multiple spectra. This format is frequently used to share spectra libraries.</rdfs:comment>
         <rdfs:label>MSP</rdfs:label>
     </owl:Class>
-	
+    
+
+
+    <!-- http://edamontology.org/format_4041 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4041">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_4040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <citation rdf:resource="http://doi.org/10.15497/rda00039"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
+        <example rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON"/>
+        <organisation rdf:resource="https://www.rd-alliance.org"/>
+        <repository rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Machine-actionable data management plan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RDA Common Standard for Machine-Actionable Data Management Plans (maDMPS)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>RDA DMP</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>maDMP</rdfs:label>
+        <skos:editorialNote>We can consider this as a JSON format, which also is the information standard by itself. Or we can expand it, and make it a maDMP-JSON format, based on the maDMP information standard (then identified by the GH repo or the FAIRsharing DOI-it doesn&apos;t even point to the docu).</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
+    </owl:Class>
+    
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
