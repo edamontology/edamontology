@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4042</next_id>
-        <oboLegacy:date>31.05.2024 12:13 UTC</oboLegacy:date>
+        <next_id>4043</next_id>
+        <oboLegacy:date>31.05.2024 13:21 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -23,8 +23,8 @@
         <oboLegacy:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboLegacy:idspace>
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
-        <dc:creator>Federico Bianchini</dc:creator>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
+        <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
@@ -52324,6 +52324,33 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Multiple testing correction</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_4042 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4042">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_4040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-03-02</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Describe the operations that you will be performing to acquire, manage, document, store, share, and preserve your data. This includes budgeting for these operation when required.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <rdfs:label>Data management planning</rdfs:label>
     </owl:Class>
 
 
