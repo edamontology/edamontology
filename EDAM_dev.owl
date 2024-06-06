@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4044</next_id>
-        <oboLegacy:date>02.06.2024 23:36 UTC</oboLegacy:date>
+        <next_id>4046</next_id>
+        <oboLegacy:date>06.06.2024 14:42 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -57368,15 +57368,22 @@
     <!-- http://edamontology.org/topic_3263 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3263">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>1.3</created_in>
+		<obsolete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obsolete>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/topic_3071"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/format_4044"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/format_4045"/>
         <oboInOwl:hasDefinition>The protection of data, such as patient health data, from damage or unwanted access from unauthorised users.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data privacy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Data_security</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:comment>The concept of data security was ambiguous, and therefore replaced by two distinct concepts: data protection (incl. sensitive data etc.), and cybersecurity.</rdfs:comment>
         <rdfs:label>Data security</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -61073,6 +61080,69 @@
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4044 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4044">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <created_in>1.26</created_in>
+        <related_term>Classified information</related_term>
+        <related_term>Confidential information</related_term>
+        <related_term>Information privacy</related_term>
+        <related_term>Information sensitivity</related_term>
+        <related_term>Personal data</related_term>
+        <related_term>Private data</related_term>
+        <related_term>Sensitive data</related_term>
+        <related_term>Sensitive human data</related_term>
+        <related_term>Sensitive information</related_term>
+        <related_term>Special category data</related_term>
+        <oboInOwl:hasDefinition>Data protection concerns data that should be protected from disclosure, damage, or unauthorised access, due to its sensitive nature.</oboInOwl:hasDefinition>
+		<oboInOwl:hasRelatedSynonym>Management of sensitive data</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+		<rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered species that could be exploited.</rdfs:comment>
+		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the data management aspect for protected data (this topic_4044), and the technical aspect of cybersecurity (topic_4045).</rdfs:comment>
+        <rdfs:label>Data protection</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_privacy"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_sensitivity"/>
+		<skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2587068"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q456632"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1172506"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4045 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4045">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Cybersecurity is TODO.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>Cryptography</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Cryptology</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>IT security</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>System security</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym>Data security</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computer security</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the technical aspect of security (this topic_4045), and the data management aspect for protected data (topic_4044).</rdfs:comment>
+        <rdfs:label>Cybersecurity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_security"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
+		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_security"/>
+		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3510521"/>
+		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q899388"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q189900"/>
+    </owl:Class>
+	
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
