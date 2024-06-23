@@ -29,7 +29,7 @@
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
-		<dcterms:format rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
+        <dcterms:format rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
         <has_format rdf:resource="http://edamontology.org/format_3261"/>
         <has_format rdf:resource="http://edamontology.org/format_2197"/>
         <dc:title>EDAM - The ontology of data analysis and management</dc:title>
@@ -25102,7 +25102,7 @@
 
 
     <!-- http://edamontology.org/data_4022 -->
-	
+
     <owl:Class rdf:about="http://edamontology.org/data_4022">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_1881"/>
         <created_in>1.26</created_in>
@@ -31732,7 +31732,7 @@
         <documentation rdf:resource="https://samtools.github.io/hts-specs/VCFv4.3.pdf"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Variant_Call_Format"/>
         <oboInOwl:hasDefinition>Variant Call Format (VCF) is tabular format for storing genomic sequence variations.</oboInOwl:hasDefinition>
-		<rdfs:comment>1000 Genomes Project has its own specification for encoding structural variations in VCF (https://www.internationalgenome.org/wiki/Analysis/Variant%20Call%20Format/VCF%20(Variant%20Call%20Format)%20version%204.0/encoding-structural-variants). This is based on VCF version 4.0 and not directly compatible with VCF version 4.3.</rdfs:comment>
+        <rdfs:comment>1000 Genomes Project has its own specification for encoding structural variations in VCF (https://www.internationalgenome.org/wiki/Analysis/Variant%20Call%20Format/VCF%20(Variant%20Call%20Format)%20version%204.0/encoding-structural-variants). This is based on VCF version 4.0 and not directly compatible with VCF version 4.3.</rdfs:comment>
         <file_extension>vcf</file_extension>
         <file_extension>vcf.gz</file_extension>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -37405,7 +37405,7 @@
 
 
 
-	<!-- http://edamontology.org/format_4035 -->
+    <!-- http://edamontology.org/format_4035 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4035">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
@@ -37415,12 +37415,12 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>PQR</rdfs:label>
-		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
+        <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
     </owl:Class>
 
 
-	
-	<!-- http://edamontology.org/format_4036 -->
+
+    <!-- http://edamontology.org/format_4036 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4036">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
@@ -37431,7 +37431,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/2.0.0-dev0/formats/reference/pdbqt.html#pdbqt-specification"/>
         <rdfs:label>PDBQT</rdfs:label>
-		<rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
+        <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
     <!-- http://edamontology.org/format_4039 -->
@@ -37547,7 +37547,7 @@
     </owl:Axiom>
     
 
-	
+
     <!-- http://edamontology.org/operation_0224 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0224">
@@ -52172,11 +52172,11 @@
    
 
 
-	<!-- http://edamontology.org/operation_4031 -->
+    <!-- http://edamontology.org/operation_4031 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4031">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2238"/>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_input"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2042"/>
@@ -52194,13 +52194,13 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3365"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_2269"/>
@@ -52213,12 +52213,12 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Power test</rdfs:label>
-		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Power_of_a_test"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Power_of_a_test"/>
     </owl:Class>
 
 
 
-	<!-- http://edamontology.org/operation_4032 -->
+    <!-- http://edamontology.org/operation_4032 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4032">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0415"/>
@@ -52228,13 +52228,13 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3494"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1772"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1276"/>
@@ -52246,7 +52246,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3295"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0160"/>
@@ -52261,7 +52261,7 @@
 
 
 
-	<!-- http://edamontology.org/operation_4033 -->
+    <!-- http://edamontology.org/operation_4033 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4033">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2945"/>
@@ -52279,7 +52279,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3324"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3305"/>
@@ -52294,7 +52294,7 @@
 
 
 
-	<!-- http://edamontology.org/operation_4034 -->
+    <!-- http://edamontology.org/operation_4034 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_4034">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2238"/>
@@ -52304,7 +52304,7 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1669"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-		<rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_3932"/>
@@ -52323,7 +52323,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Multiple testing correction</rdfs:label>
-		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
     </owl:Class>
     
 
@@ -52372,8 +52372,8 @@
         <oboInOwl:hasNarrowSynonym>Metadata recording</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
-	<rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
+    <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
         <rdfs:label>Data digitalisation</rdfs:label>
         <skos:editorialNote xml:lang="en-us">Data digitalization</skos:editorialNote>
     </owl:Class>
@@ -57371,7 +57371,7 @@
     <owl:Class rdf:about="http://edamontology.org/topic_3263">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.3</created_in>
-		<obsolete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obsolete>
+        <obsolete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obsolete>
         <obsolete_since>1.26</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/topic_3071"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_4044"/>
@@ -60991,9 +60991,9 @@
 
 
 
-	   <!-- http://edamontology.org/topic_4028 -->
-	
-	<owl:Class rdf:about="http://edamontology.org/topic_4028">
+    <!-- http://edamontology.org/topic_4028 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4028">
         <created_in>1.26</created_in>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
         <rdfs:label>Single-Cell Sequencing</rdfs:label>
@@ -61006,10 +61006,10 @@
     </owl:Class>
 
 
-	
+
     <!-- http://edamontology.org/topic_4029 -->
-	
-	<owl:Class rdf:about="http://edamontology.org/topic_4029">
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4029">
         <created_in>1.26</created_in>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
         <rdfs:label>Acoustics</rdfs:label>
@@ -61019,15 +61019,15 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acoustics"/>
     </owl:Class>
 
-	    <!-- http://edamontology.org/topic_4030 -->
-	
-	<owl:Class rdf:about="http://edamontology.org/topic_4030">
+    <!-- http://edamontology.org/topic_4030 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4030">
         <created_in>1.26</created_in>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3318"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3292"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3297"/>
         <rdfs:label>Microfluidics</rdfs:label>
-		<oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Fluidics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:hasDefinition>Interdisplinary study of behavior, precise control, and manipulation of low (microlitre) volume fluids in constrained space.</oboInOwl:hasDefinition>
@@ -61101,18 +61101,18 @@
         <related_term>Sensitive information</related_term>
         <related_term>Special category data</related_term>
         <oboInOwl:hasDefinition>Data protection concerns data that should be protected from disclosure, damage, or unauthorised access, due to its sensitive nature.</oboInOwl:hasDefinition>
-		<oboInOwl:hasRelatedSynonym>Management of sensitive data</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Management of sensitive data</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
-		<rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered species that could be exploited.</rdfs:comment>
-		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the data management aspect for protected data (this topic_4044), and the technical aspect of cybersecurity (topic_4045).</rdfs:comment>
+        <rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered species that could be exploited.</rdfs:comment>
+        <rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the data management aspect for protected data (this topic_4044), and the technical aspect of cybersecurity (topic_4045).</rdfs:comment>
         <rdfs:label>Data protection</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_privacy"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_sensitivity"/>
-		<skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2587068"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2587068"/>
         <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q456632"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1172506"/>
     </owl:Class>
@@ -61135,16 +61135,16 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
-		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the technical aspect of security (this topic_4045), and the data management aspect for protected data (topic_4044).</rdfs:comment>
+        <rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the technical aspect of security (this topic_4045), and the data management aspect for protected data (topic_4044).</rdfs:comment>
         <rdfs:label>Cybersecurity</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_security"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
-		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_security"/>
-		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3510521"/>
-		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q899388"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_security"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3510521"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q899388"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q189900"/>
     </owl:Class>
-	
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
