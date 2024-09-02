@@ -24,6 +24,7 @@ The latest _stable_ version is always downloable from http://edamontology.org/ED
 
 
 ![EDAM relations figure](https://github.com/edamontology/edamontology/blob/main/EDAMrelations.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology?ref=badge_shield)
 
 
 ## Documentation
@@ -37,7 +38,25 @@ A quick overview is at the https://edamontology.org home page.
 
 If you refer to EDAM or its part in a scholarly publication, please cite:
 
-Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](http://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
+Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. (2013). [EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats](https://bioinformatics.oxfordjournals.org/content/29/10/1325.full). _Bioinformatics_, **29**(10): 1325-1332.
 [![10.1093/bioinformatics/btt113](https://zenodo.org/badge/DOI/10.1093/bioinformatics/btt113.svg)](https://doi.org/10.1093/bioinformatics/btt113) PMID: [23479348](https://www.ncbi.nlm.nih.gov/pubmed/23479348) _Open access_
 
+Melissa Black, Lucie Lamothe, Hager Eldakroury, Mads Kierkegaard, Ankita Priya, Anne Machinda, Uttam Singh Khanduja, Drashti Patoliya, Rashika Rathi, Tawah Peggy Che Nico, Gloria Umutesi, Claudia Blankenburg, Anita Op, Precious Chieke, Omodolapo Babatunde, Steve Laurie, Steffen Neumann, Veit Schwämmle, Ivan Kuzmin, Chris Hunter, Jonathan Karr, Jon Ison, Alban Gaignard, Bryan Brancotte, Hervé Ménager, Matúš Kalaš (2022). [EDAM: the bioscientific data analysis ontology](https://doi.org/10.7490/f1000research.1118900.1) (update 2021) [version 1; not peer reviewed]. _F1000Research_, **11**(ISCB Comm J): 1. Poster. [![10.7490/f1000research.1118900.1](https://zenodo.org/badge/DOI/10.7490/f1000research.1118900.1.svg)](https://doi.org/10.7490/f1000research.1118900.1) _Open access_
+
+
 EDAM releases are citable with DOIs too, for cases when that is needed. [![10.5281/zenodo.822690](https://zenodo.org/badge/DOI/10.5281/zenodo.822690.svg)](https://doi.org/10.5281/zenodo.822690) represents all releases and resolves to the DOI of the last stable release. <!--For the DOI of a particular EDAM release, please see [/releases](https://github.com/edamontology/edamontology/tree/main/releases).-->
+
+### Research notice
+Please note that this repository is participating in a study into sustainability
+ of open source projects. Data will be gathered about this repository for
+ approximately the next 12 months, starting from June 2021.
+
+Data collected will include number of contributors, number of PRs, time taken to
+ close/merge these PRs, and issues closed.
+
+For more information, please visit
+[our informational page](https://sustainable-open-science-and-software.github.io/) or download our [participant information sheet](https://sustainable-open-science-and-software.github.io/assets/PIS_sustainable_software.pdf).
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fedamontology%2Fedamontology?ref=badge_large)

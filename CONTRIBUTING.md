@@ -22,9 +22,11 @@ Some neat efficient learning resources are:
 
 ### Git setup on your local machine
 
-__Please make sure to read the following when you are cloning this repo:__
+👉🏽 __Please make sure to read the following when you are cloning this repo:__ 👇🏽
 
-There is a __pre-commit [hook](https://coderefinery.github.io/git-collaborative/05-hooks/)__ set up, to validate that the source code of EDAM is in the right format. To make it work, please use one of the following 2 options:
+1. We recommend using a "shallow" clone of the _edamontology_ repo, without all the history and open feature branches (unless investigating the history is what you want to do): `git clone --depth 1 https://github.com/edamontology/edamontology.git`
+
+2. There is a __pre-commit [hook](https://coderefinery.github.io/git-collaborative/05-hooks/)__ set up, to validate that the source code of EDAM is in the right format. To make it work, please use one of the following 2 options:
 
 😮 Wait a second! __Is this too fast? Do you need a slightly more step-by-step guide?__ Then you are welcome to follow issue [#616](https://github.com/edamontology/edamontology/issues/616).
 
