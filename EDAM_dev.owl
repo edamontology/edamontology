@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4046</next_id>
-        <oboLegacy:date>11.09.2024 20:58 UTC</oboLegacy:date>
+        <oboLegacy:date>11.09.2024 22:58 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -25157,7 +25157,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>SMILES</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Simplified_molecular_input_line_entry_specification"/>
     </owl:Class>
     
 
@@ -28524,7 +28524,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>Stockholm format</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Stockholm_format"/>
     </owl:Class>
     
 
@@ -33929,7 +33929,8 @@
         <oboInOwl:hasExactSynonym>ANDI-MS</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:label>netCDF</rdfs:label>
+        <rdfs:label>NetCDF</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/topics/netcdf"/>
     </owl:Class>
     
 
@@ -37160,7 +37161,7 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.25</created_in>
         <deprecation_comment>This duplicates an existing concept (http://edamontology.org/format_3549).</deprecation_comment>
-        <obsolete_since rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</obsolete_since>
+        <obsolete_since>1.26</obsolete_since>
         <oldParent rdf:resource="http://edamontology.org/format_3547"/>
         <oboInOwl:hasDefinition>An open file format from the Neuroimaging Informatics Technology Initiative (NIfTI) commonly used to store brain imaging data obtained using Magnetic Resonance Imaging (MRI) methods.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
@@ -37508,9 +37509,9 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:comment>Special cases are: a) An operation that consumes no input (has no input arguments). Such operation is either a constant function, or an operation depending only on the underlying state. b) An operation that may modify the underlying state but has no output. c) The singular-case operation with no input or output, that still may modify the underlying state.</rdfs:comment>
         <rdfs:label>Operation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(computer_science)"/>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Function_(mathematics)"/>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Subroutine"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Function_(computer_science)"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Function_(mathematics)"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Subroutine"/>
         <skos:broadMatch rdf:resource="http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method"/>
         <skos:broadMatch rdf:resource="http://purl.org/biotop/biotop.owl#Function"/>
         <skos:broadMatch rdf:resource="http://semanticscience.org/resource/SIO_000017"/>
@@ -39924,10 +39925,10 @@
         <oboInOwl:hasExactSynonym>File formatting</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>File reformatting</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Format conversion</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Reformatting</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data reformatting</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:label>Formatting</rdfs:label>
+        <rdfs:label>Data formatting</rdfs:label>
     </owl:Class>
     
 
@@ -44345,7 +44346,7 @@
         <oboInOwl:hasExactSynonym>Loading</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:label>Parsing</rdfs:label>
+        <rdfs:label>Data parsing</rdfs:label>
     </owl:Class>
     
 
@@ -47674,7 +47675,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:comment>This excludes non-analytical methods that read and write the same basic type of data (for that, see &apos;Data handling&apos;).</rdfs:comment>
-        <rdfs:label>Analysis</rdfs:label>
+        <rdfs:label>Data analysis</rdfs:label>
     </owl:Class>
     
 
@@ -48205,7 +48206,7 @@
         <oboInOwl:hasDefinition>Edit a data entity, either randomly or specifically.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:label>Editing</rdfs:label>
+        <rdfs:label>Data editing</rdfs:label>
     </owl:Class>
     
 
@@ -50680,10 +50681,10 @@
         </rdfs:subClassOf>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>Model a metabolic network. This can include 1) reconstruction to break down a metabolic pathways into reactions, enzymes, and other relevant information, and compilation of this into a mathematical model and 2) simulations of metabolism based on the model.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20modelling"/>
-        <oboInOwl:hasNarrowSynonym rdf:resource="http://edamontology.org/Metabolic%20pathway%20reconstruction"/>
+        <oboInOwl:hasExactSynonym>Metabolic pathway modelling</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic network reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic network simulation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolic pathway reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic pathway simulation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metabolic reconstruction</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -50849,7 +50850,7 @@
         <oboInOwl:hasNarrowSynonym>rRNA filtering</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:label>Filtering</rdfs:label>
+        <rdfs:label>Data filtering</rdfs:label>
     </owl:Class>
     
 
@@ -51287,7 +51288,7 @@
         <oboInOwl:hasDefinition>Sort a set of files or data items according to some property.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:label>Sorting</rdfs:label>
+        <rdfs:label>Data sorting</rdfs:label>
     </owl:Class>
     
 
@@ -51643,6 +51644,8 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:label>Information retrieval</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_retrieval"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q816826"/>
     </owl:Class>
     
 
@@ -52142,7 +52145,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_4008">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <created_in>1.25</created_in>
         <oboInOwl:hasDefinition>Design new protein molecules with specific structural or functional properties.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Protein redesign</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Rational protein design</oboInOwl:hasNarrowSynonym>
@@ -52376,7 +52379,6 @@
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalization</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Digital reformatting</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Metadata recording</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
@@ -53240,15 +53242,21 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_0153">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0081"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3172"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
+        <related_term>Lipidome</related_term>
+        <related_term>Lipids</related_term>
         <oboInOwl:hasDefinition>Lipids and their structures.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Lipidomics</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Lipids</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:label>Lipids</rdfs:label>
+        <rdfs:label>Lipidomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Lipid"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Lipidomics"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/topics/lipidomics"/>
+        <skos:exactMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000081362"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6556376"/>
     </owl:Class>
     
 
@@ -55732,7 +55740,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:comment>This includes databases of models and methods to construct or analyse a model.</rdfs:comment>
         <rdfs:label>Systems biology</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Systems_biology"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Systems_biology"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D049490</rdfs:seeAlso>
     </owl:Class>
     
@@ -56951,14 +56959,26 @@
     <!-- http://edamontology.org/topic_3077 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3077">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <oboInOwl:hasDefinition>The acquisition of data, typically measurements of physical systems using any type of sampling system, or by another other means.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Data collecting</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data collection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data gathering</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Experimental techniques</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Lab method</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Lab techniques</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Laboratory experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Laboratory method</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Laboratory techniques</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>Data acquisition</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_acquisition"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_collection"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1172399"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4929239"/>
     </owl:Class>
     
 
@@ -57122,7 +57142,7 @@
     <!-- http://edamontology.org/topic_3168 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3168">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.1</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The determination of complete (typically nucleotide) sequences, including those of genomes (full genome sequencing, de novo sequencing and resequencing), amplicons and transcriptomes.</oboInOwl:hasDefinition>
@@ -58213,21 +58233,27 @@
     <!-- http://edamontology.org/topic_3361 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3361">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.4</created_in>
+        <deprecation_comment>This was merged into Data acquisition.</deprecation_comment>
+        <hasHumanReadableId>Laboratory_techniques</hasHumanReadableId>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/topic_0003"/>
         <oboInOwl:hasDefinition>The procedures used to conduct an experiment.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Experimental techniques</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Lab method</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Lab techniques</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Laboratory method</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasHumanReadableId>Laboratory_techniques</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Experiments</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Laboratory experiments</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_3077"/>
         <rdfs:label>Laboratory techniques</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Laboratory"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -58507,7 +58533,7 @@
     <!-- http://edamontology.org/topic_3382 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3382">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.4</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <oboInOwl:hasDefinition>The visual representation of an object.</oboInOwl:hasDefinition>
@@ -59529,7 +59555,7 @@
     <!-- http://edamontology.org/topic_3516 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3516">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Genotype experiment including case control, population, and family studies. These might use array based methods and re-sequencing methods.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Genotyping_experiment</oboInOwl:hasHumanReadableId>
@@ -59562,7 +59588,7 @@
     <!-- http://edamontology.org/topic_3518 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3518">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Microarray experiments including conditions, protocol, sample:data relationships etc.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Microarrays</oboInOwl:hasExactSynonym>
@@ -59596,7 +59622,7 @@
     <!-- http://edamontology.org/topic_3519 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3519">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>PCR experiments, e.g. quantitative real-time PCR.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Polymerase chain reaction</oboInOwl:hasExactSynonym>
@@ -59615,7 +59641,7 @@
     <!-- http://edamontology.org/topic_3520 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3520">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Proteomics experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics_experiment</oboInOwl:hasHumanReadableId>
@@ -59673,7 +59699,7 @@
     <!-- http://edamontology.org/topic_3523 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3523">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>RNAi experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>RNAi_experiment</oboInOwl:hasHumanReadableId>
@@ -59688,7 +59714,7 @@
     <!-- http://edamontology.org/topic_3524 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3524">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
         <oboInOwl:hasDefinition>Biological computational model experiments (simulation), for example the minimum information required in order to permit its correct interpretation and reproduction.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Simulation_experiment</oboInOwl:hasHumanReadableId>
@@ -60056,6 +60082,7 @@
         <rdfs:label>Data governance</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_governance"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D030541</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q872685"/>
     </owl:Class>
     
 
@@ -60176,8 +60203,8 @@
 
     <!-- http://edamontology.org/topic_3656 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_3656">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+    <owl:Class rdf:about="http://edamontology.org/topic_3656
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>Experimental techniques to purify a protein-DNA crosslinked complex. Usually sequencing follows e.g. in the techniques ChIP-chip, ChIP-seq and MeDIP-seq.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Chromatin immunoprecipitation</oboInOwl:hasExactSynonym>
@@ -60543,7 +60570,7 @@
     <!-- http://edamontology.org/topic_3934 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3934">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Cytometry is the measurement of the characteristics of cells.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Cytometry</oboInOwl:hasHumanReadableId>
@@ -60575,7 +60602,7 @@
     <!-- http://edamontology.org/topic_3940 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3940">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.24</created_in>
         <oboInOwl:hasDefinition>Molecular biology methods used to analyze the spatial organization of chromatin in a cell.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>3C technologies</oboInOwl:hasExactSynonym>
@@ -60710,7 +60737,7 @@
     <!-- http://edamontology.org/topic_3957 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3957">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3361"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.12</created_in>
         <oboInOwl:hasDefinition>An experiment for studying protein-protein interactions.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Protein_interaction_experiment</oboInOwl:hasHumanReadableId>
@@ -60815,11 +60842,14 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4010">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_science"/>
+        <oboInOwl:hasBroadSynonym>Open and reliable science</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Open research</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Open, reliable, transparent, and trustable science</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Open science encompasses the practices of making scientific research transparent and participatory, and its outputs publicly accessible.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>Open science</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_science"/>
     </owl:Class>
 
 
@@ -60827,13 +60857,14 @@
     <!-- http://edamontology.org/topic_4011 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4011">
-        <created_in>1.26</created_in>
-        <rdfs:label>Data rescue</rdfs:label>
-        <oboInOwl:hasDefinition>Data rescue denotes digitalisation, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_rescue"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Data rescue denotes digitalisation, formatting, archival, and publication of data that were not available in accessible or usable form. Examples are data from private archives, data inside publications, or in paper records stored privately or publicly.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>Data rescue</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_rescue"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q29097553"/>
     </owl:Class>
 
 
@@ -60841,20 +60872,23 @@
     <!-- http://edamontology.org/topic_4012 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4012">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_4010"/>
         <created_in>1.26</created_in>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
+        <related_term>FAIR data principles</related_term>
+        <related_term>FAIR principles</related_term>
+        <related_term>FAIRification</related_term>
         <oboInOwl:hasDefinition>FAIR data is data that meets the principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Findable, accessible, interoperable, reusable data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Open data</oboInOwl:hasRelatedSynonym>
-        <related_term>FAIR data principles</related_term>
-        <related_term>FAIRification</related_term>
-        <rdfs:comment>A substantially overlapping term is 'open data', i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive personal data).</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:comment>A substantially overlapping term is &apos;open data&apos;, i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive personal data).</rdfs:comment>
         <rdfs:label>FAIR data</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q309901"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q29032648"/>
     </owl:Class>
 
 
@@ -60863,8 +60897,9 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_4013">
         <created_in>1.26</created_in>
-        <rdfs:label>Antimicrobial Resistance</rdfs:label>
+        <rdfs:label>Antimicrobial resistance</rdfs:label>
         <oboInOwl:hasExactSynonym>AMR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Antibiotic resistance (ABR)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antifungal resistance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antiviral resistance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Antiprotozoal resistance</oboInOwl:hasNarrowSynonym>
@@ -60935,13 +60970,14 @@
     <!-- http://edamontology.org/topic_4019 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4019">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>1.26</created_in>
-        <rdfs:label>Biosciences</rdfs:label>
+        <related_term>Life</related_term>
+        <oboInOwl:hasDefinition>Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Life sciences</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <oboInOwl:hasDefinition>Biosciences, or life sciences, include fields of study related to life, living beings, and biomolecules.</oboInOwl:hasDefinition>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
+        <rdfs:label>Biosciences</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/List_of_life_sciences"/>
     </owl:Class>
 
@@ -61008,13 +61044,13 @@
     <!-- http://edamontology.org/topic_4028 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4028">
-        <created_in>1.26</created_in>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
-        <rdfs:label>Single-Cell Sequencing</rdfs:label>
-        <oboInOwl:hasNarrowSynonym>Single Cell Genomics</oboInOwl:hasNarrowSynonym>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Single-cell genomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <oboInOwl:hasDefinition>Combined with NGS (Next Generation Sequencing) technologies, single-cell sequencing allows the study of genetic information (DNA, RNA, epigenome...) at a single cell level. It is often used for differential analysis and gene expression profiling.</oboInOwl:hasDefinition>
+        <rdfs:label>Single-cell sequencing</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single-cell_analysis"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Single_cell_sequencing"/>
     </owl:Class>
