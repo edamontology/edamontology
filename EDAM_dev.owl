@@ -22,7 +22,7 @@
         <oboLegacy:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboLegacy:idspace>
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
-        <oboLegacy:remark>EDAM is a community project git and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
+        <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
         <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
@@ -1470,7 +1470,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Data concerning concerning specific or conserved pattern in molecular sequences and the classifiers used for their identification, including sequence motifs, profiles or other diagnostic element.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Sequence signature data concerns specific or conserved pattern in molecular sequences and the classifiers used for their identification, including sequence motifs, profiles or other diagnostic element.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <rdfs:comment>This can include metadata about a motif or sequence profile such as its name, length, technical details about the profile construction, and so on.</rdfs:comment>
@@ -1525,7 +1525,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <rdfs:label>Sequence alignment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_alignment"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_alignment"/>
         <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D016415</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_010066</rdfs:seeAlso>
     </owl:Class>
@@ -2441,7 +2441,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <rdfs:comment>Typically, an assembly is a collection of contigs (for example ESTs and genomic DNA fragments) that are ordered, aligned and merged. Annotation of the assembled sequence might be included.</rdfs:comment>
         <rdfs:label>Sequence assembly</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Sequence_assembly"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sequence_assembly"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_0925"/>
@@ -14448,20 +14448,19 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasBroadSynonym rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <oboInOwl:hasDefinition>A name of a thing, which need not necessarily uniquely identify it.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Symbolic name</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
         <rdfs:label>Name</rdfs:label>
-        <rdfs:seeAlso>&quot;http://www.w3.org/2000/01/rdf-schema#label</rdfs:seeAlso>
         <rdfs:seeAlso>http://semanticscience.org/resource/SIO_000116</rdfs:seeAlso>
         <rdfs:seeAlso>http://usefulinc.com/ns/doap#name</rdfs:seeAlso>
+        <skos:broadMatch rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://edamontology.org/data_2099"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
         <owl:annotatedTarget rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <rdfs:comment>Closely related, but focusing on labeling and human readability but not on identification.</rdfs:comment>
     </owl:Axiom>
@@ -23893,7 +23892,7 @@
         <oboInOwl:hasDefinition>A statistical Markov model of a system which is assumed to be a Markov process with unobserved (hidden) states.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <oboInOwl:replacedBy rdf:resource="http://edamontology.org/data_1364"/>
-        <rdfs:label xml:lang="en">Hidden Markov model</rdfs:label>
+        <rdfs:label>Hidden Markov model</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
