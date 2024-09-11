@@ -52373,14 +52373,20 @@
         <created_in>1.26</created_in>
         <oboInOwl:created_by>bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date>2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>Digitisation is the process of converting data into a machine-readable format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Digital reformatting</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Metadata recording</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
-	<rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
-        <rdfs:label>Data digitalisation</rdfs:label>
-        <skos:editorialNote xml:lang="en-us">Data digitalization</skos:editorialNote>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>Data digitisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
+        <skos:editorialNote>Metadata recording?</skos:editorialNote>
+        <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
     </owl:Class>
 
 
