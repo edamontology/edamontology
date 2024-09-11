@@ -14,17 +14,17 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4042</next_id>
-        <oboLegacy:date>31.05.2024 12:13 UTC</oboLegacy:date>
+        <next_id>4046</next_id>
+        <oboLegacy:date>11.09.2024 10:01 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_operation http://edamontology.org/operation_ &quot;EDAM operations&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_topic http://edamontology.org/topic_ &quot;EDAM topics&quot;</oboLegacy:idspace>
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
-        <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
-        <dc:creator>Federico Bianchini</dc:creator>
+        <oboLegacy:remark>EDAM is a community project git and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
+        <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
@@ -25132,10 +25132,11 @@
         <created_in>1.26</created_in>
         <oboInOwl:created_by>bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date>2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>A document describing the operations that you will be performing to acquire, manage, document, store, share, and preserve your data. This includes budgeting for these operations when required.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data management plan is a document describing the data management of a project or an organisation, including acquisition, reuse, structure, processing, storage, documentation, sharing, and preservation of data. This may include budgeting for these operations.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DMP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:label>Data management plan</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
@@ -52325,6 +52326,68 @@
         <rdfs:label>Multiple testing correction</rdfs:label>
 		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Multiple_comparisons_problem"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_4042 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4042">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_output"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_4040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-03-02</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Data management planning is the process of creating and updating a data management plan (DMP) for a project or an organisation.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>Good data management planning prevents unexpected legal issues or extra costs related to usage, sharing, storage, or archival of data.</rdfs:comment>
+        <rdfs:comment>Policies often require the submission of a data management plan (DMP) together with a project proposal. A detailed, revised version of the DMP may be required as part of the project's final report.</rdfs:comment>
+        <rdfs:label>Data management planning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/operation_4043 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4043">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_4011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>bianchini</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalization</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Digital reformatting</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Metadata recording</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>Data digitisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
+        <skos:editorialNote>Metadata recording?</skos:editorialNote>
+        <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
+    </owl:Class>
 
 
 
@@ -56796,19 +56859,28 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0003"/>
         <created_in>beta13</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
+        <related_term>Data life cycle</related_term>
+        <related_term>Data stewardship</related_term>
         <oboInOwl:hasDbXref>VT 1.3.1 Data management</oboInOwl:hasDbXref>
-        <oboInOwl:hasDefinition>Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, formatting, storage, archiving, or access.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, data formats, storage, preservation/archiving, access, and legal aspects related to using and sharing data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Research data management (RDM)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>erin.calhoun</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>The purpose of data management is keeping data consistent, easy to access and use, while ensuring a required level of data privacy. Good data management improves the visibility, impact, and lifetime of data.</rdfs:comment>
         <rdfs:label>Data management</rdfs:label>
-        <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
-        <related_term>Data stewardship</related_term>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D000079803</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/MSH/D000079803"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1149776"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q30089794"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q6822246"/>
     </owl:Class>
-
+    
 
 
     <!-- http://edamontology.org/topic_3072 -->
@@ -57310,15 +57382,23 @@
     <!-- http://edamontology.org/topic_3263 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3263">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.3</created_in>
+		<obsolete rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</obsolete>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/topic_3071"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_4044"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_4045"/>
         <oboInOwl:hasDefinition>The protection of data, such as patient health data, from damage or unwanted access from unauthorised users.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data privacy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasHumanReadableId>Data_security</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:comment>The concept of data security was ambiguous, and therefore replaced by two distinct concepts: data protection (incl. sensitive data etc.), and cybersecurity.</rdfs:comment>
         <rdfs:label>Data security</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -61016,6 +61096,69 @@
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q51237016"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q25098939"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4044 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4044">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
+        <created_in>1.26</created_in>
+        <related_term>Classified information</related_term>
+        <related_term>Confidential information</related_term>
+        <related_term>Information privacy</related_term>
+        <related_term>Information sensitivity</related_term>
+        <related_term>Personal data</related_term>
+        <related_term>Private data</related_term>
+        <related_term>Sensitive data</related_term>
+        <related_term>Sensitive human data</related_term>
+        <related_term>Sensitive information</related_term>
+        <related_term>Special category data</related_term>
+        <oboInOwl:hasDefinition>Data protection is a topic concerning data that should be protected from disclosure, damage, or unauthorised access, due to its sensitive nature.</oboInOwl:hasDefinition>
+		<oboInOwl:hasRelatedSynonym>Management of sensitive data</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+		<rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered species that could be exploited.</rdfs:comment>
+		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the data management aspect for protected data (this topic_4044), and the technical aspect of cybersecurity (topic_4045).</rdfs:comment>
+        <rdfs:label>Data protection</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_privacy"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_sensitivity"/>
+		<skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q2587068"/>
+        <skos:closeMatch rdf:resource="https://www.wikidata.org/wiki/Q456632"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1172506"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4045 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4045">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Cybersecurity is a topic comprising the approaches and technologies that enable the protection of computer systems, networks and programs from digital attacks. It ensures the availability, integrity, and confidentiality of processed and stored information.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>Cryptography</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>Cryptology</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>IT security</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>System security</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym>Data security</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Computer security</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+		<rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the technical aspect of security (this topic_4045), and the data management aspect for protected data (topic_4044).</rdfs:comment>
+        <rdfs:label>Cybersecurity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Computer_security"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_security"/>
+		<rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Information_security"/>
+		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3510521"/>
+		<skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q899388"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q189900"/>
+    </owl:Class>
+	
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
