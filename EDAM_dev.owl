@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4049</next_id>
-        <oboLegacy:date>12.09.2024 15:35 UTC</oboLegacy:date>
+        <next_id>4050</next_id>
+        <oboLegacy:date>12.09.2024 15:56 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -61214,6 +61214,28 @@
         <rdfs:label>Version control</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Version_control"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q189439"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4049 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4049">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <created_in>1.26</created_in>
+        <related_term>Code stewardship</related_term>
+        <related_term>Software stewardship</related_term>
+        <related_term>Software curation</related_term>
+        <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-02-25T02:40:36.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Software management comprises the practices and principles of taking care of software, other than programming it. This includes for example taking care of the associated information and documentation, and the processes of contribution, validation, release/publication, or deployment.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>The purpose of software management is keeping software consistent, easy to use, update, and expand. Good software management improves the visibility, impact, and lifetime of software.</rdfs:comment>
+        <rdfs:label>Software management</rdfs:label>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q947779"/>
     </owl:Class>
     
 
