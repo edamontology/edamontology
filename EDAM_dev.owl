@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4046</next_id>
-        <oboLegacy:date>11.09.2024 23:08 UTC</oboLegacy:date>
+        <next_id>4049</next_id>
+        <oboLegacy:date>12.09.2024 15:35 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -61193,6 +61193,27 @@
         <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q3510521"/>
         <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q899388"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q189900"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4048">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date>2023-02-09T11:13:21.41427Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Version control is a technology for consistent management, storing, and sharing of evolving versions of digital artefacts, such as computer programs, scripts, documents, data, or media files.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>Distributed version control is particularly useful for open, collaborative development of software and other creative work, enabling global communities to work cohesively.</rdfs:comment>
+        <rdfs:comment>Version control originates from software engineering for managing source code, but it is applicable to other digital artefacts, especially any kind of text-based files. With certain limitations, version control can also be applied to binary files.</rdfs:comment>
+        <rdfs:label>Version control</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Version_control"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q189439"/>
     </owl:Class>
     
 
