@@ -102,7 +102,7 @@ Template for a new _**Format**_:
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">date and time in the form of 2024-04-01T13:50:00Z</oboInOwl:creation_date>
         <oboInOwl:hasBroadSynonym>...</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>Short definition of the format (mandatory).</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>...(all synonyms are optional. For Formats, usually only ExactSynonym makes sense)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>...(all synonyms are optional. For Formats, usually only hasExactSynonym makes sense)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>...</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasRelatedSynonym>...</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -111,8 +111,9 @@ Template for a new _**Format**_:
         <rdfs:comment>Any additional comment here.</rdfs:comment>
         <rdfs:label>Name of the format (mandatory. Abbreviations should be in CAPITALS unless another form is usual, e.g. "gVCF")</rdfs:label>
         <rdfs:seeAlso rdf:resource="https...(for example Wikipedia link here)"/>
+        <skos:editorialNote>Optional. Any comments about what else should be considered or done. This will not be part of the released version</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing...(add here if exists)"/>
-        <skos:exactMatch rdf:resource="https...(Wikidata item here. Can also be skos:broadMatch, skos:closeMatch, skos:narrowMatch, skos:relatedMatch (more distantly related than closeMatch))"/>
+        <skos:exactMatch rdf:resource="https...(Wikidata item here, especially for the Wikipedia pages in seeAlso. Can also be skos:broadMatch, skos:closeMatch, skos:narrowMatch, skos:relatedMatch (more distantly related than closeMatch))"/>
     </owl:Class>
 ```
 
@@ -121,19 +122,31 @@ Template for a new _**Topic**_:
     <!-- http://edamontology.org/topic_XXXX -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_XXXX">
-        <created_in>(Please insert the 'doap:Version' value from the header of the file here, without "_dev". For example: 1.26)</created_in>
-        <rdfs:label>Name of the topic (mandatory)</rdfs:label>
-        <oboInOwl:hasExactSynonym>...(synonyms are optional)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>...</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasBroadSynonym>...</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasRelatedSynonym>...</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#topics"/>
-        <oboInOwl:hasDefinition>Short definition of the topic (mandatory).</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_...(at least 1 "parent URI" is mandatory)"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_..."/>
+        <created_in>(Please insert the 'doap:Version' value from the header of the file here, without "_dev". For example: 1.26)</created_in>
+        <related_term>...(optional. More distantly related than hasRelatedSynonym (see below), usually a different aspect or scope)</related_term>
+        <oboInOwl:created_by>your GitHub username</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">date and time in the form of 2024-04-01T13:50:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>...(synonyms are optional but highly recommended)</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>Short definition of the topic (mandatory).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>...(synonyms are optional but highly recommended)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>...</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>...</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>If you work further on this concept, you can add your name or username here. Can be multiple people, each in their own 'savedBy'</oboInOwl:savedBy>
         <rdfs:comment>Any additional comment here (optional).</rdfs:comment>
-        <rdfs:seeAlso rdf:resource="http...(Wikipedia link goes here; highly recommended for each Topic! Also generic, "soft" links to other ontologies go here.)"/>
+        <rdfs:comment>Another clarifying comment here (optional).</rdfs:comment>
+        <rdfs:label>Name of the topic (mandatory)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https...(Wikipedia link goes here; highly recommended for each Topic!)"/>
+        <rdfs:seeAlso rdf:resource="https...(another Wikipedia link if applicable)"/>
+        <skos:broadMatch rdf:resource="https...(Wikidata item here, if applicable, especially for the Wikipedia pages in seeAlso)"/>
+        <skos:closeMatch rdf:resource="https...(Wikidata item here, if applicable. Neither narrower nor broader, but closer than relatedMatch)"/>
+        <skos:editorialNote>Optional. Any comments about what else should be considered or done. This will not be part of the released version</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https...(Wikidata item here, especially for the Wikipedia pages in seeAlso)"/>
+        <skos:narrowMatch rdf:resource="https...(Wikidata item here, if applicable, especially for the Wikipedia pages in seeAlso)"/>
+        <skos:relatedMatch rdf:resource="https...(Wikidata item here, if applicable. More distantly related than closeMatch)"/>
     </owl:Class>
 ```
 
