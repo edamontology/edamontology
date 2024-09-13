@@ -78,17 +78,6 @@ Template for a new _**Format**_:
     <!-- http://edamontology.org/format_XXXX -->
 
     <owl:Class rdf:about="http://edamontology.org/format_XXXX">
-        <created_in>(Please insert the 'doap:Version' value from the header of the file here, without "_dev". For example: 1.26)</created_in>
-        <rdfs:label>Name of the format (mandatory. Abbreviations should be in CAPITALS unless another form is usual, e.g. "gVCF")</rdfs:label>
-        <oboInOwl:hasExactSynonym>...(all synonyms are optional. For Formats, usually only ExactSynonym makes sense)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasNarrowSynonym>...</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasBroadSynonym>...</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasRelatedSynonym>...</oboInOwl:hasRelatedSynonym>
-        <file_extension>...(optional; small letters unless otherwise is usual; no dot in the beginning)</file_extension>
-        <media_type rdf:resource="http...(optional and usually "inherited" from super-concepts; such as https://www.iana.org/assignments/media-types)"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
-        <oboInOwl:hasDefinition>Short definition of the format (mandatory).</oboInOwl:hasDefinition>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_...(at least 1 "parent URI" is mandatory. All the following attributes are optional, except documentation)"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_..."/>
         <rdfs:subClassOf>
@@ -97,17 +86,33 @@ Template for a new _**Format**_:
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/data_...(link(s) to EDAM Data concepts; type of data represented in this data format)"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>Any additional comment here.</rdfs:comment>
-        <documentation rdf:resource="http...(mandatory link to the specification|documentation of the format)"/>
-        <rdfs:seeAlso rdf:resource="http...(for example Wikipedia link here)"/>
-        <example rdf:resource="http..."/>
         <citation rdf:resource="http://doi.org/10...."/>
-        <repository rdf:resource="https..."/>
+        <created_in>(Please insert the 'doap:Version' value from the header of the file here, without "_dev". For example: 1.26)</created_in>
+        <documentation rdf:resource="http...(mandatory link to the specification|documentation of the format)"/>
+        <example rdf:resource="http..."/>
+        <file_extension>...(optional; small letters unless otherwise is usual; no dot in the beginning)</file_extension>
         <information_standard rdf:resource="http...(either like this as an URI|URL, or if no "Nice URI|URL" then by its name|abbraviation as the following)"/>
         <information_standard>XXX</information_standard>
+        <media_type rdf:resource="http...(optional and usually "inherited" from super-concepts; such as https://www.iana.org/assignments/media-types)"/>
         <ontology_used rdf:resource="http...(either like this as an URI|URL, or if no "Nice URI|URL" then by its name|abbraviation as the following)"/>
         <ontology_used>XYZ</ontology_used>
         <organisation rdf:resource="http...(governing organisation, if any)"/>
+        <repository rdf:resource="https..."/>
+        <oboInOwl:created_by>your GitHub username</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">date and time in the form of 2024-04-01T13:50:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>...</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>Short definition of the format (mandatory).</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>...(all synonyms are optional. For Formats, usually only ExactSynonym makes sense)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>...</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>...</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>If you work further on this concept, you can add your name or username here. Can be multiple people, each in their own 'savedBy'</oboInOwl:savedBy>
+        <rdfs:comment>Any additional comment here.</rdfs:comment>
+        <rdfs:label>Name of the format (mandatory. Abbreviations should be in CAPITALS unless another form is usual, e.g. "gVCF")</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https...(for example Wikipedia link here)"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing...(add here if exists)"/>
+        <skos:exactMatch rdf:resource="https...(Wikidata item here. Can also be skos:broadMatch, skos:closeMatch, skos:narrowMatch, skos:relatedMatch (more distantly related than closeMatch))"/>
     </owl:Class>
 ```
 
