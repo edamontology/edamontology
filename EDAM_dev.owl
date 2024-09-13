@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4046</next_id>
-        <oboLegacy:date>11.09.2024 23:08 UTC</oboLegacy:date>
+        <next_id>4047</next_id>
+        <oboLegacy:date>13.09.2024 10:00 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -37483,7 +37483,36 @@
         <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
     </owl:Class>
     
+    <!-- http://edamontology.org/format_4046 -->	
 
+    <owl:Class rdf:about="http://edamontology.org/format_4046">
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_2350"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_3866"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
+	<rdfs:subClassOf rdf:resource="http://edamontology.org/format_3590"/>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+			<owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<rdfs:subClassOf>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+			<owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+		</owl:Restriction>
+	</rdfs:subClassOf>
+	<created_in>1.26</created_in>
+	<file_extension>fast5</file_extension>
+	<example rdf:resource="https://nanoporetech.github.io/fast5_research/examples.html"/>
+	<documentation rdf:resource="https://nanoporetech.github.io/fast5_research/index.html"/>
+	<documentation rdf:resource="https://en.wikipedia.org/wiki/Nanopore_sequencing"/>
+	<documentation rdf:resource="https://github.com/nanoporetech/ont_h5_validator/tree/master/h5_validator/schemas"/>
+	<oboInOwl:hasDefinition>The FAST5 file format stores the raw electrical signal levels measured by the nanopores in flow cells for Oxford Nanopore Technologies sequencers, from which various types of information can be extracted.</oboInOwl:hasDefinition>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+	<oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+	<rdfs:label>FAST5</rdfs:label>
+    </owl:Class>
 
     <!-- http://edamontology.org/operation_0004 -->
 
