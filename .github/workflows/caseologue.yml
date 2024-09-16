@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: upload edam
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: input_ontology
         path: EDAM_dev.owl
