@@ -49436,15 +49436,15 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
         <created_in>1.6</created_in>
         <oboInOwl:hasDefinition>Deposit some data in a database or some other type of repository or software system.</oboInOwl:hasDefinition>
-        <oboInOwl:hasExactSynonym>Data deposition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Data submission</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Database deposition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Database submission</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Submission</oboInOwl:hasExactSynonym>
+	<oboInOwl:hasNarrowSynonym>Data archival</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
         <rdfs:comment>For non-analytical operations, see the &apos;Processing&apos; branch.</rdfs:comment>
-        <rdfs:label>Deposition</rdfs:label>
+        <rdfs:label>Data deposition</rdfs:label>
     </owl:Class>
     
 
@@ -54005,15 +54005,21 @@
     <owl:Class rdf:about="http://edamontology.org/topic_0219">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>beta12orEarlier</created_in>
+	<related_term>Data repository</related_term>
+	<related_term>Deposition Database</related_term>
+	<related_term>Data archive</related_term>
+	<related_term>Data registry</related_term>
         <oboInOwl:hasDefinition>Deposition and curation of database accessions, including annotation, typically with terms from a controlled vocabulary.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Data_submission_annotation_and_curation</oboInOwl:hasHumanReadableId>
+        <oboInOwl:hasHumanReadableId>Data_submission_and_curation</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Data curation</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Data provenance</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Database curation</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasNarrowSynonym>Data annotation</oboInOwl:hasNarrowSynonym>
+	<oboInOwl:hasRelatedSynonym>Data brokering</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:label>Data submission, annotation, and curation</rdfs:label>
+        <rdfs:label>Data submission and curation</rdfs:label>
     </owl:Class>
     
 
