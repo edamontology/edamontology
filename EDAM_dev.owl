@@ -15,8 +15,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboOther="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4051</next_id>
-        <oboOther:date>17.09.2024 10:02 UTC</oboOther:date>
+        <next_id>4053</next_id>
+        <oboOther:date>17.09.2024 13:44 UTC</oboOther:date>
         <oboOther:idspace>EDAM http://edamontology.org/ &quot;EDAM relations and concept properties&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboOther:idspace>
         <oboOther:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboOther:idspace>
@@ -37462,8 +37462,74 @@
         <rdfs:seeAlso rdf:resource="https://nanoporetech.com/document/data-analysis"/>
         <rdfs:seeAlso rdf:resource="https://nanoporetech.github.io/fast5_research/index.html"/>
     </owl:Class>
-    
-    
+
+
+
+    <!-- http://edamontology.org/format_4051 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4051">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2057"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <citation rdf:resource="https://doi.org/10.1038/s41587-021-01147-4"/>
+        <created_in>1.26</created_in>
+        <file_extension>slow5</file_extension>
+        <documentation rdf:resource="https://hasindu2008.github.io/slow5specs"/>
+        <oboInOwl:created_by>rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T15:44:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>The SLOW5 file format stores signal data from Oxford Nanopore Technologies devices, and is designed to improve the parallelisation of data analysis.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>rioualen</oboInOwl:savedBy>
+        <rdfs:label>Slow5 format</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://nanoporetech.com/document/data-analysis"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4052 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4052">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2057"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2044"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2977"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <file_extension>pod5</file_extension>
+        <documentation rdf:resource="https://pod5-file-format.readthedocs.io/"/>
+        <documentation rdf:resource="https://github.com/nanoporetech/pod5-file-format"/>
+        <oboInOwl:created_by>rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-17T15:44:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>POD5 is an Oxford Nanopore-developed file format which stores nanopore data in an accessible way and replaces the legacy .fast5 format.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>rioualen</oboInOwl:savedBy>
+        <rdfs:label>Pod5 format</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://nanoporetech.com/document/data-analysis"/>
+    </owl:Class>
+
+
 
     <!-- http://edamontology.org/operation_0004 -->
 
