@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4050</next_id>
-        <oboLegacy:date>12.09.2024 15:56 UTC</oboLegacy:date>
+        <next_id>4048</next_id>
+        <oboLegacy:date>23.09.2024 23:58 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -34,7 +34,7 @@
         <has_format rdf:resource="http://edamontology.org/format_2197"/>
         <dc:title>EDAM - The ontology of data analysis and management</dc:title>
         <dc:description>EDAM is a domain ontology of data analysis and data management in bio- and other sciences, and science-based applications. It comprises concepts related to analysis, modelling, optimisation, and data life-cycle. Targetting usability by diverse users, the structure of EDAM is relatively simple, divided into 4 main sections: Topic, Operation, Data (incl. Identifier), and Format.</dc:description>
-        <doap:Version>1.26_dev</doap:Version>
+        <doap:Version>dev(1.26)</doap:Version>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/properties"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/data"/>
@@ -46,6 +46,9 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <owl:priorVersion rdf:resource="http://edamontology.org/EDAM_1.25"/>
+        <owl:versionIRI rdf:resource="http://edamontology.org/EDAM_1.25-20240923T2358Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20240923T2358Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -49434,16 +49437,24 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_3431">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2409"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0219"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.6</created_in>
-        <oboInOwl:hasDefinition>Deposit some data in a database or some other type of repository or software system.</oboInOwl:hasDefinition>
+        <related_term>Data publication</related_term>
+        <oboInOwl:hasDefinition>Data deposition is the submission and upload of data to a dedicated repository, archive, or deposition database, usually with accompanying metadata.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Data submission</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Database deposition</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Database submission</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Submission</oboInOwl:hasExactSynonym>
-	<oboInOwl:hasNarrowSynonym>Data archival</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data brokering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data deposition brokering</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>Data publishing</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:comment>For non-analytical operations, see the &apos;Processing&apos; branch.</rdfs:comment>
+        <oboInOwl:savedBy>2024-09-23, Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:label>Data deposition</rdfs:label>
     </owl:Class>
     
@@ -52373,6 +52384,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
+        <related_term>Digital preservation</related_term>
         <oboInOwl:created_by>bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date>2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.</oboInOwl:hasDefinition>
@@ -52384,10 +52396,12 @@
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:label>Data digitisation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Digital_preservation"/>
         <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digitization"/>
         <skos:editorialNote>Metadata recording?</skos:editorialNote>
         <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q632897"/>
     </owl:Class>
 
 
@@ -54005,21 +54019,41 @@
     <owl:Class rdf:about="http://edamontology.org/topic_0219">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>beta12orEarlier</created_in>
-	<related_term>Data repository</related_term>
-	<related_term>Deposition Database</related_term>
-	<related_term>Data archive</related_term>
-	<related_term>Data registry</related_term>
-        <oboInOwl:hasDefinition>Deposition and curation of database accessions, including annotation, typically with terms from a controlled vocabulary.</oboInOwl:hasDefinition>
-        <oboInOwl:hasHumanReadableId>Data_submission_and_curation</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Data curation</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Data provenance</oboInOwl:hasNarrowSynonym>
+        <related_term>Data archive</related_term>
+        <related_term>Data library</related_term>
+        <related_term>Data provenance</related_term>
+        <related_term>Data registry</related_term>
+        <related_term>Data repository</related_term>
+        <related_term>Data storage</related_term>
+        <related_term>Deposition database</related_term>
+        <related_term>Research data archive</related_term>
+        <related_term>Research data repository</related_term>
+        <oboInOwl:hasDefinition>Data curation and archival includes the preservation of data in a repository, archive, or a deposition database; and curation of data and metadata, database accessions, annotation, and data provenance.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Data archival</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data archiving</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data curation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Data preservation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Database curation</oboInOwl:hasNarrowSynonym>
-	<oboInOwl:hasNarrowSynonym>Data annotation</oboInOwl:hasNarrowSynonym>
-	<oboInOwl:hasRelatedSynonym>Data brokering</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym>Research data archiving</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:label>Data submission and curation</rdfs:label>
+        <oboInOwl:savedBy>2023-02-24T10:59:23.548411Z, erihje</oboInOwl:savedBy>
+        <oboInOwl:savedBy>2024-09-16, bianchini</oboInOwl:savedBy>
+        <oboInOwl:savedBy>2024-09-23, Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>Note that biocuration is a more specific concept than simply curation and archival of bioscientific data.</rdfs:comment>
+        <rdfs:comment>The purpose of data curation and preservation is ensuring permanent access to the data and enabling its future analysis. Enabling reanalysis of the data in unexpected future contexts requires that the data is findable and reusable (see also FAIR data, topic_4012).</rdfs:comment>
+        <rdfs:label>Data curation and archival</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_curation"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_preservation"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Research_data_archiving"/>
+        <skos:editorialNote>TODO: Add Biocuration! Look at and deal with https://en.wikipedia.org/wiki/Digital_curation! And perhaps other from the many concepts within the broad https://en.wikipedia.org/wiki/Digital_preservation (currently in operation_4043)! Probably somehow add Digital library (https://www.wikidata.org/wiki/Q212805) or/and related concepts. Within https://en.wikipedia.org/wiki/Library_science and https://en.wikipedia.org/wiki/Archival_science. Maybe generic archive (https://en.wikipedia.org/wiki/Archive, archiving=https://www.wikidata.org/wiki/Q10418049, and curating=https://www.wikidata.org/wiki/Q63386008)? Preservation is something else, but consider (https://www.wikidata.org/wiki/Q1479406)? And less related, but should we consider https://en.wikipedia.org/wiki/Data_integrity,https://en.wikipedia.org/wiki/File_fixity?</skos:editorialNote>
+        <skos:editorialNote>TODO: Add skos:related to Open science (this isn't only science), FAIR data, and Digitalisation (esp. from there to here?). Perhaps more, see a separate editorialNote.</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q15088675"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q48797981"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q65769313"/>
+        <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q17155735"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q5227240"/>
     </owl:Class>
     
 
@@ -56874,7 +56908,6 @@
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
         <related_term>Data life cycle</related_term>
         <related_term>Data lifecycle</related_term>
-        <related_term>Data stewardship</related_term>
         <oboInOwl:hasDbXref>VT 1.3.1 Data management</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Data management comprises the practices and principles of taking care of data, other than analysing them. This includes for example taking care of the associated metadata, data formats, storage, preservation/archiving, access, and legal aspects related to using and sharing data.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Metadata management</oboInOwl:hasNarrowSynonym>
@@ -56889,6 +56922,7 @@
         <rdfs:label>Data management</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
+        <skos:editorialNote>Revise more eventual concepts from https://en.wikipedia.org/wiki/Data_management etc.</skos:editorialNote>
         <skos:exactMatch rdf:resource="http://purl.bioontology.org/ontology/MSH/D000079803"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q1149776"/>
         <skos:narrowMatch rdf:resource="https://www.wikidata.org/wiki/Q30089794"/>
@@ -60080,15 +60114,18 @@
     <owl:Class rdf:about="http://edamontology.org/topic_3571">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3071"/>
         <created_in>1.10</created_in>
-        <oboInOwl:hasDefinition>The control of data entry and maintenance to ensure the data meets defined standards, qualities or constraints.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Data governance is the control of data entry and maintenance to ensure the data meets defined standards, qualities, or constraints.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Data_governance</oboInOwl:hasHumanReadableId>
-        <oboInOwl:hasNarrowSynonym>Data stewardship</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym>Data stewardship</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>2024-09-23, Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:label>Data governance</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_governance"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D030541</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_steward"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q872685"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1172231"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q57450885"/>
     </owl:Class>
     
 
@@ -60884,12 +60921,13 @@
         <related_term>FAIR data principles</related_term>
         <related_term>FAIR principles</related_term>
         <related_term>FAIRification</related_term>
-        <oboInOwl:hasDefinition>FAIR data is data that meets the principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>FAIR data is scientific data that meets the principles of being findable, accessible, interoperable, and reusable.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Findable, accessible, interoperable, reusable data</oboInOwl:hasExactSynonym>
         <oboInOwl:hasRelatedSynonym>Open data</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:comment>A substantially overlapping term is &apos;open data&apos;, i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive personal data).</rdfs:comment>
+        <oboInOwl:savedBy>2024-09-23, Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>A substantially overlapping term is &apos;open data&apos;, i.e. publicly available data that is free to use, distribute, and create derivative work from, without restrictions. Open data does not automatically have to be FAIR (e.g. findable or interoperable), while FAIR data does in some cases not have to be publicly available without restrictions (especially sensitive, protected data, topic_4044).</rdfs:comment>
         <rdfs:label>FAIR data</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/FAIR_data"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Open_data"/>
@@ -61203,7 +61241,7 @@
     
 
 
-    <!-- http://edamontology.org/topic_4048 -->
+    <!-- http://edamontology.org/topic_4046 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4048">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
@@ -61229,7 +61267,7 @@
     
 
 
-    <!-- http://edamontology.org/topic_4049 -->
+    <!-- http://edamontology.org/topic_4047 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4049">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
