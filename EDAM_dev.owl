@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4048</next_id>
-        <oboLegacy:date>23.09.2024 23:58 UTC</oboLegacy:date>
+        <oboLegacy:date>23.09.2024 23:30 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -47,8 +47,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/EDAM_1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/EDAM_1.25-20240923T2358Z-dev(1.26)"/>
-        <owl:versionInfo>1.25-20240923T2358Z-dev(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/EDAM_1.25-20240923T2330Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20240923T2330Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -56918,7 +56918,7 @@
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>erin.calhoun</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
-        <rdfs:comment>The purpose of data management is keeping data consistent, easy to access and use, while ensuring a required level of data privacy. Good data management improves the visibility, impact, and lifetime of data.</rdfs:comment>
+        <rdfs:comment>The purpose of data management is keeping data consistent, easy to access and use, while ensuring a required level of data protection. Good data management improves the visibility, impact, and lifetime of data.</rdfs:comment>
         <rdfs:label>Data management</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metadata_management"/>
@@ -61186,6 +61186,7 @@
         <created_in>1.26</created_in>
         <related_term>Classified information</related_term>
         <related_term>Confidential information</related_term>
+        <related_term>Data privacy</related_term>
         <related_term>Information privacy</related_term>
         <related_term>Information sensitivity</related_term>
         <related_term>Personal data</related_term>
@@ -61200,7 +61201,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
-        <rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered species that could be exploited.</rdfs:comment>
+        <rdfs:comment>Sensitive data includes not only personal and commercial data, but also information about e.g. localisation of endangered biological species that could be exploited.</rdfs:comment>
         <rdfs:comment>Note that the term information security (https://en.wikipedia.org/wiki/Information_security) covers both the data management aspect for protected data (this topic_4044), and the technical aspect of cybersecurity (topic_4045).</rdfs:comment>
         <rdfs:label>Data protection</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"/>
@@ -61259,7 +61260,7 @@
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:comment>Distributed version control is particularly useful for open, collaborative development of software and other creative work, enabling global communities to work cohesively.</rdfs:comment>
-        <rdfs:comment>Version control originates from software engineering for managing source code, but it is applicable to other digital artefacts, especially any kind of text-based files. With certain limitations, version control can also be applied to binary files.</rdfs:comment>
+        <rdfs:comment>Version control originates from software engineering, with the purpose of managing source code. However, version control is applicable to other digital artefacts, especially any kind of text-based files. With certain limitations, version control can also be applied to binary files.</rdfs:comment>
         <rdfs:label>Version control</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Version_control"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q189439"/>
@@ -61274,15 +61275,24 @@
         <created_in>1.26</created_in>
         <related_term>Code stewardship</related_term>
         <related_term>Software stewardship</related_term>
+        <related_term>Service curation</related_term>
+        <related_term>Service registry</related_term>
+        <related_term>Software archive</related_term>
         <related_term>Software curation</related_term>
+        <related_term>Software registry</related_term>
+        <related_term>Tool curation</related_term>
+        <related_term>Tool registry</related_term>
+        <related_term>Workflow curation</related_term>
+        <related_term>Workflow registry</related_term>
         <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date>2023-02-25T02:40:36.851802Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>Software management comprises the practices and principles of taking care of software, other than programming it. This includes for example taking care of the associated information and documentation, and the processes of contribution, validation, release/publication, or deployment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Software management comprises the practices and principles of taking care of software and software-based or software-like services, other than programming and maintenance. This includes for example taking care of the associated information and documentation, and the processes of contribution, validation, release/publication, or deployment.</oboInOwl:hasDefinition>
+        <oboInOwl:hasRelatedSynonym>Service management</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>bianchini</oboInOwl:savedBy>
         <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
-        <rdfs:comment>The purpose of software management is keeping software consistent, easy to use, update, and expand. Good software management improves the visibility, impact, and lifetime of software.</rdfs:comment>
+        <rdfs:comment>The purpose of software management is keeping software or service consistent, easy to use, to update, and to expand. Good software management improves the visibility, impact, and lifetime of software and software-based or software-like services.</rdfs:comment>
         <rdfs:label>Software management</rdfs:label>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q947779"/>
     </owl:Class>
