@@ -1,6 +1,8 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
+## Table fo contents
+  - EDAM.owl (1.25-20240924T0027Z-unstable(1.26))
   - [EDAM_1.25.owl](#edam_125owl)
   - [EDAM_1.24.owl](#edam_124owl)
   - [EDAM_1.23.owl](#edam_123owl)
@@ -16,6 +18,57 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.13.owl](#edam_113owl)
   - [EDAM_1.12.owl](#edam_112owl)
 
+
+# EDAM.owl 1.25-20240924T0027Z-unstable(1.26)
+
+### New topics (20+3):
+- Acoustics
+- Antimicrobial resistance
+- Biosciences
+- Carbon cycle
+- Chemometrics (was wrongly as operation)
+- Cryogenic electron microscopy
+- Cybersecurity
+- Data protection
+- Data rescue
+- Electrocardiography
+- Electroencephalography
+- FAIR data
+- Genome resequencing (was wrongly as operation)
+- Genomic imprinting
+- Metabarcoding
+- Metabolic engineering (was wrongly as operation)
+- Microfluidics
+- Multiomics
+- Open science
+- Ribosome Profiling
+- Single-cell sequencing
+- Software management
+- Version control
+
+### New operations (6):
+- Data digitisation
+- Data management planning
+- Disease transmission analysis
+- DNA modification prediction
+- Multiple testing correction
+- Power test
+
+### New data (2):
+- Data management plan
+- ORCID Identifier
+
+### New formats (10):
+- BioSimulators format for the specifications of biosimulation tools
+- BioSimulators standard for command-line interfaces for biosimulation tools
+- cif
+- cml
+- gVCF
+- maDMP
+- MSP
+- PDBQT
+- PEtab
+- PQR
 
 # EDAM_1.25.owl
 
