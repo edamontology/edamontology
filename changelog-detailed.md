@@ -1,7 +1,7 @@
 # Detailed list of changes in stable versions of EDAM.owl
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
-## Table fo contents
+## Table of contents
   - EDAM.owl (1.25-20240924T0027Z-unstable(1.26))
   - [EDAM_1.25.owl](#edam_125owl)
   - [EDAM_1.24.owl](#edam_124owl)
@@ -20,6 +20,8 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 
 
 # EDAM.owl 1.25-20240924T0027Z-unstable(1.26)
+
+**N.B.:** The following list currently contains all the additions done in all the "unstable" releases since the "stable" release 1.25. 
 
 ### New topics (20+3):
 - Acoustics
