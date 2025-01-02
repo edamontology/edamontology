@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4048</next_id>
-        <oboLegacy:date>24.09.2024 00:27 UTC</oboLegacy:date>
+        <next_id>4050</next_id>
+        <oboLegacy:date>02.01.2025 13:48 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -45,10 +45,10 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/identifiers"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
-        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20240924T0027Z-dev(1.26)"/>
-        <owl:versionInfo>1.25-20240924T0027Z-dev(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250102T1348Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20250102T1348Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -37486,6 +37486,47 @@
         <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
     </owl:Class>
     
+
+
+    <!-- http://edamontology.org/format_4048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4048">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <citation rdf:resource="https://doi.org/10.1038/nbt.3820"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://www.nextflow.io/docs/latest/index.html"/>
+        <example rdf:resource="https://www.nextflow.io/example1.html"/>
+        <file_extension>nf</file_extension>
+        <organisation rdf:resource="https://seqera.io/"/>
+        <repository rdf:resource="https://github.com/nextflow-io/nextflow"/>
+        <oboInOwl:hasDefinition>Nextflow is a workflow system for creating scalable, portable, and reproducible workflows.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>This term covers all versions of Nextflow language specifications.</rdfs:comment>
+        <rdfs:label>Nextflow</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nextflow"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4049 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4049">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <citation rdf:resource="https://doi.org/10.12688/f1000research.29032.2"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://snakemake.readthedocs.io/en/stable/"/>
+        <documentation rdf:resource="https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html"/>
+        <example rdf:resource="https://github.com/snakemake/snakemake/tree/main/examples/hello-world"/>
+        <file_extension>smk</file_extension>
+        <organisation rdf:resource="https://snakemake.github.io/"/>
+        <repository rdf:resource="https://github.com/snakemake/snakemake"/>
+        <oboInOwl:hasDefinition>The Snakemake workflow management system is a tool to create reproducible and scalable data analyses.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:label>Snakemake</rdfs:label>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
