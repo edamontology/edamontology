@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4050</next_id>
-        <oboLegacy:date>02.01.2025 13:48 UTC</oboLegacy:date>
+        <oboLegacy:date>03.01.2025 09:48 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -47,8 +47,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250102T1348Z-dev(1.26)"/>
-        <owl:versionInfo>1.25-20250102T1348Z-dev(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250103T0948Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20250103T0948Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -37492,6 +37492,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_4048">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <citation rdf:resource="https://doi.org/10.1038/nbt.3820"/>
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://www.nextflow.io/docs/latest/index.html"/>
@@ -37513,6 +37514,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_4049">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <citation rdf:resource="https://doi.org/10.12688/f1000research.29032.2"/>
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://snakemake.readthedocs.io/en/stable/"/>
