@@ -72,6 +72,129 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 - PEtab
 - PQR
 
+
+### Updated links to other ontologies and knowledge bases
+
+#### Data
+| Concept | Match and link  |
+| ------------- | ------------- |
+| Data [`data_0006`](http://edamontology.org/data_0006) | broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+| Data [`data_0006`](http://edamontology.org/data_0006) | broadMatch: http://purl.obolibrary.org/obo/IAO_0000030 |
+| Data [`data_0006`](http://edamontology.org/data_0006) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+| Data [`data_0006`](http://edamontology.org/data_0006) | closeMatch: http://purl.org/biotop/biotop.owl#DigitalEntity |
+| Data [`data_0006`](http://edamontology.org/data_0006) | closeMatch: http://semanticscience.org/resource/SIO_000069 |
+| Data [`data_0006`](http://edamontology.org/data_0006) | exactMatch: http://wsio.org/data_002 |
+| Data [`data_0006`](http://edamontology.org/data_0006) | narrowMatch: http://purl.obolibrary.org/obo/IAO_0000027 |
+| Data [`data_0006`](http://edamontology.org/data_0006) | relatedMatch: http://semanticscience.org/resource/SIO_000088 |
+| Identifier [`data_0842`](http://edamontology.org/data_0842) | exactMatch: http://semanticscience.org/resource/SIO_000115 |
+| Identifier [`data_0842`](http://edamontology.org/data_0842) | exactMatch: http://wsio.org/data_005 |
+| Identifier [`data_0842`](http://edamontology.org/data_0842) | narrowMatch: http://purl.org/dc/elements/1.1/identifier |
+| Name [`data_2099`](http://edamontology.org/data_2099) | broadMatch: http://www.w3.org/2000/01/rdf-schema#label |
+| Data management plan [`data_4040`](http://edamontology.org/data_4040) | exactMatch: data management plan  https://www.wikidata.org/wiki/Q17085509 |
+
+#### Formats
+| Concept | Match and link  |
+| ------------- | ------------- |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://purl.org/biotop/biotop.owl#Quality |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://purl.org/dc/elements/1.1/format |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://semanticscience.org/resource/SIO_000612 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+| Format [`format_1915`](http://edamontology.org/format_1915) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Symbol_structure |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://purl.obolibrary.org/obo/IAO_0000098 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://purl.org/biotop/biotop.owl#MachineLanguage |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://semanticscience.org/resource/SIO_000618 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://wsio.org/compression_004 |
+| Format [`format_1915`](http://edamontology.org/format_1915) | relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| maDMP [`format_4041`](http://edamontology.org/format_4041) | exactMatch: https://doi.org/10.25504/FAIRsharing.6e60e5 |
+
+#### Properties
+| Concept | Match and link  |
+| ------------- | ------------- |
+| has format [`has_format`](http://edamontology.org/has_format) | broadMatch: http://purl.obolibrary.org/obo/OBI_0000298 |
+| has format [`has_format`](http://edamontology.org/has_format) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality |
+| has function [`has_function`](http://edamontology.org/has_function) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#has-quality |
+| has function [`has_function`](http://edamontology.org/has_function) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000306 |
+| has function [`has_function`](http://edamontology.org/has_function) | exactMatch: http://wsio.org/has_function |
+| has input [`has_input`](http://edamontology.org/has_input) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000293 |
+| has input [`has_input`](http://edamontology.org/has_input) | exactMatch: http://wsio.org/has_input |
+| has output [`has_output`](http://edamontology.org/has_output) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000299 |
+| has output [`has_output`](http://edamontology.org/has_output) | exactMatch: http://wsio.org/has_output |
+| is format of [`is_format_of`](http://edamontology.org/is_format_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
+| is function of [`is_function_of`](http://edamontology.org/is_function_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
+| is function of [`is_function_of`](http://edamontology.org/is_function_of) | exactMatch: http://wsio.org/is_function_of |
+| is input of [`is_input_of`](http://edamontology.org/is_input_of) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000295 |
+| is input of [`is_input_of`](http://edamontology.org/is_input_of) | exactMatch: http://wsio.org/is_input_of |
+| is output of [`is_output_of`](http://edamontology.org/is_output_of) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000312 |
+| is output of [`is_output_of`](http://edamontology.org/is_output_of) | exactMatch: http://wsio.org/is_output_of |
+| is topic of [`is_topic_of`](http://edamontology.org/is_topic_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
+
+#### Operations
+| Concept | Match and link  |
+| ------------- | ------------- |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://purl.org/biotop/biotop.owl#Function |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://semanticscience.org/resource/SIO_000017 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Function |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | closeMatch: http://semanticscience.org/resource/SIO_000649 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | closeMatch: http://www.ebi.ac.uk/swo/SWO_0000003 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | exactMatch: http://wsio.org/operation_001 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://purl.obolibrary.org/obo/BFO_0000015 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://purl.obolibrary.org/obo/BFO_0000034 |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | relatedMatch: http://www.onto-med.de/ontologies/gfo.owl#Process |
+| Information retrieval [`operation_3908`](http://edamontology.org/operation_3908) | exactMatch: information retrieval  https://www.wikidata.org/wiki/Q816826 |
+| Data digitisation [`operation_4043`](http://edamontology.org/operation_4043) | exactMatch: digitization  https://www.wikidata.org/wiki/Q843958 |
+| Data digitisation [`operation_4043`](http://edamontology.org/operation_4043) | relatedMatch: digital preservation  https://www.wikidata.org/wiki/Q632897 |
+
+#### Topics
+| Concept | Match and link  |
+| ------------- | ------------- |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Category |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | closeMatch: http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | relatedMatch: http://purl.org/biotop/biotop.owl#Quality |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| Lipidomics [`topic_0153`](http://edamontology.org/topic_0153) | exactMatch: http://id.nlm.nih.gov/mesh/D000081362 |
+| Lipidomics [`topic_0153`](http://edamontology.org/topic_0153) | exactMatch: lipidomics  https://www.wikidata.org/wiki/Q6556376 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data archiving  https://www.wikidata.org/wiki/Q65769313 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data curation  https://www.wikidata.org/wiki/Q15088675 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data preservation  https://www.wikidata.org/wiki/Q48797981 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | narrowMatch: research data archiving  https://www.wikidata.org/wiki/Q17155735 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | relatedMatch: data library  https://www.wikidata.org/wiki/Q5227240 |
+| Data management [`topic_3071`](http://edamontology.org/topic_3071) | exactMatch: data management  https://www.wikidata.org/wiki/Q1149776 |
+| Data management [`topic_3071`](http://edamontology.org/topic_3071) | exactMatch: http://purl.bioontology.org/ontology/MSH/D000079803 |
+| Data management [`topic_3071`](http://edamontology.org/topic_3071) | narrowMatch: metadata management  https://www.wikidata.org/wiki/Q6822246 |
+| Data management [`topic_3071`](http://edamontology.org/topic_3071) | narrowMatch: research data management  https://www.wikidata.org/wiki/Q30089794 |
+| Data acquisition [`topic_3077`](http://edamontology.org/topic_3077) | exactMatch: data acquisition  https://www.wikidata.org/wiki/Q1172399 |
+| Data acquisition [`topic_3077`](http://edamontology.org/topic_3077) | exactMatch: data collection  https://www.wikidata.org/wiki/Q4929239 |
+| Metagenomics [`topic_3174`](http://edamontology.org/topic_3174) | exactMatch: http://purl.bioontology.org/ontology/MSH/D056186 |
+| Data governance [`topic_3571`](http://edamontology.org/topic_3571) | exactMatch: data governance  https://www.wikidata.org/wiki/Q872685 |
+| Data governance [`topic_3571`](http://edamontology.org/topic_3571) | relatedMatch: data steward  https://www.wikidata.org/wiki/Q1172231 |
+| Data governance [`topic_3571`](http://edamontology.org/topic_3571) | relatedMatch: data stewardship  https://www.wikidata.org/wiki/Q57450885 |
+| Data rescue [`topic_4011`](http://edamontology.org/topic_4011) | exactMatch: Data rescue  https://www.wikidata.org/wiki/Q29097553 |
+| FAIR data [`topic_4012`](http://edamontology.org/topic_4012) | closeMatch: open data  https://www.wikidata.org/wiki/Q309901 |
+| FAIR data [`topic_4012`](http://edamontology.org/topic_4012) | exactMatch: FAIR data  https://www.wikidata.org/wiki/Q29032648 |
+| Metabarcoding [`topic_4038`](http://edamontology.org/topic_4038) | exactMatch: metabarcoding  https://www.wikidata.org/wiki/Q51237016 |
+| Metabarcoding [`topic_4038`](http://edamontology.org/topic_4038) | relatedMatch: environmental DNA  https://www.wikidata.org/wiki/Q25098939 |
+| Data protection [`topic_4044`](http://edamontology.org/topic_4044) | closeMatch: information privacy  https://www.wikidata.org/wiki/Q456632 |
+| Data protection [`topic_4044`](http://edamontology.org/topic_4044) | closeMatch: sensitive information  https://www.wikidata.org/wiki/Q2587068 |
+| Data protection [`topic_4044`](http://edamontology.org/topic_4044) | relatedMatch: General Data Protection Regulation  https://www.wikidata.org/wiki/Q1172506 |
+| Cybersecurity [`topic_4045`](http://edamontology.org/topic_4045) | narrowMatch: computer security  https://www.wikidata.org/wiki/Q3510521 |
+| Cybersecurity [`topic_4045`](http://edamontology.org/topic_4045) | narrowMatch: data security  https://www.wikidata.org/wiki/Q899388 |
+| Cybersecurity [`topic_4045`](http://edamontology.org/topic_4045) | relatedMatch: information security  https://www.wikidata.org/wiki/Q189900 |
+| Version control [`topic_4046`](http://edamontology.org/topic_4046) | exactMatch: version control  https://www.wikidata.org/wiki/Q189439 |
+| Software management [`topic_4047`](http://edamontology.org/topic_4047) | relatedMatch: software project management  https://www.wikidata.org/wiki/Q947779 |
+
+
 # EDAM_1.25.owl
 
   - [New concepts](#new-concepts-125) with relations
