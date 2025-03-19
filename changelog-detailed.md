@@ -1,25 +1,25 @@
-# Detailed list of changes in stable versions of EDAM.owl
+# Detailed list of changes in stable versions of EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
 ## Table of contents
-  - EDAM.owl (1.25-20240924T0027Z-unstable(1.26))
-  - [EDAM_1.25.owl](#edam_125owl)
-  - [EDAM_1.24.owl](#edam_124owl)
-  - [EDAM_1.23.owl](#edam_123owl)
-  - [EDAM_1.22.owl](#edam_122owl)
-  - [EDAM_1.21.owl](#edam_121owl)
-  - [EDAM_1.20.owl](#edam_120owl)
-  - [EDAM_1.19.owl](#edam_119owl)
-  - [EDAM_1.18.owl](#edam_118owl)
-  - [EDAM_1.17.owl](#edam_117owl)
-  - [EDAM_1.16.owl](#edam_116owl)
-  - [EDAM_1.15.owl](#edam_115owl)
-  - [EDAM_1.14.owl](#edam_114owl)
-  - [EDAM_1.13.owl](#edam_113owl)
-  - [EDAM_1.12.owl](#edam_112owl)
+  - [EDAM (1.25-20240924T0027Z-unstable(1.26))](#edam-125-20240924t0027z-unstable126)
+  - [EDAM_1.25](#edam_125)
+  - [EDAM_1.24](#edam_124)
+  - [EDAM_1.23](#edam_123)
+  - [EDAM_1.22](#edam_122)
+  - [EDAM_1.21](#edam_121)
+  - [EDAM_1.20](#edam_120)
+  - [EDAM_1.19](#edam_119)
+  - [EDAM_1.18](#edam_118)
+  - [EDAM_1.17](#edam_117)
+  - [EDAM_1.16](#edam_116)
+  - [EDAM_1.15](#edam_115)
+  - [EDAM_1.14](#edam_114)
+  - [EDAM_1.13](#edam_113)
+  - [EDAM_1.12](#edam_112)
 
 
-# EDAM.owl 1.25-20240924T0027Z-unstable(1.26)
+# EDAM 1.25-20240924T0027Z-unstable(1.26)
 
 **N.B.:** The following list currently contains all the additions done in all the "unstable" releases since the "stable" release 1.25. 
 
@@ -193,7 +193,7 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 | Version control [`topic_4046`](http://edamontology.org/topic_4046) | exactMatch: version control  https://www.wikidata.org/wiki/Q189439 |
 | Software management [`topic_4047`](http://edamontology.org/topic_4047) | relatedMatch: software project management  https://www.wikidata.org/wiki/Q947779 |
 
-# EDAM_1.25.owl
+# EDAM_1.25
 
   - [New concepts](#new-concepts-125) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-125)
@@ -488,7 +488,7 @@ Label: Differential protein expression analysis
 +   'Differential protein expression analysis' SubClassOf 'Gene expression profiling'
 
 
-# EDAM_1.24.owl
+# EDAM_1.24
 
   - [New concepts](#new-concepts-124) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-124)
@@ -993,7 +993,7 @@ Label: Secondary structure alignment (protein)
 -   'Secondary structure alignment (protein)' SubClassOf 'Protein alignment'
 
 
-# EDAM_1.23.owl
+# EDAM_1.23
 
   - [New concepts](#new-concepts-123) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-123)
@@ -1091,7 +1091,7 @@ Label: Raw sequence
 -   'Raw sequence' SubClassOf 'Sequence'
 +   'Raw sequence' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
 
-# EDAM_1.22.owl
+# EDAM_1.22
 
   - [New concepts](#new-concepts-121) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-121)
@@ -1588,6 +1588,8 @@ Label: Nucleic acid features report (promoters)
 Class: http://edamontology.org/data_1311
 Label: Gene features report (operon)
 -   'Gene features report (operon)' SubClassOf http://www.w3.org/2002/07/owl#DeprecatedClass
+
+# EDAM_1.21
 
 ## New concepts (1.21):
 
@@ -4323,7 +4325,7 @@ Label: RNA-Seq analysis
 
 
 
-# EDAM_1.20.owl
+# EDAM_1.20
 
   - [New concepts](#new-concepts-120) with relations
   - [Changed relations between concepts](#changed-relations-between-concepts-120)
@@ -5326,7 +5328,7 @@ Label: Nucleic acid folding analysis
 
 
 
-# EDAM\_1.19.owl
+# EDAM\_1.19
 
 ## Modified concepts (1.19):
 
@@ -5881,7 +5883,7 @@ Label: Differentially-methylated region identification
 +   (+) 'Differentially-methylated region identification' SubClassOf 'Methylation analysis'
 
 
-# EDAM\_1.18.owl
+# EDAM\_1.18
 
 ## Classes modified (1.18):
 
@@ -6172,7 +6174,7 @@ label: Protein architecture comparison
 - 'Protein architecture comparison' SubClassOf 'Protein secondary structure comparison'
 
 
-# EDAM\_1.17.owl
+# EDAM\_1.17
 
 ## Classes modified (1.17):
  
@@ -6434,7 +6436,7 @@ Label: Read binning
 +   (+) 'Read binning' SubClassOf 'Nucleic acid sequence analysis'
 
 
-# EDAM\_1.16.owl
+# EDAM\_1.16
 
 ## Classes modified (1.16):
  
@@ -6856,7 +6858,7 @@ Label: PTM localisation
 
 
 
-# EDAM\_1.15.owl
+# EDAM\_1.15
 
 ## Classes modified (1.15):
 
@@ -7101,7 +7103,7 @@ Class: http://edamontology.org/operation_3731
 Label: Sample comparison
 +   (+) 'Sample comparison' SubClassOf 'Comparison'
 
-# EDAM\_1.14.owl
+# EDAM\_1.14
 
 ## Classes modified (1.14):
  
@@ -7296,7 +7298,7 @@ Class: http://edamontology.org/operation_3715
 Label: Metabolic labeling
 +   (+) 'Metabolic labeling' SubClassOf 'Labeled quantification'
 
-# EDAM\_1.13.owl
+# EDAM\_1.13
 
 ## Classes modified (1.13):
 
@@ -12777,7 +12779,7 @@ Class: http://edamontology.org/operation_3695
 Label: Filtering
 +   (+) 'Filtering' SubClassOf 'File handling'
 
-# EDAM\_1.12.owl
+# EDAM\_1.12
 
 ## Classes modified (1.12):
 
