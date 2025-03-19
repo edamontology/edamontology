@@ -72,7 +72,7 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 - PEtab
 - PQR
 
-### Matches of EDAM concepts
+### Added and updated links to other ontologies and knowledge bases:
 
 #### Data
 | Concept | Match and link  |
