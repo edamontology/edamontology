@@ -74,6 +74,70 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 
 ### Added and updated links to other ontologies and knowledge bases:
 
+#### Topics
+| Concept | Match |
+| ------------- | ------------- |
+| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
+|| broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Category |
+|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+|| closeMatch: http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research |
+|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
+|| relatedMatch: http://purl.org/biotop/biotop.owl#Quality |
+|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| Lipidomics [`topic_0153`](http://edamontology.org/topic_0153) | exactMatch: http://id.nlm.nih.gov/mesh/D000081362 |
+|| exactMatch: lipidomics  https://www.wikidata.org/wiki/Q6556376 |
+| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data archiving  https://www.wikidata.org/wiki/Q65769313 |
+|| exactMatch: data curation  https://www.wikidata.org/wiki/Q15088675 |
+|| exactMatch: data preservation  https://www.wikidata.org/wiki/Q48797981 |
+|| narrowMatch: research data archiving  https://www.wikidata.org/wiki/Q17155735 |
+|| relatedMatch: data library  https://www.wikidata.org/wiki/Q5227240 |
+| Data management [`topic_3071`](http://edamontology.org/topic_3071) | exactMatch: data management  https://www.wikidata.org/wiki/Q1149776 |
+|| exactMatch: http://purl.bioontology.org/ontology/MSH/D000079803 |
+|| narrowMatch: metadata management  https://www.wikidata.org/wiki/Q6822246 |
+|| narrowMatch: research data management  https://www.wikidata.org/wiki/Q30089794 |
+| Data acquisition [`topic_3077`](http://edamontology.org/topic_3077) | exactMatch: data acquisition  https://www.wikidata.org/wiki/Q1172399 |
+|| exactMatch: data collection  https://www.wikidata.org/wiki/Q4929239 |
+| Metagenomics [`topic_3174`](http://edamontology.org/topic_3174) | exactMatch: http://purl.bioontology.org/ontology/MSH/D056186 |
+| Data governance [`topic_3571`](http://edamontology.org/topic_3571) | exactMatch: data governance  https://www.wikidata.org/wiki/Q872685 |
+|| relatedMatch: data steward  https://www.wikidata.org/wiki/Q1172231 |
+|| relatedMatch: data stewardship  https://www.wikidata.org/wiki/Q57450885 |
+| Data rescue [`topic_4011`](http://edamontology.org/topic_4011) | exactMatch: Data rescue  https://www.wikidata.org/wiki/Q29097553 |
+| FAIR data [`topic_4012`](http://edamontology.org/topic_4012) | closeMatch: open data  https://www.wikidata.org/wiki/Q309901 |
+|| exactMatch: FAIR data  https://www.wikidata.org/wiki/Q29032648 |
+| Metabarcoding [`topic_4038`](http://edamontology.org/topic_4038) | exactMatch: metabarcoding  https://www.wikidata.org/wiki/Q51237016 |
+|| relatedMatch: environmental DNA  https://www.wikidata.org/wiki/Q25098939 |
+| Data protection [`topic_4044`](http://edamontology.org/topic_4044) | closeMatch: information privacy  https://www.wikidata.org/wiki/Q456632 |
+|| closeMatch: sensitive information  https://www.wikidata.org/wiki/Q2587068 |
+|| relatedMatch: General Data Protection Regulation  https://www.wikidata.org/wiki/Q1172506 |
+| Cybersecurity [`topic_4045`](http://edamontology.org/topic_4045) | narrowMatch: computer security  https://www.wikidata.org/wiki/Q3510521 |
+|| narrowMatch: data security  https://www.wikidata.org/wiki/Q899388 |
+|| relatedMatch: information security  https://www.wikidata.org/wiki/Q189900 |
+| Version control [`topic_4046`](http://edamontology.org/topic_4046) | exactMatch: version control  https://www.wikidata.org/wiki/Q189439 |
+| Software management [`topic_4047`](http://edamontology.org/topic_4047) | relatedMatch: software project management  https://www.wikidata.org/wiki/Q947779 |
+
+#### Operations
+| Concept | Match |
+| ------------- | ------------- |
+| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
+|| broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
+|| broadMatch: http://purl.org/biotop/biotop.owl#Function |
+|| broadMatch: http://semanticscience.org/resource/SIO_000017 |
+|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Function |
+|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
+|| closeMatch: http://semanticscience.org/resource/SIO_000649 |
+|| closeMatch: http://www.ebi.ac.uk/swo/SWO_0000003 |
+|| exactMatch: http://wsio.org/operation_001 |
+|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000015 |
+|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
+|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000034 |
+|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process |
+|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+|| relatedMatch: http://www.onto-med.de/ontologies/gfo.owl#Process |
+| Information retrieval [`operation_3908`](http://edamontology.org/operation_3908) | exactMatch: information retrieval  https://www.wikidata.org/wiki/Q816826 |
+| Data digitisation [`operation_4043`](http://edamontology.org/operation_4043) | exactMatch: digitization  https://www.wikidata.org/wiki/Q843958 |
+|| relatedMatch: digital preservation  https://www.wikidata.org/wiki/Q632897 |
+
 #### Data
 | Concept | Match and link  |
 | ------------- | ------------- |
@@ -128,70 +192,6 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 | is output of [`is_output_of`](http://edamontology.org/is_output_of) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000312 |
 || exactMatch: http://wsio.org/is_output_of |
 | is topic of [`is_topic_of`](http://edamontology.org/is_topic_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
-
-#### Operations
-| Concept | Match |
-| ------------- | ------------- |
-| Operation [`operation_0004`](http://edamontology.org/operation_0004) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
-|| broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
-|| broadMatch: http://purl.org/biotop/biotop.owl#Function |
-|| broadMatch: http://semanticscience.org/resource/SIO_000017 |
-|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Function |
-|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
-|| closeMatch: http://semanticscience.org/resource/SIO_000649 |
-|| closeMatch: http://www.ebi.ac.uk/swo/SWO_0000003 |
-|| exactMatch: http://wsio.org/operation_001 |
-|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000015 |
-|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
-|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000034 |
-|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#process |
-|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
-|| relatedMatch: http://www.onto-med.de/ontologies/gfo.owl#Process |
-| Information retrieval [`operation_3908`](http://edamontology.org/operation_3908) | exactMatch: information retrieval  https://www.wikidata.org/wiki/Q816826 |
-| Data digitisation [`operation_4043`](http://edamontology.org/operation_4043) | exactMatch: digitization  https://www.wikidata.org/wiki/Q843958 |
-|| relatedMatch: digital preservation  https://www.wikidata.org/wiki/Q632897 |
-
-#### Topics
-| Concept | Match |
-| ------------- | ------------- |
-| Topic [`topic_0003`](http://edamontology.org/topic_0003) | broadMatch: http://onto.eva.mpg.de/ontologies/gfo-bio.owl#Method |
-|| broadMatch: http://purl.obolibrary.org/obo/BFO_0000002 |
-|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Category |
-|| broadMatch: http://www.onto-med.de/ontologies/gfo.owl#Perpetuant |
-|| closeMatch: http://bioontology.org/ontologies/ResearchArea.owl#Area_of_Research |
-|| relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
-|| relatedMatch: http://purl.org/biotop/biotop.owl#Quality |
-|| relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
-| Lipidomics [`topic_0153`](http://edamontology.org/topic_0153) | exactMatch: http://id.nlm.nih.gov/mesh/D000081362 |
-|| exactMatch: lipidomics  https://www.wikidata.org/wiki/Q6556376 |
-| Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data archiving  https://www.wikidata.org/wiki/Q65769313 |
-|| exactMatch: data curation  https://www.wikidata.org/wiki/Q15088675 |
-|| exactMatch: data preservation  https://www.wikidata.org/wiki/Q48797981 |
-|| narrowMatch: research data archiving  https://www.wikidata.org/wiki/Q17155735 |
-|| relatedMatch: data library  https://www.wikidata.org/wiki/Q5227240 |
-| Data management [`topic_3071`](http://edamontology.org/topic_3071) | exactMatch: data management  https://www.wikidata.org/wiki/Q1149776 |
-|| exactMatch: http://purl.bioontology.org/ontology/MSH/D000079803 |
-|| narrowMatch: metadata management  https://www.wikidata.org/wiki/Q6822246 |
-|| narrowMatch: research data management  https://www.wikidata.org/wiki/Q30089794 |
-| Data acquisition [`topic_3077`](http://edamontology.org/topic_3077) | exactMatch: data acquisition  https://www.wikidata.org/wiki/Q1172399 |
-|| exactMatch: data collection  https://www.wikidata.org/wiki/Q4929239 |
-| Metagenomics [`topic_3174`](http://edamontology.org/topic_3174) | exactMatch: http://purl.bioontology.org/ontology/MSH/D056186 |
-| Data governance [`topic_3571`](http://edamontology.org/topic_3571) | exactMatch: data governance  https://www.wikidata.org/wiki/Q872685 |
-|| relatedMatch: data steward  https://www.wikidata.org/wiki/Q1172231 |
-|| relatedMatch: data stewardship  https://www.wikidata.org/wiki/Q57450885 |
-| Data rescue [`topic_4011`](http://edamontology.org/topic_4011) | exactMatch: Data rescue  https://www.wikidata.org/wiki/Q29097553 |
-| FAIR data [`topic_4012`](http://edamontology.org/topic_4012) | closeMatch: open data  https://www.wikidata.org/wiki/Q309901 |
-|| exactMatch: FAIR data  https://www.wikidata.org/wiki/Q29032648 |
-| Metabarcoding [`topic_4038`](http://edamontology.org/topic_4038) | exactMatch: metabarcoding  https://www.wikidata.org/wiki/Q51237016 |
-|| relatedMatch: environmental DNA  https://www.wikidata.org/wiki/Q25098939 |
-| Data protection [`topic_4044`](http://edamontology.org/topic_4044) | closeMatch: information privacy  https://www.wikidata.org/wiki/Q456632 |
-|| closeMatch: sensitive information  https://www.wikidata.org/wiki/Q2587068 |
-|| relatedMatch: General Data Protection Regulation  https://www.wikidata.org/wiki/Q1172506 |
-| Cybersecurity [`topic_4045`](http://edamontology.org/topic_4045) | narrowMatch: computer security  https://www.wikidata.org/wiki/Q3510521 |
-|| narrowMatch: data security  https://www.wikidata.org/wiki/Q899388 |
-|| relatedMatch: information security  https://www.wikidata.org/wiki/Q189900 |
-| Version control [`topic_4046`](http://edamontology.org/topic_4046) | exactMatch: version control  https://www.wikidata.org/wiki/Q189439 |
-| Software management [`topic_4047`](http://edamontology.org/topic_4047) | relatedMatch: software project management  https://www.wikidata.org/wiki/Q947779 |
 
 # EDAM_1.25
 
