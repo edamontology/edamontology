@@ -28729,6 +28729,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+	<file_extension>gff</file_extension>
+	<file_extension>gff.gz</file_extension>
+	<file_extension>gff3</file_extension>
+	<file_extension>gff3.gz</file_extension>
         <ontology_used rdf:resource="http://www.sequenceontology.org/"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
         <oboInOwl:hasDefinition>Generic Feature Format version 3 (GFF3) of sequence features.</oboInOwl:hasDefinition>
@@ -30577,6 +30581,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
+	<file_extension>gtf</file_extension>
+	<file_extension>gtf.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format4"/>
         <oboInOwl:hasDbXref rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
         <oboInOwl:hasDefinition>Gene Transfer Format (GTF), a restricted version of GFF.</oboInOwl:hasDefinition>
@@ -31293,6 +31299,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
+	<file_extension>bam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31310,6 +31317,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
+	<file_extension>sam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>Sequence Alignment/Map (SAM) format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31516,6 +31524,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
+	<file_extension>bed</file_extension>
+	<file_extension>bed.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
         <oboInOwl:hasDefinition>Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -32731,6 +32741,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>1.7</created_in>
         <documentation>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</documentation>
+	<file_extension>cram</file_extension>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Reference-based compression of alignment format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
