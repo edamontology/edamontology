@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4051</next_id>
-        <oboLegacy:date>03.02.2025 15:32 UTC</oboLegacy:date>
+        <next_id>4054</next_id>
+        <oboLegacy:date>02.04.2025 14:10 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -28,6 +28,7 @@
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
+        <dc:creator>Claire Rioualen</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
         <dcterms:format rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
         <has_format rdf:resource="http://edamontology.org/format_3261"/>
@@ -47,8 +48,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250203T1532Z-dev(1.26)"/>
-        <owl:versionInfo>1.25-20250203T1532Z-dev(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250402T1532Z-dev(1.26)"/>
+        <owl:versionInfo>1.25-20250402T1532Z-dev(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -61382,6 +61383,53 @@
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q947779"/>
     </owl:Class>
     
+
+    <!-- http://edamontology.org/topic_4051 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4051">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <citation rdf:resource="https://doi.org/10.1016/j.cell.2011.11.013"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Chromatin immunoprecipitation-based exeperiment similar to ChIP-seq, with an additional experimental step using an exonuclease to increase the resolution of protein binding site identification.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>ChIP-exo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-exo"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4052 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4052">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <citation rdf:resource="https://doi.org/10.1126/science.1181369"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>High-throughput genomic and epigenomic technique that capture chromatin conformation, allowing a genome-wide identification of chromatin interactions and structure.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>Hi-C</rdfs:label>
+        <rdfs:seeAlso rdf:resource=" https://en.wikipedia.org/wiki/Hi-C_(genomic_analysis_technique)"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4053 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4053">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"
+        <citation rdf:resource="https://doi.org/10.1038/nmeth.2688"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Assay for Transposase-Accessible Chromatin with high throughput sequencing. This technique is designed for the genome-wide detection of open chromatin regions.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>ATAC-seq</rdfs:label>
+        <rdfs:seeAlso rdf:resource="hhttps://en.wikipedia.org/wiki/ATAC-seq"/>
+    </owl:Class>
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
