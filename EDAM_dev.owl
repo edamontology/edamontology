@@ -34334,20 +34334,16 @@
     <!-- http://edamontology.org/format_3700 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3700">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
+        <deprecation_comment>This concept was a duplicate of format tabix (see replacedBy attribute).</deprecation_comment>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>Index file format used by the samtools package to index TAB-delimited genome position files.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3616"/>
         <rdfs:label>Tabix index file format</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
