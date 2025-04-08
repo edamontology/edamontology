@@ -33778,16 +33778,25 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3616">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://www.htslib.org/doc/tabix.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.htslib.org/doc/tabix.html"/>
+        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
         <oboInOwl:hasDefinition>TAB-delimited genome position file index format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Tabix index file</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <rdfs:label>tabix</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tabix"/>
+        <skos:editorialNote>Claire added properties and changed parent class according to format_3700. Consider deprecating the latter. Version 1.26. </skos:editorialNote>
     </owl:Class>
-    
 
 
     <!-- http://edamontology.org/format_3617 -->
