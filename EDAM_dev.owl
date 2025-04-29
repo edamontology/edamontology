@@ -33796,7 +33796,8 @@
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <rdfs:label>tabix</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tabix"/>
-        <skos:editorialNote>Claire added properties and changed parent class according to format_3700. Consider deprecating the latter. Version 1.26. </skos:editorialNote>
+        <skos:editorialNote>Claire added properties and changed parent class according to format_3700. Deprecated the latter. Version 1.26.</skos:editorialNote>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q105424896"/>
     </owl:Class>
 
 
@@ -34339,6 +34340,7 @@
         <created_in>1.13</created_in>
         <deprecation_comment>This concept was a duplicate of format tabix (see replacedBy attribute).</deprecation_comment>
         <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/format_2333"/>
         <oldParent rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>Index file format used by the samtools package to index TAB-delimited genome position files.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
