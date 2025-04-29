@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4054</next_id>
-        <oboLegacy:date>02.04.2025 14:10 UTC</oboLegacy:date>
+        <oboLegacy:date>08.04.2025 10:30 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -48,7 +48,7 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250402T1532Z-dev(1.26)"/>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250408T1030Z-dev(1.26)"/>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -33778,16 +33778,27 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3616">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://www.htslib.org/doc/tabix.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.htslib.org/doc/tabix.html"/>
+        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
         <oboInOwl:hasDefinition>TAB-delimited genome position file index format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Tabix index file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tbi</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <rdfs:label>tabix</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tabix"/>
+        <skos:editorialNote>Claire added properties and changed parent class according to format_3700. Deprecated the latter. Version 1.26.</skos:editorialNote>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q105424896"/>
     </owl:Class>
-    
 
 
     <!-- http://edamontology.org/format_3617 -->
@@ -34325,20 +34336,17 @@
     <!-- http://edamontology.org/format_3700 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3700">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
+        <deprecation_comment>This concept was a duplicate of format tabix (see replacedBy attribute).</deprecation_comment>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/format_2333"/>
+        <oldParent rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>Index file format used by the samtools package to index TAB-delimited genome position files.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3616"/>
         <rdfs:label>Tabix index file format</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
