@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4054</next_id>
-        <oboLegacy:date>08.04.2025 10:30 UTC</oboLegacy:date>
+        <next_id>4061</next_id>
+        <oboLegacy:date>22.08.2025 14:30 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -48,7 +48,7 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250408T1030Z-dev(1.26)"/>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250822T1430Z-dev(1.26)"/>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -57355,15 +57355,16 @@
     <!-- http://edamontology.org/topic_3171 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_3171">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
-        <created_in>1.1</created_in>
-        <obsolete_since>1.3</obsolete_since>
-        <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:hasDefinition>DNA methylation including bisulfite sequencing, methylation sites and analysis, for example of patterns and profiles of DNA methylation in a population, tissue etc.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
-        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_3295"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>DNA methylation sequencing  a set of sequencing techniques used to profile DNA methylation. They enable detailed mapping of methylation patterns across the genome to study epigenetic regulation.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:comment>[Claire Rioualen] Created in 1.1, deprecated in 1.3, restored as topic_3171 in 1.26. Removed attributes: 'Old parent', 'Obsolete since', 'Replaced by', 'deprecated'. Updated attributes: 'SubClassOf', 'inSubset', 'Created in', 'hasDefinition', 'seeAlso'. Added attributes: 'comment', 'exactMatch', 'hasExactSynonym'.</rdfs:comment>
         <rdfs:label>DNA methylation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNA_methylation"/>
     </owl:Class>
     
 
@@ -61436,6 +61437,62 @@
         <rdfs:label>ATAC-seq</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ATAC-seq"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q22704317"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4058 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4058">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3171"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Bisulfite sequencing is a technique used to determine DNA methylation patterns by treating DNA with bisulfite, which converts unmethylated cytosines to uracils while leaving methylated cytosines unchanged.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>BSP-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>BSPP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bisulfite-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bisulphite sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>Bisulfite sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bisulfite_sequencing"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4087270"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4059 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4059">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Bulk sequencing is a method that measures the average *-omic content of a large population of cells, without distinguishing between individual cells.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>BRB-seq</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Bulk RNA sequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Bulk RNA-seq</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>Bulk sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/BRB-seq"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4060 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4060">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>DNase sequencing (DNase-seq) is a technique used to identify regions of open chromatin by sequencing DNA fragments generated after treatment with DNase 1, which preferentially cuts accessible DNA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DNase-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>DNase sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNase-Seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5205821"/>
     </owl:Class>
 
 
