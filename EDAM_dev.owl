@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4054</next_id>
-        <oboLegacy:date>08.04.2025 10:30 UTC</oboLegacy:date>
+        <next_id>4056</next_id>
+        <oboLegacy:date>15.07.2025 14:10 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -48,7 +48,7 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250408T1030Z-dev(1.26)"/>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250715T1532Z-dev(1.26)"/>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -59833,12 +59833,15 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_3523">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
-        <created_in>1.8</created_in>
-        <oboInOwl:hasDefinition>RNAi experiments.</oboInOwl:hasDefinition>
+        <edamontology:created_in>1.8</edamontology:created_in>
+        <oboInOwl:hasBroadSynonym>Post-transcriptional regulation</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDefinition>Experiment in which the expression of a specific gene is post-transcriptionally knocked down or silenced by means of a small RNA (sRNA) causing the degradation of the gene transcript (mRNA), and thus preventing the production of the corresponding protein.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>RNAi_experiment</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:label>RNAi experiment</rdfs:label>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAi experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Post-transcriptional_regulation"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_interference"/>
     </owl:Class>
     
@@ -61436,6 +61439,39 @@
         <rdfs:label>ATAC-seq</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ATAC-seq"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q22704317"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4054 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4054">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment in which the expression of a given gene is knocked down by means of a micro RNA (miRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>miRNA silencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_silencing"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4055 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4055">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experiment in which the expression of a given gene is knocked down by means of a small interfering RNA (siRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA silencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>siRNA experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_silencing"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Small_interfering_RNA"/>
     </owl:Class>
 
 
