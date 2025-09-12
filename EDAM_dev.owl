@@ -61476,6 +61476,44 @@
     </owl:Class>
 
 
+    <!-- http://edamontology.org/topic_4056 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4056">
+      <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+      <created_in>1.26</created_in>
+      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
+      <oboInOwl:hasDefinition>Long-read sequencing is a sequencing method that produces reads thousands to millions of base pairs long, allowing for better resolution of complex regions, structural variants, and full-length transcripts.</oboInOwl:hasDefinition>
+      <oboInOwl:hasExactSynonym>Third-generation sequencing</oboInOwl:hasExactSynonym>
+      <oboInOwl:hasNarrowSynonym>Nanopore sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:hasNarrowSynonym>Single-molecule real-time sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+      <rdfs:label>Long-read sequencing</rdfs:label>
+      <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Long-read_sequencing"/>
+      <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925505"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4057 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4057">
+      <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+      <created_in>1.26</created_in>
+      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
+      <oboInOwl:hasDefinition>Short-read sequencing is a high-throughput sequencing method that generates millions of short nucleotide fragments, typically 50–300 base pairs in length.</oboInOwl:hasDefinition>
+      <oboInOwl:hasNarrowSynonym>Massive parallel sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:hasNarrowSynonym>Second-generation sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+      <rdfs:label>Short-read sequencing</rdfs:label>
+      <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Short-read_sequencing"/>
+      <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925455"/>
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
