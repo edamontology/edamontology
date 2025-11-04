@@ -37593,6 +37593,72 @@
     </owl:Class>
 
 
+    <!-- http://edamontology.org/format_4056 -->
+
+      <owl:Class rdf:about="http://edamontology.org/format_4056">
+          <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+          <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+          <rdfs:subClassOf>
+              <owl:Restriction>
+                  <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                  <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+              </owl:Restriction>
+          </rdfs:subClassOf>
+          <rdfs:subClassOf>
+              <owl:Restriction>
+                  <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                  <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2536"/>
+              </owl:Restriction>
+          </rdfs:subClassOf>
+          <citation rdf:resource="https://doi.org/10.1021/acs.analchem.8b04310"/>
+          <created_in>1.26</created_in>
+          <documentation rdf:resource="https://github.com/HUPO-PSI/mzTab/blob/master/specification_document-releases/2_0-Metabolomics-Release/mzTab_format_specification_2_0-M_release.adoc"/>
+          <example rdf:resource=" https://github.com/HUPO-PSI/mzTab/wiki/Examples"/>
+          <example rdf:resource=" https://apps.lifs.isas.de/mztabvalidator/"/>
+          <file_extension>mztab</file_extension>
+          <oboInOwl:created_by>Claudia Blankenburg</oboInOwl:created_by>
+          <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+          <oboInOwl:hasDefinition>A flexible tab-delimited reporting data standard file format for sharing quantitative mass spectrometry metabolomics/lipodomics results. It contains the ability to represent “intermediate” or supporting data, including the evidence trail for identifications from software (scores or statistics), as well as the quantification values derived directly from MS: i.e., prior to any adduct grouping or summarization steps. It is an expansion/improvement of mzTab.</oboInOwl:hasDefinition>
+          <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+          <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+          <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+          <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+          <organisation rdf:resource="https://www.psidev.info"/>
+          <rdfs:label>mzTab-M</rdfs:label>
+          <rdfs:comment>The exact version is mzTab-M 2.0. A reference implementation in JAVA is available at https://github.com/lifs-tools/jmzTab-m.</rdfs:comment>
+          <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+          <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.207caf"/>
+      </owl:Class>
+
+
+      <!-- http://edamontology.org/format_4057 -->
+
+      <owl:Class rdf:about="http://edamontology.org/format_4057">
+          <rdfs:subClassOf rdf:resource="http://edamontology.org/format_4056"/>
+          <rdfs:subClassOf>
+              <owl:Restriction>
+                  <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                  <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
+              </owl:Restriction>
+          </rdfs:subClassOf>
+          <citation rdf:resource=""/>
+          <created_in>1.26</created_in>
+          <documentation rdf:resource=""/>
+          <example rdf:resource=""/>
+          <file_extension></file_extension>
+          <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
+          <oboInOwl:creation_date>2024-06-11</oboInOwl:creation_date>
+          <oboInOwl:hasDefinition>A flexible tab-delimited reporting data standard file format for sharing quantitative mass spectrometry lipodomics results. It contains the ability to represent “intermediate” or supporting data, including the evidence trail for identifications from software (scores or statistics), as well as the quantification values derived directly from MS: i.e., prior to any adduct grouping or summarization steps. It is an expansion/improvement of mzTab.</oboInOwl:hasDefinition>
+          <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+          <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+          <organisation rdf:resource=""/>
+          <rdfs:label>mzTab-L</rdfs:label>
+          <repository rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
+          <skos:editorialNote>TODO when received a DOI on FAIRsharing: replace FAIRsharing link with the DOI URI. This will only happen when the FAIRsharing status of this format changes from Dev to Ready.</skos:editorialNote>
+          <skos:exactMatch rdf:resource="https://fairsharing.org/5158"/>
+      </owl:Class>
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
