@@ -34069,14 +34069,26 @@
     <owl:Class rdf:about="http://edamontology.org/format_3681">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <citation rdf:resource="http://doi.org/10.1074/mcp.O113.036681"/>
         <created_in>1.13</created_in>
         <documentation rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDbXref rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDefinition>mzTab is a tab-delimited format for mass spectrometry-based proteomics and metabolomics results.</oboInOwl:hasDefinition>
+        <example rdf:resource=""/>
+        <information_standard rdf:resource=""/>
+        <ontology_used rdf:resource=""/>
+        <organisation rdf:resource="https://www.psidev.info"/>
+        <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+        <oboInOwl:hasDefinition>mzTab is a tab-delimited format for mass spectrometry-based proteomics data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>For mass spectrometry-based metabolomics data, there is a derived (but incompatible) format mzTab-M (http://edamontology.org/format_4056), and a lipidomics version mzTab-L (http://edamontology.org/format_4057).</rdfs:comment>
         <rdfs:label>mzTab</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.c12tyk"/>
     </owl:Class>
     
 
@@ -34094,7 +34106,7 @@
         <oboInOwl:hasDefinition>imzML metadata is a data format for mass spectrometry imaging metadata.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra. This entry is for the metadata XML file</rdfs:comment>
+        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra. This entry is for the metadata XML file.</rdfs:comment>
         <rdfs:label>imzML metadata file</rdfs:label>
     </owl:Class>
     
