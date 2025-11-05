@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4058</next_id>
-        <oboLegacy:date>21.08.2025 12:10 UTC</oboLegacy:date>
+        <next_id>4060</next_id>
+        <oboLegacy:date>05.11.2025 11:53 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -24,6 +24,7 @@
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
+        <dc:contributor>Claudia Blankenburg</dc:contributor>
         <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
@@ -46,9 +47,7 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/identifiers"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
-        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20250821T1532Z-dev(1.26)"/>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -34069,14 +34068,32 @@
     <owl:Class rdf:about="http://edamontology.org/format_3681">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <citation rdf:resource="http://doi.org/10.1074/mcp.O113.036681"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDbXref rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDefinition>mzTab is a tab-delimited format for mass spectrometry-based proteomics and metabolomics results.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://github.com/HUPO-PSI/mzTab/raw/master/specification_document-releases/1_0-Proteomics-Release/mzTab_format_specification.pdf"/>
+        <example rdf:resource="https://github.com/HUPO-PSI/mzTab/wiki/Examples#mztab-10-example-files"/>
+        <information_standard rdf:resource="https://www.psidev.info/miape"/>
+        <ontology_used rdf:resource="http://purl.obolibrary.org/obo/ms.owl"/>
+        <ontology_used>More ontologies and controlled vocabularies can be used in certain cases: Unit Ontology, ChEBI, OBI, PSI-MOD, Unimod database, PRIDE CV, NEWT, BRENDA tissue, Cell Type ontology.</ontology_used>
+        <organisation rdf:resource="https://www.psidev.info"/>
+        <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+        <oboInOwl:hasDefinition>mzTab is a light-weight, tab-delimited format for mass spectrometry-based proteomics data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>mzTab 1.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:savedBy>2025-11 Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>For mass spectrometry-based chemical profiling data (including metabolomics), there is a derived (but incompatible) format mzTab-M (also named mzTab 2.0, http://edamontology.org/format_4058), and its lipidomics version mzTab-L (http://edamontology.org/format_4059).</rdfs:comment>
+        <rdfs:comment>For more detailed metadata, there are formats such as mzIdentML (http://edamontology.org/format_3247) and mzQuantML (http://edamontology.org/format_3248).</rdfs:comment>
+        <rdfs:comment>mzTab is alternatively named mzTab 1.0, as opposed to mzTab 2.0 (and 2.1), which is the incompatible mzTab-M format for chemical profiling e.g. metabolomics.</rdfs:comment>
+        <rdfs:comment>The reference implementation of mzTab in Java is https://github.com/PRIDE-Archive/jmzTab (maintenance stopped in 2022).</rdfs:comment>
         <rdfs:label>mzTab</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.c12tyk"/>
     </owl:Class>
     
 
@@ -34094,7 +34111,7 @@
         <oboInOwl:hasDefinition>imzML metadata is a data format for mass spectrometry imaging metadata.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra. This entry is for the metadata XML file</rdfs:comment>
+        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; (this concept) is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; (http://edamontology.org/format_3839) is a binary file containing the mass spectra. This entry is for the metadata XML file.</rdfs:comment>
         <rdfs:label>imzML metadata file</rdfs:label>
     </owl:Class>
     
@@ -35739,7 +35756,7 @@
         <oboInOwl:hasDefinition>ibd is a data format for mass spectrometry imaging data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>imzML data is recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra.</rdfs:comment>
+        <rdfs:comment>imzML data is recorded in 2 files: &apos;.imzXML&apos; (http://edamontology.org/format_3682) is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; (this concept) is a binary file containing the mass spectra.</rdfs:comment>
         <rdfs:label>ibd</rdfs:label>
     </owl:Class>
     
@@ -37550,6 +37567,7 @@
     </owl:Class>
 
 
+
     <!-- http://edamontology.org/format_4050 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4050">
@@ -37579,6 +37597,72 @@
         <rdfs:label>SDRF</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/sdrf-proteomics/README.adoc"/>
     </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4058 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4058">
+        <created_in>1.26</created_in>
+        <rdfs:label>mzTab-M</rdfs:label>
+        <file_extension>mztab</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:hasDefinition>mzTab-M is a light-weight, tab-delimited format for mass spectrometry-based chemical profiling data, including metabolomics.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>mzTab 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>mzTab 2.0</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>mzTab 2.1</oboInOwl:hasNarrowSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>Claudia Blankenburg</oboInOwl:created_by>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+        <oboInOwl:savedBy>2025-11 Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>mzTab-M is not compatible with mzTab (also named mzTab 1.0, for proteomics, http://edamontology.org/format_3681). Note: the repository, website, and file extension are the same for both formats.</rdfs:comment>
+        <rdfs:comment>mzTab-M is alternatively named mzTab 2.0, but in 2025 there is a draft version 2.1 of mzTab-M.</rdfs:comment>
+        <rdfs:comment>The reference implementation of mzTab-M in Java is https://github.com/lifs-tools/jmzTab-m.</rdfs:comment>
+        <documentation rdf:resource="https://hupo-psi.github.io/mzTab/2_0-metabolomics-release/mzTab_format_specification_2_0-M_release.html    "/>
+        <example rdf:resource="https://github.com/HUPO-PSI/mzTab/wiki/Examples#mztab-20-example-files"/>
+        <citation rdf:resource="https://doi.org/10.1021/acs.analchem.8b04310"/>
+        <ontology_used rdf:resource="http://purl.obolibrary.org/obo/ms.owl"/>
+        <ontology_used>More ontologies and controlled vocabularies can be used in certain cases: Unit Ontology, ChEBI, OBI, NCBITaxon, BRENDA tissue, Cell Type ontology, DOID, XLMOD, PRIDE ontology, MSIO, NCIT.</ontology_used>
+        <organisation rdf:resource="https://www.psidev.info"/>
+        <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.207caf"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4059 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4059">
+        <created_in>1.26</created_in>
+        <rdfs:label>mzTab-L</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:hasDefinition>mzTab-L is a light-weight, tab-delimited format for mass spectrometry-based lipidomics data. It is a compatible version of mzTab-M, with additional rules and information standard (reporting guidelines).</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_4058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date>2024-06-11</oboInOwl:creation_date>
+        <oboInOwl:savedBy>2025-11 Matúš Kalaš</oboInOwl:savedBy>
+        <documentation rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
+        <organisation rdf:resource="https://lipidomicstandards.org"/>
+        <repository rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
+        <skos:editorialNote>FUTURE TODO: When separate documentation for mzTab-L, examples, list of ontologies, citation are available, record them accordingly. When received a DOI on FAIRsharing, replace the FAIRsharing link with the DOI URI. This will only happen when the FAIRsharing status of this format changes from Dev to Ready.</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://fairsharing.org/5158"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
