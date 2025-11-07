@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4048</next_id>
-        <oboLegacy:date>24.09.2024 00:27 UTC</oboLegacy:date>
+        <next_id>4061</next_id>
+        <oboLegacy:date>06.11.2025 23:39 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -24,10 +24,12 @@
         <oboLegacy:remark>EDAM is particularly suitable for semantic annotations and categorisation of diverse resources related to data analysis and management: e.g. tools, workflows, learning materials, or standards. EDAM is also useful in data management itself, for recording provenance metadata of processed data.</oboLegacy:remark>
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
+        <dc:contributor>Claudia Blankenburg</dc:contributor>
         <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
+        <dc:creator>Claire Rioualen</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
         <dcterms:format rdf:resource="http://www.iana.org/assignments/media-types/application/rdf+xml"/>
         <has_format rdf:resource="http://edamontology.org/format_3261"/>
@@ -46,8 +48,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20240924T0027Z-unstable(1.26)"/>
-        <owl:versionInfo>1.25-20240924T0027Z-unstable(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20251106T2339Z-unstable(1.26)"/>
+        <owl:versionInfo>1.25-20251106T2339Z-unstable(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -25131,6 +25133,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data management plan is a document describing the data management of a project or an organisation, including acquisition, reuse, structure, processing, storage, documentation, sharing, and preservation of data. This may include budgeting for these operations.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DMP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -28724,6 +28727,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
+	<file_extension>gff</file_extension>
+	<file_extension>gff.gz</file_extension>
+	<file_extension>gff3</file_extension>
+	<file_extension>gff3.gz</file_extension>
         <ontology_used rdf:resource="http://www.sequenceontology.org/"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
         <oboInOwl:hasDefinition>Generic Feature Format version 3 (GFF3) of sequence features.</oboInOwl:hasDefinition>
@@ -30572,6 +30579,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
+	<file_extension>gtf</file_extension>
+	<file_extension>gtf.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format4"/>
         <oboInOwl:hasDbXref rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
         <oboInOwl:hasDefinition>Gene Transfer Format (GTF), a restricted version of GFF.</oboInOwl:hasDefinition>
@@ -31288,6 +31297,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
+	<file_extension>bam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31305,6 +31315,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
+	<file_extension>sam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>Sequence Alignment/Map (SAM) format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31511,6 +31522,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
+	<file_extension>bed</file_extension>
+	<file_extension>bed.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
         <oboInOwl:hasDefinition>Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -32726,6 +32739,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>1.7</created_in>
         <documentation>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</documentation>
+	<file_extension>cram</file_extension>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Reference-based compression of alignment format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -33762,16 +33776,25 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_3616">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://www.htslib.org/doc/tabix.html"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.htslib.org/doc/tabix.html"/>
+        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
         <oboInOwl:hasDefinition>TAB-delimited genome position file index format.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Tabix index file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>tbi</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>tabix</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tabix"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q105424896"/>
     </owl:Class>
-    
 
 
     <!-- http://edamontology.org/format_3617 -->
@@ -34042,14 +34065,31 @@
     <owl:Class rdf:about="http://edamontology.org/format_3681">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <citation rdf:resource="http://doi.org/10.1074/mcp.O113.036681"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDbXref rdf:resource="http://code.google.com/archive/p/mztab"/>
-        <oboInOwl:hasDefinition>mzTab is a tab-delimited format for mass spectrometry-based proteomics and metabolomics results.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://github.com/HUPO-PSI/mzTab/raw/master/specification_document-releases/1_0-Proteomics-Release/mzTab_format_specification.pdf"/>
+        <example rdf:resource="https://github.com/HUPO-PSI/mzTab/wiki/Examples#mztab-10-example-files"/>
+        <information_standard rdf:resource="https://www.psidev.info/miape"/>
+        <ontology_used rdf:resource="http://purl.obolibrary.org/obo/ms.owl"/>
+        <ontology_used>More ontologies and controlled vocabularies can be used in certain cases: Unit Ontology, ChEBI, OBI, PSI-MOD, Unimod database, PRIDE CV, NEWT, BRENDA tissue, Cell Type ontology.</ontology_used>
+        <organisation rdf:resource="https://www.psidev.info"/>
+        <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+        <oboInOwl:hasDefinition>mzTab is a light-weight, tab-delimited format for mass spectrometry-based proteomics data.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>mzTab 1.0</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>For mass spectrometry-based chemical profiling data (including metabolomics), there is a derived (but incompatible) format mzTab-M (also named mzTab 2.0, http://edamontology.org/format_4058), and its lipidomics version mzTab-L (http://edamontology.org/format_4059).</rdfs:comment>
+        <rdfs:comment>For more detailed metadata, there are formats such as mzIdentML (http://edamontology.org/format_3247) and mzQuantML (http://edamontology.org/format_3248).</rdfs:comment>
+        <rdfs:comment>mzTab is alternatively named mzTab 1.0, as opposed to mzTab 2.0 (and 2.1), which is the incompatible mzTab-M format for chemical profiling e.g. metabolomics.</rdfs:comment>
+        <rdfs:comment>The reference implementation of mzTab in Java is https://github.com/PRIDE-Archive/jmzTab (maintenance stopped in 2022).</rdfs:comment>
         <rdfs:label>mzTab</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.c12tyk"/>
     </owl:Class>
     
 
@@ -34067,7 +34107,7 @@
         <oboInOwl:hasDefinition>imzML metadata is a data format for mass spectrometry imaging metadata.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra. This entry is for the metadata XML file</rdfs:comment>
+        <rdfs:comment>imzML data are recorded in 2 files: &apos;.imzXML&apos; (this concept) is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; (http://edamontology.org/format_3839) is a binary file containing the mass spectra. This entry is for the metadata XML file.</rdfs:comment>
         <rdfs:label>imzML metadata file</rdfs:label>
     </owl:Class>
     
@@ -34309,20 +34349,17 @@
     <!-- http://edamontology.org/format_3700 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3700">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3326"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_0955"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
+        <deprecation_comment>This concept was a duplicate of format tabix (see replacedBy attribute).</deprecation_comment>
+        <obsolete_since>1.26</obsolete_since>
+        <oldParent rdf:resource="http://edamontology.org/format_2333"/>
+        <oldParent rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>Index file format used by the samtools package to index TAB-delimited genome position files.</oboInOwl:hasDefinition>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
-        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/format_3616"/>
         <rdfs:label>Tabix index file format</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -35715,7 +35752,7 @@
         <oboInOwl:hasDefinition>ibd is a data format for mass spectrometry imaging data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>imzML data is recorded in 2 files: &apos;.imzXML&apos; is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; is a binary file containing the mass spectra.</rdfs:comment>
+        <rdfs:comment>imzML data is recorded in 2 files: &apos;.imzXML&apos; (http://edamontology.org/format_3682) is a metadata XML file based on mzML by HUPO-PSI, and &apos;.ibd&apos; (this concept) is a binary file containing the mass spectra.</rdfs:comment>
         <rdfs:label>ibd</rdfs:label>
     </owl:Class>
     
@@ -37415,6 +37452,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>PQR</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pqr.html#pqr-specification"/>
+
     </owl:Class>
 
 
@@ -37433,6 +37471,7 @@
         <rdfs:seeAlso rdf:resource="https://userguide.mdanalysis.org/stable/formats/reference/pdbqt.html#pdbqt-specification"/>
     </owl:Class>
 
+
     <!-- http://edamontology.org/format_4039 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_4039">
@@ -37448,7 +37487,6 @@
         <rdfs:comment>NIST Text file format for storing MS&#8725;MS spectra (m&#8725;z and intensity of mass peaks) along with additional annotations for each spectrum. A single MSP file can thus contain single or multiple spectra. This format is frequently used to share spectra libraries.</rdfs:comment>
         <rdfs:label>MSP</rdfs:label>
     </owl:Class>
-    
 
 
     <!-- http://edamontology.org/format_4041 -->
@@ -37467,6 +37505,7 @@
         <example rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON"/>
         <organisation rdf:resource="https://www.rd-alliance.org"/>
         <repository rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Machine-actionable data management plan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA Common Standard for Machine-Actionable Data Management Plans (maDMPS)</oboInOwl:hasExactSynonym>
@@ -37477,6 +37516,140 @@
         <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
     </owl:Class>
     
+
+
+    <!-- http://edamontology.org/format_4048 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4048">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <citation rdf:resource="https://doi.org/10.1038/nbt.3820"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://www.nextflow.io/docs/latest/index.html"/>
+        <example rdf:resource="https://www.nextflow.io/example1.html"/>
+        <file_extension>nf</file_extension>
+        <organisation rdf:resource="https://seqera.io/"/>
+        <repository rdf:resource="https://github.com/nextflow-io/nextflow"/>
+        <oboInOwl:hasDefinition>Nextflow is a workflow system for creating scalable, portable, and reproducible workflows.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>This term covers all versions of Nextflow language specifications.</rdfs:comment>
+        <rdfs:label>Nextflow</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nextflow"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4049 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4049">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2032"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <citation rdf:resource="https://doi.org/10.12688/f1000research.29032.2"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://snakemake.readthedocs.io/en/stable/"/>
+        <documentation rdf:resource="https://snakemake.readthedocs.io/en/stable/tutorial/tutorial.html"/>
+        <example rdf:resource="https://github.com/snakemake/snakemake/tree/main/examples/hello-world"/>
+        <file_extension>smk</file_extension>
+        <organisation rdf:resource="https://snakemake.github.io/"/>
+        <repository rdf:resource="https://github.com/snakemake/snakemake"/>
+        <oboInOwl:hasDefinition>The Snakemake workflow management system is a tool to create reproducible and scalable data analyses.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:label>Snakemake</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4050 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4050">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <citation rdf:resource="http://doi.org/10.1038/s41467-021-26111-3"/>
+        <created_by>veitveit</created_by>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/psi-document/SDRF_Proteomics_Specification_v1.0.0.pdf"/>
+        <example rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/tree/master/sdrf-specification-examples"/>
+        <file_extension>sdrf</file_extension>
+        <file_extension>txt</file_extension>
+        <file_extension>tsv</file_extension>
+        <oboInOwl:hasDefinition>Sample and Data Relationship File for a proteomics experiment.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#edam"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/edam#formats"/>
+        <ontology_used rdf:resource="https://www.ebi.ac.uk/ols/ontologies/ms"/>
+        <ontology_used>Mass Spectrometry Ontology</ontology_used>
+        <organisation rdf:resource="https://hupo.org/Proteomics-Standards-Initiative-(PSI)"/>
+        <rdfs:label>SDRF</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://github.com/bigbio/proteomics-sample-metadata/blob/master/sdrf-proteomics/README.adoc"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4058 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4058">
+        <created_in>1.26</created_in>
+        <rdfs:label>mzTab-M</rdfs:label>
+        <file_extension>mztab</file_extension>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:hasDefinition>mzTab-M is a light-weight, tab-delimited format for mass spectrometry-based chemical profiling data, including metabolomics.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>mzTab 2</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>mzTab 2.0</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>mzTab 2.1</oboInOwl:hasNarrowSynonym>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
+        <rdfs:comment>mzTab-M is not compatible with mzTab (also named mzTab 1.0, for proteomics, http://edamontology.org/format_3681). Note: the repository, website, and file extension are the same for both formats.</rdfs:comment>
+        <rdfs:comment>mzTab-M is alternatively named mzTab 2.0, but in 2025 there is a draft version 2.1 of mzTab-M.</rdfs:comment>
+        <rdfs:comment>The reference implementation of mzTab-M in Java is https://github.com/lifs-tools/jmzTab-m.</rdfs:comment>
+        <documentation rdf:resource="https://hupo-psi.github.io/mzTab/2_0-metabolomics-release/mzTab_format_specification_2_0-M_release.html    "/>
+        <example rdf:resource="https://github.com/HUPO-PSI/mzTab/wiki/Examples#mztab-20-example-files"/>
+        <citation rdf:resource="https://doi.org/10.1021/acs.analchem.8b04310"/>
+        <ontology_used rdf:resource="http://purl.obolibrary.org/obo/ms.owl"/>
+        <ontology_used>More ontologies and controlled vocabularies can be used in certain cases: Unit Ontology, ChEBI, OBI, NCBITaxon, BRENDA tissue, Cell Type ontology, DOID, XLMOD, PRIDE ontology, MSIO, NCIT.</ontology_used>
+        <organisation rdf:resource="https://www.psidev.info"/>
+        <repository rdf:resource="https://github.com/HUPO-PSI/mzTab"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.207caf"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4059 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4059">
+        <created_in>1.26</created_in>
+        <rdfs:label>mzTab-L</rdfs:label>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <oboInOwl:hasDefinition>mzTab-L is a light-weight, tab-delimited format for mass spectrometry-based lipidomics data. It is a compatible version of mzTab-M, with additional rules and information standard (reporting guidelines).</oboInOwl:hasDefinition>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_4058"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date>2024-06-11</oboInOwl:creation_date>
+        <documentation rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
+        <organisation rdf:resource="https://lipidomicstandards.org"/>
+        <repository rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
+        <skos:exactMatch rdf:resource="https://fairsharing.org/5158"/>
+    </owl:Class>
+
 
 
     <!-- http://edamontology.org/operation_0004 -->
@@ -52163,7 +52336,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_4009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
+        <created_in>1.25</created_in>
         <oboInOwl:hasDefinition>The design of small molecules with specific biological activity, such as inhibitors or modulators for proteins that are of therapeutic interest. This can involve the modification of individual atoms, the addition or removal of molecular fragments, and the use reaction-based design to explore tractable synthesis options for the small molecule.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Drug design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
@@ -52349,6 +52522,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2023-03-02</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data management planning is the process of creating and updating a data management plan (DMP) for a project or an organisation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
@@ -52371,6 +52545,7 @@
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <related_term>Digital preservation</related_term>
+        <oboInOwl:creation_date>2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalization</oboInOwl:hasExactSynonym>
@@ -52897,26 +53072,19 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
-        <oboInOwl:hasDefinition>Protein and peptide identification, especially in the study of whole proteomes of organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Proteomics is in the narrow sense (sensu stricto) the application of methods to separate, characterise, identify, and quantify all proteins (the proteome) - or a substantial set of proteins - that are present in a sample. Proteomics in the broad sense is the science of proteins and peptides on the large scale.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Bottom-up proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Discovery proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS-based targeted proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS-based untargeted proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Metaproteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein and peptide identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Quantitative proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Targeted proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Top-down proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:comment>Includes metaproteomics: proteomics analysis of an environmental sample.</rdfs:comment>
-        <rdfs:comment>Proteomics includes any methods (especially high-throughput) that separate, characterize and identify expressed proteins such as mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
+        <rdfs:comment>Proteomics uses any methods (especially high-throughput) that separate, characterize and identify proteins: mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
         <rdfs:label>Proteomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D040901</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="https://id.nlm.nih.gov/mesh/D040901.html"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q471857"/>
     </owl:Class>
     
 
@@ -59658,20 +59826,12 @@
         <oboInOwl:hasDefinition>Proteomics experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics_experiment</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>2D PAGE experiment</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>DIA</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Data-independent acquisition</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS experiments</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Mass spectrometry</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Mass spectrometry experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data-independent acquisition (DIA)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Northern blot experiment</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Spectrum demultiplexing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:comment>This includes two-dimensional gel electrophoresis (2D PAGE) experiments, gels or spots in a gel. Also mass spectrometry - an analytical chemistry technique that measures the mass-to-charge ratio and abundance of ions in the gas phase. Also Northern blot experiments.</rdfs:comment>
         <rdfs:label>Proteomics experiment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics_Standards_Initiative"/>
     </owl:Class>
     
 
@@ -59713,11 +59873,12 @@
     <owl:Class rdf:about="http://edamontology.org/topic_3523">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3077"/>
         <created_in>1.8</created_in>
-        <oboInOwl:hasDefinition>RNAi experiments.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Experiment in which the expression of a specific gene is post-transcriptionally knocked down or silenced by means of a small RNA (sRNA) causing the degradation of the gene transcript (mRNA), and thus preventing the production of the corresponding protein.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>RNAi_experiment</oboInOwl:hasHumanReadableId>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:label>RNAi experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Post-transcriptional_regulation"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_interference"/>
     </owl:Class>
     
@@ -61213,6 +61374,7 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4046">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2023-02-09T11:13:21.41427Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Version control is a technology for consistent management, storing, and sharing of evolving versions of digital artefacts, such as computer programs, scripts, documents, data, or media files.</oboInOwl:hasDefinition>
 	<oboInOwl:hasBroadSynonym>Version tracking</oboInOwl:hasBroadSynonym>
 	<oboInOwl:hasNarrowSynonym>Source control</oboInOwl:hasNarrowSynonym>
@@ -61246,6 +61408,7 @@
         <related_term>Tool registry</related_term>
         <related_term>Workflow curation</related_term>
         <related_term>Workflow registry</related_term>
+        <oboInOwl:creation_date>2023-02-25T02:40:36.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Software management comprises the practices and principles of taking care of software and software-based or software-like services, other than programming and maintenance. This includes for example taking care of the associated information and documentation, and the processes of contribution, validation, release/publication, or deployment.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Service management</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -61255,6 +61418,139 @@
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q947779"/>
     </owl:Class>
     
+
+    <!-- http://edamontology.org/topic_4051 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4051">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Chromatin immunoprecipitation-based exeperiment similar to ChIP-seq, with an additional experimental step using an exonuclease to increase the resolution of protein binding site identification.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>ChIP-exo</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ChIP-exo"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5065896"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4052 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4052">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>High-throughput genomic and epigenomic technique that capture chromatin conformation, allowing a genome-wide identification of chromatin interactions and structure.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>Hi-C</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hi-C_(genomic_analysis_technique)"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q105517688"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4053 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4053">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Assay for Transposase-Accessible Chromatin with high throughput sequencing. This technique is designed for the genome-wide detection of open chromatin regions.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>ATAC-seq</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ATAC-seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q22704317"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4054 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4054">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Experiment in which the expression of a given gene is knocked down by means of a micro RNA (miRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>miRNA silencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_silencing"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4055 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4055">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Experiment in which the expression of a given gene is knocked down by means of a small interfering RNA (siRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>RNA silencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>siRNA experiment</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_silencing"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Small_interfering_RNA"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4056 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4056">
+      <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+      <created_in>1.26</created_in>
+      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
+      <oboInOwl:hasDefinition>Long-read sequencing is a sequencing method that produces reads thousands to millions of base pairs long, allowing for better resolution of complex regions, structural variants, and full-length transcripts.</oboInOwl:hasDefinition>
+      <oboInOwl:hasExactSynonym>Third-generation sequencing</oboInOwl:hasExactSynonym>
+      <oboInOwl:hasNarrowSynonym>Nanopore sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:hasNarrowSynonym>Single-molecule real-time sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+      <rdfs:label>Long-read sequencing</rdfs:label>
+      <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Long-read_sequencing"/>
+      <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925505"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4057 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4057">
+      <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+      <created_in>1.26</created_in>
+      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
+      <oboInOwl:hasDefinition>Short-read sequencing is a high-throughput sequencing method that generates millions of short nucleotide fragments, typically 50–300 base pairs in length.</oboInOwl:hasDefinition>
+      <oboInOwl:hasNarrowSynonym>Massive parallel sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:hasNarrowSynonym>Second-generation sequencing</oboInOwl:hasNarrowSynonym>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+      <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+      <rdfs:label>Short-read sequencing</rdfs:label>
+      <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Short-read_sequencing"/>
+      <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925455"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4060 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4060">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:creation_date>2025-11-06T23:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Metaproteomics is the profiling of proteins in a sample that contains material from multiple species or strains of organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Community proteogenomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Community proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>Metaproteomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metaproteomics"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
+    </owl:Class>
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
