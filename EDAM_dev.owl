@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4060</next_id>
-        <oboLegacy:date>05.11.2025 11:53 UTC</oboLegacy:date>
+        <next_id>4061</next_id>
+        <oboLegacy:date>06.11.2025 23:39 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -53093,26 +53093,21 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <created_in>beta12orEarlier</created_in>
         <isdebtag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isdebtag>
-        <oboInOwl:hasDefinition>Protein and peptide identification, especially in the study of whole proteomes of organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Proteomics is in the narrow sense (sensu stricto) the application of methods to separate, characterise, identify, and quantify all proteins (the proteome) - or a substantial set of proteins - that are present in a sample. Proteomics in the broad sense is the science of proteins and peptides on the large scale.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>Bottom-up proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Discovery proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS-based targeted proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS-based untargeted proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Metaproteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Peptide identification</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Protein and peptide identification</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Quantitative proteomics</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Targeted proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Top-down proteomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/events"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <rdfs:comment>Includes metaproteomics: proteomics analysis of an environmental sample.</rdfs:comment>
-        <rdfs:comment>Proteomics includes any methods (especially high-throughput) that separate, characterize and identify expressed proteins such as mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
+        <oboInOwl:savedBy>2025-11 Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:comment>Proteomics uses any methods (especially high-throughput) that separate, characterize and identify proteins: mass spectrometry, two-dimensional gel electrophoresis and protein microarrays, as well as in-silico methods that perform proteolytic or mass calculations on a protein sequence and other analyses of protein production data, for example in different cells or tissues.</rdfs:comment>
         <rdfs:label>Proteomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics"/>
-        <rdfs:seeAlso>http://purl.bioontology.org/ontology/MSH/D040901</rdfs:seeAlso>
+        <skos:editorialNote>Style of definitions, 2 different tries: compare this kind of definition with the one in Metaproteomics. Another alternative here: leave just the broad definition, and leave the narrow one as a comment.</skos:editorialNote>
+        <skos:exactMatch rdf:resource="https://id.nlm.nih.gov/mesh/D040901.html"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q471857"/>
     </owl:Class>
     
 
@@ -59863,20 +59858,12 @@
         <oboInOwl:hasDefinition>Proteomics experiments.</oboInOwl:hasDefinition>
         <oboInOwl:hasHumanReadableId>Proteomics_experiment</oboInOwl:hasHumanReadableId>
         <oboInOwl:hasNarrowSynonym>2D PAGE experiment</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>DIA</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Data-independent acquisition</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>MS experiments</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Mass spectrometry</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Mass spectrometry experiments</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Data-independent acquisition (DIA)</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Northern blot experiment</oboInOwl:hasNarrowSynonym>
-        <oboInOwl:hasNarrowSynonym>Spectrum demultiplexing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <rdfs:comment>This includes two-dimensional gel electrophoresis (2D PAGE) experiments, gels or spots in a gel. Also mass spectrometry - an analytical chemistry technique that measures the mass-to-charge ratio and abundance of ions in the gas phase. Also Northern blot experiments.</rdfs:comment>
         <rdfs:label>Proteomics experiment</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics"/>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proteomics_Standards_Initiative"/>
     </owl:Class>
     
 
@@ -59923,7 +59910,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
         <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAi experiment</rdfs:label>
+        <rdfs:label>RNAi experiment</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Post-transcriptional_regulation"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/RNA_interference"/>
     </owl:Class>
@@ -61596,6 +61583,28 @@
       <rdfs:label>Short-read sequencing</rdfs:label>
       <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Short-read_sequencing"/>
       <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925455"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4060 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4060">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-11-06T23:08Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Metaproteomics is the profiling of proteins in a sample that contains material from multiple species or strains of organisms.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Community proteogenomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Community proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Environmental proteomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>2025-11-06 Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>Metaproteomics</rdfs:label>
+        <skos:editorialNote>Style of definitions, 2 different tries: compare this kind of definition with the one in Proteomics.</skos:editorialNote>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metaproteomics"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
     </owl:Class>
 
 
