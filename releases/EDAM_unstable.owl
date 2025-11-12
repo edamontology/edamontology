@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4061</next_id>
-        <oboLegacy:date>06.11.2025 23:39 UTC</oboLegacy:date>
+        <oboLegacy:date>12.11.2025 16:20 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -48,8 +48,8 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
         <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20251106T2339Z-unstable(1.26)"/>
-        <owl:versionInfo>1.25-20251106T2339Z-unstable(1.26)</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20251112T1620Z-unstable(1.26)"/>
+        <owl:versionInfo>1.25-20251112T1620Z-unstable(1.26)</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -37616,7 +37616,7 @@
         <rdfs:comment>mzTab-M is not compatible with mzTab (also named mzTab 1.0, for proteomics, http://edamontology.org/format_3681). Note: the repository, website, and file extension are the same for both formats.</rdfs:comment>
         <rdfs:comment>mzTab-M is alternatively named mzTab 2.0, but in 2025 there is a draft version 2.1 of mzTab-M.</rdfs:comment>
         <rdfs:comment>The reference implementation of mzTab-M in Java is https://github.com/lifs-tools/jmzTab-m.</rdfs:comment>
-        <documentation rdf:resource="https://hupo-psi.github.io/mzTab/2_0-metabolomics-release/mzTab_format_specification_2_0-M_release.html    "/>
+        <documentation rdf:resource="https://hupo-psi.github.io/mzTab/2_0-metabolomics-release/mzTab_format_specification_2_0-M_release.html"/>
         <example rdf:resource="https://github.com/HUPO-PSI/mzTab/wiki/Examples#mztab-20-example-files"/>
         <citation rdf:resource="https://doi.org/10.1021/acs.analchem.8b04310"/>
         <ontology_used rdf:resource="http://purl.obolibrary.org/obo/ms.owl"/>
