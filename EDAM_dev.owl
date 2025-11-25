@@ -61607,6 +61607,25 @@
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
     </owl:Class>
 
+ 
+    <!-- http://edamontology.org/topic_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <oboInOwl:created_by>Jonathan Hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-25T17:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Exposomics is the systematic and comprehensive study of the exposome and the associated biological responses (exposure-phenotype interaction). The exposome is defined as the totality of environmental exposures, i.e. the totality of contact between external factors (agents) and a biological entity.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>2025-11-25 Jonathan Hunter</oboInOwl:savedBy>
+        <rdfs:comment>Definition derived from 'Exposome' &amp; 'Functional exposomics' in https://doi.org/10.1016/j.isci.2022.103976.</rdfs:comment>
+        <rdfs:label>Exposomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Exposome"/>
+        <rdfs:seeAlso rdf:resource="http://id.nlm.nih.gov/mesh/D000081413"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q115452339"/>
+    </owl:Class>
+
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
