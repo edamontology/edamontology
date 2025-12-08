@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4061</next_id>
-        <oboLegacy:date>12.11.2025 16:20 UTC</oboLegacy:date>
+        <next_id>4067</next_id>
+        <oboLegacy:date>08.12.2025 15:20 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -61605,6 +61605,103 @@
         <skos:editorialNote>Style of definitions, 2 different tries: compare this kind of definition with the one in Proteomics.</skos:editorialNote>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metaproteomics"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
+    </owl:Class>
+
+    <!-- http://edamontology.org/topic_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T13:47:28.29723Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Identification of RNA isoforms using high-throughput sequencing.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Isoform profiling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>TIF-seq</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Transcript Isoform sequencing</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>Isoform sequencing</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T13:48:27.021111Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Specific sequencing of small RNAs using a protocol similar to that of RNA-seq experiments, with an additional fragment size selection step.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>miRNA-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>MicroRNA sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA_sequencing"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3518"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T14:08:18.894491Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A CGH array is a molecular cytogenetic technique used to detect copy number variations (CNVs) in DNA by comparing a test sample against a reference sample.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>CGH array</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Comparative genomic hybridisation</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>CGH</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4064 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4064">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3518"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T14:08:48.305213Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A methylation array is a high-throughput technique used to analyse DNA methylation patterns across the genome.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>Methylation array</rdfs:label>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4065 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4065">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3518"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T14:09:34.309585Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>A miRNA microarray is a platform designed to measure the expression levels of microRNAs (miRNAs) - small non-coding RNAs that regulate gene expression.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>miRNA microarray</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA"/>
+    </owl:Class>
+
+
+    <!-- http://edamontology.org/topic_4066 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4066">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3518"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-12-08T14:09:58.467191Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>An mRNA microarray (also called gene expression array) measures the expression levels of messenger RNAs (mRNAs) - the coding transcripts that translate into proteins.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
+        <rdfs:label>mRNA microarray</rdfs:label>
     </owl:Class>
 
 
