@@ -37669,12 +37669,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_4061">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
         <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#investigation-file"/>
         <file_extension>txt</file_extension>
@@ -37696,12 +37690,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_4062">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
         <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#study-table-file"/>
         <file_extension>txt</file_extension>
@@ -37723,12 +37711,6 @@
 
     <owl:Class rdf:about="http://edamontology.org/format_4063">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
-                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
         <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#assay-table-file"/>
         <file_extension>txt</file_extension>
