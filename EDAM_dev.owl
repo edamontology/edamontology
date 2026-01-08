@@ -37665,6 +37665,87 @@
 
 
 
+    <!-- http://edamontology.org/format_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#investigation-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-08T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>ISA-Tab Investigation tab separated value file (i_Investigation.txt) containing metadata describing the overall goals, means, and context of an investigation/experiment, including references to associated Study and Assay files.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>i_Investigation.txt</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA Investigation file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The Investigation file follows the naming pattern i_*.txt and contains sections for ontology sources, investigation metadata, publications, contacts, and references to Study/Assay files. It defines key entities (Factors, Protocols) referenced in Study and Assay files.</rdfs:comment>
+        <rdfs:label>ISA-Tab Investigation file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#study-table-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-08T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>ISA-Tab Study file (s_*.txt) containing sample metadata describing the subjects under study, their sources, characteristics, sampling methodology, and any treatments or manipulations applied.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ISA Study file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA-Tab sample file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The Study file follows the naming pattern s_*.txt and contains contextualising information for one or more Assays. It records the provenance of biological samples from source material through collection processes to sample material.</rdfs:comment>
+        <rdfs:label>ISA-Tab Study file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_2531"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#assay-table-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-08T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>ISA-Tab Assay file (a_*.txt) containing assay metadata describing test steps and analytical measurements performed on samples, including measurement types, technology used, and references to raw and derived data files.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ISA Assay file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA-Tab assay metadata file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The Assay file follows the naming pattern a_*.txt and records the provenance of sample processing through experimental workflows. Each Assay file contains assays of the same type, defined by measurement type and technology.</rdfs:comment>
+        <rdfs:label>ISA-Tab Assay file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html"/>
+    </owl:Class>
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
