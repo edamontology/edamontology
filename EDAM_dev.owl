@@ -37665,6 +37665,91 @@
 
 
 
+    <!-- http://edamontology.org/format_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <citation rdf:resource="https://doi.org/10.1038/ng.1054"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isajson.html"/>
+        <file_extension>json</file_extension>
+        <repository rdf:resource="https://github.com/ISA-tools/isa-specs"/>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-09T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) JSON format describes the ISA Abstract Model reference implementation specified using the JavaScript Object Notation (JSON) format for serializing experimental metadata.</oboInOwl:hasDefinition>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>ISA-JSON is the JSON serialization of the ISA Abstract Model, complementing ISA-TAB. The ISA model consists of three core entities to capture experimental metadata: investigation, study and assay. All ISA-JSON content should fall under one Investigation JSON structure in a single JSON file.</rdfs:comment>
+        <rdfs:label>ISA-JSON</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://edamontology.org/format_3687"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.yhLgTV"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://www.metabolomicsworkbench.org/data/mwTab_specification.pdf"/>
+        <file_extension>txt</file_extension>
+        <organisation rdf:resource="https://www.metabolomicsworkbench.org/"/>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-09T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>mwTab is a tab-delimited text format developed by the Metabolomics Workbench to facilitate programmatic processing of metabolomics data and metadata suitable for submission to the repository.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Metabolomics Workbench Tabular File Format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The mwTab format consists of sequentially ordered blocks (sections) of text data. Some blocks consist of single key-value relationships that store single pieces of information, while others contain tabular data for sample factors, metabolite data, and experimental metadata.</rdfs:comment>
+        <rdfs:label>mwTab</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.N8KDKt"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://metabolomicshub.github.io/mhd-model/mhd"/>
+        <file_extension>mhd.json</file_extension>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-09T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>MHD (MetabolomicsHub Common Data Model) is a JSON-based format providing a standardized, FAIR-compliant data model for the exchange, discovery, and reuse of metabolomics dataset metadata across international repositories.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>MetabolomicsHub Common Data Model</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>MHD was created to facilitate the MetabolomicsHub open consortium which aims to standardise open data practices in metabolomics. It brings together major data repositories including MetaboLights, Metabolomics Workbench, and GNPS/MassIVE.</rdfs:comment>
+        <rdfs:label>MHD</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4064 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4064">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_4063"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://metabolomicshub.github.io/mhd-model/"/>
+        <file_extension>announcement.json</file_extension>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-01-09T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>The MHD announcement file is a JSON-based format used to notify MetabolomicsHub of new or updated dataset submissions, serving as a manifest or notification file within the MHD data flow.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>MetabolomicsHub Common Data Model announcement file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The MHD announcement format is used for dataset submission notifications within the MetabolomicsHub infrastructure.</rdfs:comment>
+        <rdfs:label>MHD announcement</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
