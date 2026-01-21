@@ -1,0 +1,34 @@
+########50 characters############################
+Subject Line
+
+########72 characters##################################################
+Problem (optional)
+#   * State why a change was made
+#   * How does it address the issue 
+# Solution
+#   * What effect does the patch have
+#   * Describe the intent and the approach
+#   * Solution or List of Changes
+# --- COMMIT END ---
+# Tag can be 
+#    feat     (new feature)
+#    fix      (bug fix)
+#    refactor (refactoring code)
+#    style    (formatting, missing semi colons, etc; no code change)
+#    doc      (changes to documentation)
+#    test     (adding or refactoring tests; no production code change)
+#    version  (version bump/new release; no production code change)
+#    jsrXXX   (Patches related to the implementation of jsrXXX, where XXX the JSR number)
+#    jdkX     (Patches related to supporting jdkX as the host VM, where X the JDK version)
+#    dbg      (Changes in debugging code/frameworks; no production code change)
+#    license  (Edits regarding licensing; no production code change)
+#    hack     (Temporary fix to make things move forward; please avoid it)
+#    WIP      (Work In Progress; for intermediate commits to keep patches reasonably sized)
+#    defaults (changes default options)
+# Note
+# Include additional notes, special instructions, relevant links, testing steps, rake, co author etc
+# N:B
+#   * Seperate subject line from body with an empty line
+#   * First character in your subject line should be capitalized
+#   * Use the imperative mood in the subject line.
+#   * No need to end the subject line with a period(we have a limit of 50 characters and won't want to waste it)
