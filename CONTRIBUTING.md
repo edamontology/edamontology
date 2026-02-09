@@ -196,7 +196,7 @@ When the project on WebProtege is meant to keep evolving, the changes committed 
 
 - Load the edited file and revise the changes to be applied: addition of new classes and permanent IDs, removal of temporary IDs, etc
 
-![Loading the updated ontology file](assets/img/WP_load_ontology_file.png)
+![Loading the updated ontology file](assets/img/WP_load_ontologiy_file.png)
 ![Revising the changes to be applied upon merging the ontology](assets/img/WP_diff_new_classes.png)
 ![Revinsing carefully the contents to be removed from the ontology](assets/img/WP_update_diff_minus.png)
 
