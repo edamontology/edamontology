@@ -175,8 +175,6 @@ Manually edit EDAM with the following steps:
 - Provide a detailed commit message, including author information and related issues or pull resquests
 
 ![git commit message](assets/img/git_commit_message.png)
-![Revising the last commits](assets/img/git_log.png)
-
 
 - Push changes from branch
 - Open new branch on GitHub, revise the diff and open a new PR
@@ -200,7 +198,7 @@ When the project on WebProtege is meant to keep evolving, the changes committed 
 
 ![Loading the updated ontology file](assets/img/WP_load_ontology_file.png)
 ![Revising the changes to be applied upon merging the ontology](assets/img/WP_diff_new_classes.png)
-![Revising carefully the contents to be removed from the ontology](assets/img/WP_update_diff_minus.png)
+![Revinsing carefully the contents to be removed from the ontology](assets/img/WP_update_diff_minus.png)
 
 - Write a commit message and apply those changes
 
