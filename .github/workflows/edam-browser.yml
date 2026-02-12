@@ -1,22 +1,17 @@
 name: edam-browser
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened]
-    paths:
-      - 'EDAM_dev.owl'
   issue_comment:
     types: [created]
 
 jobs:
   post-visualization-link:
     runs-on: ubuntu-latest
-    # Only run on PR comments or PR events
+    # Only run on PR comments with /browser command
     if: |
-      (github.event_name == 'pull_request') ||
-      (github.event_name == 'issue_comment' && 
-       github.event.issue.pull_request && 
-       contains(github.event.comment.body, '/browser'))
+      github.event_name == 'issue_comment' && 
+      github.event.issue.pull_request && 
+      contains(github.event.comment.body, '/browser')
     permissions:
       pull-requests: write
     
@@ -26,17 +21,12 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            let prNumber;
-            if (context.eventName === 'pull_request') {
-              prNumber = context.issue.number;
-            } else if (context.eventName === 'issue_comment') {
-              prNumber = context.issue.number;
-            }
+            // For issue_comment on PRs, the issue number is the PR number
+            const prNumber = context.issue.number;
             core.setOutput('number', prNumber);
             return prNumber;
 
       - name: Add reaction to comment
-        if: github.event_name == 'issue_comment'
         uses: actions/github-script@v7
         with:
           script: |
@@ -68,20 +58,7 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // If triggered by PR event, check if file was modified
-            if (context.eventName === 'pull_request') {
-              const { data: files } = await github.rest.pulls.listFiles({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                pull_number: ${{ steps.pr_number.outputs.number }}
-              });
-              
-              const fileModified = files.some(file => file.filename === 'EDAM_dev.owl');
-              core.setOutput('exists', fileModified);
-              return fileModified;
-            }
-            
-            // If triggered by comment, just check if file exists in the branch
+            // Check if file exists in the branch
             try {
               await github.rest.repos.getContent({
                 owner: '${{ steps.pr_details.outputs.owner }}',
@@ -114,12 +91,12 @@ jobs:
             
             const commentBody = `## 🔍 EDAM Visualization
             
-            The \`EDAM_dev.owl\` file ${context.eventName === 'pull_request' ? 'has been modified in this PR' : 'is available for visualization'}.
+            The \`EDAM_dev.owl\` file is available for visualization.
             
             **[👉 View it in EDAM Browser](${visualizationUrl})**
             
             ---
-            <sub>💡 Tip: Comment \`\/browser\` to regenerate this link • Updated automatically on new commits</sub>`;
+            <sub>💡 Tip: Comment \`\/browser\` to regenerate this link</sub>`;
             
             // Find existing comment
             const { data: comments } = await github.rest.issues.listComments({
@@ -152,7 +129,7 @@ jobs:
             }
 
       - name: Add success reaction
-        if: github.event_name == 'issue_comment' && steps.check_file.outputs.exists == 'true'
+        if: steps.check_file.outputs.exists == 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -164,7 +141,7 @@ jobs:
             });
 
       - name: Post error comment
-        if: github.event_name == 'issue_comment' && steps.check_file.outputs.exists == 'false'
+        if: steps.check_file.outputs.exists == 'false'
         uses: actions/github-script@v7
         with:
           script: |
