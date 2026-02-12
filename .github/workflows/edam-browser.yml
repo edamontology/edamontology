@@ -13,8 +13,10 @@ jobs:
       github.event.issue.pull_request && 
       contains(github.event.comment.body, '/browser')
     permissions:
-      pull-requests: write
-    
+      pull-requests: read
+      contents: read
+      issues: write
+      reactions: write
     steps:
       - name: Get PR number
         id: pr_number
