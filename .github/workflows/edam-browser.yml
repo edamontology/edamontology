@@ -1,0 +1,183 @@
+name: edam-browser
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'EDAM_dev.owl'
+  issue_comment:
+    types: [created]
+
+jobs:
+  post-visualization-link:
+    runs-on: ubuntu-latest
+    # Only run on PR comments or PR events
+    if: |
+      (github.event_name == 'pull_request') ||
+      (github.event_name == 'issue_comment' && 
+       github.event.issue.pull_request && 
+       contains(github.event.comment.body, '/browser'))
+    permissions:
+      pull-requests: write
+    
+    steps:
+      - name: Get PR number
+        id: pr_number
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let prNumber;
+            if (context.eventName === 'pull_request') {
+              prNumber = context.issue.number;
+            } else if (context.eventName === 'issue_comment') {
+              prNumber = context.issue.number;
+            }
+            core.setOutput('number', prNumber);
+            return prNumber;
+
+      - name: Add reaction to comment
+        if: github.event_name == 'issue_comment'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+
+      - name: Get PR details
+        id: pr_details
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: ${{ steps.pr_number.outputs.number }}
+            });
+            
+            core.setOutput('branch', pr.head.ref);
+            core.setOutput('owner', pr.head.repo.owner.login);
+            core.setOutput('repo', pr.head.repo.name);
+            core.setOutput('sha', pr.head.sha);
+
+      - name: Check if EDAM_dev.owl exists in PR
+        id: check_file
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // If triggered by PR event, check if file was modified
+            if (context.eventName === 'pull_request') {
+              const { data: files } = await github.rest.pulls.listFiles({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: ${{ steps.pr_number.outputs.number }}
+              });
+              
+              const fileModified = files.some(file => file.filename === 'EDAM_dev.owl');
+              core.setOutput('exists', fileModified);
+              return fileModified;
+            }
+            
+            // If triggered by comment, just check if file exists in the branch
+            try {
+              await github.rest.repos.getContent({
+                owner: '${{ steps.pr_details.outputs.owner }}',
+                repo: '${{ steps.pr_details.outputs.repo }}',
+                path: 'EDAM_dev.owl',
+                ref: '${{ steps.pr_details.outputs.sha }}'
+              });
+              core.setOutput('exists', true);
+              return true;
+            } catch (error) {
+              if (error.status === 404) {
+                core.setOutput('exists', false);
+                return false;
+              }
+              throw error;
+            }
+
+      - name: Post or update comment
+        if: steps.check_file.outputs.exists == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = '${{ steps.pr_details.outputs.owner }}';
+            const repo = '${{ steps.pr_details.outputs.repo }}';
+            const sha = '${{ steps.pr_details.outputs.sha }}';
+            
+            // Use commit SHA for more reliable access
+            const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${sha}/EDAM_dev.owl`;
+            const visualizationUrl = `https://edamontology.github.io/edam-browser/#topic_0091&version=${encodeURIComponent(rawUrl)}`;
+            
+            const commentBody = `## 🔍 EDAM Visualization
+            
+            The \`EDAM_dev.owl\` file ${context.eventName === 'pull_request' ? 'has been modified in this PR' : 'is available for visualization'}.
+            
+            **[👉 View it in EDAM Browser](${visualizationUrl})**
+            
+            ---
+            <sub>💡 Tip: Comment \`\/browser\` to regenerate this link • Updated automatically on new commits</sub>`;
+            
+            // Find existing comment
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ steps.pr_number.outputs.number }}
+            });
+            
+            const botComment = comments.find(comment => 
+              comment.user.type === 'Bot' && 
+              comment.body.includes('🔍 EDAM Visualization')
+            );
+            
+            if (botComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: commentBody
+              });
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ steps.pr_number.outputs.number }},
+                body: commentBody
+              });
+            }
+
+      - name: Add success reaction
+        if: github.event_name == 'issue_comment' && steps.check_file.outputs.exists == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'rocket'
+            });
+
+      - name: Post error comment
+        if: github.event_name == 'issue_comment' && steps.check_file.outputs.exists == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ steps.pr_number.outputs.number }},
+              body: '⚠️ The `EDAM_dev.owl` file was not found in this PR branch.'
+            });
+            
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'confused'
+            });
