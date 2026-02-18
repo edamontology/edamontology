@@ -34201,7 +34201,7 @@
         <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from experiments employing a combination of technologies.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>ISA-TAB is based on MAGE-TAB. Other than tabular, the ISA model can also be represented in RDF, and in JSON (compliable with a set of defined JSON Schemata).</rdfs:comment>
+        <rdfs:comment>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format supports the management of multimodality/multi-omics experiments, i.e. those studies employing a combination of data acquisition techniques. ISA-TAB extends on the MAGE-TAB pattern and its gene expression specific focus but remains compatible with it. ISA-Tab format can be converted to ISA-JSON (validated against a set of JSON Schema defined the ISA model). From ISA-JSON, a serialisation to RDF(JSON-LD) is possible when using series of JSON context files.</rdfs:comment>
         <rdfs:label>ISA-TAB</rdfs:label>
     </owl:Class>
     
