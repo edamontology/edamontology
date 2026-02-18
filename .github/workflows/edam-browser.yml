@@ -91,42 +91,20 @@ jobs:
             
             const commentBody = `## 🔍 EDAM Visualization
             
-            The \`EDAM_dev.owl\` file is available for visualization.
+            The \`EDAM_dev.owl\` file for commit \`${sha}\` is available for visualization.
             
             **[👉 View it in EDAM Browser](${visualizationUrl})**
             
             ---
             <sub>💡 Tip: Comment \`\/browser\` to regenerate this link</sub>`;
             
-            // Find existing comment
-            const { data: comments } = await github.rest.issues.listComments({
+            // Create new comment
+            await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: ${{ steps.pr_number.outputs.number }}
+              issue_number: ${{ steps.pr_number.outputs.number }},
+              body: commentBody
             });
-            
-            const botComment = comments.find(comment => 
-              comment.user.type === 'Bot' && 
-              comment.body.includes('🔍 EDAM Visualization')
-            );
-            
-            if (botComment) {
-              // Update existing comment
-              await github.rest.issues.updateComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                comment_id: botComment.id,
-                body: commentBody
-              });
-            } else {
-              // Create new comment
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: ${{ steps.pr_number.outputs.number }},
-                body: commentBody
-              });
-            }
 
       - name: Add success reaction
         if: steps.check_file.outputs.exists == 'true'
