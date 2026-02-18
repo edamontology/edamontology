@@ -87,7 +87,7 @@ jobs:
             
             // Use commit SHA for more reliable access
             const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${sha}/EDAM_dev.owl`;
-            const visualizationUrl = `https://edamontology.github.io/edam-browser/#topic_0091&version=${encodeURIComponent(rawUrl)}`;
+            const visualizationUrl = `https://edamontology.github.io/edam-browser/#topic_0091&version=${rawUrl}`;
             
             const commentBody = `## 🔍 EDAM Visualization
             
