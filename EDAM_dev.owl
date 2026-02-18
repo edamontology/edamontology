@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4061</next_id>
+        <next_id>4063</next_id>
         <oboLegacy:date>12.11.2025 16:20 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
@@ -37665,6 +37665,29 @@
 
 
 
+    <!-- http://edamontology.org/format_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://ebi-metabolights.github.io/guides/MAF"/>
+        <file_extension>tsv</file_extension>
+        <oboInOwl:hasDefinition>A tab-separated file format used to report metabolites identified or annotated in a metabolomics study, including compound identifiers, chemical structure representations, mass-to-charge ratios, retention times, and per-sample quantitative measurements. The format is used by the MetaboLights repository as a companion to ISA-Tab metadata and follows Metabolomics Standards Initiative reporting guidelines.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>MetaboLights MAF</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:label>Metabolite annotation file</rdfs:label>
+    </owl:Class>
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
@@ -52579,6 +52602,21 @@
         <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q632897"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/operation_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>The process of determining the chemical identity of compounds detected in analytical experiments such as mass spectrometry, NMR spectroscopy. Identification is typically achieved by matching experimental spectral or physicochemical features against reference databases, spectral libraries, or predicted molecular properties.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Small molecule identification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite annotation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <rdfs:label>Compound identification</rdfs:label>
     </owl:Class>
 
 
