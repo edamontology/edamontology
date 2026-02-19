@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4061</next_id>
-        <oboLegacy:date>12.11.2025 16:20 UTC</oboLegacy:date>
+        <next_id>4065</next_id>
+        <oboLegacy:date>03.02.2026 09:28 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -37510,7 +37510,7 @@
         <organisation rdf:resource="https://www.rd-alliance.org"/>
         <repository rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
         <oboInOwl:created_by>bianchini</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
+        <oboInOwl:creation_date>2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Machine-actionable data management plan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA Common Standard for Machine-Actionable Data Management Plans (maDMPS)</oboInOwl:hasExactSynonym>
@@ -61567,6 +61567,7 @@
     </owl:Class>
 
 
+
     <!-- http://edamontology.org/topic_4057 -->
 
     <owl:Class rdf:about="http://edamontology.org/topic_4057">
@@ -61591,7 +61592,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/topic_4060">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <created_in>1.26</created_in>
         <oboInOwl:created_by>Matúš Kalaš</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-11-06T23:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Metaproteomics is the profiling of proteins in a sample that contains material from multiple species or strains of organisms.</oboInOwl:hasDefinition>
@@ -61606,6 +61607,76 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metaproteomics"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Bisulfite sequencing is a sequencing technique used to determine DNA methylation patterns by treating DNA with bisulfite, which converts unmethylated cytosines to uracils while leaving methylated cytosines unchanged.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Bisulfite-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bisulphite sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Reduced representation bisulfite sequencing (RRBS)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Whole-genome bisulfite sequencing (WGBS)</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Bisulfite sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bisulfite_sequencing"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4087270"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Bulk RNA barcoding and sequencing (BRB-seq) is a highly mutliplexed bulk RNA-Seq technique where each RNA sample gets a barcode, and many samples are sequenced together.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>BRB-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:savedBy>2026-01-27 Veit Schwämmle, Matúš Kalaš, et al.</oboInOwl:savedBy>
+        <rdfs:label>Bulk RNA barcoding and sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/BRB-seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q125996941"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-08-22T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>DNase sequencing is a technique used to identify regions of open chromatin by sequencing DNA fragments generated after treatment with DNase I, which preferentially cuts accessible DNA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DNase-seq</oboInOwl:hasExactSynonym>
+        <rdfs:label>DNase sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNase-Seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5205821"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4064 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4064">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
+        <oboInOwl:creation_date>2025-04-23T14:10:00.851802Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Specific sequencing of small RNAs using a variant of RNA-seq, with an additional fragment size selection step.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>miRNA-seq</oboInOwl:hasExactSynonym>
+        <rdfs:label>MicroRNA sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA_sequencing"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6839127"/>
+    </owl:Class>
+
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
