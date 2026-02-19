@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4065</next_id>
-        <oboLegacy:date>03.02.2026 09:28 UTC</oboLegacy:date>
+        <oboLegacy:date>19.02.2026 01:08 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -140,7 +140,7 @@
         <oboLegacy:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboLegacy:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/properties"/>
-        <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
+        <rdfs:comment>N.B.: File extensions that are not correspondingly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within scientific computing.</rdfs:comment>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
     </owl:AnnotationProperty>
@@ -2329,7 +2329,7 @@
         <oboInOwl:hasExactSynonym>Gene annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene features report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene function (report)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gene structure (repot)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene structure (report)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid features (gene and transcript structure)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
@@ -14624,7 +14624,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>An identifier that is re-used for data objects of fundamentally different types (typically served from a single database).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An identifier that is reused for data objects of fundamentally different types (typically served from a single database).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
@@ -36800,7 +36800,7 @@
         <file_extension>xlsx</file_extension>
         <media_type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</media_type>
         <organisation rdf:resource="https://www.karrlab.org"/>
-        <oboInOwl:hasDefinition>ObjTables is a toolkit for creating re-usable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>ObjTables is a toolkit for creating reusable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>ObjTables</rdfs:label>
@@ -37034,7 +37034,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>1.25</created_in>
         <file_extension>trackdb</file_extension>
-        <oboInOwl:hasDefinition>A declaration file format for UCSC browsers track dataset display charateristics.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A declaration file format for UCSC browsers track dataset display characteristics.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>TrackDB</rdfs:label>
@@ -40025,7 +40025,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of strucural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of structural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Variant functional prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein SNP mapping</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein mutation modelling</oboInOwl:hasNarrowSynonym>
@@ -48433,7 +48433,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0292"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
-        <oboInOwl:hasDefinition>Align two or more (tpyically huge) molecular sequences that represent genomes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Align two or more (typically huge) molecular sequences that represent genomes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome alignment construction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Whole genome alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -49008,7 +49008,7 @@
         <oboInOwl:hasExactSynonym>Sequencing quality assessment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:comment>Analyse raw sequence data from a sequencing pipeline and identify (and possiby fix) problems.</rdfs:comment>
+        <rdfs:comment>Analyse raw sequence data from a sequencing pipeline and identify (and possibly fix) problems.</rdfs:comment>
         <rdfs:label>Sequencing quality control</rdfs:label>
     </owl:Class>
     
@@ -50000,7 +50000,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3460">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2995"/>
         <created_in>1.7</created_in>
-        <oboInOwl:hasDefinition>Classifiication (typically of molecular sequences) by assignment to some taxonomic hierarchy.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Classification (typically of molecular sequences) by assignment to some taxonomic hierarchy.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Taxonomy assignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Taxonomic profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
