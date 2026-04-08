@@ -1,8 +1,5 @@
-# Detailed list of changes in stable versions of EDAM
-Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
-
 ## Table of contents
-  - [EDAM (1.25-20240924T0027Z-unstable(1.26))](#edam-125-20240924t0027z-unstable126)
+  - [EDAM (1.25-20251112T1620Z-unstable(1.26))](#edam-125-20251112t1620z-unstable126)
   - [EDAM_1.25](#edam_125)
   - [EDAM_1.24](#edam_124)
   - [EDAM_1.23](#edam_123)
@@ -19,16 +16,29 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
   - [EDAM_1.12](#edam_112)
 
 
-# EDAM 1.25-20240924T0027Z-unstable(1.26)
+# EDAM 1.25-20251112T1620Z-unstable(1.26)
 
-**N.B.:** The following list currently contains all the additions done in all the "unstable" releases since the "stable" release 1.25. 
+#### Intermediate releases were:
 
-### New topics (20+3):
+- 1.25-20251112T1620Z-unstable(1.26)
+- 1.25-20251106T2339Z-unstable(1.26)
+- 1.25-20240924T0027Z-unstable(1.26)
+- 1.25-20240920T1240Z-unstable(1.26)
+- unstable (20220713; 31.05.2022 09:15)
+- unstable (20210910; 02.09.2021 19:52)
+
+## Added concepts
+
+**N.B.:** The following list currently contains all the additions done in all the intermediate ("rolling"/"unstable") releases since the last permanent ("stable") release 1.25.
+
+### New topics (28+3):
 - Acoustics
 - Antimicrobial resistance
+- ATAC-seq
 - Biosciences
 - Carbon cycle
 - Chemometrics (was wrongly as operation)
+- ChIP-exo
 - Cryogenic electron microscopy
 - Cybersecurity
 - Data protection
@@ -38,13 +48,19 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 - FAIR data
 - Genome resequencing (was wrongly as operation)
 - Genomic imprinting
+- Hi-C
+- Long-read sequencing
 - Metabarcoding
+- Metaproteomics
 - Metabolic engineering (was wrongly as operation)
 - Microfluidics
+- miRNA silencing
 - Multiomics
 - Open science
 - Ribosome Profiling
+- Short-read sequencing
 - Single-cell sequencing
+- siRNA experiment
 - Software management
 - Version control
 
@@ -60,7 +76,7 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 - Data management plan
 - ORCID Identifier
 
-### New formats (10):
+### New formats (15):
 - BioSimulators format for the specifications of biosimulation tools
 - BioSimulators standard for command-line interfaces for biosimulation tools
 - cif
@@ -68,9 +84,14 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 - gVCF
 - maDMP
 - MSP
+- mzTab-L
+- mzTab-M
+- Nextflow
 - PDBQT
 - PEtab
 - PQR
+- SDRF
+- Snakemake
 
 ### Added and updated links to other ontologies and knowledge bases:
 
@@ -85,6 +106,8 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 || relatedMatch: http://purl.obolibrary.org/obo/BFO_0000019 |
 || relatedMatch: http://purl.org/biotop/biotop.owl#Quality |
 || relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| Proteomics [`topic_0121`](http://edamontology.org/topic_0121) | exactMatch: https://id.nlm.nih.gov/mesh/D040901.html |
+|| exactMatch: proteomics  https://www.wikidata.org/wiki/Q471857 |
 | Lipidomics [`topic_0153`](http://edamontology.org/topic_0153) | exactMatch: http://id.nlm.nih.gov/mesh/D000081362 |
 || exactMatch: lipidomics  https://www.wikidata.org/wiki/Q6556376 |
 | Data curation and archival [`topic_0219`](http://edamontology.org/topic_0219) | exactMatch: data archiving  https://www.wikidata.org/wiki/Q65769313 |
@@ -115,6 +138,12 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 || relatedMatch: information security  https://www.wikidata.org/wiki/Q189900 |
 | Version control [`topic_4046`](http://edamontology.org/topic_4046) | exactMatch: version control  https://www.wikidata.org/wiki/Q189439 |
 | Software management [`topic_4047`](http://edamontology.org/topic_4047) | relatedMatch: software project management  https://www.wikidata.org/wiki/Q947779 |
+| ChIP-exo [`topic_4051`](http://edamontology.org/topic_4051) | exactMatch: ChIP-exo  https://www.wikidata.org/wiki/Q5065896 |
+| Hi-C [`topic_4052`](http://edamontology.org/topic_4052) | exactMatch: Hi-C  https://www.wikidata.org/wiki/Q105517688 |
+| ATAC-seq [`topic_4053`](http://edamontology.org/topic_4053) | exactMatch: ATAC-seq  https://www.wikidata.org/wiki/Q22704317 |
+| Long-read sequencing [`topic_4056`](http://edamontology.org/topic_4056) | exactMatch: long-read sequencing  https://www.wikidata.org/wiki/Q104925505 |
+| Short-read sequencing [`topic_4057`](http://edamontology.org/topic_4057) | exactMatch: short read sequencing  https://www.wikidata.org/wiki/Q104925455 |
+| Metaproteomics [`topic_4060`](http://edamontology.org/topic_4060) | exactMatch: metaproteomics  https://www.wikidata.org/wiki/Q6823168 |
 
 #### Operations
 | Concept | Match |
@@ -170,7 +199,11 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 || relatedMatch: http://semanticscience.org/resource/SIO_000618 |
 || relatedMatch: http://wsio.org/compression_004 |
 || relatedMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#quality |
+| tabix [`format_3616`](http://edamontology.org/format_3616) | relatedMatch: Tabix  https://www.wikidata.org/wiki/Q105424896 |
+| mzTab [`format_3681`](http://edamontology.org/format_3681) | exactMatch: https://doi.org/10.25504/FAIRsharing.c12tyk |
 | maDMP [`format_4041`](http://edamontology.org/format_4041) | exactMatch: https://doi.org/10.25504/FAIRsharing.6e60e5 |
+| mzTab-M [`format_4058`](http://edamontology.org/format_4058) | exactMatch: https://doi.org/10.25504/FAIRsharing.207caf |
+| mzTab-L [`format_4059`](http://edamontology.org/format_4059) | exactMatch: https://fairsharing.org/5158 |
 
 #### Properties
 | Concept | Match |
@@ -192,6 +225,11 @@ Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ont
 | is output of [`is_output_of`](http://edamontology.org/is_output_of) | closeMatch: http://purl.obolibrary.org/obo/OBI_0000312 |
 || exactMatch: http://wsio.org/is_output_of |
 | is topic of [`is_topic_of`](http://edamontology.org/is_topic_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
+
+
+# Detailed list of changes in stable versions of EDAM
+Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
+
 
 # EDAM_1.25
 
