@@ -25829,6 +25829,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2072"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>hmm</file_extension>
         <oboInOwl:hasDefinition>Format of a hidden Markov model representation used by the HMMER package.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -25844,6 +25845,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>hmm</file_extension>
         <oboInOwl:hasDefinition>FASTA-style format for multiple sequences aligned by HMMER package to an HMM.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -28028,6 +28030,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2181"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2206"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>embl</file_extension>
+        <file_extension>embl.gz</file_extension>
         <oboInOwl:hasDefinition>EMBL entry format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>EMBL</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>EMBL sequence format</oboInOwl:hasExactSynonym>
@@ -28058,6 +28062,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2200"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>fa</file_extension>
+        <file_extension>fasta</file_extension>
+        <file_extension>fa.gz</file_extension>
+        <file_extension>fasta.gz</file_extension>
         <oboInOwl:hasDefinition>FASTA format including NCBI-style IDs.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>FASTA format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>FASTA sequence format</oboInOwl:hasExactSynonym>
@@ -28437,6 +28445,8 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
+        <file_extension>phy</file_extension>
+        <file_extension>phylip</file_extension>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/format_1997"/>
         <oboInOwl:hasDefinition>Phylip interleaved sequence format.</oboInOwl:hasDefinition>
@@ -28885,6 +28895,9 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
         <file_extension>alnfaa</file_extension>
+        <file_extension>aln</file_extension>
+        <file_extension>alnfaa.gz</file_extension>
+        <file_extension>aln.gz</file_extension>
         <oboInOwl:hasDefinition>Fasta format for (aligned) sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -31028,6 +31041,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2196"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>obo</file_extension>
         <oboInOwl:hasDefinition>OBO ontology text format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
