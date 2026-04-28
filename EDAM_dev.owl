@@ -26100,6 +26100,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2077"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>dssp</file_extension>
         <oboInOwl:hasDefinition>Format of an entry from the DSSP database (Dictionary of Secondary Structure in Proteins).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -26185,6 +26186,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>pdb</file_extension>
         <oboInOwl:hasDefinition>Entry format of PDB database in PDB format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>PDB format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -26200,6 +26202,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>mmcif</file_extension>
         <oboInOwl:hasDefinition>Entry format of PDB database in mmCIF format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -27128,6 +27131,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>cel</file_extension>
+        <file_extension>cel.gz</file_extension>
         <oboInOwl:hasDefinition>Format of Affymetrix data file of information about (raw) expression levels of the individual probes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Affymetrix probe raw data format</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -27796,6 +27801,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2556"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>newick</file_extension>
+        <file_extension>nwk</file_extension>
         <oboInOwl:hasDefinition>Phylogenetic tree Newick (text) format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>nh</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -27825,6 +27832,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2556"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>nex</file_extension>
+        <file_extension>nexus</file_extension>
         <oboInOwl:hasDefinition>Phylogenetic tree Nexus (text) format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -28151,6 +28160,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2205"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2206"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>gbk</file_extension>
+        <file_extension>gbk.gz</file_extension>
         <oboInOwl:hasDefinition>Genbank entry format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>GenBank</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -28521,6 +28532,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>sto</file_extension>
+        <file_extension>sto.gz</file_extension>
         <documentation rdf:resource="http://en.wikipedia.org/wiki/Stockholm_format"/>
         <oboInOwl:hasDefinition>Stockholm multiple sequence alignment format (used by Pfam and Rfam).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -28728,10 +28741,10 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
-	<file_extension>gff</file_extension>
-	<file_extension>gff.gz</file_extension>
-	<file_extension>gff3</file_extension>
-	<file_extension>gff3.gz</file_extension>
+        <file_extension>gff</file_extension>
+        <file_extension>gff.gz</file_extension>
+        <file_extension>gff3</file_extension>
+        <file_extension>gff3.gz</file_extension>
         <ontology_used rdf:resource="http://www.sequenceontology.org/"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md"/>
         <oboInOwl:hasDefinition>Generic Feature Format version 3 (GFF3) of sequence features.</oboInOwl:hasDefinition>
@@ -28871,6 +28884,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2200"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>alnfaa</file_extension>
         <oboInOwl:hasDefinition>Fasta format for (aligned) sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -30580,8 +30594,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2305"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
-	<file_extension>gtf</file_extension>
-	<file_extension>gtf.gz</file_extension>
+        <file_extension>gtf</file_extension>
+        <file_extension>gtf.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format4"/>
         <oboInOwl:hasDbXref rdf:resource="http://mblab.wustl.edu/GTF22.html"/>
         <oboInOwl:hasDefinition>Gene Transfer Format (GTF), a restricted version of GFF.</oboInOwl:hasDefinition>
@@ -30690,6 +30704,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1915"/>
         <owl:disjointWith rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>txt</file_extension>
         <oboInOwl:hasDefinition>Textual format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Plain text format</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>txt</oboInOwl:hasExactSynonym>
@@ -30716,6 +30731,7 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>html</file_extension>
         <oboInOwl:hasDefinition>HTML format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Hypertext Markup Language</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31298,7 +31314,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
-	<file_extension>bam</file_extension>
+	    <file_extension>bam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>BAM format, the binary, BGZF-formatted compressed version of SAM format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31316,7 +31332,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
-	<file_extension>sam</file_extension>
+	    <file_extension>sam</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://samtools.github.io/hts-specs/SAMv1.pdf"/>
         <oboInOwl:hasDefinition>Sequence Alignment/Map (SAM) format for alignment of nucleotide sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain base-call and alignment qualities and other data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31523,8 +31539,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
-	<file_extension>bed</file_extension>
-	<file_extension>bed.gz</file_extension>
+        <file_extension>bed</file_extension>
+        <file_extension>bed.gz</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1"/>
         <oboInOwl:hasDefinition>Browser Extensible Data (BED) format of sequence annotation track, typically to be displayed in a genome browser.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31542,6 +31558,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1.5"/>
+        <file_extension>bigbed</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1.5"/>
         <oboInOwl:hasDefinition>bigBed format for large sequence annotation tracks, similar to textual BED format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31575,6 +31592,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>beta12orEarlier</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format6.1"/>
+        <file_extension>bigwig</file_extension>
+        <file_extension>bw</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format6.1"/>
         <oboInOwl:hasDefinition>bigWig format for large sequence annotation tracks that consist of a value for each sequence position. Similar to textual WIG format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -31725,6 +31744,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>beta12orEarlier</created_in>
+        <file_extension>mpileup</file_extension>
         <documentation rdf:resource="http://samtools.sourceforge.net/pileup.shtml"/>
         <oboInOwl:hasDbXref rdf:resource="http://samtools.sourceforge.net/pileup.shtml"/>
         <oboInOwl:hasDefinition>Pileup format of alignment of sequences (e.g. sequencing reads) to (a) reference sequence(s). Contains aligned bases per base of the reference sequence(s).</oboInOwl:hasDefinition>
@@ -32230,6 +32250,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3245"/>
         <created_in>1.2</created_in>
         <documentation rdf:resource="http://psidev.info/mzml"/>
+        <file_extension>mzml</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://psidev.info/mzml"/>
         <oboInOwl:hasDefinition>mzML format for raw spectrometer output data, standardised by HUPO PSI MSS.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -32471,6 +32492,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2554"/>
         <created_in>1.3</created_in>
         <documentation rdf:resource="http://compbio.soe.ucsc.edu/a2m-desc.html"/>
+        <file_extension>a2m</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://compbio.soe.ucsc.edu/a2m-desc.html"/>
         <oboInOwl:hasDefinition>The A2M format is used as the primary format for multiple alignments of protein or nucleic-acid sequences in the SAM suite of tools. It is a small modification of FASTA format for sequences and is compatible with most tools that read FASTA.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -32669,6 +32691,7 @@
         </rdfs:subClassOf>
         <created_in>1.3</created_in>
         <documentation rdf:resource="http://samtools.sourceforge.net/SAMv1.pdf"/>
+        <file_extension>bai</file_extension>
         <oboInOwl:hasDefinition>BAM indexing format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -32740,7 +32763,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2920"/>
         <created_in>1.7</created_in>
         <documentation>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</documentation>
-	<file_extension>cram</file_extension>
+	    <file_extension>cram</file_extension>
         <oboInOwl:hasDbXref>http://www.ebi.ac.uk/ena/software/cram-usage#format_specification http://samtools.github.io/hts-specs/CRAMv2.1.pdf</oboInOwl:hasDbXref>
         <oboInOwl:hasDefinition>Reference-based compression of alignment format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -33003,6 +33026,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3507"/>
         <created_in>1.8</created_in>
+        <file_extension>pdf</file_extension>
         <oboInOwl:hasDefinition>Portable Document Format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
@@ -33182,6 +33206,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.10</created_in>
         <documentation rdf:resource="http://www.fileformat.info/format/jpeg/egff.htm"/>
+        <file_extension>jpg</file_extension>
         <oboInOwl:hasDefinition>Joint Picture Group file format for lossy graphics file.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>JPEG</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>jpeg</oboInOwl:hasExactSynonym>
@@ -33246,6 +33271,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1.8"/>
+        <file_extension>bedgraph</file_extension>
         <oboInOwl:hasDbXref rdf:resource="http://genome.ucsc.edu/FAQ/FAQformat#format1.8"/>
         <oboInOwl:hasDefinition>The bedGraph format allows display of continuous-valued data in track format. This display type is useful for probability scores and transcriptome data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -33362,6 +33388,8 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3867"/>
         <created_in>1.11</created_in>
         <documentation rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
+        <file_extension>hdf5</file_extension>
+        <file_extension>h5</file_extension>
         <oboInOwl:hasDbXref rdf:resource="https://www.hdfgroup.org/HDF5/doc/H5.format.html"/>
         <oboInOwl:hasDefinition>HDF5 is a data model, library, and file format for storing and managing data, based on Hierarchical Data Format (HDF).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>h5</oboInOwl:hasExactSynonym>
@@ -33380,6 +33408,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.11</created_in>
+        <file_extension>tiff</file_extension>
         <documentation rdf:resource="http://www.fileformat.info/format/tiff/egff.htm"/>
         <oboInOwl:hasDefinition>A versatile bitmap format.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -33585,6 +33614,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2332"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.11</created_in>
+        <file_extension>svg</file_extension>
         <documentation rdf:resource="http://www.w3.org/Graphics/SVG/"/>
         <oboInOwl:hasDefinition>Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Scalable Vector Graphics</oboInOwl:hasExactSynonym>
@@ -33787,6 +33817,7 @@
         <created_in>1.11</created_in>
         <documentation rdf:resource="http://www.htslib.org/doc/tabix.html"/>
         <documentation rdf:resource="http://samtools.github.io/hts-specs/tabix.pdf"/>
+        <file_extension>tbi</file_extension>
         <oboInOwl:hasDefinition>TAB-delimited genome position file index format.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Tabix index file</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>tbi</oboInOwl:hasExactSynonym>
@@ -33861,6 +33892,7 @@
     <owl:Class rdf:about="http://edamontology.org/format_3621">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>1.11</created_in>
+        <file_extension>micro</file_extension>
         <documentation rdf:resource="https://www.sqlite.org/fileformat2.html"/>
         <oboInOwl:hasDefinition>Data format used by the SQLite database.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -34357,6 +34389,7 @@
         <created_in>1.13</created_in>
         <deprecation_comment>This concept was a duplicate of format tabix (see replacedBy attribute).</deprecation_comment>
         <obsolete_since>1.26</obsolete_since>
+        <file_extension>tbi</file_extension>
         <oldParent rdf:resource="http://edamontology.org/format_2333"/>
         <oldParent rdf:resource="http://edamontology.org/format_3326"/>
         <oboInOwl:hasDefinition>Index file format used by the samtools package to index TAB-delimited genome position files.</oboInOwl:hasDefinition>
@@ -34566,6 +34599,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3547"/>
         <created_in>1.14</created_in>
+        <file_extension>ome.tiff</file_extension>
         <documentation rdf:resource="http://www.openmicroscopy.org/site/support/ome-model/ome-tiff/specification.html"/>
         <oboInOwl:hasDefinition>Image file format used by the Open Microscopy Environment (OME).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -36528,6 +36562,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.23</created_in>
+        <file_extension>loom</file_extension>
         <documentation rdf:resource="https://linnarssonlab.org/loompy/format/index.html"/>
         <documentation rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
         <example rdf:resource="https://linnarssonlab.org/loompy/semantics/index.html"/>
@@ -37232,6 +37267,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2333"/>
         <created_in>1.25</created_in>
         <file_extension>npy</file_extension>
+        <file_extension>npz</file_extension>
         <oboInOwl:hasDefinition>The standard binary file format used by NumPy - a fundamental package for scientific computing with Python - for persisting a single arbitrary NumPy array on disk. The format stores all of the shape and dtype information necessary to reconstruct the array correctly.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>NumPy</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>npy</oboInOwl:hasExactSynonym>
@@ -37451,6 +37487,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1475"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <created_in>1.26</created_in>
+        <file_extension>pqr</file_extension>
         <oboInOwl:hasDefinition>Data format derived from the standard PDB format, which enables user to incorporate parameters for charge and radius to the existing PDB data file.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
