@@ -7,60 +7,12 @@ __Your pull requests, issues, comments and suggestions are warmly welcome!__ �
 
 ## Source code
 
-The "source code" of EDAM is in the file `EDAM_dev.owl` (see [main](https://github.com/edamontology/edamontology/blob/main/EDAM_dev.owl)). The format of the source file is RDF/XML. `EDAM_dev.owl` can be editted locally (_e.g._ in a [text editor](https://coderefinery.github.io/installation/editors/)), or online on [Gitpod](https://www.gitpod.io/#https://github.com/edamontology/edamontology). The file is too big to be editted directly on GitHub.
+The "source code" of EDAM is in the file `EDAM_dev.owl` (see [main](https://github.com/edamontology/edamontology/blob/main/EDAM_dev.owl)). The format of the source file is RDF/XML. `EDAM_dev.owl` can be editted locally (_e.g._ in a [text editor](https://coderefinery.github.io/installation/editors/)), or online on [WebProtege](https://webprotege.stanford.edu/). The file is too big to be editted directly on GitHub.
+
+If you are new to git, a small guide is available below in this document in order to set up the EDAM repository locally on your machine. 
 
 
-### New to Git?
-
-Some neat efficient learning resources are:
- - Quick introduction|refresh of [Git and GitHub](https://coderefinery.github.io/git-refresher/02-refresher/) (101)
- - Install Git: see [here](https://coderefinery.github.io/git-refresher/01-setup) and [here](https://carpentries.github.io/workshop-template/#git)
- - Install a convenient [text editor](https://coderefinery.github.io/installation/editors/) ([see also](https://carpentries.github.io/workshop-template/#editor))
- - [Learn Git](https://coderefinery.github.io/git-intro/) (great for both beginners and advanced)
- - [Forking and creating pull requests](https://coderefinery.github.io/git-collaborative/03-distributed/) on GitHub
-
-
-### Git setup on your local machine
-
-👉🏽 __Please make sure to read the following when you are cloning this repo:__ 👇🏽
-
-1. We recommend using a "shallow" clone of the _edamontology_ repo, without all the history and open feature branches (unless investigating the history is what you want to do): `git clone --depth 1 https://github.com/edamontology/edamontology.git`
-
-2. There is a __pre-commit [hook](https://coderefinery.github.io/git-collaborative/05-hooks/)__ set up, to validate that the source code of EDAM is in the right format. To make it work, please use one of the following 2 options:
-
-😮 Wait a second! __Is this too fast? Do you need a slightly more step-by-step guide?__ Then you are welcome to follow issue [#616](https://github.com/edamontology/edamontology/issues/616).
-
-
-#### Option 1
-
-This is the preferred option. Your __git__ version needs to be __2.9.0 or higher__ for the hook to work, which is nowadays usually the case.
-
-Please make sure to have set up the correct path to the hooks directory, locally or globally:
-
-* Run `git config core.hooksPath` from inside of your forked and cloned _edamontology_ repo, and see if it returns the value `.githooks`.
-* **If it doesn't, to set it locally for your _edamontology_ repo, run: `git config core.hooksPath .githooks`** inside your _edamontology_ repo.
-* Alternatively, to set it globally for your Git: `git config --global core.hooksPath .githooks`.
-* Tip: to see your Git config with where all the variables are stored, run `git config --list --show-origin` from inside of your _edamontology_ repo.
-
-
-#### Option 2
-
-If you have to|want to continue using an older version of __git__ than __2.9.0__, please either run the pre-commit script manually:
-- Inside the _edamontology_ repo, run: `./.githooks/pre-commit`. If the script returns zero (`0`), the source code is invalid (_i.e._ not containing any _owl:Class_ string).
-
-or better, **copy the files from the `.githooks` folder** in your _edamontology_ repo **into the `.git/hooks` folder** in your _edamontology_ repo. (Please do this again when the hooks scripts get updated and you pull the updates from the central _edamontology_ repo!)
-
-#### Test that it's set up correctly:
-
-1. Make a dummy change in `EDAM_dev.owl` using a text editor, and try to commit it to a **new, experimental Git branch** (see above if you need to learn or refresh Git: commits, branches). The commit should work, and you should see the output `Yay! Your commit to EDAM Ontology was successful.`.
-2. Now replace all `owl:Class` in the `EDAM_dev.owl` file with for example `wol:Class` 🦉, and try to commit that change. The commit should fail now (returning `0`), not allowing you to commit.
-3. (If you haven't done this in a new, experimental branch, reset the HEAD of your current branch (_e.g._ `main`) back to the last "proper" commit. If you have done it in an experimental branch, please make sure that you don't continue doing your next, "real" changes into this branch.😉)
-
-
-### Using Gitpod
-
-_TODO_
-
+## How to edit EDAM directly with git
 
 ### How to add a new concept
 
@@ -153,6 +105,168 @@ Template for a new _**Topic**_:
 Please create a pull request after you push your changes; __draft__ pull requests (work in progress) are also very welcome!👍🏽 The maintainers will appreciate if you create separate Git branches and thus separate pull requests for solving separate issues | separate needs.🙏🏽 However, if adding a set of **inter-related** concepts, it's the best to do that in one branch and one pull request.
 
 You can either keep **_XXXX_** as the numeric ID, or use the number stored in `next_id` in the header of `EDAM_dev.owl`, and update the `next_id` with +1.🧙🏽‍♀️ When adding multiple concepts in one branch, you can use **XXX1, XXX2, ...** or `next_id` accordingly. You can also update the `oboOther:date` to the date & time of saving your file (in UTC).⏲ These edits are, however, **optional** (although highly appreciated!🚀🙌🏽), and can be updated by maintainers when merging the pull request.👩🏽‍🏭
+
+
+## How to edit EDAM using WebProtege
+
+## Editing an EDAM concept with WebProtégé 
+
+Example of an EDAM term/concept 
+
+![Example of an EDAM term/concept in WebProtege](assets/img/WP_edit_add_classes.png)
+
+IRI: ... 
+Parents: ... 
+Annotations: ... 
+
+CheckList for validating an EDAM term: 
+
+*to do*
+
+
+## Automated quality control of EDAM concepts 
+
+**Minimal content**
+
+*to do*
+
+**Recommended content**
+
+*to do*
+
+
+## Exporting changes from WebProtege
+
+The whole project can be exported from WebProtege as an RDF/XML file. This will create a zip file containing the OWL file, which should ideally be renamed.
+
+![Export a project from WebProtege](assets/img/WP_export_project.png)
+
+![Export the project in RDF/XML format](assets/img/WP_export_RDF.png)
+
+## Editing the EDAM file with new changes locally
+
+Manually edit EDAM with the following steps:
+
+- Open the WebProtégé OWL file and `EDAM_dev.owl` file in a text editor side-by-side
+
+![text_editor_open_files](assets/img/text_editor_open_files.png)
+
+- Check the last ID used and increment this number accordingly for the new classes
+- Check that the subClaffOf attribute is OK
+
+![5_text_editor_update_IDs](assets/img/text_editor_update_IDs.png)
+
+- Remove some unnecessary clutter added automatically by WebProtégé, like string declarations and such
+
+![4_text_editor_remove_clutter](assets/img/text_editor_remove_clutter.png)
+
+- Update the `next_id` and `date` attributes at the top of the EDAM file
+
+![6_text_editor_date_nextID](assets/img/text_editor_date_nextID.png)
+
+
+## Pushing edits to GitHub for versioning 
+
+- Create new branch and add the edited EDAM file
+- Revise the diff and make sure everything looks OK
+
+![git diff](assets/img/git_diff.png)
+
+- Provide a detailed commit message, including author information and related issues or pull resquests
+
+![git commit message](assets/img/git_commit_message.png)
+![Revise last commits](assets/img/git_log.png)
+
+- Push changes from branch
+- Open new branch on GitHub, revise the diff and open a new PR
+- Make sure the CI runs smoothly
+- Request reviewers for the pull request
+
+## Updating the project on WebProtege
+
+When the project on WebProtege is meant to keep evolving, the changes committed to GitHub need to be carefully incorporated - especially when WebProtege is behind the main versioned EDAM.
+
+- In the text editor, the OWL file originally exported from WebProtege should be updated with the new permanent IDs, and the attributes `date`and `next_id`
+- Revise the XML syntax, new IDs, last IDs added before 
+
+![Updating the WebProtege file with new changes in the text editor](assets/img/update_WP_file_texteditor.png)
+
+- Go back to WebProtege
+
+![Going back to the WebProtege web page](assets/img/WP_before_refresh.png)
+
+- Load the edited file and revise the changes to be applied: addition of new classes and permanent IDs, removal of temporary IDs, etc
+
+![Loading the updated ontology file](assets/img/WP_load_ontology_file.png)
+![Revising the changes to be applied upon merging the ontology](assets/img/WP_diff_new_classes.png)
+![Revinsing carefully the contents to be removed from the ontology](assets/img/WP_update_diff_minus.png)
+
+- Write a commit message and apply those changes
+
+![Adding a commit message before applying changes](assets/img/WP_update_diff_commit_message.png)
+![Validating the changes to be merged with a commit message](assets/img/WP_merging_ontologies.png)
+![Merging was done successfully](assets/img/WP_successfully_merged.png)
+
+- Refresh the tree
+
+![Refreshing the tree to visualise the changes applied](assets/img/WP_refresh_tree.png)
+
+- The temporary IDs should be replaced with permanent IDs for the newly-committed classes
+
+![The new classes now have an appropriate permanent identifier](assets/img/WP_ID_updated.png)
+
+## Releasing a new version of the ontology
+
+*to do*
+
+## Starting with Git
+
+
+### New to Git?
+
+Some neat efficient learning resources are:
+ - Quick introduction|refresh of [Git and GitHub](https://coderefinery.github.io/git-refresher/02-refresher/) (101)
+ - Install Git: see [here](https://coderefinery.github.io/git-refresher/01-setup) and [here](https://carpentries.github.io/workshop-template/#git)
+ - Install a convenient [text editor](https://coderefinery.github.io/installation/editors/) ([see also](https://carpentries.github.io/workshop-template/#editor))
+ - [Learn Git](https://coderefinery.github.io/git-intro/) (great for both beginners and advanced)
+ - [Forking and creating pull requests](https://coderefinery.github.io/git-collaborative/03-distributed/) on GitHub
+
+
+### Git setup on your local machine
+
+👉🏽 __Please make sure to read the following when you are cloning this repo:__ 👇🏽
+
+1. We recommend using a "shallow" clone of the _edamontology_ repo, without all the history and open feature branches (unless investigating the history is what you want to do): `git clone --depth 1 https://github.com/edamontology/edamontology.git`
+
+2. There is a __pre-commit [hook](https://coderefinery.github.io/git-collaborative/05-hooks/)__ set up, to validate that the source code of EDAM is in the right format. To make it work, please use one of the following 2 options:
+
+😮 Wait a second! __Is this too fast? Do you need a slightly more step-by-step guide?__ Then you are welcome to follow issue [#616](https://github.com/edamontology/edamontology/issues/616).
+
+
+#### Option 1
+
+This is the preferred option. Your __git__ version needs to be __2.9.0 or higher__ for the hook to work, which is nowadays usually the case.
+
+Please make sure to have set up the correct path to the hooks directory, locally or globally:
+
+* Run `git config core.hooksPath` from inside of your forked and cloned _edamontology_ repo, and see if it returns the value `.githooks`.
+* **If it doesn't, to set it locally for your _edamontology_ repo, run: `git config core.hooksPath .githooks`** inside your _edamontology_ repo.
+* Alternatively, to set it globally for your Git: `git config --global core.hooksPath .githooks`.
+* Tip: to see your Git config with where all the variables are stored, run `git config --list --show-origin` from inside of your _edamontology_ repo.
+
+
+#### Option 2
+
+If you have to|want to continue using an older version of __git__ than __2.9.0__, please either run the pre-commit script manually:
+- Inside the _edamontology_ repo, run: `./.githooks/pre-commit`. If the script returns zero (`0`), the source code is invalid (_i.e._ not containing any _owl:Class_ string).
+
+or better, **copy the files from the `.githooks` folder** in your _edamontology_ repo **into the `.git/hooks` folder** in your _edamontology_ repo. (Please do this again when the hooks scripts get updated and you pull the updates from the central _edamontology_ repo!)
+
+#### Test that it's set up correctly:
+
+1. Make a dummy change in `EDAM_dev.owl` using a text editor, and try to commit it to a **new, experimental Git branch** (see above if you need to learn or refresh Git: commits, branches). The commit should work, and you should see the output `Yay! Your commit to EDAM Ontology was successful.`.
+2. Now replace all `owl:Class` in the `EDAM_dev.owl` file with for example `wol:Class` 🦉, and try to commit that change. The commit should fail now (returning `0`), not allowing you to commit.
+3. (If you haven't done this in a new, experimental branch, reset the HEAD of your current branch (_e.g._ `main`) back to the last "proper" commit. If you have done it in an experimental branch, please make sure that you don't continue doing your next, "real" changes into this branch.😉)
 
 
 ## Other contributions
