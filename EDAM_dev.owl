@@ -14,7 +14,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4065</next_id>
+        <next_id>4066</next_id>
         <oboLegacy:date>19.02.2026 01:08 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
@@ -25142,6 +25142,26 @@
         <rdfs:label>Data management plan</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/data_4065 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4065">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2894"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
+        <created_in>1.26</created_in>
+        <regex>RM\d{7}</regex>
+        <oboInOwl:creation_date>2026-02-26T00:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Identifier used by the RefMet database, a standardized reference nomenclature for metabolites.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>RefMet ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
+        <oboInOwl:savedBy>Jonathan Hunter</oboInOwl:savedBy>
+        <rdfs:label>RefMet identifier</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.metabolomicsworkbench.org/databases/refmet/"/>
     </owl:Class>
 
 
