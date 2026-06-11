@@ -61608,23 +61608,39 @@
     </owl:Class>
 
  
-    <!-- http://edamontology.org/topic_4061 -->
+    <!-- http://edamontology.org/topic_4065 -->
 
-    <owl:Class rdf:about="http://edamontology.org/topic_4061">
+    <owl:Class rdf:about="http://edamontology.org/topic_4065">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
-        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.26</created_in>
+        <created_in>1.26</created_in>
         <oboInOwl:created_by>Jonathan Hunter</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-11-25T17:00:00Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>Exposomics is the systematic and comprehensive study of the exposome and the associated biological responses (exposure-phenotype interaction). The exposome is defined as the totality of environmental exposures, i.e. the totality of contact between external factors (agents) and a biological entity.</oboInOwl:hasDefinition>
+        <oboInOwl:creation_date>2025-11-25</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Exposomics is the systematic and comprehensive study of the exposome and the associated biological responses (exposure-phenotype interaction). Exposome is the totality of environmental exposures, that is, the cumulative (e.g. life-long) totality of contacts between external factors (e.g. chemical agents) and a living organism, a population, or a biological taxon.</oboInOwl:hasDefinition>
+        <skos:editorialNote>Jonathan Hunter's 1st suggestion of the definition was based on 10.1016/j.isci.2022.103976 (exposome, functional exposomics), and futher polished to "EDAM style" by Jonathan, Matus, and Helge Hecht. Jonathan suggested also an alternative definition based on ones published 2005-2013, but limited to external factors as in 2022.</skos:editorialNote>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-        <oboInOwl:savedBy>2025-11-25 Jonathan Hunter</oboInOwl:savedBy>
-        <rdfs:comment>Definition derived from 'Exposome' &amp; 'Functional exposomics' in https://doi.org/10.1016/j.isci.2022.103976.</rdfs:comment>
+        <oboInOwl:savedBy>2026-06-11 Jonathan Hunter, Helge Hecht, Matúš Kalaš</oboInOwl:savedBy>
+        <oboInOwl:hasNarrowSynonym>Functional exposomics</oboInOwl:hasNarrowSynonym>
+        <related_term>Environmental exposure</related_term>
+        <related_term>Environmental factor</related_term>
+        <related_term>Environment-wide association study (EWAS)</related_term>
+        <related_term>Exposome</related_term>
+        <related_term>Gene–environment interaction (GxE)</related_term>
+        <related_term>Genotype-environment interaction (G×E)</related_term>
+        <skos:editorialNote>TODO add concepts Exposure assessment, Environmental monitoring, Pollution, etc.; improve Toxicology and its placement; re-assess the related terms/synonyms/links here...</skos:editorialNote>
         <rdfs:label>Exposomics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Exposome"/>
-        <rdfs:seeAlso rdf:resource="http://id.nlm.nih.gov/mesh/D000081413"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_factor"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene%E2%80%93environment_interaction"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.isci.2022.103976"/>
+        <skos:relatedMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000081413"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q115452339"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1384754"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q2142347"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q5533121"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q96377315"/>
+
     </owl:Class>
 
 
