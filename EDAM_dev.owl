@@ -17640,7 +17640,7 @@
         <obsolete_since>beta13</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1916"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/data_2083"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_1394"/>
         <oboInOwl:hasDefinition>Data concerning an alignment of two or more molecular sequences, structures or derived data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types. This includes entities derived from sequences and structures such as motifs and profiles.</rdfs:comment>
@@ -37511,13 +37511,13 @@
         <repository rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
         <oboInOwl:created_by>bianchini</oboInOwl:created_by>
         <oboInOwl:creation_date>2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>maDMP stands for machine-actionable data management plan, a standard for DMPs developed by the Research Data Alliance (RDA).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Machine-actionable data management plan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA Common Standard for Machine-Actionable Data Management Plans (maDMPS)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA DMP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <oboInOwl:savedBy>Matúš Kalaš</oboInOwl:savedBy>
+        <oboInOwl:savedBy>2026-06-12 Matúš Kalaš</oboInOwl:savedBy>
         <rdfs:label>maDMP</rdfs:label>
         <skos:editorialNote>We can consider this as a JSON format, which also is the information standard by itself. Or we can expand it, and make it a maDMP-JSON format, based on the maDMP information standard (then identified by the GH repo or the FAIRsharing DOI-it doesn&apos;t even point to the docu).</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.6e60e5"/>
@@ -55164,8 +55164,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0640"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>The archival, detection, prediction and analysis ofpositional features such as functional sites in nucleotide sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Nucleic acid sites and features</rdfs:label>
@@ -55181,8 +55180,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0639"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>The detection, identification and analysis of positional features in proteins, such as functional sites.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Protein sites and features</rdfs:label>
@@ -55237,7 +55235,7 @@
         <obsolete_since>1.0</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0601"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0748"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>Protein phosphorylation and phosphorylation sites in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Phosphorylation sites</rdfs:label>
@@ -56081,11 +56079,9 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0097"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_1770"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0097"/>
         <oboInOwl:hasDefinition>The comparison two or more nucleic acid (typically RNA) secondary or tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
-        <rdfs:comment>Use this concept for methods that are exclusively for nucleic acid structures.</rdfs:comment>
         <rdfs:label>Nucleic acid structure comparison</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -61703,7 +61699,7 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Exposome"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene%E2%80%93environment_interaction"/>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.isci.2022.103976"/>
-        <skos:editorialNote>Jonathan Hunter's 1st suggestion of the definition was based on 10.1016/j.isci.2022.103976 (exposome, functional exposomics), and futher polished to "EDAM style" by Jonathan, Matus, and Helge Hecht. Jonathan suggested also an alternative definition based on ones published 2005-2013, but limited to external factors as in 2022.</skos:editorialNote>
+        <skos:editorialNote>Jonathan Hunter's 1st suggestion of the definition was based on 10.1016/j.isci.2022.103976 (exposome, functional exposomics), and further polished to "EDAM style" by Jonathan, Matus, and Helge Hecht. Jonathan suggested also an alternative definition based on ones published 2005-2013, but limited to external factors as in 2022.</skos:editorialNote>
         <skos:editorialNote>TODO add concepts Exposure assessment, Environmental monitoring, Pollution, etc.; improve Toxicology and its placement; re-assess the related terms/synonyms/links here...</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q115452339"/>
         <skos:relatedMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000081413"/>
