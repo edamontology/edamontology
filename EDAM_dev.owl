@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4073</next_id>
-        <oboLegacy:date>15.06.2025 02:43 UTC</oboLegacy:date>
+        <next_id>4075</next_id>
+        <oboLegacy:date>15.06.2025 10:57 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -25,9 +25,11 @@
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
         <dc:contributor>Claudia Blankenburg</dc:contributor>
+        <dc:contributor>Helge Hecht</dc:contributor>
         <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
+        <dc:creator>Jonathan Hunter</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:creator>Claire Rioualen</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
@@ -37782,6 +37784,12 @@
     <owl:Class rdf:about="http://edamontology.org/format_4070">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://www.metabolomicsworkbench.org/data/mwTab_specification.pdf"/>
         <file_extension>txt</file_extension>
@@ -37803,6 +37811,12 @@
     <owl:Class rdf:about="http://edamontology.org/format_4071">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <documentation rdf:resource="https://metabolomicshub.github.io/mhd-model/mhd"/>
         <file_extension>mhd.json</file_extension>
@@ -37834,7 +37848,34 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:comment>The MHD announcement format is used for dataset submission notifications within the MetabolomicsHub infrastructure.</rdfs:comment>
-        <rdfs:label>MHD announcement</rdfs:label>`
+        <rdfs:label>MHD announcement</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4073 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4073">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://ebi-metabolights.github.io/guides/MAF"/>
+        <file_extension>tsv</file_extension>
+        <information_standard rdf:resource="https://github.com/MSI-Metabolomics-Standards-Initiative/CIMR"/>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date>2026-02-11</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>MetaboLights MAF (Metabolite Annotation File) is a tab-separated file format used to report metabolites identified or annotated in a metabolomics study, including compound identifiers, chemical structure representations, mass-to-charge ratios, retention times, and per-sample quantitative measurements.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Metabolite Annotation File format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The MAF format is used by the MetaboLights repository as a companion to ISA-Tab metadata, and follows the Metabolomics Standards Initiative reporting guidelines.</rdfs:comment>
+        <rdfs:label>MetaboLights MAF</rdfs:label>
     </owl:Class>
 
 
@@ -52753,6 +52794,30 @@
         <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q632897"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/operation_4074 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4074">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date>2026-02-11</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Compound identification is the process of determining the chemical identity of compounds detected in analytical experiments such as mass spectrometry or NMR spectroscopy. Identification is typically achieved by matching experimental spectral or physicochemical features against reference databases, spectral libraries, or predicted molecular properties.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Small molecule identification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite annotation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <rdfs:label>Compound identification</rdfs:label>
+        <skos:editorialNote>Is this valid only for small molecules and only metabolomics?</skos:editorialNote>
     </owl:Class>
 
 
