@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4075</next_id>
-        <oboLegacy:date>15.06.2025 10:57 UTC</oboLegacy:date>
+        <next_id>4076</next_id>
+        <oboLegacy:date>15.06.2025 18:40 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -21842,13 +21842,15 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2901">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0982"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>Accession of a specific molecule (catalogued in a database).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Molecule accession is any persistent, unique identifier of a specific molecule (catalogued in a database).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
         <rdfs:label>Molecule accession</rdfs:label>
+        <skos:editorialNote>TODO generic revision of chemical terminology (not only here): molecule vs. compound vs. molecule type vs. chemical etc...</skos:editorialNote>
     </owl:Class>
     
 
@@ -25118,6 +25120,7 @@
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/ORCID"/>
         <rdfs:label>ORCID Identifier</rdfs:label>
+        <skos:editorialNote>TODO polish</skos:editorialNote>
     </owl:Class>
     
 
@@ -25144,6 +25147,26 @@
         <rdfs:label>Data management plan</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/data_4075 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4075">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2894"/>
+        <created_in>1.26</created_in>
+        <regex>RM\d{7}</regex>
+        <oboInOwl:created_by>jonathan-hunter</oboInOwl:created_by>
+        <oboInOwl:creation_date>2026-02-26</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>RefMet ID is the unique, persistent identifier used by the RefMet database (A Reference list of Metabolite names), a standardised reference nomenclature for metabolites.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>RefMet identifier</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
+        <oboInOwl:savedBy>2026-06-15 Jonathan Hunter, Helge Hecht, Matúš Kalaš</oboInOwl:savedBy>
+        <rdfs:label>RefMet ID</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://metabolomicsworkbench.org/databases/refmet"/>
     </owl:Class>
 
 
