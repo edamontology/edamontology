@@ -14,6 +14,8 @@ If you are new to git, a small guide is available below in this document in orde
 
 ## How to edit EDAM directly with git
 
+This is the prefered way for minor changes (e.g. typo corrections, adding documentation links, etc.)
+
 ### How to add a new concept
 
 To add a new concept to `EDAM_dev.owl`, first find the place where to put it in the code.🔍 The concepts (defined as `owl:Class`) are sorted alphabetically by their URIs.
@@ -109,7 +111,7 @@ You can either keep **_XXXX_** as the numeric ID, or use the number stored in `n
 
 ## How to edit EDAM using WebProtege
 
-## Editing an EDAM concept with WebProtégé 
+This is the preferred way for major changes (e.g. having a whole range of modifications on a topic)
 
 Example of an EDAM term/concept 
 
@@ -128,12 +130,17 @@ CheckList for validating an EDAM term:
 
 **Minimal content**
 
-*to do*
+* IRI
+* Label
+* Definition
+* Parent class
 
 **Recommended content**
 
-*to do*
-
+* Wikipedia link (for topics)
+* Wikidata link 
+* Related terms
+* Synonyms
 
 ## Exporting changes from WebProtege
 
@@ -152,11 +159,11 @@ Manually edit EDAM with the following steps:
 ![text_editor_open_files](assets/img/text_editor_open_files.png)
 
 - Check the last ID used and increment this number accordingly for the new classes
-- Check that the subClaffOf attribute is OK
+- Check that the `subClassOf` attribute is OK (i.e. the value of the ID refers to the ID of the target class in the main branch)
 
 ![5_text_editor_update_IDs](assets/img/text_editor_update_IDs.png)
 
-- Remove some unnecessary clutter added automatically by WebProtégé, like string declarations and such
+- Remove some unnecessary clutter added automatically by WebProtégé, like xsd type declarations, with the exception of boolean type declarations
 
 ![4_text_editor_remove_clutter](assets/img/text_editor_remove_clutter.png)
 
@@ -170,11 +177,18 @@ Manually edit EDAM with the following steps:
 - Create new branch and add the edited EDAM file
 - Revise the diff and make sure everything looks OK
 
+```git diff```
+
 ![git diff](assets/img/git_diff.png)
 
 - Provide a detailed commit message, including author information and related issues or pull resquests
 
+```git commit```
+
 ![git commit message](assets/img/git_commit_message.png)
+
+```git log```
+
 ![Revise last commits](assets/img/git_log.png)
 
 - Push changes from branch
