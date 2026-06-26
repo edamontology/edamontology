@@ -14,8 +14,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
-        <next_id>4061</next_id>
-        <oboLegacy:date>12.11.2025 16:20 UTC</oboLegacy:date>
+        <next_id>4076</next_id>
+        <oboLegacy:date>15.06.2025 18:40 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -25,9 +25,11 @@
         <oboLegacy:remark>EDAM is a community project and its development can be followed and contributed to at https://github.com/edamontology/edamontology.</oboLegacy:remark>
         <dc:contributor>https://github.com/edamontology/edamontology/graphs/contributors and many more!</dc:contributor>
         <dc:contributor>Claudia Blankenburg</dc:contributor>
+        <dc:contributor>Helge Hecht</dc:contributor>
         <dc:creator>Federico Bianchini</dc:creator>
         <dc:creator>Hervé Ménager</dc:creator>
         <dc:creator>Jon Ison</dc:creator>
+        <dc:creator>Jonathan Hunter</dc:creator>
         <dc:creator>Matúš Kalaš</dc:creator>
         <dc:creator>Claire Rioualen</dc:creator>
         <dc:format>application/rdf+xml</dc:format>
@@ -36,7 +38,7 @@
         <has_format rdf:resource="http://edamontology.org/format_2197"/>
         <dc:title>EDAM - The ontology of data analysis and management</dc:title>
         <dc:description>EDAM is a domain ontology of data analysis and data management in bio- and other sciences, and science-based applications. It comprises concepts related to analysis, modelling, optimisation, and data life cycle. Targetting usability by diverse users, the structure of EDAM is relatively simple, divided into 4 main sections: Topic, Operation, Data (incl. Identifier), and Format.</dc:description>
-        <doap:Version>unstable(1.26)</doap:Version>
+        <doap:Version>1.25-20260626T1230Z</doap:Version>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/properties"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/data"/>
@@ -47,9 +49,9 @@
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/identifiers"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/operations"/>
         <oboInOwl:hasSubset rdf:resource="http://edamontology.org/topics"/>
-        <owl:priorVersion rdf:resource="http://edamontology.org/1.25"/>
-        <owl:versionIRI rdf:resource="http://edamontology.org/1.25-20251112T1620Z-unstable(1.26)"/>
-        <owl:versionInfo>1.25-20251112T1620Z-unstable(1.26)</owl:versionInfo>
+        <owl:priorVersion rdf:resource="http://edamontology.org/EDAM_1.25"/>
+        <owl:versionIRI rdf:resource="http://edamontology.org/EDAM_1.25-20260626T1230Z"/>
+        <owl:versionInfo>1.25-20260626T1230Z</owl:versionInfo>
         <rdfs:isDefinedBy rdf:resource="http://edamontology.org/EDAM.owl"/>
         <foaf:page rdf:resource="http://edamontology.org/page"/>
         <foaf:logo rdf:resource="https://raw.githubusercontent.com/edamontology/edamontology/main/EDAM-logo-square.svg"/>
@@ -142,7 +144,7 @@
         <oboLegacy:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboLegacy:is_metadata_tag>
         <oboInOwl:hasDefinition>&apos;File extension&apos; concept property (&apos;file_extension&apos; metadata tag) lists examples of usual file extensions of formats.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/properties"/>
-        <rdfs:comment>N.B.: File extensions that are not correspondigly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within life-science computing.</rdfs:comment>
+        <rdfs:comment>N.B.: File extensions that are not correspondingly defined at http://filext.com are recorded in EDAM only if not in conflict with http://filext.com, and/or unique and usual within scientific computing.</rdfs:comment>
         <rdfs:comment>Separated by bar (&apos;|&apos;), without a dot (&apos;.&apos;) prefix, preferably not all capital characters.</rdfs:comment>
         <rdfs:label>File extension</rdfs:label>
     </owl:AnnotationProperty>
@@ -2331,7 +2333,7 @@
         <oboInOwl:hasExactSynonym>Gene annotation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene features report</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Gene function (report)</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym>Gene structure (repot)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Gene structure (report)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Nucleic acid features (gene and transcript structure)</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
@@ -14626,7 +14628,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0842"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>An identifier that is re-used for data objects of fundamentally different types (typically served from a single database).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>An identifier that is reused for data objects of fundamentally different types (typically served from a single database).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
@@ -17642,7 +17644,7 @@
         <obsolete_since>beta13</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/data_1916"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/data_2083"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/data_1394"/>
         <oboInOwl:hasDefinition>Data concerning an alignment of two or more molecular sequences, structures or derived data.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:comment>This is a broad data type and is used a placeholder for other, more specific types. This includes entities derived from sequences and structures such as motifs and profiles.</rdfs:comment>
@@ -21842,9 +21844,10 @@
 
     <owl:Class rdf:about="http://edamontology.org/data_2901">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/data_0982"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2091"/>
         <created_in>beta12orEarlier</created_in>
         <notRecommendedForAnnotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</notRecommendedForAnnotation>
-        <oboInOwl:hasDefinition>Accession of a specific molecule (catalogued in a database).</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Molecule accession is any persistent, unique identifier of a specific molecule (catalogued in a database).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
@@ -25133,7 +25136,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2023-03-06T15:25:28.463042Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data management plan is a document describing the data management of a project or an organisation, including acquisition, reuse, structure, processing, storage, documentation, sharing, and preservation of data. This may include budgeting for these operations.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>DMP</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -25141,6 +25143,23 @@
         <rdfs:label>Data management plan</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Data_management_plan"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q17085509"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/data_4075 -->
+
+    <owl:Class rdf:about="http://edamontology.org/data_4075">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/data_2894"/>
+        <created_in>1.26</created_in>
+        <regex>RM\d{7}</regex>
+        <oboInOwl:hasDefinition>RefMet ID is the unique, persistent identifier used by the RefMet database (A Reference list of Metabolite names), a standardised reference nomenclature for metabolites.</oboInOwl:hasDefinition>
+        <oboInOwl:hasBroadSynonym>RefMet identifier</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/data"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/identifiers"/>
+        <rdfs:label>RefMet ID</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://metabolomicsworkbench.org/databases/refmet"/>
     </owl:Class>
 
 
@@ -34188,17 +34207,29 @@
     <!-- http://edamontology.org/format_3687 -->
 
     <owl:Class rdf:about="http://edamontology.org/format_3687">
-        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2058"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <citation rdf:resource="https://doi.org/10.5281/zenodo.161355"/>
         <created_in>1.13</created_in>
-        <documentation rdf:resource="http://www.isa-tools.org/format/specification"/>
-        <oboInOwl:hasDbXref rdf:resource="http://www.isa-tools.org/format/specification"/>
-        <oboInOwl:hasDefinition>The Investigation / Study / Assay (ISA) tab-delimited (TAB) format incorporates metadata from experiments employing a combination of technologies.</oboInOwl:hasDefinition>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isamodel.html"/>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html"/>
+        <example rdf:resource="https://github.com/ISA-tools/ISAdatasets/tree/master/tab"/>
+        <example rdf:resource="https://isa-tools.org/format/examples.html"/>
+        <information_standard rdf:resource="https://isa-tools.org/format/specification"/>
+        <ontology_used>Ontologies should be used. Any ontology is accepted, as long as it is correctly recorded.</ontology_used>
+        <repository rdf:resource="https://github.com/ISA-tools/isa-specs"/>
+        <oboInOwl:hasDefinition>ISA-Tab stands for Investigation / Study / Assay (ISA) tab-delimited (Tab) format, and it is comprised of metadata describing observational or experimental scientific studies.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Investigation Study Assay Tabular</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
-        <rdfs:comment>ISA-TAB is based on MAGE-TAB. Other than tabular, the ISA model can also be represented in RDF, and in JSON (compliable with a set of defined JSON Schemata).</rdfs:comment>
-        <rdfs:label>ISA-TAB</rdfs:label>
+        <rdfs:comment>Based on the Investigation / Study / Assay (ISA) Abstract Model, the tab-delimited ISA-Tab format supports the metadata related to multimodality/multi-omics studies which employ a combination of data acquisition techniques.</rdfs:comment>
+        <rdfs:comment>ISA-Tab extends the MAGE-TAB format (edam:format_3162) and its gene expression-specific focus, but remains compatible with it.</rdfs:comment>
+        <rdfs:comment>ISA-Tab format can be converted to ISA-JSON (edam:format_4069; validated against a set of JSON Schemata defined by the ISA model). From ISA-JSON, a serialisation to RDF (JSON-LD) is possible when using a series of JSON context files.</rdfs:comment>
+        <rdfs:comment>The ISA model consists of three core entities to capture experimental metadata: Investigation, Study, and Assay. The ISA-Tab is a composite format comprised of one i_Investigation.txt file (edam:format_4066), and one or more Study (s_*.txt; edam:format_4067) and Assay (a_*.txt; edam:format_4068) files.</rdfs:comment>
+        <rdfs:label>ISA-Tab</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.nature.com/documents/scidata-isatab-specification.pdf"/>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.53gp75"/>
+        <skos:related rdf:resource="http://edamontology.org/format_4069"/>
     </owl:Class>
     
 
@@ -36796,7 +36827,7 @@
         <file_extension>xlsx</file_extension>
         <media_type>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</media_type>
         <organisation rdf:resource="https://www.karrlab.org"/>
-        <oboInOwl:hasDefinition>ObjTables is a toolkit for creating re-usable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>ObjTables is a toolkit for creating reusable datasets that are both human and machine-readable, combining the ease of spreadsheets (e.g., Excel workbooks) with the rigor of schemas (classes, their attributes, the type of each attribute, and the possible relationships between instances of classes). ObjTables consists of a format for describing schemas for spreadsheets, numerous data types for science, a syntax for indicating the class and attribute represented by each table and column in a workbook, and software for using schemas to rigorously validate, merge, split, compare, and revision datasets.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>ObjTables</rdfs:label>
@@ -37030,7 +37061,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2919"/>
         <created_in>1.25</created_in>
         <file_extension>trackdb</file_extension>
-        <oboInOwl:hasDefinition>A declaration file format for UCSC browsers track dataset display charateristics.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>A declaration file format for UCSC browsers track dataset display characteristics.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
         <rdfs:label>TrackDB</rdfs:label>
@@ -37505,8 +37536,7 @@
         <example rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard/tree/master/examples/JSON"/>
         <organisation rdf:resource="https://www.rd-alliance.org"/>
         <repository rdf:resource="https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard"/>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-06T15:32:37.480761Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>A standard for DMPs developed by the Research Data Alliance</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>maDMP stands for machine-actionable data management plan, a standard for DMPs developed by the Research Data Alliance (RDA).</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Machine-actionable data management plan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA Common Standard for Machine-Actionable Data Management Plans (maDMPS)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>RDA DMP</oboInOwl:hasExactSynonym>
@@ -37612,7 +37642,6 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:creation_date>2021-12-15</oboInOwl:creation_date>
         <rdfs:comment>mzTab-M is not compatible with mzTab (also named mzTab 1.0, for proteomics, http://edamontology.org/format_3681). Note: the repository, website, and file extension are the same for both formats.</rdfs:comment>
         <rdfs:comment>mzTab-M is alternatively named mzTab 2.0, but in 2025 there is a draft version 2.1 of mzTab-M.</rdfs:comment>
         <rdfs:comment>The reference implementation of mzTab-M in Java is https://github.com/lifs-tools/jmzTab-m.</rdfs:comment>
@@ -37643,11 +37672,189 @@
                 <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_0153"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <oboInOwl:creation_date>2024-06-11</oboInOwl:creation_date>
         <documentation rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
         <organisation rdf:resource="https://lipidomicstandards.org"/>
         <repository rdf:resource="https://github.com/lipidomics-standards-initiative/mzTab-L"/>
         <skos:exactMatch rdf:resource="https://fairsharing.org/5158"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4066 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4066">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#investigation-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:hasDefinition>ISA-Tab Investigation file (i_Investigation.txt) contains metadata describing the overall goals, means, and context of an investigation/experiment, including references to associated Study and Assay files.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>i_Investigation.txt</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA Investigation file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>An ISA-Tab data set contains exactly 1 Investigation file. The Investigation file is always named i_Investigation.txt and contains sections for ontology sources, investigation metadata, publications, contacts, and references to Study/Assay files. It defines key entities (Factors, Protocols) referenced in Study and Assay files.</rdfs:comment>
+        <rdfs:label>ISA-Tab Investigation file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-tools.org/format/specification"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4067 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4067">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#study-table-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:hasDefinition>ISA-Tab Study file (s_*.txt) contains sample metadata describing the subjects under study, their sources, characteristics, sampling methodology, and any treatments or manipulations applied.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ISA Study file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA-Tab sample file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>An ISA-Tab data set contains 1 or more Study file(s). A Study file follows the naming pattern s_*.txt and contains contextualising information for 1 or more Assays. It records the provenance of biological samples from source material through collection processes to sample material.</rdfs:comment>
+        <rdfs:label>ISA-Tab Study file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-tools.org/format/specification"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4068 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4068">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3475"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3687"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isatab.html#assay-table-file"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:hasDefinition>ISA-Tab Assay file (a_*.txt) contains assay metadata describing test steps and analytical measurements performed on the sample material, including measurement types, technology used, and references to raw and derived data files.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>ISA Assay file</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>ISA-Tab assay metadata file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>An ISA-Tab data set contains 1 or more Assay file(s) per each Study file. An Assay file follows the naming pattern a_*.txt and records the provenance of sample processing. Each Assay file contains assays of the same type, defined by measurement type and technology.</rdfs:comment>
+        <rdfs:label>ISA-Tab Assay file</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://isa-tools.org/format/specification"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4069 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4069">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <citation rdf:resource="https://doi.org/10.1038/ng.1054"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isajson.html"/>
+        <documentation rdf:resource="https://isa-specs.readthedocs.io/en/latest/isamodel.html"/>
+        <example rdf:resource="https://github.com/ISA-tools/ISAdatasets/tree/master/json"/>
+        <file_extension>json</file_extension>
+        <information_standard rdf:resource="https://isa-tools.org/format/specification"/>
+        <ontology_used>Ontologies should be used. Any ontology is accepted, as long as it is correctly recorded.</ontology_used>
+        <repository rdf:resource="https://github.com/ISA-tools/isa-specs"/>
+        <oboInOwl:hasDefinition>ISA-JSON stands for Investigation / Study / Assay (ISA) JavaScript Object Notation (JSON) format, and it is comprised of metadata describing observational or experimental scientific studies.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Investigation Study Assay JSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>ISA-JSON is the JSON serialisation of the Investigation / Study / Assay (ISA) Abstract Model, complementing ISA-Tab (edam:format_3687). It supports the metadata related to multimodality/multi-omics studies which employ a combination of data acquisition techniques. From ISA-JSON, a serialisation to RDF (JSON-LD) is possible when using a series of JSON context files.</rdfs:comment>
+        <rdfs:comment>The ISA model consists of three core entities to capture experimental metadata: Investigation, Study, and Assay. All ISA-JSON content should fall under one Investigation JSON structure in a single JSON file.</rdfs:comment>
+        <rdfs:label>ISA-JSON</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.yhLgTV"/>
+        <skos:related rdf:resource="http://edamontology.org/format_3687"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4070 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4070">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://www.metabolomicsworkbench.org/data/mwTab_specification.pdf"/>
+        <file_extension>txt</file_extension>
+        <oboInOwl:hasDefinition>mwTab is a tab-delimited text format developed by the Metabolomics Workbench to facilitate programmatic processing of metabolomics data and metadata suitable for submission to the repository.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Metabolomics Workbench tabular file format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The mwTab format consists of sequentially ordered blocks (sections) of text data. Some blocks consist of single key-value relationships that store single pieces of information, while others contain tabular data for sample factors, metabolite data, and experimental metadata.</rdfs:comment>
+        <rdfs:label>mwTab</rdfs:label>
+        <skos:exactMatch rdf:resource="https://doi.org/10.25504/FAIRsharing.N8KDKt"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4071 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4071">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://metabolomicshub.github.io/mhd-model/mhd"/>
+        <file_extension>mhd.json</file_extension>
+        <repository rdf:resource="https://github.com/MetabolomicsHub/mhd-model"/>
+        <oboInOwl:hasDefinition>MHD (MetabolomicsHub Common Data Model) is a JSON-based format providing a standardised, FAIR-compliant data model for the exchange, discovery, and reuse of metabolomics dataset metadata across international repositories.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>MetabolomicsHub Common Data Model</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>MHD was created to facilitate the MetabolomicsHub open consortium which aims to standardise open data practices in metabolomics. It brings together major data repositories including MetaboLights, Metabolomics Workbench, and GNPS/MassIVE.</rdfs:comment>
+        <rdfs:label>MHD</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4072 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4072">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_4071"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://metabolomicshub.github.io/mhd-model/"/>
+        <file_extension>announcement.json</file_extension>
+        <repository rdf:resource="https://github.com/MetabolomicsHub/mhd-model"/>
+        <oboInOwl:hasDefinition>The MHD announcement file is a JSON-based format used to notify MetabolomicsHub of new or updated dataset submissions, serving as a manifest or notification file within the MHD data flow.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>MetabolomicsHub Common Data Model announcement file</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The MHD announcement format is used for dataset submission notifications within the MetabolomicsHub infrastructure.</rdfs:comment>
+        <rdfs:label>MHD announcement</rdfs:label>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/format_4073 -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_4073">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_2330"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3167"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://ebi-metabolights.github.io/guides/MAF"/>
+        <file_extension>tsv</file_extension>
+        <information_standard rdf:resource="https://github.com/MSI-Metabolomics-Standards-Initiative/CIMR"/>
+        <oboInOwl:hasDefinition>MetaboLights MAF (Metabolite Annotation File) is a tab-separated file format used to report metabolites identified or annotated in a metabolomics study, including compound identifiers, chemical structure representations, mass-to-charge ratios, retention times, and per-sample quantitative measurements.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Metabolite Annotation File format</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>The MAF format is used by the MetaboLights repository as a companion to ISA-Tab metadata, and follows the Metabolomics Standards Initiative reporting guidelines.</rdfs:comment>
+        <rdfs:label>MetaboLights MAF</rdfs:label>
     </owl:Class>
 
 
@@ -40012,7 +40219,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>beta12orEarlier</created_in>
-        <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of strucural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Predict the effect of point mutation on a protein structure, in terms of structural effects and protein folding, stability and function.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Variant functional prediction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Protein SNP mapping</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Protein mutation modelling</oboInOwl:hasNarrowSynonym>
@@ -48420,7 +48627,7 @@
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_0292"/>
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3918"/>
         <created_in>1.1</created_in>
-        <oboInOwl:hasDefinition>Align two or more (tpyically huge) molecular sequences that represent genomes.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Align two or more (typically huge) molecular sequences that represent genomes.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Genome alignment construction</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>Whole genome alignment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -48995,7 +49202,7 @@
         <oboInOwl:hasExactSynonym>Sequencing quality assessment</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
-        <rdfs:comment>Analyse raw sequence data from a sequencing pipeline and identify (and possiby fix) problems.</rdfs:comment>
+        <rdfs:comment>Analyse raw sequence data from a sequencing pipeline and identify (and possibly fix) problems.</rdfs:comment>
         <rdfs:label>Sequencing quality control</rdfs:label>
     </owl:Class>
     
@@ -49986,7 +50193,7 @@
     <owl:Class rdf:about="http://edamontology.org/operation_3460">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2995"/>
         <created_in>1.7</created_in>
-        <oboInOwl:hasDefinition>Classifiication (typically of molecular sequences) by assignment to some taxonomic hierarchy.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Classification (typically of molecular sequences) by assignment to some taxonomic hierarchy.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>Taxonomy assignment</oboInOwl:hasExactSynonym>
         <oboInOwl:hasNarrowSynonym>Taxonomic profiling</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -52336,7 +52543,7 @@
 
     <owl:Class rdf:about="http://edamontology.org/operation_4009">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_2430"/>
-        <created_in>1.25</created_in>
+        <created_in rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.25</created_in>
         <oboInOwl:hasDefinition>The design of small molecules with specific biological activity, such as inhibitors or modulators for proteins that are of therapeutic interest. This can involve the modification of individual atoms, the addition or removal of molecular fragments, and the use reaction-based design to explore tractable synthesis options for the small molecule.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Drug design</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Ligand-based drug design</oboInOwl:hasNarrowSynonym>
@@ -52522,7 +52729,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2023-03-02</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data management planning is the process of creating and updating a data management plan (DMP) for a project or an organisation.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
@@ -52545,7 +52751,6 @@
         </rdfs:subClassOf>
         <created_in>1.26</created_in>
         <related_term>Digital preservation</related_term>
-        <oboInOwl:creation_date>2023-03-02T12:02:42.14696Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Data digitisation is the process of converting analog data, text, or information into a digital format, appropriate for computational analysis and preservation.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalisation</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en-us">Data digitalization</oboInOwl:hasExactSynonym>
@@ -52558,6 +52763,27 @@
         <skos:editorialNote xml:lang="en-us">Data digitization</skos:editorialNote>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q843958"/>
         <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q632897"/>
+    </owl:Class>
+
+
+
+    <!-- http://edamontology.org/operation_4074 -->
+
+    <owl:Class rdf:about="http://edamontology.org/operation_4074">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/operation_3214"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/has_topic"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/topic_3172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Compound identification is the process of determining the chemical identity of compounds detected in analytical experiments such as mass spectrometry or NMR spectroscopy. Identification is typically achieved by matching experimental spectral or physicochemical features against reference databases, spectral libraries, or predicted molecular properties.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Small molecule identification</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Metabolite annotation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/operations"/>
+        <rdfs:label>Compound identification</rdfs:label>
     </owl:Class>
 
 
@@ -55136,8 +55362,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0640"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>The archival, detection, prediction and analysis ofpositional features such as functional sites in nucleotide sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Nucleic acid sites and features</rdfs:label>
@@ -55153,8 +55378,7 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>1.3</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0639"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>The detection, identification and analysis of positional features in proteins, such as functional sites.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Protein sites and features</rdfs:label>
@@ -55209,7 +55433,7 @@
         <obsolete_since>1.0</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0601"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0748"/>
+        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0160"/>
         <oboInOwl:hasDefinition>Protein phosphorylation and phosphorylation sites in protein sequences.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
         <rdfs:label>Phosphorylation sites</rdfs:label>
@@ -56053,11 +56277,9 @@
         <created_in>beta12orEarlier</created_in>
         <obsolete_since>beta12orEarlier</obsolete_since>
         <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_0097"/>
-        <oboInOwl:consider rdf:resource="http://edamontology.org/topic_1770"/>
+        <oboInOwl:replacedBy rdf:resource="http://edamontology.org/topic_0097"/>
         <oboInOwl:hasDefinition>The comparison two or more nucleic acid (typically RNA) secondary or tertiary structures.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/obsolete"/>
-        <rdfs:comment>Use this concept for methods that are exclusively for nucleic acid structures.</rdfs:comment>
         <rdfs:label>Nucleic acid structure comparison</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -61374,7 +61596,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4046">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0605"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2023-02-09T11:13:21.41427Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Version control is a technology for consistent management, storing, and sharing of evolving versions of digital artefacts, such as computer programs, scripts, documents, data, or media files.</oboInOwl:hasDefinition>
 	<oboInOwl:hasBroadSynonym>Version tracking</oboInOwl:hasBroadSynonym>
 	<oboInOwl:hasNarrowSynonym>Source control</oboInOwl:hasNarrowSynonym>
@@ -61408,7 +61629,6 @@
         <related_term>Tool registry</related_term>
         <related_term>Workflow curation</related_term>
         <related_term>Workflow registry</related_term>
-        <oboInOwl:creation_date>2023-02-25T02:40:36.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Software management comprises the practices and principles of taking care of software and software-based or software-like services, other than programming and maintenance. This includes for example taking care of the associated information and documentation, and the processes of contribution, validation, release/publication, or deployment.</oboInOwl:hasDefinition>
         <oboInOwl:hasRelatedSynonym>Service management</oboInOwl:hasRelatedSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -61424,7 +61644,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4051">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Chromatin immunoprecipitation-based exeperiment similar to ChIP-seq, with an additional experimental step using an exonuclease to increase the resolution of protein binding site identification.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
@@ -61439,7 +61658,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4052">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>High-throughput genomic and epigenomic technique that capture chromatin conformation, allowing a genome-wide identification of chromatin interactions and structure.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
@@ -61454,7 +61672,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4053">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-04-02T14:10:00.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Assay for Transposase-Accessible Chromatin with high throughput sequencing. This technique is designed for the genome-wide detection of open chromatin regions.</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
@@ -61469,7 +61686,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4054">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Experiment in which the expression of a given gene is knocked down by means of a micro RNA (miRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
@@ -61484,7 +61700,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4055">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3523"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-07-15T14:10:00.851802Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Experiment in which the expression of a given gene is knocked down by means of a small interfering RNA (siRNA) causing the degradation of the gene transcript (mRNA).</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>RNA silencing</oboInOwl:hasNarrowSynonym>
         <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
@@ -61500,19 +61715,17 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4056">
       <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
       <created_in>1.26</created_in>
-      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
-      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
       <oboInOwl:hasDefinition>Long-read sequencing is a sequencing method that produces reads thousands to millions of base pairs long, allowing for better resolution of complex regions, structural variants, and full-length transcripts.</oboInOwl:hasDefinition>
       <oboInOwl:hasExactSynonym>Third-generation sequencing</oboInOwl:hasExactSynonym>
       <oboInOwl:hasNarrowSynonym>Nanopore sequencing</oboInOwl:hasNarrowSynonym>
       <oboInOwl:hasNarrowSynonym>Single-molecule real-time sequencing</oboInOwl:hasNarrowSynonym>
       <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
       <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
       <rdfs:label>Long-read sequencing</rdfs:label>
       <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Long-read_sequencing"/>
       <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925505"/>
     </owl:Class>
+
 
 
     <!-- http://edamontology.org/topic_4057 -->
@@ -61520,14 +61733,11 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4057">
       <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
       <created_in>1.26</created_in>
-      <oboInOwl:created_by>Claire Rioualen</oboInOwl:created_by>
-      <oboInOwl:creation_date>2025-08-21T12:10:00.851802Z</oboInOwl:creation_date>
       <oboInOwl:hasDefinition>Short-read sequencing is a high-throughput sequencing method that generates millions of short nucleotide fragments, typically 50–300 base pairs in length.</oboInOwl:hasDefinition>
       <oboInOwl:hasNarrowSynonym>Massive parallel sequencing</oboInOwl:hasNarrowSynonym>
       <oboInOwl:hasNarrowSynonym>Second-generation sequencing</oboInOwl:hasNarrowSynonym>
       <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
       <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
-      <oboInOwl:savedBy>Claire Rioualen</oboInOwl:savedBy>
       <rdfs:label>Short-read sequencing</rdfs:label>
       <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Short-read_sequencing"/>
       <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q104925455"/>
@@ -61540,7 +61750,6 @@
     <owl:Class rdf:about="http://edamontology.org/topic_4060">
         <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_0121"/>
         <created_in>1.26</created_in>
-        <oboInOwl:creation_date>2025-11-06T23:08Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Metaproteomics is the profiling of proteins in a sample that contains material from multiple species or strains of organisms.</oboInOwl:hasDefinition>
         <oboInOwl:hasNarrowSynonym>Community proteogenomics</oboInOwl:hasNarrowSynonym>
         <oboInOwl:hasNarrowSynonym>Community proteomics</oboInOwl:hasNarrowSynonym>
@@ -61551,6 +61760,98 @@
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Metaproteomics"/>
         <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6823168"/>
     </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4061 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4061">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Bisulfite sequencing is a sequencing technique used to determine DNA methylation patterns by treating DNA with bisulfite, which converts unmethylated cytosines to uracils while leaving methylated cytosines unchanged.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Bisulfite-seq</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bisulphite sequencing</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym>Reduced representation bisulfite sequencing (RRBS)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym>Whole-genome bisulfite sequencing (WGBS)</oboInOwl:hasNarrowSynonym>
+        <rdfs:label>Bisulfite sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Bisulfite_sequencing"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q4087270"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4062 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4062">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Bulk RNA barcoding and sequencing (BRB-seq) is a highly mutliplexed bulk RNA-Seq technique where each RNA sample gets a barcode, and many samples are sequenced together.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>BRB-seq</oboInOwl:hasExactSynonym>
+        <rdfs:label>Bulk RNA barcoding and sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/BRB-seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q125996941"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4063 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4063">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3168"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3940"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>DNase sequencing is a technique used to identify regions of open chromatin by sequencing DNA fragments generated after treatment with DNase I, which preferentially cuts accessible DNA.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>DNase-seq</oboInOwl:hasExactSynonym>
+        <rdfs:label>DNase sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DNase-Seq"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q5205821"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4064 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4064">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3170"/>
+        <created_in>1.26</created_in>
+        <oboInOwl:hasDefinition>Specific sequencing of small RNAs using a variant of RNA-seq, with an additional fragment size selection step.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>miRNA-seq</oboInOwl:hasExactSynonym>
+        <rdfs:label>MicroRNA sequencing</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/MicroRNA_sequencing"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q6839127"/>
+    </owl:Class>
+    
+
+
+    <!-- http://edamontology.org/topic_4065 -->
+
+    <owl:Class rdf:about="http://edamontology.org/topic_4065">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3391"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/topic_3855"/>
+        <created_in>1.26</created_in>
+        <related_term>Environmental exposure</related_term>
+        <related_term>Environmental factor</related_term>
+        <related_term>Environment-wide association study (EWAS)</related_term>
+        <related_term>Exposome</related_term>
+        <related_term>Gene–environment interaction (GxE)</related_term>
+        <related_term>Genotype-environment interaction (G×E)</related_term>
+        <oboInOwl:hasDefinition>Exposomics is the systematic and comprehensive study of the exposome and the associated biological responses (exposure-phenotype interaction). Exposome is the totality of environmental exposures, that is, the cumulative (e.g. life-long) totality of contacts between external factors (e.g. chemical agents) and a living organism, a population, or a biological taxon.</oboInOwl:hasDefinition>
+        <oboInOwl:hasNarrowSynonym>Functional exposomics</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/topics"/>
+        <rdfs:label>Exposomics</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Environmental_factor"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Exposome"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gene%E2%80%93environment_interaction"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1016/j.isci.2022.103976"/>
+        <skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q115452339"/>
+        <skos:relatedMatch rdf:resource="http://id.nlm.nih.gov/mesh/D000081413"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q1384754"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q2142347"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q5533121"/>
+        <skos:relatedMatch rdf:resource="https://www.wikidata.org/wiki/Q96377315"/>
+    </owl:Class>
+    
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
