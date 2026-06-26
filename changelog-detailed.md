@@ -1,5 +1,5 @@
 ## Table of contents
-  - [EDAM (1.25-20251112T1620Z-unstable(1.26))](#edam-125-20251112t1620z-unstable126)
+  - [EDAM (1.25.20260626T1230Z)](#edam-12520260626t1230z)
   - [EDAM_1.25](#edam_125)
   - [EDAM_1.24](#edam_124)
   - [EDAM_1.23](#edam_123)
@@ -16,26 +16,29 @@
   - [EDAM_1.12](#edam_112)
 
 
-# EDAM 1.25-20251112T1620Z-unstable(1.26)
+# EDAM 1.25.20260626T1230Z
 
-#### Intermediate releases were:
+#### Minor releases since the major release 1.25 were:
 
-- 1.25-20251112T1620Z-unstable(1.26)
-- 1.25-20251106T2339Z-unstable(1.26)
-- 1.25-20240924T0027Z-unstable(1.26)
-- 1.25-20240920T1240Z-unstable(1.26)
+- 1.25.20260626T1230Z
+- 1.25-20251112T1620Z-intermediate
+- 1.25-20251106T2339Z-intermediate
+- 1.25-20240924T0027Z-intermediate
+- 1.25-20240920T1240Z-intermediate
 - unstable (20220713; 31.05.2022 09:15)
 - unstable (20210910; 02.09.2021 19:52)
 
 ## Added concepts
 
-**N.B.:** The following list currently contains all the additions done in all the intermediate ("rolling"/"unstable") releases since the last permanent ("stable") release 1.25.
+**N.B.:** The following list currently contains all the additions done in all the minor releases since the last major release 1.25.
 
-### New topics (28+3):
+### New topics (33+3):
 - Acoustics
 - Antimicrobial resistance
 - ATAC-seq
 - Biosciences
+- Bisulfite sequencing  `topic_4061`
+- Bulk RNA barcoding and sequencing  `topic_4062`
 - Carbon cycle
 - Chemometrics (was wrongly as operation)
 - ChIP-exo
@@ -43,8 +46,10 @@
 - Cybersecurity
 - Data protection
 - Data rescue
+- DNase sequencing  `topic_4063`
 - Electrocardiography
 - Electroencephalography
+- Exposomics  `topic_4065`  #931
 - FAIR data
 - Genome resequencing (was wrongly as operation)
 - Genomic imprinting
@@ -54,6 +59,7 @@
 - Metaproteomics
 - Metabolic engineering (was wrongly as operation)
 - Microfluidics
+- MicroRNA sequencing  `topic_4064`
 - miRNA silencing
 - Multiomics
 - Open science
@@ -64,7 +70,8 @@
 - Software management
 - Version control
 
-### New operations (6):
+### New operations (7):
+- Compound identification  `operation_4074`  #942
 - Data digitisation
 - Data management planning
 - Disease transmission analysis
@@ -72,18 +79,27 @@
 - Multiple testing correction
 - Power test
 
-### New data (2):
+### New data (3):
 - Data management plan
 - ORCID Identifier
+- RefMet ID  `data_4075`  #949
 
-### New formats (15):
+### New formats (23):
 - BioSimulators format for the specifications of biosimulation tools
 - BioSimulators standard for command-line interfaces for biosimulation tools
 - cif
 - cml
 - gVCF
+- ISA-JSON  `format_4069`  #937
+- ISA-Tab Assay file  `format_4068`  #936
+- ISA-Tab Investigation file  `format_4066`  #936
+- ISA-Tab Study file  `format_4067`  #936
 - maDMP
+- MetaboLights MAF  `format_4073`  #942
+- MHD  `format_4071`  #937
+- MHD announcement  `format_4072`  #937
 - MSP
+- mwTab  `format_4070`  #937
 - mzTab-L
 - mzTab-M
 - Nextflow
@@ -227,7 +243,7 @@
 | is topic of [`is_topic_of`](http://edamontology.org/is_topic_of) | broadMatch: http://www.loa.istc.cnr.it/ontologies/DOLCE-Lite.owl#inherent-in |
 
 
-# Detailed list of changes in stable versions of EDAM
+# Detailed list of changes in major versions of EDAM
 Data were generated using the [Bubastis](http://www.ebi.ac.uk/efo/bubastis/) ontology-diff tool (new concepts and changes in relations between concepts), and [WebProtégé](https://webprotege.stanford.edu) (all semantic changes).
 
 
