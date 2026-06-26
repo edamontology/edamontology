@@ -2,6 +2,15 @@
 
 **_N.B._:** For a version of these notes with clickable issues with tooltips, see **[releases](https://github.com/edamontology/edamontology/releases)**.
 
+# EDAM 1.25.20260626T1230Z
+
+### Summary of changes
+See the [changelog-detailed.md](changelog-detailed.md#edam-12520260626t1230z) for a detailed list of semantic changes in the EDAM ontology.
+
+### Changes in hierarchy
+*  66 concepts added (33 Topic, 7 Operation, 3 Data, 23 Format)
+*  3 Topic concepts that had a wrong `operation_` ID/IRI were fixed to a `topic_` ID/IRI
+
 # EDAM 1.25
 
 ### Summary of changes
