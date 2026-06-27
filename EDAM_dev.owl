@@ -15,7 +15,7 @@
      xmlns:oboLegacy="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="http://edamontology.org">
         <next_id>4076</next_id>
-        <oboLegacy:date>15.06.2025 18:40 UTC</oboLegacy:date>
+        <oboLegacy:date>27.06.2026 22:40 UTC</oboLegacy:date>
         <oboLegacy:idspace>EDAM http://edamontology.org/ &quot;EDAM relations, concept properties, and subsets&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_data http://edamontology.org/data_ &quot;EDAM types of data&quot;</oboLegacy:idspace>
         <oboLegacy:idspace>EDAM_format http://edamontology.org/format_ &quot;EDAM data formats&quot;</oboLegacy:idspace>
@@ -61973,24 +61973,11 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
-
-    <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
-        <created_in>1.2</created_in>
-        <oldParent rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <oboInOwl:hasDefinition>An obsolete concept (redefined in EDAM).</oboInOwl:hasDefinition>
-        <oboInOwl:replacedBy rdf:resource="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
-        <rdfs:comment>Needed for conversion to the OBO format.</rdfs:comment>
-        <rdfs:label>Obsolete concept (EDAM)</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/2002/07/owl#DeprecatedClass -->
 
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass"/>
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#DeprecatedClass">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
 </rdf:RDF>
 
 
