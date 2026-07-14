@@ -12,3 +12,6 @@ This code of conduct outlines our expectations for the EDAM community. It is bas
 
 ## Conflict resolution
 If you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting any member of the CoC committee, currently [Matúš Kalaš (apapronominal)](mailto:matus.kalas@uib.no) and [Hervé Ménager (he/him)](mailto:herve.menager@pasteur.fr). All reports will be handled with discretion.
+
+## Scope
+This code of conduct applies to **all** communication between our community members, or when mentioning our community member (or sharing information about them) by another member of our community. In addition, we will act within our possibilities if an abuse from a "third person" (_e.g._ on GitHub, Gitter, Twitter, or a physical meeting) is reported.
