@@ -37903,6 +37903,39 @@
 
 
 
+    <!-- http://edamontology.org/format_XXXX -->
+
+    <owl:Class rdf:about="http://edamontology.org/format_XXXX">
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_1920"/>
+        <rdfs:subClassOf rdf:resource="http://edamontology.org/format_3464"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://edamontology.org/is_format_of"/>
+                <owl:someValuesFrom rdf:resource="http://edamontology.org/data_1270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <citation rdf:resource="https://doi.org/10.1099/mgen.0.000685"/>
+        <created_in>1.26</created_in>
+        <documentation rdf:resource="https://bakta.readthedocs.io/en/latest/cli/index.html"/>
+        <documentation rdf:resource="https://github.com/oschwengers/bakta#output"/>
+        <example rdf:resource="https://doi.org/10.5281/zenodo.5253552"/>
+        <file_extension>json</file_extension>
+        <media_type rdf:resource="https://www.iana.org/assignments/media-types/application/json"/>
+        <repository rdf:resource="https://github.com/oschwengers/bakta"/>
+        <oboInOwl:created_by>mquirosq</oboInOwl:created_by>
+        <oboInOwl:creation_date>2026-10-21</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>JSON format of the genome annotation written by the bacterial genome annotation tool Bakta. It contains the annotated features of a bacterial genome or plasmid (genes, coding sequences, small ORFs, RNAs and others) with their positions, database cross-references and inference details, together with the sequences and run metadata.</oboInOwl:hasDefinition>
+        <oboInOwl:hasExactSynonym>Bakta annotation JSON</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Bakta JSON output</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/bio"/>
+        <oboInOwl:inSubset rdf:resource="http://edamontology.org/formats"/>
+        <rdfs:comment>Bakta JSON is the most complete of the Bakta outputs: the GFF3, GenBank, EMBL and TSV outputs can be regenerated from it with bakta_io, and the Bakta plotting tool and web viewer read it.</rdfs:comment>
+        <rdfs:label>Bakta JSON</rdfs:label>
+        <skos:editorialNote>No formal schema of the format is published. The examples on Zenodo were produced with Bakta v1.1; the JSON structure has evolved in later versions.</skos:editorialNote>
+    </owl:Class>
+
+
+
     <!-- http://edamontology.org/operation_0004 -->
 
     <owl:Class rdf:about="http://edamontology.org/operation_0004">
